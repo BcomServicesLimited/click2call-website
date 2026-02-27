@@ -1117,39 +1117,31 @@ document.addEventListener('DOMContentLoaded', function() {
     </section>
 
 </div>
-<!--
-  ============================================================
-  Click2Call — Shared Footer Snippet
-  File: _footer.html
-  Usage: Copy everything between the <footer> tags (inclusive)
-         into each page, immediately before 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll(".faq-toggle").forEach(function(btn) {
+    document.querySelectorAll('.faq-toggle').forEach(function(btn) {
         btn.addEventListener('click', function() {
             var expanded = this.getAttribute('aria-expanded') === 'true';
             this.setAttribute('aria-expanded', !expanded);
             var answer = document.getElementById(this.getAttribute('aria-controls'));
             answer.classList.toggle('hidden');
-            this.querySelector(".faq-icon").style.transform = expanded ? '' : 'rotate(180deg)';
+            this.querySelector('.faq-icon').style.transform = expanded ? '' : 'rotate(180deg)';
         });
     });
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
-            document.querySelectorAll(".faq-toggle[aria-expanded="true"]").forEach(function(btn) {
+            document.querySelectorAll('.faq-toggle[aria-expanded="true"]').forEach(function(btn) {
                 btn.setAttribute('aria-expanded', 'false');
                 document.getElementById(btn.getAttribute('aria-controls')).classList.add('hidden');
-                btn.querySelector(".faq-icon").style.transform = '';
+                btn.querySelector('.faq-icon').style.transform = '';
             });
         }
     });
 });
 </script>
 
-</body>.
-  Tailwind CSS must be loaded in the page <head>:
-  ============================================================
--->
+</body>
+
 
 <!-- ===================== FOOTER ===================== -->
 <footer style="background-color: #111827;" class="text-gray-400" aria-label="Site footer">
