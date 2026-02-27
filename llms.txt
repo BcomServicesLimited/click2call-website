@@ -1,0 +1,54 @@
+# Click2Call
+
+> Click2Call is an Australian business communications provider specializing in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We help businesses of all sizes across Australia to modernize their phone systems, reduce costs, and improve customer interactions with intelligent voice tools.
+
+## Core Services
+
+- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx.html](https://www.click2call.com.au/cloud-pbx.html) - A fully-featured, hardware-free business phone system hosted in the cloud.
+- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools.html](https://www.click2call.com.au/ai-voice-tools.html) - Tools for call transcription, sentiment analysis, and smart routing.
+- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist.html](https://www.click2call.com.au/ai-receptionist.html) - A 24/7 conversational AI to answer and direct calls.
+- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling.html](https://www.click2call.com.au/microsoft-teams-calling.html) - Enables external calls directly from the Microsoft Teams interface via Direct Routing.
+- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks.html](https://www.click2call.com.au/sip-trunks.html) - A modern, flexible replacement for traditional ISDN phone lines.
+
+## Key Pages
+
+- **Pricing**: [https://www.click2call.com.au/pricing.html](https://www.click2call.com.au/pricing.html) - Transparent pricing for all services.
+- **VoIP Australia**: [https://www.click2call.com.au/voip-australia.html](https://www.click2call.com.au/voip-australia.html) - Our main national landing page for VoIP services.
+- **FAQ**: [https://www.click2call.com.au/faq.html](https://www.click2call.com.au/faq.html) - A comprehensive list of frequently asked questions.
+
+## About the Business
+
+- **Legal Name**: Bcom Services Pty Ltd
+- **Trading Name**: Click2Call
+- **ABN**: 92 636 893 108
+- **Phone**: 1300 884 879
+- **Email**: click2call@bcomservices.com
+- **Coverage**: Australia-wide
+
+## Pricing (ex GST, AUD)
+
+Cloud PBX Plans — per plan/month, includes lines, channels & bundled minutes:
+- DIY Core: $23.91/month
+  2 lines · 2 channels · 500 bundled min/month (AUS & NZ calls)
+- Business: $47.83/month
+  5 lines · 5 channels · 1,000 bundled min/month (AUS & NZ calls)
+- Managed: $95.65/month
+  10 lines · 10 channels · 2,000 bundled min/month (AUS & NZ calls)
+- 30-day free trial · no lock-in contracts
+- Activation: up to 24 hours after signup
+- Additional lines/channels available on request
+- SIP Trunks: $7.00/channel/month
+- Direct Numbers (DDI): $8.00/number/month
+- Toll Free: $18.00/month
+- Outbound call rates: from $0.12/min
+- Full details: https://www.click2call.com.au/pricing.html
+
+## Customer Access
+
+- **Existing Customer Login (Portal)**: [https://portal.click2call.com.au/login.php](https://portal.click2call.com.au/login.php) — Log in to manage your phone system, users, call routing, and settings.
+- **New Customer Signup Form**: [https://portal.click2call.com.au/join/](https://portal.click2call.com.au/join/) — Complete the signup form to activate a new phone system. Note: new phone systems require a completed signup form and take up to 24 hours to activate after submission.
+
+## Contact
+
+- **Sales & Enquiries**: 1300 884 879 or click2call@bcomservices.com
+- **Customer Portal**: [https://portal.click2call.com.au](https://portal.click2call.com.au)

@@ -1,0 +1,36 @@
+/*
+ * brand.css — Click2Call custom brand utility classes
+ * Bcom Services Pty Ltd (ABN: 92 636 893 108)
+ * Loaded on every page via: <link rel="stylesheet" href="/assets/css/brand.css" />
+ */
+
+/* === Global === */
+html { scroll-behavior: smooth; }
+*:focus-visible { outline: 2px solid #047857; outline-offset: 2px; }
+
+/* === Text colours === */
+.text-brand-green-dark  { color: #047857; }
+.text-brand-green-light { color: #059669; }
+.text-brand-charcoal    { color: #111827; }
+.text-brand-gray-100    { color: #F3F4F6; }
+.text-brand-gray-200    { color: #E5E7EB; }
+
+/* === Background colours === */
+.bg-brand-green-dark  { background-color: #047857; }
+.bg-brand-green-light { background-color: #059669; }
+.bg-brand-charcoal    { background-color: #111827; }
+.bg-brand-gray-50     { background-color: #F9FAFB; }
+.bg-brand-gray-100    { background-color: #F3F4F6; }
+
+/* === Border colours === */
+.border-brand-green-dark  { border-color: #047857; }
+.border-brand-green-light { border-color: #059669; }
+
+/* === Hover variants === */
+.hover\:bg-brand-green-dark:hover   { background-color: #047857; }
+.hover\:bg-brand-green-light:hover  { background-color: #059669; }
+.hover\:text-brand-green-dark:hover { color: #047857; }
+.hover\:text-brand-charcoal:hover   { color: #111827; }
+
+/* === Navigation link transition === */
+.c2c-nav-link { transition: color 0.15s ease, background-color 0.15s ease; }
