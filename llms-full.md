@@ -142,3 +142,46 @@ Click2Call provides two distinct access points depending on whether a customer i
 - **Legal Name**: Bcom Services Pty Ltd
 - **ABN**: 92 636 893 108
 - **Coverage**: Australia-wide
+
+
+## Help Centre
+
+The Click2Call Help Centre is a dedicated knowledge base providing step-by-step guides for customers to manage their Cloud PBX phone system via the self-service portal at portal.click2call.com.au. The platform operates on a pre-pay credit system — customers must load account credit before activating paid services such as phone numbers and channels.
+
+- **Help Centre Index**: https://www.click2call.com.au/help/
+
+### Getting Started
+
+- **Activating Your Account**: https://www.click2call.com.au/help/how-to-activate-account.html — Sign up, log in, and complete initial portal setup including account details, plan review, and adding credit.
+- **Adding Account Credit**: https://www.click2call.com.au/help/how-to-add-account-credit.html — Top up account balance via Account > Payments. Supports one-off credit card payments, auto top-up, and low credit email alerts.
+
+### Phone Numbers
+
+- **Adding a Phone Number (DDI)**: https://www.click2call.com.au/help/how-to-add-phone-number.html — Add a new Australian Direct Dial Number. Select country, area (e.g. Sydney 02, Brisbane 07), line type (Voice), line plan (DDI at $5.00/month), and choose from available numbers.
+- **Porting an Existing Number**: https://www.click2call.com.au/help/how-to-port-number.html — Transfer an existing Australian phone number to the Click2Call network.
+
+### Extensions & Users
+
+- **Adding an Extension**: https://www.click2call.com.au/help/how-to-add-extension.html — Create a new extension via Voice > Numbers > Add Extension. Fields include User Name, Extension Number, Email, PIN, Role, and Password.
+- **Adding a New User**: https://www.click2call.com.au/help/how-to-add-user.html — Create a portal user account and send login credentials.
+
+### Phones & Devices
+
+- **Adding a Desk Phone**: https://www.click2call.com.au/help/how-to-add-desk-phone.html — Provision a physical SIP desk phone on the network.
+- **Setting Up a Softphone**: https://www.click2call.com.au/help/how-to-set-up-softphone.html — Configure a softphone app on desktop or mobile device.
+
+### Call Flows
+
+- **Setting Up a Call Flow**: https://www.click2call.com.au/help/how-to-set-up-call-flow.html — Create an IVR / auto-attendant to route inbound calls.
+- **Creating a Ring Group**: https://www.click2call.com.au/help/how-to-create-ring-group.html — Configure a group of extensions to ring simultaneously.
+- **Configuring Business Hours**: https://www.click2call.com.au/help/how-to-configure-business-hours.html — Set open and closed hours for call routing rules.
+- **Setting Up Voicemail**: https://www.click2call.com.au/help/how-to-set-up-voicemail.html — Configure voicemail-to-email delivery.
+- **Viewing Call Recordings**: https://www.click2call.com.au/help/how-to-view-call-recordings.html — Access and download recorded calls from the portal.
+
+### Billing
+
+- **Adding Channels**: https://www.click2call.com.au/help/how-to-add-channels.html — Add additional concurrent call channels at $3.00/month each. First 2 channels are included free.
+
+### AI Features
+
+- **Setting Up the AI Receptionist**: https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html — Configure the 24/7 AI Receptionist to answer, greet, and route inbound calls automatically.
