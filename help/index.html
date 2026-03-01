@@ -574,8 +574,16 @@
       btn.classList.remove('bg-gray-100', 'text-gray-600'); btn.classList.add('active', 'bg-brand-green-dark', 'text-white');
       btn.classList.remove('bg-white/10', 'text-gray-300');
       applyFilter();
+      history.replaceState(null, '', activeCat === 'all' ? '/help/' : '/help/?cat=' + activeCat);
     });
   });
+  /* ── URL-aware initialisation ── */
+  var params = new URLSearchParams(window.location.search);
+  var catFromURL = params.get('cat');
+  if (catFromURL && catFromURL !== 'all') {
+    var targetPill = document.querySelector('.cat-pill[data-cat="' + catFromURL + '"]');
+    if (targetPill) targetPill.click();
+  }
 }());
 </script>
 </body>
