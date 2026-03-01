@@ -1,0 +1,31 @@
+# ============================================================
+# Click2Call Website — .gitignore
+# Files listed here are excluded from Git and therefore will
+# NOT be deployed to Cloudflare Pages production.
+# ============================================================
+
+# ── Development / build tooling ──────────────────────────────
+tailwind.config.js
+input.css
+
+# ── Shared snippet source files (content is inlined per-page) ─
+_header.html
+_footer.html
+
+# ── Scratch / QA / migration scripts ─────────────────────────
+qa_audit.py
+qa_fix.py
+qa_fix2.py
+remove_quick_access.py
+
+# Catch-all: exclude any future Python scripts dropped at root
+*.py
+
+# ── Working / draft documents ────────────────────────────────
+case_studies_new.md
+
+# ── OS / editor noise ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
