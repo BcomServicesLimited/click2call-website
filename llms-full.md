@@ -19,7 +19,7 @@ Click2Call's Cloud PBX is a complete, hosted business phone system that runs ent
 - **Key Features**: Auto-attendant (IVR), call recording, voicemail-to-email, call queues, ring groups, music on hold, call transfer, conference calling, and a user-friendly web portal and mobile app.
 - **Who It's For**: Small to medium-sized businesses (1-100 staff), multi-site businesses, and companies with remote or hybrid workforces.
 - **How It Works**: Calls are routed through Click2Call's cloud infrastructure to VoIP handsets, desktop softphones, or mobile apps. Users can manage their entire phone system through a web browser.
-- **Pricing**: Simple per-item pricing. Cloud PBX Landlines $10.00/month (inc GST). Direct Dial Numbers $5.00/month. PBX Extensions free. Every account includes 2 concurrent call channels; additional channels $3.00/month. Call rates from $0.10/min. No bundled plans. See [Pricing Overview](#pricing-overview).
+- **Pricing**: Simple per-item pricing. Cloud PBX Landlines $10.00/month (ex GST). Direct Dial Numbers $5.00/month. PBX Extensions free. Every account includes 2 concurrent call channels; additional channels $3.00/month. Call rates from $0.10/min. No bundled plans. See [Pricing Overview](#pricing-overview).
 
 ### AI Voice Tools
 
@@ -53,9 +53,9 @@ SIP (Session Initiation Protocol) Trunks are a modern, IP-based replacement for 
 - **Benefits**: Significant cost savings compared to ISDN, greater scalability (add or remove channels instantly), improved reliability with multi-carrier redundancy, and geographic number flexibility.
 - **Use Cases**: Businesses with existing PBX hardware, call centres, and organizations requiring a high volume of concurrent calls.
 
-## Pricing Overview (all prices inc GST, AUD)
+## Pricing Overview (all prices ex GST, AUD)
 
-Click2Call uses simple, transparent pay-as-you-go pricing with no bundled plans or fixed monthly tiers. Customers pay only for the numbers and channels they use, plus per-minute call rates. All prices include GST.
+Click2Call uses simple, transparent pay-as-you-go pricing with no bundled plans or fixed monthly tiers. Customers pay only for the numbers and channels they use, plus per-minute call rates. All prices ex GST.
 
 ### Phone Numbers (monthly)
 - **Cloud PBX Landline**: $10.00/month — full PBX features (IVR, call recording, voicemail-to-email, queues, ring groups)
@@ -68,7 +68,7 @@ Click2Call uses simple, transparent pay-as-you-go pricing with no bundled plans 
 - **Additional channels**: $3.00/month per channel
 - All outbound calls, including from free extensions, draw from the shared channel pool
 
-### Call Rates (per minute, inc GST)
+### Call Rates (per minute, ex GST)
 
 **Australia:**
 - Fixed: $0.10/min
