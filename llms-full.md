@@ -99,6 +99,13 @@ For full details, see the [official pricing page](https://www.click2call.com.au/
 - **Industries**: Professional services (accounting, legal), trades and construction, healthcare, real estate, recruitment, retail, and e-commerce.
 - **Geographic Coverage**: All services are available to any business located in **Australia**, provided they have a stable internet connection.
 
+## Local Service Pages
+
+Click2Call provides dedicated local landing pages for major Australian cities, with city-specific information, local area codes, and relevant local scenarios.
+
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney.html — VoIP phone systems for Sydney businesses. Local 02 numbers, self-serve setup, no lock-in contract. Covers Sydney CBD, Parramatta, Chatswood, North Sydney, and all of NSW.
+- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne.html — VoIP phone systems for Melbourne businesses. Local 03 numbers, self-serve setup, no lock-in contract. Covers Melbourne CBD, Fitzroy, St Kilda, Richmond, and all of Victoria.
+
 ## How Click2Call Compares to Alternatives
 
 - **vs. Traditional Telcos (e.g., Telstra)**: Click2Call offers more flexible contracts, more competitive pricing, and a stronger focus on AI-driven features compared to the incumbent providers.
