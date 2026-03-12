@@ -150,20 +150,68 @@
         <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Adding & Provisioning a Desk Phone</h1>
-      <p class="text-gray-600 leading-relaxed">This guide explains how to connect a physical desk phone to your Click2Call extension using SIP credentials from the portal.</p>
+      <p class="text-gray-600 leading-relaxed">This guide explains how to connect a physical SIP desk phone (Yealink, Fanvil, Grandstream, Cisco, Polycom, or any standards-compliant SIP device) to your Click2Call account. You will need your Click2Call phone number and password, which were provided when your account was activated.</p>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <!-- SIP Credentials Reference Table -->
+    <div class="mb-10 rounded-2xl border border-gray-200 bg-white overflow-hidden">
+      <div class="bg-gray-50 border-b border-gray-200 px-5 py-3">
+        <h2 class="text-sm font-bold text-gray-900 uppercase tracking-wide">SIP Credentials Reference</h2>
+        <p class="text-xs text-gray-500 mt-0.5">Enter these values exactly as shown into your phone's SIP account settings.</p>
+      </div>
+      <table class="w-full text-sm">
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700 w-1/2">Username / Login / User ID</td>
+            <td class="px-5 py-3 text-gray-600">Your Click2Call phone number including country code<br><span class="text-xs text-gray-400">e.g. 61234567890</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">Authorisation Name / Display Name</td>
+            <td class="px-5 py-3 text-gray-600">Your Click2Call phone number including country code<br><span class="text-xs text-gray-400">e.g. 61234567890</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">Password</td>
+            <td class="px-5 py-3 text-gray-600">Your Click2Call password (assigned at signup)</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">Host / Proxy / Domain</td>
+            <td class="px-5 py-3 font-mono text-[#3B9C49] font-semibold">sip.click2call.com.au</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">Outbound Proxy</td>
+            <td class="px-5 py-3 font-mono text-[#3B9C49] font-semibold">sip.click2call.com.au</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">SIP Transport</td>
+            <td class="px-5 py-3 text-gray-600">UDP, TCP, or TLS &mdash; <span class="font-semibold text-gray-800">TLS preferred</span></td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">SIP Port</td>
+            <td class="px-5 py-3 text-gray-600">5060 or 50600 (UDP/TCP) &nbsp;&bull;&nbsp; 5061 (TLS)</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">DTMF Mode</td>
+            <td class="px-5 py-3 text-gray-600">RFC 2833 (also listed as AVT or Out-of-Band)</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 font-semibold text-gray-700">STUN Server</td>
+            <td class="px-5 py-3 text-gray-600">Not required</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <!-- Steps -->
     <div class="mb-12">
-      
+
         <div class="flex gap-5 mb-8">
           <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
           <div class="flex-1 pt-1">
-            <h3 class="font-bold text-gray-900 mb-2">Obtain your SIP credentials</h3>
-            <p class="text-gray-600 leading-relaxed">Log in to the portal, navigate to <strong>Extensions</strong>, and open the extension you want to assign to the phone. Note the SIP username, SIP password, and SIP server address.</p>
+            <h3 class="font-bold text-gray-900 mb-2">Connect the phone to your network</h3>
+            <p class="text-gray-600 leading-relaxed">Plug the desk phone into your network using an Ethernet cable. If your switch supports PoE (Power over Ethernet), the phone will power on automatically. Otherwise, connect the included power adapter. Wait for the phone to fully boot before proceeding.</p>
             <!-- Screenshot placeholder -->
             <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
               <div class="text-center">
@@ -173,11 +221,12 @@
             </div>
           </div>
         </div>
+
         <div class="flex gap-5 mb-8">
           <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
           <div class="flex-1 pt-1">
-            <h3 class="font-bold text-gray-900 mb-2">Connect the phone to your network</h3>
-            <p class="text-gray-600 leading-relaxed">Plug the desk phone into your network via an Ethernet cable. Most phones will power on automatically if you are using a PoE (Power over Ethernet) switch, or connect the power adapter.</p>
+            <h3 class="font-bold text-gray-900 mb-2">Access the phone's web interface</h3>
+            <p class="text-gray-600 leading-relaxed">Find the phone's IP address — this is usually displayed on the phone screen under <strong>Menu &gt; Status &gt; Network</strong>. Open a web browser on a computer on the same network and navigate to that IP address (e.g. <span class="font-mono text-gray-800">http://192.168.1.100</span>). Log in with the phone's admin credentials (default is often <span class="font-mono text-gray-800">admin / admin</span> — check your phone's manual if this does not work).</p>
             <!-- Screenshot placeholder -->
             <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
               <div class="text-center">
@@ -187,11 +236,22 @@
             </div>
           </div>
         </div>
+
         <div class="flex gap-5 mb-8">
           <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
           <div class="flex-1 pt-1">
-            <h3 class="font-bold text-gray-900 mb-2">Access the phone's web interface</h3>
-            <p class="text-gray-600 leading-relaxed">Find the phone's IP address (usually displayed on the phone screen under Menu > Status). Open a web browser and navigate to that IP address to access the phone's configuration page.</p>
+            <h3 class="font-bold text-gray-900 mb-2">Enter your SIP account settings</h3>
+            <p class="text-gray-600 leading-relaxed mb-3">Navigate to the <strong>Account</strong> or <strong>SIP Account</strong> section in the phone's web interface. Enter the values from the SIP Credentials Reference table above. The field names vary by brand, but the mapping is consistent:</p>
+            <ul class="space-y-1.5 text-sm text-gray-600 mb-3">
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Username / User ID / Account Name:</strong> your phone number including country code (e.g. 61234567890)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Authorisation Name / Auth ID:</strong> same as username — your phone number including country code</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Password:</strong> your Click2Call password assigned at signup</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>SIP Server / Host / Domain / Proxy:</strong> <span class="font-mono">sip.click2call.com.au</span></span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Outbound Proxy:</strong> <span class="font-mono">sip.click2call.com.au</span></span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>SIP Port:</strong> 5060 or 50600 (UDP/TCP), or 5061 (TLS)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>DTMF Mode:</strong> RFC 2833 (also shown as AVT or Out-of-Band)</span></li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>STUN:</strong> leave blank or disabled &mdash; not required</span></li>
+            </ul>
             <!-- Screenshot placeholder -->
             <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
               <div class="text-center">
@@ -201,25 +261,44 @@
             </div>
           </div>
         </div>
+
         <div class="flex gap-5 mb-8">
           <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
           <div class="flex-1 pt-1">
-            <h3 class="font-bold text-gray-900 mb-2">Enter the SIP credentials</h3>
-            <p class="text-gray-600 leading-relaxed">In the phone's web interface, navigate to the Account or SIP Account section. Enter the SIP username, SIP password, and SIP server address from the portal. Set the SIP port to 5060.</p>
-            <!-- Screenshot placeholder -->
-            <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
-              <div class="text-center">
-                <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <p class="text-xs text-gray-400">Screenshot placeholder — Step 4</p>
-              </div>
+            <h3 class="font-bold text-gray-900 mb-2">Configure audio codecs</h3>
+            <p class="text-gray-600 leading-relaxed mb-3">In the codec or audio settings section, enable the following codecs in order of preference. Disable any codecs not listed below to ensure the best call quality.</p>
+            <div class="rounded-xl border border-gray-200 bg-white overflow-hidden mb-3">
+              <table class="w-full text-sm">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                  <tr>
+                    <th class="px-4 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wide">Type</th>
+                    <th class="px-4 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wide">Supported Codecs</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                  <tr>
+                    <td class="px-4 py-3 font-semibold text-gray-700">Voice (Audio)</td>
+                    <td class="px-4 py-3 text-gray-600 font-mono">G.711 alaw &nbsp;&bull;&nbsp; G.711 ulaw &nbsp;&bull;&nbsp; G.722 &nbsp;&bull;&nbsp; G.729a</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3 font-semibold text-gray-700">Video</td>
+                    <td class="px-4 py-3 text-gray-600 font-mono">H.264 &nbsp;&bull;&nbsp; H.263</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex items-start gap-2.5 p-3 rounded-lg bg-amber-50 border border-amber-200">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+              <p class="text-xs text-amber-800"><strong>Important:</strong> Set the media packet time (ptime) to <strong>20ms</strong>. A ptime of 10ms is not supported and will cause audio issues.</p>
             </div>
           </div>
         </div>
+
         <div class="flex gap-5 mb-8">
           <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
           <div class="flex-1 pt-1">
-            <h3 class="font-bold text-gray-900 mb-2">Save and register</h3>
-            <p class="text-gray-600 leading-relaxed">Save the settings. The phone will reboot and attempt to register. A successful registration is indicated by a green light or 'Registered' status on the phone screen.</p>
+            <h3 class="font-bold text-gray-900 mb-2">Save settings and confirm registration</h3>
+            <p class="text-gray-600 leading-relaxed">Save the account settings. The phone will reboot and attempt to register with the Click2Call network. A successful registration is confirmed by a <strong>green line key light</strong>, a <strong>Registered</strong> status on the phone screen, or a dial tone when you pick up the handset. This typically takes 30&ndash;60 seconds after saving.</p>
             <!-- Screenshot placeholder -->
             <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
               <div class="text-center">
@@ -229,11 +308,12 @@
             </div>
           </div>
         </div>
+
         <div class="flex gap-5 mb-8">
           <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
           <div class="flex-1 pt-1">
             <h3 class="font-bold text-gray-900 mb-2">Test a call</h3>
-            <p class="text-gray-600 leading-relaxed">Dial another extension on your system to confirm the phone is working correctly. If registration fails, double-check the SIP credentials and ensure your firewall is not blocking SIP traffic on port 5060.</p>
+            <p class="text-gray-600 leading-relaxed">Dial another extension on your system or call your own number from a mobile to confirm the phone is working correctly. Check that audio is clear in both directions. If the phone fails to register, see the Firewall Rules section below and verify your credentials are entered exactly as shown.</p>
             <!-- Screenshot placeholder -->
             <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
               <div class="text-center">
@@ -243,6 +323,47 @@
             </div>
           </div>
         </div>
+    </div>
+
+    <!-- Firewall Rules -->
+    <div class="mb-10 rounded-2xl border border-gray-200 bg-white overflow-hidden">
+      <div class="bg-gray-50 border-b border-gray-200 px-5 py-3">
+        <h2 class="text-sm font-bold text-gray-900 uppercase tracking-wide">Firewall Rules</h2>
+        <p class="text-xs text-gray-500 mt-0.5">If your phone sits behind a business firewall or router, allow the following traffic to ensure SIP registration and audio work correctly.</p>
+      </div>
+      <table class="w-full text-sm">
+        <thead class="bg-gray-50 border-b border-gray-200">
+          <tr>
+            <th class="px-5 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wide">Direction</th>
+            <th class="px-5 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wide">Protocol</th>
+            <th class="px-5 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wide">Port / Range</th>
+            <th class="px-5 py-2.5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wide">Purpose</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 text-gray-700">Allow all traffic from</td>
+            <td class="px-5 py-3 font-mono text-gray-600">UDP</td>
+            <td class="px-5 py-3 font-mono text-gray-600">1024 &ndash; 50000</td>
+            <td class="px-5 py-3 text-gray-600">RTP media (voice audio)</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 text-gray-700">Allow all traffic from</td>
+            <td class="px-5 py-3 font-mono text-gray-600">TCP</td>
+            <td class="px-5 py-3 font-mono text-gray-600">5060</td>
+            <td class="px-5 py-3 text-gray-600">SIP signalling (TCP)</td>
+          </tr>
+          <tr class="hover:bg-gray-50 transition-colors">
+            <td class="px-5 py-3 text-gray-700">Allow all traffic from</td>
+            <td class="px-5 py-3 font-mono text-gray-600">TCP</td>
+            <td class="px-5 py-3 font-mono text-gray-600">5061</td>
+            <td class="px-5 py-3 text-gray-600">SIP signalling (TLS)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="px-5 py-3 border-t border-gray-100 bg-gray-50">
+        <p class="text-xs text-gray-500">Apply these rules for traffic from subnet <span class="font-mono font-semibold text-gray-700">52.63.154.234</span>. No STUN server is required.</p>
+      </div>
     </div>
 
     <!-- Related articles -->
