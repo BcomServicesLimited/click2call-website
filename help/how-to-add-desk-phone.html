@@ -150,12 +150,165 @@
         <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Adding & Provisioning a Desk Phone</h1>
-      <p class="text-gray-600 leading-relaxed">This guide explains how to connect a physical SIP desk phone (Yealink, Fanvil, Grandstream, Cisco, Polycom, or any standards-compliant SIP device) to your Click2Call account. You will need your Click2Call phone number and password, which were provided when your account was activated.</p>
+      <p class="text-gray-600 leading-relaxed">This guide covers two methods for connecting a physical desk phone to your Click2Call account. If you have a Yealink phone, follow the Auto Provisioning steps below for the fastest setup. For all other brands, skip to the Manual SIP Setup section.</p>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- ===== SECTION 1: Yealink Auto Provisioning ===== -->
+    <div class="mb-14">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center">
+          <svg class="w-4 h-4 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900">Option 1 &mdash; Yealink Auto Provisioning</h2>
+          <p class="text-sm text-gray-500">Recommended for Yealink phones &mdash; fastest setup method</p>
+        </div>
+      </div>
+
+      <p class="text-gray-600 leading-relaxed mb-8">Click2Call has a fully automated Yealink device provisioning process to take the hard work out of configuring these phones. Follow the steps below to get your Yealink phone registered and ready to use in minutes.</p>
+
+      <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Unbox and assemble the phone</h3>
+          <p class="text-gray-600 leading-relaxed">When opening your Yealink phone box, you will find the main phone unit, one handset cord, one handset, one phone stand, and one Ethernet cable. Flip the phone over and attach the stand to the back slots above the cable ports. Connect the larger end of the handset cord into the port marked with a phone icon on the unit, and the smaller end into the handset.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Connect to your network and power on</h3>
+          <p class="text-gray-600 leading-relaxed">Plug one end of the Ethernet cable into the port labelled <strong>Internet</strong> on the back of the phone, and the other end into your internet modem or router. Once connected, the phone will power on and display a welcome message on screen.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Add the phone in the Click2Call portal</h3>
+          <p class="text-gray-600 leading-relaxed mb-3">Log in to your Click2Call account and navigate to <strong>Voice &gt; Phones</strong>. Click <strong>Add New Phone</strong> and fill in the following details:</p>
+          <ul class="space-y-1.5 text-sm text-gray-600 mb-3">
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Phone model:</strong> select your Yealink model from the drop-down menu</span></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>MAC address:</strong> found on the sticker on the back of the phone</span></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Description:</strong> a label to identify this phone line (e.g. Reception, Sales)</span></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>VLAN ID:</strong> optional &mdash; only required if your network uses VLANs</span></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Web admin password:</strong> set a password for the phone's web interface. If left blank, the default will be <span class="font-mono">admin</span> (admin) and <span class="font-mono">user</span> (user)</span></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Accounts:</strong> assign a phone number from the drop-down. If your Yealink model has multiple line keys, you can also configure speed dials, voicemail buttons, pickup, and transfer keys on the spare keys</span></li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed">Once complete, click <strong>Add New Phone</strong> to save.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Find the phone's IP address</h3>
+          <p class="text-gray-600 leading-relaxed">On the Yealink phone, press <strong>Menu</strong> and then select <strong>Status</strong>. The field labelled <strong>IPv4 Address</strong> shows the phone's current IP address on your network. Note this down &mdash; you will need it in the next step.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Log in to the phone's web interface</h3>
+          <p class="text-gray-600 leading-relaxed">Open a web browser on a computer connected to the same network and type the phone's IP address into the address bar (e.g. <span class="font-mono text-gray-800">http://192.168.1.100</span>). You will be redirected to the Yealink login page. Enter <span class="font-mono">admin</span> for both the username and password fields.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Trigger Auto Provisioning</h3>
+          <p class="text-gray-600 leading-relaxed mb-3">Once logged in, go to the <strong>Settings</strong> tab and select <strong>Auto Provision</strong>. In the <strong>Server URL</strong> field, enter:</p>
+          <div class="mb-3 rounded-lg bg-gray-100 border border-gray-200 px-4 py-3 font-mono text-sm text-gray-800">http://yea.nz</div>
+          <p class="text-gray-600 leading-relaxed">Press <strong>Confirm</strong> at the bottom of the page. Once the page reloads, press <strong>Auto Provision Now</strong>. The phone screen will begin the auto-provisioning process. If a firmware upgrade is required, the phone will display a firmware update message.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 mb-2">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
+        <div class="flex-1 pt-1">
+          <h3 class="font-bold text-gray-900 mb-2">Wait for provisioning to complete</h3>
+          <p class="text-gray-600 leading-relaxed">The provisioning process may take up to five minutes. The phone may reboot several times during this period &mdash; this is normal. <strong>Do not power off the phone during this process.</strong> Once finished, your Yealink handset will be ready to use. If you need to make any changes in future, update your settings in the Click2Call portal and reboot the phone to download the new configuration.</p>
+          <!-- Screenshot placeholder -->
+          <div class="mt-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center h-40">
+            <div class="text-center">
+              <svg class="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <p class="text-xs text-gray-400">Screenshot placeholder &mdash; Step 7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="relative mb-14">
+      <div class="absolute inset-0 flex items-center" aria-hidden="true"><div class="w-full border-t border-gray-200"></div></div>
+      <div class="relative flex justify-center">
+        <span class="bg-gray-50 px-4 text-sm font-semibold text-gray-500 uppercase tracking-wide">Manual SIP Setup &mdash; All Brands</span>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 2: Manual SIP Setup ===== -->
+    <div class="mb-6">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center">
+          <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900">Option 2 &mdash; Manual SIP Setup</h2>
+          <p class="text-sm text-gray-500">For Fanvil, Grandstream, Cisco, Polycom, and all other SIP-compatible phones</p>
+        </div>
+      </div>
+    </div>
+
     <!-- SIP Credentials Reference Table -->
     <div class="mb-10 rounded-2xl border border-gray-200 bg-white overflow-hidden">
       <div class="bg-gray-50 border-b border-gray-200 px-5 py-3">
