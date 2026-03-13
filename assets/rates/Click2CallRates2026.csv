@@ -1,0 +1,489 @@
+Country,Call Type,"Flagfall
+(Exc. GST)","Rate
+(Exc. GST)"
+New Zealand,0900 Premium 299,,$5.00
+,Directory,$0.86,$1.00
+,Emergency,,$0.00
+,Inbound,,$0.00
+,Fixed,,$0.10
+,Int Directory,$2.50,$1.00
+,Local,,$0.10
+,Mobile,,$0.20
+,MsgExchange,,$0.00
+,Service Call,,$0.00
+,Inbound TollFree from Mobile,,$0.20
+,Tollfree,,$0.00
+,Inbound TollFree from Fixed,,$0.10
+,TollFree Mobile,,$0.00
+Australia,Outbound 6113,$0.60,$0.00
+,Inbound 6113,,$0.20
+,Inbound 611800,,$0.20
+,Emergency,,$0.00
+,Fixed,,$0.10
+,Mobile,,$0.20
+Afghanistan,Fixed,,$0.70
+,Mobile,,$0.93
+Albania,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Algeria,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Andorra,Fixed,,$0.05
+,Mobile,,$0.59
+Angola,Fixed,,$0.17
+,Mobile,,$0.93
+Anguilla,Fixed,,$0.70
+,Mobile,,$0.93
+Antarctica,Fixed,,$3.42
+,Mobile,,$3.42
+Antigua & Barbuda,Fixed,,$1.24
+,Mobile,,$0.93
+Argentina,Fixed,,$0.08
+,Mobile,,$0.23
+Armenia,Fixed,,$0.93
+,Mobile,,$0.70
+Aruba,Fixed,,$0.36
+,Mobile,,$0.70
+Ascension Island,Fixed,,$2.84
+,Mobile,,$2.05
+Austria,Fixed,,$0.36
+,Mobile,,$0.93
+Azerbaijan,Fixed,,$0.70
+,Mobile,,$0.93
+Bahamas,Fixed,,$1.24
+,Mobile,,$0.59
+Bahrain,Fixed,,$0.36
+,Mobile,,$0.47
+Bangladesh,Fixed,,$0.09
+,Mobile,,$0.09
+Barbados,Fixed,,$0.59
+,Mobile,,$0.70
+Belarus,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Belgium,Fixed,,$0.36
+,Mobile,,$1.29
+Belize,Fixed,,$0.70
+,Mobile,,$0.93
+Benin,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Bermuda,Fixed,,$0.09
+,Mobile,,$0.16
+Bhutan,Fixed,,$0.23
+,Mobile,,$0.23
+Bolivia,Fixed,,$0.70
+,Mobile,,$0.59
+Bosnia Herzegovina,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Botswana,Fixed,,$0.78
+,Mobile,,$0.70
+Brazil,Fixed,,$0.08
+,Mobile,,$0.09
+British Virgin Islands,Fixed,,$1.24
+,Mobile,,$0.93
+Brunei,Fixed,,$0.31
+,Mobile,,$0.09
+Bulgaria,Fixed,,$0.05
+,Mobile,,$0.93
+Burkina Faso,Fixed,,$0.93
+,Mobile,,$1.29
+Burundi,Fixed,,$1.55
+,Mobile,,$1.55
+Cambodia,Fixed,,$0.23
+,Mobile,,$0.23
+Cameroon,Fixed,,$1.41
+,Mobile,,$0.93
+Canada,Fixed,,$0.03
+,Mobile,,$0.03
+Cape Verde,Fixed,,$0.59
+,Mobile,,$0.93
+Cayman Islands,Fixed,,$0.62
+,Mobile,,$0.59
+Central African Republic,Fixed,,$2.33
+,Mobile,,$2.33
+Chad,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Chile,Fixed,,$0.08
+,Mobile,,$0.17
+China,Fixed,,$0.08
+,Mobile,,$0.08
+Christmas Is,Fixed,,$1.02
+,Mobile,,$1.02
+Colombia,Fixed,,$0.17
+,Mobile,,$0.09
+Comoros,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Congo,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Cook Islands,Fixed,,$2.17
+,Mobile,,$1.54
+Costa Rica,Fixed,,$0.08
+,Mobile,,$0.23
+Croatia,Fixed,,$0.23
+,Mobile,,$0.93
+Cuba,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Cyprus,Fixed,,$0.23
+,Mobile,,$0.36
+Czech Republic,Fixed,,$0.08
+,Mobile,,$0.36
+Denmark,Fixed,,$0.05
+,Mobile,,$0.05
+Diego Garcia,Fixed,,$2.59
+,Mobile,,$3.42
+Djibouti,Fixed,,$0.93
+,Mobile,,$0.93
+Dominica,Fixed,,$0.70
+,Mobile,,$0.93
+Dominican Republic,Fixed,,$0.31
+,Mobile,,$0.47
+East Timor,Fixed,,$0.93
+,Mobile,,$0.93
+Ecuador,* Fixed (Route Disabled),,
+,Mobile,,$0.70
+Egypt,Fixed,,$0.36
+,Mobile,,$0.47
+El Salvador,Fixed,,$0.47
+,Mobile,,$0.59
+Equatorial Guinea,Fixed,,$1.55
+,Mobile,,$1.99
+Eritrea,Fixed,,$0.70
+,Mobile,,$0.85
+Estonia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Ethiopia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Faeroe Island,Fixed,,$0.17
+,Mobile,,$0.59
+Falkland Islands,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Fiji,Fixed,,$0.78
+,Mobile,,$0.78
+Finland,Fixed,,$1.29
+,Mobile,,$1.29
+France,Fixed,,$0.05
+,Mobile,,$0.23
+French Polynesia,Fixed,,$0.59
+,Mobile,,$0.93
+FYR of Macedonia,Fixed,,$0.59
+,Mobile,,$0.93
+Gabon,Fixed,,$0.93
+,Mobile,,$1.55
+Gambia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Georgia,Fixed,,$0.59
+,Mobile,,$0.93
+Germany,Fixed,,$0.05
+,Mobile,,$0.78
+Ghana,Fixed,,$0.93
+,Mobile,,$0.93
+Gibraltar,Fixed,,$0.12
+,Mobile,,$0.47
+Global,* Mobile (Route Disabled),,
+Greece,Fixed,,$0.08
+,Mobile,,$0.23
+Greenland,Fixed,,$0.93
+,Mobile,,$1.29
+Grenada,Fixed,,$1.24
+,Mobile,,$0.70
+Guadeloupe (French),Fixed,,$0.05
+,Mobile,,$0.36
+Guam,Fixed,,$0.05
+,Mobile,,$0.05
+Guatemala,Fixed,,$0.47
+,Mobile,,$0.47
+Guiana (French),Fixed,,$0.05
+,Mobile,,$1.24
+Guinea Bissau,Fixed,,$2.10
+,Mobile,,$2.76
+Guinea Republic,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Guyana,Fixed,,$0.70
+GUYANA,Mobile,,$0.93
+Haiti,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Honduras,Fixed,,$0.47
+,Mobile,,$0.59
+Hong Kong,Fixed,,$0.14
+,Mobile,,$0.14
+Hungary,Fixed,,$0.17
+,Mobile,,$0.23
+Iceland,Fixed,,$0.05
+,Mobile,,$0.08
+India,Fixed,,$0.05
+,Mobile,,$0.05
+Indonesia,Fixed,,$0.22
+,Mobile,,$0.17
+INMARSAT-AOR,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+International 800,Fixed,,$0.00
+,Mobile,,$0.00
+Iran,Fixed,,$0.59
+,Mobile,,$0.59
+Iraq,Fixed,,$0.47
+,Mobile,,$0.70
+Ireland (Republic),Fixed,,$0.03
+,Mobile,,$0.12
+Israel,Fixed,,$0.05
+,Mobile,,$0.09
+Italy,Fixed,,$0.05
+,Mobile,,$0.36
+Ivory Coast,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Jamaica,Fixed,,$0.70
+,Mobile,,$0.93
+Japan,Fixed,,$0.05
+,Mobile,,$0.17
+Jordan,Fixed,,$0.47
+,Mobile,,$0.59
+Kazakhstan,Fixed,,$0.17
+,Mobile,,$0.70
+Kenya,Fixed,,$0.70
+,Mobile,,$0.93
+Kiribati,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Korea (Nth),Fixed,,$1.29
+,Mobile,,$1.37
+Korea (Sth),Fixed,,$0.05
+,Mobile,,$0.05
+Kuwait,Fixed,,$0.12
+,Mobile,,$0.17
+Kyrgyzstan,Fixed,,$1.24
+,Mobile,,$0.59
+Laos,Fixed,,$0.23
+,Mobile,,$0.23
+Latvia,Fixed,,$1.29
+,Mobile,,$0.93
+Lebanon,Fixed,,$0.36
+,Mobile,,$0.59
+Lesotho,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Liberia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Libya,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Liechtenstein,Fixed,,$0.23
+,Mobile,,$1.93
+Lithuania,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Luxembourg,Fixed,,$0.70
+,Mobile,,$0.70
+Macau,Fixed,,$0.62
+,Mobile,,$0.36
+Madagascar,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Malawi,Fixed,,$1.62
+,Mobile,,$1.29
+Malaysia,Fixed,,$0.08
+,Mobile,,$0.09
+Maldives Republic,Fixed,,$2.06
+,* Mobile (Route Disabled),,
+Mali,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Malta,Fixed,,$0.39
+,Mobile,,$0.78
+Mariana Island,Fixed,,$0.09
+,Mobile,,$0.09
+Marshall Islands,Fixed,,$0.70
+,Mobile,,$0.85
+Martinique,Fixed,,$0.05
+,Mobile,,$0.78
+Mauritania,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Mauritius,Fixed,,$0.59
+,Mobile,,$0.59
+Mexico,Fixed,,$0.16
+,Mobile,,$0.16
+Micronesia,Fixed,,$1.55
+Moldova,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Monaco,Fixed,,$0.23
+,Mobile,,$1.29
+Mongolia,Fixed,,$0.08
+,Mobile,,$0.08
+Montenegro,Fixed,,$0.59
+,Mobile,,$0.93
+Montserrat,Fixed,,$0.70
+,Mobile,,$0.70
+Morocco,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Mozambique,Fixed,,$1.24
+,Mobile,,$0.93
+Myanmar,Fixed,,$0.47
+,Mobile,,$0.47
+Namibia,Fixed,,$0.62
+,Mobile,,$1.24
+Nauru,Fixed,,$2.84
+,Mobile,,$2.56
+Nepal,Fixed,,$0.47
+,Mobile,,$0.59
+Netherlands,Fixed,,$0.70
+,Mobile,,$0.93
+Netherlands Antilles,Fixed,,$0.78
+,Mobile,,$0.47
+New Caledonia,Fixed,,$0.93
+,Mobile,,$0.93
+Nicaragua,Fixed,,$0.47
+,Mobile,,$1.29
+Niger,Fixed,,$0.93
+,Mobile,,$0.93
+Nigeria,Fixed,,$0.36
+,Mobile,,$0.36
+Niue Island,Fixed,,$3.11
+,Mobile,,$2.22
+Norfolk Island,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Norway,Fixed,,$0.08
+,Mobile,,$0.47
+Oman,Fixed,,$1.24
+,Mobile,,$0.93
+Pakistan,Fixed,,$0.17
+,Mobile,,$0.17
+Palau,Fixed,,$0.85
+,Mobile,,$0.85
+Palestine,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Panama,Fixed,,$0.08
+,Mobile,,$0.47
+Papua New Guinea,Fixed,,$0.93
+,Mobile,,$2.84
+Paraguay,Fixed,,$0.31
+,Mobile,,$0.23
+Peru,Fixed,,$0.05
+,Mobile,,$0.23
+Philippines,Fixed,,$0.36
+,Mobile,,$0.47
+Poland,Fixed,,$0.09
+,Mobile,,$0.47
+Portugal,Fixed,,$0.08
+,Mobile,,$0.36
+Puerto Rico,Fixed,,$0.05
+,Mobile,,$0.05
+Qatar,Fixed,,$0.47
+,Mobile,,$0.59
+Reunion,Fixed,,$0.09
+,Mobile,,$0.36
+Romania,Fixed,,$0.05
+,Mobile,,$0.08
+Russia,Fixed,,$0.47
+,Mobile,,$0.70
+Rwanda,Fixed,,$0.93
+,Mobile,,$0.93
+Samoa (American),Fixed,,$0.59
+,Mobile,,$0.59
+Samoa (Western),Fixed,,$2.06
+,Mobile,,$2.06
+San Marino,Fixed,,$0.05
+,Mobile,,$0.59
+Sao Tome & Principe,Fixed,,$2.59
+,Mobile,,$2.56
+Saudi Arabia,Fixed,,$2.95
+,Mobile,,$2.95
+Senegal,Fixed,,$1.88
+,Mobile,,$1.29
+Serbia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Seychelles,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Sierra Leone,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Singapore,Fixed,,$0.05
+,Mobile,,$0.05
+Slovak Republic,Fixed,,$0.05
+,Mobile,,$0.23
+Slovenia,Fixed,,$0.05
+,Mobile,,$1.55
+Solomon Islands,Fixed,,$2.06
+,Mobile,,$2.06
+Somalia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+South Africa,Fixed,,$0.78
+,Mobile,,$0.78
+Spain,Fixed,,$1.38
+,Mobile,,$1.38
+Sri Lanka,Fixed,,$0.47
+,Mobile,,$0.47
+St Helena,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+St Kitts & Nevis,Fixed,,$1.24
+,Mobile,,$0.93
+St Lucia,Fixed,,$0.70
+,Mobile,,$0.93
+St Pierre & Miquelon,Fixed,,$0.93
+,Mobile,,$1.55
+St Vincent & Bequia,Fixed,,$0.59
+,Mobile,,$0.93
+Sudan,Fixed,,$0.47
+,Mobile,,$0.59
+Suriname,Fixed,,$0.93
+,Mobile,,$1.55
+Swaziland,Fixed,,$0.36
+,Mobile,,$0.93
+Sweden,Fixed,,$0.05
+,Mobile,,$0.78
+Switzerland,Fixed,,$0.05
+,Mobile,,$0.93
+Syria,Fixed,,$0.93
+,Mobile,,$1.29
+Taiwan,Fixed,,$0.09
+,Mobile,,$0.36
+Tajikistan,Fixed,,$0.47
+,Mobile,,$0.59
+Tanzania,Fixed,,$1.85
+,Mobile,,$0.93
+Thailand,Fixed,,$0.22
+,Mobile,,$0.22
+Togo,Fixed,,$0.93
+,Mobile,,$0.93
+Tokelau,Fixed,,$3.37
+,Mobile,,$2.56
+Tonga,Fixed,,$2.06
+,Mobile,,$2.06
+Trinidad & Tobago,Fixed,,$0.93
+,Mobile,,$0.93
+Tunisia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Turkey,Fixed,,$0.12
+,Mobile,,$0.59
+Turkmenistan,Fixed,,$0.36
+,Mobile,,$0.47
+Turks & Caicos Is,Fixed,,$0.70
+,Mobile,,$0.93
+Tuvalu,Fixed,,$2.84
+,Mobile,,$2.05
+Uganda,Fixed,,$1.80
+,* Mobile (Route Disabled),,
+UK Special,Fixed,,$0.78
+,Mobile,,$0.78
+Ukraine,Fixed,,$0.47
+,Mobile,,$0.93
+United Arab Emirates,Fixed,,$2.86
+,Mobile,,$2.86
+United Kingdom,Fixed,,$0.05
+,Mobile,,$0.08
+,Inbound TollFree from Mobile,,$0.24
+,Inbound TollFree from Fixed,,$0.14
+Uruguay,Fixed,,$0.17
+,Mobile,,$0.59
+USA,Fixed,,$0.05
+,Inbound US TollFree,,$0.12
+Uzbekistan,Fixed,,$0.36
+,Mobile,,$0.36
+Vanuatu,Fixed,,$2.06
+,Mobile,,$2.06
+Vatican City,Fixed,,$0.09
+,Mobile,,$0.09
+Venezuela,Fixed,,$0.22
+,Mobile,,$0.36
+Vietnam,Fixed,,$0.23
+,Mobile,,$0.23
+Virgin Islands (USA),Fixed,,$0.08
+,Mobile,,$0.05
+Wallis and Futuna Islands,Fixed,,$0.93
+,Mobile,,$2.56
+Yemen,Fixed,,$0.78
+,Mobile,,$0.47
+Zaire,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Zambia,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,
+Zimbabwe,* Fixed (Route Disabled),,
+,* Mobile (Route Disabled),,

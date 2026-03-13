@@ -20,6 +20,8 @@ remove_quick_access.py
 
 # Catch-all: exclude any future Python scripts dropped at root
 *.py
+# Exception: tracked build scripts
+!build-rates-table.py
 
 # ── Working / draft documents ────────────────────────────────
 case_studies_new.md
