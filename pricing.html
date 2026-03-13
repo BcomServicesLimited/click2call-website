@@ -83,7 +83,7 @@ To fully resolve this after deployment:
           "name": "Are prices shown ex GST?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. All prices on our website are inclusive of GST."
+            "text": "Yes. All prices listed on our website are shown exclusive of GST (ex GST). GST of 10% is added when you top up your account credit."
           }
         },
         {
@@ -1046,7 +1046,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span>Are prices shown ex GST?</span>
                         <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </button>
-                    <div id="faq-answer-10" class="hidden px-6 pb-4 text-gray-600">Yes. All prices listed on our website are inclusive of GST.</div>
+                    <div id="faq-answer-10" class="hidden px-6 pb-4 text-gray-600">Yes. All prices listed on our website are shown exclusive of GST (ex GST). GST of 10% will be added at checkout when you top up your account credit.</div>
                 </div>
                 <div class="border border-gray-200 rounded-lg overflow-hidden">
                     <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-answer-11">
@@ -1055,13 +1055,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </button>
                     <div id="faq-answer-11" class="hidden px-6 pb-4 text-gray-600">Towards the end of your 30-day free trial, we will contact you to see if you'd like to continue with a paid plan. If you choose not to continue, your account will be deactivated with no charge.</div>
                 </div>
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-answer-12">
-                        <span>Does Click2Call offer discounts for annual billing?</span>
-                        <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div id="faq-answer-12" class="hidden px-6 pb-4 text-gray-600">Yes, we offer a discount equivalent to two months free for customers who choose to pay for their service annually in advance. Please contact us to arrange annual billing.</div>
-                </div>
+
             </div>
         </div>
 
