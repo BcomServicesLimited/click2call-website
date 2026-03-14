@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Setting Up a Softphone App | Help Centre | Click2Call</title>
-  <meta name="description" content="How to configure a softphone application on your computer or mobile device to make and receive calls via Click2Call.">
+  <meta name="description" content="How to download and set up the Secure VoIP App on iPhone, Android, or Windows, or the Telephone App on Mac, to make and receive calls via Click2Call.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
   <link rel="canonical" href="https://www.click2call.com.au/help/how-to-set-up-softphone.html">
   <link rel="stylesheet" href="/assets/css/tailwind.min.css">
@@ -16,14 +16,14 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/how-to-set-up-softphone.html">
   <meta property="og:title" content="Setting Up a Softphone App | Help Centre | Click2Call">
-  <meta property="og:description" content="How to configure a softphone application on your computer or mobile device to make and receive calls via Click2Call.">
+  <meta property="og:description" content="How to download and set up the Secure VoIP App on iPhone, Android, or Windows, or the Telephone App on Mac, to make and receive calls via Click2Call.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "Setting Up a Softphone App",
-    "description": "How to configure a softphone application on your computer or mobile device to make and receive calls via Click2Call.",
+    "name": "Setting Up the Secure VoIP App for Click2Call",
+    "description": "How to download and configure the Secure VoIP App on iPhone, Android, or Windows, or the Telephone App on Mac, to make and receive calls via Click2Call.",
     "url": "https://www.click2call.com.au/help/how-to-set-up-softphone.html"
   }
   </script>
@@ -140,107 +140,264 @@
           <li><span class="text-gray-300">/</span></li>
           <li><a href="/help/" class="hover:text-gray-600 transition-colors">Help Centre</a></li>
           <li><span class="text-gray-300">/</span></li>
-          <li><a href="/help/?cat=devices" class="hover:text-gray-600 transition-colors">Phones & Devices</a></li>
+          <li><a href="/help/?cat=devices" class="hover:text-gray-600 transition-colors">Phones &amp; Devices</a></li>
           <li><span class="text-gray-300">/</span></li>
           <li class="text-gray-700 font-medium truncate">Setting Up a Softphone App</li>
         </ol>
       </nav>
       <div class="flex items-center gap-3 mb-3">
-        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones & Devices</span>
-        <span class="text-xs text-gray-400">3 min read</span>
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
+        <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up a Softphone App</h1>
-      <p class="text-gray-600 leading-relaxed">A softphone is an application that turns your computer or mobile device into a phone. This guide shows you how to configure a softphone using your Click2Call SIP credentials.</p>
+      <p class="text-gray-600 leading-relaxed">Click2Call recommends the <strong>Secure VoIP App</strong> for iPhone, Android, and Windows users, and the <strong>Telephone App</strong> for Mac users. Both apps are free to download and work with your Click2Call phone number and password. Select your platform below to get started.</p>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <!-- Steps -->
+
+    <!-- SIP Credentials reference block -->
+    <div class="mb-8 rounded-xl bg-blue-50 border border-blue-200 px-5 py-4">
+      <p class="text-sm font-semibold text-blue-900 mb-2">Your Click2Call login details (all platforms)</p>
+      <p class="text-sm text-blue-800 leading-relaxed mb-3">You will need the following details to log in to any of the apps below. Your phone number and password are available in the <a href="https://portal.click2call.com.au/login.php" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-900">Click2Call portal</a> under your number settings.</p>
+      <div class="overflow-x-auto rounded-lg border border-blue-200">
+        <table class="w-full text-sm">
+          <thead class="bg-blue-100 border-b border-blue-200">
+            <tr>
+              <th class="text-left px-4 py-2.5 font-semibold text-blue-900 w-1/2">Field</th>
+              <th class="text-left px-4 py-2.5 font-semibold text-blue-900 w-1/2">Value</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-blue-100">
+            <tr class="bg-white">
+              <td class="px-4 py-2.5 font-medium text-gray-800">Username / Phone Number</td>
+              <td class="px-4 py-2.5 text-gray-600">Your Click2Call phone number as shown in the portal (e.g. <span class="font-mono">07 4444 1234</span>)</td>
+            </tr>
+            <tr class="bg-blue-50">
+              <td class="px-4 py-2.5 font-medium text-gray-800">Password</td>
+              <td class="px-4 py-2.5 text-gray-600">Your line password (set in the portal, or your account password if not separately configured)</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-2.5 font-medium text-gray-800">SIP Domain (Mac only)</td>
+              <td class="px-4 py-2.5 font-mono text-gray-700">sip.click2call.com.au</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Platform tabs -->
     <div class="mb-12">
-
-      <!-- Intro note -->
-      <div class="mb-8 rounded-xl bg-blue-50 border border-blue-200 px-5 py-4">
-        <p class="text-sm text-blue-800 leading-relaxed"><strong>Recommended softphone:</strong> <a href="https://www.zoiper.com/" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-900">Zoiper</a> is a popular softphone compatible with Click2Call. It is available for Windows, Mac, Linux, Android, and iPhone and is used today by many of our customers. The steps below are written for Zoiper, but the same settings apply to any SIP-compatible softphone.</p>
+      <!-- Tab buttons -->
+      <div class="flex flex-wrap gap-2 mb-6" role="tablist" aria-label="Select your platform">
+        <button role="tab" aria-selected="true" aria-controls="tab-ios" id="btn-ios" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-[#3B9C49] bg-[#3B9C49] text-white transition-colors duration-150">
+          iPhone / iPad
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="tab-android" id="btn-android" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150">
+          Android
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="tab-windows" id="btn-windows" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150">
+          Windows
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="tab-mac" id="btn-mac" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150">
+          Mac
+        </button>
       </div>
 
-      <div class="flex gap-5 mb-8">
-        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-        <div class="flex-1 pt-1">
-          <h3 class="font-bold text-gray-900 mb-2">Download and install Zoiper</h3>
-          <p class="text-gray-600 leading-relaxed">Visit <a href="https://www.zoiper.com/" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">www.zoiper.com</a> and download the version for your operating system or mobile platform. Install the application and open it.</p>
+      <!-- iOS Tab -->
+      <div id="tab-ios" role="tabpanel" aria-labelledby="btn-ios" class="tab-panel">
+        <p class="text-sm text-gray-500 mb-6">App: <strong>Secure VoIP</strong> &mdash; <a href="https://apps.apple.com/nz/app/securevoip/id1479360405" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Download from the App Store</a></p>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Download the Secure VoIP app</h3>
+            <p class="text-gray-600 leading-relaxed">On your iPhone or iPad, open the App Store and search for <strong>Secure VoIP</strong>, or tap the link above to go directly to the download page. Install the app and open it.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="flex gap-5 mb-8">
-        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-        <div class="flex-1 pt-1">
-          <h3 class="font-bold text-gray-900 mb-2">Open Preferences and go to Accounts</h3>
-          <p class="text-gray-600 leading-relaxed">In Zoiper, open <strong>Preferences</strong> (or <strong>Settings</strong> on mobile) and click on <strong>Accounts</strong>. Click <strong>Add</strong> to create a new SIP account.</p>
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Allow permissions</h3>
+            <p class="text-gray-600 leading-relaxed">When the app opens for the first time, you will be prompted to allow access to notifications, photo library, camera, and contacts. Select <strong>Allow</strong> for each of these. Granting all permissions is important to ensure all features of the app work correctly.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="flex gap-5 mb-8">
-        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-        <div class="flex-1 pt-1">
-          <h3 class="font-bold text-gray-900 mb-2">Enter your Click2Call SIP settings</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">Fill in the following fields exactly as shown. Your phone number and password were provided at signup and are also available in the <a href="https://portal.click2call.com.au/login.php" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Click2Call portal</a>.</p>
-          <div class="overflow-x-auto rounded-xl border border-gray-200">
-            <table class="w-full text-sm">
-              <thead class="bg-gray-50 border-b border-gray-200">
-                <tr>
-                  <th class="text-left px-4 py-3 font-semibold text-gray-700 w-1/2">Field</th>
-                  <th class="text-left px-4 py-3 font-semibold text-gray-700 w-1/2">Value</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-100">
-                <tr class="bg-white">
-                  <td class="px-4 py-3 font-medium text-gray-800">Domain</td>
-                  <td class="px-4 py-3 font-mono text-gray-700">sip.click2call.com.au</td>
-                </tr>
-                <tr class="bg-gray-50">
-                  <td class="px-4 py-3 font-medium text-gray-800">Username</td>
-                  <td class="px-4 py-3 text-gray-600">Your Click2Call phone number (e.g. <span class="font-mono">61234567890</span>)</td>
-                </tr>
-                <tr class="bg-white">
-                  <td class="px-4 py-3 font-medium text-gray-800">Password</td>
-                  <td class="px-4 py-3 text-gray-600">Your Click2Call password (assigned at signup)</td>
-                </tr>
-                <tr class="bg-gray-50">
-                  <td class="px-4 py-3 font-medium text-gray-800">Caller ID Name</td>
-                  <td class="px-4 py-3 text-gray-600">Your Click2Call phone number (e.g. <span class="font-mono">61234567890</span>)</td>
-                </tr>
-                <tr class="bg-white">
-                  <td class="px-4 py-3 font-medium text-gray-800">Auth. Username</td>
-                  <td class="px-4 py-3 text-gray-600">Your Click2Call phone number (e.g. <span class="font-mono">61234567890</span>)</td>
-                </tr>
-                <tr class="bg-gray-50">
-                  <td class="px-4 py-3 font-medium text-gray-800">Use Outbound Proxy</td>
-                  <td class="px-4 py-3 text-gray-600">Ticked / Enabled</td>
-                </tr>
-                <tr class="bg-white">
-                  <td class="px-4 py-3 font-medium text-gray-800">Outbound Proxy</td>
-                  <td class="px-4 py-3 font-mono text-gray-700">sip.click2call.com.au</td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Log in with your Click2Call details</h3>
+            <p class="text-gray-600 leading-relaxed">Enter your Click2Call phone number and password (see the credentials table above). Tap <strong>Log In</strong> to continue.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Allow microphone access</h3>
+            <p class="text-gray-600 leading-relaxed">On the main dialler screen, tap the button in the bottom right corner with the three dots. In the pop-up that follows, tap the button with the phone icon on the left. This will place a test call to your voicemail to simulate a phone call. When prompted, select <strong>Allow</strong> for microphone access. All permissions are now granted and the app is ready to use.</p>
           </div>
         </div>
       </div>
 
-      <div class="flex gap-5 mb-8">
-        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-        <div class="flex-1 pt-1">
-          <h3 class="font-bold text-gray-900 mb-2">Save the account</h3>
-          <p class="text-gray-600 leading-relaxed">Click <strong>Save</strong> or <strong>OK</strong> to store the account. Zoiper will immediately attempt to register with the Click2Call platform. A green status indicator or the word <strong>Registered</strong> next to the account name confirms a successful connection.</p>
+      <!-- Android Tab -->
+      <div id="tab-android" role="tabpanel" aria-labelledby="btn-android" class="tab-panel hidden">
+        <p class="text-sm text-gray-500 mb-6">App: <strong>Secure VoIP</strong> &mdash; <a href="https://play.google.com/store/apps/details?id=nz.securevoip" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Download from the Play Store</a></p>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Download the Secure VoIP app</h3>
+            <p class="text-gray-600 leading-relaxed">On your Android device, open the Play Store and search for <strong>Secure VoIP</strong>, or tap the link above to go directly to the download page. Install the app and open it.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Allow notifications</h3>
+            <p class="text-gray-600 leading-relaxed">When the app opens for the first time, select <strong>Allow</strong> for notifications. This is essential — without notification permission, the app will not be able to wake up to alert you of incoming calls.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Log in with your Click2Call details</h3>
+            <p class="text-gray-600 leading-relaxed">Enter your Click2Call phone number and password (see the credentials table above). Tap <strong>Log In</strong> to continue.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Make a test call and grant remaining permissions</h3>
+            <p class="text-gray-600 leading-relaxed">On the main screen, tap the button in the bottom right corner with the three dots. In the pop-up that follows, tap the button with the phone icon on the left to place a test call to your voicemail. Microphone access may be requested at this point depending on your device — select <strong>Allow</strong>. As you navigate to other parts of the app for the first time (such as the Contacts screen), you will be prompted for additional permissions. Always select <strong>Allow</strong> to ensure all features work correctly.</p>
+          </div>
         </div>
       </div>
 
-      <div class="flex gap-5 mb-8">
-        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-        <div class="flex-1 pt-1">
-          <h3 class="font-bold text-gray-900 mb-2">Make a test call</h3>
-          <p class="text-gray-600 leading-relaxed">Dial a number to confirm audio is working in both directions. Adjust your microphone and speaker settings in Zoiper's audio preferences if needed. For further codec or advanced settings, refer to the <a href="/help/how-to-add-desk-phone.html" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP Settings Reference</a> on the desk phone guide, or contact our <a href="https://click2call.com.au/support" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">support team</a>.</p>
+      <!-- Windows Tab -->
+      <div id="tab-windows" role="tabpanel" aria-labelledby="btn-windows" class="tab-panel hidden">
+        <p class="text-sm text-gray-500 mb-6">App: <strong>Secure VoIP Micro Edition</strong> &mdash; <a href="https://www.securevoip.nz/SecureVOIP-3.22.1.0.exe" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Download the Windows installer (.exe)</a></p>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Download and install the app</h3>
+            <p class="text-gray-600 leading-relaxed">Click the download link above to download the installer. Once downloaded, double-click the <span class="font-mono text-sm">.exe</span> file to begin installation. If Windows shows a warning about running an unrecognised app, click <strong>More Info</strong> and then <strong>Run anyway</strong> to continue. Select your installer language and click <strong>OK</strong>, then click <strong>Next</strong> and follow the prompts to complete the installation. Click <strong>Finish</strong> to launch the app.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Log in with your Click2Call details</h3>
+            <p class="text-gray-600 leading-relaxed">When the app opens, you will be prompted to enter your username and password. Enter your Click2Call phone number as the username (e.g. <span class="font-mono">07 4444 1234</span>) and your line password. Do not enter your account number — it must be a phone number. Click <strong>Save</strong> to log in.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Confirm you are online</h3>
+            <p class="text-gray-600 leading-relaxed">If your details are correct, the dialler screen will appear and you will see an <strong>Online</strong> indicator in the bottom left corner of the app. You are now ready to make and receive calls.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Add contacts (optional)</h3>
+            <p class="text-gray-600 leading-relaxed">Switch to the Contacts screen to add contacts to your address book. Right-click in the contacts area to add, edit, or import contacts. To synchronise contacts from your Click2Call account automatically, click the three horizontal lines in the top right corner of the app, select <strong>Settings</strong>, and check the <strong>Directory of Users</strong> setting. Internal contacts on your account will show online/offline and busy status in real time.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Enable multiple calls and transfers (optional)</h3>
+            <p class="text-gray-600 leading-relaxed">To handle attended and blind transfers or take multiple incoming calls simultaneously, go to <strong>Settings</strong> and untick <strong>Single Call Mode</strong>. The app will then be able to manage multiple calls at the same time.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mac Tab -->
+      <div id="tab-mac" role="tabpanel" aria-labelledby="btn-mac" class="tab-panel hidden">
+        <p class="text-sm text-gray-500 mb-6">App: <strong>Telephone</strong> &mdash; <a href="https://apps.apple.com/app/telephone/id406825478" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Download from the Mac App Store</a></p>
+
+        <div class="mb-6 rounded-xl bg-amber-50 border border-amber-200 px-5 py-4">
+          <p class="text-sm text-amber-800 leading-relaxed"><strong>Note:</strong> The Telephone app connects using SIP UDP by default. UDP is unencrypted and can be blocked by some firewalls. We recommend switching to TLS immediately after setup (see Step 4 below) for a more secure and reliable connection.</p>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Download and open the Telephone app</h3>
+            <p class="text-gray-600 leading-relaxed">Download the <strong>Telephone</strong> app from the Mac App Store using the link above. Open the app once installed.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Enter your Click2Call SIP account details</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">When the app opens, you will be presented with an account setup screen. Fill in the following fields:</p>
+            <div class="overflow-x-auto rounded-xl border border-gray-200">
+              <table class="w-full text-sm">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                  <tr>
+                    <th class="text-left px-4 py-3 font-semibold text-gray-700 w-1/2">Field</th>
+                    <th class="text-left px-4 py-3 font-semibold text-gray-700 w-1/2">Value</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 font-medium text-gray-800">Full Name</td>
+                    <td class="px-4 py-3 text-gray-600">Your name</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="px-4 py-3 font-medium text-gray-800">Domain</td>
+                    <td class="px-4 py-3 font-mono text-gray-700">sip.click2call.com.au</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 font-medium text-gray-800">User Name</td>
+                    <td class="px-4 py-3 text-gray-600">Your Click2Call phone number as shown in the portal (e.g. <span class="font-mono">07 4444 1234</span>)</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="px-4 py-3 font-medium text-gray-800">Password</td>
+                    <td class="px-4 py-3 text-gray-600">Your line password (or account password if not separately configured)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Save and confirm the account connects</h3>
+            <p class="text-gray-600 leading-relaxed">Click <strong>Add Account</strong> (or the equivalent save button). The app will attempt to register using SIP UDP. Once connected, you can make calls by entering a number in the text field and pressing Enter or clicking Call.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Switch to TLS for a secure connection (recommended)</h3>
+            <p class="text-gray-600 leading-relaxed">Go to the <strong>Telephone</strong> menu in the top left of your screen and select <strong>Preferences</strong>. Click the <strong>Accounts</strong> tab and untick <strong>Enable this account</strong> to allow editing. Click the <strong>Network</strong> tab and under <strong>SIP Transport</strong>, select <strong>TLS</strong> instead of UDP. Return to the <strong>Account Information</strong> tab and tick <strong>Enable this account</strong> again. The app will reconnect using the encrypted TLS protocol.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
+          <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Adjust audio and call settings (optional)</h3>
+            <p class="text-gray-600 leading-relaxed">In <strong>Preferences</strong>, use the <strong>General</strong> and <strong>Sound</strong> sections to select your preferred microphone and speaker or headset. If you do not want to receive a second call while already on a call, untick <strong>Call waiting</strong> in the General section.</p>
+          </div>
         </div>
       </div>
 
@@ -250,14 +407,13 @@
     <div class="border-t border-gray-200 pt-8 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        
         <a href="/help/how-to-add-extension.html" class="group flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
           <svg class="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           <span class="text-sm font-medium text-gray-700 group-hover:text-[#3B9C49] transition-colors">Adding a New Extension</span>
         </a>
         <a href="/help/how-to-add-desk-phone.html" class="group flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
           <svg class="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          <span class="text-sm font-medium text-gray-700 group-hover:text-[#3B9C49] transition-colors">Adding & Provisioning a Desk Phone</span>
+          <span class="text-sm font-medium text-gray-700 group-hover:text-[#3B9C49] transition-colors">Adding &amp; Provisioning a Desk Phone</span>
         </a>
         <a href="/support.html" class="group flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
           <svg class="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
@@ -272,7 +428,7 @@
       <p class="text-gray-400 text-sm mb-5">Our Australian support team is available to assist you.</p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
         <a href="/support.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-[#3B9C49] text-white text-sm font-semibold hover:bg-[#2E7A3A] transition-colors duration-150">Contact Support</a>
-        <a href="tel:1300884879" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl border-2 border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition-colors duration-150">Call 1300 884 879</a>
+        <a href="tel:1300884879" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl border-2 border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition-colors duration-150">Call <a href="tel:1300884879">1300 884 879</a></a>
       </div>
     </div>
   </div>
@@ -333,13 +489,35 @@
 
 <script>
 (function () {
+  // Services dropdown
   var sW=document.getElementById('services-menu-wrapper'),sB=document.getElementById('services-btn'),sD=document.getElementById('services-dropdown'),sC=document.getElementById('services-chevron');
   function openS(){sD.classList.remove('opacity-0','invisible','translate-y-1');sD.classList.add('opacity-100','visible','translate-y-0');sB.setAttribute('aria-expanded','true');sC.style.transform='rotate(180deg)';}
   function closeS(){sD.classList.add('opacity-0','invisible','translate-y-1');sD.classList.remove('opacity-100','visible','translate-y-0');sB.setAttribute('aria-expanded','false');sC.style.transform='';}
   if(sW){sW.addEventListener('mouseenter',openS);sW.addEventListener('mouseleave',closeS);sB.addEventListener('click',function(){sD.classList.contains('invisible')?openS():closeS();});document.addEventListener('click',function(e){if(!sW.contains(e.target))closeS();});}
-  );document.addEventListener('click',function(e){if(!supW.contains(e.target))closeSup();});}
+  // Mobile menu
   var mB=document.getElementById('mobile-menu-btn'),mM=document.getElementById('mobile-menu'),hI=document.getElementById('hamburger-icon'),cI=document.getElementById('close-icon');
   if(mB){mB.addEventListener('click',function(){var o=!mM.classList.contains('hidden');mM.classList.toggle('hidden');hI.classList.toggle('hidden',!o?false:true);cI.classList.toggle('hidden',!o?true:false);mB.setAttribute('aria-expanded',String(!o));});}
+  // Mobile services sub-menu
+  var msB=document.getElementById('mobile-services-btn'),msL=document.getElementById('mobile-services-list'),msC=document.getElementById('mobile-services-chevron');
+  if(msB){msB.addEventListener('click',function(){var o=!msL.classList.contains('hidden');msL.classList.toggle('hidden');msC.style.transform=o?'':'rotate(180deg)';msB.setAttribute('aria-expanded',String(!o));});}
+  // Platform tabs
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  var tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.getAttribute('aria-controls');
+      tabBtns.forEach(function(b) {
+        b.setAttribute('aria-selected', 'false');
+        b.classList.remove('border-[#3B9C49]', 'bg-[#3B9C49]', 'text-white');
+        b.classList.add('border-gray-200', 'bg-white', 'text-gray-700');
+      });
+      tabPanels.forEach(function(p) { p.classList.add('hidden'); });
+      btn.setAttribute('aria-selected', 'true');
+      btn.classList.add('border-[#3B9C49]', 'bg-[#3B9C49]', 'text-white');
+      btn.classList.remove('border-gray-200', 'bg-white', 'text-gray-700');
+      document.getElementById(target).classList.remove('hidden');
+    });
+  });
 }());
 </script>
 </body>
