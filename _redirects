@@ -1,0 +1,31 @@
+# =============================================
+# CLICK2CALL.COM.AU — CLOUDFLARE REDIRECTS
+# =============================================
+
+# --- Non-www to www (catches all pages) ---
+https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
+
+# --- Old Gold Coast pages (previous site) ---
+/cloud-pbx-gold-coast          /voip-gold-coast.html  301
+/cloud-pbx-gold-coast.html     /voip-gold-coast.html  301
+/voice-calling-gold-coast      /voip-gold-coast.html  301
+/voice-calling-gold-coast.html /voip-gold-coast.html  301
+/phone-numbers-gold-coast.html /voip-gold-coast.html  301
+/ai-voice-tools-gold-coast     /ai-voice-tools.html   301
+/ai-voice-tools-gold-coast.html /ai-voice-tools.html  301
+/sip-trunks-gold-coast.html    /sip-trunks.html       301
+
+# --- Old site page names ---
+/tour                          /about.html            301
+/tour.html                     /about.html            301
+
+# --- Extensionless legacy URLs ---
+/pricing                       /pricing.html          301
+/pricing/                      /pricing.html          301
+/contact                       /contact.html          301
+/support                       /support.html          301
+/blog                          /blog/                 301
+
+# --- Duplicate index URLs → clean directory URLs ---
+/blog/index.html               /blog/                 301
+/help/index.html               /help/                 301
