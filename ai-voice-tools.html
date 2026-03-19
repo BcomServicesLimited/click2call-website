@@ -178,6 +178,26 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.click2call.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Voice Tools for Business Australia",
+      "item": "https://www.click2call.com.au/ai-voice-tools.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-brand-gray-50">
 '''
@@ -206,7 +226,7 @@
           class="h-14 w-auto"
           width="252"
           height="56"
-        />
+         loading="lazy" fetchpriority="high"/>
       </a>
 
       <!-- ── Desktop Navigation ── -->
@@ -788,7 +808,9 @@
             </div>
         </div>
 
-        <!-- SECTION 8: CTA -->
+            <p class="mt-6 text-center text-sm text-gray-500">Have more questions? <a href="/faq.html" class="text-[#3B9C49] font-semibold hover:underline">View all FAQs</a> for answers to common questions about our services.</p>
+
+<!-- SECTION 8: CTA -->
         <div class="bg-brand-charcoal rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
                 <div class="lg:self-center">
@@ -836,7 +858,7 @@
             
             width="180"
             height="36"
-          />
+           loading="lazy" fetchpriority="high"/>
         </a>
         <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
           Australia's AI-enhanced Cloud PBX and VoIP provider. Enterprise-grade reliability for businesses of all sizes.

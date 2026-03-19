@@ -1,37 +1,42 @@
 # Click2Call
 
-> Click2Call is an Australian business communications provider specializing in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We help businesses of all sizes across Australia to modernize their phone systems, reduce costs, and improve customer interactions with intelligent voice tools.
+> Click2Call is an Australian business communications provider specialising in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We help businesses of all sizes across Australia to modernise their phone systems, reduce costs, and improve customer interactions with intelligent voice tools. Operated by Bcom Services Pty Ltd (ABN: 92 636 893 108).
 
 ## Core Services
 
-- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx.html](https://www.click2call.com.au/cloud-pbx.html) - A fully-featured, hardware-free business phone system hosted in the cloud.
-- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools.html](https://www.click2call.com.au/ai-voice-tools.html) - Tools for call transcription, sentiment analysis, and smart routing.
-- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist.html](https://www.click2call.com.au/ai-receptionist.html) - A 24/7 conversational AI to answer and direct calls.
-- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling.html](https://www.click2call.com.au/microsoft-teams-calling.html) - Enables external calls directly from the Microsoft Teams interface via Direct Routing.
-- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks.html](https://www.click2call.com.au/sip-trunks.html) - A modern, flexible replacement for traditional ISDN phone lines.
+- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx.html](https://www.click2call.com.au/cloud-pbx.html) — A fully-featured, hardware-free business phone system hosted in the cloud. Includes auto-attendant, call recording, voicemail-to-email, ring groups, and business hours routing.
+- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools.html](https://www.click2call.com.au/ai-voice-tools.html) — Tools for real-time call transcription, sentiment analysis, AI-powered call summaries, and smart routing.
+- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist.html](https://www.click2call.com.au/ai-receptionist.html) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language.
+- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling.html](https://www.click2call.com.au/microsoft-teams-calling.html) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing.
+- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks.html](https://www.click2call.com.au/sip-trunks.html) — A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems.
 
 ## Key Pages
 
-- **Pricing**: [https://www.click2call.com.au/pricing.html](https://www.click2call.com.au/pricing.html) - Transparent pricing for all services.
-- **VoIP Australia**: [https://www.click2call.com.au/voip-australia.html](https://www.click2call.com.au/voip-australia.html) - Our main national landing page for VoIP services.
-- **VoIP Sydney**: [https://www.click2call.com.au/voip-sydney.html](https://www.click2call.com.au/voip-sydney.html) - VoIP phone systems for Sydney businesses. Local 02 numbers, self-serve setup, no lock-in contract.
-- **VoIP Melbourne**: [https://www.click2call.com.au/voip-melbourne.html](https://www.click2call.com.au/voip-melbourne.html) - VoIP phone systems for Melbourne businesses. Local 03 numbers, self-serve setup, no lock-in contract.
-- **VoIP Brisbane**: [https://www.click2call.com.au/voip-brisbane.html](https://www.click2call.com.au/voip-brisbane.html) - VoIP phone systems for Brisbane businesses. Local 07 numbers, self-serve setup, no lock-in contract.
-- **VoIP Gold Coast**: [https://www.click2call.com.au/voip-gold-coast.html](https://www.click2call.com.au/voip-gold-coast.html) - VoIP phone systems for Gold Coast businesses. Local 07 numbers, self-serve setup, no lock-in contract.
-- **VoIP Perth**: [https://www.click2call.com.au/voip-perth.html](https://www.click2call.com.au/voip-perth.html) - VoIP phone systems for Perth businesses. Local 08 numbers, self-serve setup, no lock-in contract.
-- **VoIP Adelaide**: [https://www.click2call.com.au/voip-adelaide.html](https://www.click2call.com.au/voip-adelaide.html) - VoIP phone systems for Adelaide businesses. Local 08 numbers, self-serve setup, no lock-in contract.
-- **VoIP Canberra**: [https://www.click2call.com.au/voip-canberra.html](https://www.click2call.com.au/voip-canberra.html) - VoIP phone systems for Canberra businesses. Local 02 numbers, self-serve setup, no lock-in contract.
-- **VoIP Newcastle**: [https://www.click2call.com.au/voip-newcastle.html](https://www.click2call.com.au/voip-newcastle.html) - VoIP phone systems for Newcastle businesses. Local 02 numbers, self-serve setup, no lock-in contract.
-- **VoIP Wollongong**: [https://www.click2call.com.au/voip-wollongong.html](https://www.click2call.com.au/voip-wollongong.html) - VoIP phone systems for Wollongong businesses. Local 02 numbers, self-serve setup, no lock-in contract.
-- **VoIP Darwin**: [https://www.click2call.com.au/voip-darwin.html](https://www.click2call.com.au/voip-darwin.html) - VoIP phone systems for Darwin businesses. Local 08 numbers, self-serve setup, no lock-in contract.
-- **VoIP Sunshine Coast**: [https://www.click2call.com.au/voip-sunshine-coast.html](https://www.click2call.com.au/voip-sunshine-coast.html) - VoIP phone systems for Sunshine Coast businesses. Local 07 numbers, self-serve setup, no lock-in contract.
-- **VoIP Hobart**: [https://www.click2call.com.au/voip-hobart.html](https://www.click2call.com.au/voip-hobart.html) - VoIP phone systems for Hobart businesses. Local 03 numbers, self-serve setup, no lock-in contract.
-- **FAQ**: [https://www.click2call.com.au/faq.html](https://www.click2call.com.au/faq.html) - A comprehensive list of frequently asked questions.
-- **About**: [https://www.click2call.com.au/about.html](https://www.click2call.com.au/about.html) - About Click2Call, our team, and our mission.
-- **Compare**: [https://www.click2call.com.au/compare.html](https://www.click2call.com.au/compare.html) - How Click2Call compares to traditional phone systems and other providers.
-- **Contact**: [https://www.click2call.com.au/contact.html](https://www.click2call.com.au/contact.html) - Contact Click2Call for sales enquiries and support.
-- **Support**: [https://www.click2call.com.au/support.html](https://www.click2call.com.au/support.html) - Technical support resources and contact details.
-- **Case Studies**: [https://www.click2call.com.au/case-studies.html](https://www.click2call.com.au/case-studies.html) - Real-world examples of businesses using Click2Call.
+- **Pricing**: [https://www.click2call.com.au/pricing.html](https://www.click2call.com.au/pricing.html) — Transparent, pay-as-you-go pricing for all services. No lock-in contracts.
+- **Compare**: [https://www.click2call.com.au/compare.html](https://www.click2call.com.au/compare.html) — Side-by-side comparison of Click2Call versus traditional phone systems and other providers.
+- **FAQ**: [https://www.click2call.com.au/faq.html](https://www.click2call.com.au/faq.html) — Comprehensive answers to frequently asked questions about our services.
+- **Case Studies**: [https://www.click2call.com.au/case-studies.html](https://www.click2call.com.au/case-studies.html) — Real-world examples of Australian businesses using Click2Call.
+- **About**: [https://www.click2call.com.au/about.html](https://www.click2call.com.au/about.html) — About Click2Call, our team, and our mission.
+- **Contact**: [https://www.click2call.com.au/contact.html](https://www.click2call.com.au/contact.html) — Contact Click2Call for sales enquiries and support.
+- **Support**: [https://www.click2call.com.au/support.html](https://www.click2call.com.au/support.html) — Technical support resources and contact details.
+
+## City & Regional Pages
+
+Click2Call provides VoIP phone systems and Cloud PBX solutions to businesses across Australia, including:
+
+- **VoIP Australia (National)**: [https://www.click2call.com.au/voip-australia.html](https://www.click2call.com.au/voip-australia.html)
+- **VoIP Sydney**: [https://www.click2call.com.au/voip-sydney.html](https://www.click2call.com.au/voip-sydney.html) — Local 02 numbers. Nearby: Newcastle, Wollongong.
+- **VoIP Melbourne**: [https://www.click2call.com.au/voip-melbourne.html](https://www.click2call.com.au/voip-melbourne.html) — Local 03 numbers.
+- **VoIP Brisbane**: [https://www.click2call.com.au/voip-brisbane.html](https://www.click2call.com.au/voip-brisbane.html) — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
+- **VoIP Gold Coast**: [https://www.click2call.com.au/voip-gold-coast.html](https://www.click2call.com.au/voip-gold-coast.html) — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
+- **VoIP Sunshine Coast**: [https://www.click2call.com.au/voip-sunshine-coast.html](https://www.click2call.com.au/voip-sunshine-coast.html) — Local 07 numbers. Nearby: Brisbane, Gold Coast.
+- **VoIP Perth**: [https://www.click2call.com.au/voip-perth.html](https://www.click2call.com.au/voip-perth.html) — Local 08 numbers.
+- **VoIP Adelaide**: [https://www.click2call.com.au/voip-adelaide.html](https://www.click2call.com.au/voip-adelaide.html) — Local 08 numbers.
+- **VoIP Canberra**: [https://www.click2call.com.au/voip-canberra.html](https://www.click2call.com.au/voip-canberra.html) — Local 02 numbers.
+- **VoIP Newcastle**: [https://www.click2call.com.au/voip-newcastle.html](https://www.click2call.com.au/voip-newcastle.html) — Local 02 numbers. Nearby: Sydney, Wollongong.
+- **VoIP Wollongong**: [https://www.click2call.com.au/voip-wollongong.html](https://www.click2call.com.au/voip-wollongong.html) — Local 02 numbers. Nearby: Sydney, Newcastle.
+- **VoIP Darwin**: [https://www.click2call.com.au/voip-darwin.html](https://www.click2call.com.au/voip-darwin.html) — Local 08 numbers.
+- **VoIP Hobart**: [https://www.click2call.com.au/voip-hobart.html](https://www.click2call.com.au/voip-hobart.html) — Local 03 numbers.
 
 ## About the Business
 
@@ -39,68 +44,75 @@
 - **Trading Name**: Click2Call
 - **ABN**: 92 636 893 108
 - **Phone**: 1300 884 879
-- **Email**: click2call@bcomservices.com
+- **Email**: support@click2call.com.au
 - **Coverage**: Australia-wide
+- **Customer Portal**: [https://portal.click2call.com.au](https://portal.click2call.com.au)
 
-## Pricing (ex GST, AUD)
+## Pricing (ex GST, AUD) — Pay As You Go
 
-Cloud PBX Plans — per plan/month, includes lines, channels & bundled minutes:
-- DIY Core: $23.91/month
-  2 lines · 2 channels · 500 bundled min/month (AUS & NZ calls)
-- Business: $47.83/month
-  5 lines · 5 channels · 1,000 bundled min/month (AUS & NZ calls)
-- Managed: $95.65/month
-  10 lines · 10 channels · 2,000 bundled min/month (AUS & NZ calls)
-- 30-day free trial · no lock-in contracts
-- Activation: up to 24 hours after signup
-- Additional lines/channels available on request
-- SIP Trunks: $7.00/channel/month
-- Direct Numbers (DDI): $8.00/number/month
-- Toll Free: $18.00/month
-- Outbound call rates: from $0.12/min
-- Full details: https://www.click2call.com.au/pricing.html
+Click2Call uses simple, transparent pay-as-you-go pricing with no lock-in contracts:
+
+- **Cloud PBX Landline**: $10.00/month per line
+- **Direct Dial Number (DDI)**: $5.00/month per number
+- **Microsoft Teams Line**: $10.00/month per line
+- **PBX Extensions**: Free
+- **Channels**: 2 included; additional channels $3.00/month each
+- **Outbound call rates**: from $0.10/min (Australia & New Zealand fixed)
+- **30-day free trial** — no credit card required
+- **Activation**: up to 24 hours after signup
+- **SIP Trunks**: available on request
+- Full details: [https://www.click2call.com.au/pricing.html](https://www.click2call.com.au/pricing.html)
 
 ## Customer Access
 
-- **Existing Customer Login (Portal)**: [https://portal.click2call.com.au/login.php](https://portal.click2call.com.au/login.php) — Log in to manage your phone system, users, call routing, and settings.
-- **New Customer Signup Form**: [https://portal.click2call.com.au/join/](https://portal.click2call.com.au/join/) — Complete the signup form to activate a new phone system. Note: new phone systems require a completed signup form and take up to 24 hours to activate after submission.
-
-## Contact
-
-- **Sales & Enquiries**: 1300 884 879 or click2call@bcomservices.com
-- **Customer Portal**: [https://portal.click2call.com.au](https://portal.click2call.com.au)
+- **New Customer Signup**: [https://portal.click2call.com.au/join/](https://portal.click2call.com.au/join/) — Start a free trial. Phone systems activate within 24 hours of signup.
+- **Existing Customer Login**: [https://portal.click2call.com.au/login.php](https://portal.click2call.com.au/login.php) — Manage your phone system, users, call routing, and settings.
 
 ## Help Centre
 
-The Click2Call Help Centre provides step-by-step guides for managing your Cloud PBX phone system via the customer portal at portal.click2call.com.au.
+The Click2Call Help Centre provides step-by-step guides for managing your Cloud PBX phone system via the customer portal.
 
-- **Help Centre Index**: [https://www.click2call.com.au/help/](https://www.click2call.com.au/help/) - Browse all how-to guides by category.
+- **Help Centre Index**: [https://www.click2call.com.au/help/index.html](https://www.click2call.com.au/help/index.html) — Browse all how-to guides by category.
 
 ### Getting Started
-- **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account.html](https://www.click2call.com.au/help/how-to-activate-account.html) - What to expect after signing up and how to access your portal for the first time.
-- **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit.html](https://www.click2call.com.au/help/how-to-add-account-credit.html) - How to top up your account balance. Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
+- **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account.html](https://www.click2call.com.au/help/how-to-activate-account.html)
+- **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit.html](https://www.click2call.com.au/help/how-to-add-account-credit.html) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 
 ### Phone Numbers
-- **Adding a Phone Number**: [https://www.click2call.com.au/help/how-to-add-phone-number.html](https://www.click2call.com.au/help/how-to-add-phone-number.html) - How to add a new Australian Direct Dial Number (DDI) to your account.
-- **Porting an Existing Number**: [https://www.click2call.com.au/help/how-to-port-number.html](https://www.click2call.com.au/help/how-to-port-number.html) - How to transfer your existing phone number to the Click2Call network.
+- **Adding a Phone Number**: [https://www.click2call.com.au/help/how-to-add-phone-number.html](https://www.click2call.com.au/help/how-to-add-phone-number.html)
+- **Porting an Existing Number**: [https://www.click2call.com.au/help/how-to-port-number.html](https://www.click2call.com.au/help/how-to-port-number.html)
 
 ### Extensions & Users
-- **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension.html](https://www.click2call.com.au/help/how-to-add-extension.html) - How to create a new extension for a team member.
-- **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user.html](https://www.click2call.com.au/help/how-to-add-user.html) - How to create a new user account and send them their login credentials.
+- **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension.html](https://www.click2call.com.au/help/how-to-add-extension.html)
+- **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user.html](https://www.click2call.com.au/help/how-to-add-user.html)
 
 ### Phones & Devices
-- **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone.html](https://www.click2call.com.au/help/how-to-add-desk-phone.html) - How to add and provision a physical desk phone.
-- **Setting Up a Softphone**: [https://www.click2call.com.au/help/how-to-set-up-softphone.html](https://www.click2call.com.au/help/how-to-set-up-softphone.html) - How to configure a softphone app on a computer or mobile device.
+- **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone.html](https://www.click2call.com.au/help/how-to-add-desk-phone.html)
+- **Setting Up a Softphone**: [https://www.click2call.com.au/help/how-to-set-up-softphone.html](https://www.click2call.com.au/help/how-to-set-up-softphone.html)
 
 ### Call Flows
-- **Setting Up a Call Flow**: [https://www.click2call.com.au/help/how-to-set-up-call-flow.html](https://www.click2call.com.au/help/how-to-set-up-call-flow.html) - How to create an IVR / auto-attendant to route inbound calls.
-- **Creating a Ring Group**: [https://www.click2call.com.au/help/how-to-create-ring-group.html](https://www.click2call.com.au/help/how-to-create-ring-group.html) - How to set up a group of extensions that ring simultaneously.
-- **Configuring Business Hours**: [https://www.click2call.com.au/help/how-to-configure-business-hours.html](https://www.click2call.com.au/help/how-to-configure-business-hours.html) - How to set open and closed hours for call routing.
-- **Setting Up Voicemail**: [https://www.click2call.com.au/help/how-to-set-up-voicemail.html](https://www.click2call.com.au/help/how-to-set-up-voicemail.html) - How to configure voicemail-to-email delivery.
-- **Viewing Call Recordings**: [https://www.click2call.com.au/help/how-to-view-call-recordings.html](https://www.click2call.com.au/help/how-to-view-call-recordings.html) - How to access and download recorded calls.
+- **Setting Up a Call Flow**: [https://www.click2call.com.au/help/how-to-set-up-call-flow.html](https://www.click2call.com.au/help/how-to-set-up-call-flow.html)
+- **Creating a Ring Group**: [https://www.click2call.com.au/help/how-to-create-ring-group.html](https://www.click2call.com.au/help/how-to-create-ring-group.html)
+- **Configuring Business Hours**: [https://www.click2call.com.au/help/how-to-configure-business-hours.html](https://www.click2call.com.au/help/how-to-configure-business-hours.html)
+- **Setting Up Voicemail**: [https://www.click2call.com.au/help/how-to-set-up-voicemail.html](https://www.click2call.com.au/help/how-to-set-up-voicemail.html)
+- **Viewing Call Recordings**: [https://www.click2call.com.au/help/how-to-view-call-recordings.html](https://www.click2call.com.au/help/how-to-view-call-recordings.html)
 
-### Billing
-- **Adding Channels**: [https://www.click2call.com.au/help/how-to-add-channels.html](https://www.click2call.com.au/help/how-to-add-channels.html) - How to add additional concurrent call channels to your account.
+### Billing & Channels
+- **Adding Channels**: [https://www.click2call.com.au/help/how-to-add-channels.html](https://www.click2call.com.au/help/how-to-add-channels.html)
 
 ### AI Features
-- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html) - How to configure the AI Receptionist to answer and direct calls automatically.
+- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html)
+
+## Blog
+
+The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
+
+- **Blog Index**: [https://www.click2call.com.au/blog/index.html](https://www.click2call.com.au/blog/index.html)
+- What Is a SIP Trunk?: [https://www.click2call.com.au/blog/what-is-a-sip-trunk.html](https://www.click2call.com.au/blog/what-is-a-sip-trunk.html)
+- VoIP for Small Business: [https://www.click2call.com.au/blog/voip-for-small-business.html](https://www.click2call.com.au/blog/voip-for-small-business.html)
+- Cloud PBX vs Traditional Phone Systems: [https://www.click2call.com.au/blog/cloud-pbx-vs-traditional.html](https://www.click2call.com.au/blog/cloud-pbx-vs-traditional.html)
+- Microsoft Teams vs Cloud PBX: [https://www.click2call.com.au/blog/teams-vs-cloud-pbx.html](https://www.click2call.com.au/blog/teams-vs-cloud-pbx.html)
+- AI in Business Phones: [https://www.click2call.com.au/blog/ai-in-business-phones.html](https://www.click2call.com.au/blog/ai-in-business-phones.html)
+- Business Phone System Cost Guide: [https://www.click2call.com.au/blog/business-phone-system-cost.html](https://www.click2call.com.au/blog/business-phone-system-cost.html)
+- How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications.html](https://www.click2call.com.au/blog/how-to-secure-business-communications.html)
+- 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers.html](https://www.click2call.com.au/blog/1300-number-providers.html)

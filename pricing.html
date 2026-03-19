@@ -19,7 +19,7 @@ To fully resolve this after deployment:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoIP & Cloud PBX Pricing Australia | Click2Call</title>
-    <meta name="description" content="Simple prepaid VoIP pricing for Australian businesses. Add credit and pay only for what you use — no bundled plans, no lock-in contracts, no surprise bills. Phone numbers from $5/month ex GST. Call rates from $0.10/min.">
+    <meta name="description" content="Explore simple, transparent pricing for our Australian business phone systems. See Click2Call's affordable prepaid VoIP and Cloud PBX rates with no hidden fees.">
     <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
     <link rel="canonical" href="https://www.click2call.com.au/pricing.html">
     <link rel="stylesheet" href="/assets/css/tailwind.min.css">
@@ -179,6 +179,26 @@ To fully resolve this after deployment:
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.click2call.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "VoIP & Cloud PBX Pricing Australia",
+      "item": "https://www.click2call.com.au/pricing.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-brand-gray-50">
 <!--
@@ -206,7 +226,7 @@ To fully resolve this after deployment:
           class="h-14 w-auto"
           width="252"
           height="56"
-        />
+         loading="lazy" fetchpriority="high"/>
       </a>
 
       <!-- ── Desktop Navigation ── -->
@@ -3983,6 +4003,11 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
 
+        <!-- Compare Link -->
+        <div class="max-w-3xl mx-auto pb-4 text-center">
+          <p class="text-gray-600">Not sure how we stack up? <a href="/compare.html" class="text-[#3B9C49] font-semibold hover:underline">See how we compare to other providers</a> for a side-by-side breakdown.</p>
+        </div>
+
         <!-- SECTION 8: FAQ -->
         <div class="max-w-3xl mx-auto py-16">
             <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Pricing FAQs</h2>
@@ -4145,7 +4170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             width="180"
             height="36"
-          />
+           loading="lazy" fetchpriority="high"/>
         </a>
         <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
           Australia's AI-enhanced Cloud PBX and VoIP provider. Enterprise-grade reliability for businesses of all sizes.

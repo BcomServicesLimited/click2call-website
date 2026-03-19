@@ -101,10 +101,21 @@ For full details, see the [official pricing page](https://www.click2call.com.au/
 
 ## Local Service Pages
 
-Click2Call provides dedicated local landing pages for major Australian cities, with city-specific information, local area codes, and relevant local scenarios.
+Click2Call provides dedicated local landing pages for major Australian cities, with city-specific information, local area codes, and relevant local scenarios. Pages for nearby cities are cross-linked for improved navigation.
 
-- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney.html — VoIP phone systems for Sydney businesses. Local 02 numbers, self-serve setup, no lock-in contract. Covers Sydney CBD, Parramatta, Chatswood, North Sydney, and all of NSW.
-- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne.html — VoIP phone systems for Melbourne businesses. Local 03 numbers, self-serve setup, no lock-in contract. Covers Melbourne CBD, Fitzroy, St Kilda, Richmond, and all of Victoria.
+- **VoIP Australia (National)**: https://www.click2call.com.au/voip-australia.html — National overview of VoIP services for Australian businesses.
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney.html — Local 02 numbers. Nearby: Newcastle, Wollongong.
+- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne.html — Local 03 numbers.
+- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane.html — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
+- **VoIP Gold Coast**: https://www.click2call.com.au/voip-gold-coast.html — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
+- **VoIP Sunshine Coast**: https://www.click2call.com.au/voip-sunshine-coast.html — Local 07 numbers. Nearby: Brisbane, Gold Coast.
+- **VoIP Perth**: https://www.click2call.com.au/voip-perth.html — Local 08 numbers.
+- **VoIP Adelaide**: https://www.click2call.com.au/voip-adelaide.html — Local 08 numbers.
+- **VoIP Canberra**: https://www.click2call.com.au/voip-canberra.html — Local 02 numbers.
+- **VoIP Newcastle**: https://www.click2call.com.au/voip-newcastle.html — Local 02 numbers. Nearby: Sydney, Wollongong.
+- **VoIP Wollongong**: https://www.click2call.com.au/voip-wollongong.html — Local 02 numbers. Nearby: Sydney, Newcastle.
+- **VoIP Darwin**: https://www.click2call.com.au/voip-darwin.html — Local 08 numbers.
+- **VoIP Hobart**: https://www.click2call.com.au/voip-hobart.html — Local 03 numbers.
 
 ## How Click2Call Compares to Alternatives
 
@@ -143,7 +154,7 @@ Click2Call provides two distinct access points depending on whether a customer i
 ## Contact Information
 
 - **Phone**: 1300 884 879
-- **Email**: click2call@bcomservices.com
+- **Email**: support@click2call.com.au
 - **Website**: https://www.click2call.com.au
 - **Customer Portal**: https://portal.click2call.com.au
 - **Legal Name**: Bcom Services Pty Ltd
@@ -192,3 +203,34 @@ The Click2Call Help Centre is a dedicated knowledge base providing step-by-step 
 ### AI Features
 
 - **Setting Up the AI Receptionist**: https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html — Configure the 24/7 AI Receptionist to answer, greet, and route inbound calls automatically.
+
+## Blog
+
+The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
+
+- **Blog Index**: https://www.click2call.com.au/blog/index.html
+- What Is a SIP Trunk?: https://www.click2call.com.au/blog/what-is-a-sip-trunk.html
+- VoIP for Small Business: https://www.click2call.com.au/blog/voip-for-small-business.html
+- Cloud PBX vs Traditional Phone Systems: https://www.click2call.com.au/blog/cloud-pbx-vs-traditional.html
+- Microsoft Teams vs Cloud PBX: https://www.click2call.com.au/blog/teams-vs-cloud-pbx.html
+- AI in Business Phones: https://www.click2call.com.au/blog/ai-in-business-phones.html
+- Business Phone System Cost Guide: https://www.click2call.com.au/blog/business-phone-system-cost.html
+- How to Secure Business Communications: https://www.click2call.com.au/blog/how-to-secure-business-communications.html
+- 1300 Number Providers Australia: https://www.click2call.com.au/blog/1300-number-providers.html
+
+## Recent Site Updates (March 2026)
+
+- Migrated from Apache hosting to Cloudflare Pages; `.htaccess` replaced with `_redirects` file.
+- All meta descriptions updated to 70–160 characters across all 53 pages.
+- Open Graph and Twitter Card tags added to all pages.
+- BreadcrumbList schema added to all non-homepage pages.
+- LocalBusiness schema present on all 12 city pages.
+- Nearby areas cross-linking added to 6 city pages (Sydney, Brisbane, Gold Coast, Sunshine Coast, Newcastle, Wollongong).
+- `faq.html` links added to all 6 service pages.
+- `compare.html` links added to pricing and cloud-pbx pages.
+- `case-studies.html` links added to homepage and about page.
+- `loading="lazy"` added to all 186 images across all pages.
+- `fetchpriority="high"` added to above-fold images.
+- Hero background images preloaded on all 12 city pages.
+- `robots.txt` updated with comprehensive AI crawler directives.
+- `sitemap.xml` updated with two new help pages and refreshed `lastmod` dates.

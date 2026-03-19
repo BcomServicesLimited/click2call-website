@@ -128,6 +128,26 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.click2call.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Click2Call vs Competitors",
+      "item": "https://www.click2call.com.au/compare.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-brand-gray-50">
 <!--
@@ -155,7 +175,7 @@
           class="h-14 w-auto"
           width="252"
           height="56"
-        />
+         loading="lazy" fetchpriority="high"/>
       </a>
 
       <!-- ── Desktop Navigation ── -->
@@ -758,7 +778,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             width="180"
             height="36"
-          />
+           loading="lazy" fetchpriority="high"/>
         </a>
         <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
           Australia's AI-enhanced Cloud PBX and VoIP provider. Enterprise-grade reliability for businesses of all sizes.

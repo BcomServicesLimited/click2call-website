@@ -46,6 +46,26 @@
       gtag('js', new Date());
       gtag('config', 'G-ST0JCEZ54X');
     </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.click2call.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Terms and Conditions",
+      "item": "https://www.click2call.com.au/terms.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900 antialiased">
 <!--
@@ -73,7 +93,7 @@
           class="h-14 w-auto"
           width="252"
           height="56"
-        />
+         loading="lazy" fetchpriority="high"/>
       </a>
 
       <!-- ── Desktop Navigation ── -->
@@ -386,7 +406,7 @@
     <!-- Hero -->
     <div class="relative bg-gray-900 py-24 sm:py-32">
         <div class="absolute inset-0">
-            <img src="./assets/images/cloud_pbx_hero.webp" alt="Abstract background image" class="h-full w-full object-cover object-center opacity-20">
+            <img src="./assets/images/cloud_pbx_hero.webp" alt="Abstract background image" class="h-full w-full object-cover object-center opacity-20" loading="lazy">
         </div>
         <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
@@ -659,7 +679,7 @@
             
             width="180"
             height="36"
-          />
+           loading="lazy" fetchpriority="high"/>
         </a>
         <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
           Australia's AI-enhanced Cloud PBX and VoIP provider. Enterprise-grade reliability for businesses of all sizes.

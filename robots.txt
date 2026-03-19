@@ -1,38 +1,91 @@
 # robots.txt for click2call.com.au
 # Click2Call - Australian Cloud PBX and AI Voice Provider
 # Trading as Bcom Services Pty Ltd (ABN: 92 636 893 108)
+# Last updated: 2026-03-20
 
-# Standard web crawlers
+# ── Standard web crawlers ──────────────────────────────────────
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /assets/css/
+Disallow: /assets/js/
 
-# OpenAI / ChatGPT
+# ── Google ─────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Google AI Overviews / Gemini / SGE
+User-agent: Google-Extended
+Allow: /
+
+# ── Microsoft Bing / Copilot ───────────────────────────────────
+User-agent: Bingbot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+# ── OpenAI / ChatGPT ──────────────────────────────────────────
 User-agent: GPTBot
 Allow: /
 
-# Anthropic / Claude
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic / Claude ────────────────────────────────────────
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-# Perplexity AI
+User-agent: Claude-Web
+Allow: /
+
+# ── Perplexity AI ─────────────────────────────────────────────
 User-agent: PerplexityBot
 Allow: /
 
-# Google AI (Gemini, AI Overviews, SGE)
-User-agent: Google-Extended
+# ── Meta AI ───────────────────────────────────────────────────
+User-agent: FacebookBot
 Allow: /
 
-# Microsoft Bing / Copilot
-User-agent: Bingbot
+User-agent: meta-externalagent
 Allow: /
 
-# Cohere AI
+# ── Apple ─────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Cohere AI ─────────────────────────────────────────────────
 User-agent: cohere-ai
 Allow: /
 
+# ── Amazon / Alexa ────────────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+# ── Common AI training crawlers (block) ───────────────────────
+User-agent: CCBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ── Sitemap ───────────────────────────────────────────────────
 Sitemap: https://www.click2call.com.au/sitemap.xml
