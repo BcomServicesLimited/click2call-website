@@ -2,6 +2,10 @@
 # CLICK2CALL.COM.AU — CLOUDFLARE REDIRECTS
 # =============================================
 
+# --- Passthrough: serve .html files directly (prevents Pretty URLs loop) ---
+/pricing.html  /pricing.html  200
+/support.html  /support.html  200
+
 # --- Non-www to www (catches all pages) ---
 https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 
