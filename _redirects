@@ -20,13 +20,16 @@ https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 /tour.html                     /about.html            301
 /tour/                         /about.html            301
 
-# --- Extensionless and trailing slash legacy URLs ---
+# --- Extensionless legacy URLs ONLY ---
+# Note: no .html versions listed - those are real pages
 /pricing                       /pricing.html          301
-/pricing/                      /pricing.html          301
 /contact                       /contact.html          301
 /support                       /support.html          301
-/support/                      /support.html          301
 /blog                          /blog/                 301
+
+# --- Trailing slash variants ---
+/pricing/                      /pricing.html          301
+/support/                      /support.html          301
 
 # --- Duplicate index URLs → clean directory URLs ---
 /blog/index.html               /blog/                 301
