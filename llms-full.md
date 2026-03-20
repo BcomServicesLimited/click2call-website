@@ -91,7 +91,7 @@ Click2Call uses simple, transparent pay-as-you-go pricing with no bundled plans 
 - No setup fees on standard accounts
 - 30-day free trial on Cloud PBX (no credit card required)
 
-For full details, see the [official pricing page](https://www.click2call.com.au/pricing.html).
+For full details, see the [official pricing page](https://www.click2call.com.au/pricing).
 
 ## Who Click2Call Serves
 
@@ -103,19 +103,19 @@ For full details, see the [official pricing page](https://www.click2call.com.au/
 
 Click2Call provides dedicated local landing pages for major Australian cities, with city-specific information, local area codes, and relevant local scenarios. Pages for nearby cities are cross-linked for improved navigation.
 
-- **VoIP Australia (National)**: https://www.click2call.com.au/voip-australia.html — National overview of VoIP services for Australian businesses.
-- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney.html — Local 02 numbers. Nearby: Newcastle, Wollongong.
-- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne.html — Local 03 numbers.
-- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane.html — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
-- **VoIP Gold Coast**: https://www.click2call.com.au/voip-gold-coast.html — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
-- **VoIP Sunshine Coast**: https://www.click2call.com.au/voip-sunshine-coast.html — Local 07 numbers. Nearby: Brisbane, Gold Coast.
-- **VoIP Perth**: https://www.click2call.com.au/voip-perth.html — Local 08 numbers.
-- **VoIP Adelaide**: https://www.click2call.com.au/voip-adelaide.html — Local 08 numbers.
-- **VoIP Canberra**: https://www.click2call.com.au/voip-canberra.html — Local 02 numbers.
-- **VoIP Newcastle**: https://www.click2call.com.au/voip-newcastle.html — Local 02 numbers. Nearby: Sydney, Wollongong.
-- **VoIP Wollongong**: https://www.click2call.com.au/voip-wollongong.html — Local 02 numbers. Nearby: Sydney, Newcastle.
-- **VoIP Darwin**: https://www.click2call.com.au/voip-darwin.html — Local 08 numbers.
-- **VoIP Hobart**: https://www.click2call.com.au/voip-hobart.html — Local 03 numbers.
+- **VoIP Australia (National)**: https://www.click2call.com.au/voip-australia — National overview of VoIP services for Australian businesses.
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers. Nearby: Newcastle, Wollongong.
+- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers.
+- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
+- **VoIP Gold Coast**: https://www.click2call.com.au/voip-gold-coast — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
+- **VoIP Sunshine Coast**: https://www.click2call.com.au/voip-sunshine-coast — Local 07 numbers. Nearby: Brisbane, Gold Coast.
+- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers.
+- **VoIP Adelaide**: https://www.click2call.com.au/voip-adelaide — Local 08 numbers.
+- **VoIP Canberra**: https://www.click2call.com.au/voip-canberra — Local 02 numbers.
+- **VoIP Newcastle**: https://www.click2call.com.au/voip-newcastle — Local 02 numbers. Nearby: Sydney, Wollongong.
+- **VoIP Wollongong**: https://www.click2call.com.au/voip-wollongong — Local 02 numbers. Nearby: Sydney, Newcastle.
+- **VoIP Darwin**: https://www.click2call.com.au/voip-darwin — Local 08 numbers.
+- **VoIP Hobart**: https://www.click2call.com.au/voip-hobart — Local 03 numbers.
 
 ## How Click2Call Compares to Alternatives
 

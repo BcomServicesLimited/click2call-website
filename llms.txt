@@ -4,39 +4,39 @@
 
 ## Core Services
 
-- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx.html](https://www.click2call.com.au/cloud-pbx.html) — A fully-featured, hardware-free business phone system hosted in the cloud. Includes auto-attendant, call recording, voicemail-to-email, ring groups, and business hours routing.
-- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools.html](https://www.click2call.com.au/ai-voice-tools.html) — Tools for real-time call transcription, sentiment analysis, AI-powered call summaries, and smart routing.
-- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist.html](https://www.click2call.com.au/ai-receptionist.html) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language.
-- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling.html](https://www.click2call.com.au/microsoft-teams-calling.html) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing.
-- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks.html](https://www.click2call.com.au/sip-trunks.html) — A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems.
+- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx](https://www.click2call.com.au/cloud-pbx) — A fully-featured, hardware-free business phone system hosted in the cloud. Includes auto-attendant, call recording, voicemail-to-email, ring groups, and business hours routing.
+- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools](https://www.click2call.com.au/ai-voice-tools) — Tools for real-time call transcription, sentiment analysis, AI-powered call summaries, and smart routing.
+- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist](https://www.click2call.com.au/ai-receptionist) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language.
+- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling](https://www.click2call.com.au/microsoft-teams-calling) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing.
+- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks](https://www.click2call.com.au/sip-trunks) — A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems.
 
 ## Key Pages
 
-- **Pricing**: [https://www.click2call.com.au/pricing.html](https://www.click2call.com.au/pricing.html) — Transparent, pay-as-you-go pricing for all services. No lock-in contracts.
-- **Compare**: [https://www.click2call.com.au/compare.html](https://www.click2call.com.au/compare.html) — Side-by-side comparison of Click2Call versus traditional phone systems and other providers.
-- **FAQ**: [https://www.click2call.com.au/faq.html](https://www.click2call.com.au/faq.html) — Comprehensive answers to frequently asked questions about our services.
-- **Case Studies**: [https://www.click2call.com.au/case-studies.html](https://www.click2call.com.au/case-studies.html) — Real-world examples of Australian businesses using Click2Call.
-- **About**: [https://www.click2call.com.au/about.html](https://www.click2call.com.au/about.html) — About Click2Call, our team, and our mission.
-- **Contact**: [https://www.click2call.com.au/contact.html](https://www.click2call.com.au/contact.html) — Contact Click2Call for sales enquiries and support.
-- **Support**: [https://www.click2call.com.au/support.html](https://www.click2call.com.au/support.html) — Technical support resources and contact details.
+- **Pricing**: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing) — Transparent, pay-as-you-go pricing for all services. No lock-in contracts.
+- **Compare**: [https://www.click2call.com.au/compare](https://www.click2call.com.au/compare) — Side-by-side comparison of Click2Call versus traditional phone systems and other providers.
+- **FAQ**: [https://www.click2call.com.au/faq](https://www.click2call.com.au/faq) — Comprehensive answers to frequently asked questions about our services.
+- **Case Studies**: [https://www.click2call.com.au/case-studies](https://www.click2call.com.au/case-studies) — Real-world examples of Australian businesses using Click2Call.
+- **About**: [https://www.click2call.com.au/about](https://www.click2call.com.au/about) — About Click2Call, our team, and our mission.
+- **Contact**: [https://www.click2call.com.au/contact](https://www.click2call.com.au/contact) — Contact Click2Call for sales enquiries and support.
+- **Support**: [https://www.click2call.com.au/support](https://www.click2call.com.au/support) — Technical support resources and contact details.
 
 ## City & Regional Pages
 
 Click2Call provides VoIP phone systems and Cloud PBX solutions to businesses across Australia, including:
 
-- **VoIP Australia (National)**: [https://www.click2call.com.au/voip-australia.html](https://www.click2call.com.au/voip-australia.html)
-- **VoIP Sydney**: [https://www.click2call.com.au/voip-sydney.html](https://www.click2call.com.au/voip-sydney.html) — Local 02 numbers. Nearby: Newcastle, Wollongong.
-- **VoIP Melbourne**: [https://www.click2call.com.au/voip-melbourne.html](https://www.click2call.com.au/voip-melbourne.html) — Local 03 numbers.
-- **VoIP Brisbane**: [https://www.click2call.com.au/voip-brisbane.html](https://www.click2call.com.au/voip-brisbane.html) — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
-- **VoIP Gold Coast**: [https://www.click2call.com.au/voip-gold-coast.html](https://www.click2call.com.au/voip-gold-coast.html) — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
-- **VoIP Sunshine Coast**: [https://www.click2call.com.au/voip-sunshine-coast.html](https://www.click2call.com.au/voip-sunshine-coast.html) — Local 07 numbers. Nearby: Brisbane, Gold Coast.
-- **VoIP Perth**: [https://www.click2call.com.au/voip-perth.html](https://www.click2call.com.au/voip-perth.html) — Local 08 numbers.
-- **VoIP Adelaide**: [https://www.click2call.com.au/voip-adelaide.html](https://www.click2call.com.au/voip-adelaide.html) — Local 08 numbers.
-- **VoIP Canberra**: [https://www.click2call.com.au/voip-canberra.html](https://www.click2call.com.au/voip-canberra.html) — Local 02 numbers.
-- **VoIP Newcastle**: [https://www.click2call.com.au/voip-newcastle.html](https://www.click2call.com.au/voip-newcastle.html) — Local 02 numbers. Nearby: Sydney, Wollongong.
-- **VoIP Wollongong**: [https://www.click2call.com.au/voip-wollongong.html](https://www.click2call.com.au/voip-wollongong.html) — Local 02 numbers. Nearby: Sydney, Newcastle.
-- **VoIP Darwin**: [https://www.click2call.com.au/voip-darwin.html](https://www.click2call.com.au/voip-darwin.html) — Local 08 numbers.
-- **VoIP Hobart**: [https://www.click2call.com.au/voip-hobart.html](https://www.click2call.com.au/voip-hobart.html) — Local 03 numbers.
+- **VoIP Australia (National)**: [https://www.click2call.com.au/voip-australia](https://www.click2call.com.au/voip-australia)
+- **VoIP Sydney**: [https://www.click2call.com.au/voip-sydney](https://www.click2call.com.au/voip-sydney) — Local 02 numbers. Nearby: Newcastle, Wollongong.
+- **VoIP Melbourne**: [https://www.click2call.com.au/voip-melbourne](https://www.click2call.com.au/voip-melbourne) — Local 03 numbers.
+- **VoIP Brisbane**: [https://www.click2call.com.au/voip-brisbane](https://www.click2call.com.au/voip-brisbane) — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
+- **VoIP Gold Coast**: [https://www.click2call.com.au/voip-gold-coast](https://www.click2call.com.au/voip-gold-coast) — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
+- **VoIP Sunshine Coast**: [https://www.click2call.com.au/voip-sunshine-coast](https://www.click2call.com.au/voip-sunshine-coast) — Local 07 numbers. Nearby: Brisbane, Gold Coast.
+- **VoIP Perth**: [https://www.click2call.com.au/voip-perth](https://www.click2call.com.au/voip-perth) — Local 08 numbers.
+- **VoIP Adelaide**: [https://www.click2call.com.au/voip-adelaide](https://www.click2call.com.au/voip-adelaide) — Local 08 numbers.
+- **VoIP Canberra**: [https://www.click2call.com.au/voip-canberra](https://www.click2call.com.au/voip-canberra) — Local 02 numbers.
+- **VoIP Newcastle**: [https://www.click2call.com.au/voip-newcastle](https://www.click2call.com.au/voip-newcastle) — Local 02 numbers. Nearby: Sydney, Wollongong.
+- **VoIP Wollongong**: [https://www.click2call.com.au/voip-wollongong](https://www.click2call.com.au/voip-wollongong) — Local 02 numbers. Nearby: Sydney, Newcastle.
+- **VoIP Darwin**: [https://www.click2call.com.au/voip-darwin](https://www.click2call.com.au/voip-darwin) — Local 08 numbers.
+- **VoIP Hobart**: [https://www.click2call.com.au/voip-hobart](https://www.click2call.com.au/voip-hobart) — Local 03 numbers.
 
 ## About the Business
 
@@ -61,7 +61,7 @@ Click2Call uses simple, transparent pay-as-you-go pricing with no lock-in contra
 - **30-day free trial** — no credit card required
 - **Activation**: up to 24 hours after signup
 - **SIP Trunks**: available on request
-- Full details: [https://www.click2call.com.au/pricing.html](https://www.click2call.com.au/pricing.html)
+- Full details: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing)
 
 ## Customer Access
 

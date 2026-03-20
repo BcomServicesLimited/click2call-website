@@ -2,47 +2,62 @@
 # CLICK2CALL.COM.AU — CLOUDFLARE REDIRECTS
 # =============================================
 
-# --- Passthrough: serve .html files directly (prevents Pretty URLs loop) ---
-/pricing.html  /pricing.html  200
-/support.html  /support.html  200
-
-# --- Non-www to www (catches all pages) ---
+# --- Non-www to www ---
 https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 
-# --- Old Gold Coast pages (previous site) ---
-/cloud-pbx-gold-coast          /voip-gold-coast.html  301
-/cloud-pbx-gold-coast.html     /voip-gold-coast.html  301
-/voice-calling-gold-coast      /voip-gold-coast.html  301
-/voice-calling-gold-coast.html /voip-gold-coast.html  301
-/phone-numbers-gold-coast.html /voip-gold-coast.html  301
-/ai-voice-tools-gold-coast     /ai-voice-tools.html   301
-/ai-voice-tools-gold-coast.html /ai-voice-tools.html  301
-/sip-trunks-gold-coast.html    /sip-trunks.html       301
+# --- Old Gold Coast pages ---
+/cloud-pbx-gold-coast          /voip-gold-coast  301
+/cloud-pbx-gold-coast.html     /voip-gold-coast  301
+/voice-calling-gold-coast      /voip-gold-coast  301
+/voice-calling-gold-coast.html /voip-gold-coast  301
+/phone-numbers-gold-coast.html /voip-gold-coast  301
+/ai-voice-tools-gold-coast     /ai-voice-tools   301
+/ai-voice-tools-gold-coast.html /ai-voice-tools  301
+/sip-trunks-gold-coast.html    /sip-trunks       301
+
+# --- Old .html URLs → clean URLs ---
+/pricing.html                  /pricing          301
+/support.html                  /support          301
+/cloud-pbx.html                /cloud-pbx        301
+/ai-voice-tools.html           /ai-voice-tools   301
+/ai-receptionist.html          /ai-receptionist  301
+/microsoft-teams-calling.html  /microsoft-teams-calling  301
+/sip-trunks.html               /sip-trunks       301
+/compare.html                  /compare          301
+/voip-australia.html           /voip-australia   301
+/voip-sydney.html              /voip-sydney      301
+/voip-melbourne.html           /voip-melbourne   301
+/voip-brisbane.html            /voip-brisbane    301
+/voip-gold-coast.html          /voip-gold-coast  301
+/voip-perth.html               /voip-perth       301
+/voip-adelaide.html            /voip-adelaide    301
+/voip-canberra.html            /voip-canberra    301
+/voip-newcastle.html           /voip-newcastle   301
+/voip-hobart.html              /voip-hobart      301
+/voip-darwin.html              /voip-darwin      301
+/voip-sunshine-coast.html      /voip-sunshine-coast  301
+/voip-wollongong.html          /voip-wollongong  301
+/faq.html                      /faq              301
+/about.html                    /about            301
+/contact.html                  /contact          301
+/privacy.html                  /privacy          301
+/terms.html                    /terms            301
+/case-studies.html             /case-studies     301
 
 # --- Old site page names ---
-/tour                          /about.html            301
-/tour.html                     /about.html            301
-/tour/                         /about.html            301
+/tour                          /about            301
+/tour.html                     /about            301
+/tour/                         /about            301
 
-# --- Extensionless legacy URLs ONLY ---
-# Note: no .html versions listed - those are real pages
-/pricing                       /pricing.html          301
-/contact                       /contact.html          301
-/support                       /support.html          301
-/blog                          /blog/                 301
+# --- Old extensionless legacy URLs ---
+/pricing/                      /pricing          301
+/support/                      /support          301
+/blog                          /blog             301
 
-# --- Trailing slash variants ---
-/pricing/                      /pricing.html          301
-/support/                      /support.html          301
-
-# --- Duplicate index URLs → clean directory URLs ---
-/blog/index.html               /blog/                 301
-/help/index.html               /help/                 301
-
-# --- Old /public/ subfolder (previous site) ---
-/public/tour.html              /about.html            301
-/public/support.html           /support.html          301
-/public/pricing.html           /pricing.html          301
+# --- Old /public/ subfolder ---
+/public/tour.html              /about            301
+/public/support.html           /support          301
+/public/pricing.html           /pricing          301
 
 # --- Missing blog article ---
-/blog/ai-voice-tools-guide.html  /ai-voice-tools.html  301
+/blog/ai-voice-tools-guide.html  /ai-voice-tools  301
