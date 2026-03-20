@@ -117,6 +117,19 @@ Click2Call provides dedicated local landing pages for major Australian cities, w
 - **VoIP Darwin**: https://www.click2call.com.au/voip-darwin — Local 08 numbers.
 - **VoIP Hobart**: https://www.click2call.com.au/voip-hobart — Local 03 numbers.
 
+## Switch to Click2Call — Changeover Guide
+
+The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step guide for businesses switching their phone system to Click2Call. Key information:
+
+- **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
+- **Account activation**: within 24 hours of signup
+- **Number porting**: local geographic numbers ($50 + GST), 1300 numbers ($100 + GST), takes 5–10 business days, zero downtime during the port
+- **Bulk porting**: discounts available for DDI 100-blocks — contact for a quote
+- **Self-setup**: free, guided by Help Centre articles
+- **Managed setup**: $300 + GST one-off fee — Click2Call team configures everything
+- **Apps**: PC softphone app (recommended for desk use), mobile app (best for outbound; for inbound, call forwarding to mobile number is recommended)
+- **Real-world example**: 3-user office — $10/month number + $50 port fee + $50 credit top-up = under $120 to get started
+
 ## How Click2Call Compares to Alternatives
 
 - **vs. Traditional Telcos (e.g., Telstra)**: Click2Call offers more flexible contracts, more competitive pricing, and a stronger focus on AI-driven features compared to the incumbent providers.
@@ -228,6 +241,7 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - Nearby areas cross-linking added to 6 city pages (Sydney, Brisbane, Gold Coast, Sunshine Coast, Newcastle, Wollongong).
 - `faq.html` links added to all 6 service pages.
 - `compare.html` links added to pricing and cloud-pbx pages.
+- `/compare` page replaced with "Switch to Click2Call" changeover guide (March 2026) — step-by-step setup, number porting, managed setup option, real-world cost example.
 - `case-studies.html` links added to homepage and about page.
 - `loading="lazy"` added to all 186 images across all pages.
 - `fetchpriority="high"` added to above-fold images.

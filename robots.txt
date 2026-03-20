@@ -10,6 +10,8 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /assets/css/
 Disallow: /assets/js/
+Disallow: /blog/article-template.html
+Disallow: /case-studies/template.html
 
 # ── Google ─────────────────────────────────────────────────────
 User-agent: Googlebot
