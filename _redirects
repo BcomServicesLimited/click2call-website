@@ -49,10 +49,8 @@ https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 /tour.html                     /about            301
 /tour/                         /about            301
 
-# --- Old extensionless legacy URLs ---
-/pricing/                      /pricing          301
-/support/                      /support          301
-/blog                          /blog             301
+# --- Legacy ---
+/blog                          /blog/            301
 
 # --- Old /public/ subfolder ---
 /public/tour.html              /about            301
