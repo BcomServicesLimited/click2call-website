@@ -816,6 +816,90 @@
 </main>
 
 <script>
+(function () {
+  'use strict';
+
+  /* ── Services dropdown (desktop) ── */
+  var wrapper  = document.getElementById('services-menu-wrapper');
+  var btn      = document.getElementById('services-btn');
+  var dropdown = document.getElementById('services-dropdown');
+  var chevron  = document.getElementById('services-chevron');
+
+  function openDropdown() {
+    dropdown.classList.remove('opacity-0', 'invisible', 'translate-y-1');
+    dropdown.classList.add('opacity-100', 'visible', 'translate-y-0');
+    btn.setAttribute('aria-expanded', 'true');
+    chevron.style.transform = 'rotate(180deg)';
+  }
+  function closeDropdown() {
+    dropdown.classList.add('opacity-0', 'invisible', 'translate-y-1');
+    dropdown.classList.remove('opacity-100', 'visible', 'translate-y-0');
+    btn.setAttribute('aria-expanded', 'false');
+    chevron.style.transform = '';
+  }
+
+  if (wrapper) {
+    wrapper.addEventListener('mouseenter', openDropdown);
+    wrapper.addEventListener('mouseleave', closeDropdown);
+    btn.addEventListener('click', function () {
+      dropdown.classList.contains('invisible') ? openDropdown() : closeDropdown();
+    });
+    // Close on outside click
+    document.addEventListener('click', function (e) {
+      if (!wrapper.contains(e.target)) closeDropdown();
+    });
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  }
+
+  /* ── Mobile hamburger ── */
+  var mobileBtn  = document.getElementById('mobile-menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var hamIcon    = document.getElementById('hamburger-icon');
+  var closeIcon  = document.getElementById('close-icon');
+
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', function () {
+      var isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      hamIcon.classList.toggle('hidden', !isOpen ? false : true);
+      closeIcon.classList.toggle('hidden', !isOpen ? true : false);
+      mobileBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  /* ── Mobile services accordion ── */
+  var mobileServicesBtn  = document.getElementById('mobile-services-btn');
+  var mobileServicesList = document.getElementById('mobile-services-list');
+  var mobileChevron      = document.getElementById('mobile-services-chevron');
+
+  if (mobileServicesBtn) {
+    mobileServicesBtn.addEventListener('click', function () {
+      var isOpen = !mobileServicesList.classList.contains('hidden');
+      mobileServicesList.classList.toggle('hidden');
+      mobileChevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+      mobileServicesBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  /* ── Active page highlight ── */
+  // Automatically highlights the nav link whose href matches the current page.
+  var currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  document.querySelectorAll('.c2c-nav-link').forEach(function (el) {
+    var href = el.getAttribute('href');
+    if (!href) return;
+    var linkPath = href.replace(/\/$/, '') || '/';
+    if (currentPath === linkPath || (linkPath !== '/' && currentPath.startsWith(linkPath))) {
+      el.classList.add('text-[#3B9C49]', 'font-semibold');
+      el.classList.remove('text-gray-700');
+    }
+  });
+
+}());
+</script>
+<script>
 // Calculator — auto-channel version
 (function() {
   const $ = function(id) { return document.getElementById(id); };
