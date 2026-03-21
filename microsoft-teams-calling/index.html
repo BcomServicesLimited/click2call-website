@@ -68,15 +68,7 @@
           "name": "What is Microsoft Teams Direct Routing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Microsoft Teams Direct Routing is a method of connecting Microsoft Teams to the Public Switched Telephone Network (PSTN) via a certified Session Border Controller (SBC) and a third-party telephony provider like Click2Call. This allows Teams users to make and receive standard phone calls to any number in Australia and internationally, directly within the Teams app."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Microsoft Teams Direct Routing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Microsoft Teams Direct Routing is a method of connecting Microsoft Teams to the Public Switched Telephone Network (PSTN) via a certified Session Border Controller (SBC) and a third-party telephony provider like Click2Call. This allows Teams users to make and receive standard phone calls to any number in Australia and internationally, directly within the Teams app."
+            "text": "Direct Routing is the way Click2Call connects your Microsoft Teams to real phone numbers. It’s a Microsoft-approved method that lets your team call any landline or mobile in Australia — and receive calls on your business number — all from inside Teams."
           }
         },
         {
@@ -84,7 +76,7 @@
           "name": "Do I need a Microsoft Phone System licence for Direct Routing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. To use Direct Routing, each user must have a Microsoft 365 licence that includes the Phone System add-on. Click2Call provides the SIP trunks and Australian phone numbers; Microsoft provides the Phone System software licence. We can advise on the most cost-effective licence combination for your team."
+            "text": "Yes. Each Teams user needs a Microsoft 365 licence that includes the Phone System add-on. Click2Call provides the phone number and the connection to the phone network. Microsoft provides the software side. Contact us if you’re not sure which licence you have — we can check."
           }
         },
         {
@@ -92,7 +84,7 @@
           "name": "How does Direct Routing differ from Microsoft Calling Plans?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Microsoft Calling Plans are Microsoft's own calling service, which can be expensive and are not always available in all Australian regions. Direct Routing uses a third-party provider like Click2Call to supply the calling capability, which is typically 40–60% cheaper than Microsoft Calling Plans and offers more flexibility, including Australian local numbers and 1300 numbers."
+            "text": "Microsoft’s Calling Plans are their own built-in calling service — but they’re expensive and not available in all Australian regions. Click2Call’s Direct Routing does the same thing for 40–60% less, and gives you Australian local numbers and 1300 numbers that Microsoft’s plan often can’t provide."
           }
         },
         {
@@ -108,7 +100,7 @@
           "name": "What equipment do I need for Microsoft Teams Calling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No additional hardware is required. Your team can make and receive calls directly from the Microsoft Teams desktop app, mobile app, or a Teams-certified desk phone. If you prefer physical handsets, we can supply compatible Teams-certified IP phones."
+            "text": "Nothing new needed. Your team uses the Teams app on the computers and phones they already have. If you want physical desk phones, we can supply Teams-compatible handsets — but most businesses don’t need them."
           }
         },
         {
@@ -124,7 +116,7 @@
           "name": "How long does it take to set up Teams Direct Routing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For most businesses, Click2Call can have Teams Direct Routing fully configured within 1–3 business days. The process involves provisioning your SIP trunk, configuring the Microsoft Teams environment, and porting or assigning your phone numbers. Our team handles the technical setup."
+            "text": "If you set it up yourself using our portal, it usually takes about 30 minutes once you have your number. If you choose our managed setup service ($50 per user, one-time), we handle everything and have you running within 1–2 business days."
           }
         },
         {
@@ -132,7 +124,7 @@
           "name": "What internet connection speed do I need for Teams Calling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Microsoft Teams requires approximately 100 kbps per concurrent call. A standard NBN connection is more than sufficient for most businesses. We recommend a connection with low jitter and latency for the best call quality. Our team can advise on network requirements during the setup process."
+            "text": "A standard NBN connection handles Teams calling comfortably. Each simultaneous call uses about 100 kbps — so a 5-person office all calling at the same time needs about 0.5 Mbps of upload speed, which any NBN plan easily covers."
           }
         },
         {
@@ -140,7 +132,7 @@
           "name": "Does Click2Call offer a free trial for Teams Calling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Click2Call offers a 30-day free trial for all services, including Microsoft Teams Direct Routing. You can sign up at portal.click2call.com.au/join and our team will assist with the initial configuration."
+            "text": "Yes. Sign up at portal.click2call.com.au/join — your account is free to create with no credit card required. Add a Teams number, load some credit, and test the whole setup before committing to anything."
           }
         },
         {
@@ -176,9 +168,47 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Set Up Microsoft Teams Calling with Click2Call",
+  "description": "Step-by-step guide to adding phone calls to Microsoft Teams using Click2Call Direct Routing.",
+  "totalTime": "PT30M",
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Microsoft 365 account with Teams"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Click2Call account (free to create)"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Add a Microsoft Teams number",
+      "text": "Log in to the Click2Call portal, go to Account then Numbers, add a new number and select Microsoft Teams as the line type. One number is required per Teams user."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Assign each user's Teams email",
+      "text": "In the Click2Call portal go to Voice then Teams. Enter each team member's Microsoft 365 email address next to their assigned phone number. The portal generates the required PowerShell commands automatically."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Run the PowerShell commands",
+      "text": "Copy the PowerShell commands generated by the Click2Call portal and run them in Microsoft Teams PowerShell. The dial pad will appear in Teams within a few minutes."
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-brand-gray-50">
-'''
 <!--
   ============================================================
   Click2Call — Shared Header Snippet
@@ -204,7 +234,7 @@
           class="h-14 w-auto"
           width="252"
           height="56"
-         loading="lazy" fetchpriority="high"/>
+         fetchpriority="high"/>
       </a>
 
       <!-- ── Desktop Navigation ── -->
@@ -519,20 +549,24 @@
         <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(17,24,39,0.75) 0%, rgba(17,24,39,0.50) 100%);" aria-hidden="true"></div>
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Microsoft Teams Calling<br>for Australian Businesses</h1>
-        <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300">Turn Microsoft Teams into your complete business phone system. Click2Call enables you to make and receive external phone calls from any device using your existing Teams application, powered by our robust Australian network. Keep your numbers, simplify your tools, and connect your team from anywhere.</p>
-        <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-            <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-brand-green-dark hover:bg-brand-green-light md:py-4 md:text-lg md:px-10">
-            Get Started
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Make Real Phone Calls<br>From Microsoft Teams</h1>
+        <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300">Your team already uses Microsoft Teams for chat and meetings. Click2Call adds one missing piece — the ability to call any phone number in Australia and receive calls on your business number, all from inside Teams. No new apps, no new hardware, no Microsoft Calling Plan required.</p>
+        <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
+          <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-brand-green-dark hover:bg-brand-green-light md:py-4 md:text-lg md:px-10">
+            Get Started Free
+          </a>
+          <a href="/pricing" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-brand-green-dark bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+            View Pricing
           </a>
         </div>
     </div>
 </div>
 
-<div class="bg-brand-gray-50">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<div>
 
         <!-- SECTION 2: KEY TAKEAWAYS -->
+        <section class="bg-white py-12 border-b border-gray-100">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-green-50 border-l-4 border-green-400 p-4 mb-12 takeaways-box">
             <div class="flex">
                 <div class="flex-shrink-0">
@@ -542,69 +576,77 @@
                     <p class="text-sm font-bold text-green-800">Key Takeaways</p>
                     <div class="mt-2 text-sm text-green-700">
                         <ul role="list" class="list-disc pl-5 space-y-1">
-                            <li><strong>Use Your Existing Teams App:</strong> Make and receive calls from the native Teams dialler on desktop, web, and mobile. No new software to learn.</li>
-                            <li><strong>No MS Phone System Licence Needed:</strong> Our Direct Routing solution saves you money by avoiding the costly Microsoft Phone System add-on licence.</li>
-                            <li><strong>Keep Your Phone Numbers:</strong> Port your existing Australian landline, 1300, or 1800 numbers to Click2Call and use them seamlessly within Teams.</li>
-                            <li><strong>Australian Network & Support:</strong> Benefit from a reliable, locally-hosted network and get help from our expert Australian support team.</li>
-                            <li><strong>Unified Communications:</strong> Consolidate your internal chat, video meetings, and external phone calls into a single, powerful application.</li>
+                            <li><strong>No new software:</strong> Your team keeps using Teams exactly as they do now. The dial pad just appears and they can call any phone number.</li>
+                            <li><strong>Save up to 60% vs Microsoft’s own calling plan:</strong> Click2Call’s Direct Routing costs from $10/month per line — compared to $30+ per user with Microsoft’s own calling service.</li>
+                            <li><strong>Keep your existing number:</strong> Port your current Australian landline, 1300, or 1800 number to Click2Call. Your customers keep the same number they already know.</li>
+                            <li><strong>Set it up yourself or we’ll do it:</strong> Add your number in the portal, enter your team’s email addresses, and run a script. Or pay a one-time $50/user fee and we handle everything for you.</li>
+                            <li><strong>Australian hosted and supported:</strong> Our network is based in Australia. When you need help, you’re talking to our local team — not an overseas call centre.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+          </div>
+        </section>
 
         <!-- SECTION 3: WHAT IS TEAMS CALLING? -->
+        <section class="bg-gray-50 py-16 border-b border-gray-100">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
-            <h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">What Is Microsoft Teams Calling?</h2>
-            <p class="mt-4 text-gray-500">Microsoft Teams is a fantastic tool for internal collaboration—chat, file sharing, and video meetings. By default, however, it can't connect to the outside world's telephone network. You can't use it to call a customer's mobile, a supplier's landline, or receive a call from a new sales lead.</p>
-            <p class="mt-4 text-gray-500"><strong>Microsoft Teams Calling</strong> solves this problem. It bridges the gap by connecting your Teams environment to the Public Switched Telephone Network (PSTN). This upgrade transforms Teams from just an internal collaboration tool into a fully-featured business phone system (PBX), allowing users to make and receive external calls directly from the Teams interface they already know and use every day.</p>
+            <h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">Teams Is Great — But It Can’t Call Phones Yet</h2>
+            <p class="mt-4 text-gray-500">Microsoft Teams is great for chatting with your team, sharing files, and jumping on a video call. But out of the box it can’t do one thing — call a regular phone number. You can’t ring a customer’s mobile, call a supplier, or receive a call from someone dialling your business number.</p>
+            <p class="mt-4 text-gray-500"><strong>Click2Call fixes that.</strong> We connect your Teams account to the real phone network so your team can call and receive calls from any number in Australia — directly inside the Teams app they already use every day. Nothing changes for them except a dial pad appears.</p>
         </div>
+          </div>
+        </section>
 
         <!-- SECTION 4: HOW IT WORKS -->
-        <div class="py-16">
-            <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">How Does Click2Call Add Phone Calls to Teams?</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500">We use a Microsoft-approved method called <strong>Direct Routing</strong> to connect your Teams account to our Australian voice network.</p>
+        <section class="bg-white py-16 border-b border-gray-100">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">How It Works</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500">Three things connect together. That’s it.</p>
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold text-brand-charcoal">1. Your Microsoft Teams</h3>
-                        <p class="mt-2 text-gray-600">Your users continue to use the standard Teams app on their computer or mobile. Nothing changes for them.</p>
+                    <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]">
+                        <h3 class="text-xl font-semibold text-brand-charcoal">1. Your Teams App</h3>
+                        <p class="mt-2 text-gray-600">Your team keeps using Teams exactly as they do now. A dial pad appears and they can make and receive calls like a normal phone.</p>
                     </div>
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold text-brand-charcoal">2. Click2Call Direct Routing</h3>
-                        <p class="mt-2 text-gray-600">We configure a secure link between your Microsoft 365 tenant and our certified Session Border Controller (SBC).</p>
+                    <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]">
+                        <h3 class="text-xl font-semibold text-brand-charcoal">2. Click2Call Connects Them</h3>
+                        <p class="mt-2 text-gray-600">We link your Teams account to our Australian phone network. This is the bridge that lets Teams talk to real phone numbers.</p>
                     </div>
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold text-brand-charcoal">3. Public Phone Network</h3>
-                        <p class="mt-2 text-gray-600">Our network handles the connection to the outside world, allowing calls to flow to and from any landline or mobile number.</p>
+                    <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]">
+                        <h3 class="text-xl font-semibold text-brand-charcoal">3. Any Phone Number in Australia</h3>
+                        <p class="mt-2 text-gray-600">Once connected, your team can call any landline or mobile in Australia — and customers can call your business number and reach them in Teams.</p>
                     </div>
                 </div>
-                <p class="mt-8 text-gray-500">This is a more flexible and cost-effective approach than Microsoft's own 'Calling Plans', as it gives you the power of a dedicated voice specialist (us!) managing your telephony.</p>
+                <p class="mt-8 text-gray-500">This approach — called Direct Routing — is Microsoft-approved and typically costs 40–60% less than buying calling directly from Microsoft.</p>
             </div>
-        </div>
+          </div>
+        </section>
 
         <!-- SECTION 5: FEATURES GRID -->
-        <div class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">All The Phone System Features You Need, Inside Teams</h2>
+        <section class="bg-gray-50 py-16 border-b border-gray-100">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">Everything You’d Expect From a Business Phone System</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">Australian Numbers</h3><p class="mt-1 text-gray-500">Get new local numbers or bring your existing ones.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">No Extra Hardware</h3><p class="mt-1 text-gray-500">Use the Teams app on your existing devices.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">Familiar Teams Interface</h3><p class="mt-1 text-gray-500">No new software for your team to learn.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">Call Recording</h3><p class="mt-1 text-gray-500">Record inbound and outbound calls for compliance.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">Voicemail to Email</h3><p class="mt-1 text-gray-500">Get voicemail notifications and audio files in your inbox.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">Number Porting</h3><p class="mt-1 text-gray-500">Keep your main business phone number.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">1300/1800 Numbers</h3><p class="mt-1 text-gray-500">Route your national numbers to Teams users.</p></div>
-                    <div class="p-2"><h3 class="text-lg font-medium text-brand-charcoal">Local Aussie Support</h3><p class="mt-1 text-gray-500">Get help from our expert team based in Australia.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">Australian Numbers</h3><p class="mt-1 text-gray-500">Local numbers for any city, plus 1300 and 1800 numbers.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">No New Hardware</h3><p class="mt-1 text-gray-500">Works on any computer or phone your team already has.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">Stays Inside Teams</h3><p class="mt-1 text-gray-500">Your team never has to open another app.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">Call Recording</h3><p class="mt-1 text-gray-500">Record calls automatically and review them anytime.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">Voicemail to Your Inbox</h3><p class="mt-1 text-gray-500">Missed calls go to voicemail and land in your email.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">Keep Your Number</h3><p class="mt-1 text-gray-500">Transfer your existing number to Click2Call — one-time $50 porting fee.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">1300 and 1800 Numbers</h3><p class="mt-1 text-gray-500">Point your 1300 or 1800 number straight to Teams.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-[#3B9C49]"><h3 class="text-lg font-medium text-brand-charcoal">Australian Support Team</h3><p class="mt-1 text-gray-500">When something needs fixing, you’re talking to someone in Australia.</p></div>
                 </div>
-            </div>
-        </div>
+          </div>
+        </section>
 
         <!-- SECTION 6: COST COMPARISON -->
-        <div class="py-16">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Save Big vs Microsoft Calling Plans</h2>
-                <p class="mt-4 text-lg text-center text-gray-500">Our Direct Routing solution is significantly more cost-effective than buying licences from Microsoft.</p>
+        <section class="bg-white py-16 border-b border-gray-100">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Why Not Just Use Microsoft’s Own Calling Plan?</h2>
+                <p class="mt-4 text-lg text-center text-gray-500">Microsoft sells their own calling service but it’s expensive. Here’s how the numbers compare per user per month.</p>
                 <div class="mt-8 flow-root">
                     <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -618,12 +660,12 @@
                                 </thead>
                                 <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">MS Phone System Licence</td>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Phone System Licence</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500">$12.10</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500 font-semibold text-brand-green-dark">$0 (Not Required)</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">MS Domestic Calling Plan</td>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Domestic Calling Plan</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500">$18.10</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500 font-semibold text-brand-green-dark">$0 (Not Required)</td>
                                     </tr>
@@ -633,48 +675,192 @@
                                         <td class="px-3 py-4 text-sm text-center text-gray-500 font-semibold text-brand-green-dark">$10.00/month (ex GST)</td>
                                     </tr>
                                     <tr class="font-bold bg-gray-50">
-                                        <td class="py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-0">Indicative Total Monthly Cost</td>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-0">Estimated Monthly Cost (per user)</td>
                                         <td class="px-3 py-4 text-sm text-center text-red-600">$30.20+</td>
                                         <td class="px-3 py-4 text-sm text-center text-brand-green-dark font-semibold">From $10.00/month (ex GST)</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-xs text-gray-500 mt-2">Pricing is indicative and subject to change. Microsoft pricing sourced from public website, Feb 2026. Call costs are additional.</p>
+                            <p class="text-xs text-gray-500 mt-2">Microsoft pricing sourced from microsoft.com, February 2026. Subject to change. Click2Call call costs are additional and charged from your prepaid credit balance.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
+        </section>
 
         <!-- SECTION 7: SETUP PROCESS -->
-        <div class="py-16">
-            <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">Get Started in 3 Simple Steps</h2>
+        <section class="bg-gray-50 py-16 border-b border-gray-100" id="setup-steps">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">Setting It Up Yourself Takes About 30 Minutes</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-3">
-                    <div><div class="text-5xl font-bold text-brand-green-dark">1</div><h3 class="mt-2 text-lg font-medium">Sign Up</h3><p class="mt-1 text-gray-500">Choose your plan and provide your Microsoft 365 details.</p></div>
-                    <div><div class="text-5xl font-bold text-brand-green-dark">2</div><h3 class="mt-2 text-lg font-medium">We Configure</h3><p class="mt-1 text-gray-500">Our team runs a script to securely connect your Teams tenant to our network.</p></div>
-                    <div><div class="text-5xl font-bold text-brand-green-dark">3</div><h3 class="mt-2 text-lg font-medium">Start Calling</h3><p class="mt-1 text-gray-500">The dial pad appears in Teams and you can start making and receiving calls.</p></div>
+
+                  <div class="text-left">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 border-t-4 border-t-[#3B9C49]">
+                      <div class="text-5xl font-bold text-brand-green-dark">1</div>
+                      <h3 class="mt-2 text-lg font-medium">Add Your Teams Number</h3>
+                      <p class="mt-1 text-gray-500">In the Click2Call portal go to Account → Numbers, add a new number and select “Microsoft Teams” as the line type. One number is needed per Teams user.</p>
+                    </div>
+                    <img
+                      src="/assets/images/portal/portal-teams-add-number.webp"
+                      alt="Click2Call portal showing how to add a Microsoft Teams phone number by selecting Microsoft Teams as the line type"
+                      class="rounded-xl shadow-md border border-gray-200 w-full mt-4"
+                      loading="lazy"
+                      width="1200"
+                      height="700">
+                  </div>
+
+                  <div class="text-left">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 border-t-4 border-t-[#3B9C49]">
+                      <div class="text-5xl font-bold text-brand-green-dark">2</div>
+                      <h3 class="mt-2 text-lg font-medium">Assign Your Team Members</h3>
+                      <p class="mt-1 text-gray-500">In Voice → Teams, enter each person’s Microsoft 365 email address next to their phone number. The portal generates the PowerShell commands for you automatically.</p>
+                    </div>
+                    <img
+                      src="/assets/images/portal/portal-teams-assign-users.webp"
+                      alt="Click2Call portal showing the Microsoft Teams Lines screen where each team member is assigned a phone number"
+                      class="rounded-xl shadow-md border border-gray-200 w-full mt-4"
+                      loading="lazy"
+                      width="1200"
+                      height="700">
+                  </div>
+
+                  <div class="text-left">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 border-t-4 border-t-[#3B9C49]">
+                      <div class="text-5xl font-bold text-brand-green-dark">3</div>
+                      <h3 class="mt-2 text-lg font-medium">Run the Script and You’re Done</h3>
+                      <p class="mt-1 text-gray-500">Copy and run the generated PowerShell commands in Microsoft Teams Admin. The dial pad appears in Teams within a few minutes.</p>
+                    </div>
+                    <img
+                      src="/assets/images/portal/portal-teams-powershell.webp"
+                      alt="Click2Call portal showing the auto-generated Microsoft Teams PowerShell commands ready to copy and run — no manual scripting required"
+                      class="rounded-xl shadow-md border border-gray-200 w-full mt-4"
+                      loading="lazy"
+                      width="1200"
+                      height="700">
+                  </div>
+
                 </div>
+          </div>
+        </section>
+
+        <!-- SECTION 7B: DIY VS MANAGED SETUP -->
+        <section class="bg-white py-16 border-b border-gray-100">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-extrabold text-gray-900">
+                Set It Up Yourself, or Let Us Do It
+              </h2>
+              <p class="mt-3 text-gray-500 max-w-2xl mx-auto">
+                The setup involves running some PowerShell commands in Microsoft Teams Admin. It’s not hard, but if you’d rather hand it over, we’ve got you.
+              </p>
             </div>
-        </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              <!-- DIY Card -->
+              <div class="rounded-2xl border-2 border-gray-200 p-8 bg-gray-50">
+                <div class="flex items-center gap-3 mb-6">
+                  <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-900">Do It Yourself</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Add a Teams number in the portal (Account → Numbers)
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Assign each person’s Teams email address in Voice → Teams
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Copy and run the PowerShell commands the portal generates for you automatically
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Takes about 30 minutes if you have Teams Admin access
+                  </li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                  <p class="text-2xl font-extrabold text-gray-900">Free <span class="text-sm font-normal text-gray-500 ml-1">no setup fee</span></p>
+                </div>
+                <a href="#setup-steps" class="mt-6 block w-full text-center py-3 rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] font-semibold text-sm hover:bg-green-50 transition-colors">
+                  See the Steps Above
+                </a>
+              </div>
+
+              <!-- Managed Setup Card -->
+              <div class="rounded-2xl border-2 border-[#3B9C49] p-8 bg-white relative">
+                <div class="absolute -top-3 right-6">
+                  <span class="bg-[#3B9C49] text-white text-xs font-bold px-3 py-1 rounded-full">We Handle Everything</span>
+                </div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-900">Managed Setup</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    You provide your team’s Microsoft 365 email addresses
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    We configure everything in the portal and run the Microsoft setup commands
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Up and running within 1–2 business days
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 mt-0.5 text-[#3B9C49] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Includes testing to confirm every user can call and receive
+                  </li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-green-200">
+                  <p class="text-2xl font-extrabold text-[#3B9C49]">$50.00 <span class="text-sm font-normal text-gray-500 ml-1">per user (ex GST) — one-time fee</span></p>
+                </div>
+                <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="mt-6 block w-full text-center py-3 rounded-lg bg-[#3B9C49] text-white font-semibold text-sm hover:bg-[#2E7A3A] transition-colors shadow-md">
+                  Get Started — We’ll Handle the Rest
+                </a>
+              </div>
+
+            </div>
+
+            <p class="text-xs text-gray-400 text-center mt-6">
+              Both options use the same Click2Call portal and Australian phone network. The managed setup is a one-time fee — no ongoing managed service charges.
+            </p>
+
+          </div>
+        </section>
 
         <!-- SECTION 8: FAQ -->
-        <div class="max-w-3xl mx-auto py-16">
-            <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Teams Calling FAQs</h2>
+        <section class="bg-white py-16 border-b border-gray-100">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Common Questions</h2>
             <div class="mt-8 space-y-4" x-data="{ active: false }">
                 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
                     <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
                         <span>What is Microsoft Teams Direct Routing?</span>
                         <svg class="h-6 w-6 transform transition-transform" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </button>
-                    <div x-show="open" x-collapse class="mt-2 text-gray-600"><p>Microsoft Teams Direct Routing is a method of connecting Microsoft Teams to the Public Switched Telephone Network (PSTN) via a certified Session Border Controller (SBC) and a third-party telephony provider like Click2Call. This allows Teams users to make and receive standard phone calls to any number in Australia and internationally, directly within the Teams app.</p></div>
+                    <div x-show="open" x-collapse class="mt-2 text-gray-600"><p>Direct Routing is the way Click2Call connects your Microsoft Teams to real phone numbers. It’s a Microsoft-approved method that lets your team call any landline or mobile in Australia — and receive calls on your business number — all from inside Teams.</p></div>
                 </div>
                 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
                     <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
                         <span>Do I need a Microsoft Phone System licence for Direct Routing?</span>
                         <svg class="h-6 w-6 transform transition-transform" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </button>
-                    <div x-show="open" x-collapse class="mt-2 text-gray-600"><p>Yes. To use Direct Routing, each user must have a Microsoft 365 licence that includes the Phone System add-on. Click2Call provides the SIP trunks and Australian phone numbers; Microsoft provides the Phone System software licence. We can advise on the most cost-effective licence combination for your team.</p></div>
+                    <div x-show="open" x-collapse class="mt-2 text-gray-600"><p>Yes. Each Teams user needs a Microsoft 365 licence that includes the Phone System add-on. Click2Call provides the phone number and the connection to the phone network. Microsoft provides the software side. Contact us if you’re not sure which licence you have — we can check.</p></div>
                 </div>
                 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
                     <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
@@ -709,7 +895,7 @@
                         <span>How long does it take to set up Teams Direct Routing?</span>
                         <svg class="h-6 w-6 transform transition-transform" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </button>
-                    <div x-show="open" x-collapse class="mt-2 text-gray-600"><p>For most businesses, Click2Call can have Teams Direct Routing fully configured within 1–3 business days. The process involves provisioning your SIP trunk, configuring the Microsoft Teams environment, and porting or assigning your phone numbers. Our team handles the technical setup.</p></div>
+                    <div x-show="open" x-collapse class="mt-2 text-gray-600"><p>If you set it up yourself using our portal, it usually takes about 30 minutes once you have your number. If you choose our managed setup service ($50 per user, one-time), we handle everything and have you running within 1–2 business days.</p></div>
                 </div>
                 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
                     <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
@@ -735,24 +921,29 @@
             </div>
         </div>
 
+          </div>
+        </section>
+
     <p class="mt-6 text-center text-sm text-gray-500">Have more questions? <a href="/faq" class="text-[#3B9C49] font-semibold hover:underline">View all FAQs</a> for answers to common questions about our services.</p>
 
         <!-- SECTION 9: CTA -->
+        <section class="bg-gray-50 py-16">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-brand-charcoal rounded-lg shadow-xl">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Ready to Power Up Teams?</h2>
-                <p class="mt-4 text-lg text-gray-300">Unify your communications and save money. Start your free trial today.</p>
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Add Calling to Teams Today</h2>
+                <p class="mt-4 text-lg text-gray-300">Sign up free, add a Teams number in the portal, and have your team making calls in Teams by end of day.</p>
                 <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="mt-8 bg-white border border-transparent rounded-md shadow px-8 py-3 inline-flex items-center text-base font-medium text-brand-green-dark hover:bg-gray-50">
             Get Started
-          </a>
-            </div>
+              </div>
         </div>
+          </div>
+        </section>
 
-    </div>
 </div>
 <!--
   ============================================================
-  Click2Call — Shared Footer Snippet
+  Click2Call — Shared Footer Snippetet
   File: _footer.html
   Usage: Copy everything between the <footer> tags (inclusive)
          into each page, immediately before </body>.
@@ -778,7 +969,7 @@
             
             width="180"
             height="36"
-           loading="lazy" fetchpriority="high"/>
+           fetchpriority="high"/>
         </a>
         <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
           Australia's AI-enhanced Cloud PBX and VoIP provider. Enterprise-grade reliability for businesses of all sizes.
@@ -960,5 +1151,6 @@
     </div>
   </div>
 
+<p class="text-xs text-gray-500 text-center py-4 bg-gray-900">Page last reviewed: March 2026</p>
 </footer>
 <!-- =================== END FOOTER =================== -->
