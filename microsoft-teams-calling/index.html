@@ -645,45 +645,110 @@
         <!-- SECTION 6: COST COMPARISON -->
         <section class="bg-white py-16 border-b border-gray-100">
           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Why Not Just Use Microsoft’s Own Calling Plan?</h2>
-                <p class="mt-4 text-lg text-center text-gray-500">Microsoft doesn't offer affordable calling plans in Australia. Direct Routing lets you use a local provider like Click2Call for your Australian number and call costs — while keeping Teams as your phone app. Here's how the numbers compare per user per month.</p>
-                <div class="mt-8 flow-root">
+                <h2 class="text-3xl font-extrabold text-center text-brand-charcoal">What Does Microsoft Teams Calling Actually Cost?</h2>
+                <p class="mt-4 text-lg text-center text-gray-500">There are three things you need to make calls from Teams. Two are paid to Microsoft, one is paid to Click2Call. Here is exactly what each one does and what it costs.</p>
+
+                <!-- Prerequisite note -->
+                <div class="mt-8 rounded-lg bg-blue-50 border border-blue-200 px-6 py-4">
+                  <p class="text-sm text-blue-800"><strong>Before you start:</strong> You need a <strong>Microsoft 365 Business plan</strong> that includes Microsoft Teams (for example, Microsoft 365 Business Basic, Standard, or Premium). A personal Microsoft 365 subscription will not work &mdash; Teams calling requires a business plan. If your team already uses Teams for chat and meetings, you almost certainly have this already.</p>
+                </div>
+
+                <!-- Cost breakdown cards -->
+                <div class="mt-8 grid gap-6 md:grid-cols-3">
+
+                  <!-- Card 1: Phone System Licence -->
+                  <div class="rounded-xl border border-gray-200 bg-white p-6 text-left">
+                    <div class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Paid to Microsoft</div>
+                    <h3 class="text-base font-bold text-gray-900">Microsoft Teams Phone System Licence</h3>
+                    <p class="mt-2 text-sm text-gray-600">This is the licence that unlocks the dial pad inside Teams. Without it, Teams has no phone functionality at all &mdash; you can chat and video call your colleagues, but you cannot call a real phone number. It does not include an Australian number or local calling &mdash; that is what Click2Call provides.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                      <span class="text-lg font-bold text-gray-900">$12.10</span>
+                      <span class="text-sm text-gray-500"> /user/month</span>
+                      <p class="text-xs text-gray-400 mt-1">Included in Microsoft 365 E5, or available as an add-on to any Microsoft 365 Business plan. Paid directly to Microsoft.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2: Click2Call Teams Line -->
+                  <div class="rounded-xl border-2 border-[#3B9C49] bg-white p-6 text-left">
+                    <div class="text-xs font-bold uppercase tracking-wide text-[#3B9C49] mb-1">Paid to Click2Call</div>
+                    <h3 class="text-base font-bold text-gray-900">Click2Call Teams Phone Number</h3>
+                    <p class="mt-2 text-sm text-gray-600">This gives you an Australian phone number and connects it to Teams via Direct Routing. Microsoft does not offer local Australian numbers or affordable local calling in Australia &mdash; Click2Call provides both. One number is needed per Teams user who needs to make and receive calls.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                      <span class="text-lg font-bold text-[#3B9C49]">$10.00</span>
+                      <span class="text-sm text-gray-500"> /number/month (ex GST)</span>
+                      <p class="text-xs text-gray-400 mt-1">Paid to Click2Call. Includes your Australian number and line rental.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3: Call Usage -->
+                  <div class="rounded-xl border border-gray-200 bg-white p-6 text-left">
+                    <div class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Paid to Click2Call</div>
+                    <h3 class="text-base font-bold text-gray-900">Call Usage</h3>
+                    <p class="mt-2 text-sm text-gray-600">Calls are charged at our standard rates from a prepaid credit balance. You top up your account and calls are deducted as you make them. There are no lock-in contracts and no minimum monthly call spend.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                      <span class="text-lg font-bold text-gray-900">Pay as you go</span>
+                      <p class="text-xs text-gray-400 mt-1">Standard Australian call rates. View our full rate card on the Pricing page.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Summary comparison table -->
+                <div class="mt-10 flow-root">
                     <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
                             <table class="min-w-full divide-y divide-gray-300">
                                 <thead>
                                     <tr>
                                         <th class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Cost Component (per user/month)</th>
+                                        <th class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Paid to</th>
                                         <th class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Microsoft Calling Plan</th>
                                         <th class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Click2Call Direct Routing</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Phone System Licence <span class="ml-1 text-xs font-normal text-gray-400">(required for Direct Routing)</span></td>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft 365 Business Plan <span class="ml-1 text-xs font-normal text-gray-400">(Teams included)</span></td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Microsoft</td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Required</td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Required</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Teams Phone System Licence <span class="ml-1 text-xs font-normal text-gray-400">(unlocks the dial pad)</span></td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Microsoft</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500">$12.10</td>
-                                        <td class="px-3 py-4 text-sm text-center font-semibold text-gray-500">$12.10</td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">$12.10</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Domestic Calling Plan</td>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Domestic Calling Plan <span class="ml-1 text-xs font-normal text-gray-400">(not available in Australia)</span></td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Microsoft</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500">$18.10</td>
-                                        <td class="px-3 py-4 text-sm text-center font-semibold text-brand-green-dark">$0 (Not Required)</td>
+                                        <td class="px-3 py-4 text-sm text-center font-semibold text-brand-green-dark">$0 &mdash; Not Required</td>
                                     </tr>
                                     <tr>
-                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Click2Call Teams Line</td>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Click2Call Teams Phone Number <span class="ml-1 text-xs font-normal text-gray-400">(Australian number + local calling)</span></td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Click2Call</td>
                                         <td class="px-3 py-4 text-sm text-center text-gray-500">N/A</td>
                                         <td class="px-3 py-4 text-sm text-center font-semibold text-brand-green-dark">$10.00/month (ex GST)</td>
                                     </tr>
-                                    <tr class="font-bold bg-gray-50">
-                                        <td class="py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-0">Estimated Monthly Cost (per user)</td>
-                                        <td class="px-3 py-4 text-sm text-center text-red-600">$30.20+</td>
+                                    <tr>
+                                        <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Call Usage</td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Click2Call</td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500">Included in plan</td>
+                                        <td class="px-3 py-4 text-sm text-center font-semibold text-brand-green-dark">Standard rates (prepaid)</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-0">Estimated Fixed Monthly Cost (per user, excl. call usage)</td>
+                                        <td class="px-3 py-4 text-sm text-center text-gray-500"></td>
+                                        <td class="px-3 py-4 text-sm text-center text-red-600 font-semibold">$30.20+</td>
                                         <td class="px-3 py-4 text-sm text-center text-brand-green-dark font-semibold">From $22.10/month (ex GST)</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-xs text-gray-500 mt-2">Microsoft pricing sourced from microsoft.com, February 2026. Subject to change. A Microsoft Phone System licence (included in Microsoft 365 E5, or available as an add-on) is required to enable Direct Routing in Teams. Click2Call replaces the Microsoft Domestic Calling Plan — we provide your Australian number and local call termination. Call costs are additional and charged from your prepaid credit balance.</p>
+                            <p class="text-xs text-gray-500 mt-3">Microsoft pricing sourced from microsoft.com, February 2026. Subject to change. Microsoft 365 Business plan pricing varies by tier and is not included in the totals above as it is a pre-existing cost for most businesses. The Microsoft Teams Phone System Licence is paid directly to Microsoft &mdash; Click2Call does not charge for this. Click2Call charges $10.00/month per number for the Teams phone line, plus call usage at standard rates from a prepaid balance.</p>
                          </div>
                     </div>
+                </div>
                 </div>
           </div>
         </section>
