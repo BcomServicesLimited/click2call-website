@@ -187,7 +187,10 @@
         <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up the AI Receptionist</h1>
-      <p class="text-gray-600 leading-relaxed">The AI Receptionist answers incoming calls automatically, greets callers, collects information, and routes them to the right person — even outside business hours. This guide shows you how to set it up.</p>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
+        <p class="text-sm text-blue-800 leading-relaxed"><strong>Not an AI voice agent.</strong> The AI Receptionist is an automated call routing tool — similar to a traditional auto attendant (press 1 for Sales, press 2 for Support), but instead of pressing numbers, callers simply say what they need. The AI matches what the caller says to the department descriptions you configure, then transfers the call to the right number or extension. A real person answers the call. The AI Receptionist does not hold a conversation, answer questions, or act as a virtual agent. If you are looking for an AI voice agent, that is a separate feature.</p>
+      </div>
+      <p class="text-gray-600 leading-relaxed">The AI Receptionist answers incoming calls automatically, plays a welcome greeting, listens to the caller's request, and routes the call to the correct department or person. This guide shows you how to set it up.</p>
     </div>
   </div>
 
@@ -233,10 +236,8 @@ items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Configure the Welcome 
 Message</h3>
-        <p class="text-gray-600 leading-relaxed">This is the first message your 
-callers will hear. Enter a friendly greeting, for example: <code class="text-sm 
-font-medium bg-gray-100 p-1 rounded">'Hello, thank you for calling. How can I 
-direct your call?'</code></p>
+        <p class="text-gray-600 leading-relaxed">This is the first message your callers will hear when the AI Receptionist picks up. Enter a short, friendly greeting that tells the caller to say the name of the department or reason for their call. For example: <code class="text-sm font-medium bg-gray-100 p-1 rounded">'Hello, thank you for calling. Please say the name of the department you need, such as Sales, Support, or Accounts.'</code></p>
+        <p class="text-gray-600 leading-relaxed mt-3">The caller does not need to press any buttons. They simply speak their request and the system matches it to one of your configured departments.</p>
         <img src="/assets/images/help/ai-receptionist-setup-step-3-welcome.webp" alt="AI Receptionist welcome message and voice 
 settings" class="mt-4 rounded-xl border border-gray-200 w-full" />
         <p class="text-gray-600 leading-relaxed mt-4">You can also configure the 
@@ -262,10 +263,8 @@ hold and call failure scenarios.</li>
 items-center justify-center font-bold text-sm">4</div>
     <div class="flex-1 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Add Departments</h3>
-        <p class="text-gray-600 leading-relaxed">Departments are the core of the 
-AI Receptionist. The AI will match the caller's request to a department's 
-description to know where to route the call. Click the <strong>Add a new 
-Department</strong> button to get started.</p>
+        <p class="text-gray-600 leading-relaxed">Departments are the core of the AI Receptionist. When a caller speaks their request, the AI compares what they said against each department's description and routes the call to the best match. Think of each department as equivalent to one option on a traditional auto attendant menu — except the caller says what they need rather than pressing a number.</p>
+        <p class="text-gray-600 leading-relaxed mt-3">Click the <strong>Add a new Department</strong> button to get started. You can add as many departments as you need — for example, Sales, Support, Accounts, and Reception.</p>
         <img src="/assets/images/help/ai-receptionist-setup-step-4-add-department.webp" alt="Add a new department button" 
 class="mt-4 rounded-xl border border-gray-200 w-full" />
     </div>
@@ -284,10 +283,7 @@ class="mt-4 rounded-xl border border-gray-200 w-full" />
         <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
             <li><strong>Department Name:</strong> A friendly name, e.g., 
 'Sales' or 'Support'.</li>
-            <li><strong>Description:</strong> This is the most important part. 
-Provide a detailed description of what this department does and the types of 
-queries it handles. The AI uses this information to route calls accurately. 
-Include keywords you expect callers to use.</li>
+            <li><strong>Description:</strong> This is the most important field. Write a clear description of what this department handles and include the words or phrases a caller might say when they want to reach it. For example, for a Sales department you might write: <em>'Sales, new enquiries, quotes, pricing, buying, purchasing, products'</em>. The AI matches the caller's spoken words against this description to decide where to route the call. The more relevant keywords you include, the more accurately calls will be routed.</li>
             <li><strong>Route to Number:</strong> The phone number or extension where 
 calls for this department should be sent.</li>
         </ul>
@@ -322,9 +318,7 @@ callers can be transferred directly to a user's extension.</li>
 items-center justify-center font-bold text-sm">7</div>
     <div class="flex-1 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the AI Receptionist</h3>
-        <p class="text-gray-600 leading-relaxed">Call one of the numbers you 
-assigned to the AI from an external phone. Interact with the system using various 
-phrases to ensure calls are routed to the correct departments as expected.</p>
+        <p class="text-gray-600 leading-relaxed">Call one of the numbers you assigned to the AI Receptionist from an external phone. When prompted, say the name of a department or a phrase a real caller might use — for example, <em>'I'd like to speak to someone about a quote'</em> or just <em>'Sales'</em>. Confirm that the call transfers to the correct destination. Test each department you have configured. If a call routes incorrectly, update the department description to include more specific keywords.</p>
     </div>
 </div>
 
