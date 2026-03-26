@@ -101,7 +101,10 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 - **Adding Channels**: [https://www.click2call.com.au/help/how-to-add-channels.html](https://www.click2call.com.au/help/how-to-add-channels.html)
 
 ### AI Features
-- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html)
+- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html) — Automated call routing using natural language. Callers say what they need; the AI transfers the call to the right department. Not a conversational agent.
+- **Setting Up AI Agents**: [https://www.click2call.com.au/help/how-to-set-up-ai-agents.html](https://www.click2call.com.au/help/how-to-set-up-ai-agents.html) — A conversational AI voice agent that answers calls, holds full conversations, and responds to caller questions 24/7. Configured with a business profile, welcome message, AI voice actor, and call flow settings.
+- **Using AI Speech to Create Voice Recordings**: [https://www.click2call.com.au/help/how-to-use-ai-speech.html](https://www.click2call.com.au/help/how-to-use-ai-speech.html) — Text-to-speech tool for generating professional voicemail greetings, auto-attendant messages, and seasonal recordings (e.g. Christmas closure). Replaces the old dial-in self-recording approach.
+- **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail.html](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail.html) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
 
 ## Blog
 
@@ -116,3 +119,4 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - Business Phone System Cost Guide: [https://www.click2call.com.au/blog/business-phone-system-cost.html](https://www.click2call.com.au/blog/business-phone-system-cost.html)
 - How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications.html](https://www.click2call.com.au/blog/how-to-secure-business-communications.html)
 - 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers.html](https://www.click2call.com.au/blog/1300-number-providers.html)
+- Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
