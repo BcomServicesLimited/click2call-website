@@ -120,3 +120,7 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications.html](https://www.click2call.com.au/blog/how-to-secure-business-communications.html)
 - 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers.html](https://www.click2call.com.au/blog/1300-number-providers.html)
 - Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
+
+## How to Get a Business Phone Number: A Guide for New Businesses
+URL: https://www.click2call.com.au/blog/how-to-get-a-business-phone-number.html
+A practical guide for new Australian business owners on getting a local phone number, setting up a cloud phone system, and using an AI receptionist to handle calls from day one. Covers local vs 1300 numbers, call diversion to mobile, AI Receptionist setup, voicemail greetings, and a day-one checklist.
