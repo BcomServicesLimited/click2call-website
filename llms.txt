@@ -85,6 +85,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 ### Extensions & Users
 - **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension.html](https://www.click2call.com.au/help/how-to-add-extension.html)
 - **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user.html](https://www.click2call.com.au/help/how-to-add-user.html)
+- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id.html](https://www.click2call.com.au/help/how-to-set-outbound-caller-id.html)
 
 ### Phones & Devices
 - **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone.html](https://www.click2call.com.au/help/how-to-add-desk-phone.html)
