@@ -38,17 +38,50 @@
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://www.click2call.com.au/#organization",
       "name": "Click2Call",
       "legalName": "Bcom Services Pty Ltd (ABN: 92 636 893 108)",
       "url": "https://www.click2call.com.au",
-      "logo": "https://www.click2call.com.au/assets/images/logo-main.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.click2call.com.au/assets/images/logo-main.png",
+        "width": 252,
+        "height": 56
+      },
+      "image": "https://www.click2call.com.au/assets/images/click2call_og_image.jpg",
+      "description": "Click2Call is an Australian cloud PBX and VoIP phone system provider offering self-serve business phone systems, AI receptionist, SIP trunks, and Microsoft Teams Direct Routing. No lock-in contracts, no technician required.",
+      "foundingDate": "2019",
       "telephone": "+611300884879",
       "email": "support@click2call.com.au",
       "address": {
         "@type": "PostalAddress",
+        "addressLocality": "Gold Coast",
+        "addressRegion": "QLD",
         "addressCountry": "AU"
       },
-      "areaServed": "Australia",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+611300884879",
+          "contactType": "customer service",
+          "areaServed": "AU",
+          "availableLanguage": "English",
+          "contactOption": "TollFree"
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "support@click2call.com.au",
+          "contactType": "technical support",
+          "areaServed": "AU",
+          "availableLanguage": "English"
+        }
+      ],
       "knowsAbout": [
         "Cloud PBX",
         "VoIP Phone Systems",
@@ -59,9 +92,23 @@
         "Business Communications",
         "Hosted PBX Australia"
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Click2Call Products",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cloud PBX", "url": "https://www.click2call.com.au/cloud-pbx"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Receptionist", "url": "https://www.click2call.com.au/ai-receptionist"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SIP Trunks", "url": "https://www.click2call.com.au/sip-trunks"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Voice Tools", "url": "https://www.click2call.com.au/ai-voice-tools"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Microsoft Teams Calling", "url": "https://www.click2call.com.au/microsoft-teams-calling"}}
+        ]
+      },
       "sameAs": [
         "https://www.facebook.com/click2call.com.au",
-        "https://www.linkedin.com/company/click2call-australia"
+        "https://www.linkedin.com/company/click2call-australia",
+        "https://twitter.com/click2callau",
+        "https://www.youtube.com/@click2call",
+        "https://www.google.com/maps?cid=click2call"
       ]
     },
     {
