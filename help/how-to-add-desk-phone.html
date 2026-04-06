@@ -22,14 +22,82 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Adding & Provisioning a Desk Phone",
-    "description": "How to register and provision a physical desk phone (Yealink, Cisco, Grandstream, etc.) to your Click2Call account.",
-    "url": "https://www.click2call.com.au/help/how-to-add-desk-phone"
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Adding & Provisioning a Desk Phone",
+  "description": "How to register and provision a physical desk phone (Yealink, Cisco, Grandstream, etc.) to your Click2Call account.",
+  "url": "https://www.click2call.com.au/help/how-to-add-desk-phone",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Unbox and assemble the phone",
+      "text": "When opening your Yealink phone box, you will find the main phone unit, one handset cord, one handset, one phone stand, and one Ethernet cable. Flip the phone over and attach the stand to the back slots above the cable ports. Connect the larger end of the handset cord into the port marked with a ..."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Connect to your network and power on",
+      "text": "Plug one end of the Ethernet cable into the port labelled Internet on the back of the phone, and the other end into your internet modem or router. Once connected, the phone will power on and display a welcome message on screen."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add the phone in the Click2Call portal",
+      "text": "Log in to your Click2Call account and navigate to Voice > Phones . Click Add New Phone and fill in the following details:"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Find the phone's IP address",
+      "text": "On the Yealink phone, press Menu and then select Status . The field labelled IPv4 Address shows the phone's current IP address on your network. Note this down — you will need it in the next step."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Log in to the phone's web interface",
+      "text": "Open a web browser on a computer connected to the same network and type the phone's IP address into the address bar (e.g. http://192.168.1.100 ). You will be redirected to the Yealink login page. Enter admin for both the username and password fields."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Trigger Auto Provisioning",
+      "text": "Once logged in, go to the Settings tab and select Auto Provision . In the Server URL field, enter:"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Wait for provisioning to complete",
+      "text": "The provisioning process may take up to five minutes. The phone may reboot several times during this period — this is normal. Do not power off the phone during this process. Once finished, your Yealink handset will be ready to use. If you need to make any changes in future, update your settings i..."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Connect the phone to your network",
+      "text": "Plug the desk phone into your network using an Ethernet cable. If your switch supports PoE (Power over Ethernet), the phone will power on automatically. Otherwise, connect the included power adapter. Wait for the phone to fully boot before proceeding."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Access the phone's web interface",
+      "text": "Find the phone's IP address — this is usually displayed on the phone screen under Menu > Status > Network . Open a web browser on a computer on the same network and navigate to that IP address (e.g. http://192.168.1.100 ). Log in with the phone's admin credentials (default is often admin / admin ..."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter your SIP account settings",
+      "text": "Navigate to the Account or SIP Account section in the phone's web interface. Enter the values from the SIP Credentials Reference table above. The field names vary by brand, but the mapping is consistent:"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Configure audio codecs",
+      "text": "In the codec or audio settings section, enable the following codecs in order of preference. Disable any codecs not listed below to ensure the best call quality."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Save settings and confirm registration",
+      "text": "Save the account settings. The phone will reboot and attempt to register with the Click2Call network. A successful registration is confirmed by a green line key light , a Registered status on the phone screen, or a dial tone when you pick up the handset. This typically takes 30–60 seconds after s..."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test a call",
+      "text": "Dial another extension on your system or call your own number from a mobile to confirm the phone is working correctly. Check that audio is clear in both directions. If the phone fails to register, see the Firewall Rules section below and verify your credentials are entered exactly as shown."
+    }
+  ],
+  "totalTime": "PT26M"
+}
+</script>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Adding & Provisioning a Desk Phone | Help Centre | Click2Call">
     <meta name="twitter:description" content="How to register and provision a physical desk phone (Yealink, Cisco, Grandstream, etc.) to your Click2Call account.">
