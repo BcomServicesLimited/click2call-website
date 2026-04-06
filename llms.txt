@@ -72,56 +72,55 @@ Click2Call uses simple, transparent pay-as-you-go pricing with no lock-in contra
 
 The Click2Call Help Centre provides step-by-step guides for managing your Cloud PBX phone system via the customer portal.
 
-- **Help Centre Index**: [https://www.click2call.com.au/help/index.html](https://www.click2call.com.au/help/index.html) — Browse all how-to guides by category.
+- **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 
 ### Getting Started
-- **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account.html](https://www.click2call.com.au/help/how-to-activate-account.html)
-- **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit.html](https://www.click2call.com.au/help/how-to-add-account-credit.html) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
+- **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account](https://www.click2call.com.au/help/how-to-activate-account)
+- **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit](https://www.click2call.com.au/help/how-to-add-account-credit) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 
 ### Phone Numbers
-- **Adding a Phone Number**: [https://www.click2call.com.au/help/how-to-add-phone-number.html](https://www.click2call.com.au/help/how-to-add-phone-number.html)
-- **Porting an Existing Number**: [https://www.click2call.com.au/help/how-to-port-number.html](https://www.click2call.com.au/help/how-to-port-number.html)
+- **Adding a Phone Number**: [https://www.click2call.com.au/help/how-to-add-phone-number](https://www.click2call.com.au/help/how-to-add-phone-number)
+- **Porting an Existing Number**: [https://www.click2call.com.au/help/how-to-port-number](https://www.click2call.com.au/help/how-to-port-number)
 
 ### Extensions & Users
-- **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension.html](https://www.click2call.com.au/help/how-to-add-extension.html)
-- **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user.html](https://www.click2call.com.au/help/how-to-add-user.html)
-- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id.html](https://www.click2call.com.au/help/how-to-set-outbound-caller-id.html)
+- **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension](https://www.click2call.com.au/help/how-to-add-extension)
+- **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user](https://www.click2call.com.au/help/how-to-add-user) — Create a portal login for a team member, set their access level (Administrator or User), enable 2FA, and link them to an extension.
+- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net DDI, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
 
 ### Phones & Devices
-- **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone.html](https://www.click2call.com.au/help/how-to-add-desk-phone.html)
-- **Setting Up a Softphone**: [https://www.click2call.com.au/help/how-to-set-up-softphone.html](https://www.click2call.com.au/help/how-to-set-up-softphone.html)
+- **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone](https://www.click2call.com.au/help/how-to-add-desk-phone)
+- **Setting Up a Softphone**: [https://www.click2call.com.au/help/how-to-set-up-softphone](https://www.click2call.com.au/help/how-to-set-up-softphone)
 
 ### Call Flows
-- **Setting Up a Call Flow**: [https://www.click2call.com.au/help/how-to-set-up-call-flow.html](https://www.click2call.com.au/help/how-to-set-up-call-flow.html)
-- **Creating a Ring Group**: [https://www.click2call.com.au/help/how-to-create-ring-group.html](https://www.click2call.com.au/help/how-to-create-ring-group.html)
-- **Configuring Business Hours**: [https://www.click2call.com.au/help/how-to-configure-business-hours.html](https://www.click2call.com.au/help/how-to-configure-business-hours.html)
-- **Setting Up Voicemail**: [https://www.click2call.com.au/help/how-to-set-up-voicemail.html](https://www.click2call.com.au/help/how-to-set-up-voicemail.html)
-- **Viewing Call Recordings**: [https://www.click2call.com.au/help/how-to-view-call-recordings.html](https://www.click2call.com.au/help/how-to-view-call-recordings.html)
+- **Setting Up a Call Flow**: [https://www.click2call.com.au/help/how-to-set-up-call-flow](https://www.click2call.com.au/help/how-to-set-up-call-flow)
+- **Creating a Ring Group**: [https://www.click2call.com.au/help/how-to-create-ring-group](https://www.click2call.com.au/help/how-to-create-ring-group)
+- **Configuring Business Hours**: [https://www.click2call.com.au/help/how-to-configure-business-hours](https://www.click2call.com.au/help/how-to-configure-business-hours)
+- **Setting Up Voicemail**: [https://www.click2call.com.au/help/how-to-set-up-voicemail](https://www.click2call.com.au/help/how-to-set-up-voicemail)
+- **Viewing Call Recordings**: [https://www.click2call.com.au/help/how-to-view-call-recordings](https://www.click2call.com.au/help/how-to-view-call-recordings)
 
-### Billing & Channels
-- **Adding Channels**: [https://www.click2call.com.au/help/how-to-add-channels.html](https://www.click2call.com.au/help/how-to-add-channels.html)
+### Billing & Account
+- **Adding Channels**: [https://www.click2call.com.au/help/how-to-add-channels](https://www.click2call.com.au/help/how-to-add-channels)
+- **Viewing Account History**: [https://www.click2call.com.au/help/how-to-view-account-history](https://www.click2call.com.au/help/how-to-view-account-history) — View invoices, payment history, and credit balance in the portal.
+- **Using Reports & Records**: [https://www.click2call.com.au/help/how-to-use-reports-and-records](https://www.click2call.com.au/help/how-to-use-reports-and-records) — Access call logs, usage reports, and analytics in the portal.
 
 ### AI Features
-- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html) — Automated call routing using natural language. Callers say what they need; the AI transfers the call to the right department. Not a conversational agent.
-- **Setting Up AI Agents**: [https://www.click2call.com.au/help/how-to-set-up-ai-agents.html](https://www.click2call.com.au/help/how-to-set-up-ai-agents.html) — A conversational AI voice agent that answers calls, holds full conversations, and responds to caller questions 24/7. Configured with a business profile, welcome message, AI voice actor, and call flow settings.
-- **Using AI Speech to Create Voice Recordings**: [https://www.click2call.com.au/help/how-to-use-ai-speech.html](https://www.click2call.com.au/help/how-to-use-ai-speech.html) — Text-to-speech tool for generating professional voicemail greetings, auto-attendant messages, and seasonal recordings (e.g. Christmas closure). Replaces the old dial-in self-recording approach.
-- **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail.html](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail.html) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
+- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist) — Automated call routing using natural language. Callers say what they need; the AI transfers the call to the right department. Not a conversational agent.
+- **Setting Up AI Agents**: [https://www.click2call.com.au/help/how-to-set-up-ai-agents](https://www.click2call.com.au/help/how-to-set-up-ai-agents) — A conversational AI voice agent that answers calls, holds full conversations, and responds to caller questions 24/7. Configured with a business profile, welcome message, AI voice actor, and call flow settings.
+- **Using AI Speech to Create Voice Recordings**: [https://www.click2call.com.au/help/how-to-use-ai-speech](https://www.click2call.com.au/help/how-to-use-ai-speech) — Text-to-speech tool for generating professional voicemail greetings, auto-attendant messages, and seasonal recordings (e.g. Christmas closure). Replaces the old dial-in self-recording approach.
+- **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
 
 ## Blog
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
 
-- **Blog Index**: [https://www.click2call.com.au/blog/index.html](https://www.click2call.com.au/blog/index.html)
-- What Is a SIP Trunk?: [https://www.click2call.com.au/blog/what-is-a-sip-trunk.html](https://www.click2call.com.au/blog/what-is-a-sip-trunk.html)
-- VoIP for Small Business: [https://www.click2call.com.au/blog/voip-for-small-business.html](https://www.click2call.com.au/blog/voip-for-small-business.html)
-- Cloud PBX vs Traditional Phone Systems: [https://www.click2call.com.au/blog/cloud-pbx-vs-traditional.html](https://www.click2call.com.au/blog/cloud-pbx-vs-traditional.html)
-- Microsoft Teams vs Cloud PBX: [https://www.click2call.com.au/blog/teams-vs-cloud-pbx.html](https://www.click2call.com.au/blog/teams-vs-cloud-pbx.html)
-- AI in Business Phones: [https://www.click2call.com.au/blog/ai-in-business-phones.html](https://www.click2call.com.au/blog/ai-in-business-phones.html)
-- Business Phone System Cost Guide: [https://www.click2call.com.au/blog/business-phone-system-cost.html](https://www.click2call.com.au/blog/business-phone-system-cost.html)
-- How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications.html](https://www.click2call.com.au/blog/how-to-secure-business-communications.html)
-- 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers.html](https://www.click2call.com.au/blog/1300-number-providers.html)
-- Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
-
-## How to Get a Business Phone Number: A Guide for New Businesses
-URL: https://www.click2call.com.au/blog/how-to-get-a-business-phone-number.html
-A practical guide for new Australian business owners on getting a local phone number, setting up a cloud phone system, and using an AI receptionist to handle calls from day one. Covers local vs 1300 numbers, call diversion to mobile, AI Receptionist setup, voicemail greetings, and a day-one checklist.
+- **Blog Index**: [https://www.click2call.com.au/blog](https://www.click2call.com.au/blog)
+- What Is a SIP Trunk?: [https://www.click2call.com.au/blog/what-is-a-sip-trunk](https://www.click2call.com.au/blog/what-is-a-sip-trunk)
+- VoIP for Small Business: [https://www.click2call.com.au/blog/voip-for-small-business](https://www.click2call.com.au/blog/voip-for-small-business)
+- Cloud PBX vs Traditional Phone Systems: [https://www.click2call.com.au/blog/cloud-pbx-vs-traditional](https://www.click2call.com.au/blog/cloud-pbx-vs-traditional)
+- Microsoft Teams vs Cloud PBX: [https://www.click2call.com.au/blog/teams-vs-cloud-pbx](https://www.click2call.com.au/blog/teams-vs-cloud-pbx)
+- AI in Business Phones: [https://www.click2call.com.au/blog/ai-in-business-phones](https://www.click2call.com.au/blog/ai-in-business-phones)
+- Business Phone System Cost Guide: [https://www.click2call.com.au/blog/business-phone-system-cost](https://www.click2call.com.au/blog/business-phone-system-cost)
+- How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications](https://www.click2call.com.au/blog/how-to-secure-business-communications)
+- 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers](https://www.click2call.com.au/blog/1300-number-providers)
+- Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
+- How to Get a Business Phone Number: [https://www.click2call.com.au/blog/how-to-get-a-business-phone-number](https://www.click2call.com.au/blog/how-to-get-a-business-phone-number) — A practical guide for new Australian business owners on getting a local phone number, setting up a cloud phone system, and using an AI receptionist to handle calls from day one. Covers local vs 1300 numbers, call diversion to mobile, AI Receptionist setup, voicemail greetings, and a day-one checklist.

@@ -1,7 +1,7 @@
 # robots.txt for click2call.com.au
 # Click2Call - Australian Cloud PBX and AI Voice Provider
 # Trading as Bcom Services Pty Ltd (ABN: 92 636 893 108)
-# Last updated: 2026-03-20
+# Last updated: 2026-04-07
 
 # ── Standard web crawlers ──────────────────────────────────────
 User-agent: *
@@ -12,6 +12,7 @@ Disallow: /assets/css/
 Disallow: /assets/js/
 Disallow: /blog/article-template.html
 Disallow: /case-studies/template.html
+Disallow: /email-signature-support.html
 
 # ── Google ─────────────────────────────────────────────────────
 User-agent: Googlebot
@@ -74,6 +75,10 @@ Allow: /
 
 # ── Amazon / Alexa ────────────────────────────────────────────
 User-agent: Amazonbot
+Allow: /
+
+# ── xAI / Grok ────────────────────────────────────────────────
+User-agent: Grok
 Allow: /
 
 # ── Common AI training crawlers (block) ───────────────────────
