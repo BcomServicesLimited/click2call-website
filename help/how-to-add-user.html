@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Adding a New User | Help Centre | Click2Call</title>
   <meta name="description" content="Step-by-step guide to adding a new user to your Click2Call account and sending them their login credentials.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
@@ -18,6 +19,8 @@
   <meta property="og:title" content="Adding a New User | Help Centre | Click2Call">
   <meta property="og:description" content="Step-by-step guide to adding a new user to your Click2Call account and sending them their login credentials.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -187,7 +190,7 @@
         <span class="text-xs text-gray-400">2 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Adding a New User</h1>
-      <p class="text-gray-600 leading-relaxed">This guide explains how to create a new user in the Click2Call portal and send them their login details.</p>
+      <p class="text-gray-600 leading-relaxed">This guide explains how to create a new user in the Click2Call portal, configure their access level, and send them their login details. Each user gets their own secure login to the portal, allowing them to manage their own extension, view call recordings, and access features based on the permissions you assign.</p>
     </div>
   </div>
 
@@ -201,24 +204,92 @@
         <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
         <div class="flex-1 pt-1">
             <h3 class="font-bold text-gray-900 mb-2">Navigate to Logins</h3>
-            <p class="text-gray-600 leading-relaxed">Log in to the portal, click the <strong>Account</strong> tab, and then select <strong>Logins</strong> from the left-hand navigation menu.</p>
+            <p class="text-gray-600 leading-relaxed">Log in to the <a href="https://portal.click2call.com.au/login.php" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] hover:underline">Click2Call portal</a>, click the <strong>Account</strong> tab in the top navigation bar, and then select <strong>Logins</strong> from the left-hand navigation menu. This section lists all existing users on your account.</p>
         </div>
     </div>
     <div class="flex gap-5 mb-8">
         <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
         <div class="flex-1 pt-1">
             <h3 class="font-bold text-gray-900 mb-2">Add a New User</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">Fill in the form to create the new user login. The user's email address will be their username.</p>
+            <p class="text-gray-600 leading-relaxed mb-4">Click the <strong>Add New User</strong> button to open the user creation form. The user's email address will serve as their username for logging in to the portal.</p>
             <img src="/assets/images/help/add-user-form.webp" alt="Add a new user form in the Click2Call portal." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
-            <p class="text-gray-600 leading-relaxed mt-4">Key fields:</p>
+            <p class="text-gray-600 leading-relaxed mt-4">Key fields to complete:</p>
             <ul class="list-disc list-inside text-gray-600 leading-relaxed space-y-2 mt-2">
-                <li><strong>Access Level:</strong> Control what the user can see and do. 'Administrator' provides full access, while 'User' is more restricted.</li>
-                <li><strong>User Restrictions:</strong> Tick the box to prevent the user from being able to delete call recordings.</li>
-                <li><strong>Two Factor Authentication:</strong> For enhanced security, you can require the user to verify their login via email.</li>
+                <li><strong>First Name &amp; Last Name:</strong> The user's full name as it will appear in the portal and on call records.</li>
+                <li><strong>Email Address:</strong> This becomes the user's login username. A welcome email with login instructions is sent to this address.</li>
+                <li><strong>Access Level:</strong> Controls what the user can see and do. <em>Administrator</em> provides full account access including billing and configuration. <em>User</em> restricts access to their own extension and call history only.</li>
+                <li><strong>User Restrictions:</strong> Tick this box to prevent the user from deleting call recordings — useful for compliance and quality assurance purposes.</li>
+                <li><strong>Two-Factor Authentication (2FA):</strong> When enabled, the user must verify each login via a one-time code sent to their email address, adding an extra layer of security.</li>
             </ul>
-            <p class="text-gray-600 leading-relaxed mt-4">Once you have filled in all the details, click the <strong>Add New User</strong> button to save.</p>
+            <p class="text-gray-600 leading-relaxed mt-4">Once all fields are completed, click the <strong>Add New User</strong> button to save. The new user will appear in the Logins list immediately.</p>
         </div>
     </div>
+    <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+        <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">User Receives Welcome Email</h3>
+            <p class="text-gray-600 leading-relaxed">After the user is created, the system automatically sends a welcome email to the address you provided. This email contains a link for the user to set their own password and access the portal for the first time. If the user does not receive the email, ask them to check their spam or junk folder, or use the <strong>Resend Welcome Email</strong> option from the Logins list.</p>
+        </div>
+    </div>
+    <div class="flex gap-5 mb-8">
+        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+        <div class="flex-1 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Assign an Extension (Optional)</h3>
+            <p class="text-gray-600 leading-relaxed">Once the user login is created, you can link it to an extension so the user can make and receive calls. Navigate to <strong>Extensions &amp; Users</strong> in the portal, select the relevant extension, and assign the new user's login from the dropdown. This allows the user to log in to a softphone or desk phone using their credentials. See the <a href="/help/how-to-add-extension.html" class="text-[#3B9C49] hover:underline">Adding a New Extension</a> guide for full details.</p>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div class="mb-12">
+  <h2 class="text-xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="space-y-4">
+    <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-gray-50 transition-colors list-none">
+        How many users can I add to my account?
+        <svg class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <div class="px-5 pb-5 pt-1 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+        There is no limit on the number of user logins you can create. You can add as many users as your team requires at no additional cost.
+      </div>
+    </details>
+    <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-gray-50 transition-colors list-none">
+        What is the difference between an Administrator and a User?
+        <svg class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <div class="px-5 pb-5 pt-1 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+        An <strong>Administrator</strong> has full access to all account settings, including billing, call flows, phone numbers, and all other users' call recordings. A <strong>User</strong> can only access their own extension, their own call history, and any features you have not restricted.
+      </div>
+    </details>
+    <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-gray-50 transition-colors list-none">
+        The new user did not receive their welcome email — what should I do?
+        <svg class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <div class="px-5 pb-5 pt-1 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+        First, ask the user to check their spam or junk folder. If it is not there, go to <strong>Account &gt; Logins</strong>, find the user, and use the <strong>Resend Welcome Email</strong> option. If the issue persists, verify the email address is correct and contact our support team.
+      </div>
+    </details>
+    <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-gray-50 transition-colors list-none">
+        Can I change a user's access level after they have been created?
+        <svg class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <div class="px-5 pb-5 pt-1 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+        Yes. Go to <strong>Account &gt; Logins</strong>, click the edit icon next to the user, and update their Access Level. Changes take effect immediately on their next login.
+      </div>
+    </details>
+    <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+      <summary class="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-gray-900 text-sm hover:bg-gray-50 transition-colors list-none">
+        How do I delete a user?
+        <svg class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </summary>
+      <div class="px-5 pb-5 pt-1 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+        Go to <strong>Account &gt; Logins</strong> and click the delete icon next to the user you wish to remove. Deleting a user does not affect their associated extension or any call recordings — it only removes their portal login access.
+      </div>
+    </details>
+  </div>
 </div>
 <!-- Related articles -->
     <div class="border-t border-gray-200 pt-8 mb-10">
