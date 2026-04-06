@@ -98,77 +98,77 @@
   }
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is outbound caller ID?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Outbound caller ID is the phone number that appears on the screen of the person you are calling. By default, Click2Call presents your account's main number. You can change this per extension to show a different number from your account, or hide your number entirely."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I present a different number on outbound calls?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. In the Caller ID and Privacy settings, select 'Present another phone number from my account' and then choose the number from the On-net Phone number selection dropdown. You can only present numbers that belong to your Click2Call account."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I make my number private or anonymous?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Tick the 'Enable persistent Call Privacy by hiding your Caller ID when making Outbound calls' checkbox. This will suppress your number on all outbound calls from that extension. You can also use the star code *67 before a number to hide your caller ID on a single call without changing the persistent setting."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does 'Force Caller ID to be sent on all calls including diverted calls' mean?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "When a call is diverted or forwarded to an external number (such as a mobile), the caller ID presented can sometimes change. Ticking this option forces your chosen caller ID to be presented even on diverted calls, ensuring consistency."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the *67 and *65 star codes?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dialling *67 before a number hides your caller ID for that single call. Dialling *65 before a number shows your caller ID for that single call (useful if persistent privacy is enabled but you want to reveal your number for one call). You can optionally enable a confirmation prompt before the call connects."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a Verified Off-net number?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A Verified Off-net number is an external number (such as a mobile or a number from another provider) that has been verified as belonging to you. Once verified, you can present it as your outbound caller ID. To verify a new external number, click the 'Click here if you wish to verify a new external Caller ID for your account' button at the bottom of the Caller ID and Privacy page."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this setting affect incoming calls?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. The Caller ID and Privacy settings only affect outbound calls made from this extension. Incoming call routing is configured separately in the Incoming Calls section of the Call Flow."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I set a different caller ID for each extension?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Each extension has its own Caller ID and Privacy settings. You can configure each extension independently — for example, your sales team could present the main business number while your support team presents a dedicated support line."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is outbound caller ID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Outbound caller ID is the phone number that appears on the screen of the person you are calling. By default, Click2Call presents your account's main number. You can change this per extension to show a different number from your account, or hide your number entirely."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Can I present a different number on outbound calls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can present a different number on outbound calls by selecting 'Present another phone number from my account' in the Caller ID and Privacy settings. Then, choose the desired number from the On-net Phone number dropdown. Only numbers associated with your Click2Call account can be presented."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I make my number private or anonymous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tick the 'Enable persistent Call Privacy by hiding your Caller ID when making Outbound calls' checkbox. This will suppress your number on all outbound calls from that extension. You can also use the star code *67 before a number to hide your caller ID on a single call without changing the persistent setting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does 'Force Caller ID to be sent on all calls including diverted calls' mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selecting 'Force Caller ID to be sent on all calls including diverted calls' ensures your chosen caller ID is displayed on all calls, even when they are diverted or forwarded to an external number like a mobile. This maintains consistent caller identification regardless of call forwarding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the *67 and *65 star codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dialling *67 before a number hides your caller ID for that single call. Dialling *65 before a number shows your caller ID for that single call (useful if persistent privacy is enabled but you want to reveal your number for one call). You can optionally enable a confirmation prompt before the call connects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Verified Off-net number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Verified Off-net number is an external number (such as a mobile or a number from another provider) that has been verified as belonging to you. Once verified, you can present it as your outbound caller ID. To verify a new external number, click the 'Click here if you wish to verify a new external Caller ID for your account' button at the bottom of the Caller ID and Privacy page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this setting affect incoming calls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, this setting does not affect incoming calls. The Caller ID and Privacy settings apply only to outbound calls made from this extension. Incoming call routing is managed separately within the Incoming Calls section of the Call Flow, ensuring that inbound calls remain unaffected by these settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I set a different caller ID for each extension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can set a different caller ID for each extension. Each extension has its own Caller ID and Privacy settings, allowing independent configuration. For instance, your sales team can display the main business number, while your support team shows a dedicated support line, ensuring clear and appropriate identification."
+      }
+    }
+  ]
+}
+</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
   <script>
