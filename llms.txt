@@ -50,13 +50,13 @@ Click2Call provides VoIP phone systems and Cloud PBX solutions to businesses acr
 
 ## Pricing (ex GST, AUD) — Pay As You Go
 
-Click2Call uses simple, transparent pay-as-you-go pricing with no lock-in contracts:
+Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in contracts:
 
 - **Cloud PBX Landline**: $10.00/month per line
-- **Direct Dial Number (DDI)**: $5.00/month per number
+- **Extra Business Number**: $10.00/month per number
 - **Microsoft Teams Line**: $10.00/month per line
 - **PBX Extensions**: Free
-- **Channels**: 2 included; additional channels $3.00/month each
+- **Channels**: Included with Cloud PBX User
 - **Outbound call rates**: from $0.10/min (Australia & New Zealand fixed)
 - **30-day free trial** — no credit card required
 - **Activation**: up to 24 hours after signup
@@ -85,7 +85,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 ### Extensions & Users
 - **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension](https://www.click2call.com.au/help/how-to-add-extension)
 - **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user](https://www.click2call.com.au/help/how-to-add-user) — Create a portal login for a team member, set their access level (Administrator or User), enable 2FA, and link them to an extension.
-- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net DDI, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
+- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net Extra Business Number, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
 
 ### Phones & Devices
 - **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone](https://www.click2call.com.au/help/how-to-add-desk-phone)
@@ -99,7 +99,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 - **Viewing Call Recordings**: [https://www.click2call.com.au/help/how-to-view-call-recordings](https://www.click2call.com.au/help/how-to-view-call-recordings)
 
 ### Billing & Account
-- **Adding Channels**: [https://www.click2call.com.au/help/how-to-add-channels](https://www.click2call.com.au/help/how-to-add-channels)
+
 - **Viewing Account History**: [https://www.click2call.com.au/help/how-to-view-account-history](https://www.click2call.com.au/help/how-to-view-account-history) — View invoices, payment history, and credit balance in the portal.
 - **Using Reports & Records**: [https://www.click2call.com.au/help/how-to-use-reports-and-records](https://www.click2call.com.au/help/how-to-use-reports-and-records) — Access call logs, usage reports, and analytics in the portal.
 

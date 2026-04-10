@@ -32,7 +32,7 @@ Hello {{first_name}},
 
 Thank you for your enquiry.
 
-As a starting point, Click2Call pricing currently includes phone numbers from $5.00 per month ex GST and Cloud PBX landlines from $10.00 per month ex GST. Accounts include two channels, additional channels are charged separately, and services are offered on a month-to-month basis with no lock-in contract.
+As a starting point, Click2Call pricing currently includes phone numbers from $10.00 per month ex GST and Cloud PBX landlines from $10.00 per month ex GST. Accounts include two channels, additional channels are charged separately, and services are offered on a month-to-month basis with no lock-in contract.
 
 If you would like, I can help you work out the most suitable setup based on your number of users, whether you need number porting, and whether you plan to use desk phones, softphones, or Microsoft Teams.
 

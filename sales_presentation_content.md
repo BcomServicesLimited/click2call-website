@@ -48,7 +48,7 @@ Our previous pricing model required prospects to understand multiple components:
 | Cloud PBX User | $25 + GST / user / month | Local number + 300 mins outbound + unlimited inbound + all PBX features |
 | SIP Trunk | $50 + GST / trunk / month | 500 mins outbound included |
 | Extra Cloud PBX Line | $10 + GST / line / month | Full PBX features, no outbound minutes |
-| Extra Direct Dial Number | $5 + GST / number / month | Geographic number, no PBX features |
+| Extra Extra Business Number | $5 + GST / number / month | Geographic number, no PBX features |
 | 1300 Number | $10 + GST / month | Inbound only — requires a PBX extension |
 
 ---
@@ -124,7 +124,7 @@ Once the base user count is agreed, there are four natural upsell conversations 
 
 | Add-On | Trigger Question | Price |
 |---|---|---|
-| Extra Direct Dial Numbers | "Do any departments need their own number?" | $5/month each |
+| Extra Extra Business Numbers | "Do any departments need their own number?" | $10/month each |
 | Extra Cloud PBX Lines | "Do you have shared phones in meeting rooms or reception?" | $10/month each |
 | 1300 Number | "Would a 1300 number help your customers reach you more easily?" | $10/month |
 | SIP Trunk | "Do you have an existing PBX you want to keep?" | $50/month per trunk |

@@ -6,12 +6,12 @@ This file captures starter pricing notes for support and pre-sales email replies
 
 | Item | Starter reference |
 |---|---|
-| Direct Dial Numbers | From $5.00 per month ex GST |
+| Extra Business Numbers | From $5.00 per month ex GST |
 | Cloud PBX Landlines | From $10.00 per month ex GST |
 | Microsoft Teams Lines | From $10.00 per month ex GST |
 | PBX Extensions | Free |
 | Included channels | 2 channels included per account |
-| Additional channels | $3.00 per month each |
+| Channels | Included with Cloud PBX User |
 | Call rates | From $0.10/min for Australian and New Zealand fixed destinations |
 | Contract model | Month-to-month, no lock-in contracts |
 | Trial | 30-day free trial, no credit card required |

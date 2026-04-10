@@ -27,7 +27,7 @@ blog/business-phone-system-cost.html (8 issues)
   Line  245: [Old $5 DID pricing]
            <td class="px-6 py-4"><strong>$5.00 / month</strong></td>
   Line  272: [Old $5 DID reference]
-           <li><strong>Direct Numbers (DDIs):</strong> A dedicated Direct Dial Number (DDI) costs <strong>$5.00 per month</strong> 
+           <li><strong>Direct Numbers (DDIs):</strong> A dedicated Extra Business Number costs <strong>$5.00 per month</strong> 
   Line  277: [Old PAYG model reference]
            <p>For a 10-person business, moving to a Cloud PBX like Click2Call is significantly more cost-effective than a tradition
   Line  261: [Old inbound per-minute rate]
@@ -154,9 +154,9 @@ help/how-to-add-channels.html (5 issues)
 help/how-to-add-phone-number.html (2 issues)
   ------------------------------------------------------------
   Line  255: [Old $5 DID pricing]
-           <li>A Direct Dial Number costs <strong>$5.00/month  ex GST</strong>. A Cloud PBX Landline costs <strong>$10.00/month  ex
+           <li>A Extra Business Number costs <strong>$10.00/month  ex GST</strong>. A Cloud PBX Landline costs <strong>$10.00/month  ex
   Line  255: [Old $5 DID reference]
-           <li>A Direct Dial Number costs <strong>$5.00/month  ex GST</strong>. A Cloud PBX Landline costs <strong>$10.00/month  ex
+           <li>A Extra Business Number costs <strong>$10.00/month  ex GST</strong>. A Cloud PBX Landline costs <strong>$10.00/month  ex
 
 help/how-to-use-reports-and-records.html (1 issues)
   ------------------------------------------------------------

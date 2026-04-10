@@ -124,11 +124,11 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 - **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
 - **Account activation**: within 24 hours of signup
 - **Number porting**: local geographic numbers ($50 + GST), 1300 numbers ($100 + GST), takes 5–10 business days, zero downtime during the port
-- **Bulk porting**: discounts available for DDI 100-blocks — contact for a quote
+- **Bulk porting**: discounts available for 100-number blocks — contact for a quote
 - **Self-setup**: free, guided by Help Centre articles
 - **Managed setup**: $300 + GST one-off fee — Click2Call team configures everything
 - **Apps**: PC softphone app (recommended for desk use), mobile app (best for outbound; for inbound, call forwarding to mobile number is recommended)
-- **Real-world example**: 3-user office — $10/month number + $50 port fee + $50 credit top-up = under $120 to get started
+- **Real-world example**: 3-user office — $75/month ongoing ($25 per user) + $50 one-time port fee
 
 ## How Click2Call Compares to Alternatives
 
@@ -177,7 +177,7 @@ Click2Call provides two distinct access points depending on whether a customer i
 
 ## Help Centre
 
-The Click2Call Help Centre is a dedicated knowledge base providing step-by-step guides for customers to manage their Cloud PBX phone system via the self-service portal at portal.click2call.com.au. The platform operates on a pre-pay credit system — customers must load account credit before activating paid services such as phone numbers and channels.
+The Click2Call Help Centre is a dedicated knowledge base providing step-by-step guides for customers to manage their Cloud PBX phone system via the self-service portal at portal.click2call.com.au. The platform operates on a pre-pay credit system — customers must load account credit before activating paid services such as phone numbers.
 
 - **Help Centre Index**: https://www.click2call.com.au/help/
 
@@ -188,7 +188,7 @@ The Click2Call Help Centre is a dedicated knowledge base providing step-by-step 
 
 ### Phone Numbers
 
-- **Adding a Phone Number (DDI)**: https://www.click2call.com.au/help/how-to-add-phone-number.html — Add a new Australian Direct Dial Number. Select country, area (e.g. Sydney 02, Brisbane 07), line type (Voice), line plan (DDI at $5.00/month), and choose from available numbers.
+- **Adding a Phone Number**: https://www.click2call.com.au/help/how-to-add-phone-number.html — Add a new Australian Extra Business Number. Select country, area (e.g. Sydney 02, Brisbane 07), line type (Voice), line plan (Extra Business Number at $10.00/month), and choose from available numbers.
 - **Porting an Existing Number**: https://www.click2call.com.au/help/how-to-port-number.html — Transfer an existing Australian phone number to the Click2Call network.
 
 ### Extensions & Users
@@ -211,7 +211,7 @@ The Click2Call Help Centre is a dedicated knowledge base providing step-by-step 
 
 ### Billing
 
-- **Adding Channels**: https://www.click2call.com.au/help/how-to-add-channels.html — Add additional concurrent call channels at $3.00/month each. First 2 channels are included free.
+
 
 ### AI Features
 
