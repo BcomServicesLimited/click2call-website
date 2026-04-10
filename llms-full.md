@@ -19,7 +19,7 @@ Click2Call's Cloud PBX is a complete, hosted business phone system that runs ent
 - **Key Features**: Auto-attendant (IVR), call recording, voicemail-to-email, call queues, ring groups, music on hold, call transfer, conference calling, and a user-friendly web portal and mobile app.
 - **Who It's For**: Small to medium-sized businesses (1-100 staff), multi-site businesses, and companies with remote or hybrid workforces.
 - **How It Works**: Calls are routed through Click2Call's cloud infrastructure to VoIP handsets, desktop softphones, or mobile apps. Users can manage their entire phone system through a web browser.
-- **Pricing**: Simple per-item pricing. Cloud PBX Landlines $10.00/month (ex GST). Direct Dial Numbers $5.00/month. PBX Extensions free. Every account includes 2 concurrent call channels; additional channels $3.00/month. Call rates from $0.10/min. No bundled plans. See [Pricing Overview](#pricing-overview).
+- **Pricing**: Flat-rate prepaid pricing. Cloud PBX User $25.00/month (includes local number + 300 outbound mins + unlimited inbound). Extra Business Number (Inbound Line) $10.00/month. Microsoft Teams User $25.00/month (includes local number + 300 outbound mins + unlimited inbound). No lock-in contracts. See [Pricing Overview](#pricing-overview).
 
 ### AI Voice Tools
 
@@ -55,25 +55,28 @@ SIP (Session Initiation Protocol) Trunks are a modern, IP-based replacement for 
 
 ## Pricing Overview (all prices ex GST, AUD)
 
-Click2Call uses simple, transparent pay-as-you-go pricing with no bundled plans or fixed monthly tiers. Customers pay only for the numbers and channels they use, plus per-minute call rates. All prices ex GST.
+Click2Call uses flat-rate, prepaid billing. Customers load credit onto their account and flat-rate monthly fees are deducted automatically. Auto top-up is available to keep the account funded. All prices ex GST.
 
-### Phone Numbers (monthly)
-- **Cloud PBX Landline**: $10.00/month — full PBX features (IVR, call recording, voicemail-to-email, queues, ring groups)
-- **Direct Dial Number**: $5.00/month — local Australian inbound number, no PBX features
-- **Microsoft Teams Line**: $10.00/month — local AUS number for MS Teams direct routing
-- **PBX Extension**: Free — internal extension with no external number (outbound calls at standard rates)
+### Products (monthly, ex GST)
+- **Cloud PBX User**: $25.00/month — includes 1 local Australian number, 300 outbound minutes, unlimited inbound calls, and all Cloud PBX features (IVR, call recording, voicemail-to-email, queues, ring groups)
+- **Extra Business Number (Inbound Line)**: $10.00/month — additional local number for shared lines, reception, or extra inbound routing. Unlimited inbound calling. No outbound calling.
+- **Microsoft Teams User**: $25.00/month — includes 1 local Australian number, 300 outbound minutes, unlimited inbound calls, via Microsoft Direct Routing
 
-### Channels (concurrent calls)
-- **Included**: 2 channels with every account (free)
-- **Additional channels**: $3.00/month per channel
-- All outbound calls, including from free extensions, draw from the shared channel pool
+### Phone Number Options (monthly, ex GST)
+- **Local number (02, 03, 07, 08)**: $10.00/month — geographic presence in any Australian city
+- **1300 number**: $10.00/month — national presence, caller pays local call rate
+- **1800 number**: $10.00/month — toll-free for callers, business pays $0.20/min inbound
 
-### Call Rates (per minute, ex GST)
+### Number Porting (one-time fee, ex GST)
+- **Local number port**: $50.00 — 5–10 business days, number stays active during porting
+- **1300 or 1800 number port**: $100.00 — 5–10 business days, number stays active during porting
+
+### Call Rates (per minute, ex GST, beyond included 300 mins)
 
 **Australia:**
 - Fixed: $0.10/min
 - Mobile: $0.20/min
-- Inbound 1300 / 1800 from mobile: $0.20/min
+- Inbound 1800 from any phone: $0.20/min
 - Emergency / 1300 inbound: Free
 
 **New Zealand:**
@@ -81,13 +84,10 @@ Click2Call uses simple, transparent pay-as-you-go pricing with no bundled plans 
 - Mobile: $0.20/min
 - Tollfree from fixed: $0.10/min
 - Tollfree from mobile: $0.20/min
-- 0900 Premium: $5.00/min
-- Directory: $1.00/min
-- Emergency / Inbound / Service calls: Free
 
 ### General
-- No bundled minutes — all calls billed pay-as-you-go
-- No lock-in contracts — month-to-month billing
+- Prepaid billing — load credit, enable auto top-up, fees deducted monthly
+- No lock-in contracts — cancel any time
 - No setup fees on standard accounts
 - 30-day free trial on Cloud PBX (no credit card required)
 
