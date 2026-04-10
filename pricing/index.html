@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     rTotal.textContent = '$' + total.toFixed(2);
   }
 
-  [elUsers, elTrunks, elLines].forEach(el => {
+  [elUsers, elLines].forEach(el => {
     if(el) {
       el.addEventListener('input', updateCalculator);
       el.addEventListener('change', updateCalculator);
