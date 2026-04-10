@@ -250,8 +250,40 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Cloud PBX Landline",
-              "description": "Full Cloud PBX landline with auto-attendant, call recording, voicemail to email, ring groups and call queues. Prepaid credit system."
+              "name": "Cloud PBX User",
+              "description": "Full Cloud PBX user seat with local Australian number, 300 mins outbound included, unlimited inbound, auto-attendant, call recording, voicemail to email, ring groups and call queues."
+            },
+            "price": "25.00",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": 25.0,
+              "priceCurrency": "AUD",
+              "unitText": "per user per month (ex GST)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Extra PBX Line",
+              "description": "Additional Cloud PBX line with full features. Ideal for a main company number or auto-attendant line."
+            },
+            "price": "10.00",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": 10.0,
+              "priceCurrency": "AUD",
+              "unitText": "per line per month (ex GST)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "1300 Number",
+              "description": "National 1300 number for inbound calls. Requires a Cloud PBX extension for outbound calling."
             },
             "price": "10.00",
             "priceCurrency": "AUD",
@@ -260,48 +292,6 @@
               "price": 10.0,
               "priceCurrency": "AUD",
               "unitText": "per number per month (ex GST)"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Direct Dial Number",
-              "description": "Inbound-only direct dial number for routing calls to extensions."
-            },
-            "price": "5.00",
-            "priceCurrency": "AUD",
-            "priceSpecification": {
-              "@type": "UnitPriceSpecification",
-              "price": 5.0,
-              "priceCurrency": "AUD",
-              "unitText": "per number per month (ex GST)"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "PBX Extension",
-              "description": "Free internal extension for staff. No external number required."
-            },
-            "price": "0.00",
-            "priceCurrency": "AUD"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Extra Concurrent Call Channel",
-              "description": "Additional concurrent call channel beyond the 2 included free channels."
-            },
-            "price": "3.00",
-            "priceCurrency": "AUD",
-            "priceSpecification": {
-              "@type": "UnitPriceSpecification",
-              "price": 3.0,
-              "priceCurrency": "AUD",
-              "unitText": "per channel per month (ex GST)"
             }
           }
         ]
@@ -1340,33 +1330,27 @@
 <div class="text-center mb-12">
 <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Simple Per-Item Pricing</h2>
 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Prepaid credit system. No bundled plans. No lock-in contracts. Pay only for the numbers and channels you use. All prices ex GST.
+        Flat-rate pricing with no hidden fees. No lock-in contracts. All prices ex GST.
       </p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
 <div class="bg-white rounded-2xl p-6 border-2 border-[#3B9C49] shadow-md text-center">
-<p class="text-xs font-bold uppercase tracking-wide text-[#3B9C49] mb-2">Cloud PBX Landline</p>
+<p class="text-xs font-bold uppercase tracking-wide text-[#3B9C49] mb-2">Cloud PBX User</p>
+<p class="text-4xl font-extrabold text-gray-900">$25</p>
+<p class="text-sm text-gray-500 mt-1">per user / month</p>
+<p class="text-xs text-gray-400 mt-1">Includes local number + 300 mins outbound</p>
+</div>
+<div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
+<p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Extra PBX Line</p>
+<p class="text-4xl font-extrabold text-gray-900">$10</p>
+<p class="text-sm text-gray-500 mt-1">per line / month</p>
+<p class="text-xs text-gray-400 mt-1">Ideal for main company number</p>
+</div>
+<div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
+<p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">1300 Number</p>
 <p class="text-4xl font-extrabold text-gray-900">$10</p>
 <p class="text-sm text-gray-500 mt-1">per number / month</p>
-<p class="text-xs text-gray-400 mt-1">Full PBX features</p>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
-<p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Direct Dial Number</p>
-<p class="text-4xl font-extrabold text-gray-900">$5</p>
-<p class="text-sm text-gray-500 mt-1">per number / month</p>
-<p class="text-xs text-gray-400 mt-1">Inbound number only</p>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
-<p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">PBX Extension</p>
-<p class="text-4xl font-extrabold text-[#3B9C49]">Free</p>
-<p class="text-sm text-gray-500 mt-1">unlimited extensions</p>
-<p class="text-xs text-gray-400 mt-1">No external number</p>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
-<p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Extra Channel</p>
-<p class="text-4xl font-extrabold text-gray-900">$3</p>
-<p class="text-sm text-gray-500 mt-1">per channel / month</p>
-<p class="text-xs text-gray-400 mt-1">2 channels included free</p>
+<p class="text-xs text-gray-400 mt-1">Inbound only — requires a PBX extension</p>
 </div>
 </div>
 <div class="mt-16 max-w-4xl mx-auto">

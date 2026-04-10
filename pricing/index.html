@@ -38,24 +38,17 @@
     <script>
 document.addEventListener('DOMContentLoaded', function() {
   const elUsers = document.getElementById('calc-users');
-  const elTrunks = document.getElementById('calc-trunks');
   const elLines = document.getElementById('calc-lines');
-  const elDids = document.getElementById('calc-dids');
+
 
   const rUsersCount = document.getElementById('r-users-count');
   const rUsersCost = document.getElementById('r-users-cost');
-  
-  const rowTrunks = document.getElementById('row-trunks');
-  const rTrunksCount = document.getElementById('r-trunks-count');
-  const rTrunksCost = document.getElementById('r-trunks-cost');
   
   const rowLines = document.getElementById('row-lines');
   const rLinesCount = document.getElementById('r-lines-count');
   const rLinesCost = document.getElementById('r-lines-cost');
   
-  const rowDids = document.getElementById('row-dids');
-  const rDidsCount = document.getElementById('r-dids-count');
-  const rDidsCost = document.getElementById('r-dids-cost');
+
   
   const rIncludedMins = document.getElementById('r-included-mins');
   const rSubtotal = document.getElementById('r-subtotal');
@@ -64,32 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateCalculator() {
     const users = parseInt(elUsers.value) || 0;
-    const trunks = parseInt(elTrunks.value) || 0;
     const lines = parseInt(elLines.value) || 0;
-    const dids = parseInt(elDids.value) || 0;
 
     const costUsers = users * 25;
-    const costTrunks = trunks * 50;
     const costLines = lines * 10;
-    const costDids = dids * 5;
 
-    const subtotal = costUsers + costTrunks + costLines + costDids;
+    const subtotal = costUsers + costLines;
     const gst = subtotal * 0.10;
     const total = subtotal + gst;
     
-    const includedMins = (users * 300) + (trunks * 500);
+    const includedMins = users * 300;
 
     // Update UI
     rUsersCount.textContent = users;
     rUsersCost.textContent = '$' + costUsers.toFixed(2);
-    
-    if (trunks > 0) {
-      rowTrunks.style.display = 'flex';
-      rTrunksCount.textContent = trunks;
-      rTrunksCost.textContent = '$' + costTrunks.toFixed(2);
-    } else {
-      rowTrunks.style.display = 'none';
-    }
     
     if (lines > 0) {
       rowLines.style.display = 'flex';
@@ -99,13 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
       rowLines.style.display = 'none';
     }
     
-    if (dids > 0) {
-      rowDids.style.display = 'flex';
-      rDidsCount.textContent = dids;
-      rDidsCost.textContent = '$' + costDids.toFixed(2);
-    } else {
-      rowDids.style.display = 'none';
-    }
+
     
     rIncludedMins.textContent = includedMins.toLocaleString() + ' mins';
     rSubtotal.textContent = '$' + subtotal.toFixed(2);
@@ -113,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     rTotal.textContent = '$' + total.toFixed(2);
   }
 
-  [elUsers, elTrunks, elLines, elDids].forEach(el => {
+  [elUsers, elTrunks, elLines].forEach(el => {
     if(el) {
       el.addEventListener('input', updateCalculator);
       el.addEventListener('change', updateCalculator);
@@ -197,14 +172,6 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       "@type": "Question",
-      "name": "What is a call channel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A call channel allows one simultaneous call — either inbound or outbound. Your account includes 2 channels free. If you need more than 2 calls at the same time, add extra channels for $3.00/month each (ex GST). As a guide, a 5-person office typically needs 2 to 3 channels."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "How much does it cost to call a 1300 number?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -243,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Click2Call Phone Number",
-  "description": "Australian local, 1300 or 1800 phone number with 2 included call channels. Pay-as-you-go VoIP for Australian businesses.",
+  "description": "Cloud PBX phone system for Australian businesses. $25 per user per month including a local number, 300 minutes outbound, and unlimited inbound calling.",
   "image": "https://www.click2call.com.au/assets/images/cloud_pbx_hero.webp",
   "brand": {"@type": "Brand", "name": "Click2Call"},
   "offers": {
@@ -508,7 +475,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- SECTION 2 — PRICING CARDS -->
   <section class="bg-gray-50 py-16 border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         
         <!-- Card 1: Cloud PBX User -->
         <div class="bg-white rounded-xl border-2 border-green-500 p-6 shadow-md flex flex-col relative">
@@ -525,43 +492,20 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="https://portal.click2call.com.au/join/" class="w-full block text-center px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors">Get Started</a>
         </div>
 
-        <!-- Card 2: SIP Trunk -->
-        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">SIP Trunk</h3>
-          <div class="text-4xl font-extrabold text-gray-900 mb-1">$50<span class="text-lg font-normal text-gray-500">/mo</span></div>
-          <div class="text-sm text-gray-500 mb-6">per trunk (ex GST)</div>
-          <ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Connect your own PBX</li>
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>500 mins outbound included</li>
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited inbound calls</li>
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>High-capacity channels</li>
-          </ul>
-          <a href="https://portal.click2call.com.au/join/" class="w-full block text-center px-4 py-2 border-2 border-green-600 text-green-600 rounded-lg font-semibold hover:bg-green-50 transition-colors">Get Started</a>
-        </div>
-
-        <!-- Card 3: Extra PBX Line -->
+        <!-- Card 2: Extra PBX Line -->
         <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col">
           <h3 class="text-xl font-bold text-gray-900 mb-2">Extra PBX Line</h3>
           <div class="text-4xl font-extrabold text-gray-900 mb-1">$10<span class="text-lg font-normal text-gray-500">/mo</span></div>
           <div class="text-sm text-gray-500 mb-6">per line (ex GST)</div>
           <ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Ideal for main company number</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited inbound calling</li>
             <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Full Cloud PBX features</li>
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Perfect for shared phones</li>
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Add to existing users</li>
-          </ul>
-        </div>
-
-        <!-- Card 4: Extra Numbers -->
-        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Extra Numbers</h3>
-          <div class="text-4xl font-extrabold text-gray-900 mb-1">$5<span class="text-lg font-normal text-gray-500">/mo</span></div>
-          <div class="text-sm text-gray-500 mb-6">per number (ex GST)</div>
-          <ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Direct Dial (DID) numbers</li>
-            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Local geographic numbers</li>
             <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>1300 numbers available ($10/mo)</li>
           </ul>
         </div>
+
+
 
       </div>
     </div>
@@ -583,26 +527,14 @@ document.addEventListener('DOMContentLoaded', function() {
             <input type="number" id="calc-users" min="0" max="500" value="5" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
           </div>
 
-          <!-- Input 2: SIP Trunks -->
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-trunks">SIP Trunks ($50/mo)</label>
-            <p class="text-xs text-gray-500 mb-2">Includes 500 mins outbound</p>
-            <input type="number" id="calc-trunks" min="0" max="50" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-          </div>
-
-          <!-- Input 3: Extra PBX Lines -->
+          <!-- Input 2: Extra PBX Lines -->
           <div>
             <label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-lines">Extra PBX Lines ($10/mo)</label>
             <p class="text-xs text-gray-500 mb-2">Full PBX features for shared phones</p>
             <input type="number" id="calc-lines" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
           </div>
 
-          <!-- Input 4: Extra DID Numbers -->
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-dids">Extra Direct Dial Numbers ($5/mo)</label>
-            <p class="text-xs text-gray-500 mb-2">Local geographic numbers only</p>
-            <input type="number" id="calc-dids" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-          </div>
+
 
         </div>
 
@@ -614,18 +546,11 @@ document.addEventListener('DOMContentLoaded', function() {
               <span>Cloud PBX Users (<span id="r-users-count">5</span> &times; $25.00)</span>
               <span id="r-users-cost">$125.00</span>
             </div>
-            <div class="flex justify-between text-gray-600" id="row-trunks" style="display: none;">
-              <span>SIP Trunks (<span id="r-trunks-count">0</span> &times; $50.00)</span>
-              <span id="r-trunks-cost">$0.00</span>
-            </div>
             <div class="flex justify-between text-gray-600" id="row-lines" style="display: none;">
               <span>Extra PBX Lines (<span id="r-lines-count">0</span> &times; $10.00)</span>
               <span id="r-lines-cost">$0.00</span>
             </div>
-            <div class="flex justify-between text-gray-600" id="row-dids" style="display: none;">
-              <span>Extra DID Numbers (<span id="r-dids-count">0</span> &times; $5.00)</span>
-              <span id="r-dids-cost">$0.00</span>
-            </div>
+
             
             <div class="border-t border-gray-100 pt-2 mt-2"></div>
             <div class="flex justify-between text-green-700 font-medium text-xs mb-2">
@@ -647,6 +572,31 @@ document.addEventListener('DOMContentLoaded', function() {
               <span id="r-total">$137.50</span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6b — SIP TRUNKS -->
+  <section class="bg-gray-50 py-12 border-b border-gray-100" id="sip-trunks">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-2">SIP Trunks</h2>
+      <p class="text-gray-500 mb-6 max-w-2xl">SIP Trunks connect your existing on-premise or hosted IP PBX to the Click2Call network. Ideal for businesses with their own PBX hardware that want to replace traditional ISDN or PSTN lines.</p>
+      <div class="bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col md:flex-row gap-6 items-start">
+        <div class="flex-shrink-0">
+          <div class="text-4xl font-extrabold text-gray-900">$50<span class="text-lg font-normal text-gray-500">/mo</span></div>
+          <div class="text-sm text-gray-500 mt-1">per SIP trunk (ex GST)</div>
+        </div>
+        <div class="flex-grow">
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>500 minutes outbound included per trunk</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited inbound calls</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Compatible with most SIP-enabled PBX systems</li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>No lock-in contracts — month-to-month</li>
+          </ul>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="/sip-trunks" class="inline-block px-5 py-2 border-2 border-green-600 text-green-700 rounded-lg font-semibold hover:bg-green-50 transition-colors text-sm">Learn More &rarr;</a>
         </div>
       </div>
     </div>
@@ -687,7 +637,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <section class="bg-gray-50 py-16 border-b border-gray-100">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Phone Number Options</h2>
-      <p class="text-center text-gray-500 mb-8 max-w-2xl mx-auto">All numbers are $10.00/month (ex GST) and include 2 call channels free.</p>
+      <p class="text-center text-gray-500 mb-8 max-w-2xl mx-auto">Additional phone numbers can be added to your account at any time. All prices exclude GST.</p>
       <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
         <table class="min-w-full text-sm">
           <thead>
@@ -780,11 +730,6 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         <div class="border border-gray-200 rounded-lg overflow-hidden">
-          <button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="pfaq-8"><span>What is a call channel?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
-          <div id="pfaq-8" class="hidden px-6 pb-4 text-gray-600 text-sm">A call channel allows one simultaneous call &mdash; either inbound or outbound. Your account includes 2 channels free. If you need more than 2 calls at the same time, add extra channels for $3.00/month each (ex GST). As a guide, a 5-person office typically needs 2&ndash;3 channels.</div>
-        </div>
-
-        <div class="border border-gray-200 rounded-lg overflow-hidden">
           <button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="pfaq-9"><span>How much does it cost to call a 1300 number?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
           <div id="pfaq-9" class="hidden px-6 pb-4 text-gray-600 text-sm">Calls to 13 and 1300 numbers are charged a flat $0.50 connection fee per call. There is no additional per-minute charge regardless of how long the call lasts.</div>
         </div>
@@ -814,7 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm text-center">
           <h3 class="font-bold text-gray-900 text-lg mb-2">Existing Customers</h3>
-          <p class="text-sm text-gray-600 mb-4">Log in to manage your account, top up credit, add numbers or channels.</p>
+          <p class="text-sm text-gray-600 mb-4">Log in to manage your account, add users, numbers, and more.</p>
           <a href="https://portal.click2call.com.au/login.php" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-green-600 text-green-700 font-semibold hover:bg-green-50 transition-colors">Login to Portal</a>
         </div>
         <div class="bg-white rounded-xl border border-green-300 p-6 shadow-sm text-center">
