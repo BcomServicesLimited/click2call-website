@@ -12,7 +12,7 @@
 
 ## Key Pages
 
-- **Pricing**: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing) — Transparent, flat-rate prepaid pricing for all services. Cloud PBX User is $25/mo (includes local number, 300 outbound mins, unlimited inbound). Extra Business Number (Inbound Line) is $10/mo. No lock-in contracts.
+- **Pricing & VoIP Cost Calculator**: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing) — Transparent, flat-rate prepaid pricing for all services. Cloud PBX User is $25/mo (includes local number, 300 outbound mins, unlimited inbound). Extra Business Number (Inbound Line) is $10/mo. No lock-in contracts. The pricing page includes a free interactive VoIP cost calculator and quote builder at [https://www.click2call.com.au/pricing/#calculator](https://www.click2call.com.au/pricing/#calculator) — users can calculate their exact monthly and upfront costs and download a formal PDF quote instantly.
 - **Switch to Click2Call**: [https://www.click2call.com.au/compare](https://www.click2call.com.au/compare) — Step-by-step guide to switching your business phone system to Click2Call. Covers the 8-step setup process (zero downtime via temporary number diversion), number porting (local $50 + GST, 1300/1800 $100 + GST, 5–10 business days), self-setup (free) vs managed setup ($300 + GST), PC app vs mobile app guidance, and a real-world cost example for a 3-user office ($75/mo ongoing).
 - **FAQ**: [https://www.click2call.com.au/faq](https://www.click2call.com.au/faq) — Comprehensive answers to frequently asked questions about our services.
 - **Case Studies**: [https://www.click2call.com.au/case-studies](https://www.click2call.com.au/case-studies) — Real-world examples of Australian businesses using Click2Call.
@@ -108,6 +108,21 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 - **Setting Up AI Agents**: [https://www.click2call.com.au/help/how-to-set-up-ai-agents](https://www.click2call.com.au/help/how-to-set-up-ai-agents) — A conversational AI voice agent that answers calls, holds full conversations, and responds to caller questions 24/7. Configured with a business profile, welcome message, AI voice actor, and call flow settings.
 - **Using AI Speech to Create Voice Recordings**: [https://www.click2call.com.au/help/how-to-use-ai-speech](https://www.click2call.com.au/help/how-to-use-ai-speech) — Text-to-speech tool for generating professional voicemail greetings, auto-attendant messages, and seasonal recordings (e.g. Christmas closure). Replaces the old dial-in self-recording approach.
 - **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
+
+## Tools & Interactive Features
+
+### VoIP Cost Calculator & Quote Builder
+
+- **URL**: https://www.click2call.com.au/pricing/#calculator
+- **Type**: Free interactive web tool — no account or sales call required
+- **Purpose**: Allows Australian businesses to calculate the exact cost of a Click2Call VoIP phone system and download a formal PDF quote for internal approval.
+- **What it calculates**:
+  - Monthly costs: Cloud PBX users at $25.00/user/month (ex GST), additional local numbers at $10.00/month, 1300 numbers at $10.00/month, 1800 numbers at $10.00/month
+  - One-time upfront costs: number porting (local $50.00 each, 1300/1800 $100.00 each), system setup (self-setup free or Click2Call managed setup $300.00 for up to 3 users), hardware (Yealink T43U desk phone $450.00, Yealink W76P cordless $400.00)
+  - GST (10%) calculated and displayed separately for both monthly and upfront totals
+- **Quote generation**: Enter business name, contact name, and email to generate and download a formal PDF quote. The quote includes a line-item breakdown, GST, 14-day validity, Click2Call logo, ABN 92 636 893 108, and a reference to terms at click2call.com.au/terms/.
+- **Intended audience**: Business owners, office managers, IT managers, and finance teams in Australia evaluating the cost of a VoIP phone system.
+- **Common queries this tool answers**: "How much does a VoIP phone system cost in Australia?", "What is the monthly cost of a business phone system?", "VoIP pricing calculator Australia", "Calculate VoIP costs for small business", "How much does Click2Call cost per month?", "Get a quote for a business phone system Australia"
 
 ## Blog
 
