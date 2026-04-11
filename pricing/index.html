@@ -787,6 +787,19 @@
           <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:0.35rem;" for="q-notes">Notes <span style="color:#9ca3af;font-weight:400;">(optional)</span></label>
           <textarea id="q-notes" rows="2" placeholder="Any special requirements or questions" style="width:100%;box-sizing:border-box;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.55rem 0.75rem;font-size:0.875rem;outline:none;resize:vertical;"></textarea>
         </div>
+        <div style="margin-bottom:1.5rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:0.5rem;padding:0.9rem 1rem;">
+          <p style="font-size:0.8rem;font-weight:600;color:#374151;margin:0 0 0.6rem 0;">Would you like a Click2Call sales agent to contact you about this quote?</p>
+          <div style="display:flex;gap:1.5rem;">
+            <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.85rem;color:#374151;">
+              <input type="radio" name="q-contact" id="q-contact-yes" value="yes" style="accent-color:#3B9C49;width:15px;height:15px;cursor:pointer;">
+              Yes please
+            </label>
+            <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.85rem;color:#374151;">
+              <input type="radio" name="q-contact" id="q-contact-no" value="no" checked style="accent-color:#3B9C49;width:15px;height:15px;cursor:pointer;">
+              No, I&rsquo;ll reach out if needed
+            </label>
+          </div>
+        </div>
         <p id="quote-error" style="display:none;color:#dc2626;font-size:0.8rem;margin-bottom:0.75rem;"></p>
         <button onclick="generateQuote();" style="width:100%;padding:0.8rem;background:#3B9C49;color:#fff;font-size:0.95rem;font-weight:700;border:none;border-radius:0.5rem;cursor:pointer;">Generate PDF Quote</button>
       </div>
@@ -962,6 +975,8 @@ function generateQuote() {
   var email = document.getElementById('q-email').value.trim();
   var phone = document.getElementById('q-phone').value.trim();
   var notes = document.getElementById('q-notes').value.trim();
+  var contactPref = document.querySelector('input[name="q-contact"]:checked');
+  var contactAgent = contactPref ? contactPref.value === 'yes' : false;
   var errEl = document.getElementById('quote-error');
 
   if (!biz || !name || !email) {
@@ -1192,6 +1207,7 @@ function generateQuote() {
     'Full terms and conditions: click2call.com.au/terms/',
     'This quote is valid for 14 days from the issue date shown above.',
   ];
+  if (contactAgent) terms.push('\u2605  This customer has requested a sales agent follow-up.');
   if (notes) terms.push('Customer notes: ' + notes);
   terms.forEach(function(t) {
     doc.text('•  ' + t, margin + 2, y);
@@ -1218,6 +1234,7 @@ function generateQuote() {
   formData.append('Email', email);
   formData.append('Phone', phone || 'Not provided');
   formData.append('Notes', notes || 'None');
+  formData.append('Sales Agent Follow-up Requested', contactAgent ? 'YES' : 'No');
   formData.append('Cloud PBX Users', s.users);
   formData.append('Additional Local Numbers', s.local);
   formData.append('Additional 1300 Numbers', s.n1300);
