@@ -1232,6 +1232,7 @@ function generateQuote() {
   var payload = {
     '_subject': 'New Quote: ' + quoteNum + ' — ' + biz,
     'email': email,
+    '_replyto': email,
     'Quote Number': quoteNum,
     'Business Name': biz,
     'Contact Name': name,
