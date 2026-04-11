@@ -35,71 +35,7 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const elUsers = document.getElementById('calc-users');
-  const elLines = document.getElementById('calc-lines');
-
-
-  const rUsersCount = document.getElementById('r-users-count');
-  const rUsersCost = document.getElementById('r-users-cost');
-  
-  const rowLines = document.getElementById('row-lines');
-  const rLinesCount = document.getElementById('r-lines-count');
-  const rLinesCost = document.getElementById('r-lines-cost');
-  
-
-  
-  const rIncludedMins = document.getElementById('r-included-mins');
-  const rSubtotal = document.getElementById('r-subtotal');
-  const rGst = document.getElementById('r-gst');
-  const rTotal = document.getElementById('r-total');
-
-  function updateCalculator() {
-    const users = parseInt(elUsers.value) || 0;
-    const lines = parseInt(elLines.value) || 0;
-
-    const costUsers = users * 25;
-    const costLines = lines * 10;
-
-    const subtotal = costUsers + costLines;
-    const gst = subtotal * 0.10;
-    const total = subtotal + gst;
-    
-    const includedMins = users * 300;
-
-    // Update UI
-    rUsersCount.textContent = users;
-    rUsersCost.textContent = '$' + costUsers.toFixed(2);
-    
-    if (lines > 0) {
-      rowLines.style.display = 'flex';
-      rLinesCount.textContent = lines;
-      rLinesCost.textContent = '$' + costLines.toFixed(2);
-    } else {
-      rowLines.style.display = 'none';
-    }
-    
-
-    
-    rIncludedMins.textContent = includedMins.toLocaleString() + ' mins';
-    rSubtotal.textContent = '$' + subtotal.toFixed(2);
-    rGst.textContent = '$' + gst.toFixed(2);
-    rTotal.textContent = '$' + total.toFixed(2);
-  }
-
-  [elUsers, elLines].forEach(el => {
-    if(el) {
-      el.addEventListener('input', updateCalculator);
-      el.addEventListener('change', updateCalculator);
-    }
-  });
-
-  // Initial calculation
-  updateCalculator();
-});
-</script>
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -227,6 +163,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 }
 </script>
+  <!-- jsPDF for quote generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js" defer></script>
 </head>
 <body class="bg-brand-gray-50">
 <header id="site-header" class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
@@ -597,72 +536,696 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </section>
 
-  <!-- SECTION 3 — CALCULATOR -->
+  <!-- SECTION 3 — CALCULATOR (QUOTE BUILDER) -->
   <section class="bg-white py-16 border-b border-gray-100" id="calculator">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-sm font-semibold text-green-700 uppercase tracking-wide mb-2">Need something custom?</p>
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Calculate your cost</h2>
-      <p class="text-center text-gray-500 mb-8 max-w-2xl mx-auto">Enter your requirements below. All figures exclude GST.</p>
+      <p class="text-center text-sm font-semibold text-green-700 uppercase tracking-wide mb-2">Pricing &amp; Quote Builder</p>
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Build your plan</h2>
+      <p class="text-center text-gray-500 mb-8 max-w-2xl mx-auto">Estimate your monthly cost and generate a formal quote in seconds. All figures exclude GST unless stated.</p>
 
       <div class="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-6 md:p-8 max-w-3xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          
-          <!-- Input 1: Users -->
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-users">Cloud PBX Users ($25/mo)</label>
-            <p class="text-xs text-gray-500 mb-2">Includes 1 local number + 300 mins outbound</p>
-            <input type="number" id="calc-users" min="0" max="500" value="5" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+
+        <!-- ── SECTION 1: MONTHLY ── -->
+        <div class="mb-8">
+          <h3 style="font-size:0.7rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1rem 0;">Section 1 &mdash; Monthly subscription</h3>
+
+          <!-- Cloud PBX Users -->
+          <div class="mb-5">
+            <label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-users">Cloud PBX Users &mdash; $25.00/user/month</label>
+            <p class="text-xs text-gray-500 mb-2">Each user includes 1 local number + 300 outbound minutes per month</p>
+            <input type="number" id="calc-users" min="0" max="500" value="1" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" style="max-width:160px;">
           </div>
 
-          <!-- Input 2: Extra PBX Lines -->
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-lines">Extra Business Number (Inbound Line) ($10/mo)</label>
-            <p class="text-xs text-gray-500 mb-2">Full PBX features for shared phones</p>
-            <input type="number" id="calc-lines" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+          <!-- Additional Numbers -->
+          <div class="mb-2">
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Additional Phone Numbers &mdash; $10.00/month each</label>
+            <p class="text-xs text-gray-500 mb-3">Only count numbers <em>beyond</em> the ones already included with your users above</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-local">Local numbers (02/03/07/08)</label>
+                <input type="number" id="calc-local" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                <p class="text-xs text-gray-400 mt-1">Geographic presence</p>
+              </div>
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-1300">1300 numbers</label>
+                <input type="number" id="calc-1300" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                <p class="text-xs text-gray-400 mt-1">National. Caller pays local rate</p>
+              </div>
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-1800">1800 numbers</label>
+                <input type="number" id="calc-1800" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                <p class="text-xs text-gray-400 mt-1">Toll-free. You pay $0.20/min inbound</p>
+              </div>
+            </div>
           </div>
-
-
-
         </div>
 
-        <!-- RESULT BOX -->
-        <div class="bg-white border border-green-200 rounded-xl p-5 shadow-sm">
-          <h3 class="font-bold text-gray-900 text-base mb-4">Your Estimated Monthly Cost</h3>
-          <div class="space-y-2 text-sm">
-            <div class="flex justify-between text-gray-600">
-              <span>Cloud PBX Users (<span id="r-users-count">5</span> &times; $25.00)</span>
-              <span id="r-users-cost">$125.00</span>
+        <!-- ── SECTION 2: ONE-TIME UPFRONT ── -->
+        <div id="upfront-section" style="display:none;" class="mb-8 border-t border-gray-200 pt-8">
+          <h3 style="font-size:0.7rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1rem 0;">Section 2 &mdash; One-time upfront costs <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></h3>
+
+          <!-- A. Number Porting -->
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Number porting</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-port-local">Port local numbers &mdash; $50.00 each</label>
+                <input type="number" id="calc-port-local" min="0" max="50" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-port-1300">Port 1300/1800 numbers &mdash; $100.00 each</label>
+                <input type="number" id="calc-port-1300" min="0" max="50" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
             </div>
-            <div class="flex justify-between text-gray-600" id="row-lines" style="display: none;">
-              <span>Extra Business Number (Inbound Line) (<span id="r-lines-count">0</span> &times; $10.00)</span>
-              <span id="r-lines-cost">$0.00</span>
+            <p class="text-xs text-gray-400 mt-2">Typically 5&ndash;10 business days. In most cases, your existing service stays active during porting.</p>
+          </div>
+
+          <!-- B. Setup -->
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">System setup</label>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="calc-setup" id="calc-setup-self" value="self" checked class="text-green-600 focus:ring-green-500">
+                <span class="text-sm text-gray-700">Self-setup via Help Centre <span class="text-green-700 font-semibold">(Free)</span></span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="calc-setup" id="calc-setup-managed" value="managed" class="text-green-600 focus:ring-green-500">
+                <span class="text-sm text-gray-700">Click2Call setup</span>
+              </label>
+            </div>
+            <p id="setup-cost-note" class="text-xs text-gray-400 mt-2" style="display:none;"></p>
+          </div>
+
+          <!-- C. Hardware -->
+          <div class="mb-2">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Hardware</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-desk">Yealink T43U desk phones &mdash; $450.00 each</label>
+                <input type="number" id="calc-desk" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                <p class="text-xs text-gray-400 mt-1">Includes config &amp; postage</p>
+              </div>
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-cordless">Yealink W76P cordless &mdash; $400.00 each</label>
+                <input type="number" id="calc-cordless" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                <p class="text-xs text-gray-400 mt-1">Includes config &amp; postage</p>
+              </div>
+              <div>
+                <label class="block text-xs text-gray-600 mb-1" for="calc-softphone">Softphone users</label>
+                <input type="number" id="calc-softphone" min="0" max="500" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                <p class="text-xs text-gray-400 mt-1">Free &mdash; PC &amp; mobile app</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SMART RECOMMENDATION BANNER ── -->
+        <div id="smart-rec" style="display:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:0.5rem;padding:1rem 1.25rem;margin-bottom:1.5rem;">
+          <p style="font-size:0.85rem;color:#1e40af;font-weight:600;margin:0 0 0.5rem 0;" id="smart-rec-msg">This setup is getting more advanced &mdash; most customers choose Click2Call setup for this.</p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
+            <button onclick="document.getElementById('calc-setup-managed').checked=true;updateCalc();" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:#1d4ed8;color:#fff;border:none;border-radius:0.375rem;cursor:pointer;font-weight:600;">Switch to Click2Call setup</button>
+            <button onclick="document.getElementById('smart-rec').style.display='none';" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:transparent;color:#1e40af;border:1px solid #93c5fd;border-radius:0.375rem;cursor:pointer;">Keep self-setup</button>
+          </div>
+        </div>
+
+        <!-- ── LIVE SUMMARY ── -->
+        <div class="border-t border-gray-200 pt-6">
+          <h3 class="font-bold text-gray-900 text-base mb-4">Your estimated costs</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+
+            <!-- Monthly card -->
+            <div class="bg-white border border-green-200 rounded-xl p-4 shadow-sm">
+              <p style="font-size:0.65rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.75rem 0;">Monthly</p>
+              <div style="font-size:0.82rem;display:flex;flex-direction:column;gap:0.35rem;">
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-users-row">
+                  <span>Cloud PBX Users (<span id="s-users">1</span> &times; $25.00)</span>
+                  <span id="s-users-cost">$25.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-local-row" class="hidden-row">
+                  <span>Local numbers (<span id="s-local">0</span> &times; $10.00)</span>
+                  <span id="s-local-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-1300-row" class="hidden-row">
+                  <span>1300 numbers (<span id="s-1300">0</span> &times; $10.00)</span>
+                  <span id="s-1300-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-1800-row" class="hidden-row">
+                  <span>1800 numbers (<span id="s-1800">0</span> &times; $10.00)</span>
+                  <span id="s-1800-cost">$0.00</span>
+                </div>
+                <div style="border-top:1px solid #e5e7eb;margin:0.35rem 0;"></div>
+                <div style="display:flex;justify-content:space-between;color:#15803d;font-size:0.75rem;">
+                  <span>Included outbound minutes</span>
+                  <span id="s-mins">300 mins</span>
+                </div>
+                <div style="border-top:1px solid #d1fae5;margin:0.35rem 0;"></div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;color:#111827;">
+                  <span>Subtotal ex GST</span>
+                  <span id="s-mo-sub">$25.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#6b7280;">
+                  <span>GST (10%)</span>
+                  <span id="s-mo-gst">$2.50</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-weight:800;font-size:1rem;color:#111827;border-top:1px solid #d1fae5;padding-top:0.4rem;margin-top:0.2rem;">
+                  <span>Monthly total inc GST</span>
+                  <span id="s-mo-total">$27.50</span>
+                </div>
+              </div>
             </div>
 
-            
-            <div class="border-t border-gray-100 pt-2 mt-2"></div>
-            <div class="flex justify-between text-green-700 font-medium text-xs mb-2">
-              <span>Included Outbound Minutes:</span>
-              <span id="r-included-mins">1,500 mins</span>
+            <!-- Upfront card -->
+            <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm" id="upfront-card">
+              <p style="font-size:0.65rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.75rem 0;">One-time upfront</p>
+              <div style="font-size:0.82rem;display:flex;flex-direction:column;gap:0.35rem;">
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-port-local-row" class="hidden-row">
+                  <span>Port local numbers (<span id="s-port-local">0</span> &times; $50.00)</span>
+                  <span id="s-port-local-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-port-1300-row" class="hidden-row">
+                  <span>Port 1300/1800 (<span id="s-port-1300">0</span> &times; $100.00)</span>
+                  <span id="s-port-1300-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-setup-row" class="hidden-row">
+                  <span id="s-setup-label">Click2Call setup</span>
+                  <span id="s-setup-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-desk-row" class="hidden-row">
+                  <span>Yealink T43U (<span id="s-desk">0</span> &times; $450.00)</span>
+                  <span id="s-desk-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-cordless-row" class="hidden-row">
+                  <span>Yealink W76P (<span id="s-cordless">0</span> &times; $400.00)</span>
+                  <span id="s-cordless-cost">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#4b5563;" id="sum-softphone-row" class="hidden-row">
+                  <span>Softphones (<span id="s-softphone">0</span> users)</span>
+                  <span>Free</span>
+                </div>
+                <div id="upfront-zero-msg" style="color:#9ca3af;font-size:0.8rem;font-style:italic;">No upfront costs selected</div>
+                <div style="border-top:1px solid #e5e7eb;margin:0.35rem 0;" id="upfront-divider" class="hidden-row"></div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;color:#111827;" id="upfront-sub-row" class="hidden-row">
+                  <span>Subtotal ex GST</span>
+                  <span id="s-up-sub">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;color:#6b7280;" id="upfront-gst-row" class="hidden-row">
+                  <span>GST (10%)</span>
+                  <span id="s-up-gst">$0.00</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-weight:800;font-size:1rem;color:#111827;border-top:1px solid #e5e7eb;padding-top:0.4rem;margin-top:0.2rem;" id="upfront-total-row" class="hidden-row">
+                  <span>Upfront total inc GST</span>
+                  <span id="s-up-total">$0.00</span>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="border-t border-green-200 pt-2 mt-2"></div>
-            <div class="flex justify-between font-semibold text-gray-800">
-              <span>Subtotal (ex GST)</span>
-              <span id="r-subtotal">$125.00</span>
-            </div>
-            <div class="flex justify-between text-gray-600">
-              <span>GST (10%)</span>
-              <span id="r-gst">$12.50</span>
-            </div>
-            <div class="flex justify-between font-extrabold text-gray-900 text-lg pt-2 border-t border-green-200 mt-2">
-              <span>Total (inc GST)</span>
-              <span id="r-total">$137.50</span>
-            </div>
+          <!-- Quote CTA -->
+          <div style="text-align:center;margin-top:1.5rem;padding:1.25rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:0.75rem;">
+            <p style="font-size:0.8rem;color:#6b7280;margin:0 0 0.75rem 0;">Use this for budgeting or generate a formal quote for approval.</p>
+            <button id="open-quote-modal" onclick="openQuoteModal();" style="display:inline-block;padding:0.7rem 2rem;background:#3B9C49;color:#fff;font-size:0.9rem;font-weight:700;border-radius:0.5rem;border:none;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.12);">Generate Formal Quote</button>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ── QUOTE MODAL ── -->
+  <div id="quote-modal-overlay" onclick="closeQuoteModal(event);" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;overflow-y:auto;padding:2rem 1rem;">
+    <div style="background:#fff;border-radius:0.75rem;max-width:520px;margin:0 auto;padding:2rem;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.25);" onclick="event.stopPropagation();">
+      <button onclick="closeQuoteModal();" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.4rem;color:#9ca3af;cursor:pointer;line-height:1;" aria-label="Close">&times;</button>
+      <h2 style="font-size:1.25rem;font-weight:800;color:#111827;margin:0 0 0.25rem 0;">Generate Your Formal Quote</h2>
+      <p style="font-size:0.85rem;color:#6b7280;margin:0 0 1.5rem 0;">We'll include your selected plan and pricing. No account required.</p>
+
+      <div id="quote-form">
+        <div style="margin-bottom:1rem;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:0.35rem;" for="q-biz">Business name <span style="color:#dc2626;">*</span></label>
+          <input type="text" id="q-biz" placeholder="e.g. Acme Pty Ltd" style="width:100%;box-sizing:border-box;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.55rem 0.75rem;font-size:0.875rem;outline:none;">
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:0.35rem;" for="q-name">Contact name <span style="color:#dc2626;">*</span></label>
+          <input type="text" id="q-name" placeholder="e.g. Jane Smith" style="width:100%;box-sizing:border-box;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.55rem 0.75rem;font-size:0.875rem;outline:none;">
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:0.35rem;" for="q-email">Email address <span style="color:#dc2626;">*</span></label>
+          <input type="email" id="q-email" placeholder="e.g. jane@acme.com.au" style="width:100%;box-sizing:border-box;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.55rem 0.75rem;font-size:0.875rem;outline:none;">
+        </div>
+        <div style="margin-bottom:1rem;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:0.35rem;" for="q-phone">Phone number <span style="color:#9ca3af;font-weight:400;">(optional)</span></label>
+          <input type="tel" id="q-phone" placeholder="e.g. 0400 000 000" style="width:100%;box-sizing:border-box;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.55rem 0.75rem;font-size:0.875rem;outline:none;">
+        </div>
+        <div style="margin-bottom:1.5rem;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:0.35rem;" for="q-notes">Notes <span style="color:#9ca3af;font-weight:400;">(optional)</span></label>
+          <textarea id="q-notes" rows="2" placeholder="Any special requirements or questions" style="width:100%;box-sizing:border-box;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.55rem 0.75rem;font-size:0.875rem;outline:none;resize:vertical;"></textarea>
+        </div>
+        <p id="quote-error" style="display:none;color:#dc2626;font-size:0.8rem;margin-bottom:0.75rem;"></p>
+        <button onclick="generateQuote();" style="width:100%;padding:0.8rem;background:#3B9C49;color:#fff;font-size:0.95rem;font-weight:700;border:none;border-radius:0.5rem;cursor:pointer;">Generate PDF Quote</button>
+      </div>
+
+      <div id="quote-success" style="display:none;text-align:center;padding:1rem 0;">
+        <svg style="width:3rem;height:3rem;color:#16a34a;margin:0 auto 1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <p style="font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.5rem 0;">Your quote has been downloaded.</p>
+        <p style="font-size:0.85rem;color:#6b7280;margin:0 0 1.25rem 0;">Save the PDF for your records or share it with your team for approval.</p>
+        <button onclick="closeQuoteModal();" style="padding:0.55rem 1.5rem;background:#f3f4f6;color:#374151;font-size:0.875rem;font-weight:600;border:1px solid #e5e7eb;border-radius:0.5rem;cursor:pointer;">Close</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+// ── CALCULATOR STATE ──────────────────────────────────────────────────────────
+var calcState = {
+  users: 1, local: 0, n1300: 0, n1800: 0,
+  portLocal: 0, port1300: 0,
+  setup: 'self',
+  desk: 0, cordless: 0, softphone: 0
+};
+
+function fmt(n) { return '$' + n.toFixed(2); }
+function showRow(id, show) {
+  var el = document.getElementById(id);
+  if (el) el.style.display = show ? 'flex' : 'none';
+}
+
+function updateCalc() {
+  var users     = Math.max(0, parseInt(document.getElementById('calc-users').value) || 0);
+  var local     = Math.max(0, parseInt(document.getElementById('calc-local').value) || 0);
+  var n1300     = Math.max(0, parseInt(document.getElementById('calc-1300').value) || 0);
+  var n1800     = Math.max(0, parseInt(document.getElementById('calc-1800').value) || 0);
+  var portLocal = Math.max(0, parseInt(document.getElementById('calc-port-local').value) || 0);
+  var port1300  = Math.max(0, parseInt(document.getElementById('calc-port-1300').value) || 0);
+  var setup     = document.querySelector('input[name="calc-setup"]:checked') ? document.querySelector('input[name="calc-setup"]:checked').value : 'self';
+  var desk      = Math.max(0, parseInt(document.getElementById('calc-desk').value) || 0);
+  var cordless  = Math.max(0, parseInt(document.getElementById('calc-cordless').value) || 0);
+  var softphone = Math.max(0, parseInt(document.getElementById('calc-softphone').value) || 0);
+
+  calcState = { users, local, n1300, n1800, portLocal, port1300, setup, desk, cordless, softphone };
+
+  // Show upfront section once users > 0
+  document.getElementById('upfront-section').style.display = users > 0 ? 'block' : 'none';
+
+  // ── Monthly calcs ──
+  var moUsers = users * 25;
+  var moLocal = local * 10;
+  var mo1300  = n1300 * 10;
+  var mo1800  = n1800 * 10;
+  var moSub   = moUsers + moLocal + mo1300 + mo1800;
+  var moGst   = moSub * 0.10;
+  var moTotal = moSub + moGst;
+  var mins    = users * 300;
+
+  // ── Upfront calcs ──
+  var upPortLocal = portLocal * 50;
+  var upPort1300  = port1300 * 100;
+  var upSetup = 0;
+  if (setup === 'managed' && users > 0) {
+    upSetup = users <= 3 ? 300 : 300 + (users - 3) * 50;
+  }
+  var upDesk     = desk * 450;
+  var upCordless = cordless * 400;
+  var upSub      = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
+  var upGst      = upSub * 0.10;
+  var upTotal    = upSub + upGst;
+
+  // ── Update monthly summary ──
+  document.getElementById('s-users').textContent = users;
+  document.getElementById('s-users-cost').textContent = fmt(moUsers);
+  showRow('sum-local-row', local > 0);
+  if (local > 0) { document.getElementById('s-local').textContent = local; document.getElementById('s-local-cost').textContent = fmt(moLocal); }
+  showRow('sum-1300-row', n1300 > 0);
+  if (n1300 > 0) { document.getElementById('s-1300').textContent = n1300; document.getElementById('s-1300-cost').textContent = fmt(mo1300); }
+  showRow('sum-1800-row', n1800 > 0);
+  if (n1800 > 0) { document.getElementById('s-1800').textContent = n1800; document.getElementById('s-1800-cost').textContent = fmt(mo1800); }
+  document.getElementById('s-mins').textContent = mins.toLocaleString() + ' mins';
+  document.getElementById('s-mo-sub').textContent = fmt(moSub);
+  document.getElementById('s-mo-gst').textContent = fmt(moGst);
+  document.getElementById('s-mo-total').textContent = fmt(moTotal);
+
+  // ── Update upfront summary ──
+  var hasUpfront = upSub > 0 || softphone > 0;
+  document.getElementById('upfront-zero-msg').style.display = hasUpfront ? 'none' : 'block';
+  showRow('sum-port-local-row', portLocal > 0);
+  if (portLocal > 0) { document.getElementById('s-port-local').textContent = portLocal; document.getElementById('s-port-local-cost').textContent = fmt(upPortLocal); }
+  showRow('sum-port-1300-row', port1300 > 0);
+  if (port1300 > 0) { document.getElementById('s-port-1300').textContent = port1300; document.getElementById('s-port-1300-cost').textContent = fmt(upPort1300); }
+  showRow('sum-setup-row', setup === 'managed' && users > 0);
+  if (setup === 'managed' && users > 0) {
+    var setupLabel = users <= 3 ? 'Click2Call setup (up to 3 users)' : 'Click2Call setup (' + users + ' users)';
+    document.getElementById('s-setup-label').textContent = setupLabel;
+    document.getElementById('s-setup-cost').textContent = fmt(upSetup);
+    var noteEl = document.getElementById('setup-cost-note');
+    noteEl.style.display = 'block';
+    noteEl.textContent = users <= 3 ? 'Flat rate for up to 3 users: $300.00 ex GST' : 'Base $300 + ' + (users - 3) + ' additional user(s) at $50 each = $' + upSetup.toFixed(2) + ' ex GST';
+  } else {
+    document.getElementById('setup-cost-note').style.display = 'none';
+  }
+  showRow('sum-desk-row', desk > 0);
+  if (desk > 0) { document.getElementById('s-desk').textContent = desk; document.getElementById('s-desk-cost').textContent = fmt(upDesk); }
+  showRow('sum-cordless-row', cordless > 0);
+  if (cordless > 0) { document.getElementById('s-cordless').textContent = cordless; document.getElementById('s-cordless-cost').textContent = fmt(upCordless); }
+  showRow('sum-softphone-row', softphone > 0);
+  if (softphone > 0) { document.getElementById('s-softphone').textContent = softphone; }
+
+  var showUpfrontTotals = upSub > 0;
+  document.getElementById('upfront-divider').style.display    = showUpfrontTotals ? 'block' : 'none';
+  document.getElementById('upfront-sub-row').style.display    = showUpfrontTotals ? 'flex' : 'none';
+  document.getElementById('upfront-gst-row').style.display    = showUpfrontTotals ? 'flex' : 'none';
+  document.getElementById('upfront-total-row').style.display  = showUpfrontTotals ? 'flex' : 'none';
+  if (showUpfrontTotals) {
+    document.getElementById('s-up-sub').textContent   = fmt(upSub);
+    document.getElementById('s-up-gst').textContent   = fmt(upGst);
+    document.getElementById('s-up-total').textContent = fmt(upTotal);
+  }
+
+  // ── Smart recommendation ──
+  var showRec = (users >= 5 || desk > 0 || cordless > 0 || n1300 > 0 || n1800 > 0 || port1300 > 0);
+  var recEl = document.getElementById('smart-rec');
+  if (showRec && setup === 'self') {
+    recEl.style.display = 'block';
+    var msg = 'This setup is getting more advanced — most customers choose Click2Call setup for this.';
+    if (desk > 0 || cordless > 0) msg = 'We can pre-configure your devices before delivery and handle the full setup for you.';
+    else if (port1300 > 0) msg = 'We can manage 1300/1800 porting and routing for you.';
+    else if (users >= 5) msg = 'Recommended for teams — we can handle the full setup for you.';
+    document.getElementById('smart-rec-msg').textContent = msg;
+  } else {
+    recEl.style.display = 'none';
+  }
+}
+
+// ── MODAL ────────────────────────────────────────────────────────────────────
+function openQuoteModal() {
+  document.getElementById('quote-modal-overlay').style.display = 'block';
+  document.getElementById('quote-form').style.display = 'block';
+  document.getElementById('quote-success').style.display = 'none';
+  document.getElementById('quote-error').style.display = 'none';
+  document.body.style.overflow = 'hidden';
+}
+function closeQuoteModal(e) {
+  if (e && e.target !== document.getElementById('quote-modal-overlay')) return;
+  document.getElementById('quote-modal-overlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { document.getElementById('quote-modal-overlay').style.display = 'none'; document.body.style.overflow = ''; }
+});
+
+// ── PDF GENERATION ───────────────────────────────────────────────────────────
+var LOGO_B64 = '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';
+
+function generateQuote() {
+  var biz   = document.getElementById('q-biz').value.trim();
+  var name  = document.getElementById('q-name').value.trim();
+  var email = document.getElementById('q-email').value.trim();
+  var phone = document.getElementById('q-phone').value.trim();
+  var notes = document.getElementById('q-notes').value.trim();
+  var errEl = document.getElementById('quote-error');
+
+  if (!biz || !name || !email) {
+    errEl.textContent = 'Please fill in Business name, Contact name, and Email address.';
+    errEl.style.display = 'block';
+    return;
+  }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+    errEl.textContent = 'Please enter a valid email address.';
+    errEl.style.display = 'block';
+    return;
+  }
+  errEl.style.display = 'none';
+
+  // ── Build quote data ──
+  var s = calcState;
+  var moUsers = s.users * 25;
+  var moLocal = s.local * 10;
+  var mo1300  = s.n1300 * 10;
+  var mo1800  = s.n1800 * 10;
+  var moSub   = moUsers + moLocal + mo1300 + mo1800;
+  var moGst   = moSub * 0.10;
+  var moTotal = moSub + moGst;
+  var mins    = s.users * 300;
+
+  var upPortLocal = s.portLocal * 50;
+  var upPort1300  = s.port1300 * 100;
+  var upSetup = 0;
+  if (s.setup === 'managed' && s.users > 0) {
+    upSetup = s.users <= 3 ? 300 : 300 + (s.users - 3) * 50;
+  }
+  var upDesk     = s.desk * 450;
+  var upCordless = s.cordless * 400;
+  var upSub      = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
+  var upGst      = upSub * 0.10;
+  var upTotal    = upSub + upGst;
+
+  // Quote number: QT-YYYYMMDD-XXXX
+  var now = new Date();
+  var pad = function(n){return n<10?'0'+n:n;};
+  var dateStr = now.getFullYear()+''+ pad(now.getMonth()+1)+''+pad(now.getDate());
+  var rand = Math.floor(1000 + Math.random() * 9000);
+  var quoteNum = 'QT-' + dateStr + '-' + rand;
+  var issueDateStr = pad(now.getDate()) + '/' + pad(now.getMonth()+1) + '/' + now.getFullYear();
+  var validDate = new Date(now.getTime() + 14*24*60*60*1000);
+  var validDateStr = pad(validDate.getDate()) + '/' + pad(validDate.getMonth()+1) + '/' + validDate.getFullYear();
+
+  // ── jsPDF ──
+  var doc = new window.jspdf.jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+  var W = 210; var margin = 18;
+  var col = margin; var y = 20;
+
+  // Header bar
+  doc.setFillColor(59, 156, 73);
+  doc.rect(0, 0, W, 28, 'F');
+
+  // Logo
+  try {
+    doc.addImage('data:image/png;base64,' + LOGO_B64, 'PNG', margin, 6, 52, 14.5);
+  } catch(e) {}
+
+  // Quote number / date top right
+  doc.setFontSize(8);
+  doc.setTextColor(255,255,255);
+  doc.setFont('helvetica','normal');
+  doc.text('Quote No: ' + quoteNum, W - margin, 10, {align:'right'});
+  doc.text('Issue date: ' + issueDateStr, W - margin, 15, {align:'right'});
+  doc.text('Valid until: ' + validDateStr, W - margin, 20, {align:'right'});
+
+  y = 38;
+
+  // Prepared for / Prepared by
+  doc.setFontSize(8.5);
+  doc.setTextColor(55,65,81);
+  doc.setFont('helvetica','bold');
+  doc.text('PREPARED FOR', margin, y);
+  doc.text('PREPARED BY', W/2 + 5, y);
+  y += 5;
+  doc.setFont('helvetica','normal');
+  doc.setFontSize(9);
+  doc.setTextColor(17,24,39);
+  doc.text(biz, margin, y);
+  doc.text('Click2Call', W/2 + 5, y);
+  y += 5;
+  doc.setTextColor(75,85,99);
+  doc.setFontSize(8.5);
+  doc.text(name, margin, y);
+  doc.text('BCOM Services Pty Ltd', W/2 + 5, y);
+  y += 4.5;
+  doc.text(email, margin, y);
+  doc.text('ABN: 92 636 893 108', W/2 + 5, y);
+  y += 4.5;
+  if (phone) doc.text(phone, margin, y);
+  doc.text('support@click2call.com.au', W/2 + 5, y);
+  y += 4.5;
+  doc.text('click2call.com.au', W/2 + 5, y);
+  y += 8;
+
+  // Divider
+  doc.setDrawColor(229,231,235);
+  doc.line(margin, y, W - margin, y);
+  y += 8;
+
+  // ── MONTHLY TABLE ──
+  doc.setFontSize(9.5);
+  doc.setFont('helvetica','bold');
+  doc.setTextColor(21,128,61);
+  doc.text('MONTHLY COSTS', margin, y);
+  y += 5;
+
+  var moRows = [];
+  moRows.push(['Cloud PBX Users', s.users + ' × $25.00/month', '$' + moUsers.toFixed(2)]);
+  if (s.local > 0)  moRows.push(['Additional Local Numbers', s.local + ' × $10.00/month', '$' + moLocal.toFixed(2)]);
+  if (s.n1300 > 0)  moRows.push(['Additional 1300 Numbers', s.n1300 + ' × $10.00/month', '$' + mo1300.toFixed(2)]);
+  if (s.n1800 > 0)  moRows.push(['Additional 1800 Numbers', s.n1800 + ' × $10.00/month', '$' + mo1800.toFixed(2)]);
+  moRows.push(['Included outbound minutes', s.users + ' users × 300 mins', mins.toLocaleString() + ' mins']);
+
+  doc.autoTable({
+    startY: y,
+    head: [['Description','Detail','Amount']],
+    body: moRows,
+    theme: 'grid',
+    styles: { fontSize: 8.5, cellPadding: 2.5, textColor: [55,65,81] },
+    headStyles: { fillColor: [243,244,246], textColor: [17,24,39], fontStyle: 'bold', fontSize: 8.5 },
+    columnStyles: { 0: {cellWidth: 80}, 1: {cellWidth: 60}, 2: {cellWidth: 30, halign: 'right'} },
+    margin: { left: margin, right: margin },
+    tableWidth: W - margin*2,
+  });
+  y = doc.lastAutoTable.finalY + 3;
+
+  // Monthly totals
+  var moTotRows = [
+    ['Monthly subtotal ex GST', '', '$' + moSub.toFixed(2)],
+    ['GST (10%)', '', '$' + moGst.toFixed(2)],
+    ['Monthly total inc GST', '', '$' + moTotal.toFixed(2)],
+  ];
+  doc.autoTable({
+    startY: y,
+    body: moTotRows,
+    theme: 'plain',
+    styles: { fontSize: 8.5, cellPadding: 2, textColor: [55,65,81] },
+    columnStyles: { 0: {cellWidth: 80}, 1: {cellWidth: 60}, 2: {cellWidth: 30, halign: 'right', fontStyle: 'bold'} },
+    margin: { left: margin, right: margin },
+    tableWidth: W - margin*2,
+    didParseCell: function(data) {
+      if (data.row.index === 2) { data.cell.styles.fontStyle = 'bold'; data.cell.styles.textColor = [17,24,39]; }
+    }
+  });
+  y = doc.lastAutoTable.finalY + 8;
+
+  // ── UPFRONT TABLE (only if there are upfront costs) ──
+  var hasUpfront = upSub > 0 || s.softphone > 0;
+  if (hasUpfront) {
+    doc.setFontSize(9.5);
+    doc.setFont('helvetica','bold');
+    doc.setTextColor(107,114,128);
+    doc.text('ONE-TIME UPFRONT COSTS', margin, y);
+    y += 5;
+
+    var upRows = [];
+    if (s.portLocal > 0) upRows.push(['Port local number', s.portLocal + ' × $50.00', '$' + upPortLocal.toFixed(2)]);
+    if (s.port1300 > 0)  upRows.push(['Port 1300/1800 number', s.port1300 + ' × $100.00', '$' + upPort1300.toFixed(2)]);
+    if (s.setup === 'managed' && s.users > 0) {
+      var setupDesc = s.users <= 3 ? 'Click2Call setup (up to 3 users)' : 'Click2Call setup (' + s.users + ' users)';
+      upRows.push([setupDesc, s.users <= 3 ? 'Flat rate' : 'Base $300 + ' + (s.users-3) + ' extra users', '$' + upSetup.toFixed(2)]);
+    }
+    if (s.desk > 0)      upRows.push(['Yealink T43U desk phones', s.desk + ' × $450.00 (incl. config & postage)', '$' + upDesk.toFixed(2)]);
+    if (s.cordless > 0)  upRows.push(['Yealink W76P cordless phones', s.cordless + ' × $400.00 (incl. config & postage)', '$' + upCordless.toFixed(2)]);
+    if (s.softphone > 0) upRows.push(['Softphones (PC & mobile app)', s.softphone + ' users', 'Free']);
+
+    doc.autoTable({
+      startY: y,
+      head: [['Description','Detail','Amount']],
+      body: upRows,
+      theme: 'grid',
+      styles: { fontSize: 8.5, cellPadding: 2.5, textColor: [55,65,81] },
+      headStyles: { fillColor: [243,244,246], textColor: [17,24,39], fontStyle: 'bold', fontSize: 8.5 },
+      columnStyles: { 0: {cellWidth: 80}, 1: {cellWidth: 60}, 2: {cellWidth: 30, halign: 'right'} },
+      margin: { left: margin, right: margin },
+      tableWidth: W - margin*2,
+    });
+    y = doc.lastAutoTable.finalY + 3;
+
+    if (upSub > 0) {
+      var upTotRows = [
+        ['Upfront subtotal ex GST', '', '$' + upSub.toFixed(2)],
+        ['GST (10%)', '', '$' + upGst.toFixed(2)],
+        ['Upfront total inc GST', '', '$' + upTotal.toFixed(2)],
+      ];
+      doc.autoTable({
+        startY: y,
+        body: upTotRows,
+        theme: 'plain',
+        styles: { fontSize: 8.5, cellPadding: 2, textColor: [55,65,81] },
+        columnStyles: { 0: {cellWidth: 80}, 1: {cellWidth: 60}, 2: {cellWidth: 30, halign: 'right', fontStyle: 'bold'} },
+        margin: { left: margin, right: margin },
+        tableWidth: W - margin*2,
+        didParseCell: function(data) {
+          if (data.row.index === 2) { data.cell.styles.fontStyle = 'bold'; data.cell.styles.textColor = [17,24,39]; }
+        }
+      });
+      y = doc.lastAutoTable.finalY + 8;
+    }
+  }
+
+  // ── TERMS BLOCK ──
+  // Check if we need a new page
+  if (y > 240) { doc.addPage(); y = 20; }
+
+  doc.setDrawColor(229,231,235);
+  doc.line(margin, y, W - margin, y);
+  y += 6;
+  doc.setFontSize(8.5);
+  doc.setFont('helvetica','bold');
+  doc.setTextColor(55,65,81);
+  doc.text('TERMS & NOTES', margin, y);
+  y += 5;
+  doc.setFont('helvetica','normal');
+  doc.setFontSize(8);
+  doc.setTextColor(107,114,128);
+  var terms = [
+    'No lock-in contracts. Cancel anytime.',
+    'This is a prepaid service. Usage is billed in advance.',
+    'In most cases, your existing service stays active during porting.',
+    'Number porting typically takes 5–10 business days.',
+    'Setup pricing is based on the number of Cloud PBX users selected above.',
+    'All prices are in Australian dollars and exclude GST unless stated.',
+    'Full terms and conditions: click2call.com.au/terms/',
+    'This quote is valid for 14 days from the issue date shown above.',
+  ];
+  if (notes) terms.push('Customer notes: ' + notes);
+  terms.forEach(function(t) {
+    doc.text('•  ' + t, margin + 2, y);
+    y += 4.5;
+  });
+
+  // Footer
+  y = 287;
+  doc.setDrawColor(229,231,235);
+  doc.line(margin, y - 3, W - margin, y - 3);
+  doc.setFontSize(7.5);
+  doc.setTextColor(156,163,175);
+  doc.text('Click2Call is a service operated by BCOM Services Pty Ltd  |  ABN: 92 636 893 108  |  Queensland, Australia', W/2, y, {align:'center'});
+
+  // Save
+  doc.save('Click2Call-Quote-' + quoteNum + '.pdf');
+
+  // ── Silent Formspree data capture ──
+  var formData = new FormData();
+  formData.append('_subject', 'New Quote Generated: ' + quoteNum + ' — ' + biz);
+  formData.append('Quote Number', quoteNum);
+  formData.append('Business Name', biz);
+  formData.append('Contact Name', name);
+  formData.append('Email', email);
+  formData.append('Phone', phone || 'Not provided');
+  formData.append('Notes', notes || 'None');
+  formData.append('Cloud PBX Users', s.users);
+  formData.append('Additional Local Numbers', s.local);
+  formData.append('Additional 1300 Numbers', s.n1300);
+  formData.append('Additional 1800 Numbers', s.n1800);
+  formData.append('Port Local Numbers', s.portLocal);
+  formData.append('Port 1300/1800 Numbers', s.port1300);
+  formData.append('Setup Type', s.setup === 'managed' ? 'Click2Call Setup' : 'Self-setup');
+  formData.append('Desk Phones (T43U)', s.desk);
+  formData.append('Cordless Phones (W76P)', s.cordless);
+  formData.append('Softphones', s.softphone);
+  formData.append('Monthly Total inc GST', '$' + moTotal.toFixed(2));
+  formData.append('Upfront Total inc GST', '$' + upTotal.toFixed(2));
+  formData.append('Issue Date', issueDateStr);
+  fetch('https://formspree.io/f/FORMSPREE_ID', { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
+    .catch(function(){});
+
+  // Show success
+  document.getElementById('quote-form').style.display = 'none';
+  document.getElementById('quote-success').style.display = 'block';
+}
+
+// ── INIT ─────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  ['calc-users','calc-local','calc-1300','calc-1800','calc-port-local','calc-port-1300','calc-desk','calc-cordless','calc-softphone'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) { el.addEventListener('input', updateCalc); el.addEventListener('change', updateCalc); }
+  });
+  document.querySelectorAll('input[name="calc-setup"]').forEach(function(el) {
+    el.addEventListener('change', updateCalc);
+  });
+  updateCalc();
+});
+</script>
 
   <!-- SECTION 7 — NUMBER TYPES -->
   <section class="bg-gray-50 py-16 border-b border-gray-100">
