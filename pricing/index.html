@@ -1030,7 +1030,7 @@ function generateQuote() {
   var col = margin; var y = 20;
 
   // Header bar
-  doc.setFillColor(59, 156, 73);
+  doc.setFillColor(15, 40, 70);
   doc.rect(0, 0, W, 28, 'F');
 
   // Logo
@@ -1249,7 +1249,8 @@ function generateQuote() {
   formData.append('Upfront Total inc GST', '$' + upTotal.toFixed(2));
   formData.append('Issue Date', issueDateStr);
   fetch('https://formspree.io/f/mojpgbbz', { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } })
-    .catch(function(){});
+    .then(function(r){ if(!r.ok){ return r.json().then(function(d){ console.warn('Formspree error:', d); }); } })
+    .catch(function(e){ console.warn('Formspree fetch failed:', e); });
 
   // Show success
   document.getElementById('quote-form').style.display = 'none';
