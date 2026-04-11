@@ -560,22 +560,47 @@
           <div class="mb-2">
             <label class="block text-sm font-semibold text-gray-700 mb-1">Additional Phone Numbers &mdash; $10.00/month each</label>
             <p class="text-xs text-gray-500 mb-3">Only count numbers <em>beyond</em> the ones already included with your users above</p>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div>
-                <label class="block text-xs text-gray-600 mb-1" for="calc-local">Local numbers (02/03/07/08)</label>
-                <input type="number" id="calc-local" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-                <p class="text-xs text-gray-400 mt-1">Geographic presence</p>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+
+              <!-- Local numbers row -->
+              <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+                <div style="min-width:180px;">
+                  <label class="block text-xs text-gray-600 mb-1" for="calc-local">Local numbers (02/03/07/08)</label>
+                  <input type="number" id="calc-local" min="0" max="100" value="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;">
+                  <span class="text-xs text-gray-400 ml-2">Geographic presence</span>
+                </div>
+                <label id="port-local-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
+                  <input type="checkbox" id="calc-port-local-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;">
+                  Port existing number <span style="color:#6b7280;">(+$50.00 each)</span>
+                </label>
               </div>
-              <div>
-                <label class="block text-xs text-gray-600 mb-1" for="calc-1300">1300 numbers</label>
-                <input type="number" id="calc-1300" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-                <p class="text-xs text-gray-400 mt-1">National. Caller pays local rate</p>
+
+              <!-- 1300 numbers row -->
+              <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+                <div style="min-width:180px;">
+                  <label class="block text-xs text-gray-600 mb-1" for="calc-1300">1300 numbers</label>
+                  <input type="number" id="calc-1300" min="0" max="100" value="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;">
+                  <span class="text-xs text-gray-400 ml-2">National. Caller pays local rate</span>
+                </div>
+                <label id="port-1300-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
+                  <input type="checkbox" id="calc-port-1300-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;">
+                  Port existing number <span style="color:#6b7280;">(+$100.00 each)</span>
+                </label>
               </div>
-              <div>
-                <label class="block text-xs text-gray-600 mb-1" for="calc-1800">1800 numbers</label>
-                <input type="number" id="calc-1800" min="0" max="100" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-                <p class="text-xs text-gray-400 mt-1">Toll-free. You pay $0.20/min inbound</p>
+
+              <!-- 1800 numbers row -->
+              <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+                <div style="min-width:180px;">
+                  <label class="block text-xs text-gray-600 mb-1" for="calc-1800">1800 numbers</label>
+                  <input type="number" id="calc-1800" min="0" max="100" value="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;">
+                  <span class="text-xs text-gray-400 ml-2">Toll-free. You pay $0.20/min inbound</span>
+                </div>
+                <label id="port-1800-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
+                  <input type="checkbox" id="calc-port-1800-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;">
+                  Port existing number <span style="color:#6b7280;">(+$100.00 each)</span>
+                </label>
               </div>
+
             </div>
           </div>
         </div>
@@ -583,22 +608,6 @@
         <!-- ── SECTION 2: ONE-TIME UPFRONT ── -->
         <div id="upfront-section" style="display:none;" class="mb-8 border-t border-gray-200 pt-8">
           <h3 style="font-size:0.7rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1rem 0;">Section 2 &mdash; One-time upfront costs <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></h3>
-
-          <!-- A. Number Porting -->
-          <div class="mb-6">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Number porting</label>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs text-gray-600 mb-1" for="calc-port-local">Port local numbers &mdash; $50.00 each</label>
-                <input type="number" id="calc-port-local" min="0" max="50" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-              </div>
-              <div>
-                <label class="block text-xs text-gray-600 mb-1" for="calc-port-1300">Port 1300/1800 numbers &mdash; $100.00 each</label>
-                <input type="number" id="calc-port-1300" min="0" max="50" value="0" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
-              </div>
-            </div>
-            <p class="text-xs text-gray-400 mt-2">Typically 5&ndash;10 business days. In most cases, your existing service stays active during porting.</p>
-          </div>
 
           <!-- B. Setup -->
           <div class="mb-6">
@@ -811,8 +820,24 @@ function updateCalc() {
   var local     = Math.max(0, parseInt(document.getElementById('calc-local').value) || 0);
   var n1300     = Math.max(0, parseInt(document.getElementById('calc-1300').value) || 0);
   var n1800     = Math.max(0, parseInt(document.getElementById('calc-1800').value) || 0);
-  var portLocal = Math.max(0, parseInt(document.getElementById('calc-port-local').value) || 0);
-  var port1300  = Math.max(0, parseInt(document.getElementById('calc-port-1300').value) || 0);
+  // Port checkboxes: if checked, port qty = number qty; else 0
+  var portLocalChk = document.getElementById('calc-port-local-chk');
+  var port1300Chk  = document.getElementById('calc-port-1300-chk');
+  var port1800Chk  = document.getElementById('calc-port-1800-chk');
+  var portLocal = (portLocalChk && portLocalChk.checked) ? local : 0;
+  var port1300  = ((port1300Chk && port1300Chk.checked) ? n1300 : 0) + ((port1800Chk && port1800Chk.checked) ? n1800 : 0);
+
+  // Show/hide port checkboxes based on whether numbers > 0
+  var portLocalLabel = document.getElementById('port-local-label');
+  var port1300Label  = document.getElementById('port-1300-label');
+  var port1800Label  = document.getElementById('port-1800-label');
+  if (portLocalLabel) portLocalLabel.style.display = local > 0 ? 'flex' : 'none';
+  if (port1300Label)  port1300Label.style.display  = n1300 > 0 ? 'flex' : 'none';
+  if (port1800Label)  port1800Label.style.display  = n1800 > 0 ? 'flex' : 'none';
+  // Reset checkboxes when qty drops to 0
+  if (local === 0 && portLocalChk) portLocalChk.checked = false;
+  if (n1300 === 0 && port1300Chk)  port1300Chk.checked  = false;
+  if (n1800 === 0 && port1800Chk)  port1800Chk.checked  = false;
   var setup     = document.querySelector('input[name="calc-setup"]:checked') ? document.querySelector('input[name="calc-setup"]:checked').value : 'self';
   var desk      = Math.max(0, parseInt(document.getElementById('calc-desk').value) || 0);
   var cordless  = Math.max(0, parseInt(document.getElementById('calc-cordless').value) || 0);
@@ -1216,7 +1241,7 @@ function generateQuote() {
 
 // ── INIT ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
-  ['calc-users','calc-local','calc-1300','calc-1800','calc-port-local','calc-port-1300','calc-desk','calc-cordless','calc-softphone'].forEach(function(id) {
+  ['calc-users','calc-local','calc-1300','calc-1800','calc-desk','calc-cordless','calc-softphone'].forEach(function(id) {
     var el = document.getElementById(id);
     if (el) { el.addEventListener('input', updateCalc); el.addEventListener('change', updateCalc); }
   });
