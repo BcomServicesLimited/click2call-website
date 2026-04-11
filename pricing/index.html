@@ -1030,8 +1030,11 @@ function generateQuote() {
   var col = margin; var y = 20;
 
   // Header bar
-  doc.setFillColor(15, 40, 70);
+  // White header with thin green bottom border
+  doc.setFillColor(255, 255, 255);
   doc.rect(0, 0, W, 28, 'F');
+  doc.setFillColor(59, 156, 73);
+  doc.rect(0, 27, W, 1, 'F');
 
   // Logo
   try {
@@ -1040,7 +1043,7 @@ function generateQuote() {
 
   // Quote number / date top right
   doc.setFontSize(8);
-  doc.setTextColor(255,255,255);
+  doc.setTextColor(75,85,99);
   doc.setFont('helvetica','normal');
   doc.text('Quote No: ' + quoteNum, W - margin, 10, {align:'right'});
   doc.text('Issue date: ' + issueDateStr, W - margin, 15, {align:'right'});
