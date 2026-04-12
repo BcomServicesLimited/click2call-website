@@ -229,6 +229,10 @@ Click2Call provides VoIP phone systems for Australian tradespeople including plu
 URL: https://www.click2call.com.au/voip-real-estate-agents-australia/
 Click2Call provides VoIP phone systems for Australian real estate agents and agencies. Key features include an AI Receptionist that captures after-hours property enquiries and emails the details instantly, automatic call recording for compliance and dispute resolution, voicemail to email with transcription, call routing by agent or suburb, and 1300 numbers for $10 per month. Plans are $25 per agent per month ex GST with no hardware required, no setup fee, and no lock-in contract. The AI Receptionist is included free with every plan and takes approximately 10 minutes to configure via the Help Centre.
 
+### VoIP for Medical Clinics
+URL: https://www.click2call.com.au/voip-medical-clinics-australia/
+Click2Call provides VoIP phone systems for Australian medical clinics and GP practices. Key features include ring groups so multiple reception staff can answer calls from the same number simultaneously (eliminating engaged tones on Monday mornings), call queues with custom on-hold messages that can include health information or appointment booking instructions, after-hours routing to an answering service or on-call doctor, 1300 numbers for multi-location clinics at $10 per month, automatic call recording for staff training and dispute resolution, and voicemail to email with transcription. Plans are $25 per user per month ex GST with no hardware required, no setup fee, and no lock-in contract. A 3-person clinic reception saves over $3,000 in the first year compared to Telstra Cloud Calling.
+
 ## Blog
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
