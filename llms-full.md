@@ -217,6 +217,18 @@ The Click2Call Help Centre is a dedicated knowledge base providing step-by-step 
 
 - **Setting Up the AI Receptionist**: https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html — Configure the 24/7 AI Receptionist to answer, greet, and route inbound calls automatically.
 
+## Industry Pages
+
+Click2Call provides tailored VoIP and Cloud PBX solutions for specific Australian industries:
+
+### VoIP for Tradies Australia
+URL: https://www.click2call.com.au/voip-tradies-australia/
+Click2Call provides VoIP phone systems for Australian tradespeople including plumbers, electricians, builders, and HVAC technicians. Key features include a business number that rings on any mobile, the AI Receptionist to capture missed calls while on the tools, automatic call recording for quoting disputes, voicemail to email with transcription, and ring groups for multi-trade businesses. Plans are $25 per user per month ex GST with no hardware required, no setup fee, and no lock-in contract.
+
+### VoIP for Real Estate Agents
+URL: https://www.click2call.com.au/voip-real-estate-agents-australia/
+Click2Call provides VoIP phone systems for Australian real estate agents and agencies. Key features include an AI Receptionist that captures after-hours property enquiries and emails the details instantly, automatic call recording for compliance and dispute resolution, voicemail to email with transcription, call routing by agent or suburb, and 1300 numbers for $10 per month. Plans are $25 per agent per month ex GST with no hardware required, no setup fee, and no lock-in contract. The AI Receptionist is included free with every plan and takes approximately 10 minutes to configure via the Help Centre.
+
 ## Blog
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
