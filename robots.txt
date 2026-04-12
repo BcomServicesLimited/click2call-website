@@ -1,7 +1,7 @@
 # robots.txt for click2call.com.au
 # Click2Call - Australian Cloud PBX and AI Voice Provider
 # Trading as Bcom Services Pty Ltd (ABN: 92 636 893 108)
-# Last updated: 2026-04-07
+# Last updated: 2026-04-12
 
 # ── Standard web crawlers ──────────────────────────────────────
 User-agent: *
