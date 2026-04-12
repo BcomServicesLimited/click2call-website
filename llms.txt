@@ -124,6 +124,12 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 - **Intended audience**: Business owners, office managers, IT managers, and finance teams in Australia evaluating the cost of a VoIP phone system.
 - **Common queries this tool answers**: "How much does a VoIP phone system cost in Australia?", "What is the monthly cost of a business phone system?", "VoIP pricing calculator Australia", "Calculate VoIP costs for small business", "How much does Click2Call cost per month?", "Get a quote for a business phone system Australia"
 
+## Industry Pages
+
+Click2Call provides tailored VoIP and Cloud PBX solutions for specific Australian industries:
+
+- **VoIP for Tradies Australia**: [https://www.click2call.com.au/voip-tradies-australia/](https://www.click2call.com.au/voip-tradies-australia/) — A dedicated guide to VoIP phone systems for Australian tradespeople including plumbers, electricians, builders, and HVAC technicians. Covers why tradies need a business number separate from their mobile, how to use a VoIP app on a smartphone or ute tablet, call recording for quoting disputes, after-hours voicemail, ring groups for multi-trade businesses, and number porting. Pricing starts at $25/month per user. Common queries: "best phone system for tradies Australia", "VoIP for plumbers electricians builders", "business phone number for tradie", "how do tradies manage calls on the go".
+
 ## Blog
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
