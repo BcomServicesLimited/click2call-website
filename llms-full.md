@@ -237,6 +237,42 @@ Click2Call provides VoIP phone systems for Australian medical clinics and GP pra
 URL: https://www.click2call.com.au/voip-it-companies-australia/
 Click2Call provides VoIP, Cloud PBX, and Microsoft Teams Direct Routing for Australian IT companies and managed service providers. Three integration paths are available: Microsoft Teams Direct Routing (staff make and receive calls through Teams on any device using an Australian business number, one-time setup $55 per user inc GST), Cloud PBX with no hardware (full hosted PBX via the Click2Call app, $25 per user per month ex GST), and SIP trunk integration (connect existing 3CX, FreePBX, Asterisk, or Cisco PBX systems to Click2Call SIP trunks, replacing ISDN lines). All plans include automatic call recording with full text transcription for every client interaction, one consistent business number for the whole team regardless of location, after-hours call routing, voicemail to email with transcript, and 300 outbound minutes per user per month. Plans are $25 per user per month ex GST with no hardware required and no lock-in contract. A 5-person IT team switching from Telstra saves approximately $3,500 in the first year.
 
+## Case Studies
+
+Click2Call case studies document real-world outcomes for Australian businesses using Click2Call VoIP, Cloud PBX, and AI Voice Tools.
+
+- **Case Studies Index**: https://www.click2call.com.au/case-studies — Overview of all case studies with industry, location, key stats, and links to full pages.
+
+### Brisbane Accounting Firm — AI Receptionist
+- **URL**: https://www.click2call.com.au/case-studies/accounting-firm-ai-receptionist/
+- **Industry**: Accounting / Professional Services
+- **Location**: Brisbane, Queensland
+- **Challenge**: A Brisbane accounting firm with four staff was missing 40% of inbound calls during peak periods (tax season, EOFY). Calls went to voicemail and were not returned promptly, causing client frustration and lost referrals.
+- **Solution**: Click2Call Cloud PBX with AI Receptionist. The AI answers every call 24/7, greets callers, routes to the right accountant, and captures after-hours enquiries via voicemail-to-email.
+- **Results**: 40% reduction in missed calls, 24/7 coverage including weekends and public holidays, 90% of routine enquiries handled without staff intervention.
+- **Key features used**: AI Receptionist, Cloud PBX, voicemail-to-email, call recording, business hours routing.
+- **Pricing**: $25/user/month (4 users = $100/month total, ex GST).
+
+### Sydney Plumbing Business — Cloud PBX Multi-Location
+- **URL**: https://www.click2call.com.au/case-studies/plumbing-business-cloud-pbx/
+- **Industry**: Trades / Plumbing
+- **Location**: Sydney, New South Wales
+- **Challenge**: A Sydney plumbing business operating across three locations (Parramatta, Penrith, Liverpool) had three separate phone systems with no visibility across sites. Staff were using personal mobiles for job calls, with no call recording for dispute resolution.
+- **Solution**: Click2Call Cloud PBX unifying all three locations under one system. One 02 Sydney number rings all three offices. Ring groups ensure every call is answered. Call recording captures every job conversation.
+- **Results**: 1 unified phone system replacing 3 separate systems, 50% cost reduction vs previous provider, 100% call analytics visibility across all locations.
+- **Key features used**: Cloud PBX, ring groups, call recording, voicemail-to-email, multi-location routing.
+- **Pricing**: $25/user/month per user, no hardware required.
+
+### Melbourne Medical Clinic — AI Voice Tools Transcription
+- **URL**: https://www.click2call.com.au/case-studies/medical-clinic-ai-transcription/
+- **Industry**: Healthcare / Medical
+- **Location**: Melbourne, Victoria
+- **Challenge**: A Melbourne medical clinic was required to maintain records of all patient phone interactions for compliance. Staff were manually taking notes during calls, leading to inconsistencies and time wasted on post-call documentation.
+- **Solution**: Click2Call Cloud PBX with AI Voice Tools. Every inbound and outbound call is automatically recorded and transcribed. Transcripts are delivered to staff email within minutes of the call ending.
+- **Results**: 100% of calls transcribed automatically, 75% reduction in post-call documentation time, 99% transcription accuracy across Australian accents.
+- **Key features used**: AI Voice Tools (transcription), call recording, voicemail-to-email, ring groups, after-hours routing.
+- **Pricing**: $25/user/month per user, no hardware required.
+
 ## Blog
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
