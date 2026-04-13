@@ -14,8 +14,7 @@ node_modules/
 input.css
 tailwind.config.js
 
-# Scripts
-*.py
+# Scripts (shell/batch only — Python utility scripts are committed)
 *.sh
 *.bat
 
