@@ -948,6 +948,13 @@ window.addEventListener('load', function () {
     }
   });
 
+  /* Prevent dropdown from closing before a link click completes.
+     mousedown on the dropdown calls preventDefault() which stops the input
+     from blurring, so the subsequent click event on the link fires normally. */
+  dropdown.addEventListener('mousedown', function (e) {
+    e.preventDefault();
+  });
+
   /* Close on outside click */
   document.addEventListener('click', function (e) {
     if (!document.getElementById('search-wrapper').contains(e.target)) {
