@@ -394,15 +394,31 @@
     <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Click2Call Support Centre</h1>
     <p class="text-gray-600 mb-8">Our Australian-based team is here to help. Search the guides below, or get in touch directly.</p>
     <!-- Search bar -->
-    <div class="relative max-w-xl mx-auto">
-      <input
-        id="support-search"
-        type="search"
-        placeholder="Search guides… e.g. add extension, call flow, voicemail"
-        class="w-full px-6 py-4 rounded-xl bg-white text-gray-900 text-sm shadow-lg focus:outline-none text-center placeholder-gray-400"
-        style="border: 2px solid transparent;"
-        autocomplete="off"
-      >
+    <div class="relative max-w-xl mx-auto" id="search-wrapper">
+      <div class="relative">
+        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input
+          id="support-search"
+          type="search"
+          placeholder="Search guides… e.g. add extension, call flow, voicemail"
+          class="w-full pl-12 pr-6 py-4 rounded-xl bg-white text-gray-900 text-sm shadow-lg focus:outline-none placeholder-gray-400"
+          style="border: 2px solid transparent;"
+          autocomplete="off"
+          aria-label="Search help guides"
+          aria-autocomplete="list"
+          aria-controls="search-dropdown"
+          aria-expanded="false"
+          role="combobox"
+        >
+      </div>
+      <!-- Dropdown results panel -->
+      <div
+        id="search-dropdown"
+        role="listbox"
+        aria-label="Search results"
+        class="absolute left-0 right-0 mt-1 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50"
+        style="display:none;"
+      ></div>
     </div>
     <!-- Search results count (hidden until search is active) -->
     <p id="support-search-count" class="hidden mt-3 text-sm text-gray-500"></p>
@@ -752,7 +768,7 @@ document.addEventListener('DOMContentLoaded', function () {
       html += '</div>';
       html += '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">';
       groups[catKey].forEach(function(a) {
-        html += '<a href="' + a.url + '" class="support-article-card group flex items-start gap-3 bg-white border border-gray-200 rounded-xl px-4 py-3 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200" data-tags="' + a.tags + '">';
+        html += '<a href="' + a.url + '" class="support-article-card group flex items-start gap-3 bg-white border border-gray-200 rounded-xl px-4 py-3 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200" data-tags="' + a.tags + '" data-category="' + catKey + '">';
         html += '<svg class="flex-shrink-0 w-4 h-4 mt-0.5 text-gray-400 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
         html += '<div><p class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors leading-snug">' + a.title + '</p>';
         html += '<p class="text-xs text-gray-500 mt-0.5">' + a.readTime + '</p></div>';
@@ -767,30 +783,133 @@ document.addEventListener('DOMContentLoaded', function () {
   }());
 });
 
-/* ── Live search — runs after DOMContentLoaded has rendered all cards ── */
+/* ── Live search with dropdown typeahead ── */
 window.addEventListener('load', function () {
-  var searchInput = document.getElementById('support-search');
-  if (!searchInput) return;
+  var searchInput  = document.getElementById('support-search');
+  var dropdown     = document.getElementById('search-dropdown');
+  if (!searchInput || !dropdown) return;
 
-  var runSearch = function () {
-    var q = searchInput.value.toLowerCase().trim();
-    var cards = document.querySelectorAll('.support-article-card');
+  /* Category labels map */
+  var CAT_LABELS = {
+    'getting-started': 'Getting Started',
+    'phone-numbers':   'Phone Numbers',
+    'extensions':      'Extensions & Users',
+    'devices':         'Devices & Apps',
+    'call-flows':      'Call Flows & Routing',
+    'billing':         'Account & Billing',
+    'ai':              'AI Features'
+  };
+
+  var activeIndex = -1;
+
+  function getArticleData() {
+    /* Pull data directly from the rendered cards so we stay in sync */
+    var cards = Array.from(document.querySelectorAll('.support-article-card'));
+    return cards.map(function (card) {
+      var p = card.querySelector('p');
+      var small = card.querySelector('span.text-xs, small, .text-xs');
+      return {
+        el:       card,
+        href:     card.getAttribute('href') || '#',
+        title:    p ? p.textContent.trim() : '',
+        tags:     card.getAttribute('data-tags') || '',
+        category: card.getAttribute('data-category') || ''
+      };
+    });
+  }
+
+  function showDropdown(items, q) {
+    dropdown.innerHTML = '';
+    activeIndex = -1;
+
+    if (!items.length) {
+      dropdown.innerHTML = '<div class="px-5 py-4 text-sm text-gray-500">No guides found for &ldquo;' + escHtml(q) + '&rdquo;</div>';
+      dropdown.style.display = 'block';
+      searchInput.setAttribute('aria-expanded', 'true');
+      return;
+    }
+
+    var ul = document.createElement('ul');
+    ul.setAttribute('role', 'listbox');
+    ul.className = 'py-1';
+
+    items.forEach(function (item, i) {
+      var li = document.createElement('li');
+      li.setAttribute('role', 'option');
+      li.setAttribute('data-index', i);
+      li.className = 'group';
+
+      var catLabel = CAT_LABELS[item.category] || '';
+      var highlighted = highlightMatch(item.title, q);
+
+      li.innerHTML =
+        '<a href="' + item.href + '" class="flex items-center justify-between gap-3 px-5 py-3 hover:bg-green-50 transition-colors duration-100">' +
+          '<span class="flex items-center gap-3 min-w-0">' +
+            '<svg class="flex-shrink-0 w-4 h-4 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
+            '<span class="text-sm text-gray-900 font-medium truncate">' + highlighted + '</span>' +
+          '</span>' +
+          (catLabel ? '<span class="flex-shrink-0 text-xs text-gray-400">' + escHtml(catLabel) + '</span>' : '') +
+        '</a>';
+
+      ul.appendChild(li);
+    });
+
+    /* "View all X results" footer row */
+    var footer = document.createElement('div');
+    footer.className = 'border-t border-gray-100 px-5 py-3 bg-gray-50';
+    footer.innerHTML =
+      '<button type="button" id="search-view-all" class="text-sm text-[#3B9C49] font-medium hover:underline">' +
+        'View all ' + items.length + ' result' + (items.length !== 1 ? 's' : '') + ' below &darr;' +
+      '</button>';
+    dropdown.appendChild(ul);
+    dropdown.appendChild(footer);
+    dropdown.style.display = 'block';
+    searchInput.setAttribute('aria-expanded', 'true');
+
+    document.getElementById('search-view-all').addEventListener('click', function () {
+      closeDropdown();
+      var browseSection = document.getElementById('support-article-groups');
+      if (browseSection) {
+        browseSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+
+  function closeDropdown() {
+    dropdown.style.display = 'none';
+    dropdown.innerHTML = '';
+    searchInput.setAttribute('aria-expanded', 'false');
+    activeIndex = -1;
+  }
+
+  function highlightMatch(text, q) {
+    var safe = escHtml(text);
+    var safeQ = escHtml(q);
+    var idx = safe.toLowerCase().indexOf(q.toLowerCase());
+    if (idx === -1) return safe;
+    return safe.substring(0, idx) +
+      '<mark class="bg-yellow-100 text-gray-900 rounded">' + safe.substring(idx, idx + q.length) + '</mark>' +
+      safe.substring(idx + q.length);
+  }
+
+  function escHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function filterCards(q) {
+    var cards  = document.querySelectorAll('.support-article-card');
     var groups = document.querySelectorAll('.support-cat-group');
-
     if (!q) {
       cards.forEach(function (c) { c.style.display = ''; });
       groups.forEach(function (g) { g.style.display = ''; });
       return;
     }
-
     cards.forEach(function (card) {
       var title = (card.querySelector('p') || {}).textContent || '';
       var tags  = card.getAttribute('data-tags') || '';
-      var match = title.toLowerCase().indexOf(q) !== -1 ||
-                  tags.toLowerCase().indexOf(q) !== -1;
+      var match = title.toLowerCase().indexOf(q) !== -1 || tags.toLowerCase().indexOf(q) !== -1;
       card.style.display = match ? '' : 'none';
     });
-
     groups.forEach(function (group) {
       var anyVisible = false;
       group.querySelectorAll('.support-article-card').forEach(function (c) {
@@ -798,12 +917,49 @@ window.addEventListener('load', function () {
       });
       group.style.display = anyVisible ? '' : 'none';
     });
-  };
+  }
+
+  function runSearch() {
+    var q = searchInput.value.toLowerCase().trim();
+    filterCards(q);
+    if (!q) { closeDropdown(); return; }
+    var articles = getArticleData();
+    var matches = articles.filter(function (a) {
+      return a.title.toLowerCase().indexOf(q) !== -1 || a.tags.toLowerCase().indexOf(q) !== -1;
+    });
+    showDropdown(matches.slice(0, 8), q);
+  }
+
+  /* Keyboard navigation */
+  searchInput.addEventListener('keydown', function (e) {
+    var items = dropdown.querySelectorAll('li[role="option"] a');
+    if (!items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, items.length - 1);
+      items[activeIndex].focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeIndex = Math.max(activeIndex - 1, -1);
+      if (activeIndex === -1) { searchInput.focus(); } else { items[activeIndex].focus(); }
+    } else if (e.key === 'Escape') {
+      closeDropdown();
+      searchInput.blur();
+    }
+  });
+
+  /* Close on outside click */
+  document.addEventListener('click', function (e) {
+    if (!document.getElementById('search-wrapper').contains(e.target)) {
+      closeDropdown();
+    }
+  });
 
   searchInput.addEventListener('input',  runSearch);
   searchInput.addEventListener('keyup',  runSearch);
   searchInput.addEventListener('change', runSearch);
   searchInput.addEventListener('search', runSearch);
+  searchInput.addEventListener('focus',  runSearch);
 });
 </script>
 
