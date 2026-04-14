@@ -92,7 +92,7 @@ var HELP_ARTICLES = [
     tags:     "caller id outbound caller id cli number display",
     category: "extensions",
     readTime: "2 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
 
@@ -146,7 +146,7 @@ var HELP_ARTICLES = [
     tags:     "business hours after hours time conditions schedule closed",
     category: "call-flows",
     readTime: "2 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
   {
@@ -156,7 +156,7 @@ var HELP_ARTICLES = [
     tags:     "voicemail setup voicemail to email mailbox greeting",
     category: "call-flows",
     readTime: "2 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
   {
@@ -166,7 +166,7 @@ var HELP_ARTICLES = [
     tags:     "call recordings download listen playback portal",
     category: "call-flows",
     readTime: "2 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
 
@@ -178,7 +178,7 @@ var HELP_ARTICLES = [
     tags:     "channels concurrent calls capacity add channels upgrade",
     category: "billing",
     readTime: "2 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
   {
@@ -198,7 +198,7 @@ var HELP_ARTICLES = [
     tags:     "reports records billing records call report export csv call history usage",
     category: "billing",
     readTime: "4 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
 
@@ -230,7 +230,7 @@ var HELP_ARTICLES = [
     tags:     "ai speech text to speech voice clone tts synthesis",
     category: "ai",
     readTime: "3 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
   {
@@ -240,7 +240,7 @@ var HELP_ARTICLES = [
     tags:     "ai voicemail transcription summary smart voicemail",
     category: "ai",
     readTime: "2 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   }
 
