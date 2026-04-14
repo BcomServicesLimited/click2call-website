@@ -763,44 +763,46 @@ document.addEventListener('DOMContentLoaded', function () {
     groupsEl.innerHTML = html;
   }
 
-  /* ── Live search: filter article clusters in real-time ── */
-  var searchInput = document.getElementById('support-search');
-  if (searchInput) {
-    function runSearch() {
-      var q = searchInput.value.toLowerCase().trim();
-      var cards = document.querySelectorAll('.support-article-card');
-      var groups = document.querySelectorAll('.support-cat-group');
-
-      if (!q) {
-        cards.forEach(function (c) { c.style.display = ''; });
-        groups.forEach(function (g) { g.style.display = ''; });
-        return;
-      }
-
-      cards.forEach(function (card) {
-        var title = (card.querySelector('p') || {}).textContent || '';
-        var tags  = card.getAttribute('data-tags') || '';
-        var match = title.toLowerCase().indexOf(q) !== -1 ||
-                    tags.toLowerCase().indexOf(q) !== -1;
-        card.style.display = match ? '' : 'none';
-      });
-
-      groups.forEach(function (group) {
-        var anyVisible = false;
-        group.querySelectorAll('.support-article-card').forEach(function (c) {
-          if (c.style.display !== 'none') anyVisible = true;
-        });
-        group.style.display = anyVisible ? '' : 'none';
-      });
-    }
-    searchInput.addEventListener('input', runSearch);
-    searchInput.addEventListener('keyup', runSearch);
-    searchInput.addEventListener('change', runSearch);
-    /* Also handle the native search clear (×) button */
-    searchInput.addEventListener('search', runSearch);
-  }
-
   }());
+});
+
+/* ── Live search — runs after DOMContentLoaded has rendered all cards ── */
+window.addEventListener('load', function () {
+  var searchInput = document.getElementById('support-search');
+  if (!searchInput) return;
+
+  var runSearch = function () {
+    var q = searchInput.value.toLowerCase().trim();
+    var cards = document.querySelectorAll('.support-article-card');
+    var groups = document.querySelectorAll('.support-cat-group');
+
+    if (!q) {
+      cards.forEach(function (c) { c.style.display = ''; });
+      groups.forEach(function (g) { g.style.display = ''; });
+      return;
+    }
+
+    cards.forEach(function (card) {
+      var title = (card.querySelector('p') || {}).textContent || '';
+      var tags  = card.getAttribute('data-tags') || '';
+      var match = title.toLowerCase().indexOf(q) !== -1 ||
+                  tags.toLowerCase().indexOf(q) !== -1;
+      card.style.display = match ? '' : 'none';
+    });
+
+    groups.forEach(function (group) {
+      var anyVisible = false;
+      group.querySelectorAll('.support-article-card').forEach(function (c) {
+        if (c.style.display !== 'none') anyVisible = true;
+      });
+      group.style.display = anyVisible ? '' : 'none';
+    });
+  };
+
+  searchInput.addEventListener('input',  runSearch);
+  searchInput.addEventListener('keyup',  runSearch);
+  searchInput.addEventListener('change', runSearch);
+  searchInput.addEventListener('search', runSearch);
 });
 </script>
 
