@@ -382,22 +382,110 @@
 
 
 <section class="bg-gray-100">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <nav class="flex mb-8" aria-label="Breadcrumb">
-            <ol class="flex items-center space-x-2 text-sm text-gray-500">
-                <li><a href="/" class="hover:text-gray-700">Home</a></li>
-                <li><span class="mx-2">/</span></li>
-                <li class="text-gray-700 font-medium">Support</li>
-            </ol>
-        </nav>
-        <h1 class="text-4xl font-extrabold text-brand-charcoal sm:text-5xl">Click2Call Support Centre</h1>
-        <p class="mt-4 text-xl text-gray-600">Our Australian-based team is here to help. Find answers in our help categories below, or get in touch directly.</p>
+  <div class="max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="mb-6">
+      <ol class="flex items-center justify-center gap-2 text-sm text-gray-500">
+        <li><a href="/" class="hover:text-brand-green-dark transition-colors">Home</a></li>
+        <li><span class="text-gray-400">/</span></li>
+        <li class="text-gray-900 font-medium">Support</li>
+      </ol>
+    </nav>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Click2Call Support Centre</h1>
+    <p class="text-gray-600 mb-8">Our Australian-based team is here to help. Search the guides below, or get in touch directly.</p>
+    <!-- Search bar -->
+    <div class="relative max-w-xl mx-auto">
+      <input
+        id="support-search"
+        type="search"
+        placeholder="Search guides… e.g. add extension, call flow, voicemail"
+        class="w-full px-6 py-4 rounded-xl bg-white text-gray-900 text-sm shadow-lg focus:outline-none text-center placeholder-gray-400"
+        style="border: 2px solid transparent;"
+        autocomplete="off"
+      >
     </div>
+    <!-- Search results count (hidden until search is active) -->
+    <p id="support-search-count" class="hidden mt-3 text-sm text-gray-500"></p>
+  </div>
 </section>
 
 
 
 <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 space-y-16">
+
+    <!-- ── Primary Task Tiles ── -->
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">What do you need to do?</h2>
+      <p class="text-gray-500 text-sm mb-6">Jump straight to the most common setup tasks.</p>
+      <div id="support-task-tiles" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"></div>
+    </section>
+
+    <!-- ── Guided Setup Stepper ── -->
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">New to Click2Call? Follow these steps</h2>
+      <p class="text-gray-500 text-sm mb-8">Most customers are up and running in under 30 minutes.</p>
+      <div class="relative">
+        <!-- Connector line (desktop only) -->
+        <div class="hidden lg:block absolute top-8 left-0 right-0 h-0.5 bg-gray-200" style="margin: 0 4%;"></div>
+        <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 relative">
+
+          <!-- Step 1 -->
+          <li class="flex flex-col items-center text-center">
+            <a href="/help/how-to-activate-account.html" class="group flex flex-col items-center">
+              <span class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-[#3B9C49] text-white text-xl font-extrabold shadow-md group-hover:bg-[#2E7A3A] transition-colors mb-3">1</span>
+              <span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors">Activate Your Account</span>
+              <span class="mt-1 text-xs text-gray-500">Log in and verify your details</span>
+            </a>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="flex flex-col items-center text-center">
+            <a href="/help/how-to-add-account-credit.html" class="group flex flex-col items-center">
+              <span class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-[#3B9C49] text-white text-xl font-extrabold shadow-md group-hover:bg-[#2E7A3A] transition-colors mb-3">2</span>
+              <span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors">Add Account Credit</span>
+              <span class="mt-1 text-xs text-gray-500">Load credit for outbound calls</span>
+            </a>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="flex flex-col items-center text-center">
+            <a href="/help/how-to-add-phone-number.html" class="group flex flex-col items-center">
+              <span class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-[#3B9C49] text-white text-xl font-extrabold shadow-md group-hover:bg-[#2E7A3A] transition-colors mb-3">3</span>
+              <span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors">Add a Phone Number</span>
+              <span class="mt-1 text-xs text-gray-500">Get a local or 1300 number</span>
+            </a>
+          </li>
+
+          <!-- Step 4 -->
+          <li class="flex flex-col items-center text-center">
+            <a href="/help/how-to-add-extension.html" class="group flex flex-col items-center">
+              <span class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-[#3B9C49] text-white text-xl font-extrabold shadow-md group-hover:bg-[#2E7A3A] transition-colors mb-3">4</span>
+              <span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors">Add an Extension</span>
+              <span class="mt-1 text-xs text-gray-500">Create a user extension</span>
+            </a>
+          </li>
+
+          <!-- Step 5 -->
+          <li class="flex flex-col items-center text-center">
+            <a href="/help/how-to-set-up-softphone.html" class="group flex flex-col items-center">
+              <span class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-[#3B9C49] text-white text-xl font-extrabold shadow-md group-hover:bg-[#2E7A3A] transition-colors mb-3">5</span>
+              <span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors">Set Up Your Device</span>
+              <span class="mt-1 text-xs text-gray-500">Desk phone or softphone app</span>
+            </a>
+          </li>
+
+          <!-- Step 6 -->
+          <li class="flex flex-col items-center text-center">
+            <a href="/help/how-to-set-up-call-flow.html" class="group flex flex-col items-center">
+              <span class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-[#3B9C49] text-white text-xl font-extrabold shadow-md group-hover:bg-[#2E7A3A] transition-colors mb-3">6</span>
+              <span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors">Set Up a Call Flow</span>
+              <span class="mt-1 text-xs text-gray-500">Route incoming calls correctly</span>
+            </a>
+          </li>
+
+        </ol>
+      </div>
+    </section>
 
     <!-- Quick Contact Box -->
     <section class="bg-brand-charcoal rounded-xl p-8">
@@ -421,97 +509,26 @@
         </div>
     </section>
 
-    <!-- Support Categories -->
-    <!-- Help Centre Banner -->
-    <section class="bg-[#3B9C49]/5 border border-[#3B9C49]/20 rounded-2xl p-8">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-[#3B9C49]/10 flex items-center justify-center">
-          <svg class="w-7 h-7 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+    <!-- ── Grouped Article Clusters ── -->
+    <section>
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">Browse All Guides</h2>
+          <p class="text-gray-500 text-sm mt-1">Step-by-step how-to articles, grouped by topic.</p>
         </div>
-        <div class="flex-1">
-          <h2 class="text-xl font-bold text-gray-900 mb-1">Looking for step-by-step guides?</h2>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">Our Help Centre has detailed how-to articles for common tasks — adding extensions, setting up call flows, provisioning phones, and more.</p>
-          <div class="flex flex-wrap gap-3">
-            <a href="/help/index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3B9C49] text-white text-sm font-semibold hover:bg-[#2E7A3A] transition-colors duration-150">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-              Browse Help Centre
-            </a>
-            <a href="/help/how-to-add-extension.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[#3B9C49] text-[#3B9C49] text-sm font-semibold hover:bg-[#3B9C49]/5 transition-colors duration-150">How to add an extension</a>
-            <a href="/help/how-to-set-up-call-flow.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[#3B9C49] text-[#3B9C49] text-sm font-semibold hover:bg-[#3B9C49]/5 transition-colors duration-150">How to set up a call flow</a>
-          </div>
-        </div>
+        <a href="/help/" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-[#3B9C49] hover:text-[#2E7A3A] transition-colors">
+          View all in Help Centre
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
       </div>
-    </section>
-
-    <section>
-        <h2 class="text-3xl font-extrabold text-brand-charcoal">Browse Support Topics</h2>
-        <p class="mt-2 text-gray-600">Find answers to common questions in our FAQ hub, organised by topic.</p>
-        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <a href="/faq#support" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-green-dark transition-all group">
-                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-brand-green-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                </div>
-                <h3 class="mt-3 font-bold text-brand-charcoal group-hover:text-brand-green-dark">Getting Started</h3>
-                <p class="mt-1 text-sm text-gray-600">Account setup, onboarding, and first steps with Click2Call.</p>
-            </a>
-            <a href="/faq#pricing" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-green-dark transition-all group">
-                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-brand-green-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                </div>
-                <h3 class="mt-3 font-bold text-brand-charcoal group-hover:text-brand-green-dark">Account &amp; Billing</h3>
-                <p class="mt-1 text-sm text-gray-600">Plans, invoices, payment methods, and account changes.</p>
-            </a>
-            <a href="/faq#pbx" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-green-dark transition-all group">
-                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-brand-green-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                </div>
-                <h3 class="mt-3 font-bold text-brand-charcoal group-hover:text-brand-green-dark">Cloud PBX Help</h3>
-                <p class="mt-1 text-sm text-gray-600">Call flows, auto-attendant, extensions, and voicemail setup.</p>
-            </a>
-            <a href="/faq#ai" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-green-dark transition-all group">
-                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-brand-green-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                </div>
-                <h3 class="mt-3 font-bold text-brand-charcoal group-hover:text-brand-green-dark">AI Voice Tools</h3>
-                <p class="mt-1 text-sm text-gray-600">Transcription, call summaries, AI Receptionist configuration.</p>
-            </a>
-            <a href="/faq#pbx" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-green-dark transition-all group">
-                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-brand-green-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                </div>
-                <h3 class="mt-3 font-bold text-brand-charcoal group-hover:text-brand-green-dark">SIP Trunks</h3>
-                <p class="mt-1 text-sm text-gray-600">SIP credentials, PBX configuration, and call routing.</p>
-            </a>
-            <a href="/faq#pbx" class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-green-dark transition-all group">
-                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-brand-green-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                </div>
-                <h3 class="mt-3 font-bold text-brand-charcoal group-hover:text-brand-green-dark">Microsoft Teams Calling</h3>
-                <p class="mt-1 text-sm text-gray-600">Direct Routing setup, Teams integration, and number porting.</p>
-            </a>
-        </div>
-    </section>
-
-    <!-- How to Get Support -->
-    <section>
-        <h2 class="text-3xl font-extrabold text-brand-charcoal">How to Get Support</h2>
-        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
-                <div class="text-3xl font-extrabold text-brand-green-dark">1</div>
-                <h3 class="mt-2 font-bold text-brand-charcoal">Check the FAQ</h3>
-                <p class="mt-1 text-sm text-gray-600">Most common questions are answered in our <a href="/faq" class="text-brand-green-dark hover:underline">FAQ hub</a>. It is the fastest way to find an answer.</p>
-            </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
-                <div class="text-3xl font-extrabold text-brand-green-dark">2</div>
-                <h3 class="mt-2 font-bold text-brand-charcoal">Log a Portal Ticket</h3>
-                <p class="mt-1 text-sm text-gray-600">Existing customers can log a support ticket via the <a target="_blank" rel="noopener noreferrer" href="https://portal.click2call.com.au/login.php" class="text-brand-green-dark hover:underline">customer portal</a> for tracked, priority support.</p>
-            </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
-                <div class="text-3xl font-extrabold text-brand-green-dark">3</div>
-                <h3 class="mt-2 font-bold text-brand-charcoal">Call or Email Us</h3>
-                <p class="mt-1 text-sm text-gray-600">For urgent issues, call <a href="tel:1300884879" class="text-brand-green-dark hover:underline">1300 884 879</a> or email <a href="mailto:support@click2call.com.au" class="text-brand-green-dark hover:underline">support@click2call.com.au</a>.</p>
-            </div>
-        </div>
+      <!-- Article groups rendered from articles.js by support-renderer.js -->
+      <div id="support-article-groups"></div>
+      <div class="mt-6 sm:hidden">
+        <a href="/help/" class="inline-flex items-center gap-2 text-sm font-semibold text-[#3B9C49] hover:text-[#2E7A3A] transition-colors">
+          View all in Help Centre
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
     </section>
 
     <!-- Common Troubleshooting -->
@@ -541,17 +558,6 @@
         </div>
     </section>
 
-    <!-- Portal CTA -->
-    <section class="bg-brand-charcoal rounded-xl shadow-xl">
-        <div class="py-16 px-8 text-center">
-            <h2 class="text-3xl font-extrabold text-white">Log In to Manage Your Account</h2>
-            <p class="mt-4 text-lg text-gray-300">Access your call recordings, manage users, configure your phone system, and log support tickets — all from the Click2Call portal.</p>
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a target="_blank" rel="noopener noreferrer" href="https://portal.click2call.com.au/login.php" class="bg-brand-green-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-green-light transition-colors">Log In to Portal</a>
-                <a href="/contact" class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-charcoal transition-colors">Contact Support</a>
-            </div>
-        </div>
-    </section>
 
 </div>
 <!--
@@ -680,6 +686,121 @@
 </div>
 </footer>
 <!-- =================== END FOOTER =================== -->
+
+<script src="/assets/js/articles.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  /* ── Task tile icons keyed by article URL ── */
+  var TILE_ICONS = {
+    '/help/how-to-add-account-credit.html':    '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>',
+    '/help/how-to-add-phone-number.html':      '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>',
+    '/help/how-to-add-extension.html':         '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+    '/help/how-to-add-desk-phone.html':        '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>',
+    '/help/how-to-set-up-softphone.html':      '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>',
+    '/help/how-to-set-up-ai-receptionist.html':'<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>'
+  };
+
+  /* ── Render task tiles from pinned articles ── */
+  var tilesEl = document.getElementById('support-task-tiles');
+  if (tilesEl && typeof HELP_ARTICLES !== 'undefined') {
+    var pinned = HELP_ARTICLES.filter(function(a) { return a.pinned; });
+    var html = '';
+    pinned.forEach(function(a) {
+      var icon = TILE_ICONS[a.url] || '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+      html += '<a href="' + a.url + '" class="group flex flex-col items-center text-center bg-white border border-gray-200 rounded-xl p-5 hover:border-[#3B9C49] hover:shadow-md transition-all duration-200">';
+      html += '<span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-[#3B9C49] mb-3 group-hover:bg-green-100 transition-colors">' + icon + '</span>';
+      html += '<span class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors leading-snug">' + a.title + '</span>';
+      html += '</a>';
+    });
+    tilesEl.innerHTML = html;
+  }
+
+  /* ── Render grouped article clusters from featured articles ── */
+  var groupsEl = document.getElementById('support-article-groups');
+  if (groupsEl && typeof HELP_ARTICLES !== 'undefined') {
+    /* Build category order and labels */
+    var CAT_META = {
+      'getting-started': { label: 'Getting Started',     icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>' },
+      'phone-numbers':   { label: 'Phone Numbers',        icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>' },
+      'extensions':      { label: 'Extensions & Users',  icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>' },
+      'devices':         { label: 'Devices & Apps',       icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>' },
+      'call-flows':      { label: 'Call Flows & Routing', icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>' },
+      'billing':         { label: 'Account & Billing',    icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>' },
+      'ai':              { label: 'AI Features',          icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>' }
+    };
+    var catOrder = Object.keys(CAT_META);
+
+    /* Group featured articles by category */
+    var groups = {};
+    HELP_ARTICLES.filter(function(a) { return a.featured; }).forEach(function(a) {
+      if (!groups[a.category]) groups[a.category] = [];
+      groups[a.category].push(a);
+    });
+
+    var html = '<div class="space-y-8">';
+    catOrder.forEach(function(catKey) {
+      if (!groups[catKey] || !groups[catKey].length) return;
+      var meta = CAT_META[catKey] || { label: catKey, icon: '' };
+      html += '<div class="support-cat-group" data-cat="' + catKey + '">';
+      html += '<div class="flex items-center gap-2 mb-3">';
+      html += '<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-green-50 flex items-center justify-center text-[#3B9C49]">' + meta.icon + '</span>';
+      html += '<h3 class="text-base font-bold text-gray-900">' + meta.label + '</h3>';
+      html += '</div>';
+      html += '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">';
+      groups[catKey].forEach(function(a) {
+        html += '<a href="' + a.url + '" class="support-article-card group flex items-start gap-3 bg-white border border-gray-200 rounded-xl px-4 py-3 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200" data-tags="' + a.tags + '">';
+        html += '<svg class="flex-shrink-0 w-4 h-4 mt-0.5 text-gray-400 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+        html += '<div><p class="text-sm font-semibold text-gray-900 group-hover:text-[#3B9C49] transition-colors leading-snug">' + a.title + '</p>';
+        html += '<p class="text-xs text-gray-500 mt-0.5">' + a.readTime + '</p></div>';
+        html += '</a>';
+      });
+      html += '</div></div>';
+    });
+    html += '</div>';
+    groupsEl.innerHTML = html;
+  }
+
+  /* ── Live search: filter article clusters in real-time ── */
+  var searchInput = document.getElementById('support-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', function () {
+      var q = searchInput.value.toLowerCase().trim();
+      var cards = document.querySelectorAll('.support-article-card');
+      var groups = document.querySelectorAll('.support-cat-group');
+
+      if (!q) {
+        /* Reset: show everything */
+        cards.forEach(function (c) { c.style.display = ''; });
+        groups.forEach(function (g) { g.style.display = ''; });
+        return;
+      }
+
+      /* Show/hide individual cards based on title + tags match */
+      cards.forEach(function (card) {
+        var title = (card.querySelector('p') || {}).textContent || '';
+        var tags  = card.getAttribute('data-tags') || '';
+        var match = title.toLowerCase().indexOf(q) !== -1 ||
+                    tags.toLowerCase().indexOf(q) !== -1;
+        card.style.display = match ? '' : 'none';
+      });
+
+      /* Hide entire category group if all its cards are hidden */
+      groups.forEach(function (group) {
+        var visible = group.querySelectorAll('.support-article-card:not([style*="display: none"])');
+        /* querySelectorAll :not([style*=...]) is unreliable; count manually */
+        var anyVisible = false;
+        group.querySelectorAll('.support-article-card').forEach(function (c) {
+          if (c.style.display !== 'none') anyVisible = true;
+        });
+        group.style.display = anyVisible ? '' : 'none';
+      });
+    });
+  }
+
+}());
+</script>
 
 </body>
 </html>
