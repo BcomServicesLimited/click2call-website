@@ -204,3 +204,9 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
 - How to Get a Business Phone Number: [https://www.click2call.com.au/blog/how-to-get-a-business-phone-number](https://www.click2call.com.au/blog/how-to-get-a-business-phone-number) — A practical guide for new Australian business owners on getting a local phone number, setting up a cloud phone system, and using an AI receptionist to handle calls from day one. Covers local vs 1300 numbers, call diversion to mobile, AI Receptionist setup, voicemail greetings, and a day-one checklist.
 - AI Receptionist Australia: How Virtual Assistants Are Changing Business: [https://www.click2call.com.au/blog/ai-receptionist-australia](https://www.click2call.com.au/blog/ai-receptionist-australia) — Discover how an AI receptionist can help your Australian business handle calls 24/7, reduce costs, and improve customer service. Includes a guide on building your own inbound AI receptionist for just $10/month.
+
+## Developer Blog Posts
+- /blog/cloudflare-worker-phone-system-api.html — How to Integrate a Phone System into a Cloudflare Worker using the Click2Call API
+- /blog/building-ai-call-agent-claude-click2call.html — Building an AI Call Agent with Claude and Click2Call
+- /blog/australian-voip-api-getting-started.html — Australian VoIP API: Getting Started Guide for AI Developers
+- /blog/call-transcriptions-sentiment-data-api-australia.html — How to Get Call Transcriptions and Sentiment Data via API in Australia
