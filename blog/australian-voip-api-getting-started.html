@@ -18,14 +18,14 @@
     <meta property="og:url" content="https://www.click2call.com.au/blog/australian-voip-api-getting-started.html">
     <meta property="og:title" content="Australian VoIP API: Getting Started Guide for AI Developers | Click2Call Blog">
     <meta property="og:description" content="A comprehensive guide for developers and AI builders on getting started with the Click2Call Australian VoIP API.">
-    <meta property="og:image" content="https://www.click2call.com.au/assets/images/blog/australian-voip-api-hero.jpg">
+    <meta property="og:image" content="https://www.click2call.com.au/assets/images/blog/australian-voip-api-hero.webp">
     <meta property="twitter:card" content="summary_large_image">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Australian VoIP API: Getting Started Guide for AI Developers",
-      "image": "https://www.click2call.com.au/assets/images/blog/australian-voip-api-hero.jpg",
+      "image": "https://www.click2call.com.au/assets/images/blog/australian-voip-api-hero.webp",
       "datePublished": "2026-04-16",
       "dateModified": "2026-04-16",
       "author": {
@@ -424,9 +424,9 @@
             </ol>
         </nav>
         <div class="text-center">
-            <p class="text-sm font-semibold text-brand-green-dark uppercase tracking-wide">[CATEGORY]</p>
+            <p class="text-sm font-semibold text-brand-green-dark uppercase tracking-wide">Developer API</p>
             <h1 class="mt-2 text-4xl font-extrabold text-brand-charcoal sm:text-5xl">Australian VoIP API: Getting Started Guide for AI Developers</h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">[ARTICLE SUBHEADING / DESCRIPTION]</p>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">A comprehensive getting started guide for developers looking to integrate Australian VoIP capabilities into their AI applications.</p>
             <div class="mt-6 flex items-center justify-center space-x-4 text-sm text-gray-500">
                 <span>By <a href="#" class="font-medium text-gray-900">Royce Clark</a></span>
                 <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
@@ -443,16 +443,68 @@
                 <div class="bg-green-50 border-l-4 border-brand-green-dark p-6 rounded-r-lg mb-8">
                     <h2 class="text-xl font-bold text-brand-charcoal !mt-0">Key Takeaways</h2>
                     <ul class="!mt-4">
-                        <li>[Takeaway 1]</li>
-                        <li>[Takeaway 2]</li>
-                        <li>[Takeaway 3]</li>
-                        <li>[Takeaway 4]</li>
+                        <li><strong>Local Infrastructure:</strong> Build with a true Australian VoIP provider for low latency and local compliance.</li>
+                        <li><strong>RESTful JSON API:</strong> Interact with your phone system using standard JSON payloads and simple HTTP requests.</li>
+                        <li><strong>AI-Ready Instructions:</strong> Copy-paste our pre-written LLM instructions into Claude or Cursor to build integrations instantly.</li>
+                        <li><strong>Comprehensive Webhooks:</strong> Get real-time event notifications for ringing, answered, and ended calls.</li>
                     </ul>
                 </div>
 
-                <p>[ARTICLE BODY CONTENT - Start with a plain-language summary paragraph.]</p>
-                <h2>[Section Heading 1]</h2>
-                <p>[Section content]</p>
+                <p>If you're building software in Australia—whether it's a custom CRM, an AI voice agent, or an automated support desk—you eventually hit a wall: you need to connect your code to the real-world phone network. You need an Australian VoIP API.</p>
+                
+                <p>While global providers exist, they often route traffic overseas (adding latency) or lack deep integration with Australian telecom standards. Click2Call provides a developer-first API built specifically on Australian infrastructure, designed for modern AI builders and "vibe coders."</p>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">What Can You Build?</h2>
+                <p>The Click2Call API exposes the core functionality of our enterprise Cloud PBX to your custom software. Here are a few examples of what developers are building:</p>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li><strong>AI Voice Agents:</strong> Connect an Australian 1300 number directly to ElevenLabs and Claude for conversational AI.</li>
+                    <li><strong>CRM Auto-Logging:</strong> Automatically log every inbound and outbound call, complete with AI-generated transcriptions and summaries.</li>
+                    <li><strong>Automated Support Desks:</strong> Trigger a webhook when a call ends to automatically create a support ticket with the caller's details and call sentiment.</li>
+                    <li><strong>Custom Dashboards:</strong> Pull real-time call data to build live wallboards for your sales or support teams.</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">The "No Experience Needed" Approach</h2>
+                <p>We know that many people building AI tools today aren't traditional telecom engineers. That's why we've optimized our API for LLM-assisted coding.</p>
+                
+                <p>Inside your Click2Call portal, you'll find a complete set of copy-paste instructions written specifically for AI coding tools like Claude, Cursor, and ChatGPT. You don't need to read pages of API documentation. Just paste our instructions into your LLM, describe what you want to build, and let the AI write the integration code for you.</p>
+
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 my-6">
+                    <h3 class="font-bold text-brand-charcoal mb-2">Example LLM Prompt:</h3>
+                    <p class="text-gray-600 italic">"I'm building a Cloudflare Worker. Here are the Click2Call API instructions: [PASTE INSTRUCTIONS]. Write a script that listens for the 'Ended Event' webhook, fetches the call transcription using the API, and sends it to my Slack channel."</p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Core API Capabilities</h2>
+                <p>The API is broken down into several key contexts, all accessible via standard JSON POST requests to <code>https://portal.click2call.com.au/api/</code>.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                    <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-brand-charcoal text-lg mb-2">Voice Functions</h4>
+                        <p class="text-sm text-gray-600">Manage phone lines, enable/disable call recording programmatically, and download voicemail or auto-attendant audio files.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-brand-charcoal text-lg mb-2">AI Functions</h4>
+                        <p class="text-sm text-gray-600">Fetch call transcriptions, retrieve AI-generated call summaries, get sentiment analysis data, and convert text to speech (TTS).</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-brand-charcoal text-lg mb-2">Webhooks</h4>
+                        <p class="text-sm text-gray-600">Receive real-time HTTP POST payloads for ringing, answered, ended, and missed calls, plus notifications when AI analysis is complete.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-brand-charcoal text-lg mb-2">Account Functions</h4>
+                        <p class="text-sm text-gray-600">Pull detailed calling records, check account balances, retrieve billing summaries, and manage channel limits.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Authentication</h2>
+                <p>All API queries must be authenticated using a Token-based system. You generate your secret token within the Click2Call portal. This token is passed in the header of your JSON requests, ensuring your data remains secure.</p>
+                
+                <blockquote class="border-l-4 border-brand-green-dark pl-4 italic text-gray-700 my-6">
+                    "Click2Call bridges the gap between traditional Australian telecommunications and modern AI software development."
+                </blockquote>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Getting Started</h2>
+                <p>API access is included free with every Click2Call Cloud PBX account. You don't need a special enterprise plan to start building.</p>
+                <p>Sign up for a 30-day free trial, grab your API token from the portal, and <a href="/api" class="text-brand-green-dark hover:underline font-semibold">explore the Developer API</a> to bring your software to life.</p>
                 <h3>[Subsection Heading]</h3>
                 <p>[Subsection content]</p>
                 <h2>[Section Heading 2]</h2>
@@ -464,17 +516,24 @@
                     <div class="mt-6 space-y-4">
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
-                                <span>[FAQ Question 1]</span>
+                                <span>What format does the API use?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600">[FAQ Answer 1]</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">The Click2Call API is a RESTful service that accepts and returns standard JSON payloads.</div>
                         </div>
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
-                                <span>[FAQ Question 2]</span>
+                                <span>Where can I find the API documentation?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600">[FAQ Answer 2]</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">Full documentation, including endpoint details and the AI-ready copy-paste instructions, is available inside the Click2Call customer portal under the API section.</div>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
+                                <span>Is there a sandbox environment?</span>
+                                <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div class="px-6 pb-4 text-gray-600 hidden">You can use your standard Click2Call account to test API calls. We recommend setting up a dedicated test extension or phone number within your account for development purposes.</div>
                         </div>
                     </div>
                 </div>
@@ -486,7 +545,7 @@
                     <div class="ml-4">
                         <p class="text-sm font-medium text-gray-500">Written by</p>
                         <p class="text-lg font-bold text-brand-charcoal">Royce Clark</p>
-                        <p class="mt-1 text-sm text-gray-600">[AUTHOR BIO - PLACEHOLDER]</p>
+                        <p class="mt-1 text-sm text-gray-600">Royce is a technical writer and developer advocate specializing in cloud communications and AI integrations.</p>
                     </div>
                 </div>
             </div>
@@ -497,9 +556,9 @@
             <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                 <h3 class="text-lg font-bold text-brand-charcoal">Related Articles</h3>
                 <ul class="mt-4 space-y-3">
-                    <li><a href="#" class="text-sm text-brand-green-dark hover:underline">[Related Article 1]</a></li>
-                    <li><a href="#" class="text-sm text-brand-green-dark hover:underline">[Related Article 2]</a></li>
-                    <li><a href="#" class="text-sm text-brand-green-dark hover:underline">[Related Article 3]</a></li>
+                    <li><a href="/blog/cloudflare-worker-phone-system-api.html" class="text-sm text-brand-green-dark hover:underline">Integrate a Phone System into a Cloudflare Worker</a></li>
+                    <li><a href="/blog/building-ai-call-agent-claude-click2call.html" class="text-sm text-brand-green-dark hover:underline">Building an AI Call Agent with Claude</a></li>
+                    <li><a href="/blog/call-transcriptions-sentiment-data-api-australia.html" class="text-sm text-brand-green-dark hover:underline">How to Get Call Transcriptions via API</a></li>
                 </ul>
             </div>
             <div class="bg-brand-charcoal rounded-xl p-6 text-white">
