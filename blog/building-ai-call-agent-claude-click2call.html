@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
   <meta name="indexnow-key" content="c545b40a993f47dc8e19d97473df5270fb62e2f6">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building an AI Call Agent with Claude and Click2Call | Click2Call Blog</title>
-    <meta name="description" content="Learn how to build a conversational AI call agent using Anthropic's Claude and the Click2Call Australian VoIP API.">
+    <title>Connect ElevenLabs to an Australian Phone Number | Click2Call + ElevenLabs AI Agent</title>
+    <meta name="description" content="Connect your ElevenLabs AI voice agent to a real Australian phone number using Click2Call's native ElevenLabs profile. Includes call recording, transcription, human-in-the-loop oversight, and continuous LLM improvement.">
     <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
     <link rel="canonical" href="https://www.click2call.com.au/blog/building-ai-call-agent-claude-click2call.html">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,15 +16,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.click2call.com.au/blog/building-ai-call-agent-claude-click2call.html">
-    <meta property="og:title" content="Building an AI Call Agent with Claude and Click2Call | Click2Call Blog">
-    <meta property="og:description" content="Learn how to build a conversational AI call agent using Anthropic's Claude and the Click2Call Australian VoIP API.">
+    <meta property="og:title" content="Connect ElevenLabs to an Australian Phone Number | Click2Call Blog">
+    <meta property="og:description" content="Connect your ElevenLabs AI voice agent to a real Australian phone number using Click2Call's native ElevenLabs profile. Includes call recording, transcription, and human-in-the-loop oversight.">
     <meta property="og:image" content="https://www.click2call.com.au/assets/images/blog/ai-call-agent-claude-hero.webp">
     <meta property="twitter:card" content="summary_large_image">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Building an AI Call Agent with Claude and Click2Call",
+      "headline": "Connect ElevenLabs to an Australian Phone Number with Click2Call",
       "image": "https://www.click2call.com.au/assets/images/blog/ai-call-agent-claude-hero.webp",
       "datePublished": "2026-04-16",
       "dateModified": "2026-04-16",
@@ -49,7 +49,7 @@
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.click2call.com.au/"},
         {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.click2call.com.au/blog/"},
-        {"@type": "ListItem", "position": 3, "name": "Building an AI Call Agent with Claude and Click2Call", "item": "https://www.click2call.com.au/blog/building-ai-call-agent-claude-click2call.html"}
+        {"@type": "ListItem", "position": 3, "name": "Connect ElevenLabs to an Australian Phone Number with Click2Call", "item": "https://www.click2call.com.au/blog/building-ai-call-agent-claude-click2call.html"}
       ]
     }
     </script>
@@ -443,79 +443,71 @@
                 <div class="bg-green-50 border-l-4 border-brand-green-dark p-6 rounded-r-lg mb-8">
                     <h2 class="text-xl font-bold text-brand-charcoal !mt-0">Key Takeaways</h2>
                     <ul class="!mt-4">
-                        <li><strong>Native Integration:</strong> Click2Call offers native SIP integration with ElevenLabs, bypassing complex audio streaming setups.</li>
-                        <li><strong>Low Latency:</strong> Direct SIP connections ensure conversational latency remains under 500ms for natural interactions.</li>
-                        <li><strong>Claude Intelligence:</strong> Use Claude to power the agent's logic, decision-making, and conversation flow.</li>
-                        <li><strong>Australian Numbers:</strong> Give your AI agent a real Australian 02, 03, 07, 08, or 1300 number instantly.</li>
+                        <li><strong>Native ElevenLabs Profile:</strong> Click2Call has a built-in ElevenLabs connection type — no middleware, no forwarding, no third-party SIP provider needed.</li>
+                        <li><strong>Real Australian Numbers:</strong> Give your ElevenLabs agent a real Australian 02, 03, 07, 08, or 1300 number that callers can dial directly.</li>
+                        <li><strong>Human in the Loop:</strong> Click2Call records and transcribes every call, then emails you a summary — so you always know exactly what your agent is saying.</li>
+                        <li><strong>Continuous Improvement:</strong> Feed transcribed call data back into your LLM to train and improve your agent over time.</li>
                     </ul>
                 </div>
 
-                <p>Building a conversational AI agent that can answer phone calls used to require a team of engineers and months of development. You had to handle SIP protocols, manage real-time audio streaming, integrate speech-to-text (STT), connect an LLM, and pipe it all back through text-to-speech (TTS) with low enough latency to feel natural.</p>
-                
-                <p>Today, the stack has been radically simplified. By combining Anthropic's Claude for intelligence, ElevenLabs for conversational voice, and Click2Call for the Australian telecom infrastructure, you can deploy a fully functional AI call agent in hours.</p>
+                <p>ElevenLabs makes it remarkably straightforward to build a conversational AI voice agent. But to deploy it as a real business phone number that Australian customers can call, you need a local telecom provider behind it. That's where Click2Call comes in.</p>
 
-                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">The Architecture</h2>
-                <p>The beauty of this setup is its simplicity. Click2Call handles the complex telecom routing and provides a native SIP connection directly to ElevenLabs. ElevenLabs handles the STT and TTS, and Claude provides the conversational brain.</p>
-                
+                <p>Click2Call has a native ElevenLabs connection profile built directly into the platform. There's no middleware to configure, no third-party SIP gateway to manage, and no audio forwarding hacks. You select "Eleven Labs AI" as the connection type for your number, enter the ElevenLabs SIP URI, and the two platforms are connected. Your Australian phone number now rings your ElevenLabs agent.</p>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">How the Call Flow Works</h2>
+                <p>The end-to-end workflow is simple and reliable. Here's exactly what happens from the moment a customer calls your number:</p>
+
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 my-6">
-                    <h3 class="font-bold text-brand-charcoal mb-2">How a call flows:</h3>
-                    <ol class="list-decimal pl-6 space-y-2 text-gray-700">
-                        <li>Customer dials your Click2Call Australian phone number.</li>
-                        <li>Click2Call routes the call via SIP directly to your ElevenLabs agent.</li>
-                        <li>ElevenLabs transcribes the caller's speech in real-time.</li>
-                        <li>The transcription is sent to Claude (via your backend or ElevenLabs' native integration).</li>
-                        <li>Claude generates a response based on your custom prompt and knowledge base.</li>
-                        <li>ElevenLabs synthesizes Claude's text into lifelike speech.</li>
-                        <li>The audio is streamed back through Click2Call to the caller.</li>
+                    <ol class="list-none space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-brand-green-dark text-white text-sm font-bold flex items-center justify-center">1</span><span><strong>Customer calls your Click2Call number.</strong> This can be a local geographic number (02, 03, 07, 08) or a 1300 number — any Australian number on your account.</span></li>
+                        <li class="flex items-start gap-3"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-brand-green-dark text-white text-sm font-bold flex items-center justify-center">2</span><span><strong>Click2Call routes the call directly to your ElevenLabs agent via SIP.</strong> The native ElevenLabs profile handles the routing automatically using the SIP URI <code class="text-sm bg-gray-100 px-1 rounded">sip:sip.rtc.elevenlabs.io:5060;transport=tcp</code>.</span></li>
+                        <li class="flex items-start gap-3"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-brand-green-dark text-white text-sm font-bold flex items-center justify-center">3</span><span><strong>Your ElevenLabs agent handles the conversation.</strong> The agent listens, understands, and responds using the voice and personality you've configured in ElevenLabs.</span></li>
+                        <li class="flex items-start gap-3"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-brand-green-dark text-white text-sm font-bold flex items-center justify-center">4</span><span><strong>Click2Call records and transcribes the entire call.</strong> While ElevenLabs handles the conversation, Click2Call is simultaneously recording the audio and generating a full AI transcription in the background.</span></li>
+                        <li class="flex items-start gap-3"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-brand-green-dark text-white text-sm font-bold flex items-center justify-center">5</span><span><strong>After the call ends, you receive an email summary.</strong> Click2Call emails you the call transcript and a summary so you know exactly what your agent said to the caller — without listening to the recording.</span></li>
                     </ol>
                 </div>
 
-                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Step 1: Configure the Click2Call SIP Trunk</h2>
-                <p>The biggest hurdle in building voice AI is usually connecting the phone network to the AI platform. Click2Call solves this with native ElevenLabs support.</p>
-                
-                <p>In your Click2Call portal, navigate to <strong>Line Preferences</strong> and create a new profile:</p>
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Setting Up the ElevenLabs Profile in Click2Call</h2>
+                <p>The setup takes less than five minutes. In your Click2Call portal, navigate to <strong>Line Preferences</strong> and open or create a profile for your number:</p>
+
                 <ul class="list-disc pl-6 mb-6 space-y-2">
-                    <li>Set the <strong>Connection Type</strong> to "Eleven Labs AI".</li>
-                    <li>The system will automatically configure the Inbound SIP URI Route to <code>sip:sip.rtc.elevenlabs.io:5060;transport=tcp</code>.</li>
-                    <li>Assign this profile to your chosen Australian phone number.</li>
+                    <li>Set the <strong>Connection Type</strong> dropdown to <strong>"Eleven Labs AI"</strong>.</li>
+                    <li>The <strong>Inbound SIP URI Route</strong> will automatically populate with <code>sip:sip.rtc.elevenlabs.io:5060;transport=tcp</code>.</li>
+                    <li>Ensure <strong>Disable Transcriptions</strong> is unchecked — this keeps Click2Call's AI transcription running on every call.</li>
+                    <li>Save the profile and assign it to your chosen Australian phone number.</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Step 2: Set Up the ElevenLabs Agent</h2>
-                <p>Next, head over to ElevenLabs and create a new Conversational AI agent. You'll need to configure the SIP settings to accept calls from Click2Call.</p>
-                
-                <p>In the ElevenLabs agent settings, navigate to the SIP configuration and generate your SIP credentials. You'll enter these credentials back in the Click2Call portal to authenticate the connection.</p>
+                <p>That's it. Any call to that number will now be answered by your ElevenLabs agent, with Click2Call handling the recording and transcription in the background.</p>
 
-                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Step 3: Prompting Claude</h2>
-                <p>The personality, knowledge, and capabilities of your agent are defined by the system prompt you provide to Claude. A good prompt for a voice agent is different from a text chatbot prompt—it needs to account for spoken language nuances.</p>
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">The Human in the Loop: Why This Matters</h2>
+                <p>Deploying an AI agent to answer your business calls is a significant step. Even the best-configured agents can occasionally misunderstand a caller, give an unexpected response, or handle an edge case poorly. The Click2Call post-call email gives you a critical safety net.</p>
 
-                <div class="bg-gray-900 rounded-lg p-4 my-6 overflow-x-auto">
-                    <pre><code class="text-blue-300 text-sm">You are an AI receptionist for Bcom IT Solutions, an IT support company on the Gold Coast.
-Your goal is to answer basic questions, take messages, and book support tickets.
+                <p>After every call, you receive the full transcript. You can review exactly what your agent said, identify any responses that didn't land well, and intervene if a caller needs a follow-up from a real person. This human oversight loop is what separates a responsibly deployed AI agent from one that runs completely unchecked.</p>
 
-CRITICAL VOICE GUIDELINES:
-- Keep responses short and conversational (1-2 sentences max).
-- Do not use bullet points, markdown, or complex formatting.
-- If you don't know the answer, say "I'll need to get one of our techs to look into that for you. Can I grab your name and number?"
-- Speak naturally, using occasional filler words like "Sure," "Okay," or "Let me check that."
-
-BUSINESS INFO:
-- Hours: 9am to 5pm, Monday to Friday.
-- Location: Southport, Gold Coast.
-- Services: Managed IT, Cloud PBX, Network Security.</code></pre>
-                </div>
-
-                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Step 4: Handling Post-Call Actions</h2>
-                <p>A conversation is only useful if you capture the data. Using Click2Call's webhooks, you can trigger actions the moment the call ends.</p>
-                
-                <p>Set up a webhook in Click2Call to fire on the "Ended Event". Your backend (e.g., a Cloudflare Worker) can receive this webhook, fetch the call recording and transcription via the Click2Call API, and push a summary into your CRM or ticketing system.</p>
-                
                 <blockquote class="border-l-4 border-brand-green-dark pl-4 italic text-gray-700 my-6">
-                    "The combination of Click2Call's native SIP routing and Claude's conversational intelligence allows developers to build AI agents that are indistinguishable from human receptionists."
+                    "The transcript email isn't just a log — it's your quality control system. You know exactly what your agent is saying to every caller, and you can step in whenever you need to."
                 </blockquote>
 
-                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Start Building</h2>
-                <p>Ready to build your own AI call agent? You can get started with a real Australian phone number and full API access today.</p>
-                <p><a href="/api" class="text-brand-green-dark hover:underline font-semibold">Explore the Developer API</a> to learn more about our webhooks and integrations.</p>
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Using Call Data to Improve Your Agent</h2>
+                <p>There's a powerful bonus to having every conversation transcribed and stored. That data is a training resource for your ElevenLabs agent.</p>
+
+                <p>Using the Click2Call API, you can pull all your call transcriptions programmatically. Feed this data into your LLM — whether that's Claude, GPT-4, or another model — and use it to identify patterns: questions your agent struggled with, topics that came up repeatedly, or responses that callers found confusing. Then update your ElevenLabs agent's system prompt or knowledge base accordingly.</p>
+
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 my-6">
+                    <h3 class="font-bold text-brand-charcoal mb-3">Example improvement loop:</h3>
+                    <ol class="list-decimal pl-6 space-y-2 text-gray-700">
+                        <li>Pull the last 30 days of call transcriptions via the Click2Call API.</li>
+                        <li>Send them to Claude with a prompt: <em>"Identify the top 5 questions callers asked that the agent didn't answer well."</em></li>
+                        <li>Use Claude's output to update your ElevenLabs agent's knowledge base or system prompt.</li>
+                        <li>Deploy the improved agent and repeat the cycle next month.</li>
+                    </ol>
+                </div>
+
+                <p>This continuous feedback loop means your AI agent gets measurably better over time — grounded in real conversations with your actual customers, not hypothetical test cases.</p>
+
+                <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Get Started</h2>
+                <p>Every Click2Call Cloud PBX account includes the native ElevenLabs profile, call recording, AI transcription, and full API access — all from $25 per user per month (ex GST) with a 30-day free trial.</p>
+                <p><a href="/ai-receptionist" class="text-brand-green-dark hover:underline font-semibold">Learn more about the AI Receptionist</a> or <a href="https://portal.click2call.com.au/register" class="text-brand-green-dark hover:underline font-semibold">start your free trial</a> and connect your ElevenLabs agent to an Australian number today.</p>
 
                 <!-- FAQ Section -->
                 <div class="mt-16">
@@ -523,24 +515,24 @@ BUSINESS INFO:
                     <div class="mt-6 space-y-4">
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
-                                <span>What is the latency like for AI voice agents?</span>
+                                <span>Do I need any technical experience to connect ElevenLabs to Click2Call?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600 hidden">By using Click2Call's direct SIP integration with ElevenLabs, you bypass intermediate streaming layers. This typically results in conversational latency of 500-800ms, which feels natural to callers.</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">No. The ElevenLabs connection type is a built-in profile in the Click2Call portal. You select it from a dropdown, and the SIP URI is configured automatically. No SIP knowledge or telecom experience is required.</div>
                         </div>
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
-                                <span>Can I use a different LLM instead of Claude?</span>
+                                <span>Will Click2Call still record and transcribe calls handled by my ElevenLabs agent?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600 hidden">Yes. While this guide focuses on Claude due to its excellent conversational nuances, the architecture supports any LLM (like OpenAI's GPT-4o) that can integrate with your voice platform.</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">Yes. Click2Call records and transcribes every call regardless of how it is answered. Even when your ElevenLabs agent handles the conversation, Click2Call captures the full audio and generates an AI transcription and summary, which is emailed to you after the call ends.</div>
                         </div>
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
-                                <span>Do I need to host my own SIP server?</span>
+                                <span>Can I use the call transcriptions to improve my ElevenLabs agent?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600 hidden">No. Click2Call acts as your fully hosted SIP provider. We handle the carrier connections and route the SIP traffic directly to your AI agent endpoint.</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">Yes — and this is one of the most powerful aspects of the setup. You can pull all your call transcriptions via the Click2Call API and feed them into Claude or another LLM to identify gaps in your agent's knowledge, questions it handled poorly, or topics that came up repeatedly. Use those insights to update your ElevenLabs agent's system prompt or knowledge base and continuously improve its performance.</div>
                         </div>
                     </div>
                 </div>
