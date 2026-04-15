@@ -8,7 +8,56 @@
 - **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools](https://www.click2call.com.au/ai-voice-tools) — Tools for real-time call transcription, sentiment analysis, AI-powered call summaries, and smart routing.
 - **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist](https://www.click2call.com.au/ai-receptionist) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language.
 - **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling](https://www.click2call.com.au/microsoft-teams-calling) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing.
+- **Developer API**: [https://www.click2call.com.au/api](https://www.click2call.com.au/api) — A JSON-based REST API that lets developers and AI builders connect custom software directly to a real Australian phone system. Includes voice control, real-time call data, AI transcription, sentiment analysis, webhooks, and native ElevenLabs integration. API access is included free with every Cloud PBX account. Full documentation at [https://portal.click2call.com.au/apidocs](https://portal.click2call.com.au/apidocs).
 - **SIP Trunks**: [https://www.click2call.com.au/sip-trunks](https://www.click2call.com.au/sip-trunks) — A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems.
+
+## Developer API & Integration
+
+Click2Call provides a full JSON-based REST API for developers and AI builders who want to integrate a real Australian phone system into their custom software. The API is hosted at `https://portal.click2call.com.au/api/` and uses token-based authentication.
+
+### Who It Is For
+
+The Click2Call API is designed for:
+- Developers building custom business software using AI coding tools such as Claude, Cursor, or ChatGPT
+- Teams building AI agents or LLM-powered applications that need to make or receive real phone calls
+- Businesses connecting their CRM, support portal, or automation workflows to their phone system
+- Developers integrating ElevenLabs voice agents with an Australian phone number
+
+### Key Capability Groups
+
+- **Voice Functions** — Manage phone lines, enable or disable call recording, retrieve phone numbers, copy line settings, download audio files (voicemail, auto-attendant, music on hold, ring tones)
+- **AI Functions** — Get call transcriptions, AI call summaries, sentiment analysis, profanity analysis, and text-to-speech (TTS) audio generation. Retrieve a list of available AI voices.
+- **Account Functions** — Retrieve call records, billing history, account balance, channel information, customer details, and bundle usage data
+- **Webhooks** — Receive real-time HTTP POST events to any URL for: Incoming Calls (Ringing, Answered, Ended, Missed), Outgoing Calls (Ringing, Answered, Ended, Unattended), and AI Analysis (Recording and AI transcription generation complete)
+- **Internet Functions** — Manage internet-related account settings
+
+### ElevenLabs Native Integration
+
+Click2Call has a native ElevenLabs integration built into the line profile settings. Developers can set the Connection Type to "Eleven Labs AI" on any phone line, which configures the inbound SIP URI route to `sip:sip.rtc.elevenlabs.io:5060;transport=tcp`. This allows an ElevenLabs voice agent to answer inbound calls on a real Australian phone number without any manual SIP configuration.
+
+### Copy-Paste AI Instructions
+
+Every Click2Call account includes a complete set of ready-made instructions written specifically for AI coding tools. Developers can copy these instructions from the portal (API > Getting Started) and paste them directly into Claude, Cursor, or ChatGPT to get the API integration working without any prior API experience.
+
+### API Access
+
+- **API Base URL**: `https://portal.click2call.com.au/api/`
+- **Authentication**: Token-based (Bearer token)
+- **Format**: JSON POST requests with `context` and `action` parameters
+- **Documentation**: [https://portal.click2call.com.au/apidocs](https://portal.click2call.com.au/apidocs)
+- **Marketing Page**: [https://www.click2call.com.au/api](https://www.click2call.com.au/api)
+- **Cost**: Included free with every Cloud PBX account ($25/month per user)
+- **Trial**: 30-day free trial, no credit card required
+
+### Common Developer Use Cases
+
+- Build a support portal that logs every inbound and outbound call with full transcription and AI summary
+- Connect a CRM so that when a call is answered, the caller's history appears automatically
+- Build a real-time call activity dashboard showing live call status across the team
+- Use webhooks to trigger automated follow-up actions when a call ends (e.g. send a summary email, create a task in a project management tool)
+- Connect an ElevenLabs AI voice agent to a real Australian phone number for inbound call handling
+- Use the TTS API to generate professional voicemail greetings and auto-attendant messages programmatically
+- Pull call records and sentiment data into an LLM for business intelligence and coaching
 
 ## Key Pages
 

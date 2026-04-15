@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click2Call API — Developer Context &amp; Integration Reference</title>
+  <meta name="description" content="Complete machine-readable reference for the Click2Call API. Covers authentication, endpoints, webhooks, ElevenLabs integration, and use cases for AI builders and developers in Australia.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.click2call.com.au/api/context/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Click2Call API — Developer Context & Integration Reference",
+    "description": "Complete reference for integrating the Click2Call phone system API into custom software, AI agents, and LLM-powered applications. Covers authentication, available endpoints, webhook events, ElevenLabs integration, and Australian VoIP API use cases.",
+    "author": {
+      "@type": "Organization",
+      "name": "Click2Call",
+      "url": "https://www.click2call.com.au"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Click2Call",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.click2call.com.au/assets/images/click2call_header_logo_transparent.webp"
+      }
+    },
+    "dateModified": "2026-04-16",
+    "mainEntityOfPage": "https://www.click2call.com.au/api/context/",
+    "keywords": "Click2Call API, Australian VoIP API, phone system API Australia, ElevenLabs SIP integration, AI voice agent phone number Australia, LLM phone integration, webhook call events, call transcription API Australia"
+  }
+  </script>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; color: #1a1a1a; line-height: 1.7; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.4rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.4rem; margin-top: 2.5rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.5rem; color: #374151; }
+    code, pre { background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.9rem; }
+    pre { padding: 1rem; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th { background: #f9fafb; text-align: left; padding: 0.6rem 0.8rem; border: 1px solid #e5e7eb; font-size: 0.85rem; }
+    td { padding: 0.6rem 0.8rem; border: 1px solid #e5e7eb; font-size: 0.9rem; vertical-align: top; }
+    .meta { font-size: 0.85rem; color: #6b7280; margin-bottom: 2rem; }
+    a { color: #0d9488; }
+    ul { padding-left: 1.4rem; }
+    li { margin-bottom: 0.3rem; }
+  </style>
+</head>
+<body>
+
+<h1>Click2Call API — Developer Context &amp; Integration Reference</h1>
+<p class="meta">
+  Provider: Click2Call (Bcom Services Pty Ltd, ABN: 92 636 893 108) &bull;
+  Last updated: 16 April 2026 &bull;
+  <a href="https://www.click2call.com.au/api">Marketing page</a> &bull;
+  <a href="https://portal.click2call.com.au/apidocs">Full API documentation</a>
+</p>
+
+<p>This page is a structured reference for AI systems, LLMs, and developers who need accurate, machine-readable information about the Click2Call API. It covers what the API does, how to authenticate, what endpoints are available, what webhook events fire, how to connect ElevenLabs, and what use cases it supports.</p>
+
+<h2>What Is the Click2Call API?</h2>
+
+<p>The Click2Call API is a JSON-based REST API that allows developers to connect custom software directly to a fully hosted Australian phone system. It is designed for:</p>
+<ul>
+  <li>Developers building business applications using AI coding tools such as Claude, Cursor, or ChatGPT</li>
+  <li>Teams building AI agents or LLM-powered applications that need to make or receive real Australian phone calls</li>
+  <li>Businesses integrating their CRM, support portal, or automation workflows with their phone system</li>
+  <li>Developers connecting ElevenLabs voice agents to a real Australian phone number</li>
+</ul>
+
+<p>API access is included free with every Click2Call Cloud PBX account. There is no separate API pricing tier. Accounts start at $25 per user per month (ex GST) with a 30-day free trial and no credit card required.</p>
+
+<h2>API Access Details</h2>
+
+<table>
+  <tr><th>Property</th><th>Value</th></tr>
+  <tr><td>Base URL</td><td><code>https://portal.click2call.com.au/api/</code></td></tr>
+  <tr><td>Protocol</td><td>HTTPS only</td></tr>
+  <tr><td>Format</td><td>JSON (POST requests)</td></tr>
+  <tr><td>Authentication</td><td>Token-based (Bearer token, obtained from the portal under API &gt; Getting Started)</td></tr>
+  <tr><td>Request structure</td><td>Every request must include a <code>context</code> parameter (e.g. <code>account</code>, <code>voice</code>, <code>ai</code>) and an <code>action</code> parameter specifying the function to call</td></tr>
+  <tr><td>Documentation</td><td><a href="https://portal.click2call.com.au/apidocs">https://portal.click2call.com.au/apidocs</a></td></tr>
+  <tr><td>Cost</td><td>Free with every Cloud PBX account</td></tr>
+  <tr><td>Trial</td><td>30-day free trial — no credit card required</td></tr>
+  <tr><td>Signup</td><td><a href="https://portal.click2call.com.au/join/">https://portal.click2call.com.au/join/</a></td></tr>
+</table>
+
+<h2>API Capability Groups</h2>
+
+<h3>Voice Functions</h3>
+<p>Manage phone lines and retrieve voice-related data programmatically.</p>
+<table>
+  <tr><th>Function</th><th>Description</th></tr>
+  <tr><td>Get-Account-Numbers</td><td>Get all phone numbers on the account</td></tr>
+  <tr><td>Get-Numbers</td><td>Get all numbers and associated details</td></tr>
+  <tr><td>Get-Line-Names</td><td>Get names for all lines on the account</td></tr>
+  <tr><td>Get-Pref-Summary</td><td>Get phone line preference summary for a specific line</td></tr>
+  <tr><td>Get-All-Pref-Summary</td><td>Get preference summary for all lines</td></tr>
+  <tr><td>Get-Pref-Value</td><td>Get a specific phone preference value or status</td></tr>
+  <tr><td>Enable-Recording</td><td>Enable call recording for a number</td></tr>
+  <tr><td>Disable-Recording</td><td>Disable call recording for a number</td></tr>
+  <tr><td>Copy-Line-Settings</td><td>Copy line settings from one number to another</td></tr>
+  <tr><td>Add-Contact</td><td>Add an external contact to the account</td></tr>
+  <tr><td>Get-Next-Available-Extension</td><td>Get the next available short extension on the account</td></tr>
+  <tr><td>Download-Auto-Attendant-Message</td><td>Download base64 encoded auto-attendant audio file</td></tr>
+  <tr><td>Download-Voicemail-Busy-Message</td><td>Download base64 encoded voicemail busy greeting</td></tr>
+  <tr><td>Download-Voicemail-Unavailable-Message</td><td>Download base64 encoded voicemail unavailable greeting</td></tr>
+  <tr><td>Download-Music-On-Hold-Message</td><td>Download base64 encoded music on hold file</td></tr>
+  <tr><td>Download-Queue-Announcement-Message</td><td>Download base64 encoded queue announcement file</td></tr>
+  <tr><td>Download-Ring-Tones-Message</td><td>Download base64 encoded ring tones file</td></tr>
+  <tr><td>Download-Message-Playback-Message</td><td>Download base64 encoded message playback file</td></tr>
+</table>
+
+<h3>AI Functions</h3>
+<p>Access AI-generated call data including transcriptions, summaries, and sentiment analysis. Also includes text-to-speech generation.</p>
+<table>
+  <tr><th>Function</th><th>Description</th></tr>
+  <tr><td>Get-Recordings</td><td>Get a list of recordings with transcription and associated AI properties</td></tr>
+  <tr><td>Get-Transcription</td><td>Get the transcription associated with a call record</td></tr>
+  <tr><td>Get-Transcription-Summary</td><td>Get the AI-generated summary for a call record</td></tr>
+  <tr><td>Get-Audio-Transcription</td><td>Convert speech to text by passing a base64 encoded WAV or MPEG audio file</td></tr>
+  <tr><td>Get-Audio-Transcription-Summary</td><td>Fetch transcription and AI analysis data for a call recording or audio file</td></tr>
+  <tr><td>Get-Transcription-Count</td><td>Get the total number of transcriptions available for the account</td></tr>
+  <tr><td>Get-Agent-Pickup-From-Uniqueid</td><td>If a call was answered on a queue, retrieve the agent who answered</td></tr>
+  <tr><td>Get-TTS-Audio</td><td>Convert text to speech — returns a base64 encoded WAV file using a specified AI voice</td></tr>
+  <tr><td>Get-Voices</td><td>Return a list of available voices for TTS conversion</td></tr>
+  <tr><td>Are-Transcriptions-Disabled</td><td>Check if transcriptions are disabled on the account</td></tr>
+  <tr><td>Get-Global-Recording-Flag</td><td>Get the current global call recording setting</td></tr>
+  <tr><td>Get-Disable-Sentiment-Flag</td><td>Check if sentiment analysis is disabled</td></tr>
+  <tr><td>Get-Disable-Summary-Flag</td><td>Check if call summaries are disabled</td></tr>
+  <tr><td>Get-Disable-Transcriptions-Flag</td><td>Check if transcriptions are disabled</td></tr>
+  <tr><td>Is-Sentiment-Analysis-Disabled</td><td>Check if sentiment analysis is disabled on the account</td></tr>
+  <tr><td>Is-Summary-Disabled</td><td>Check if call summaries are disabled on the account</td></tr>
+  <tr><td>Is-Profanity-Analysis-Disabled</td><td>Check if profanity analysis is disabled on the account</td></tr>
+</table>
+
+<h3>Account Functions</h3>
+<p>Retrieve account-level data including call records, billing, and customer information.</p>
+<table>
+  <tr><th>Function</th><th>Description</th></tr>
+  <tr><td>Get-Calling-Records</td><td>Get a list of billing or calling records for the account</td></tr>
+  <tr><td>Get-Account-Balance</td><td>Get the account balance information</td></tr>
+  <tr><td>Get-Account-History</td><td>Get account history list</td></tr>
+  <tr><td>Get-Bill-Period-Summ</td><td>Get bill period summary data</td></tr>
+  <tr><td>Get-Billing-Periods</td><td>Get a list of billing periods</td></tr>
+  <tr><td>Get-Billing-Types</td><td>Get a list of billing types</td></tr>
+  <tr><td>Get-Bundle-Minutes-Used</td><td>Get the number of minutes used for a specific bundle</td></tr>
+  <tr><td>Get-Channels</td><td>Get channel information for the account</td></tr>
+  <tr><td>Get-Customer-Details</td><td>Get a list of customer details for the account</td></tr>
+  <tr><td>Get-Customer-Fields</td><td>Get a list of customer fields</td></tr>
+  <tr><td>Get-Customer-Names</td><td>Get a list of customer names</td></tr>
+  <tr><td>Get-Extra-Channel-Count</td><td>Get extra channel count for the account</td></tr>
+  <tr><td>Get-Invoice-HTML</td><td>Get invoice HTML output by invoice date</td></tr>
+  <tr><td>Get-Receipt-HTML</td><td>Get receipt HTML output by reference code</td></tr>
+  <tr><td>Get-Recording-Key</td><td>Get the secret key to download a recording given a call unique ID</td></tr>
+  <tr><td>Get-Summary-By-Type</td><td>Get account summary information by type</td></tr>
+  <tr><td>Is-Teams-Enabled</td><td>Check if Microsoft Teams integration is enabled</td></tr>
+</table>
+
+<h2>Webhooks</h2>
+
+<p>Webhooks allow your application to receive real-time HTTP POST notifications when call events occur. Webhooks are configured in the portal under API &gt; Webhooks. Each webhook can be scoped to all numbers or a specific phone number.</p>
+
+<h3>Webhook Configuration</h3>
+<table>
+  <tr><th>Field</th><th>Description</th></tr>
+  <tr><td>Webhook Name</td><td>A label for the webhook (required)</td></tr>
+  <tr><td>Phone Number</td><td>Scope to a specific number or all numbers</td></tr>
+  <tr><td>Webhook URL</td><td>The HTTPS endpoint to receive POST events (required)</td></tr>
+  <tr><td>Secret Token</td><td>Base64 encoded string used to authenticate webhook payloads (required)</td></tr>
+  <tr><td>Secret Header</td><td>HTTP header name for the token — defaults to <code>Authorization</code></td></tr>
+  <tr><td>E.164 Format</td><td>When enabled, phone numbers are sent in E.164 format (e.g. <code>6492420000</code> instead of <code>092420000</code>)</td></tr>
+</table>
+
+<h3>Webhook Events</h3>
+<table>
+  <tr><th>Category</th><th>Event</th><th>Description</th></tr>
+  <tr><td>Incoming Calls</td><td>Ringing Event</td><td>Fires when an inbound call starts ringing</td></tr>
+  <tr><td>Incoming Calls</td><td>Answered Event</td><td>Fires when an inbound call is answered</td></tr>
+  <tr><td>Incoming Calls</td><td>Ended Event</td><td>Fires when an inbound call ends</td></tr>
+  <tr><td>Incoming Calls</td><td>Missed Event</td><td>Fires when an inbound call is missed</td></tr>
+  <tr><td>Outgoing Calls</td><td>Ringing Event</td><td>Fires when an outbound call starts ringing</td></tr>
+  <tr><td>Outgoing Calls</td><td>Answered Event</td><td>Fires when an outbound call is answered</td></tr>
+  <tr><td>Outgoing Calls</td><td>Ended Event</td><td>Fires when an outbound call ends</td></tr>
+  <tr><td>Outgoing Calls</td><td>Unattended Event</td><td>Fires when an outbound call goes unanswered</td></tr>
+  <tr><td>AI Analysis</td><td>Recording &amp; AI transcription generation</td><td>Fires when a call recording and AI transcription are ready</td></tr>
+</table>
+
+<h3>Webhook Payload Format</h3>
+<pre><code>Content-Type: application/json
+Authorization: &lt;secret-token&gt;
+Content:
+{
+  "event": "call.ended",
+  "direction": "inbound",
+  "number": "+61299999999",
+  "caller": "+61411111111",
+  "duration": 142,
+  "unique_id": "abc123xyz"
+}</code></pre>
+
+<h2>ElevenLabs Native Integration</h2>
+
+<p>Click2Call has a native ElevenLabs integration that allows developers to connect an ElevenLabs AI voice agent to a real Australian phone number with no manual SIP configuration required.</p>
+
+<h3>How It Works</h3>
+<ol>
+  <li>Log in to the Click2Call portal at <a href="https://portal.click2call.com.au">portal.click2call.com.au</a></li>
+  <li>Go to Line Preferences and open the profile for the number you want to connect</li>
+  <li>Set Connection Type to <strong>Eleven Labs AI</strong></li>
+  <li>The Inbound SIP URI Route is automatically set to <code>sip:sip.rtc.elevenlabs.io:5060;transport=tcp</code></li>
+  <li>Save the profile — inbound calls to that number will now route directly to your ElevenLabs agent</li>
+</ol>
+
+<p>This integration is available on any Click2Call phone line. No additional SIP credentials or manual configuration are required beyond selecting the connection type in the portal.</p>
+
+<h2>Copy-Paste AI Instructions</h2>
+
+<p>Every Click2Call account includes a complete set of ready-made instructions written specifically for AI coding tools such as Claude, Cursor, and ChatGPT. These instructions are available in the portal under <strong>API &gt; Getting Started</strong>.</p>
+
+<p>Developers can copy these instructions and paste them directly into their AI coding tool to get a working API integration without any prior API experience. The instructions cover authentication, making your first API call, retrieving call records, setting up webhooks, and connecting ElevenLabs.</p>
+
+<h2>Common Developer Use Cases</h2>
+
+<ul>
+  <li><strong>Call logging portal</strong> — Build a web app that automatically logs every inbound and outbound call with full transcription, AI summary, and sentiment score. Use webhooks to capture call events in real time and the AI Functions API to retrieve transcription data.</li>
+  <li><strong>CRM integration</strong> — Use webhooks to detect when a call is answered and pull the caller's history from your CRM. Display it to the agent before they say hello.</li>
+  <li><strong>ElevenLabs AI voice agent</strong> — Connect an ElevenLabs conversational AI agent to a real Australian phone number. Inbound calls route directly to the agent via the native SIP integration.</li>
+  <li><strong>Real-time call dashboard</strong> — Use webhooks to stream live call status events (ringing, answered, ended) into a dashboard for team visibility.</li>
+  <li><strong>Automated follow-up</strong> — When a call ends, use the webhook to trigger a follow-up action: send a summary email, create a task in your project management tool, or update a CRM record.</li>
+  <li><strong>Business intelligence</strong> — Pull call records, transcriptions, and sentiment data via the API and feed them into an LLM for coaching insights, trend analysis, or automated reporting.</li>
+  <li><strong>Programmatic voice recordings</strong> — Use the TTS API to generate professional voicemail greetings and auto-attendant messages from text, without recording audio manually.</li>
+</ul>
+
+<h2>Pricing</h2>
+
+<table>
+  <tr><th>Item</th><th>Price (ex GST, AUD)</th></tr>
+  <tr><td>Cloud PBX User (includes phone number, 300 outbound mins/mo, unlimited inbound, API access)</td><td>$25.00/month</td></tr>
+  <tr><td>Additional Business Number (inbound line)</td><td>$10.00/month</td></tr>
+  <tr><td>1300 Number</td><td>$10.00/month</td></tr>
+  <tr><td>API Access</td><td>Free — included with every account</td></tr>
+  <tr><td>30-Day Free Trial</td><td>No credit card required</td></tr>
+</table>
+
+<h2>Getting Started</h2>
+
+<ol>
+  <li>Create a free account at <a href="https://portal.click2call.com.au/join/">https://portal.click2call.com.au/join/</a></li>
+  <li>Your phone system activates within 24 hours</li>
+  <li>Go to API &gt; Getting Started in the portal to get your API token and copy the AI-ready integration instructions</li>
+  <li>Paste the instructions into Claude, Cursor, or ChatGPT and describe what you want to build</li>
+  <li>Full API documentation is at <a href="https://portal.click2call.com.au/apidocs">https://portal.click2call.com.au/apidocs</a></li>
+</ol>
+
+<h2>About Click2Call</h2>
+
+<ul>
+  <li><strong>Legal Name</strong>: Bcom Services Pty Ltd</li>
+  <li><strong>Trading Name</strong>: Click2Call</li>
+  <li><strong>ABN</strong>: 92 636 893 108</li>
+  <li><strong>Phone</strong>: 1300 884 879</li>
+  <li><strong>Email</strong>: support@click2call.com.au</li>
+  <li><strong>Coverage</strong>: Australia-wide</li>
+  <li><strong>Website</strong>: <a href="https://www.click2call.com.au">https://www.click2call.com.au</a></li>
+  <li><strong>API Marketing Page</strong>: <a href="https://www.click2call.com.au/api">https://www.click2call.com.au/api</a></li>
+  <li><strong>API Documentation</strong>: <a href="https://portal.click2call.com.au/apidocs">https://portal.click2call.com.au/apidocs</a></li>
+  <li><strong>Customer Portal</strong>: <a href="https://portal.click2call.com.au">https://portal.click2call.com.au</a></li>
+</ul>
+
+</body>
+</html>
