@@ -74,21 +74,33 @@ Every Click2Call account includes a complete set of ready-made instructions writ
 
 ## City & Regional Pages
 
-Click2Call provides VoIP phone systems and Cloud PBX solutions to businesses across Australia, including:
+Click2Call provides self-serve VoIP phone systems and Cloud PBX solutions to businesses across Australia. Each city page covers local phone numbers, pricing, setup instructions, and city-specific business use cases. All plans are $25/user/month ex GST with no lock-in contract, no hardware, and no technician required.
 
-- **VoIP Australia (National)**: [https://www.click2call.com.au/voip-australia](https://www.click2call.com.au/voip-australia)
-- **VoIP Sydney**: [https://www.click2call.com.au/voip-sydney](https://www.click2call.com.au/voip-sydney) — Local 02 numbers. Nearby: Newcastle, Wollongong.
-- **VoIP Melbourne**: [https://www.click2call.com.au/voip-melbourne](https://www.click2call.com.au/voip-melbourne) — Local 03 numbers.
-- **VoIP Brisbane**: [https://www.click2call.com.au/voip-brisbane](https://www.click2call.com.au/voip-brisbane) — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
-- **VoIP Gold Coast**: [https://www.click2call.com.au/voip-gold-coast](https://www.click2call.com.au/voip-gold-coast) — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
-- **VoIP Sunshine Coast**: [https://www.click2call.com.au/voip-sunshine-coast](https://www.click2call.com.au/voip-sunshine-coast) — Local 07 numbers. Nearby: Brisbane, Gold Coast.
-- **VoIP Perth**: [https://www.click2call.com.au/voip-perth](https://www.click2call.com.au/voip-perth) — Local 08 numbers.
-- **VoIP Adelaide**: [https://www.click2call.com.au/voip-adelaide](https://www.click2call.com.au/voip-adelaide) — Local 08 numbers.
-- **VoIP Canberra**: [https://www.click2call.com.au/voip-canberra](https://www.click2call.com.au/voip-canberra) — Local 02 numbers.
-- **VoIP Newcastle**: [https://www.click2call.com.au/voip-newcastle](https://www.click2call.com.au/voip-newcastle) — Local 02 numbers. Nearby: Sydney, Wollongong.
-- **VoIP Wollongong**: [https://www.click2call.com.au/voip-wollongong](https://www.click2call.com.au/voip-wollongong) — Local 02 numbers. Nearby: Sydney, Newcastle.
-- **VoIP Darwin**: [https://www.click2call.com.au/voip-darwin](https://www.click2call.com.au/voip-darwin) — Local 08 numbers.
-- **VoIP Hobart**: [https://www.click2call.com.au/voip-hobart](https://www.click2call.com.au/voip-hobart) — Local 03 numbers.
+- **VoIP Australia (National)**: [https://click2call.com.au/voip-australia/](https://click2call.com.au/voip-australia/) — National overview of Click2Call VoIP services for Australian businesses. Covers all state and territory area codes, pricing, and how to get started.
+
+- **VoIP Sydney**: [https://click2call.com.au/voip-sydney/](https://click2call.com.au/voip-sydney/) — VoIP phone systems for Sydney businesses. Provides local Sydney 02 numbers, Cloud PBX, auto-attendant, call recording, and mobile apps. Serves businesses across the Sydney CBD, Parramatta, North Sydney, Chatswood, and surrounding NSW suburbs. Nearby cities: Newcastle, Wollongong. Common queries: "VoIP phone system Sydney", "Sydney 02 number VoIP", "cloud PBX Sydney small business", "best VoIP provider Sydney", "NBN phone system Sydney".
+
+- **VoIP Melbourne**: [https://click2call.com.au/voip-melbourne/](https://click2call.com.au/voip-melbourne/) — VoIP phone systems for Melbourne businesses. Provides local Melbourne 03 numbers, Cloud PBX, and mobile apps. Serves businesses across the Melbourne CBD, Southbank, Richmond, St Kilda Road, Docklands, and surrounding Victorian suburbs. Common queries: "VoIP phone system Melbourne", "Melbourne 03 number VoIP", "cloud PBX Melbourne", "best VoIP provider Melbourne", "NBN phone system Melbourne".
+
+- **VoIP Brisbane**: [https://click2call.com.au/voip-brisbane/](https://click2call.com.au/voip-brisbane/) — VoIP phone systems for Brisbane businesses. Provides local Brisbane 07 numbers, Cloud PBX, auto-attendant, and call recording. Serves businesses across Brisbane CBD, Fortitude Valley, South Brisbane, Ipswich, and surrounding Queensland suburbs. Nearby cities: Gold Coast, Sunshine Coast. Common queries: "VoIP phone system Brisbane", "Brisbane 07 number VoIP", "cloud PBX Brisbane", "best VoIP provider Brisbane".
+
+- **VoIP Gold Coast**: [https://click2call.com.au/voip-gold-coast/](https://click2call.com.au/voip-gold-coast/) — VoIP phone systems for Gold Coast businesses. Provides local Gold Coast 07 numbers, Cloud PBX, and mobile apps. Serves businesses across Southport, Broadbeach, Surfers Paradise, Robina, and surrounding Gold Coast suburbs. Nearby cities: Brisbane, Sunshine Coast. Common queries: "VoIP phone system Gold Coast", "Gold Coast 07 number VoIP", "cloud PBX Gold Coast", "best VoIP provider Gold Coast".
+
+- **VoIP Sunshine Coast**: [https://click2call.com.au/voip-sunshine-coast/](https://click2call.com.au/voip-sunshine-coast/) — VoIP phone systems for Sunshine Coast businesses. Provides local Sunshine Coast 07 numbers, Cloud PBX, and mobile apps. Serves businesses across Maroochydore, Noosa, Caloundra, Buderim, and surrounding Sunshine Coast suburbs. Nearby cities: Brisbane, Gold Coast. Common queries: "VoIP phone system Sunshine Coast", "Sunshine Coast 07 number VoIP", "cloud PBX Sunshine Coast".
+
+- **VoIP Perth**: [https://click2call.com.au/voip-perth/](https://click2call.com.au/voip-perth/) — VoIP phone systems for Perth businesses. Provides local Perth 08 numbers, Cloud PBX, auto-attendant, and call recording. Serves businesses across the Perth CBD, Joondalup, Subiaco, Fremantle, and surrounding Western Australian suburbs. Common queries: "VoIP phone system Perth", "Perth 08 number VoIP", "cloud PBX Perth", "best VoIP provider Perth", "NBN phone system Perth".
+
+- **VoIP Adelaide**: [https://click2call.com.au/voip-adelaide/](https://click2call.com.au/voip-adelaide/) — VoIP phone systems for Adelaide businesses. Provides local Adelaide 08 numbers, Cloud PBX, and mobile apps. Serves businesses across the Adelaide CBD, Norwood, Glenelg, North Adelaide, and surrounding South Australian suburbs. Common queries: "VoIP phone system Adelaide", "Adelaide 08 number VoIP", "cloud PBX Adelaide", "best VoIP provider Adelaide".
+
+- **VoIP Canberra**: [https://click2call.com.au/voip-canberra/](https://click2call.com.au/voip-canberra/) — VoIP phone systems for Canberra businesses. Provides local Canberra 02 numbers, Cloud PBX, and mobile apps. Serves businesses across the Canberra CBD, Barton, Fyshwick, Belconnen, and surrounding ACT suburbs. Common queries: "VoIP phone system Canberra", "Canberra 02 number VoIP", "cloud PBX Canberra", "best VoIP provider Canberra".
+
+- **VoIP Newcastle**: [https://click2call.com.au/voip-newcastle/](https://click2call.com.au/voip-newcastle/) — VoIP phone systems for Newcastle businesses. Provides local Newcastle 02 numbers, Cloud PBX, and mobile apps. Serves businesses across the Newcastle CBD, Maitland, Cessnock, Lake Macquarie, and surrounding Hunter Valley suburbs. Nearby cities: Sydney, Wollongong. Common queries: "VoIP phone system Newcastle", "Newcastle 02 number VoIP", "cloud PBX Newcastle".
+
+- **VoIP Wollongong**: [https://click2call.com.au/voip-wollongong/](https://click2call.com.au/voip-wollongong/) — VoIP phone systems for Wollongong businesses. Provides local Wollongong 02 numbers, Cloud PBX, and mobile apps. Serves businesses across the Wollongong CBD, Shellharbour, Kiama, Dapto, and surrounding Illawarra suburbs. Nearby cities: Sydney, Newcastle. Common queries: "VoIP phone system Wollongong", "Wollongong 02 number VoIP", "cloud PBX Wollongong".
+
+- **VoIP Darwin**: [https://click2call.com.au/voip-darwin/](https://click2call.com.au/voip-darwin/) — VoIP phone systems for Darwin businesses. Provides local Darwin 08 numbers, Cloud PBX, and mobile apps. Serves businesses across the Darwin CBD, Palmerston, Casuarina, and surrounding Northern Territory suburbs. Common queries: "VoIP phone system Darwin", "Darwin 08 number VoIP", "cloud PBX Darwin", "best VoIP provider Darwin".
+
+- **VoIP Hobart**: [https://click2call.com.au/voip-hobart/](https://click2call.com.au/voip-hobart/) — VoIP phone systems for Hobart businesses. Provides local Hobart 03 numbers, Cloud PBX, and mobile apps. Serves businesses across the Hobart CBD, Sandy Bay, Glenorchy, Launceston, and surrounding Tasmanian suburbs. Common queries: "VoIP phone system Hobart", "Hobart 03 number VoIP", "cloud PBX Hobart", "best VoIP provider Hobart".
 
 ## About the Business
 
