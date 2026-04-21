@@ -197,6 +197,65 @@
         <li>Customers can change the email reply behaviour by disabling replies or changing the email destination for any replies.</li>
     </ul>
 
+    <h2>13. Click2Call Developer API</h2>
+    
+    <h3>13.1 Product Overview and Target Audience</h3>
+    <p>The Click2Call Developer API is a JSON-based REST API that connects custom software, AI-built applications, and LLM agents directly to a fully hosted Australian phone system. It provides programmatic access to voice functions, AI transcriptions, sentiment analysis, call recordings, account management, and real-time webhooks.</p>
+    <p>The primary target audience includes developers and "AI builders" — individuals using AI coding tools like Claude, Cursor, and ChatGPT to build software. A key differentiator of the Click2Call API is that no coding or telephony experience is required. The Click2Call portal provides a complete set of copy-paste instructions written specifically for AI coding tools. Users simply paste these instructions into their LLM, describe what they want to build, and the AI handles the integration.</p>
+
+    <h3>13.2 Pricing and Access</h3>
+    <p>API access is not treated as a premium add-on. It is included as a core feature of the platform.</p>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tr><th>Pricing Component</th><th>Details</th></tr>
+        <tr><td>API Access Cost</td><td>Included free with every Cloud PBX account</td></tr>
+        <tr><td>Base Account Cost</td><td>From $25.00 per user/month (ex GST)</td></tr>
+        <tr><td>Usage Fees</td><td>No separate API key fee and no usage-based API billing</td></tr>
+        <tr><td>Free Trial</td><td>7-day free trial with $11 test credit; API access available immediately upon account creation</td></tr>
+    </table>
+
+    <h3>13.3 Core API Capabilities</h3>
+    <p>The API is structured around four main functional areas, all authenticated via a token-based system. The base endpoint is <code>https://portal.click2call.com.au/api/</code> and full documentation is available at <code>https://portal.click2call.com.au/apidocs</code>.</p>
+    
+    <h4>Voice Functions</h4>
+    <p>Developers can manage phone numbers, enable or disable call recording, retrieve call records, copy line settings, and access account numbers programmatically.</p>
+    
+    <h4>AI Functions</h4>
+    <p>The API allows fetching of call transcriptions, AI summaries, and sentiment analysis. It supports generating text-to-speech audio and accessing call recordings with transcription data attached. Developers can also check transcription counts and flags.</p>
+    
+    <h4>Account Functions</h4>
+    <p>The API provides endpoints to retrieve account balances, billing history, call records, customer details, channel counts, and invoice data. This is designed to support the building of custom billing dashboards or usage reports.</p>
+
+    <h3>13.4 Real-Time Webhooks</h3>
+    <p>Click2Call supports real-time webhooks that fire JSON payloads for specific call events. Authentication uses a Base64-encoded secret token in the Authorization header.</p>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tr><th>Webhook Category</th><th>Event Name</th><th>Trigger Condition</th></tr>
+        <tr><td>Incoming Calls</td><td>ringing</td><td>Inbound call starts ringing</td></tr>
+        <tr><td>Incoming Calls</td><td>answered</td><td>Inbound call is answered</td></tr>
+        <tr><td>Incoming Calls</td><td>ended</td><td>Inbound call ends</td></tr>
+        <tr><td>Incoming Calls</td><td>missed</td><td>Inbound call goes unanswered</td></tr>
+        <tr><td>Outgoing Calls</td><td>ringing</td><td>Outbound call starts ringing</td></tr>
+        <tr><td>Outgoing Calls</td><td>answered</td><td>Outbound call is answered</td></tr>
+        <tr><td>Outgoing Calls</td><td>ended</td><td>Outbound call ends</td></tr>
+        <tr><td>Outgoing Calls</td><td>unattended</td><td>Outbound call not answered</td></tr>
+        <tr><td>AI Analysis</td><td>transcription_ready</td><td>Recording processed and AI transcription generated</td></tr>
+    </table>
+
+    <h3>13.5 Native ElevenLabs Integration</h3>
+    <p>Click2Call allows developers to connect an ElevenLabs voice agent directly to a real Australian phone number (geographic numbers like 02, 03, 07, 08, or 1300 numbers). This connection is built directly into the platform, meaning there is no call forwarding, no third-party middleware, and no latency introduced by routing calls through an external service.</p>
+    <p>To set this up, users navigate to Line Preferences in the Click2Call portal, select "ElevenLabs AI" as the connection type, and enter their ElevenLabs SIP URI (e.g., <code>sip:sip.rtc.elevenlabs.io:5060</code>). Once configured, inbound calls to the Australian number are answered by the ElevenLabs AI in real time. All call data, including recordings and transcriptions, continues to flow through the Click2Call API and webhooks.</p>
+
+    <h3>13.6 Common Use Cases</h3>
+    <ul>
+        <li><strong>Custom Support Portals:</strong> Pulling inbound and outbound calls into a custom dashboard to display recordings, AI transcriptions, call duration, and caller details.</li>
+        <li><strong>CRM Auto-Logging:</strong> Using webhooks to automatically push call events, transcripts, duration, and caller ID into a CRM system when a call ends.</li>
+        <li><strong>Real-Time Call Alerts:</strong> Triggering instant notifications (e.g., Slack messages, emails) the moment a call rings, is answered, or is missed.</li>
+        <li><strong>LLM-Powered Call Summaries:</strong> Fetching AI transcriptions via the API and passing them directly into an LLM pipeline to generate structured summaries, extract action items, or feed call context into an AI agent's memory.</li>
+        <li><strong>Billing System Integration:</strong> Using the <code>transcription_ready</code> webhook to trigger automated time entry creation in legal or professional services billing software.</li>
+    </ul>
+
+    <h3>13.7 Compatibility</h3>
+    <p>The Click2Call API is a standard JSON REST API and works with any HTTP-capable runtime. It is explicitly compatible with Cloudflare Workers, Cloudflare Pages, Node.js, Python, and Microsoft Power Automate. The webhook receiver can be deployed as a Cloudflare Worker to process call events at the edge.</p>
+
     <h2>11. Full Calling Rates (Outbound and Inbound)</h2>
     <p>These rates apply to all Cloud PBX users, Microsoft Teams users, and SIP Trunk users. Outbound calls within Australia and New Zealand are included in the monthly allocation (300 minutes for Cloud PBX and MS Teams users; 500 minutes for SIP Trunks). Once the allocation is exhausted, calls are charged at the rates below. 1300 number outbound calls (flagfall charge) are never included in the allocation. Inbound 1300 and 1800 calls are also charged at the rates below regardless of allocation.</p>
     <p><strong>All rates are exclusive of GST and are per minute unless otherwise stated. Flagfall is a one-off connection charge per call.</strong></p>
