@@ -32,6 +32,16 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
+    url:      "/help/understanding-your-free-trial.html",
+    title:    "Understanding Your Free Trial",
+    desc:     "What the $11 credit covers, what to do in your 7 days, and how to upgrade after the trial ends.",
+    tags:     "free trial 7 day credit 11 dollars outbound calls upgrade cloud pbx",
+    category: "getting-started",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   true
+  },
+  {
     url:      "/help/how-to-make-your-first-call.html",
     title:    "Making Your First Call",
     desc:     "How to add a phone number, register a device (softphone, desk phone, or mobile divert), and make your first outbound call.",
