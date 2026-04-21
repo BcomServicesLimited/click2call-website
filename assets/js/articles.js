@@ -122,7 +122,7 @@ var HELP_ARTICLES = [
     tags:     "speed dial global contacts external contacts contact name caller name csv import",
     category: "extensions",
     readTime: "3 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
 
