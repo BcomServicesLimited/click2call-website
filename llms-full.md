@@ -89,7 +89,7 @@ Click2Call uses flat-rate, prepaid billing. Customers load credit onto their acc
 - Prepaid billing — load credit, enable auto top-up, fees deducted monthly
 - No lock-in contracts — cancel any time
 - No setup fees on standard accounts
-- 30-day free trial on Cloud PBX (no credit card required)
+- 7-day free trial on Cloud PBX — no credit card required. Includes $11 credit and 10 test calls.
 
 For full details, see the [official pricing page](https://www.click2call.com.au/pricing).
 
@@ -184,6 +184,7 @@ The Click2Call Help Centre is a dedicated knowledge base providing step-by-step 
 ### Getting Started
 
 - **Activating Your Account**: https://www.click2call.com.au/help/how-to-activate-account.html — Sign up, log in, and complete initial portal setup including account details, plan review, and adding credit.
+- **Making Your First Call**: https://click2call.com.au/help/how-to-make-your-first-call.html — Step-by-step guide to making the first outbound call. Covers adding a phone number to the account, choosing a device type (softphone app on iPhone/Android/Windows/Mac, SIP desk phone, or mobile divert), confirming outbound caller ID, and dialling format for Australian landlines, mobiles, 1300 numbers, and international destinations. Includes a troubleshooting section for registration failures, wrong caller ID, no audio, and insufficient credit. Trial accounts include $11 credit and 10 test calls.
 - **Adding Account Credit**: https://www.click2call.com.au/help/how-to-add-account-credit.html — Top up account balance via Account > Payments. Supports one-off credit card payments, auto top-up, and low credit email alerts.
 
 ### Phone Numbers

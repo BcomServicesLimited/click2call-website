@@ -47,7 +47,7 @@ Every Click2Call account includes a complete set of ready-made instructions writ
 - **Documentation**: [https://portal.click2call.com.au/apidocs](https://portal.click2call.com.au/apidocs)
 - **Marketing Page**: [https://www.click2call.com.au/api](https://www.click2call.com.au/api)
 - **Cost**: Included free with every Cloud PBX account ($25/month per user)
-- **Trial**: 30-day free trial, no credit card required
+- **Trial**: 7-day free trial — no credit card required. Includes $11 credit and 10 test calls.
 
 ### Common Developer Use Cases
 
@@ -122,7 +122,7 @@ Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in co
 - **PBX Extensions**: Free
 - **Channels**: Included with Cloud PBX User
 - **Outbound call rates**: from $0.10/min (Australia & New Zealand fixed)
-- **30-day free trial** — no credit card required
+- **7-day free trial** — no credit card required. Includes $11 credit and 10 test calls.
 - **Activation**: up to 24 hours after signup
 - **SIP Trunks**: available on request
 - Full details: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing)
@@ -140,6 +140,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 
 ### Getting Started
 - **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account](https://www.click2call.com.au/help/how-to-activate-account)
+- **Making Your First Call**: [https://click2call.com.au/help/how-to-make-your-first-call](https://click2call.com.au/help/how-to-make-your-first-call) — Add a phone number, register a device (softphone app, SIP desk phone, or mobile divert), and make your first outbound call. Includes troubleshooting for registration failures, wrong caller ID, and no audio.
 - **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit](https://www.click2call.com.au/help/how-to-add-account-credit) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 
 ### Phone Numbers

@@ -14,7 +14,7 @@ This file captures starter pricing notes for support and pre-sales email replies
 | Channels | Included with Cloud PBX User |
 | Call rates | From $0.10/min for Australian and New Zealand fixed destinations |
 | Contract model | Month-to-month, no lock-in contracts |
-| Trial | 30-day free trial, no credit card required |
+| Trial | 7-day free trial — no credit card required. Includes $11 account credit and 10 test calls. |
 
 ## Reply guidance
 

@@ -75,7 +75,7 @@ Hello {{first_name}},
 
 Thank you for your interest in Click2Call.
 
-A 30-day free trial is available for the Cloud PBX service, and the public website states that no credit card is required to begin the trial. If you would like, I can point you to the best starting option based on your business size and calling setup.
+A 7-day free trial is available for the Cloud PBX service — no credit card is required to begin. New accounts are loaded with $11 credit and 10 test calls automatically, so you can start making real calls straight away. If you would like, I can point you to the best starting option based on your business size and calling setup.
 
 Kind regards,
 Click2Call Support
