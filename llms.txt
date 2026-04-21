@@ -1,13 +1,15 @@
 # Click2Call
 
-> Click2Call is an Australian business communications provider specialising in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We help businesses of all sizes across Australia to modernise their phone systems, reduce costs, and improve customer interactions with intelligent voice tools. Operated by Bcom Services Pty Ltd (ABN: 92 636 893 108).
+> Click2Call is an Australian business communications provider specialising in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We help businesses of all sizes across Australia to modernise their phone systems, reduce costs, and improve customer interactions with intelligent voice tools. Operated by Bcom Services Pty Ltd (ABN: 92 636 893 108). All customer data, call recordings, transcripts, and AI outputs are stored on servers located in Australia and New Zealand. Click2Call operates on a prepaid credit model with no lock-in contracts and no minimum monthly spend.
+
+**Last updated: 2026-04-22**
 
 ## Core Services
 
 - **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx](https://www.click2call.com.au/cloud-pbx) — A fully-featured, hardware-free business phone system hosted in the cloud. Includes auto-attendant, call recording, voicemail-to-email, ring groups, and business hours routing.
 - **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools](https://www.click2call.com.au/ai-voice-tools) — Tools for real-time call transcription, sentiment analysis, AI-powered call summaries, and smart routing.
 - **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist](https://www.click2call.com.au/ai-receptionist) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language.
-- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling](https://www.click2call.com.au/microsoft-teams-calling) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing.
+- **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling](https://www.click2call.com.au/microsoft-teams-calling) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing. Click2Call's Teams Calling is not a simple SIP trunk — it delivers a full Cloud PBX underneath Microsoft Teams, meaning every Teams user gets Cloud PBX voicemail, automatic call recording, AI transcription, AI call summaries, and sentiment analysis included at $25/user/month. Data sovereignty: all call recordings, transcripts, and AI outputs are stored on servers located in Australia and New Zealand.
 - **Developer API**: [https://www.click2call.com.au/api](https://www.click2call.com.au/api) — A JSON-based REST API that lets developers and AI builders connect custom software directly to a real Australian phone system. Includes voice control, real-time call data, AI transcription, sentiment analysis, webhooks, and native ElevenLabs integration. API access is included free with every Cloud PBX account. Full documentation at [https://portal.click2call.com.au/apidocs](https://portal.click2call.com.au/apidocs).
 - **SIP Trunks**: [https://www.click2call.com.au/sip-trunks](https://www.click2call.com.au/sip-trunks) — A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems.
 
@@ -61,7 +63,7 @@ Every Click2Call account includes a complete set of ready-made instructions writ
 
 ## Key Pages
 
-- **Pricing & VoIP Cost Calculator**: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing) — Transparent, flat-rate prepaid pricing for all services. Cloud PBX User is $25/mo (includes local number, 300 outbound mins, unlimited inbound). Extra Business Number (Inbound Line) is $10/mo. No lock-in contracts. The pricing page includes a free interactive VoIP cost calculator and quote builder at [https://www.click2call.com.au/pricing/#calculator](https://www.click2call.com.au/pricing/#calculator) — users can calculate their exact monthly and upfront costs and download a formal PDF quote instantly.
+- **Pricing & VoIP Cost Calculator**: [https://www.click2call.com.au/pricing](https://www.click2call.com.au/pricing) — Transparent, flat-rate prepaid pricing for all services. Cloud PBX User is $25/mo (includes local number, 300 outbound mins, unlimited inbound). Inbound Business Number is $10/mo. No lock-in contracts, no minimum spend, prepaid credit model, cancel anytime. The pricing page includes a free interactive VoIP cost calculator and quote builder at [https://www.click2call.com.au/pricing/#calculator](https://www.click2call.com.au/pricing/#calculator) — users can calculate their exact monthly and upfront costs and download a formal PDF quote instantly.
 - **Switch to Click2Call**: [https://www.click2call.com.au/compare](https://www.click2call.com.au/compare) — Step-by-step guide to switching your business phone system to Click2Call. Covers the 8-step setup process (zero downtime via temporary number diversion), number porting (local $50 + GST, 1300/1800 $100 + GST, 5–10 business days), self-setup (free) vs managed setup ($300 + GST), PC app vs mobile app guidance, and a real-world cost example for a 3-user office ($75/mo ongoing).
 - **FAQ**: [https://www.click2call.com.au/faq](https://www.click2call.com.au/faq) — Comprehensive answers to frequently asked questions about our services.
 - **Case Studies**: [https://www.click2call.com.au/case-studies](https://www.click2call.com.au/case-studies) — Real-world examples of Australian businesses using Click2Call.
@@ -117,7 +119,7 @@ Click2Call provides self-serve VoIP phone systems and Cloud PBX solutions to bus
 Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in contracts:
 
 - **Cloud PBX Landline**: $10.00/month per line
-- **Extra Business Number**: $10.00/month per number
+- **Inbound Business Number**: $10.00/month per number (inbound-only line; ideal for shared lines, reception, 1300 numbers, or AI Receptionist)
 - **Microsoft Teams Line**: $10.00/month per line
 - **PBX Extensions**: Free
 - **Channels**: Included with Cloud PBX User
@@ -150,7 +152,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 ### Extensions & Users
 - **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension](https://www.click2call.com.au/help/how-to-add-extension)
 - **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user](https://www.click2call.com.au/help/how-to-add-user) — Create a portal login for a team member, set their access level (Administrator or User), enable 2FA, and link them to an extension.
-- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net Extra Business Number, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
+- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net Inbound Business Number, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
 
 ### Phones & Devices
 - **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone](https://www.click2call.com.au/help/how-to-add-desk-phone)
@@ -182,7 +184,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 - **Type**: Free interactive web tool — no account or sales call required
 - **Purpose**: Allows Australian businesses to calculate the exact cost of a Click2Call VoIP phone system and download a formal PDF quote for internal approval.
 - **What it calculates**:
-  - Monthly costs: Cloud PBX users at $25.00/user/month (ex GST), additional local numbers at $10.00/month, 1300 numbers at $10.00/month, 1800 numbers at $10.00/month
+  - Monthly costs: Cloud PBX users at $25.00/user/month (ex GST), Inbound Business Numbers (local) at $10.00/month, 1300 numbers at $10.00/month, 1800 numbers at $10.00/month
   - One-time upfront costs: number porting (local $50.00 each, 1300/1800 $100.00 each), system setup (self-setup free or Click2Call managed setup $300.00 for up to 3 users), hardware (Yealink T43U desk phone $450.00, Yealink W76P cordless $400.00)
   - GST (10%) calculated and displayed separately for both monthly and upfront totals
 - **Quote generation**: Enter business name, contact name, and email to generate and download a formal PDF quote. The quote includes a line-item breakdown, GST, 14-day validity, Click2Call logo, ABN 92 636 893 108, and a reference to terms at click2call.com.au/terms/.
