@@ -115,6 +115,16 @@ var HELP_ARTICLES = [
     featured: true,
     pinned:   false
   },
+  {
+    url:      "/help/how-to-set-up-speed-dials.html",
+    title:    "Setting Up Global Contacts and Speed Dials",
+    desc:     "How to save contact names and assign speed dial codes so you can dial contacts quickly from any phone on your account.",
+    tags:     "speed dial global contacts external contacts contact name caller name csv import",
+    category: "extensions",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
 
   /* ── Devices & Apps ── */
   {
