@@ -32,6 +32,16 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
+    url:      "/help/how-to-make-your-first-call.html",
+    title:    "Making Your First Call",
+    desc:     "How to add a phone number, register a device (softphone, desk phone, or mobile divert), and make your first outbound call.",
+    tags:     "first call outbound call softphone desk phone mobile divert register device caller id",
+    category: "getting-started",
+    readTime: "5 min read",
+    featured: true,
+    pinned:   true
+  },
+  {
     url:      "/help/how-to-add-account-credit.html",
     title:    "Adding Account Credit",
     desc:     "How to load credit onto your account and set up auto top-up.",
