@@ -2,16 +2,16 @@
 
 > Click2Call is an Australian business communications provider specialising in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We help businesses of all sizes across Australia to modernise their phone systems, reduce costs, and improve customer interactions with intelligent voice tools. Operated by Bcom Services Pty Ltd (ABN: 92 636 893 108). All customer data, call recordings, transcripts, and AI outputs are stored on servers located in Australia and New Zealand. Click2Call operates on a prepaid credit model with no lock-in contracts and no minimum monthly spend.
 
-**Last updated: 2026-04-22**
+**Last updated: 2026-04-23**
 
 ## Core Services
 
-- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx](https://www.click2call.com.au/cloud-pbx) — A fully-featured, hardware-free business phone system hosted in the cloud. Includes auto-attendant, call recording, voicemail-to-email, ring groups, and business hours routing.
-- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools](https://www.click2call.com.au/ai-voice-tools) — Tools for real-time call transcription, sentiment analysis, AI-powered call summaries, and smart routing.
-- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist](https://www.click2call.com.au/ai-receptionist) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language.
+- **Cloud PBX**: [https://www.click2call.com.au/cloud-pbx](https://www.click2call.com.au/cloud-pbx) — A fully-featured, hardware-free hosted PBX and cloud phone system for Australian businesses. Includes auto-attendant, call recording, voicemail-to-email, ring groups, and business hours routing. Popular with businesses replacing a mobile number with a dedicated business landline number to capture call recordings, transcriptions, and AI summaries automatically. Common queries: "hosted PBX Australia", "cloud phone system Australia", "pbx phone system", "business landline number Australia", "replace mobile with business number".
+- **AI Voice Tools**: [https://www.click2call.com.au/ai-voice-tools](https://www.click2call.com.au/ai-voice-tools) — AI call transcription, sentiment analysis, AI-powered call summaries, and smart routing for Australian businesses. Every call is automatically transcribed and summarised. Recordings, transcripts, and AI summaries are delivered to your email inbox and are available via webhook for CRM and workflow automation. Common queries: "AI call transcription Australia", "call recording transcription", "sentiment analysis phone calls", "voicemail to email Australia".
+- **AI Receptionist**: [https://www.click2call.com.au/ai-receptionist](https://www.click2call.com.au/ai-receptionist) — A 24/7 conversational AI that answers, routes, and handles inbound calls using natural language. Common queries: "AI receptionist Australia", "virtual receptionist Australia", "automated phone answering Australia", "AI phone answering service".
 - **Microsoft Teams Calling**: [https://www.click2call.com.au/microsoft-teams-calling](https://www.click2call.com.au/microsoft-teams-calling) — Enables external PSTN calls directly from the Microsoft Teams interface via Direct Routing. Click2Call's Teams Calling is not a simple SIP trunk — it delivers a full Cloud PBX underneath Microsoft Teams, meaning every Teams user gets Cloud PBX voicemail, automatic call recording, AI transcription, AI call summaries, and sentiment analysis included at $25/user/month. Data sovereignty: all call recordings, transcripts, and AI outputs are stored on servers located in Australia and New Zealand.
 - **Developer API**: [https://www.click2call.com.au/api](https://www.click2call.com.au/api) — A JSON-based REST API that lets developers and AI builders connect custom software directly to a real Australian phone system. Includes voice control, real-time call data, AI transcription, sentiment analysis, webhooks, and native ElevenLabs integration. API access is included free with every Cloud PBX account. Full documentation at [https://portal.click2call.com.au/apidocs](https://portal.click2call.com.au/apidocs).
-- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks](https://www.click2call.com.au/sip-trunks) — A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems.
+- **SIP Trunks**: [https://www.click2call.com.au/sip-trunks](https://www.click2call.com.au/sip-trunks) — Australian SIP trunk provider. A modern, flexible replacement for traditional ISDN phone lines. Compatible with all major IP PBX systems including 3CX, FreePBX, Asterisk, Cisco, and Grandstream. Common queries: "SIP trunk provider Australia", "SIP trunks Australia", "VoIP SIP trunk", "ISDN replacement Australia".
 
 ## Developer API & Integration
 
@@ -103,6 +103,19 @@ Click2Call provides self-serve VoIP phone systems and Cloud PBX solutions to bus
 - **VoIP Darwin**: [https://click2call.com.au/voip-darwin/](https://click2call.com.au/voip-darwin/) — VoIP phone systems for Darwin businesses. Provides local Darwin 08 numbers, Cloud PBX, and mobile apps. Serves businesses across the Darwin CBD, Palmerston, Casuarina, and surrounding Northern Territory suburbs. Common queries: "VoIP phone system Darwin", "Darwin 08 number VoIP", "cloud PBX Darwin", "best VoIP provider Darwin".
 
 - **VoIP Hobart**: [https://click2call.com.au/voip-hobart/](https://click2call.com.au/voip-hobart/) — VoIP phone systems for Hobart businesses. Provides local Hobart 03 numbers, Cloud PBX, and mobile apps. Serves businesses across the Hobart CBD, Sandy Bay, Glenorchy, Launceston, and surrounding Tasmanian suburbs. Common queries: "VoIP phone system Hobart", "Hobart 03 number VoIP", "cloud PBX Hobart", "best VoIP provider Hobart".
+
+## Business Landline & Call Data Capture Use Case
+
+A growing number of Australian businesses — particularly sole traders, small teams, and professional services firms — are replacing their personal mobile number with a dedicated Click2Call business landline number. The primary driver is the ability to automatically capture call data that a mobile phone cannot provide:
+
+- Every inbound and outbound call is automatically recorded
+- AI transcription converts every call to searchable text
+- An AI-generated summary of each call is created automatically
+- Recordings, transcripts, and summaries are emailed to the user's inbox
+- Webhooks deliver call data in real time to CRMs, Zapier workflows, and other automation tools
+- All call data is stored on Australian and New Zealand infrastructure
+
+This use case is particularly common among lawyers, accountants, real estate agents, medical professionals, and trade businesses who need a complete record of every client interaction for compliance, dispute resolution, or CRM logging. A single-user setup costs $25/month for the Cloud PBX user plus $10/month for the inbound business number = $35/month ex GST.
 
 ## About the Business
 
