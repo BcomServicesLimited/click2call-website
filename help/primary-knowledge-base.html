@@ -157,4 +157,105 @@ The following star codes can be dialed from your phone to set up various feature
 <tr><td><strong>*01x</strong></td><td>Force a call to route "on-net" when the number is on another network. Useful for testing pre-provisioned numbers prior to porting completion.</td></tr>
 </table>
 
-12. Microsoft Teams Calling (Direct Routing) 12.1 Product Overview and Architecture Click2Call Microsoft Teams Calling enables businesses to make and receive external phone calls directly within the Microsoft Teams application. The service uses Direct Routing architecture, which is a Microsoft-approved method for connecting Teams to the public switched telephone network (PSTN). Unlike basic SIP trunk providers that only supply a phone number and a connection, Click2Call integrates a full Cloud PBX beneath the Teams interface. This architectural difference means customers receive enterprise-grade PBX features natively, without needing third-party add-ons or complex integrations. The core value proposition is providing two systems for one price: customers get the familiar Microsoft Teams interface powered by Click2Call's advanced Cloud PBX infrastructure. 12.2 Pricing and Commercial Terms Click2Call operates on a transparent, prepaid credit model with no hidden fees. Pricing Component Cost Details Click2Call Teams User Plan $25.00 per user/month (ex GST) Includes 300 outbound minutes to standard Australian numbers and unlimited inbound calls. Microsoft Licence Requirement $12.10 per user/month Customers must hold a Microsoft 365 Business plan with the Team...
+12. Microsoft Teams Calling (Direct Routing) 12.1 Product Overview and Architecture Click2Call Microsoft Teams Calling enables businesses to make and receive external phone calls directly within the Microsoft Teams application.
+
+13. Microsoft Teams Direct Routing – Trial, Scope Control, and Setup Logic
+
+13.1 Core Principle
+The trial is for platform validation only. Configuration, integration, and deployment are NOT included unless paid.
+
+13.2 Free Trial Scope (7 Days)
+
+The free trial includes:
+- Access to Click2Call Cloud PBX platform
+- Inbound call routing
+- API and webhook access (including transcription_ready)
+- $11 trial credit for temporary number provisioning and inbound call testing
+
+The trial is designed to validate:
+- Call flow and routing
+- AI transcription and summaries
+- API/webhook functionality
+- Compatibility with external systems (e.g. Power Automate)
+
+IMPORTANT – Trial does NOT include:
+- Microsoft Teams Direct Routing setup
+- Outbound calling via Teams (unless customer purchases Teams User Plan)
+- Integration assistance or configuration support
+
+13.3 Microsoft Teams Requirements
+
+To use Direct Routing, customers must have:
+- Microsoft 365 base licence (with Teams)
+- Microsoft Teams Phone Standard licence (mandatory)
+- Tenant access via Teams Administrator role (Global Admin NOT required)
+
+Access model:
+- JIT (Just-in-Time) via Microsoft Entra ID
+- MFA enabled
+- Vendor account provided by customer
+
+13.4 Trial Process (Mandatory Flow)
+
+Step 1: Customer confirms readiness to start trial
+Step 2: Customer creates Click2Call account (trial does not start automatically)
+Step 3: Customer provisions temporary number using trial credit
+Step 4: Customer configures inbound routing
+Step 5: Customer tests call handling, transcription, and API/webhooks (self-managed)
+
+NO Click2Call involvement in: API setup, Power Automate workflows, or custom integrations during trial.
+
+13.5 Outbound Calling / Teams Testing
+
+To test Microsoft Teams Direct Routing outbound calling:
+- Customer MUST add funds and purchase Teams User Plan ($25/month ex GST)
+- Trial credit does NOT cover the Teams User Plan
+
+13.6 Post-Trial Decision Point
+
+After validating the platform, customer chooses one of:
+
+OPTION A — Self-Service:
+- Customer or their IT provider completes setup
+- Click2Call provides platform and documentation only
+
+OPTION B — Managed Setup (Paid):
+- $300 base configuration (Cloud PBX)
+- $50 per Teams user
+
+Managed Setup includes:
+- Direct Routing configuration
+- Number setup and routing
+- End-to-end validation
+
+Managed Setup excludes:
+- API integration
+- Power Automate setup
+- End-user training
+
+13.7 Strict Boundary Rules
+
+When responding to customers, always:
+- Clearly separate Trial vs Paid Setup
+- Clearly separate Platform support vs Integration support
+- State: "Configuration is self-service during trial"
+- State: "Integration support is not included"
+
+If customer asks for help with Power Automate, Teams configuration during trial, or similar:
+→ Respond: "This falls under Managed Setup (paid service)."
+
+13.8 Positioning Logic
+
+Always guide customers through this order:
+1. Trial first (validate platform)
+2. Then commit to Teams plan
+3. Then choose: Self-service OR Paid managed setup
+
+DO NOT: Skip trial validation, provide free configuration work, or blur responsibility boundaries.
+
+13.9 Communication Style
+
+- Clear, structured, and controlled
+- No over-explaining
+- No "we can help with that" unless paid
+- Always reinforce scope boundaries early The service uses Direct Routing architecture, which is a Microsoft-approved method for connecting Teams to the public switched telephone network (PSTN). Unlike basic SIP trunk providers that only supply a phone number and a connection, Click2Call integrates a full Cloud PBX beneath the Teams interface. This architectural difference means customers receive enterprise-grade PBX features natively, without needing third-party add-ons or complex integrations. The core value proposition is providing two systems for one price: customers get the familiar Microsoft Teams interface powered by Click2Call's advanced Cloud PBX infrastructure. 12.2 Pricing and Commercial Terms Click2Call operates on a transparent, prepaid credit model with no hidden fees. Pricing Component Cost Details Click2Call Teams User Plan $25.00 per user/month (ex GST) Includes 300 outbound minutes to standard Australian numbers and unlimited inbound calls. Microsoft Licence Requirement $12.10 per user/month Customers must hold a Microsoft 365 Business plan with the Team...
