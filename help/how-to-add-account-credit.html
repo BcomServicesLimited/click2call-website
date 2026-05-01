@@ -382,13 +382,51 @@
           <div class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-green flex items-center justify-center text-white font-bold text-sm mt-1">4</div>
           <div class="flex-1">
             <h2 class="text-xl font-bold text-gray-900 mb-2">Add credit to your account</h2>
-            <p class="text-gray-600 mb-3">To add credit, follow these steps:</p>
-            <ol class="list-decimal list-inside space-y-2 text-gray-600 mb-4 ml-1">
-              <li>Enter your <strong>card number</strong> in the card field (Visa or Mastercard).</li>
-              <li>Click <strong>Save Card</strong> to securely store your card details.</li>
-              <li>Set your desired <strong>Auto Top-up Amount</strong> (e.g. $20.00).</li>
-              <li>Click <strong>Make a One Off Payment</strong> to immediately add that amount to your balance, or tick <strong>Enable automatic top-ups</strong> and click <strong>Store Card Details</strong> to set up recurring top-ups.</li>
-            </ol>
+            <p class="text-gray-600 mb-4">The Add Credit page has two separate areas. It is important to use the correct one depending on what you want to do. Follow the steps below carefully.</p>
+
+            <!-- Part A: Manual one-off top-up -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-5">
+              <h3 class="text-base font-bold text-gray-900 mb-1">To manually add credit right now (one-off payment)</h3>
+              <p class="text-sm text-gray-500 mb-4">Use the fields at the <strong>top</strong> of the Add Credit page.</p>
+              <ol class="space-y-3 text-gray-700 text-sm">
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-green text-white text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+                  <span>In the <strong>Card number</strong> field at the top of the page, enter your Visa or Mastercard number, or select a previously saved card from the dropdown.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-green text-white text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+                  <span>In the <strong>Top-up amount</strong> field directly below the card field, enter the dollar amount you want to add to your account (for example, <strong>20.00</strong>).</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-green text-white text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+                  <span>Click the small <strong>Top up</strong> link that appears directly below the Top-up amount field. This is the button that processes your payment immediately.</span>
+                </li>
+              </ol>
+              <div class="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-3">
+                <p class="text-amber-800 text-sm"><strong>Important:</strong> Do not scroll down and click the larger green button further down the page &mdash; that button is for a different purpose (see below). The correct button for a manual one-off top-up is the small <strong>Top up</strong> link directly below the Top-up amount field.</p>
+              </div>
+            </div>
+
+            <!-- Part B: Auto top-up setup -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-5">
+              <h3 class="text-base font-bold text-gray-900 mb-1">To set up automatic top-ups (recurring)</h3>
+              <p class="text-sm text-gray-500 mb-4">Use the fields <strong>further down</strong> the Add Credit page, under the &ldquo;Add Credit Amount&rdquo; heading.</p>
+              <ol class="space-y-3 text-gray-700 text-sm">
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-400 text-white text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+                  <span>Ensure your card is already saved (see the manual top-up steps above).</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-400 text-white text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+                  <span>Tick <strong>Enable automatic top-ups</strong> and set the <strong>Auto Top-up Amount</strong> to the amount you want charged each time your balance runs low.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-400 text-white text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+                  <span>In the <strong>Add Credit Amount</strong> field further down the page, enter the same amount, then click the large green <strong>Add Credit</strong> button to save your automatic top-up settings.</span>
+                </li>
+              </ol>
+            </div>
+
             <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
               <p class="text-amber-800 text-sm"><strong>Tip:</strong> We recommend enabling both <strong>automatic top-ups</strong> and <strong>low credit warning emails</strong> to ensure your service is never interrupted.</p>
             </div>
