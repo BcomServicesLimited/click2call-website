@@ -148,6 +148,17 @@ var HELP_ARTICLES = [
     pinned:   true
   },
 
+  {
+    url:      "/help/how-to-set-up-linphone.html",
+    title:    "Setting Up Linphone (Free Third-Party Softphone)",
+    desc:     "How to download and configure Linphone on iPhone, Android, Windows, or Mac as a free SIP softphone with Click2Call.",
+    tags:     "linphone softphone sip third party free ios android windows mac troubleshooting testing",
+    category: "devices",
+    readTime: "10 min read",
+    featured: false,
+    pinned:   false
+  },
+
   /* ── Call Flows & Routing ── */
   {
     url:      "/help/how-to-set-up-call-flow.html",
