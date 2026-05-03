@@ -155,7 +155,7 @@ var HELP_ARTICLES = [
     tags:     "linphone softphone sip third party free ios android windows mac troubleshooting testing",
     category: "devices",
     readTime: "10 min read",
-    featured: false,
+    featured: true,
     pinned:   false
   },
 
