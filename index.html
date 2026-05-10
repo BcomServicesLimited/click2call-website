@@ -269,6 +269,7 @@
 <a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors rounded-b-xl" href="/sip-trunks" role="menuitem">
 <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
 <div><p class="font-semibold">SIP Trunks</p><p class="text-xs text-gray-500 mt-0.5">Connect your own IP PBX</p></div>
+</a>
 <a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors rounded-b-xl" href="/compare" role="menuitem">
 <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-green-50 flex items-center justify-center"><svg class="w-4 h-4 text-[#3B9C49]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
 <div><p class="font-semibold">Compare Plans</p><p class="text-xs text-gray-500 mt-0.5">VoIP vs traditional phone systems</p></div>
@@ -276,7 +277,6 @@
 </div>
 </div>
 <a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/pricing">Pricing</a>
-<a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/compare">Switch</a>
 <a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/about">About</a>
 <a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/support">Support</a>
 </nav>
@@ -310,10 +310,10 @@
 <a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/microsoft-teams-calling">Microsoft Teams Calling</a>
 <a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/api">Developer API</a>
 <a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/sip-trunks">SIP Trunks</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/compare">Compare Plans</a>
 </div>
 </div>
 <a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/pricing">Pricing</a>
-<a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/compare">Switch</a>
 <a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/about">About</a>
 <a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/support">Support</a>
 <div class="pt-3 pb-1 grid grid-cols-2 gap-3">
@@ -530,6 +530,9 @@
 <p class="text-gray-600 text-sm leading-relaxed flex-1">Business phone calls over the internet — clearer, cheaper, and more flexible than a traditional landline. National coverage, local numbers, and Australian-based support included.</p>
 <span class="mt-4 text-sm font-semibold text-teal-600 group-hover:underline flex items-center gap-1">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
 </a>
+</div>
+<div class="text-center mt-10">
+<p class="text-gray-500 text-sm">Not sure which service fits your business? <a class="text-[#3B9C49] font-semibold hover:underline" href="/compare">Compare all plans →</a></p>
 </div>
 </div>
 </section>
@@ -933,7 +936,7 @@
 <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
 <div class="faq-body hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed">
-            A traditional phone system requires physical hardware installed on your premises, is expensive to maintain, and is difficult to scale. Click2Call is entirely cloud-based: there is no hardware to buy, no maintenance costs, and you can add or remove users in minutes from any web browser. You also get AI-powered features like automated receptionists, call transcription, and sentiment analysis that are simply not available on legacy systems — all at a fraction of the cost.
+            A traditional phone system requires physical hardware installed on your premises, is expensive to maintain, and is difficult to scale. Click2Call is entirely cloud-based: there is no hardware to buy, no maintenance costs, and you can add or remove users in minutes from any web browser. You also get AI-powered features like automated receptionists, call transcription, and sentiment analysis that are simply not available on legacy systems — all at a fraction of the cost. <a class="text-[#3B9C49] font-semibold hover:underline" href="/compare">See our full comparison →</a>
           </div>
 </div>
 </div><!-- /faq-accordion -->
