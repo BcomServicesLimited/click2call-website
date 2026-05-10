@@ -249,11 +249,11 @@
         <!-- Login to Portal — outline -->
         <a href="https://portal.click2call.com.au/login.php"
            target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] bg-transparent hover:bg-green-50 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49]">
+           class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] bg-transparent hover:bg-green-50 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49]" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">
           Login to Portal
         </a>
         <!-- Get Started — filled green with micro-label -->
-        <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center px-5 py-2 rounded-lg bg-[#3B9C49] hover:bg-[#2E7A3A] transition-colors duration-150 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus-visible:ring-offset-2">
+        <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center px-5 py-2 rounded-lg bg-[#3B9C49] hover:bg-[#2E7A3A] transition-colors duration-150 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus-visible:ring-offset-2" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
   <span class="text-sm font-semibold text-white leading-tight">Start Free Trial</span>
   <span class="text-[10px] font-normal text-white/75 leading-tight">7 days &middot; no card required</span>
 </a>
@@ -322,10 +322,10 @@
       <div class="pt-3 pb-1 grid grid-cols-2 gap-3">
         <a href="https://portal.click2call.com.au/login.php"
            target="_blank" rel="noopener noreferrer"
-           class="flex items-center justify-center px-4 py-2.5 text-sm font-semibold rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] hover:bg-green-50 transition-colors">
+           class="flex items-center justify-center px-4 py-2.5 text-sm font-semibold rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] hover:bg-green-50 transition-colors" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">
           Login to Portal
         </a>
-        <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center px-5 py-2 rounded-lg bg-[#3B9C49] hover:bg-[#2E7A3A] transition-colors duration-150 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus-visible:ring-offset-2">
+        <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center px-5 py-2 rounded-lg bg-[#3B9C49] hover:bg-[#2E7A3A] transition-colors duration-150 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus-visible:ring-offset-2" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
   <span class="text-sm font-semibold text-white leading-tight">Start Free Trial</span>
   <span class="text-[10px] font-normal text-white/75 leading-tight">7 days &middot; no card required</span>
 </a>
@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <svg class="w-5 h-5 text-brand-green-dark mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                         <div class="ml-3">
                             <p class="text-sm font-medium text-gray-500">Phone</p>
-                            <a href="tel:1300884879" class="text-brand-green-dark font-semibold text-lg hover:underline">1300 884 879</a>
+                            <a href="tel:1300884879" class="text-brand-green-dark font-semibold text-lg hover:underline" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a>
                         </div>
                     </div>
                     <div class="flex items-start">
@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <svg class="w-5 h-5 text-brand-green-dark mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         <div class="ml-3">
                             <p class="text-sm font-medium text-gray-500">Customer Portal</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://portal.click2call.com.au/login.php" class="text-brand-green-dark font-semibold hover:underline">portal.click2call.com.au</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://portal.click2call.com.au/login.php" class="text-brand-green-dark font-semibold hover:underline" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">portal.click2call.com.au</a>
                         </div>
                     </div>
                 </div>
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                 <h2 class="text-xl font-bold text-brand-charcoal">New Customer?</h2>
                 <p class="mt-2 text-sm text-gray-600">Sign up online and start your 7-day free trial today — $11 credit and 10 test calls included. No credit card required.</p>
-                <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-brand-green-dark text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-brand-green-light transition-colors text-sm">Get Started Free</a>
+                <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-brand-green-dark text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-brand-green-light transition-colors text-sm" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Get Started Free</a>
             </div>
         </div>
 
@@ -553,10 +553,10 @@ document.addEventListener('DOMContentLoaded', function() {
             <h2 class="text-3xl font-extrabold text-white">Ready to Get Started?</h2>
             <p class="mt-4 text-lg text-gray-300">Sign up online in minutes and start your 7-day free trial today — $11 credit included, no card required.</p>
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="bg-brand-green-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-green-light transition-colors">
+                <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="bg-brand-green-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-green-light transition-colors" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
             Get Started
           </a>
-                <a href="tel:1300884879" class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-charcoal transition-colors">Call 1300 884 879</a>
+                <a href="tel:1300884879" class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-charcoal transition-colors" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">Call 1300 884 879</a>
             </div>
         </div>
     </section>
@@ -628,7 +628,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <svg aria-hidden="true" class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<a class="text-gray-400 hover:text-white transition-colors duration-150 font-medium" href="tel:1300884879">
+<a class="text-gray-400 hover:text-white transition-colors duration-150 font-medium" href="tel:1300884879" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">
               1300 884 879
             </a>
 </li>
