@@ -507,27 +507,16 @@
 <!-- Local numbers row -->
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
 <div style="min-width:180px;">
-<label class="block text-xs text-gray-600 mb-1" for="calc-local">Local numbers (02/03/07/08)</label>
+<label class="block text-xs text-gray-600 mb-1" for="calc-local">Local or mobile numbers (02/03/07/08 or mobile)</label>
 <input id="calc-local" max="100" min="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;" type="number" value="0"/>
-<span class="text-xs text-gray-400 ml-2">Geographic presence</span>
+<span class="text-xs text-gray-400 ml-2">Geographic or mobile presence</span>
 </div>
 <label id="port-local-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
 <input id="calc-port-local-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;" type="checkbox"/>
                   Port existing number <span style="color:#6b7280;">(+$50.00 each)</span>
 </label>
 </div>
-<!-- Mobile numbers row -->
-<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
-<div style="min-width:180px;">
-<label class="block text-xs text-gray-600 mb-1" for="calc-mobile">Mobile numbers to port</label>
-<input id="calc-mobile" max="100" min="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;" type="number" value="0"/>
-<span class="text-xs text-gray-400 ml-2">Port existing mobile — eligibility varies by carrier</span>
-</div>
-<label id="port-mobile-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
-<input id="calc-port-mobile-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;" type="checkbox"/>
-                  Port existing number <span style="color:#6b7280;">(+$50.00 each)</span>
-</label>
-</div>
+
 <!-- 1300 numbers row -->
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
 <div style="min-width:180px;">
@@ -655,10 +644,7 @@
 <span>Port local numbers (<span id="s-port-local">0</span> × $50.00)</span>
 <span id="s-port-local-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-port-mobile-row" style="display:flex;justify-content:space-between;color:#4b5563;">
-<span>Port mobile numbers (<span id="s-port-mobile">0</span> × $50.00)</span>
-<span id="s-port-mobile-cost">$0.00</span>
-</div>
+
 <div class="hidden-row" id="sum-port-1300-row" style="display:flex;justify-content:space-between;color:#4b5563;">
 <span>Port 1300/1800 (<span id="s-port-1300">0</span> × $100.00)</span>
 <span id="s-port-1300-cost">$0.00</span>
@@ -778,25 +764,19 @@ function updateCalc() {
   var n1800     = Math.max(0, parseInt(document.getElementById('calc-1800').value) || 0);
   // Port checkboxes: if checked, port qty = number qty; else 0
   var portLocalChk  = document.getElementById('calc-port-local-chk');
-  var portMobileChk = document.getElementById('calc-port-mobile-chk');
   var port1300Chk   = document.getElementById('calc-port-1300-chk');
   var port1800Chk   = document.getElementById('calc-port-1800-chk');
-  var mobile = Math.max(0, parseInt(document.getElementById('calc-mobile').value) || 0);
   var portLocal  = (portLocalChk && portLocalChk.checked) ? local : 0;
-  var portMobile = (portMobileChk && portMobileChk.checked) ? mobile : 0;
   var port1300   = ((port1300Chk && port1300Chk.checked) ? n1300 : 0) + ((port1800Chk && port1800Chk.checked) ? n1800 : 0);
   // Show/hide port checkboxes based on whether numbers > 0
   var portLocalLabel  = document.getElementById('port-local-label');
-  var portMobileLabel = document.getElementById('port-mobile-label');
   var port1300Label   = document.getElementById('port-1300-label');
   var port1800Label   = document.getElementById('port-1800-label');
   if (portLocalLabel)  portLocalLabel.style.display  = local > 0 ? 'flex' : 'none';
-  if (portMobileLabel) portMobileLabel.style.display = mobile > 0 ? 'flex' : 'none';
   if (port1300Label)   port1300Label.style.display   = n1300 > 0 ? 'flex' : 'none';
   if (port1800Label)   port1800Label.style.display   = n1800 > 0 ? 'flex' : 'none';
   // Reset checkboxes when qty drops to 0
   if (local === 0 && portLocalChk)   portLocalChk.checked   = false;
-  if (mobile === 0 && portMobileChk) portMobileChk.checked  = false;
   if (n1300 === 0 && port1300Chk)    port1300Chk.checked    = false;
   if (n1800 === 0 && port1800Chk)    port1800Chk.checked    = false;;
   var setup     = document.querySelector('input[name="calc-setup"]:checked') ? document.querySelector('input[name="calc-setup"]:checked').value : 'self';
@@ -804,7 +784,7 @@ function updateCalc() {
   var cordless  = Math.max(0, parseInt(document.getElementById('calc-cordless').value) || 0);
   var softphone = Math.max(0, parseInt(document.getElementById('calc-softphone').value) || 0);
 
-  calcState = { users, local, mobile, n1300, n1800, portLocal, portMobile, port1300, setup, desk, cordless, softphone };
+  calcState = { users, local, n1300, n1800, portLocal, port1300, setup, desk, cordless, softphone };
 
   // Show upfront section once users > 0
   document.getElementById('upfront-section').style.display = users > 0 ? 'block' : 'none';
@@ -821,7 +801,6 @@ function updateCalc() {
 
   // ── Upfront calcs ──
   var upPortLocal  = portLocal * 50;
-  var upPortMobile = portMobile * 50;
   var upPort1300   = port1300 * 100;
   var upSetup = 0;
   if (setup === 'managed' && users > 0) {
@@ -829,7 +808,7 @@ function updateCalc() {
   }
   var upDesk     = desk * 450;
   var upCordless = cordless * 400;
-  var upSub      = upPortLocal + upPortMobile + upPort1300 + upSetup + upDesk + upCordless;
+  var upSub      = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
   var upGst      = upSub * 0.10;
   var upTotal    = upSub + upGst;
 
@@ -852,8 +831,6 @@ function updateCalc() {
   document.getElementById('upfront-zero-msg').style.display = hasUpfront ? 'none' : 'block';
   showRow('sum-port-local-row', portLocal > 0);
   if (portLocal > 0) { document.getElementById('s-port-local').textContent = portLocal; document.getElementById('s-port-local-cost').textContent = fmt(upPortLocal); }
-  showRow('sum-port-mobile-row', portMobile > 0);
-  if (portMobile > 0) { document.getElementById('s-port-mobile').textContent = portMobile; document.getElementById('s-port-mobile-cost').textContent = fmt(upPortMobile); }
   showRow('sum-port-1300-row', port1300 > 0);
   if (port1300 > 0) { document.getElementById('s-port-1300').textContent = port1300; document.getElementById('s-port-1300-cost').textContent = fmt(upPort1300); }
   showRow('sum-setup-row', setup === 'managed' && users > 0);
@@ -954,7 +931,6 @@ function generateQuote() {
   var mins    = s.users * 300;
 
   var upPortLocal  = s.portLocal * 50;
-  var upPortMobile = (s.portMobile || 0) * 50;
   var upPort1300   = s.port1300 * 100;
   var upSetup = 0;
   if (s.setup === 'managed' && s.users > 0) {
@@ -962,7 +938,7 @@ function generateQuote() {
   }
   var upDesk     = s.desk * 450;
   var upCordless = s.cordless * 400;
-  var upSub      = upPortLocal + upPortMobile + upPort1300 + upSetup + upDesk + upCordless;
+  var upSub      = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
   var upGst      = upSub * 0.10;
   var upTotal    = upSub + upGst;
 
@@ -1093,7 +1069,6 @@ function generateQuote() {
 
     var upRows = [];
     if (s.portLocal > 0)  upRows.push(['Port local number', s.portLocal + ' × $50.00', '$' + upPortLocal.toFixed(2)]);
-    if ((s.portMobile || 0) > 0) upRows.push(['Port mobile number', s.portMobile + ' × $50.00 (eligibility varies by carrier)', '$' + upPortMobile.toFixed(2)]);
     if (s.port1300 > 0)   upRows.push(['Port 1300/1800 number', s.port1300 + ' × $100.00', '$' + upPort1300.toFixed(2)]);
     if (s.setup === 'managed' && s.users > 0) {
       var setupDesc = s.users <= 3 ? 'Click2Call setup (up to 3 users)' : 'Click2Call setup (' + s.users + ' users)';
