@@ -557,7 +557,7 @@
 </label>
 <label class="flex items-center gap-2 cursor-pointer">
 <input class="text-green-600 focus:ring-green-500" id="calc-setup-managed" name="calc-setup" type="radio" value="managed"/>
-<span class="text-sm text-gray-700">Click2Call setup</span>
+<span class="text-sm text-gray-700">Managed Setup <span class="text-gray-500 font-normal">(from $300 + GST)</span></span>
 </label>
 </div>
 <p class="text-xs text-gray-400 mt-2" id="setup-cost-note" style="display:none;"></p>
@@ -586,9 +586,9 @@
 </div>
 <!-- ── SMART RECOMMENDATION BANNER ── -->
 <div id="smart-rec" style="display:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:0.5rem;padding:1rem 1.25rem;margin-bottom:1.5rem;">
-<p id="smart-rec-msg" style="font-size:0.85rem;color:#1e40af;font-weight:600;margin:0 0 0.5rem 0;">This setup is getting more advanced — most customers choose Click2Call setup for this.</p>
+<p id="smart-rec-msg" style="font-size:0.85rem;color:#1e40af;font-weight:600;margin:0 0 0.5rem 0;">This setup is getting more advanced — most customers choose Managed Setup for this.</p>
 <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
-<button onclick="document.getElementById('calc-setup-managed').checked=true;updateCalc();" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:#1d4ed8;color:#fff;border:none;border-radius:0.375rem;cursor:pointer;font-weight:600;">Switch to Click2Call setup</button>
+<button onclick="document.getElementById('calc-setup-managed').checked=true;updateCalc();" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:#1d4ed8;color:#fff;border:none;border-radius:0.375rem;cursor:pointer;font-weight:600;">Switch to Managed Setup</button>
 <button onclick="document.getElementById('smart-rec').style.display='none';" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:transparent;color:#1e40af;border:1px solid #93c5fd;border-radius:0.375rem;cursor:pointer;">Keep self-setup</button>
 </div>
 </div>
@@ -650,7 +650,7 @@
 <span id="s-port-1300-cost">$0.00</span>
 </div>
 <div class="hidden-row" id="sum-setup-row" style="display:flex;justify-content:space-between;color:#4b5563;">
-<span id="s-setup-label">Click2Call setup</span>
+<span id="s-setup-label">Managed Setup</span>
 <span id="s-setup-cost">$0.00</span>
 </div>
 <div class="hidden-row" id="sum-desk-row" style="display:flex;justify-content:space-between;color:#4b5563;">
@@ -835,7 +835,7 @@ function updateCalc() {
   if (port1300 > 0) { document.getElementById('s-port-1300').textContent = port1300; document.getElementById('s-port-1300-cost').textContent = fmt(upPort1300); }
   showRow('sum-setup-row', setup === 'managed' && users > 0);
   if (setup === 'managed' && users > 0) {
-    var setupLabel = users <= 3 ? 'Click2Call setup (up to 3 users)' : 'Click2Call setup (' + users + ' users)';
+    var setupLabel = users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + users + ' users)';
     document.getElementById('s-setup-label').textContent = setupLabel;
     document.getElementById('s-setup-cost').textContent = fmt(upSetup);
     var noteEl = document.getElementById('setup-cost-note');
@@ -867,7 +867,7 @@ function updateCalc() {
   var recEl = document.getElementById('smart-rec');
   if (showRec && setup === 'self') {
     recEl.style.display = 'block';
-    var msg = 'This setup is getting more advanced — most customers choose Click2Call setup for this.';
+    var msg = 'This setup is getting more advanced — most customers choose Managed Setup for this.';
     if (desk > 0 || cordless > 0) msg = 'We can pre-configure your devices before delivery and handle the full setup for you.';
     else if (port1300 > 0) msg = 'We can manage 1300/1800 porting and routing for you.';
     else if (users >= 5) msg = 'Recommended for teams — we can handle the full setup for you.';
@@ -1071,7 +1071,7 @@ function generateQuote() {
     if (s.portLocal > 0)  upRows.push(['Port local number', s.portLocal + ' × $50.00', '$' + upPortLocal.toFixed(2)]);
     if (s.port1300 > 0)   upRows.push(['Port 1300/1800 number', s.port1300 + ' × $100.00', '$' + upPort1300.toFixed(2)]);
     if (s.setup === 'managed' && s.users > 0) {
-      var setupDesc = s.users <= 3 ? 'Click2Call setup (up to 3 users)' : 'Click2Call setup (' + s.users + ' users)';
+      var setupDesc = s.users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + s.users + ' users)';
       upRows.push([setupDesc, s.users <= 3 ? 'Flat rate' : 'Base $300 + ' + (s.users-3) + ' extra users', '$' + upSetup.toFixed(2)]);
     }
     if (s.desk > 0)      upRows.push(['Yealink T43U desk phones', s.desk + ' × $450.00 (incl. config & postage)', '$' + upDesk.toFixed(2)]);
@@ -1174,7 +1174,7 @@ function generateQuote() {
     'Additional 1800 Numbers': s.n1800,
     'Port Local Numbers': s.portLocal,
     'Port 1300/1800 Numbers': s.port1300,
-    'Setup Type': s.setup === 'managed' ? 'Click2Call Setup' : 'Self-setup',
+    'Setup Type': s.setup === 'managed' ? 'Managed Setup' : 'Self-setup',
     'Desk Phones (T43U)': s.desk,
     'Cordless Phones (W76P)': s.cordless,
     'Softphones': s.softphone,
