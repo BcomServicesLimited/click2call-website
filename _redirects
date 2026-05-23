@@ -6,14 +6,34 @@
 https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 
 # --- Old Gold Coast pages ---
-/cloud-pbx-gold-coast          /voip-gold-coast  301
-/cloud-pbx-gold-coast.html     /voip-gold-coast  301
-/voice-calling-gold-coast      /voip-gold-coast  301
-/voice-calling-gold-coast.html /voip-gold-coast  301
-/phone-numbers-gold-coast.html /voip-gold-coast  301
+/cloud-pbx-gold-coast          /voip-australia/#gold-coast  301
+/cloud-pbx-gold-coast.html     /voip-australia/#gold-coast  301
+/voice-calling-gold-coast      /voip-australia/#gold-coast  301
+/voice-calling-gold-coast.html /voip-australia/#gold-coast  301
+/phone-numbers-gold-coast.html /voip-australia/#gold-coast  301
 /ai-voice-tools-gold-coast     /ai-voice-tools   301
 /ai-voice-tools-gold-coast.html /ai-voice-tools  301
 /sip-trunks-gold-coast.html    /sip-trunks       301
+
+# --- Consolidated regional city pages → /voip-australia/ with anchor ---
+# (The 8 thin regional city pages were merged into /voip-australia/
+#  as anchored sections. Sydney/Melbourne/Brisbane/Perth remain standalone.)
+/voip-adelaide                 /voip-australia/#adelaide       301
+/voip-adelaide/                /voip-australia/#adelaide       301
+/voip-canberra                 /voip-australia/#canberra       301
+/voip-canberra/                /voip-australia/#canberra       301
+/voip-hobart                   /voip-australia/#hobart         301
+/voip-hobart/                  /voip-australia/#hobart         301
+/voip-darwin                   /voip-australia/#darwin         301
+/voip-darwin/                  /voip-australia/#darwin         301
+/voip-newcastle                /voip-australia/#newcastle      301
+/voip-newcastle/               /voip-australia/#newcastle      301
+/voip-wollongong               /voip-australia/#wollongong     301
+/voip-wollongong/              /voip-australia/#wollongong     301
+/voip-gold-coast               /voip-australia/#gold-coast     301
+/voip-gold-coast/              /voip-australia/#gold-coast     301
+/voip-sunshine-coast           /voip-australia/#sunshine-coast 301
+/voip-sunshine-coast/          /voip-australia/#sunshine-coast 301
 
 # --- Old .html URLs → clean URLs ---
 /pricing.html                  /pricing          301
@@ -28,15 +48,15 @@ https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 /voip-sydney.html              /voip-sydney      301
 /voip-melbourne.html           /voip-melbourne   301
 /voip-brisbane.html            /voip-brisbane    301
-/voip-gold-coast.html          /voip-gold-coast  301
+/voip-gold-coast.html          /voip-australia/#gold-coast     301
 /voip-perth.html               /voip-perth       301
-/voip-adelaide.html            /voip-adelaide    301
-/voip-canberra.html            /voip-canberra    301
-/voip-newcastle.html           /voip-newcastle   301
-/voip-hobart.html              /voip-hobart      301
-/voip-darwin.html              /voip-darwin      301
-/voip-sunshine-coast.html      /voip-sunshine-coast  301
-/voip-wollongong.html          /voip-wollongong  301
+/voip-adelaide.html            /voip-australia/#adelaide       301
+/voip-canberra.html            /voip-australia/#canberra       301
+/voip-newcastle.html           /voip-australia/#newcastle      301
+/voip-hobart.html              /voip-australia/#hobart         301
+/voip-darwin.html              /voip-australia/#darwin         301
+/voip-sunshine-coast.html      /voip-australia/#sunshine-coast 301
+/voip-wollongong.html          /voip-australia/#wollongong     301
 /faq.html                      /faq              301
 /about.html                    /about            301
 /contact.html                  /contact          301

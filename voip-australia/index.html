@@ -534,11 +534,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </nav>
 <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">VoIP Phone Systems for Australian Businesses</h1>
 <p class="mt-6 max-w-3xl text-xl text-gray-300">VoIP (Voice over Internet Protocol) is the modern way Australian businesses make and receive phone calls — using the internet instead of old copper lines. Thousands of businesses across Australia are switching to VoIP to cut costs, gain powerful features, and support remote teams. Click2Call makes it simple, reliable, and AI-enhanced.</p>
-<div class="mt-10 flex flex-wrap gap-4">
-<a class="bg-brand-green-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-green-light transition-colors" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
-            Get Started
-          </a>
-<a class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-charcoal transition-colors" href="/pricing">View Pricing</a>
+<div class="mt-10 flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl text-white shadow-lg transition-all duration-150 hover:scale-105" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" style="background-color: #3B9C49;" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
+          Start Free Trial
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl border-2 border-white/50 text-white hover:bg-white/10 transition-all duration-150" href="/pricing/" onclick="gtag('event', 'view_pricing_click', {'event_category': 'CTA', 'event_label': 'See Pricing'});">
+          See Pricing
+        </a>
 </div>
 </div>
 </section>
@@ -575,25 +578,107 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 <!-- SECTION 4: COVERAGE -->
 <section class="py-16 bg-white rounded-xl shadow-sm px-8">
-<h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">Is VoIP Available Everywhere in Australia?</h2>
-<p class="mt-4 text-gray-600 text-lg">Yes. Click2Call's VoIP services are available to any business in Australia with a reliable internet connection. We serve businesses in every major city and region.</p>
-<div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-sydney">Sydney <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-melbourne">Melbourne <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-brisbane">Brisbane <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-perth">Perth <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-adelaide">Adelaide <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-canberra">Canberra <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-gold-coast">Gold Coast <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-sunshine-coast">Sunshine Coast <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-newcastle">Newcastle <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-wollongong">Wollongong <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-hobart">Hobart <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
-<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-darwin">Darwin <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
+<h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">VoIP Across Australia</h2>
+<p class="mt-4 text-gray-600 text-lg">Click2Call's Cloud PBX is available to any Australian business with a reliable internet connection. Major-city guides cover Sydney, Melbourne, Brisbane and Perth in depth; the regional sections below cover the rest of our coverage.</p>
+
+<!-- Major-city guides (full pages) -->
+<h3 class="mt-10 text-xl font-bold text-brand-charcoal">Major-city guides</h3>
+<div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
+<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-sydney/">Sydney <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
+<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-melbourne/">Melbourne <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
+<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-brisbane/">Brisbane <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
+<a class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-center font-semibold text-brand-green-dark hover:bg-emerald-100 hover:shadow-sm transition-all duration-150" href="/voip-perth/">Perth <span class="block text-xs font-normal text-emerald-600 mt-0.5">View local guide →</span></a>
 </div>
+
+<!-- Regional coverage (anchored sections below) -->
+<h3 class="mt-10 text-xl font-bold text-brand-charcoal">Regional coverage</h3>
+<div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#adelaide">Adelaide</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#canberra">Canberra</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#gold-coast">Gold Coast</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#sunshine-coast">Sunshine Coast</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#newcastle">Newcastle</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#wollongong">Wollongong</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#hobart">Hobart</a>
+<a class="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-brand-green-dark hover:border-gray-300 transition-all duration-150" href="#darwin">Darwin</a>
+</div>
+
 <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-4">
 <h3 class="font-semibold text-blue-900">Internet Requirements for VoIP</h3>
 <p class="mt-2 text-blue-800 text-sm">VoIP requires approximately 100kbps per concurrent call. A standard NBN 25 or higher connection is more than sufficient for most businesses. The key factor is not speed but <strong>stability and low latency</strong>. We recommend a business-grade broadband plan with a quality of service (QoS) configuration to prioritise voice traffic.</p>
+</div>
+
+<!-- ===== Regional city sections (anchor targets) ===== -->
+<div id="adelaide" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP in Adelaide</h3>
+<span class="text-sm text-gray-500">Area code 08 · South Australia</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">Adelaide and the wider South Australian market spans defence contractors in Mawson Lakes, professional services through the CBD, boutique wineries across the Adelaide Hills, and a growing tech and consulting scene in the inner suburbs. Click2Call's Cloud PBX gives these businesses a local 08 number that follows the team — staff in North Adelaide, the western suburbs, or working from home all answer the same business line from whatever device suits them.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">A consulting firm or trades business in Adelaide can sign up online, port an existing number, and have a working business phone system live the same day — no installer, no copper line, no waiting weeks. AI call transcription captures every conversation for follow-up, which matters in contracting and wine sales where call detail is part of the workflow.</p>
+</div>
+
+<div id="canberra" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP in Canberra</h3>
+<span class="text-sm text-gray-500">Area code 02 · ACT</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">Canberra's business environment is shaped by government and public-sector contracting, with IT consultancies clustered in Barton, professional services through Civic, and trades businesses in Fyshwick and Mitchell. ACT businesses often work across hybrid teams — staff in Gungahlin or Tuggeranong stay connected to the main office number via the Click2Call mobile app, with calls following them seamlessly between desk and mobile.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">Setup is straightforward: a small contracting firm in Deakin can have a local 02 number, an auto-attendant, and calls routing to the team's phones within an hour. Every call is recorded and transcribed, giving you a paper trail for tender enquiries, government RFQs, and follow-ups without the need for separate note-taking.</p>
+</div>
+
+<div id="gold-coast" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP on the Gold Coast</h3>
+<span class="text-sm text-gray-500">Area code 07 · Queensland</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">The Gold Coast's business landscape spans hospitality and tourism through Surfers Paradise and Broadbeach, professional services in Robina and Varsity Lakes, and a fast-growing population of small businesses in Coomera and the northern corridor as the region expands. The mix of seasonal trade, distributed teams, and high call volumes makes a flexible Cloud PBX a natural fit.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">A Gold Coast business can sign up online, get a local 07 number, and have a full business phone system running the same day. Calls follow the team between desk, mobile, and laptop — useful for property managers, hospitality operators, and trades businesses that aren't tied to a single office. AI transcription captures every booking, lead, and quote conversation.</p>
+</div>
+
+<div id="sunshine-coast" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP on the Sunshine Coast</h3>
+<span class="text-sm text-gray-500">Area code 07 · Queensland</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">The Sunshine Coast supports a distinctive mix of small businesses — hospitality and tourism in Noosa, professional services in Maroochydore and Mooloolaba, trades and property businesses spread across Caloundra, Buderim, and the hinterland. The lifestyle-led market means many operators work from home or split between sites, and a phone system needs to support that rather than tie them to a desk.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">Click2Call gives Sunshine Coast businesses a local 07 number that works on any device, with AI call transcription on every call. A new café, accountant, or trades business can be set up online within an hour — no installer, no copper line, no contract. Particularly suited to solo operators and small teams who want the polish of a professional business phone without the overhead of running one.</p>
+</div>
+
+<div id="newcastle" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP in Newcastle</h3>
+<span class="text-sm text-gray-500">Area code 02 · NSW</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">Newcastle's business mix runs from the established industrial corridor through Mayfield and Wickham, to professional services along the Honeysuckle waterfront, to the growing tech and creative scene through Wickham and the inner suburbs. The city's transformation from steel-town to diversified economy means a wide spread of business types — all needing a phone system that scales without lock-in.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">A Newcastle business can sign up online, get a local 02 number, and have a complete Cloud PBX running the same day. AI transcription on every call is genuinely useful here — manufacturing and engineering businesses can keep accurate records of supplier and customer conversations without a separate call-logging system, and professional services firms get an automatic paper trail.</p>
+</div>
+
+<div id="wollongong" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP in Wollongong</h3>
+<span class="text-sm text-gray-500">Area code 02 · NSW Illawarra</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">Wollongong has a distinctive business mix — research-driven businesses linked to the University of Wollongong, professional services through Crown Street and the CBD, manufacturing along the industrial corridor, and a growing remote-and-distributed workforce that commutes between the Illawarra and Sydney. A Cloud PBX with a local 02 number lets a Wollongong business present a professional local presence while staff work from wherever suits.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">Setup is online: a Wollongong startup, tech consultancy, or trades business can have a working phone system in an hour, with AI call transcription and recording on every call. Particularly valuable for businesses that work across Wollongong and Sydney offices on the same business number.</p>
+</div>
+
+<div id="hobart" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP in Hobart</h3>
+<span class="text-sm text-gray-500">Area code 03 · Tasmania</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">Tasmanian businesses operate across a tighter geography but with the same need for a professional phone presence — tourism operators around Salamanca and the waterfront, small accounting and legal firms through the CBD, and trades and hospitality businesses extending out to Glenorchy, Sandy Bay, and the Eastern Shore. Click2Call gives Hobart businesses a local 03 number that works on a mobile, laptop, or desk phone.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">The setup is online and self-service: a Hobart café, B&amp;B, or consultancy can be live within an hour, with AI transcription and call recording included so every booking enquiry or quote conversation is captured automatically. Particularly useful for tourism operators handling seasonal call volumes.</p>
+</div>
+
+<div id="darwin" class="scroll-mt-24 border-t border-gray-200 pt-12 mt-12">
+<div class="flex items-baseline flex-wrap gap-x-3">
+<h3 class="text-2xl font-bold text-gray-900">VoIP in Darwin</h3>
+<span class="text-sm text-gray-500">Area code 08 · Northern Territory</span>
+</div>
+<p class="mt-4 text-gray-700 leading-relaxed">Darwin sits at the centre of Northern Australia's business activity, from logistics and freight operations in East Arm to tourism in the CBD and Cullen Bay, and trades businesses through Winnellie. Local conditions — distance from southern suppliers, seasonal weather, fly-in-fly-out workforces — make a reliable, mobile-friendly phone system essential rather than nice-to-have.</p>
+<p class="mt-4 text-gray-700 leading-relaxed">Click2Call's Cloud PBX gives Darwin businesses a local 08 number that works on any device, with AI call transcription on every call so nothing is lost when a sales lead calls in while you're at a job site. Setup is online and self-service — no need for a technician site visit, which matters in a market where on-site appointments can be expensive and slow to schedule.</p>
 </div>
 </section>
 <!-- SECTION 5: WHY SWITCH -->
@@ -866,7 +951,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-sydney">Sydney</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-melbourne">Melbourne</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-brisbane">Brisbane</a></li>
-<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-gold-coast">Gold Coast</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-australia/#gold-coast">Gold Coast</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-perth">Perth</a></li>
 </ul>
 </div>
