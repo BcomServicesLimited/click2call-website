@@ -1,0 +1,10 @@
+/* Tailwind source file — fed into the Tailwind CLI build.
+ * Build command (run before any commit that adds/changes Tailwind classes):
+ *   npx tailwindcss -i assets/css/tailwind.src.css -o assets/css/tailwind.css --minify
+ *
+ * Output: assets/css/tailwind.css (committed to the repo and loaded on every page).
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

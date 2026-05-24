@@ -9,10 +9,10 @@ Thumbs.db
 *.swp
 *.swo
 
-# Build tooling (not needed at runtime)
+# Build tooling — node_modules not committed; build inputs/outputs ARE committed
 node_modules/
+.npm-cache/
 input.css
-tailwind.config.js
 
 # Scripts (shell/batch only — Python utility scripts are committed)
 *.sh
