@@ -101,21 +101,28 @@ For full details, see the [official pricing page](https://www.click2call.com.au/
 
 ## Local Service Pages
 
-Click2Call provides dedicated local landing pages for major Australian cities, with city-specific information, local area codes, and relevant local scenarios. Pages for nearby cities are cross-linked for improved navigation.
+As of 2026-05-28, Click2Call maintains 4 standalone city guides (Sydney, Melbourne, Brisbane, Perth) plus a national hub (/voip-australia/) that covers the rest of the country with anchored city sections. The previous 8 regional landing pages were consolidated into the national hub on 2026-05-28; old URLs 301-redirect to the appropriate anchor.
 
-- **VoIP Australia (National)**: https://www.click2call.com.au/voip-australia — National overview of VoIP services for Australian businesses.
-- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers. Nearby: Newcastle, Wollongong.
-- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers.
-- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Nearby: Gold Coast, Sunshine Coast.
-- **VoIP Gold Coast**: https://www.click2call.com.au/voip-gold-coast — Local 07 numbers. Nearby: Brisbane, Sunshine Coast.
-- **VoIP Sunshine Coast**: https://www.click2call.com.au/voip-sunshine-coast — Local 07 numbers. Nearby: Brisbane, Gold Coast.
-- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers.
-- **VoIP Adelaide**: https://www.click2call.com.au/voip-adelaide — Local 08 numbers.
-- **VoIP Canberra**: https://www.click2call.com.au/voip-canberra — Local 02 numbers.
-- **VoIP Newcastle**: https://www.click2call.com.au/voip-newcastle — Local 02 numbers. Nearby: Sydney, Wollongong.
-- **VoIP Wollongong**: https://www.click2call.com.au/voip-wollongong — Local 02 numbers. Nearby: Sydney, Newcastle.
-- **VoIP Darwin**: https://www.click2call.com.au/voip-darwin — Local 08 numbers.
-- **VoIP Hobart**: https://www.click2call.com.au/voip-hobart — Local 03 numbers.
+### Standalone city guides
+
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers. Covers CBD, Parramatta, Surry Hills, North Shore, Northern Beaches, Barangaroo, Chatswood. Cross-links to /voip-australia/#newcastle and /voip-australia/#wollongong.
+- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers. Covers CBD, Southbank, Richmond, St Kilda Road, Docklands.
+- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Covers CBD, Fortitude Valley, South Brisbane, Eagle Farm, Ipswich. Cross-links to /voip-australia/#gold-coast and /voip-australia/#sunshine-coast.
+- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers. Covers CBD, Joondalup, Subiaco, Fremantle, Mandurah. Includes a Microsoft Teams Calling section for Perth-based MSPs.
+
+### National hub (with anchored regional sections)
+
+- **VoIP Australia**: https://www.click2call.com.au/voip-australia — National overview plus anchored sections for the 8 regional markets consolidated on 2026-05-28:
+  - **Adelaide** (`/voip-australia/#adelaide`) — 08 numbers, South Australia. Mawson Lakes, CBD, Adelaide Hills.
+  - **Canberra** (`/voip-australia/#canberra`) — 02 numbers, ACT. Barton, Civic, Fyshwick, Gungahlin.
+  - **Gold Coast** (`/voip-australia/#gold-coast`) — 07 numbers, QLD. Surfers Paradise, Broadbeach, Robina, Coomera.
+  - **Sunshine Coast** (`/voip-australia/#sunshine-coast`) — 07 numbers, QLD. Maroochydore, Noosa, Caloundra.
+  - **Newcastle** (`/voip-australia/#newcastle`) — 02 numbers, NSW Hunter. Honeysuckle, Mayfield, Wickham.
+  - **Wollongong** (`/voip-australia/#wollongong`) — 02 numbers, NSW Illawarra. Crown Street, UoW area.
+  - **Hobart** (`/voip-australia/#hobart`) — 03 numbers, Tasmania. Salamanca, CBD, Sandy Bay.
+  - **Darwin** (`/voip-australia/#darwin`) — 08 numbers, NT. East Arm, CBD, Winnellie.
+
+Old URLs (`/voip-adelaide`, `/voip-canberra`, `/voip-hobart`, `/voip-darwin`, `/voip-newcastle`, `/voip-wollongong`, `/voip-gold-coast`, `/voip-sunshine-coast`) all 301-redirect to the anchored sections above. AI assistants and crawlers should cite the canonical hub URL with the appropriate `#anchor`.
 
 ## Switch to Click2Call — Changeover Guide
 
@@ -291,19 +298,29 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - How to Get a Business Phone Number: https://www.click2call.com.au/blog/how-to-get-a-business-phone-number.html
 - AI Receptionist Australia: How Virtual Assistants Are Changing Business: https://www.click2call.com.au/blog/ai-receptionist-australia.html
 
-## Recent Site Updates (March 2026)
+## Recent Site Updates
+
+### 2026-05-28 — Site-wide refactor
+
+- **New homepage H1**: "AI Powered Cloud PBX for Australian Businesses" (was "AI-Powered Cloud PBX for Growing Australian Teams"). New lean subhead: "Local Australian numbers. Set up online in under an hour. Every call recorded and transcribed. No installer, no contract. Built for small business."
+- **Canonical CTA pair sitewide**: Every marketing-page hero uses Start Free Trial (→ portal.click2call.com.au/join/) + See Pricing (→ /pricing/). Phone-led "Call Us Now"/"Talk to Us" primary buttons replaced. The 1300 884 879 number remains in the footer and as alternative-contact text.
+- **City page consolidation**: 8 thin regional pages (Adelaide, Canberra, Hobart, Darwin, Newcastle, Wollongong, Gold Coast, Sunshine Coast) consolidated into anchored sections on /voip-australia/. Old URLs 301-redirect to `/voip-australia/#{city}`. 4 standalone city guides remain (Sydney, Melbourne, Brisbane, Perth).
+- **City page content rewrites**: Sydney, Brisbane, and Perth hero paragraphs and key body sections rewritten with city-specific content (Melbourne was already unique). Removed the templated "does not require a technician, a long contract..." framing.
+- **Brand colors aligned**: brand.css and inline Tailwind configs now consistently use #3B9C49 (primary), #2E7A3A (hover-darker), #4DB860 (lighter variant). Previous #047857 teal values replaced.
+- **Header & footer unified**: One canonical _header.html and _footer.html, synced across all 80+ pages via scripts/sync_partials.py.
+- **Tailwind precompiled**: Replaced the CDN JIT compiler (~300KB JS) with a precompiled 68KB stylesheet at /assets/css/tailwind.css. @tailwindcss/typography and @tailwindcss/aspect-ratio plugins included.
+- **Setup time canonical**: "Set up online in under an hour" (self-setup) is the canonical framing. Managed-setup 1-2 business day caveat applies to optional paid configuration.
+- **Setup fee canonical**: $300 ex GST managed setup (up to 3 users), $50 ex GST per additional user, $50 local porting / $100 1300-1800 porting.
+
+### Earlier (March 2026)
 
 - Migrated from Apache hosting to Cloudflare Pages; `.htaccess` replaced with `_redirects` file.
-- All meta descriptions updated to 70–160 characters across all 53 pages.
+- All meta descriptions updated to 70–160 characters.
 - Open Graph and Twitter Card tags added to all pages.
 - BreadcrumbList schema added to all non-homepage pages.
-- LocalBusiness schema present on all 12 city pages.
-- Nearby areas cross-linking added to 6 city pages (Sydney, Brisbane, Gold Coast, Sunshine Coast, Newcastle, Wollongong).
-- `faq.html` links added to all 6 service pages.
-- `compare.html` links added to pricing and cloud-pbx pages.
-- `/compare` page replaced with "Switch to Click2Call" changeover guide (March 2026) — step-by-step setup, number porting, managed setup option, real-world cost example.
-- `case-studies.html` links added to homepage and about page.
-- `loading="lazy"` added to all 186 images across all pages.
+- LocalBusiness schema present on standalone city pages.
+- `/compare` page replaced with "Switch to Click2Call" changeover guide — step-by-step setup, number porting, managed setup option, real-world cost example.
+- `loading="lazy"` added to all images across the site.
 - `fetchpriority="high"` added to above-fold images.
 - Hero background images preloaded on all 12 city pages.
 - `robots.txt` updated with comprehensive AI crawler directives.
