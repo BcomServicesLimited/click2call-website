@@ -13,6 +13,7 @@ Disallow: /assets/js/
 Disallow: /blog/article-template.html
 Disallow: /case-studies/template.html
 Disallow: /email-signature-support.html
+Disallow: /help/primary-knowledge-base.html
 
 # ── Google ─────────────────────────────────────────────────────
 User-agent: Googlebot
