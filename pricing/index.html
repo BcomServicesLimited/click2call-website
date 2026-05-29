@@ -227,7 +227,14 @@
 <!-- jsPDF for quote generation -->
 <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
-</link></head>
+</link>
+<style>
+/* Quote-builder calculator: rows hidden by default; updateCalc() reveals
+   them inline when their value is > 0. Keeps the summary panel tidy on
+   page load instead of showing every $0.00 line item. */
+.hidden-row { display: none; }
+</style>
+</head>
 <body class="bg-brand-gray-50">
 
 <!-- ===================== HEADER ===================== -->
@@ -634,15 +641,15 @@
 <span>Cloud PBX Users (<span id="s-users">1</span> × $25.00)</span>
 <span id="s-users-cost">$25.00</span>
 </div>
-<div class="hidden-row" id="sum-local-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-local-row" style="justify-content:space-between;color:#4b5563;">
 <span>Local numbers (<span id="s-local">0</span> × $10.00)</span>
 <span id="s-local-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-1300-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-1300-row" style="justify-content:space-between;color:#4b5563;">
 <span>1300 numbers (<span id="s-1300">0</span> × $10.00)</span>
 <span id="s-1300-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-1800-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-1800-row" style="justify-content:space-between;color:#4b5563;">
 <span>1800 numbers (<span id="s-1800">0</span> × $10.00)</span>
 <span id="s-1800-cost">$0.00</span>
 </div>
@@ -670,42 +677,42 @@
 <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm" id="upfront-card">
 <p style="font-size:0.65rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.75rem 0;">One-time upfront</p>
 <div style="font-size:0.82rem;display:flex;flex-direction:column;gap:0.35rem;">
-<div class="hidden-row" id="sum-port-local-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-port-local-row" style="justify-content:space-between;color:#4b5563;">
 <span>Port local numbers (<span id="s-port-local">0</span> × $50.00)</span>
 <span id="s-port-local-cost">$0.00</span>
 </div>
 
-<div class="hidden-row" id="sum-port-1300-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-port-1300-row" style="justify-content:space-between;color:#4b5563;">
 <span>Port 1300/1800 (<span id="s-port-1300">0</span> × $100.00)</span>
 <span id="s-port-1300-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-setup-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-setup-row" style="justify-content:space-between;color:#4b5563;">
 <span id="s-setup-label">Managed Setup</span>
 <span id="s-setup-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-desk-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-desk-row" style="justify-content:space-between;color:#4b5563;">
 <span>Yealink T43U (<span id="s-desk">0</span> × $450.00)</span>
 <span id="s-desk-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-cordless-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-cordless-row" style="justify-content:space-between;color:#4b5563;">
 <span>Yealink W76P (<span id="s-cordless">0</span> × $400.00)</span>
 <span id="s-cordless-cost">$0.00</span>
 </div>
-<div class="hidden-row" id="sum-softphone-row" style="display:flex;justify-content:space-between;color:#4b5563;">
+<div class="hidden-row" id="sum-softphone-row" style="justify-content:space-between;color:#4b5563;">
 <span>Softphones (<span id="s-softphone">0</span> users)</span>
 <span>Free</span>
 </div>
 <div id="upfront-zero-msg" style="color:#9ca3af;font-size:0.8rem;font-style:italic;">No upfront costs selected</div>
 <div class="hidden-row" id="upfront-divider" style="border-top:1px solid #e5e7eb;margin:0.35rem 0;"></div>
-<div class="hidden-row" id="upfront-sub-row" style="display:flex;justify-content:space-between;font-weight:600;color:#111827;">
+<div class="hidden-row" id="upfront-sub-row" style="justify-content:space-between;font-weight:600;color:#111827;">
 <span>Subtotal ex GST</span>
 <span id="s-up-sub">$0.00</span>
 </div>
-<div class="hidden-row" id="upfront-gst-row" style="display:flex;justify-content:space-between;color:#6b7280;">
+<div class="hidden-row" id="upfront-gst-row" style="justify-content:space-between;color:#6b7280;">
 <span>GST (10%)</span>
 <span id="s-up-gst">$0.00</span>
 </div>
-<div class="hidden-row" id="upfront-total-row" style="display:flex;justify-content:space-between;font-weight:800;font-size:1rem;color:#111827;border-top:1px solid #e5e7eb;padding-top:0.4rem;margin-top:0.2rem;">
+<div class="hidden-row" id="upfront-total-row" style="justify-content:space-between;font-weight:800;font-size:1rem;color:#111827;border-top:1px solid #e5e7eb;padding-top:0.4rem;margin-top:0.2rem;">
 <span>Upfront total inc GST</span>
 <span id="s-up-total">$0.00</span>
 </div>
