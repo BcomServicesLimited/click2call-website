@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tailwindcss -i assets/css/tailwind.src.css -o assets/css/tailwind.css --minify",
+    "watch": "tailwindcss -i assets/css/tailwind.src.css -o assets/css/tailwind.css --watch",
+    "sync": "python3 scripts/sync_partials.py",
+    "prepush": "npm run build && npm run sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -36,8 +36,10 @@ SKIP_BASENAMES = {
     "email-signature-support.html",
     "primary-knowledge-base.html",
 }
-# Source-of-truth page — extracted partials came from here, leave it alone
-SKIP_RELPATHS = {"index.html"}
+# Source-of-truth page — extracted partials came from here, leave it alone.
+# api/context/index.html — intentionally raw, no header/footer (machine-readable
+# developer reference for AI builders). See the comment at the top of that file.
+SKIP_RELPATHS = {"index.html", "api/context/index.html"}
 
 
 def load_partial(path):
