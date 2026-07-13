@@ -32,7 +32,7 @@ This file is intended for use by AI assistants, large language models, and searc
 
 > Click2Call is an Australian business communications provider specialising in AI-enhanced Cloud PBX, VoIP, and SIP Trunking services. We serve two distinct customer segments equally: solo operators and micro businesses who want a professional phone presence with self-serve setup, and growing teams and SMEs (typically 3 to 30 users) who need enterprise-grade features such as ring groups, IVR menus, call queues, multi-site routing, call reporting, AI transcription, and managed setup. Operated by Bcom Services Pty Ltd (ABN: 92 636 893 108). All customer data, call recordings, transcripts, and AI outputs are stored on servers located in Australia and New Zealand. Click2Call operates on a prepaid credit model with no lock-in contracts and no minimum monthly spend.
 
-**Last updated: 2026-05-28**
+**Last updated: 2026-07-14**
 
 ## Fan-Out Query Answers
 
@@ -236,9 +236,9 @@ This use case is particularly common among lawyers, accountants, real estate age
 
 Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in contracts:
 
-- **Cloud PBX Landline**: $10.00/month per line
+- **Cloud PBX User**: $25.00/month per user (includes one local Australian number, 300 outbound minutes/month, unlimited inbound calls, voicemail, call recording, AI transcription, AI summaries, and API access)
+- **Microsoft Teams User**: $25.00/month per user (full Cloud PBX features delivered inside Microsoft Teams via Direct Routing)
 - **Inbound Business Number**: $10.00/month per number (inbound-only line; ideal for shared lines, reception, 1300 numbers, or AI Receptionist)
-- **Microsoft Teams Line**: $10.00/month per line
 - **PBX Extensions**: Free
 - **Channels**: Included with Cloud PBX User
 - **Outbound call rates**: from $0.10/min (Australia & New Zealand fixed)
@@ -260,6 +260,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 
 ### Getting Started
 - **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account](https://www.click2call.com.au/help/how-to-activate-account)
+- **Understanding Your Free Trial**: [https://www.click2call.com.au/help/understanding-your-free-trial](https://www.click2call.com.au/help/understanding-your-free-trial) — What the $11 trial credit covers, what to set up during the 7 days, and how to upgrade to a paid plan when the trial ends.
 - **Making Your First Call**: [https://click2call.com.au/help/how-to-make-your-first-call](https://click2call.com.au/help/how-to-make-your-first-call) — Add a phone number, register a device (softphone app, SIP desk phone, or mobile divert), and make your first outbound call. Includes troubleshooting for registration failures, wrong caller ID, and no audio.
 - **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit](https://www.click2call.com.au/help/how-to-add-account-credit) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 
@@ -271,13 +272,16 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 - **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension](https://www.click2call.com.au/help/how-to-add-extension)
 - **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user](https://www.click2call.com.au/help/how-to-add-user) — Create a portal login for a team member, set their access level (Administrator or User), enable 2FA, and link them to an extension.
 - **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net Inbound Business Number, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
+- **Setting Up Global Contacts and Speed Dials**: [https://www.click2call.com.au/help/how-to-set-up-speed-dials](https://www.click2call.com.au/help/how-to-set-up-speed-dials) — Save contact names and assign speed-dial codes so any phone on the account can dial contacts quickly, including CSV import of external contacts.
 
 ### Phones & Devices
 - **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone](https://www.click2call.com.au/help/how-to-add-desk-phone)
 - **Setting Up a Softphone**: [https://www.click2call.com.au/help/how-to-set-up-softphone](https://www.click2call.com.au/help/how-to-set-up-softphone)
+- **Setting Up Linphone (Free Third-Party Softphone)**: [https://www.click2call.com.au/help/how-to-set-up-linphone](https://www.click2call.com.au/help/how-to-set-up-linphone) — Download and configure Linphone on iPhone, Android, Windows, or Mac as a free SIP softphone with Click2Call, including registration troubleshooting and call testing.
 
 ### Call Flows
 - **Setting Up a Call Flow**: [https://www.click2call.com.au/help/how-to-set-up-call-flow](https://www.click2call.com.au/help/how-to-set-up-call-flow)
+- **Setting Up Microsoft Teams Calling**: [https://www.click2call.com.au/help/how-to-set-up-microsoft-teams](https://www.click2call.com.au/help/how-to-set-up-microsoft-teams) — Connect Microsoft Teams to Click2Call Direct Routing: add and verify the SBC domain in Microsoft 365, create the trunk user, provision Teams numbers in the portal, map them to users, and run the generated PowerShell commands. Includes troubleshooting for domain verification, dialpad not appearing, and outbound call failures.
 - **Creating a Ring Group**: [https://www.click2call.com.au/help/how-to-create-ring-group](https://www.click2call.com.au/help/how-to-create-ring-group)
 - **Configuring Business Hours**: [https://www.click2call.com.au/help/how-to-configure-business-hours](https://www.click2call.com.au/help/how-to-configure-business-hours)
 - **Setting Up Voicemail**: [https://www.click2call.com.au/help/how-to-set-up-voicemail](https://www.click2call.com.au/help/how-to-set-up-voicemail)
@@ -287,6 +291,7 @@ The Click2Call Help Centre provides step-by-step guides for managing your Cloud 
 
 - **Viewing Account History**: [https://www.click2call.com.au/help/how-to-view-account-history](https://www.click2call.com.au/help/how-to-view-account-history) — View invoices, payment history, and credit balance in the portal.
 - **Using Reports & Records**: [https://www.click2call.com.au/help/how-to-use-reports-and-records](https://www.click2call.com.au/help/how-to-use-reports-and-records) — Access call logs, usage reports, and analytics in the portal.
+- **Adding Concurrent Call Channels**: [https://www.click2call.com.au/help/how-to-add-channels](https://www.click2call.com.au/help/how-to-add-channels) — Increase the number of simultaneous calls your system can handle by adding concurrent call channels in the portal.
 
 ### AI Features
 - **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist) — Automated call routing using natural language. Callers say what they need; the AI transfers the call to the right department. Not a conversational agent.

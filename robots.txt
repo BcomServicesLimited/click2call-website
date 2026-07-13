@@ -1,7 +1,7 @@
 # robots.txt for click2call.com.au
 # Click2Call - Australian Cloud PBX and AI Voice Provider
 # Trading as Bcom Services Pty Ltd (ABN: 92 636 893 108)
-# Last updated: 2026-04-22
+# Last updated: 2026-07-14
 
 # ── Standard web crawlers ──────────────────────────────────────
 User-agent: *
@@ -52,8 +52,25 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
 # ── Perplexity AI ─────────────────────────────────────────────
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ── DuckDuckGo AI ─────────────────────────────────────────────
+User-agent: DuckAssistBot
+Allow: /
+
+# ── Mistral AI ────────────────────────────────────────────────
+User-agent: MistralAI-User
 Allow: /
 
 # ── Meta AI ───────────────────────────────────────────────────
@@ -82,10 +99,11 @@ Allow: /
 User-agent: Grok
 Allow: /
 
-# ── Common AI training crawlers (block) ───────────────────────
+# ── Common Crawl (allow — feeds most open-model training corpora) ──
 User-agent: CCBot
-Disallow: /
+Allow: /
 
+# ── Crawlers we block ─────────────────────────────────────────
 User-agent: DataForSeoBot
 Disallow: /
 
