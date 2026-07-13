@@ -5,7 +5,10 @@
  * HOW TO ADD A NEW ARTICLE:
  * 1. Create the article HTML file in /help/
  * 2. Add one entry to the HELP_ARTICLES array below
- * 3. That's it — both /help and /support update automatically
+ * 3. Run `python3 scripts/build_help_grid.py` to regenerate the
+ *    server-rendered grid in help/index.html (so non-JS crawlers —
+ *    including most LLM crawlers — see the new article)
+ * 4. /support and the /help JS search pick it up automatically
  *
  * FIELDS:
  *   url      — absolute path to the article (required)
