@@ -210,6 +210,16 @@ var HELP_ARTICLES = [
     featured: true,
     pinned:   false
   },
+  {
+    url:      "/help/how-to-set-up-microsoft-teams.html",
+    title:    "Setting Up Microsoft Teams Calling",
+    desc:     "Connect Microsoft Teams to Click2Call Direct Routing — add the SBC domain, create the trunk user, map numbers to Teams users, and run the PowerShell commands.",
+    tags:     "microsoft teams direct routing sbc powershell msteams calling office 365 m365 admin centre pstn gateway trunk voice route",
+    category: "call-flows",
+    readTime: "8 min read",
+    featured: true,
+    pinned:   false
+  },
 
   /* ── Account & Billing ── */
   {
