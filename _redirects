@@ -3,14 +3,18 @@
 # =============================================
 
 # --- Non-www to www ---
-https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
+# NOTE: Cloudflare Pages _redirects is PATH-ONLY — the line below is a
+# silent no-op (cross-host redirects are not supported here). The real
+# non-www -> www redirect must be a Redirect Rule in the Cloudflare
+# dashboard (see docs/non-www-redirect.md). Kept for documentation only.
+# https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 
 # --- Old Gold Coast pages ---
-/cloud-pbx-gold-coast          /voip-australia/#gold-coast  301
-/cloud-pbx-gold-coast.html     /voip-australia/#gold-coast  301
-/voice-calling-gold-coast      /voip-australia/#gold-coast  301
-/voice-calling-gold-coast.html /voip-australia/#gold-coast  301
-/phone-numbers-gold-coast.html /voip-australia/#gold-coast  301
+/cloud-pbx-gold-coast          /voip-gold-coast/  301
+/cloud-pbx-gold-coast.html     /voip-gold-coast/  301
+/voice-calling-gold-coast      /voip-gold-coast/  301
+/voice-calling-gold-coast.html /voip-gold-coast/  301
+/phone-numbers-gold-coast.html /voip-gold-coast/  301
 /ai-voice-tools-gold-coast     /ai-voice-tools   301
 /ai-voice-tools-gold-coast.html /ai-voice-tools  301
 /sip-trunks-gold-coast.html    /sip-trunks       301
@@ -30,8 +34,8 @@ https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 /voip-newcastle/               /voip-australia/#newcastle      301
 /voip-wollongong               /voip-australia/#wollongong     301
 /voip-wollongong/              /voip-australia/#wollongong     301
-/voip-gold-coast               /voip-australia/#gold-coast     301
-/voip-gold-coast/              /voip-australia/#gold-coast     301
+# (Gold Coast re-established as a standalone page 2026-07-16 — GSC data
+#  showed GC queries ranking pos 2-6 against the hub anchor with 0 CTR.)
 /voip-sunshine-coast           /voip-australia/#sunshine-coast 301
 /voip-sunshine-coast/          /voip-australia/#sunshine-coast 301
 
@@ -48,7 +52,7 @@ https://click2call.com.au/*  https://www.click2call.com.au/:splat  301
 /voip-sydney.html              /voip-sydney      301
 /voip-melbourne.html           /voip-melbourne   301
 /voip-brisbane.html            /voip-brisbane    301
-/voip-gold-coast.html          /voip-australia/#gold-coast     301
+/voip-gold-coast.html          /voip-gold-coast/  301
 /voip-perth.html               /voip-perth       301
 /voip-adelaide.html            /voip-australia/#adelaide       301
 /voip-canberra.html            /voip-australia/#canberra       301

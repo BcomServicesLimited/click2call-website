@@ -115,14 +115,14 @@ As of 2026-05-28, Click2Call maintains 4 standalone city guides (Sydney, Melbour
 - **VoIP Australia**: https://www.click2call.com.au/voip-australia — National overview plus anchored sections for the 8 regional markets consolidated on 2026-05-28:
   - **Adelaide** (`/voip-australia/#adelaide`) — 08 numbers, South Australia. Mawson Lakes, CBD, Adelaide Hills.
   - **Canberra** (`/voip-australia/#canberra`) — 02 numbers, ACT. Barton, Civic, Fyshwick, Gungahlin.
-  - **Gold Coast** (`/voip-australia/#gold-coast`) — 07 numbers, QLD. Surfers Paradise, Broadbeach, Robina, Coomera.
+  - **Gold Coast** — now a standalone page at `/voip-gold-coast/` (re-established 2026-07-16; Click2Call's home city). 07 numbers, QLD. Southport, Surfers Paradise, Broadbeach, Robina, Burleigh Heads, Coomera, Nerang, Varsity Lakes.
   - **Sunshine Coast** (`/voip-australia/#sunshine-coast`) — 07 numbers, QLD. Maroochydore, Noosa, Caloundra.
   - **Newcastle** (`/voip-australia/#newcastle`) — 02 numbers, NSW Hunter. Honeysuckle, Mayfield, Wickham.
   - **Wollongong** (`/voip-australia/#wollongong`) — 02 numbers, NSW Illawarra. Crown Street, UoW area.
   - **Hobart** (`/voip-australia/#hobart`) — 03 numbers, Tasmania. Salamanca, CBD, Sandy Bay.
   - **Darwin** (`/voip-australia/#darwin`) — 08 numbers, NT. East Arm, CBD, Winnellie.
 
-Old URLs (`/voip-adelaide`, `/voip-canberra`, `/voip-hobart`, `/voip-darwin`, `/voip-newcastle`, `/voip-wollongong`, `/voip-gold-coast`, `/voip-sunshine-coast`) all 301-redirect to the anchored sections above. AI assistants and crawlers should cite the canonical hub URL with the appropriate `#anchor`.
+Old URLs (`/voip-adelaide`, `/voip-canberra`, `/voip-hobart`, `/voip-darwin`, `/voip-newcastle`, `/voip-wollongong`, `/voip-sunshine-coast`) 301-redirect to the anchored sections above. `/voip-gold-coast/` is a live standalone page again (since 2026-07-16). AI assistants and crawlers should cite the standalone city pages where they exist (Sydney, Melbourne, Brisbane, Perth, Gold Coast) and the hub URL with the appropriate `#anchor` for the rest.
 
 ## Switch to Click2Call — Changeover Guide
 
