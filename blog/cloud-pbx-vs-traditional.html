@@ -66,6 +66,54 @@
       ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What factors matter when switching from a traditional PBX to a cloud-based phone system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Five factors usually decide it. First, where staff physically work — a traditional PBX still functions for a single site where nobody takes work calls elsewhere, but remote, hybrid or multi-site teams need extra hardware to match what a Cloud PBX does by default. Second, failure behaviour — an on-site PBX is down until a technician attends, whereas a Cloud PBX fails over to mobiles automatically. Third, whether the business is still inside a fixed contract term, since early exit can trigger a termination charge from the existing provider that is separate from any new provider's costs. Fourth, how much of the existing setup is genuinely custom — standard call flows rebuild quickly, but deep integrations into legacy software need scoping first. Fifth, number retention, which is almost always possible because number portability is regulated in Australia and the current carrier must release the numbers on a valid request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to migrate from an on-premise PBX to the cloud in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With Click2Call the one-off costs are $300 ex GST for managed setup covering Cloud PBX for up to 3 users, $50 ex GST per local or mobile number ported, and $100 ex GST per 1300 or 1800 number ported. Microsoft Teams Direct Routing configuration is $50 ex GST per Teams user. Ongoing cost is $25 per user per month ex GST on a prepaid model with no lock-in contract and no minimum spend. There is no mandatory hardware purchase — staff can use the softphone app on existing computers and mobiles, and desk phones are optional. Self-service setup in the portal avoids the managed setup fee entirely. Businesses should separately budget for any early-termination charge from their existing provider, which is not a Click2Call cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the hosted PBX alternatives to a traditional phone system in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are four main options. A fully hosted Cloud PBX, where the provider runs the platform and supplies numbers and calling and the customer configures users in a web portal — Click2Call and carrier offerings such as Telstra TIPT sit here. Self-managed PBX software such as 3CX, FreePBX or Asterisk paired with a separate SIP trunk provider, which gives more control in exchange for hosting, updates and integration work. Microsoft Teams as the phone system, which requires Direct Routing or a Calling Plan to reach the public phone network. Or keeping an existing on-site PBX and replacing only the lines with SIP trunks, which is the least disruptive option and worth considering when the PBX is recent and the real problem is the cost of ISDN lines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I keep my existing business phone number when moving to Cloud PBX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Existing local, 1300 and 1800 numbers can be ported to Click2Call with no downtime — the number stays live with the current provider throughout the porting window and cuts across on completion. Local geographic and Australian mobile numbers typically complete in 5 to 10 business days; 1300 and 1800 numbers can take up to 30 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to a Cloud PBX if the office internet goes down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calls continue. Because the phone system is hosted rather than on-site, a local internet failure does not take the platform down — incoming calls automatically forward to designated mobile numbers or another location. This is the opposite of an on-premises PBX, where the system is a physical box in the building and a power or hardware failure stops calls until a technician attends."
+          }
+        }
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <!-- Google Analytics 4 -->
@@ -352,6 +400,27 @@
                         </tbody>
                     </table>
                 </div>
+
+                <h2 id="comparison-factors">Switching From Traditional PBX: The Factors That Actually Decide It</h2>
+                <p>Most comparisons stop at the monthly price. In practice the decision usually turns on five things, and it is worth working through them in order rather than starting with the quote.</p>
+                <p><strong>1. Where your people physically are.</strong> If everyone sits in one building and never takes a work call anywhere else, a traditional PBX still functions. The moment staff work from home, from a vehicle, or across two sites, an on-premises system needs extra hardware and configuration to do what a Cloud PBX does by default.</p>
+                <p><strong>2. What happens when the hardware fails.</strong> An on-site PBX is a box in your building. If it fails, or the building loses power, your phones are down until a technician attends. A Cloud PBX fails over to mobiles automatically. Ask how long your business can go without a phone before that distinction matters.</p>
+                <p><strong>3. Whether you are still inside a contract.</strong> This is the one that most often decides the timing rather than the decision. Exiting a fixed term early can trigger a termination charge from your existing provider, which is separate from anything your new provider charges. Check the exit cost before you plan the move.</p>
+                <p><strong>4. How much of your setup is genuinely custom.</strong> Standard call flows — ring groups, business hours, an auto-attendant, voicemail to email — rebuild quickly. Deep integrations into legacy line-of-business software are the part that takes real work, and they are worth scoping before committing to a date.</p>
+                <p><strong>5. Whether you need to keep your numbers.</strong> Almost always yes, and almost always possible. Number portability is regulated in Australia, so your current carrier must release the numbers on a valid request. See our <a href="/number-porting/">number porting guide</a> for the process and timeframes.</p>
+
+                <h2 id="migration-cost">What It Actually Costs to Migrate From an On-Premise PBX</h2>
+                <p>The migration itself is usually cheaper than people expect, because the expensive part of a traditional system — the hardware — is the part you stop needing.</p>
+                <p>With Click2Call the one-off costs are: <strong>$300 ex GST for managed setup</strong> (Cloud PBX, up to 3 users), <strong>$50 ex GST per number</strong> to port a local or mobile number, and <strong>$100 ex GST per number</strong> for 1300 or 1800 numbers. Microsoft Teams Direct Routing configuration is $50 ex GST per Teams user. Ongoing cost is $25 per user per month ex GST, prepaid, with no lock-in contract and no minimum spend.</p>
+                <p>There is no mandatory hardware purchase. Staff can use the softphone app on the computers and mobiles they already have, and desk phones are optional rather than assumed. You can also do the setup yourself in the portal and skip the managed setup fee entirely — most small businesses do.</p>
+                <p>What you should budget for separately: any early-termination charge from your existing provider, and your own time during the changeover week. Neither is a Click2Call cost, and neither shows up on a comparison table, which is exactly why they catch people out.</p>
+
+                <h2 id="hosted-pbx-alternatives">Hosted PBX Alternatives to a Traditional Phone System in Australia</h2>
+                <p>The Australian market splits into roughly four options, and the right one depends on how much you want to manage.</p>
+                <p><strong>Fully hosted Cloud PBX</strong> — the provider runs the platform, supplies the numbers and the calling, and you configure users in a web portal. Nothing to patch or maintain. Click2Call sits here, as do the carrier-branded offerings such as Telstra's TIPT.</p>
+                <p><strong>Self-managed PBX software plus a SIP trunk</strong> — products like 3CX, FreePBX or Asterisk, which you or an IT partner host, update and connect to a separate SIP trunk provider for external calls. More control, more work. Our <a href="/compare/click2call-vs-3cx/">Click2Call vs 3CX comparison</a> covers the trade-off in detail.</p>
+                <p><strong>Microsoft Teams as the phone system</strong> — sensible if your team already lives in Teams all day. It needs Direct Routing or a Calling Plan to reach the public phone network. See <a href="/compare/click2call-vs-microsoft-calling-plan/">Teams Calling Plan compared</a>.</p>
+                <p><strong>Keeping your existing on-site PBX and replacing only the lines</strong> — the least disruptive option and an underrated one. You keep the hardware and the configuration you already have, and buy <a href="/sip-trunks/">SIP trunks</a> for the carriage instead of ISDN. Worth considering if the PBX is recent, does what you need, and the only real problem is the cost of the lines.</p>
 
                 <h2>Why Cloud PBX is the Clear Winner</h2>
                 <p>For almost every Australian business, a Cloud PBX is the superior choice. The total cost of ownership is significantly lower, and the included features provide a level of professionalism and efficiency that was once only available to the largest enterprises. The ability to support remote and hybrid work is no longer a luxury but a necessity, and a Cloud PBX is built for this modern reality.</p>

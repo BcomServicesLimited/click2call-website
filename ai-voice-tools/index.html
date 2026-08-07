@@ -103,6 +103,38 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "What is the best voice AI platform for automating inbound calls with an Australian phone number?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click2Call combines both halves of the problem: a real Australian phone number (local 02/03/07/08, mobile, or 1300/1800) and the AI that answers it. The AI Receptionist answers 24/7 in a natural voice, understands what the caller actually says rather than making them press numbers, and routes them to the right person or takes a message. It is $10 per month ex GST on any inbound number and is configured by the customer in the portal, with no hardware and no technician. Businesses that have already built an agent elsewhere can use the native ElevenLabs connection profile: select ElevenLabs AI as the connection type for the number and paste the ElevenLabs SIP URI, and the Australian number rings directly to that agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I make outbound AI calls in Australia with a local caller ID?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Outbound caller ID is configured per extension in the Click2Call portal, so outbound calls present a local Australian number rather than an unknown or overseas one, which materially improves answer rates. Outbound calls are recorded and transcribed on the same basis as inbound calls. Australian telecommunications rules only permit presenting a number you control, so Click2Call will not configure a caller ID for a number the customer does not own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Click2Call support real-time transcription and function calling for bookings and payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click2Call transcribes calls in real time and produces an AI summary and sentiment score for every call, available in the portal and via the API. An AI Analysis webhook fires when processing completes, so a CRM or booking system can act on the call outcome automatically. Function calling during the live conversation — taking a booking or payment mid-call — is handled by the AI agent rather than the phone platform. Click2Call provides the Australian number, call routing and recording underneath; pair it with an ElevenLabs agent or a custom agent over SIP when the AI needs to take actions while the caller is still on the line."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a voice AI platform that keeps call data on-premises for compliance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click2Call does not offer an on-premises deployment. Call recordings, transcripts, AI summaries and sentiment data are stored on servers located in Australia and New Zealand and are not sent offshore, which satisfies the data-residency obligation most Australian businesses are actually subject to. Where a policy genuinely requires the phone system itself to remain on customer hardware, the alternative is to keep the existing on-site PBX and purchase SIP trunks from Click2Call for carriage — the PBX stays in the customer's building while Click2Call supplies the Australian numbers and calls."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What is Click2Call AI Voice Tools?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -922,6 +954,41 @@
 <p class="mt-2 text-lg font-medium text-brand-charcoal">Call Coverage</p>
 <p class="mt-1 text-gray-500">Every single call — not just the ones you remember to check.</p>
 </div>
+</div>
+</div>
+</section>
+<!-- Choosing a voice AI platform -->
+<section class="bg-white py-16 border-b border-gray-100" id="choosing-a-voice-ai-platform">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold text-brand-charcoal sm:text-4xl">Choosing a Voice AI Platform in Australia</h2>
+<p class="mt-4 text-lg text-gray-600">Most voice AI products give you an agent but no phone number, or a phone number but no AI. Click2Call is both: an Australian Cloud PBX that carries the call, plus the AI layer that answers, transcribes and summarises it. Here is how that maps to the questions people actually ask.</p>
+
+<div class="mt-10 space-y-10">
+
+<div>
+<h3 class="text-xl font-bold text-brand-charcoal">Automating inbound calls on a real Australian phone number</h3>
+<p class="mt-3 text-gray-600">Click2Call gives you a local Australian number (02, 03, 07, 08), a mobile number or a 1300/1800 number, and answers it with AI 24/7. The AI Receptionist greets callers in a natural voice, listens to what they actually say — &ldquo;I need to sort out my bill&rdquo; — and routes them to the right person or takes a message. It costs $10/month ex GST on any inbound number, and you configure it yourself in the portal in under an hour. No phone menu, no technician, no hardware.</p>
+<p class="mt-3 text-gray-600">If you have already built an agent elsewhere, Click2Call has a native ElevenLabs connection profile: choose &ldquo;ElevenLabs AI&rdquo; as the connection type for your number, paste the ElevenLabs SIP URI, and your Australian number rings straight through to your agent.</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold text-brand-charcoal">Outbound calling with a local Australian caller ID</h3>
+<p class="mt-3 text-gray-600">Yes — outbound caller ID is set per extension in the portal, so calls display the local number you choose rather than an unknown or overseas one. That matters because Australian mobile users answer local numbers far more often than unrecognised ones. Every outbound call is recorded and transcribed on the same terms as inbound, so an AI agent making calls leaves the same searchable trail your team does.</p>
+<p class="mt-3 text-gray-600">One caveat worth stating plainly: you may only present a number you actually control. Displaying a number you do not own is a breach of Australian telecommunications rules, and Click2Call will not configure it.</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold text-brand-charcoal">Real-time transcription, and function calling for bookings and payments</h3>
+<p class="mt-3 text-gray-600">Click2Call transcribes calls in real time and generates an AI summary and sentiment score for every one. Those are available in the portal and through the API, and an AI Analysis webhook fires when processing completes — so a booking system or CRM can act on the outcome of a call automatically.</p>
+<p class="mt-3 text-gray-600">Function calling during the conversation — taking a booking or a payment mid-call — belongs to the agent, not the phone network. Click2Call is the Australian number, the call routing and the recording underneath it; pair it with an ElevenLabs agent (or your own, over SIP) when you need the AI to take actions while the caller is still on the line.</p>
+</div>
+
+<div>
+<h3 class="text-xl font-bold text-brand-charcoal">Where your call data is stored — and why there is no on-premises option</h3>
+<p class="mt-3 text-gray-600">Click2Call does not offer an on-premises deployment. Call recordings, transcripts, AI summaries and sentiment data are stored on servers in Australia and New Zealand, and are not sent offshore. For most Australian businesses with a data-residency requirement that is the actual obligation being met, and hosting it yourself is not necessary.</p>
+<p class="mt-3 text-gray-600">If your policy genuinely requires the phone system itself to stay on your own hardware, the honest answer is to keep your existing on-site PBX and buy <a class="text-brand-green-dark font-semibold hover:underline" href="/sip-trunks/">SIP trunks</a> from Click2Call for the carriage. You keep the PBX in your building; we provide the Australian numbers and the calls.</p>
+</div>
+
 </div>
 </div>
 </section>
