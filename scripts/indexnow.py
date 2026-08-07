@@ -22,10 +22,12 @@ Standard library only.
 """
 import argparse
 import json
+import re
 import subprocess
 import sys
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 HOST = "www.click2call.com.au"
 BASE = f"https://{HOST}"
@@ -42,21 +44,35 @@ ENDPOINTS = [
 MAX_URLS = 10000
 
 
+def url_for(path: str) -> str:
+    """Public URL for a repo-relative .html file.
+
+    Prefers the page's own rel="canonical", which is authoritative and avoids
+    guessing wrong about trailing slashes: directory pages canonicalise WITH a
+    trailing slash while standalone .html pages (the blog posts) canonicalise
+    WITHOUT one. Guessing produced URLs that 308-redirected to the real thing,
+    which wastes the submission.
+    """
+    try:
+        head = Path(path).read_text(errors="replace")[:8000]
+        m = (re.search(r'rel="canonical"[^>]*href="([^"]+)"', head)
+             or re.search(r'href="([^"]+)"[^>]*rel="canonical"', head))
+        if m and m.group(1).startswith(BASE):
+            return m.group(1)
+    except OSError:
+        pass
+    if path.endswith("index.html"):
+        stem = path[: -len("index.html")].rstrip("/")
+        return f"{BASE}/{stem}/" if stem else f"{BASE}/"
+    return f"{BASE}/{path[: -len('.html')]}"
+
+
 def changed_urls() -> list:
     """Map files touched by the last commit to their public URLs."""
     out = subprocess.run(
         ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD"],
         capture_output=True, text=True, check=True).stdout.split()
-    urls = []
-    for f in out:
-        if not f.endswith(".html"):
-            continue
-        if f.endswith("index.html"):
-            path = f[: -len("index.html")]
-        else:
-            path = f[: -len(".html")]
-        urls.append(f"{BASE}/{path}".rstrip("/") + ("/" if path else ""))
-    return sorted(set(urls))
+    return sorted({url_for(f) for f in out if f.endswith(".html")})
 
 
 def submit(name: str, endpoint: str, urls: list) -> bool:
