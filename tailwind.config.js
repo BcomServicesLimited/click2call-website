@@ -4,7 +4,11 @@ module.exports = {
   // Excludes node_modules, .npm-cache, and the email-signature template.
   content: [
     "*.html",
-    "{about,ai-receptionist,ai-voice-tools,api,blog,case-studies,cloud-pbx,compare,contact,faq,financial-hardship,help,knowledge,microsoft-teams-calling,pricing,privacy,sip-trunks,support,terms,voip-australia,voip-brisbane,voip-it-companies-australia,voip-medical-clinics-australia,voip-melbourne,voip-perth,voip-real-estate-agents-australia,voip-sydney,voip-tradies-australia}/**/*.html",
+    // Recursive rather than an explicit directory list. The old list was
+    // missing call-centre, number-porting and voip-gold-coast, so classes
+    // used only on those pages were purged from the build.
+    "**/*.html",
+    "!node_modules/**",
   ],
   theme: {
     extend: {
