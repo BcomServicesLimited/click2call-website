@@ -232,6 +232,23 @@ def main():
             if mode is None:
                 not_found.append((rel, partial))
 
+    # ── Header JavaScript drift check ────────────────────────────────
+    # The header markup is synced from _header.html, but the script that
+    # opens the Services dropdown and the mobile menu is an inline block on
+    # each page and is NOT synced. Pages authored by hand have repeatedly
+    # shipped with the markup and no script, which leaves them with no
+    # working navigation on mobile. Nothing surfaced that until it was found
+    # by chance, so it is reported here every run.
+    missing_js = []
+    for filepath in iter_html_files():
+        rel = os.path.relpath(filepath, REPO_ROOT)
+        if rel in {"_header.html", "_footer.html"}:
+            continue
+        with open(filepath, "r", encoding="utf-8") as f:
+            body = f.read()
+        if 'id="services-dropdown"' in body and "getElementById('services-btn')" not in body:
+            missing_js.append(rel)
+
     print()
     print(f"{'DRY RUN: ' if args.dry_run else ''}sync_partials complete")
     print(f"  updated   : {len(updated)}")
@@ -243,6 +260,14 @@ def main():
             print(f"    ! {rel}: no {partial} block matched")
         if len(not_found) > 20:
             print(f"    ... and {len(not_found) - 20} more")
+
+    if missing_js:
+        print(f"  NO HEADER JS : {len(missing_js)} page(s) have the header markup but")
+        print( "                 not the script that opens it — nav will not work")
+        for rel in missing_js[:20]:
+            print(f"    ! {rel}")
+        if len(missing_js) > 20:
+            print(f"    ... and {len(missing_js) - 20} more")
 
     if updated:
         print("\nUpdated files (first 30):")
