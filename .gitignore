@@ -38,3 +38,11 @@ ai-agents-screenshots-notes.md
 brisbane-content.md
 case_studies_new.md
 llms-full.txt
+
+# Internal operational material — must never be deployed to the public site.
+# Both of these were publicly reachable and returning HTTP 200:
+#   /knowledge/**                     internal reply rules, policies, pricing notes
+#   /help/primary-knowledge-base.html internal support source-of-truth
+# Kept on disk for local use; untracked so Cloudflare Pages cannot publish them.
+knowledge/
+help/primary-knowledge-base.html

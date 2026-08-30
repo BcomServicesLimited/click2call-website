@@ -13,7 +13,11 @@ Disallow: /assets/js/
 Disallow: /blog/article-template.html
 Disallow: /case-studies/template.html
 Disallow: /email-signature-support.html
-Disallow: /help/primary-knowledge-base.html
+# NOTE: /help/primary-knowledge-base and /knowledge/** were internal files
+# served publicly in error. They are no longer deployed and now return 404.
+# Deliberately NOT Disallowed here: a robots block on an already-indexed URL
+# stops crawlers seeing the 404, which keeps the URL in the index. Letting
+# them be crawled is what gets them dropped.
 
 # ── Google ─────────────────────────────────────────────────────
 User-agent: Googlebot
