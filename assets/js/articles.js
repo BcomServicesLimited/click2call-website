@@ -25,7 +25,7 @@ var HELP_ARTICLES = [
 
   /* ── Getting Started ── */
   {
-    url:      "/help/how-to-activate-account.html",
+    url:      "/help/how-to-activate-account",
     title:    "Activating Your Account",
     desc:     "How to activate your Click2Call account and log in to the portal for the first time.",
     tags:     "activate account setup first time login portal",
@@ -35,7 +35,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/understanding-your-free-trial.html",
+    url:      "/help/understanding-your-free-trial",
     title:    "Understanding Your Free Trial",
     desc:     "What the $11 credit covers, what to do in your 7 days, and how to upgrade after the trial ends.",
     tags:     "free trial 7 day credit 11 dollars outbound calls upgrade cloud pbx",
@@ -45,7 +45,7 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
-    url:      "/help/how-to-make-your-first-call.html",
+    url:      "/help/how-to-make-your-first-call",
     title:    "Making Your First Call",
     desc:     "How to add a phone number, register a device (softphone, desk phone, or mobile divert), and make your first outbound call.",
     tags:     "first call outbound call softphone desk phone mobile divert register device caller id",
@@ -55,7 +55,7 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
-    url:      "/help/how-to-add-account-credit.html",
+    url:      "/help/how-to-add-account-credit",
     title:    "Adding Account Credit",
     desc:     "How to load credit onto your account and set up auto top-up.",
     tags:     "add credit top up prepay billing payment auto top-up",
@@ -67,7 +67,7 @@ var HELP_ARTICLES = [
 
   /* ── Phone Numbers ── */
   {
-    url:      "/help/how-to-add-phone-number.html",
+    url:      "/help/how-to-add-phone-number",
     title:    "Adding a Phone Number",
     desc:     "How to add a new local or 1300 number to your account.",
     tags:     "add phone number ddi direct dial 1300 local number",
@@ -77,7 +77,7 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
-    url:      "/help/how-to-port-number.html",
+    url:      "/help/how-to-port-number",
     title:    "Porting an Existing Number",
     desc:     "How to transfer your current phone number to Click2Call with no downtime.",
     tags:     "port number transfer porting existing number move",
@@ -89,7 +89,7 @@ var HELP_ARTICLES = [
 
   /* ── Extensions & Users ── */
   {
-    url:      "/help/how-to-add-extension.html",
+    url:      "/help/how-to-add-extension",
     title:    "Adding a New Extension",
     desc:     "How to create a new extension on your Cloud PBX.",
     tags:     "add extension new extension pbx create",
@@ -99,7 +99,7 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
-    url:      "/help/how-to-add-user.html",
+    url:      "/help/how-to-add-user",
     title:    "Adding a New User",
     desc:     "How to add a staff member to your account and assign their credentials.",
     tags:     "add user staff member credentials new user invite",
@@ -109,7 +109,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-set-outbound-caller-id.html",
+    url:      "/help/how-to-set-outbound-caller-id",
     title:    "Setting Outbound Caller ID",
     desc:     "How to set which number displays when your extensions make outbound calls.",
     tags:     "caller id outbound caller id cli number display",
@@ -119,7 +119,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-set-up-speed-dials.html",
+    url:      "/help/how-to-set-up-speed-dials",
     title:    "Setting Up Global Contacts and Speed Dials",
     desc:     "How to save contact names and assign speed dial codes so you can dial contacts quickly from any phone on your account.",
     tags:     "speed dial global contacts external contacts contact name caller name csv import",
@@ -131,7 +131,7 @@ var HELP_ARTICLES = [
 
   /* ── Devices & Apps ── */
   {
-    url:      "/help/how-to-add-desk-phone.html",
+    url:      "/help/how-to-add-desk-phone",
     title:    "Registering a Desk Phone",
     desc:     "How to register a Yealink or compatible SIP desk phone to your extension.",
     tags:     "desk phone register yealink sip phone hardware setup",
@@ -141,7 +141,7 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
-    url:      "/help/how-to-set-up-softphone.html",
+    url:      "/help/how-to-set-up-softphone",
     title:    "Setting Up a Softphone or Mobile App",
     desc:     "How to install and configure the softphone app on your PC or mobile device.",
     tags:     "softphone mobile app ios android pc desktop download install",
@@ -152,7 +152,7 @@ var HELP_ARTICLES = [
   },
 
   {
-    url:      "/help/how-to-set-up-linphone.html",
+    url:      "/help/how-to-set-up-linphone",
     title:    "Setting Up Linphone (Free Third-Party Softphone)",
     desc:     "How to download and configure Linphone on iPhone, Android, Windows, or Mac as a free SIP softphone with Click2Call.",
     tags:     "linphone softphone sip third party free ios android windows mac troubleshooting testing",
@@ -164,7 +164,7 @@ var HELP_ARTICLES = [
 
   /* ── Call Flows & Routing ── */
   {
-    url:      "/help/how-to-set-up-call-flow.html",
+    url:      "/help/how-to-set-up-call-flow",
     title:    "Setting Up a Call Flow",
     desc:     "How to build a call flow to route incoming calls to the right destination.",
     tags:     "call flow routing inbound ivr auto attendant menu",
@@ -174,7 +174,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-set-up-call-queue.html",
+    url:      "/help/how-to-set-up-call-queue",
     title:    "Setting Up a Call Queue",
     desc:     "How to hold callers in a queue with your own music and position announcements while your team is busy.",
     tags:     "call queue queuing hold music position announcement wait agents ring all wallboard contact centre call centre",
@@ -184,7 +184,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-use-live-call-dashboard.html",
+    url:      "/help/how-to-use-live-call-dashboard",
     title:    "Using the Live Call Dashboard",
     desc:     "See live calls, callers waiting in queues and team availability, and put it on a screen in the office.",
     tags:     "dashboard live real time wallboard tv view monitor missed calls talk time active calls queued calls team status supervisor",
@@ -194,7 +194,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-create-ring-group.html",
+    url:      "/help/how-to-create-ring-group",
     title:    "Creating a Ring Group",
     desc:     "How to set up a ring group so multiple extensions ring simultaneously.",
     tags:     "ring group hunt group simultaneous ring group call",
@@ -204,7 +204,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-configure-business-hours.html",
+    url:      "/help/how-to-configure-business-hours",
     title:    "Configuring Business Hours",
     desc:     "How to set your open and closed hours so calls route correctly after hours.",
     tags:     "business hours after hours time conditions schedule closed",
@@ -214,7 +214,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-set-up-voicemail.html",
+    url:      "/help/how-to-set-up-voicemail",
     title:    "Setting Up Voicemail",
     desc:     "How to enable voicemail on an extension and configure voicemail-to-email.",
     tags:     "voicemail setup voicemail to email mailbox greeting",
@@ -224,7 +224,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-view-call-recordings.html",
+    url:      "/help/how-to-view-call-recordings",
     title:    "Viewing Call Recordings",
     desc:     "How to access and download call recordings from the portal.",
     tags:     "call recordings download listen playback portal",
@@ -234,7 +234,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-set-up-microsoft-teams.html",
+    url:      "/help/how-to-set-up-microsoft-teams",
     title:    "Setting Up Microsoft Teams Calling",
     desc:     "Connect Microsoft Teams to Click2Call Direct Routing — add the SBC domain, create the trunk user, map numbers to Teams users, and run the PowerShell commands.",
     tags:     "microsoft teams direct routing sbc powershell msteams calling office 365 m365 admin centre pstn gateway trunk voice route",
@@ -246,7 +246,7 @@ var HELP_ARTICLES = [
 
   /* ── Account & Billing ── */
   {
-    url:      "/help/how-to-add-channels.html",
+    url:      "/help/how-to-add-channels",
     title:    "Adding Concurrent Call Channels",
     desc:     "How to increase the number of simultaneous calls your system can handle.",
     tags:     "channels concurrent calls capacity add channels upgrade",
@@ -256,7 +256,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-view-account-history.html",
+    url:      "/help/how-to-view-account-history",
     title:    "Viewing Account History & Downloading Invoices",
     desc:     "How to view your transactions and download PDF receipts or invoices from the portal.",
     tags:     "account history transactions invoices receipts billing download pdf csv",
@@ -266,7 +266,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-use-reports-and-records.html",
+    url:      "/help/how-to-use-reports-and-records",
     title:    "Using Reports & Records",
     desc:     "How to run call reports, search individual billing records, and export call data as CSV.",
     tags:     "reports records billing records call report export csv call history usage",
@@ -278,7 +278,7 @@ var HELP_ARTICLES = [
 
   /* ── AI Features ── */
   {
-    url:      "/help/how-to-set-up-ai-receptionist.html",
+    url:      "/help/how-to-set-up-ai-receptionist",
     title:    "Setting Up the AI Receptionist",
     desc:     "How to enable and configure the AI Receptionist to answer calls automatically.",
     tags:     "ai receptionist virtual receptionist auto answer setup configure",
@@ -288,7 +288,7 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
-    url:      "/help/how-to-set-up-ai-agents.html",
+    url:      "/help/how-to-set-up-ai-agents",
     title:    "Setting Up AI Agents",
     desc:     "How to create a conversational AI voice agent that answers calls and responds to questions 24/7.",
     tags:     "ai agent voice agent conversational ai chatbot knowledge base",
@@ -298,7 +298,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-use-ai-speech.html",
+    url:      "/help/how-to-use-ai-speech",
     title:    "Using AI Speech Tools",
     desc:     "How to use Click2Call's AI speech synthesis and voice cloning tools.",
     tags:     "ai speech text to speech voice clone tts synthesis",
@@ -308,7 +308,7 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/how-to-set-up-ai-voicemail.html",
+    url:      "/help/how-to-set-up-ai-voicemail",
     title:    "Setting Up AI Voicemail",
     desc:     "How to enable AI-powered voicemail transcription and smart summaries.",
     tags:     "ai voicemail transcription summary smart voicemail",
