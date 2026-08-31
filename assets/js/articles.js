@@ -174,6 +174,26 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
+    url:      "/help/how-to-set-up-call-queue.html",
+    title:    "Setting Up a Call Queue",
+    desc:     "How to hold callers in a queue with your own music and position announcements while your team is busy.",
+    tags:     "call queue queuing hold music position announcement wait agents ring all wallboard contact centre call centre",
+    category: "call-flows",
+    readTime: "5 min read",
+    featured: true,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-use-live-call-dashboard.html",
+    title:    "Using the Live Call Dashboard",
+    desc:     "See live calls, callers waiting in queues and team availability, and put it on a screen in the office.",
+    tags:     "dashboard live real time wallboard tv view monitor missed calls talk time active calls queued calls team status supervisor",
+    category: "call-flows",
+    readTime: "4 min read",
+    featured: true,
+    pinned:   false
+  },
+  {
     url:      "/help/how-to-create-ring-group.html",
     title:    "Creating a Ring Group",
     desc:     "How to set up a ring group so multiple extensions ring simultaneously.",
