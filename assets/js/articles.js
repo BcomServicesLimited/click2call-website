@@ -288,6 +288,16 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
+    url:      "/help/how-to-connect-ai-voice-agent",
+    title:    "Connecting an AI Voice Agent to Your Number",
+    desc:     "Point a phone number at ElevenLabs, OpenAI, xAI, Retell, VAPI or any SIP voice agent.",
+    tags:     "ai voice agent elevenlabs openai xai retell vapi synthflow livekit cloudonix twilio sip registration external endpoint bland connection type profile",
+    category: "ai",
+    readTime: "6 min read",
+    featured: true,
+    pinned:   false
+  },
+  {
     url:      "/help/how-to-set-up-ai-agents",
     title:    "Setting Up AI Agents",
     desc:     "How to create a conversational AI voice agent that answers calls and responds to questions 24/7.",
