@@ -150,6 +150,16 @@ var HELP_ARTICLES = [
     featured: true,
     pinned:   true
   },
+  {
+    url:      "/help/how-to-connect-simpro",
+    title:    "Connecting simPRO to Click2Call",
+    desc:     "Set up the simPRO Premium VoIP integration so its built-in softphone works on your Click2Call numbers.",
+    tags:     "simpro simpro premium voip integration softphone webphone trades field service server address 5060 line password employee card mizuphone job management",
+    category: "devices",
+    readTime: "6 min read",
+    featured: true,
+    pinned:   false
+  },
 
   {
     url:      "/help/how-to-set-up-linphone",
