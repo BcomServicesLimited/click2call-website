@@ -49,7 +49,7 @@
     {
       "@type": "HowToStep",
       "name": "Choose an authentication method",
-      "text": "xAI accepts either an IP allowlist, where you supply your provider's SIP signalling ranges in allowed_addresses, or SIP digest credentials. Use the IP allowlist and ask Click2Call support for the current signalling addresses."
+      "text": "xAI accepts either an IP allowlist, where you supply your provider's SIP signalling ranges in allowed_addresses, or SIP digest credentials. Use the IP allowlist and allowlist 103.212.52.19, the address Click2Call sends INVITEs from."
     },
     {
       "@type": "HowToStep",
@@ -134,7 +134,7 @@
       "name": "How should I authenticate Click2Call to xAI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use the IP allowlist. xAI accepts either an allowed_addresses list of SIP signalling ranges or SIP digest credentials, and the built-in Click2Call provider profiles do not send digest credentials. Contact Click2Call support for the current signalling addresses to allowlist."
+        "text": "Use the IP allowlist. xAI accepts either an allowed_addresses list of SIP signalling ranges or SIP digest credentials, and the built-in Click2Call provider profiles do not send digest credentials. Allowlist 103.212.52.19, the address Click2Call sends INVITEs from."
       }
     },
     {
@@ -381,7 +381,7 @@
 <dl class="space-y-3 text-sm">
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Mandatory Click2Call field</dt><dd class="text-gray-600 leading-relaxed">None &mdash; just pick the connection type</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Where Click2Call sends calls</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Authentication</dt><dd class="text-gray-600 leading-relaxed">IP allowlist (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>) on the xAI side</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Authentication</dt><dd class="text-gray-600 leading-relaxed">IP allowlist (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>) on the xAI side &mdash; add <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">103.212.52.19</span></dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format</dt><dd class="text-gray-600 leading-relaxed">+E.164, set automatically</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Code required</dt><dd class="text-gray-600 leading-relaxed">Yes &mdash; a webhook plus a WebSocket connection</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Provider documentation</dt><dd class="text-gray-600 leading-relaxed"><a class="text-[#3B9C49] hover:underline" href="https://docs.x.ai/developers/model-capabilities/audio/voice-agent/sip" target="_blank" rel="noopener">xAI SIP phone calls</a></dd></div>
@@ -400,7 +400,7 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Choose an authentication method</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">xAI accepts either an IP allowlist, via <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>, or SIP digest credentials.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Ask <a class="font-semibold underline" href="/support/">Click2Call support</a> for the signalling address to allowlist. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
+        <p class="text-gray-600 leading-relaxed mt-3">xAI accepts either an IP allowlist, via <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>, or SIP digest credentials.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>103.212.52.19</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
     </div>
 </div>
 
@@ -446,7 +446,7 @@
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist the address rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">The phone rings but nothing answers</h3><p class="text-gray-600 leading-relaxed">Almost always the webhook. Either the Direct SIP number was registered without a webhook URL, the endpoint is not reachable from the internet, or it receives the event but never opens the WebSocket. Check your endpoint logs for a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Webhook signature verification fails</h3><p class="text-gray-600 leading-relaxed">The signing secret is only returned when the number is created. If it was not stored, register the number again to get a fresh one.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">xAI rejects the call before it rings</h3><p class="text-gray-600 leading-relaxed">The <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span> list does not include the address Click2Call is signalling from. Ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current addresses.</p></div>

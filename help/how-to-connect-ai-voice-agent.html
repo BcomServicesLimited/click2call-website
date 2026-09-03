@@ -58,18 +58,62 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Which AI voice platforms can connect to a Click2Call number?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Click2Call includes ready-made connection profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration, so connecting those is a matter of selecting the provider from the Connection Type list and entering the SIP URI they supply. Any other platform that supports SIP registration can be connected using the generic SIP Registration connection type, with the phone number as the username and the line password from Line Manager."}},
-    {"@type": "Question", "name": "What username and password does the AI platform use?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The username and authorisation name are both the Click2Call phone number in full international format, for example 61721402648. The password is the SIP password for that line, revealed in Line Manager under the Password column using the View control. Host and outbound proxy are both sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on port 5060, with DTMF set to RFC 2833."}},
-    {"@type": "Question", "name": "Why do I keep getting 407 Proxy Authentication Required?",
-     "acceptedAnswer": {"@type": "Answer", "text": "A repeated 407 almost always means the profile is set to SIP Peering (Direct IP) when it should be SIP Registration. Peering expects the two platforms to trust each other by IP address and involves no credentials, whereas a username and password against sip.click2call.com.au is a registration setup. Change the Connection Type to SIP Registration and configure the AI platform to register in as the number, the same way a softphone does."}},
-    {"@type": "Question", "name": "Calls go to Click2Call voicemail instead of the AI agent. Why?",
-     "acceptedAnswer": {"@type": "Answer", "text": "There are three usual causes. The AI platform may not be registered, leaving Click2Call nowhere to deliver the call. The number may still be assigned to the Default profile rather than the one you configured, so your settings are not applied. Or an Inbound SIP URI Route may be set on the profile, which overrides delivery to registered endpoints and forces the call to that URI instead. Do not set a URI route on a profile that uses registration."}},
-    {"@type": "Question", "name": "Why does my after-hours routing trigger at the wrong time?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The Time Zone setting on the profile is wrong. Every time-based behaviour on the account reads it, including business hours, after-hours call routing and call queue time schedules. A profile left on a different region will open and close the phones at the wrong local time. Set it to the region the business actually operates in."}},
-    {"@type": "Question", "name": "Does the number keep call recording and transcription when an AI agent answers?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Calls answered by an AI agent are recorded, transcribed, summarised and sentiment-scored in the same way as any other call on the account, provided Recording Enabled is ticked on the profile. Those transcripts are what most customers use to review and improve what their agent says to callers."}}
+    {
+      "@type": "Question",
+      "name": "What IP address does my AI provider need to allowlist for Click2Call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "103.212.52.19. That is the address outbound INVITEs leave the Click2Call switch from when a call is delivered to an external SIP endpoint, whether through a built-in provider profile or an Inbound SIP URI Route. Put it on the provider's IP allowlist, ACL or access control list. Click2Call cannot present a username and password on an outbound INVITE, so allowlisting is the only way a provider can trust the call; if they challenge it for credentials with a 407, the call fails. Note this is not the address sip.click2call.com.au resolves to, which is the inbound proxy used when a device registers to Click2Call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI voice platforms can connect to a Click2Call number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Click2Call includes ready-made connection profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration, so connecting those is a matter of selecting the provider from the Connection Type list and entering the SIP URI they supply. Any other platform that supports SIP registration can be connected using the generic SIP Registration connection type, with the phone number as the username and the line password from Line Manager."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What username and password does the AI platform use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The username and authorisation name are both the Click2Call phone number in full international format, for example 61721402648. The password is the SIP password for that line, revealed in Line Manager under the Password column using the View control. Host and outbound proxy are both sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on port 5060, with DTMF set to RFC 2833."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I keep getting 407 Proxy Authentication Required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A repeated 407 almost always means the profile is set to SIP Peering (Direct IP) when it should be SIP Registration. Peering expects the two platforms to trust each other by IP address and involves no credentials, whereas a username and password against sip.click2call.com.au is a registration setup. Change the Connection Type to SIP Registration and configure the AI platform to register in as the number, the same way a softphone does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Calls go to Click2Call voicemail instead of the AI agent. Why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are three usual causes. The AI platform may not be registered, leaving Click2Call nowhere to deliver the call. The number may still be assigned to the Default profile rather than the one you configured, so your settings are not applied. Or an Inbound SIP URI Route may be set on the profile, which overrides delivery to registered endpoints and forces the call to that URI instead. Do not set a URI route on a profile that uses registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my after-hours routing trigger at the wrong time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Time Zone setting on the profile is wrong. Every time-based behaviour on the account reads it, including business hours, after-hours call routing and call queue time schedules. A profile left on a different region will open and close the phones at the wrong local time. Set it to the region the business actually operates in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the number keep call recording and transcription when an AI agent answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Calls answered by an AI agent are recorded, transcribed, summarised and sentiment-scored in the same way as any other call on the account, provided Recording Enabled is ticked on the profile. Those transcripts are what most customers use to review and improve what their agent says to callers."
+      }
+    }
   ]
 }
 </script>
@@ -408,6 +452,13 @@
 </div>
 
 </div>
+<div class="mb-12 rounded-2xl border-2 border-[#3B9C49]/40 bg-[#3B9C49]/10 p-6">
+<h2 class="text-base font-bold text-gray-900 mb-2">The address to allowlist</h2>
+<p class="text-gray-600 leading-relaxed">When Click2Call delivers a call to an external SIP endpoint &mdash; any of the built-in provider profiles, or your own <strong>Inbound SIP URI Route</strong> &mdash; the INVITE leaves our switch from:</p>
+<p class="mt-4 mb-4 font-mono text-lg font-bold text-gray-900">103.212.52.19</p>
+<p class="text-gray-600 leading-relaxed">That is the address to put on the provider&rsquo;s IP allowlist, ACL or access control list. Click2Call cannot present a username and password on an outbound INVITE, so allowlisting is the only way a provider can trust us &mdash; if they challenge the call for credentials, it fails.</p>
+<p class="text-gray-600 leading-relaxed mt-3 text-sm">Some providers only accept individual addresses rather than CIDR ranges. This is a single address, so that is not a problem. Do not allowlist the address that <span class="font-mono text-xs bg-white/70 px-1.5 py-0.5 rounded">sip.click2call.com.au</span> resolves to &mdash; that is the inbound proxy, used when a device registers <em>to</em> us, and it is not where outbound INVITEs come from.</p>
+</div>
 <h2 class="text-2xl font-bold text-gray-900 mb-4">Guides for Each Built-In Provider</h2>
 <p class="text-gray-600 leading-relaxed mb-6">The Click2Call side is much the same for all of them. What differs is what the provider needs at their end &mdash; and whether you need to write any code at all.</p>
 <div class="mb-12 overflow-x-auto rounded-2xl border border-gray-200 bg-white">
@@ -426,7 +477,7 @@
 </tbody></table></div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">407 Proxy Authentication Required, over and over</h3><p class="text-gray-600 leading-relaxed">Work out which way the 407 is travelling, because the two causes are opposites.</p><p class="text-gray-600 leading-relaxed mt-3"><strong>The AI platform is being challenged as it registers to Click2Call.</strong> The profile is set to <strong>SIP Peering (Direct IP)</strong> when it should be <strong>SIP Registration</strong>. Peering carries no username or password &mdash; the two ends trust each other by IP. If you have credentials, switch to SIP Registration and let the platform register in.</p><p class="text-gray-600 leading-relaxed mt-3"><strong>The provider is challenging our outbound INVITE.</strong> Their end is asking us to authenticate, which means our signalling address is not on their allowlist. Click2Call cannot present a username and password on an outbound INVITE, so this is never fixed with credentials &mdash; ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the signalling address and have the provider allowlist it. Callers hear &ldquo;the number you have called is not available from this service&rdquo; while this is happening.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">407 Proxy Authentication Required, over and over</h3><p class="text-gray-600 leading-relaxed">Work out which way the 407 is travelling, because the two causes are opposites.</p><p class="text-gray-600 leading-relaxed mt-3"><strong>The AI platform is being challenged as it registers to Click2Call.</strong> The profile is set to <strong>SIP Peering (Direct IP)</strong> when it should be <strong>SIP Registration</strong>. Peering carries no username or password &mdash; the two ends trust each other by IP. If you have credentials, switch to SIP Registration and let the platform register in.</p><p class="text-gray-600 leading-relaxed mt-3"><strong>The provider is challenging our outbound INVITE.</strong> Their end is asking us to authenticate, which means our signalling address is not on their allowlist. Click2Call cannot present a username and password on an outbound INVITE, so this is never fixed with credentials &mdash; have the provider allowlist <strong>103.212.52.19</strong>, the address our switch sends INVITEs from. Callers hear &ldquo;the number you have called is not available from this service&rdquo; while this is happening.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Calls land on Click2Call voicemail instead of the agent</h3><p class="text-gray-600 leading-relaxed">Check three things, in this order. Is the platform actually registered? Is the number assigned to your profile rather than <em>Default</em>? And is an <strong>Inbound SIP URI Route</strong> set on the profile? A URI route overrides delivery to registered endpoints and forces the call to that URI &mdash; so never set one on a profile that uses registration.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Registration fails, or the platform reports the endpoint unreachable</h3><p class="text-gray-600 leading-relaxed">Make sure the transport matches the port. Port 5061 is TLS only; a platform set to UDP while pointing at 5061 will never connect. Use TLS on 5061, or UDP/TCP on 5060.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">TLS connects but the platform rejects the certificate</h3><p class="text-gray-600 leading-relaxed">Some SIP clients verify the TLS certificate hostname strictly and will drop the connection before authenticating. If your platform reports a certificate or hostname mismatch, contact support and we will confirm the correct host value for your account.</p></div>
@@ -436,6 +487,7 @@
 <h2 class="text-2xl font-bold text-gray-900 mb-6 mt-4">Frequently Asked Questions</h2>
 <div class="space-y-6 mb-12">
 <div><h3 class="font-bold text-gray-900 mb-1">Which AI voice platforms are supported?</h3><p class="text-gray-600 leading-relaxed">Ready-made profiles exist for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI, Synthflow, LiveKit Cloud, Cloudonix and Twilio. Anything else that speaks SIP connects using generic SIP Registration.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">What address does my AI provider need to allowlist?</h3><p class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">103.212.52.19</span>. That is where outbound INVITEs leave our switch when a call is delivered to an external SIP endpoint. It is not the same as the address <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span> resolves to, which is the inbound proxy used for registration.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">What username and password does the platform use?</h3><p class="text-gray-600 leading-relaxed">Username and authorisation name are both the phone number in full international format. The password is the line password from Line Manager. Host and outbound proxy are <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Does the call still get recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; provided <strong>Recording Enabled</strong> is ticked on the profile, calls answered by an AI agent are recorded, transcribed, summarised and sentiment-scored like any other. Those transcripts are how most customers improve what their agent says. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Can I use my existing business number?</h3><p class="text-gray-600 leading-relaxed">Yes. Port it across first &mdash; see <a class="text-[#3B9C49] hover:underline" href="/number-porting/">number porting</a> &mdash; then point it at your agent. Or test on a new number and move the main one once you are happy.</p></div>
