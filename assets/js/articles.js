@@ -298,6 +298,96 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
+    url:      "/help/how-to-connect-elevenlabs",
+    title:    "Connecting ElevenLabs to Your Phone Number",
+    desc:     "Point an Australian number at an ElevenLabs voice agent using the built-in profile. No code required.",
+    tags:     "elevenlabs eleven labs ai voice agent sip trunk import phone number connection type profile no code",
+    category: "ai",
+    readTime: "5 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-openai",
+    title:    "Connecting OpenAI to Your Phone Number",
+    desc:     "Enter your OpenAI Project ID, set up the call webhook, and route calls to the Realtime API.",
+    tags:     "openai project id realtime api sip webhook realtime.call.incoming voice agent connection type profile",
+    category: "ai",
+    readTime: "5 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-retell-ai",
+    title:    "Connecting Retell AI to Your Phone Number",
+    desc:     "Bring your own Australian number to a Retell AI agent using the built-in profile. No code required.",
+    tags:     "retell retellai ai voice agent bring your own number import custom telephony connection type profile",
+    category: "ai",
+    readTime: "5 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-synthflow",
+    title:    "Connecting Synthflow to Your Phone Number",
+    desc:     "Import your number into Synthflow and point Click2Call at it with one dropdown. No code required.",
+    tags:     "synthflow ai assistant voice agent sip trunk import phone number custom connection type profile",
+    category: "ai",
+    readTime: "5 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-vapi",
+    title:    "Connecting Vapi to Your Phone Number",
+    desc:     "Paste your Vapi Assistant ID into the profile and calls route straight to the assistant.",
+    tags:     "vapi vapi.ai assistant id ai voice agent sip connection type profile bring your own number",
+    category: "ai",
+    readTime: "4 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-livekit",
+    title:    "Connecting LiveKit Cloud to Your Phone Number",
+    desc:     "Find your project subdomain and region, create an inbound trunk and dispatch rule, and connect.",
+    tags:     "livekit cloud sip subdomain region inbound trunk dispatch rule agents worker connection type profile",
+    category: "ai",
+    readTime: "6 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-xai",
+    title:    "Connecting xAI to Your Phone Number",
+    desc:     "Register a bring-your-own-trunk number with xAI, host the webhook, and route calls to Grok.",
+    tags:     "xai x.ai grok voice agent sip byo_trunk webhook websocket realtime connection type profile",
+    category: "ai",
+    readTime: "6 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-twilio",
+    title:    "Connecting Twilio to Your Phone Number",
+    desc:     "Route an Australian number into a Twilio SIP Domain so your TwiML or Studio Flow answers.",
+    tags:     "twilio sip domain twiml studio flow subdomain ip access control list programmable voice connection type profile",
+    category: "ai",
+    readTime: "6 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/how-to-connect-cloudonix",
+    title:    "Connecting Cloudonix to Your Phone Number",
+    desc:     "Route calls into a Cloudonix domain so a voice application can decide what happens next.",
+    tags:     "cloudonix domain inbound trunk voice application dial service middleware sip connection type profile",
+    category: "ai",
+    readTime: "5 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
     url:      "/help/how-to-set-up-ai-agents",
     title:    "Setting Up AI Agents",
     desc:     "How to create a conversational AI voice agent that answers calls and responds to questions 24/7.",

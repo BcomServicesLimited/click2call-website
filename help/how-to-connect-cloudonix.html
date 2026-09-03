@@ -5,9 +5,9 @@
   <meta name="indexnow-key" content="c545b40a993f47dc8e19d97473df5270fb62e2f6">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <title>How to Connect an AI Voice Agent to Your Number | Help Centre | Click2Call</title>
-  <link rel="canonical" href="https://www.click2call.com.au/help/how-to-connect-ai-voice-agent" />
-  <meta name="description" content="Connect ElevenLabs, OpenAI, xAI, Retell, VAPI or any SIP AI voice agent to an Australian Click2Call number. Built-in provider profiles plus generic SIP registration.">
+  <title>How to Connect Cloudonix to Your Phone Number | Help Centre | Click2Call</title>
+  <link rel="canonical" href="https://www.click2call.com.au/help/how-to-connect-cloudonix" />
+  <meta name="description" content="Route an Australian Click2Call number into Cloudonix so a voice application can decide what happens next. Domain, inbound trunk and profile setup.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/css/brand.css">
@@ -16,9 +16,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.click2call.com.au/help/how-to-connect-ai-voice-agent">
-  <meta property="og:title" content="Connecting an AI Voice Agent to Your Number | Help Centre | Click2Call">
-  <meta property="og:description" content="Connect ElevenLabs, OpenAI, xAI, Retell, VAPI or any SIP AI voice agent to an Australian Click2Call number. Built-in provider profiles plus generic SIP registration.">
+  <meta property="og:url" content="https://www.click2call.com.au/help/how-to-connect-cloudonix">
+  <meta property="og:title" content="Connecting Cloudonix to Your Phone Number | Help Centre | Click2Call">
+  <meta property="og:description" content="Route an Australian Click2Call number into Cloudonix so a voice application can decide what happens next. Domain, inbound trunk and profile setup.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -26,19 +26,51 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to connect an AI voice agent to a Click2Call phone number",
-  "description": "Point an Australian phone number at an AI voice agent, using a built-in provider profile or generic SIP registration.",
-  "totalTime": "PT20M",
-  "estimatedCost": {"@type": "MonetaryAmount", "currency": "AUD", "value": "0"},
-  "tool": [{"@type": "HowToTool", "name": "Click2Call portal"}],
+  "name": "How to connect Cloudonix to an Australian phone number with Click2Call",
+  "description": "Route calls from a Click2Call Australian number into a Cloudonix domain using the built-in Cloudonix connection profile.",
+  "totalTime": "PT30M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "AUD",
+    "value": "0"
+  },
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Click2Call portal"
+    }
+  ],
   "step": [
-    {"@type": "HowToStep", "name": "Check whether your provider has a built-in profile", "text": "Open Voice then Profiles and look at the Connection Type list. Click2Call includes ready-made profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration. If your provider is listed, select it and enter the SIP URI the provider gives you."},
-    {"@type": "HowToStep", "name": "For any other provider use SIP Registration", "text": "If the platform is not listed, set Connection Type to SIP Registration. The AI platform then registers to Click2Call exactly as a softphone does, using the phone number as its username."},
-    {"@type": "HowToStep", "name": "Get the line credentials", "text": "Open Voice then Line Manager. Each number has a Password column with a View control that reveals the SIP password for that line. The username is the phone number in full international format, for example 61721402648."},
-    {"@type": "HowToStep", "name": "Enter the credentials on the AI platform", "text": "In the platform's SIP or trunk settings choose registration-based authentication. Set username and authorisation name to the phone number, password to the value from Line Manager, and host and outbound proxy to sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on 5060. Set DTMF to RFC 2833. No STUN server is required."},
-    {"@type": "HowToStep", "name": "Check the number is on the right profile", "text": "In Line Manager confirm the Profile column for the number points at the profile you configured. The default profile applies to every line with no profile assigned, and new numbers land on it automatically, so a number left on Default will ignore your settings."},
-    {"@type": "HowToStep", "name": "Set the profile time zone", "text": "Set the Time Zone on the profile to the region the business operates in. Every time-based behaviour on the account reads it, including business hours, after-hours routing and call queue schedules."},
-    {"@type": "HowToStep", "name": "Test the call", "text": "Ring the number from a mobile. The agent should answer within a couple of seconds. If the call reaches Click2Call voicemail instead, the platform is not registered, the number is on the wrong profile, or an Inbound SIP URI Route is overriding delivery."}
+    {
+      "@type": "HowToStep",
+      "name": "Understand where Cloudonix sits",
+      "text": "Cloudonix is a programmable middleware layer between a carrier and an AI agent platform, not an agent itself. Calls arrive from Click2Call, a Cloudonix voice application decides what to do, and the call is handed on — often to an AI provider such as Vapi or Retell."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Create a Cloudonix domain",
+      "text": "In the Cloudonix portal create a domain. Each domain gets its own inbound SIP hostname, shown in the Inbound Trunks section in the information box at the top."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set up the inbound trunk",
+      "text": "In the Inbound Trunks section, configure the trunk that will receive calls. Allowlist the Click2Call signalling addresses — ask Click2Call support for the current values."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Write the voice application",
+      "text": "A Cloudonix voice application is a script that decides what happens to each call, including handing it to an AI agent platform with the Dial Service verb. Nothing answers the call until an application is attached."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Create the profile in Click2Call",
+      "text": "In the Click2Call portal open Voice then Profiles and set Connection Type to Cloudonix. There are no extra fields — Click2Call routes to sip:trunk.cloudonix.com:5060;transport=tcp automatically and sends the number in +E.164 format."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Assign your number and set the time zone",
+      "text": "Open Voice then Line Manager and set the Profile column for your number to the new profile. Set the Time Zone on the profile to where the business operates."
+    }
   ]
 }
 </script>
@@ -47,9 +79,24 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.click2call.com.au/"},
-    {"@type": "ListItem", "position": 2, "name": "Help Centre", "item": "https://www.click2call.com.au/help/"},
-    {"@type": "ListItem", "position": 3, "name": "Connecting an AI Voice Agent", "item": "https://www.click2call.com.au/help/how-to-connect-ai-voice-agent"}
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.click2call.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Help Centre",
+      "item": "https://www.click2call.com.au/help/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Connecting Cloudonix",
+      "item": "https://www.click2call.com.au/help/how-to-connect-cloudonix"
+    }
   ]
 }
 </script>
@@ -58,18 +105,46 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Which AI voice platforms can connect to a Click2Call number?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Click2Call includes ready-made connection profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration, so connecting those is a matter of selecting the provider from the Connection Type list and entering the SIP URI they supply. Any other platform that supports SIP registration can be connected using the generic SIP Registration connection type, with the phone number as the username and the line password from Line Manager."}},
-    {"@type": "Question", "name": "What username and password does the AI platform use?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The username and authorisation name are both the Click2Call phone number in full international format, for example 61721402648. The password is the SIP password for that line, revealed in Line Manager under the Password column using the View control. Host and outbound proxy are both sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on port 5060, with DTMF set to RFC 2833."}},
-    {"@type": "Question", "name": "Why do I keep getting 407 Proxy Authentication Required?",
-     "acceptedAnswer": {"@type": "Answer", "text": "A repeated 407 almost always means the profile is set to SIP Peering (Direct IP) when it should be SIP Registration. Peering expects the two platforms to trust each other by IP address and involves no credentials, whereas a username and password against sip.click2call.com.au is a registration setup. Change the Connection Type to SIP Registration and configure the AI platform to register in as the number, the same way a softphone does."}},
-    {"@type": "Question", "name": "Calls go to Click2Call voicemail instead of the AI agent. Why?",
-     "acceptedAnswer": {"@type": "Answer", "text": "There are three usual causes. The AI platform may not be registered, leaving Click2Call nowhere to deliver the call. The number may still be assigned to the Default profile rather than the one you configured, so your settings are not applied. Or an Inbound SIP URI Route may be set on the profile, which overrides delivery to registered endpoints and forces the call to that URI instead. Do not set a URI route on a profile that uses registration."}},
-    {"@type": "Question", "name": "Why does my after-hours routing trigger at the wrong time?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The Time Zone setting on the profile is wrong. Every time-based behaviour on the account reads it, including business hours, after-hours call routing and call queue time schedules. A profile left on a different region will open and close the phones at the wrong local time. Set it to the region the business actually operates in."}},
-    {"@type": "Question", "name": "Does the number keep call recording and transcription when an AI agent answers?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Calls answered by an AI agent are recorded, transcribed, summarised and sentiment-scored in the same way as any other call on the account, provided Recording Enabled is ticked on the profile. Those transcripts are what most customers use to review and improve what their agent says to callers."}}
+    {
+      "@type": "Question",
+      "name": "What does Cloudonix actually do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cloudonix is programmable SIP middleware. It sits between a carrier trunk and whatever should handle the call, and a voice application you write decides the routing — including handing the call to an AI agent platform such as Vapi or Retell with a Dial Service verb. If you only want one AI agent answering one number, connecting that provider directly is simpler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is Cloudonix worth the extra layer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the call needs logic before it reaches the agent, when you want to switch AI providers without touching the carrier configuration, or when several services need to share one number. For a single agent on a single number, use that provider's own Click2Call profile instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which SIP address does Click2Call send calls to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "sip:trunk.cloudonix.com:5060;transport=tcp. It is pre-configured in the Cloudonix connection profile, so there is nothing to type in Click2Call. The dialled number arrives in +E.164 format for your Cloudonix application to match on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to write code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in the sense that a Cloudonix voice application is a script you author. That is the whole point of the product — it is a programmable layer rather than a dashboard-configured agent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are calls still recorded and transcribed by Click2Call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side regardless of what your Cloudonix application does with the call, with the data stored in Australia and New Zealand."
+      }
+    }
   ]
 }
 </script>
@@ -286,159 +361,94 @@
           <li><span class="text-gray-300">/</span></li>
           <li><a href="/help/?cat=ai" class="hover:text-gray-600 transition-colors">AI Features</a></li>
           <li><span class="text-gray-300">/</span></li>
-          <li class="text-gray-700 font-medium truncate">Connecting an AI Voice Agent to Your Number</li>
+          <li class="text-gray-700 font-medium truncate">Connecting Cloudonix to Your Phone Number</li>
         </ol>
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">AI Features</span>
-        <span class="text-xs text-gray-400">6 min read</span>
+        <span class="text-xs text-gray-400">5 min read</span>
       </div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting an AI Voice Agent to Your Number</h1>
-      <p class="text-gray-600 leading-relaxed">Point an Australian phone number at an AI voice agent. Click2Call has built-in profiles for the major platforms &mdash; ElevenLabs, OpenAI, xAI, Retell, VAPI and others &mdash; and anything else that speaks SIP connects by registration. This guide covers both, plus the three settings that catch most people out.</p>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting Cloudonix to Your Phone Number</h1>
+      <p class="text-gray-600 leading-relaxed">Cloudonix is a programmable layer between the carrier and whatever answers the call. Click2Call has a built-in Cloudonix connection profile, so the routing is one dropdown &mdash; the work is the voice application at their end.</p>
 <p class="mt-3 text-sm text-gray-400">Last reviewed: September 2026</p>
     </div>
   </div>
 
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<h2 class="text-2xl font-bold text-gray-900 mb-6">Connecting Your Agent, Step by Step</h2>
+<div class="mb-10 rounded-2xl border-2 border-blue-200 bg-blue-50 p-6"><h2 class="text-base font-bold text-blue-900 mb-2">Cloudonix is a layer, not an agent</h2><p class="text-sm text-blue-900 leading-relaxed">Cloudonix is programmable SIP middleware. It receives the call, runs a voice application you have written, and hands the call on &mdash; often to an AI provider such as Vapi or Retell. If all you want is one AI agent answering one number, connect that provider directly and skip the extra hop: <a class="font-semibold underline" href="/help/how-to-connect-vapi">Vapi</a>, <a class="font-semibold underline" href="/help/how-to-connect-retell-ai">Retell</a>, <a class="font-semibold underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a>.</p></div>
+<div class="mb-10 rounded-2xl border border-gray-200 bg-white p-6">
+<h2 class="text-base font-bold text-gray-900 mb-4">At a glance</h2>
+<dl class="space-y-3 text-sm">
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Mandatory Click2Call field</dt><dd class="text-gray-600 leading-relaxed">None &mdash; just pick the connection type</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Where Click2Call sends calls</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:trunk.cloudonix.com:5060;transport=tcp</span></dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Authentication</dt><dd class="text-gray-600 leading-relaxed">IP allowlist on the Cloudonix inbound trunk</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format</dt><dd class="text-gray-600 leading-relaxed">+E.164, set automatically</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Code required</dt><dd class="text-gray-600 leading-relaxed">Yes &mdash; a Cloudonix voice application</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Provider documentation</dt><dd class="text-gray-600 leading-relaxed"><a class="text-[#3B9C49] hover:underline" href="https://developers.cloudonix.com/" target="_blank" rel="noopener">Cloudonix developer resources</a></dd></div>
+</dl></div>
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Connecting Cloudonix, Step by Step</h2>
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Check whether your provider is built in</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Profiles</strong> and open the <strong>Connection Type</strong> list. Click2Call ships ready-made profiles for the major AI voice platforms:</p><div class="mt-4 rounded-xl bg-gray-50 border border-gray-200 p-4"><a href="/help/how-to-connect-elevenlabs" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Eleven Labs AI</a><a href="/help/how-to-connect-openai" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">OpenAI</a><a href="/help/how-to-connect-xai" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">xAI</a><a href="/help/how-to-connect-retell-ai" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Retell AI</a><a href="/help/how-to-connect-vapi" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">VAPI AI Integration</a><a href="/help/how-to-connect-synthflow" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Synthflow</a><a href="/help/how-to-connect-livekit" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">LiveKit Cloud</a><a href="/help/how-to-connect-cloudonix" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Cloudonix</a><a href="/help/how-to-connect-twilio" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Twilio Integration</a></div><p class="text-gray-600 leading-relaxed mt-3">If your provider is on that list, select it and Click2Call fills in the SIP route for you. A few profiles ask for one identifier &mdash; an OpenAI Project ID, a VAPI Assistant ID, a Twilio or LiveKit subdomain &mdash; and the rest need nothing at all. Each name above links to a step-by-step guide covering both ends of the connection.</p><img src="/assets/images/help/ai-agent-connection-types.webp" alt="The Connection Type dropdown in the Click2Call profile settings, listing SIP Registration, Registered SIP Trunk, SIP Peering, IAX2 Registration, Microsoft Teams, Cloudonix, Eleven Labs AI, LiveKit Cloud, OpenAI, Retell AI, Synthflow, Twilio Integration, VAPI AI Integration and xAI." width="1600" height="752" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Not on the list? That is fine &mdash; anything that speaks SIP still connects using the generic method in the next step.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Create a Cloudonix domain</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the Cloudonix portal, create the domain this number belongs to. Each domain gets its own inbound SIP hostname, which appears in the information box at the top of the <strong>Inbound Trunks</strong> section &mdash; it looks like <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">&lt;uuid&gt;.sip.cloudonix.net</span>.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">You need a separate Cloudonix SIP trunk for each domain, so plan the domain layout before you start wiring numbers up.</p></div>
     </div>
 </div>
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">For any other provider, use SIP Registration</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Set <strong>Connection Type</strong> to <strong>SIP Registration</strong>. Your AI platform then registers to Click2Call the way a softphone or desk phone does, using the phone number as its username.</p><p class="text-gray-600 leading-relaxed mt-3">This is the step people most often get wrong. It is tempting to pick <em>SIP Peering (Direct IP)</em> because you are joining two platforms &mdash; but peering means the two ends trust each other by IP address, with no credentials at all. If you have a username and password, you want registration.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Configure the inbound trunk</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In <strong>Inbound Trunks</strong>, set up the trunk that will receive calls from Click2Call and allowlist the Click2Call signalling addresses.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The built-in provider profiles route calls without SIP digest credentials, so authenticate Click2Call by <strong>IP allowlist</strong> at the provider end. Ask <a class="font-semibold underline" href="/support/">Click2Call support</a> for the current signalling addresses. If the provider insists on username and password authentication, use the <strong>Registered SIP Trunk</strong> connection type instead.</p></div>
     </div>
 </div>
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Get the credentials for the line</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong>. Each number has a <strong>Password</strong> column with a <strong>View</strong> control that reveals the SIP password for that line. The username is the number itself, in full international format.</p><img src="/assets/images/help/ai-agent-line-credentials.webp" alt="The Click2Call Line Manager screen showing the phone number, Profile and Password columns, with a View control that reveals the SIP password. The password value is masked in this example." width="1600" height="438" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Treat the line password as a credential. Anyone holding it can register a device as that number and place calls billed to your account.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Write the voice application</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">A Cloudonix voice application is a script that decides what happens to each call. To hand the call to an AI agent platform, use the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">&lt;Dial&gt;&lt;Service&gt;</span> verb.</p><p class="text-gray-600 leading-relaxed mt-3">Until an application is attached to the domain, calls arrive and go nowhere.</p>
     </div>
 </div>
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Enter the details on the AI platform</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the platform&rsquo;s SIP or trunk settings, choose registration-based authentication &mdash; some platforms label this &ldquo;username and password&rdquo; as opposed to &ldquo;IP&rdquo; &mdash; then enter the values below.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>Cloudonix</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">There are no extra fields. The <strong>Inbound SIP URI Route</strong> line already shows <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:trunk.cloudonix.com:5060;transport=tcp</span>, and the dialled number arrives in +E.164 format for your Cloudonix application to match on.</p><img src="/assets/images/help/profile-cloudonix.webp" alt="The Click2Call profile settings with Connection Type set to Cloudonix, showing the pre-configured Inbound SIP URI Route sip:trunk.cloudonix.com:5060;transport=tcp and the optional Access Control List field." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
-
-</div>
-    <!-- SIP Credentials Reference Table -->
-    <div class="mb-10 rounded-2xl border border-gray-200 bg-white overflow-hidden">
-      <div class="bg-gray-50 border-b border-gray-200 px-5 py-3">
-        <h2 class="text-sm font-bold text-gray-900 uppercase tracking-wide">SIP Credentials Reference</h2>
-        <p class="text-xs text-gray-500 mt-0.5">Enter these values exactly as shown into your phone's SIP account settings.</p>
-      </div>
-      <table class="w-full text-sm">
-        <tbody class="divide-y divide-gray-100">
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700 w-1/2">Username / Login / User ID</td>
-            <td class="px-5 py-3 text-gray-600">Your Click2Call phone number including country code<br><span class="text-xs text-gray-400">e.g. 61234567890</span></td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">Authorisation Name / Display Name</td>
-            <td class="px-5 py-3 text-gray-600">Your Click2Call phone number including country code<br><span class="text-xs text-gray-400">e.g. 61234567890</span></td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">Password</td>
-            <td class="px-5 py-3 text-gray-600">Your Click2Call password (assigned at signup)</td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">Host / Proxy / Domain</td>
-            <td class="px-5 py-3 font-mono text-[#3B9C49] font-semibold">sip.click2call.com.au</td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">Outbound Proxy</td>
-            <td class="px-5 py-3 font-mono text-[#3B9C49] font-semibold">sip.click2call.com.au</td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">SIP Transport</td>
-            <td class="px-5 py-3 text-gray-600">UDP, TCP, or TLS &mdash; <span class="font-semibold text-gray-800">TLS preferred</span></td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">SIP Port</td>
-            <td class="px-5 py-3 text-gray-600">5060 or 50600 (UDP/TCP) &nbsp;&bull;&nbsp; 5061 (TLS)</td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">DTMF Mode</td>
-            <td class="px-5 py-3 text-gray-600">RFC 2833 (also listed as AVT or Out-of-Band)</td>
-          </tr>
-          <tr class="hover:bg-gray-50 transition-colors">
-            <td class="px-5 py-3 font-semibold text-gray-700">STUN Server</td>
-            <td class="px-5 py-3 text-gray-600">Not required</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-<div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Check the number is on the right profile</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Back in <strong>Line Manager</strong>, confirm the <strong>Profile</strong> column for that number points at the profile you configured.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This one catches almost everybody. The default profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; so a number left on <em>Default</em> quietly ignores the profile you just spent your morning setting up.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
     </div>
 </div>
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Set the time zone on the profile</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">While you are in the profile, check the <strong>Time Zone</strong>. Every time-based behaviour on the account reads it &mdash; business hours, after-hours routing and call queue schedules all follow this setting.</p><img src="/assets/images/help/ai-agent-profile-settings.webp" alt="Click2Call Default Profile settings showing Connection Type set to SIP Registration, the feature checkboxes including Recording Enabled, the Time Zone selector set to GMT+10:00 Australia Brisbane, and the Inbound SIP URI Route field." width="1600" height="742" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><p class="text-gray-600 leading-relaxed mt-3">If the phones open and close at the wrong local time, this is almost always why.</p>
-    </div>
-</div>
-
-<div class="flex gap-5 mb-8">
-    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
-    <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Test it</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. Your agent should answer within a couple of seconds.</p><p class="text-gray-600 leading-relaxed mt-3">If the call reaches Click2Call voicemail instead, work through the troubleshooting below.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile and watch the Cloudonix call logs. You should see the call arrive and your voice application run.</p>
     </div>
 </div>
 
 </div>
-<h2 class="text-2xl font-bold text-gray-900 mb-4">Guides for Each Built-In Provider</h2>
-<p class="text-gray-600 leading-relaxed mb-6">The Click2Call side is much the same for all of them. What differs is what the provider needs at their end &mdash; and whether you need to write any code at all.</p>
-<div class="mb-12 overflow-x-auto rounded-2xl border border-gray-200 bg-white">
-<table class="w-full text-sm min-w-[34rem]">
-<thead><tr class="border-b border-gray-200 bg-gray-50"><th class="text-left font-bold text-gray-900 py-3 px-4">Provider</th><th class="text-left font-bold text-gray-900 py-3 pr-4">Click2Call field</th><th class="text-left font-bold text-gray-900 py-3 pr-4">At the provider end</th></tr></thead>
-<tbody class="px-4">
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-elevenlabs">Eleven Labs AI</a></td><td class="py-3 pr-4 align-top text-gray-600">no extra fields</td><td class="py-3 align-top text-gray-600">No code</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-openai">OpenAI</a></td><td class="py-3 pr-4 align-top text-gray-600">OpenAI Project ID</td><td class="py-3 align-top text-gray-600">Needs a webhook</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-xai">xAI</a></td><td class="py-3 pr-4 align-top text-gray-600">no extra fields</td><td class="py-3 align-top text-gray-600">Needs a webhook</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-retell-ai">Retell AI</a></td><td class="py-3 pr-4 align-top text-gray-600">no extra fields</td><td class="py-3 align-top text-gray-600">No code</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-vapi">VAPI AI Integration</a></td><td class="py-3 pr-4 align-top text-gray-600">VAPI Assistant ID</td><td class="py-3 align-top text-gray-600">No code</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-synthflow">Synthflow</a></td><td class="py-3 pr-4 align-top text-gray-600">no extra fields</td><td class="py-3 align-top text-gray-600">No code</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-livekit">LiveKit Cloud</a></td><td class="py-3 pr-4 align-top text-gray-600">Subdomain and Region</td><td class="py-3 align-top text-gray-600">Needs an agent worker</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-cloudonix">Cloudonix</a></td><td class="py-3 pr-4 align-top text-gray-600">no extra fields</td><td class="py-3 align-top text-gray-600">Needs a voice application</td></tr>
-<tr class="border-b border-gray-100 last:border-0"><td class="py-3 px-4 align-top"><a class="font-semibold text-[#3B9C49] hover:underline" href="/help/how-to-connect-twilio">Twilio Integration</a></td><td class="py-3 pr-4 align-top text-gray-600">Twilio Subdomain</td><td class="py-3 align-top text-gray-600">TwiML or Studio Flow</td></tr>
-</tbody></table></div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">407 Proxy Authentication Required, over and over</h3><p class="text-gray-600 leading-relaxed">The profile is set to <strong>SIP Peering (Direct IP)</strong> when it should be <strong>SIP Registration</strong>. Peering carries no username or password &mdash; the two ends trust each other by IP. If you have credentials, switch to SIP Registration and let the platform register in.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls land on Click2Call voicemail instead of the agent</h3><p class="text-gray-600 leading-relaxed">Check three things, in this order. Is the platform actually registered? Is the number assigned to your profile rather than <em>Default</em>? And is an <strong>Inbound SIP URI Route</strong> set on the profile? A URI route overrides delivery to registered endpoints and forces the call to that URI &mdash; so never set one on a profile that uses registration.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Registration fails, or the platform reports the endpoint unreachable</h3><p class="text-gray-600 leading-relaxed">Make sure the transport matches the port. Port 5061 is TLS only; a platform set to UDP while pointing at 5061 will never connect. Use TLS on 5061, or UDP/TCP on 5060.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">TLS connects but the platform rejects the certificate</h3><p class="text-gray-600 leading-relaxed">Some SIP clients verify the TLS certificate hostname strictly and will drop the connection before authenticating. If your platform reports a certificate or hostname mismatch, contact support and we will confirm the correct host value for your account.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">After-hours or queue schedules trigger at the wrong time</h3><p class="text-gray-600 leading-relaxed">The profile <strong>Time Zone</strong> is set to the wrong region. Business hours, after-hours routing and queue schedules all read it. Correct the time zone on the profile and the schedules follow.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Everything looks right and the agent still does not answer</h3><p class="text-gray-600 leading-relaxed">Confirm <strong>Call Forward Always</strong> is off on the line, and that no other call flow feature is configured on that number. A queue, ring group or auto-attendant on the same line takes the call before your agent does.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The call arrives at Cloudonix and stops</h3><p class="text-gray-600 leading-relaxed">No voice application is attached to the domain, or the application is not matching the dialled number. Remember the number arrives in +E.164 format, with the leading plus.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Cloudonix rejects the call</h3><p class="text-gray-600 leading-relaxed">The inbound trunk is not accepting traffic from the address Click2Call signals from. Ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current addresses and allowlist them.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than the provider profile, so the call never leaves for the provider at all. Check the Profile column in Line Manager.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">You are not sure you need Cloudonix at all</h3><p class="text-gray-600 leading-relaxed">If one agent answers one number, you probably do not. Connect the AI provider directly with its own Click2Call profile and remove a hop from the call path.</p></div>
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6 mt-4">Frequently Asked Questions</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">Which AI voice platforms are supported?</h3><p class="text-gray-600 leading-relaxed">Ready-made profiles exist for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI, Synthflow, LiveKit Cloud, Cloudonix and Twilio. Anything else that speaks SIP connects using generic SIP Registration.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">What username and password does the platform use?</h3><p class="text-gray-600 leading-relaxed">Username and authorisation name are both the phone number in full international format. The password is the line password from Line Manager. Host and outbound proxy are <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span>.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Does the call still get recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; provided <strong>Recording Enabled</strong> is ticked on the profile, calls answered by an AI agent are recorded, transcribed, summarised and sentiment-scored like any other. Those transcripts are how most customers improve what their agent says. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Can I use my existing business number?</h3><p class="text-gray-600 leading-relaxed">Yes. Port it across first &mdash; see <a class="text-[#3B9C49] hover:underline" href="/number-porting/">number porting</a> &mdash; then point it at your agent. Or test on a new number and move the main one once you are happy.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">What is Cloudonix for?</h3><p class="text-gray-600 leading-relaxed">Programmable call logic between the carrier and whatever handles the call. It earns its place when routing decisions happen before the agent, when you want to swap AI providers without touching carrier config, or when several services share one number.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Do I need it for a single AI agent?</h3><p class="text-gray-600 leading-relaxed">No. Connect the provider directly &mdash; <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-vapi">Vapi</a>, <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-retell-ai">Retell</a>, <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a> and the rest all have their own built-in profile.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Are calls still recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes, provided <strong>Recording Enabled</strong> is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Can I use my existing business number?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; <a class="text-[#3B9C49] hover:underline" href="/number-porting/">port it across</a> first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.</p></div>
 </div>
     <div class="bg-white rounded-2xl border border-gray-200 p-6 mb-8">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
