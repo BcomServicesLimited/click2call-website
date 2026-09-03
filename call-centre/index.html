@@ -45,9 +45,24 @@
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.click2call.com.au/"},
-        {"@type": "ListItem", "position": 2, "name": "Cloud PBX", "item": "https://www.click2call.com.au/cloud-pbx/"},
-        {"@type": "ListItem", "position": 3, "name": "Call Centre Features", "item": "https://www.click2call.com.au/call-centre/"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.click2call.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cloud PBX",
+          "item": "https://www.click2call.com.au/cloud-pbx/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Call Centre Features",
+          "item": "https://www.click2call.com.au/call-centre/"
+        }
       ]
     }
   },
@@ -88,6 +103,7 @@
     },
     "provider": {
       "@type": "Organization",
+      "@id": "https://www.click2call.com.au/#organization",
       "name": "Click2Call",
       "url": "https://www.click2call.com.au"
     }
@@ -100,37 +116,58 @@
       {
         "@type": "Question",
         "name": "Does Click2Call include call centre features, or are they a paid add-on?",
-        "acceptedAnswer": {"@type": "Answer", "text": "They are included. Call queues, the live call activity dashboard, call routing, automatic call recording, AI transcription and sentiment analysis all come with a standard Cloud PBX user at $25 per user per month ex GST. There is no separate contact centre tier, no add-on licence and no per-agent surcharge. Most providers sell queueing and real-time supervision as a more expensive edition; Click2Call does not."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They are included. Call queues, the live call activity dashboard, call routing, automatic call recording, AI transcription and sentiment analysis all come with a standard Cloud PBX user at $25 per user per month ex GST. There is no separate contact centre tier, no add-on licence and no per-agent surcharge. Most providers sell queueing and real-time supervision as a more expensive edition; Click2Call does not."
+        }
       },
       {
         "@type": "Question",
         "name": "How do call queues work in Click2Call?",
-        "acceptedAnswer": {"@type": "Answer", "text": "A queue is enabled on a phone line and holds callers while your team is busy rather than letting the phone ring out or return an engaged tone. You add team members as agents in the order you want them tried, and choose a queue strategy — Ring All rings every agent at once. Callers hear your own music on hold and can be told their position in the queue and their estimated hold time at an interval you set. You control the agent ring timeout, the retry timer, wrap-up time between calls, the maximum number of callers allowed to wait, and what happens if the queue times out. Queues can also run on a time schedule so they behave differently outside business hours."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A queue is enabled on a phone line and holds callers while your team is busy rather than letting the phone ring out or return an engaged tone. You add team members as agents in the order you want them tried, and choose a queue strategy — Ring All rings every agent at once. Callers hear your own music on hold and can be told their position in the queue and their estimated hold time at an interval you set. You control the agent ring timeout, the retry timer, wrap-up time between calls, the maximum number of callers allowed to wait, and what happens if the queue times out. Queues can also run on a time schedule so they behave differently outside business hours."
+        }
       },
       {
         "@type": "Question",
         "name": "Can I see calls in real time?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Call Activity Dashboard shows live calls, queue activity and team availability in one place, updating continuously. It displays counters for total, incoming, outgoing, internal and missed calls alongside total talk time and average talk time, a table of active calls showing caller, callee, connect time and current talk duration, a queued calls table showing who is waiting, in which queue and for how long, and a team status panel. A full-screen TV view is available for displaying the dashboard on a screen in the office."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Call Activity Dashboard shows live calls, queue activity and team availability in one place, updating continuously. It displays counters for total, incoming, outgoing, internal and missed calls alongside total talk time and average talk time, a table of active calls showing caller, callee, connect time and current talk duration, a queued calls table showing who is waiting, in which queue and for how long, and a team status panel. A full-screen TV view is available for displaying the dashboard on a screen in the office."
+        }
       },
       {
         "@type": "Question",
         "name": "What is a call queue wallboard?",
-        "acceptedAnswer": {"@type": "Answer", "text": "A wallboard is a live view of call activity displayed on a screen where the team can see it. Click2Call provides this through the TV view of the Call Activity Dashboard, which shows current calls, callers waiting in queues with their wait times, and the day's call counters at a glance. It is intended for a monitor on the office wall so supervisors and staff can see the queue building without opening the portal."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A wallboard is a live view of call activity displayed on a screen where the team can see it. Click2Call provides this through the TV view of the Call Activity Dashboard, which shows current calls, callers waiting in queues with their wait times, and the day's call counters at a glance. It is intended for a monitor on the office wall so supervisors and staff can see the queue building without opening the portal."
+        }
       },
       {
         "@type": "Question",
         "name": "How many agents can I put in a call queue?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Agents are added to a numbered list on each queue and are tried in the order you set, so a queue comfortably covers a full team or department. Each agent is a Cloud PBX user at $25 per user per month ex GST, and there is no additional per-agent charge for queue membership itself. A business can run multiple queues — for example one per department or per location — with different agents and different behaviour on each."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Agents are added to a numbered list on each queue and are tried in the order you set, so a queue comfortably covers a full team or department. Each agent is a Cloud PBX user at $25 per user per month ex GST, and there is no additional per-agent charge for queue membership itself. A business can run multiple queues — for example one per department or per location — with different agents and different behaviour on each."
+        }
       },
       {
         "@type": "Question",
         "name": "Do I need to be a call centre to use these features?",
-        "acceptedAnswer": {"@type": "Answer", "text": "No, and most businesses using them are not call centres. Any business where more calls sometimes arrive than there are people free to answer benefits from a queue: retail stores, medical and dental practices, trades businesses, property managers and professional services firms all use the same features. The value is that callers wait in an orderly queue hearing your message rather than getting an engaged tone or voicemail, and that you can see afterwards how many calls came in and how many were missed."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, and most businesses using them are not call centres. Any business where more calls sometimes arrive than there are people free to answer benefits from a queue: retail stores, medical and dental practices, trades businesses, property managers and professional services firms all use the same features. The value is that callers wait in an orderly queue hearing your message rather than getting an engaged tone or voicemail, and that you can see afterwards how many calls came in and how many were missed."
+        }
       },
       {
         "@type": "Question",
         "name": "Is call recording included, and where is the data stored?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Automatic call recording is included on every call at no extra charge, along with AI transcription, a written summary and a sentiment score. Recordings, transcripts, summaries and sentiment data are stored on servers in Australia and New Zealand and are not sent offshore. Recording can be enabled or disabled per number. Call recording law differs between Australian states, so notify callers in line with the rules where you operate."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Automatic call recording is included on every call at no extra charge, along with AI transcription, a written summary and a sentiment score. Recordings, transcripts, summaries and sentiment data are stored on servers in Australia and New Zealand and are not sent offshore. Recording can be enabled or disabled per number. Call recording law differs between Australian states, so notify callers in line with the rules where you operate."
+        }
       }
     ]
   }
