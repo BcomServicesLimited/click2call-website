@@ -26,19 +26,57 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
+  "dateModified": "2026-09-03",
   "name": "How to connect an AI voice agent to a Click2Call phone number",
   "description": "Point an Australian phone number at an AI voice agent, using a built-in provider profile or generic SIP registration.",
   "totalTime": "PT20M",
-  "estimatedCost": {"@type": "MonetaryAmount", "currency": "AUD", "value": "0"},
-  "tool": [{"@type": "HowToTool", "name": "Click2Call portal"}],
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "AUD",
+    "value": "0"
+  },
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Click2Call portal"
+    }
+  ],
   "step": [
-    {"@type": "HowToStep", "name": "Check whether your provider has a built-in profile", "text": "Open Voice then Profiles and look at the Connection Type list. Click2Call includes ready-made profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration. If your provider is listed, select it and enter the SIP URI the provider gives you."},
-    {"@type": "HowToStep", "name": "For any other provider use SIP Registration", "text": "If the platform is not listed, set Connection Type to SIP Registration. The AI platform then registers to Click2Call exactly as a softphone does, using the phone number as its username."},
-    {"@type": "HowToStep", "name": "Get the line credentials", "text": "Open Voice then Line Manager. Each number has a Password column with a View control that reveals the SIP password for that line. The username is the phone number in full international format, for example 61721402648."},
-    {"@type": "HowToStep", "name": "Enter the credentials on the AI platform", "text": "In the platform's SIP or trunk settings choose registration-based authentication. Set username and authorisation name to the phone number, password to the value from Line Manager, and host and outbound proxy to sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on 5060. Set DTMF to RFC 2833. No STUN server is required."},
-    {"@type": "HowToStep", "name": "Check the number is on the right profile", "text": "In Line Manager confirm the Profile column for the number points at the profile you configured. The default profile applies to every line with no profile assigned, and new numbers land on it automatically, so a number left on Default will ignore your settings."},
-    {"@type": "HowToStep", "name": "Set the profile time zone", "text": "Set the Time Zone on the profile to the region the business operates in. Every time-based behaviour on the account reads it, including business hours, after-hours routing and call queue schedules."},
-    {"@type": "HowToStep", "name": "Test the call", "text": "Ring the number from a mobile. The agent should answer within a couple of seconds. If the call reaches Click2Call voicemail instead, the platform is not registered, the number is on the wrong profile, or an Inbound SIP URI Route is overriding delivery."}
+    {
+      "@type": "HowToStep",
+      "name": "Check whether your provider has a built-in profile",
+      "text": "Open Voice then Profiles and look at the Connection Type list. Click2Call includes ready-made profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration. If your provider is listed, select it and enter the SIP URI the provider gives you."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "For any other provider use SIP Registration",
+      "text": "If the platform is not listed, set Connection Type to SIP Registration. The AI platform then registers to Click2Call exactly as a softphone does, using the phone number as its username."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Get the line credentials",
+      "text": "Open Voice then Line Manager. Each number has a Password column with a View control that reveals the SIP password for that line. The username is the phone number in full international format, for example 61721402648."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter the credentials on the AI platform",
+      "text": "In the platform's SIP or trunk settings choose registration-based authentication. Set username and authorisation name to the phone number, password to the value from Line Manager, and host and outbound proxy to sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on 5060. Set DTMF to RFC 2833. No STUN server is required."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Check the number is on the right profile",
+      "text": "In Line Manager confirm the Profile column for the number points at the profile you configured. The default profile applies to every line with no profile assigned, and new numbers land on it automatically, so a number left on Default will ignore your settings."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set the profile time zone",
+      "text": "Set the Time Zone on the profile to the region the business operates in. Every time-based behaviour on the account reads it, including business hours, after-hours routing and call queue schedules."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test the call",
+      "text": "Ring the number from a mobile. The agent should answer within a couple of seconds. If the call reaches Click2Call voicemail instead, the platform is not registered, the number is on the wrong profile, or an Inbound SIP URI Route is overriding delivery."
+    }
   ]
 }
 </script>

@@ -26,18 +26,52 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
+  "dateModified": "2026-08-31",
   "name": "How to set up a call queue in Click2Call",
   "description": "Configure a call queue on a Click2Call phone line so callers wait in an orderly queue with music and position announcements while your team is busy.",
   "totalTime": "PT15M",
-  "estimatedCost": {"@type": "MonetaryAmount", "currency": "AUD", "value": "0"},
-  "tool": [{"@type": "HowToTool", "name": "Click2Call portal"}],
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "AUD",
+    "value": "0"
+  },
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Click2Call portal"
+    }
+  ],
   "step": [
-    {"@type": "HowToStep", "name": "Enable the queue on the line", "text": "In the portal, open the Voice tab and select the number or extension the queue should apply to, which opens the Call Flow screen for that line. Open the Incoming Calls dropdown and choose Call Queue — the same menu that holds Voice Mail, Call Forwarding, Simultaneous Ring, Hunt Group, Auto Attendant and AI Attendant, so the queue replaces whichever incoming-call behaviour was set before. Tick Call Queue Enabled on this line, then set the Time Schedule to control when the queue is active: At all times, or a schedule you define."},
-    {"@type": "HowToStep", "name": "Add your agents", "text": "Add each team member who should answer queued calls to the numbered agent list. The numbering is the order agents are tried, which matters for every queue strategy except Ring All."},
-    {"@type": "HowToStep", "name": "Choose the queue strategy and ring timers", "text": "Select a Queue Strategy. Ring All rings every agent simultaneously. Set Agent Timeout, between 5 and 60 seconds, for how long each agent's phone rings. Set the Retry Timer for how long to wait before trying an agent again, and Wrapup Time for a pause after a call before that agent receives another."},
-    {"@type": "HowToStep", "name": "Decide what callers hear", "text": "Set Position Announcement to the number of seconds between telling the caller their place in the queue, or 0 to turn it off, and choose whether to include estimated hold time. Set Announcement Frequency for how often the thank you for holding message plays. Upload your own Music on Hold and Queue Announcement recordings."},
-    {"@type": "HowToStep", "name": "Set limits and the exit path", "text": "Set Maximum Length for how many callers may wait, where 0 means unlimited, and Queue Timeout for the longest a caller may wait, where 0 means no limit. Use queue exit options to choose where a caller goes when the timeout is reached, such as voicemail or another number."},
-    {"@type": "HowToStep", "name": "Test the queue", "text": "Call the line from an outside phone while the agents' phones are busy or unregistered. Confirm you hear the queue announcement and music on hold, that position announcements play at the interval you set, and that the call is delivered when an agent becomes free."}
+    {
+      "@type": "HowToStep",
+      "name": "Enable the queue on the line",
+      "text": "In the portal, open the Voice tab and select the number or extension the queue should apply to, which opens the Call Flow screen for that line. Open the Incoming Calls dropdown and choose Call Queue — the same menu that holds Voice Mail, Call Forwarding, Simultaneous Ring, Hunt Group, Auto Attendant and AI Attendant, so the queue replaces whichever incoming-call behaviour was set before. Tick Call Queue Enabled on this line, then set the Time Schedule to control when the queue is active: At all times, or a schedule you define."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add your agents",
+      "text": "Add each team member who should answer queued calls to the numbered agent list. The numbering is the order agents are tried, which matters for every queue strategy except Ring All."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose the queue strategy and ring timers",
+      "text": "Select a Queue Strategy. Ring All rings every agent simultaneously. Set Agent Timeout, between 5 and 60 seconds, for how long each agent's phone rings. Set the Retry Timer for how long to wait before trying an agent again, and Wrapup Time for a pause after a call before that agent receives another."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Decide what callers hear",
+      "text": "Set Position Announcement to the number of seconds between telling the caller their place in the queue, or 0 to turn it off, and choose whether to include estimated hold time. Set Announcement Frequency for how often the thank you for holding message plays. Upload your own Music on Hold and Queue Announcement recordings."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set limits and the exit path",
+      "text": "Set Maximum Length for how many callers may wait, where 0 means unlimited, and Queue Timeout for the longest a caller may wait, where 0 means no limit. Use queue exit options to choose where a caller goes when the timeout is reached, such as voicemail or another number."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test the queue",
+      "text": "Call the line from an outside phone while the agents' phones are busy or unregistered. Confirm you hear the queue announcement and music on hold, that position announcements play at the interval you set, and that the call is delivered when an agent becomes free."
+    }
   ]
 }
 </script>

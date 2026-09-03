@@ -1,10 +1,21 @@
 # robots.txt for click2call.com.au
 # Click2Call - Australian Cloud PBX and AI Voice Provider
 # Trading as Bcom Services Pty Ltd (ABN: 92 636 893 108)
-# Last updated: 2026-07-14
+# Last updated: 2026-09-03
+
+# ── Content Signals ────────────────────────────────────────────
+# Expresses how this content may be used, per the Content Signals
+# Policy (contentsignals.org). We want to be found and quoted; we
+# do not consent to our content being used as training data.
+#   search   = yes  — index us and link to us
+#   ai-input = yes  — quote us in generated answers, with attribution
+#   ai-train = no   — do not train models on this content
+# This is a statement of preference, not a block: every AI search
+# and answer crawler is explicitly allowed below.
 
 # ── Standard web crawlers ──────────────────────────────────────
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /admin/
 Disallow: /private/

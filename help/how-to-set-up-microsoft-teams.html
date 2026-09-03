@@ -26,34 +26,97 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
+  "dateModified": "2026-08-31",
   "name": "Setting Up Microsoft Teams Calling with Click2Call Direct Routing",
   "description": "How to connect Microsoft Teams to the Click2Call SBC using Direct Routing so your Teams users can make and receive real phone calls on Australian numbers.",
   "url": "https://www.click2call.com.au/help/how-to-set-up-microsoft-teams",
   "totalTime": "PT45M",
   "supply": [
-    {"@type": "HowToSupply", "name": "A Click2Call account"},
-    {"@type": "HowToSupply", "name": "Global Admin access to your Microsoft 365 tenant"},
-    {"@type": "HowToSupply", "name": "A Microsoft Teams Phone Standard licence (or an E5 licence) for each user that will make calls"}
+    {
+      "@type": "HowToSupply",
+      "name": "A Click2Call account"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Global Admin access to your Microsoft 365 tenant"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "A Microsoft Teams Phone Standard licence (or an E5 licence) for each user that will make calls"
+    }
   ],
   "tool": [
-    {"@type": "HowToTool", "name": "Microsoft 365 Admin Centre"},
-    {"@type": "HowToTool", "name": "Click2Call customer portal (portal.click2call.com.au)"},
-    {"@type": "HowToTool", "name": "Microsoft Teams PowerShell module"}
+    {
+      "@type": "HowToTool",
+      "name": "Microsoft 365 Admin Centre"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Click2Call customer portal (portal.click2call.com.au)"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Microsoft Teams PowerShell module"
+    }
   ],
   "step": [
-    {"@type": "HowToStep", "name": "Enable Microsoft Teams in your Click2Call portal", "text": "Open portal.click2call.com.au, go to Voice > Profiles, and change the Connection Type to Microsoft Teams. The portal displays your unique SBC domain (ms{account}.sbc.msteams.nz)."},
-    {"@type": "HowToStep", "name": "Add the SBC domain in Microsoft 365 Admin Centre", "text": "Sign in to admin.microsoft.com as Global Admin, go to Settings > Domains, click Add domain, and paste the SBC domain from the Click2Call portal."},
-    {"@type": "HowToStep", "name": "Verify the SBC domain", "text": "Copy the MS=... TXT value from Microsoft, paste it into the Domain TXT Record Value field in the Click2Call portal, save the profile, then click Verify in Microsoft."},
-    {"@type": "HowToStep", "name": "Create a trunk user in Microsoft 365", "text": "In Users > Active users, click Add a user. Use a name like 'Trunk User' with the SBC domain as the email domain. Assign a Microsoft Teams Phone Standard licence (plus a base Office 365 licence such as E1)."},
-    {"@type": "HowToStep", "name": "Add Teams phone numbers in the Click2Call portal", "text": "Go to Account > Numbers in the Click2Call portal, click Add a new Number, choose Australia, select Microsoft Teams as the Line Type, and pick a plan. Repeat for every Teams user."},
-    {"@type": "HowToStep", "name": "Map Teams numbers to Teams users", "text": "Go to Voice > Microsoft Teams and enter each user's Microsoft 365 email address next to their assigned phone number. Choose the Call Mode (Teams Only, or Teams/SIP Twinning) and save."},
-    {"@type": "HowToStep", "name": "Run the PowerShell commands", "text": "Click Power Shell in the Teams page to see the exact commands to run. Open Windows PowerShell as administrator, install the Microsoft Teams module, connect to your tenant as Global Admin, and paste in the commands."},
-    {"@type": "HowToStep", "name": "Test a call", "text": "Sign in to Teams on desktop or mobile as one of the configured users. Dial an external Australian mobile from the Teams dialpad and confirm it rings out. Then have someone call the Teams number and confirm it rings on Teams."}
+    {
+      "@type": "HowToStep",
+      "name": "Enable Microsoft Teams in your Click2Call portal",
+      "text": "Open portal.click2call.com.au, go to Voice > Profiles, and change the Connection Type to Microsoft Teams. The portal displays your unique SBC domain (ms{account}.sbc.msteams.nz)."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add the SBC domain in Microsoft 365 Admin Centre",
+      "text": "Sign in to admin.microsoft.com as Global Admin, go to Settings > Domains, click Add domain, and paste the SBC domain from the Click2Call portal."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Verify the SBC domain",
+      "text": "Copy the MS=... TXT value from Microsoft, paste it into the Domain TXT Record Value field in the Click2Call portal, save the profile, then click Verify in Microsoft."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Create a trunk user in Microsoft 365",
+      "text": "In Users > Active users, click Add a user. Use a name like 'Trunk User' with the SBC domain as the email domain. Assign a Microsoft Teams Phone Standard licence (plus a base Office 365 licence such as E1)."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add Teams phone numbers in the Click2Call portal",
+      "text": "Go to Account > Numbers in the Click2Call portal, click Add a new Number, choose Australia, select Microsoft Teams as the Line Type, and pick a plan. Repeat for every Teams user."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Map Teams numbers to Teams users",
+      "text": "Go to Voice > Microsoft Teams and enter each user's Microsoft 365 email address next to their assigned phone number. Choose the Call Mode (Teams Only, or Teams/SIP Twinning) and save."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Run the PowerShell commands",
+      "text": "Click Power Shell in the Teams page to see the exact commands to run. Open Windows PowerShell as administrator, install the Microsoft Teams module, connect to your tenant as Global Admin, and paste in the commands."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test a call",
+      "text": "Sign in to Teams on desktop or mobile as one of the configured users. Dial an external Australian mobile from the Teams dialpad and confirm it rings out. Then have someone call the Teams number and confirm it rings on Teams."
+    }
   ],
-  "author": {"@type": "Organization", "name": "Click2Call", "url": "https://www.click2call.com.au"},
-  "publisher": {"@type": "Organization", "name": "Click2Call", "url": "https://www.click2call.com.au", "logo": {"@type": "ImageObject", "url": "https://www.click2call.com.au/assets/images/click2call_header_logo_transparent.webp"}}
+  "author": {
+    "@type": "Organization",
+    "name": "Click2Call",
+    "url": "https://www.click2call.com.au"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Click2Call",
+    "url": "https://www.click2call.com.au",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.click2call.com.au/assets/images/click2call_header_logo_transparent.webp"
+    }
+  }
 }
-  </script>
+</script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Setting Up Microsoft Teams Calling | Help Centre | Click2Call">
   <meta name="twitter:description" content="Step-by-step guide to connecting Microsoft Teams to Click2Call Direct Routing.">

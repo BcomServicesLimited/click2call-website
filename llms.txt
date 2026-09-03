@@ -38,7 +38,7 @@ This file is intended for use by AI assistants, large language models, and searc
 - Google Business Profile: https://maps.google.com/?cid=10092300332433072150
 - Facebook: https://www.facebook.com/click2call.com.au
 
-**Last updated: 2026-08-17**
+**Last updated: 2026-09-03**
 
 ## Fan-Out Query Answers
 

@@ -26,18 +26,56 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
+  "dateModified": "2026-09-03",
   "name": "How to connect OpenAI to an Australian phone number with Click2Call",
   "description": "Route calls from a Click2Call Australian number to an OpenAI Realtime API voice agent using the built-in OpenAI connection profile.",
   "totalTime": "PT30M",
-  "estimatedCost": {"@type": "MonetaryAmount", "currency": "AUD", "value": "0"},
-  "tool": [{"@type": "HowToTool", "name": "Click2Call portal"}, {"@type": "HowToTool", "name": "OpenAI platform account"}],
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "AUD",
+    "value": "0"
+  },
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Click2Call portal"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "OpenAI platform account"
+    }
+  ],
   "step": [
-    {"@type": "HowToStep", "name": "Find your OpenAI Project ID", "text": "Sign in at platform.openai.com and open Settings, then Project, then General. The Project ID is shown there and begins with proj_. Copy it."},
-    {"@type": "HowToStep", "name": "Set up a webhook to accept calls", "text": "In the OpenAI platform open Settings, then Project, then Webhooks, and register an endpoint you control. When a call arrives OpenAI sends a realtime.call.incoming event containing a call_id, and your endpoint must respond by calling the accept endpoint for that call_id. Without a webhook that accepts the call, inbound calls will not connect."},
-    {"@type": "HowToStep", "name": "Create the profile in Click2Call", "text": "In the Click2Call portal open Voice, then Profiles. Set Connection Type to OpenAI and paste the Project ID into the OpenAI Project ID field. This field is mandatory and the profile will not save without it. Click2Call builds the SIP URI automatically in the form sip:project_id@sip.api.openai.com:5061;transport=tls."},
-    {"@type": "HowToStep", "name": "Assign your number to the profile", "text": "Open Voice, then Line Manager, and set the Profile column for the number to the profile you just created. Numbers left on the Default profile will ignore the OpenAI settings."},
-    {"@type": "HowToStep", "name": "Check the time zone", "text": "Set the Time Zone on the profile to the region the business operates in, since business hours, after-hours routing and queue schedules all read it."},
-    {"@type": "HowToStep", "name": "Test the call", "text": "Ring the number from a mobile. Your webhook should receive a realtime.call.incoming event and the agent should answer once the call is accepted."}
+    {
+      "@type": "HowToStep",
+      "name": "Find your OpenAI Project ID",
+      "text": "Sign in at platform.openai.com and open Settings, then Project, then General. The Project ID is shown there and begins with proj_. Copy it."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set up a webhook to accept calls",
+      "text": "In the OpenAI platform open Settings, then Project, then Webhooks, and register an endpoint you control. When a call arrives OpenAI sends a realtime.call.incoming event containing a call_id, and your endpoint must respond by calling the accept endpoint for that call_id. Without a webhook that accepts the call, inbound calls will not connect."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Create the profile in Click2Call",
+      "text": "In the Click2Call portal open Voice, then Profiles. Set Connection Type to OpenAI and paste the Project ID into the OpenAI Project ID field. This field is mandatory and the profile will not save without it. Click2Call builds the SIP URI automatically in the form sip:project_id@sip.api.openai.com:5061;transport=tls."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Assign your number to the profile",
+      "text": "Open Voice, then Line Manager, and set the Profile column for the number to the profile you just created. Numbers left on the Default profile will ignore the OpenAI settings."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Check the time zone",
+      "text": "Set the Time Zone on the profile to the region the business operates in, since business hours, after-hours routing and queue schedules all read it."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test the call",
+      "text": "Ring the number from a mobile. Your webhook should receive a realtime.call.incoming event and the agent should answer once the call is accepted."
+    }
   ]
 }
 </script>
