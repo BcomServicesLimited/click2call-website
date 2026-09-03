@@ -429,6 +429,7 @@
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
+<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist the address rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">The profile will not save</h3><p class="text-gray-600 leading-relaxed">The <strong>VAPI Assistant ID</strong> field is empty or the value is not a valid assistant UUID. Copy it from the Vapi dashboard rather than typing it.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">The call connects but Vapi rejects it</h3><p class="text-gray-600 leading-relaxed">Usually the Assistant ID belongs to a deleted assistant, or it was pasted with surrounding whitespace. Re-copy it and save the profile again.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than the provider profile, so the call never leaves for the provider at all. Check the Profile column in Line Manager.</p></div>
