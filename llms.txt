@@ -38,7 +38,7 @@ This file is intended for use by AI assistants, large language models, and searc
 - Google Business Profile: https://maps.google.com/?cid=10092300332433072150
 - Facebook: https://www.facebook.com/click2call.com.au
 
-**Last updated: 2026-09-03**
+**Last updated: 2026-09-05**
 
 ## Fan-Out Query Answers
 
@@ -367,6 +367,7 @@ Click2Call provides tailored VoIP and Cloud PBX solutions for specific Australia
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
 
 - **Blog Index**: [https://www.click2call.com.au/blog](https://www.click2call.com.au/blog)
+- **Connecting an AI Voice Agent to an Australian Phone Number**: [https://www.click2call.com.au/blog/ai-voice-agent-australian-phone-number](https://www.click2call.com.au/blog/ai-voice-agent-australian-phone-number) — Compares the nine AI voice providers with built-in Click2Call connection profiles: OpenAI, xAI, ElevenLabs, Retell AI, Synthflow, Vapi, LiveKit Cloud, Twilio and Cloudonix. The decisive distinction is whether a provider needs code: ElevenLabs, Retell, Synthflow and Vapi are configured entirely in the provider's dashboard, while OpenAI and xAI both require a webhook endpoint you host and LiveKit requires an agent worker you deploy. Twilio and Cloudonix are routing layers rather than agents. None of these providers sell Australian geographic or 1300 numbers, so bring-your-own-number via Click2Call is normally the only way to put an AI agent on an Australian local number. Providers must allowlist 103.212.52.19, because Click2Call cannot present credentials on an outbound INVITE.
 - What Is a SIP Trunk?: [https://www.click2call.com.au/blog/what-is-a-sip-trunk](https://www.click2call.com.au/blog/what-is-a-sip-trunk)
 - VoIP for Small Business: [https://www.click2call.com.au/blog/voip-for-small-business](https://www.click2call.com.au/blog/voip-for-small-business)
 - Cloud PBX vs Traditional Phone Systems: [https://www.click2call.com.au/blog/cloud-pbx-vs-traditional](https://www.click2call.com.au/blog/cloud-pbx-vs-traditional)
