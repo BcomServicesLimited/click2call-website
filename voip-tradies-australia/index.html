@@ -171,6 +171,14 @@
             "@type": "Answer",
             "text": "Most tradies are live the same day. You create your account online, choose your number, download the app, and start making calls. The whole process takes under 10 minutes if you are setting up yourself. If you want Click2Call to configure everything for you, the managed setup service is available for $300 ex GST (for up to 3 users)."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Click2Call work with simPRO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Simpro Premium includes a VoIP integration and a built-in softphone, but not the phone service itself — you bring your own provider. Click2Call connects using standard SIP registration. The Server Address is sip.click2call.com.au:5060 (port 5060, not 5061), the username is your number in full international format, and the password is the line password from Voice then Line Manager, not your portal login password."
+          }
         }
       ]
     }
@@ -639,7 +647,23 @@
 <div class="max-w-2xl mx-auto px-4">
 <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-10">Common Questions from Tradies</h2>
 <div class="space-y-3" id="faq-accordion">
-<!-- Q1 -->
+<!-- Q: what is it -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button aria-expanded="false" class="faq-btn w-full flex items-center justify-between px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
+                        <span>What is Click2Call for tradies?</span>
+                        <svg aria-hidden="true" class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed">Click2Call gives tradies (plumbers, electricians, builders, etc.) a proper Australian business phone number that runs on their existing mobile, with every call recorded and AI-transcribed so no job lead is ever lost. Setup is online in under an hour, $25 per user per month ex GST, no setup fee for self-setup, no lock-in contract, and no equipment to buy. Calls follow the team from the office to the job site automatically.</div>
+                </div>
+                <!-- Q: simPRO -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button aria-expanded="false" class="faq-btn w-full flex items-center justify-between px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
+                        <span>Does Click2Call work with simPRO?</span>
+                        <svg aria-hidden="true" class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed">Yes. Simpro Premium includes a VoIP integration and a built-in softphone, but not the phone service itself &mdash; you bring your own provider. Click2Call connects using standard SIP registration, and we publish the exact settings, including the port that catches most people out. See <a class="text-[#3B9C49] underline" href="/blog/simpro-voip-integration-australia">simPRO VoIP integration</a> or the step-by-step <a class="text-[#3B9C49] underline" href="/help/how-to-connect-simpro">setup guide</a>.</div>
+                </div>
+                <!-- Q1 -->
 <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
 <button aria-expanded="false" class="faq-btn w-full flex items-center justify-between px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
 <span>Do I need to buy any hardware to use Click2Call as a tradie?</span>
