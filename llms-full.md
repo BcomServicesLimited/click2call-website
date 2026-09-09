@@ -252,6 +252,11 @@ The Click2Call Help Centre is a dedicated knowledge base providing step-by-step 
 - **Setting Up a Call Flow**: https://www.click2call.com.au/help/how-to-set-up-call-flow.html — Create an IVR / auto-attendant to route inbound calls.
 - **Creating a Ring Group**: https://www.click2call.com.au/help/how-to-create-ring-group.html — Configure a group of extensions to ring simultaneously.
 - **Configuring Business Hours**: https://www.click2call.com.au/help/how-to-configure-business-hours.html — Set open and closed hours for call routing rules.
+- **Forwarding Calls to Your Mobile**: https://www.click2call.com.au/help/how-to-forward-calls-to-mobile.html — Divert your Click2Call number to a mobile during work hours and send after-hours callers to voicemail that is emailed to you, using Call Forwarding, Time Schedules and Voicemail settings.
+- **Setting Up Missed Call Alerts**: https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts.html — Turn on Missed Call Notifications so Click2Call emails or texts you whenever an incoming call on your number goes unanswered.
+- **Closing for Holidays**: https://www.click2call.com.au/help/how-to-close-for-holidays.html — Use Do Not Disturb with specific dates to send callers to voicemail or a divert number while your business is closed for holidays, without changing your normal call flow.
+- **Setting Up the AI Answer Agent**: https://www.click2call.com.au/help/how-to-set-up-answer-agent.html — Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.
+- **Adding Portal Logins for Your Team**: https://www.click2call.com.au/help/how-to-add-portal-logins.html — Create additional Click2Call portal logins for staff, bookkeepers or receptionists with the right access level, optional two-factor authentication, and recording-deletion protection.
 - **Setting Up Voicemail**: https://www.click2call.com.au/help/how-to-set-up-voicemail.html — Configure voicemail-to-email delivery.
 - **Viewing Call Recordings**: https://www.click2call.com.au/help/how-to-view-call-recordings.html — Access and download recorded calls from the portal.
 
