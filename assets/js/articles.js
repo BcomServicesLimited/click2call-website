@@ -461,9 +461,9 @@ var HELP_ARTICLES = [
   },
   {
     url:      "/help/how-to-set-up-answer-agent",
-    title:    "Setting Up the AI Answer Agent",
-    desc:     "Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.",
-    tags:     "answer agent ai answering service take a message ai voicemail replacement appointment booking receptionist message taking business profile",
+    title:    "Ring First, Then Let the AI Take a Message",
+    desc:     "Ring your phone first and have the AI Answer Agent take the caller\u2019s name, number and reason for calling, then email you the details.",
+    tags:     "answer agent ai answering service take a message ring first unanswered virtual assistant receptionist script introduction questions voice australian female transcript email appointment booking message taking business profile call flow",
     category: "ai",
     readTime: "5 min read",
     featured: true,

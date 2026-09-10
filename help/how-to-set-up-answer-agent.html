@@ -26,35 +26,45 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-09-09",
+  "dateModified": "2026-09-10",
   "name": "Setting Up the AI Answer Agent",
   "description": "Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.",
   "url": "https://www.click2call.com.au/help/how-to-set-up-answer-agent",
   "step": [
       {
           "@type": "HowToStep",
+          "name": "Decide how long your phone rings first",
+          "text": "Go to Voice → Line Manager and click your number to open its Call Flow page. Open the Incoming Calls dropdown and choose Voice Mail. Set Call Ringing Time (in seconds) to how long you want to be able to answer before the AI picks up — the default is 20 seconds. On the same page, tick Send callers to the AI Answer Agent (instead of voicemail), then save."
+      },
+      {
+          "@type": "HowToStep",
+          "name": "Tell it where to email the messages",
+          "text": "Still on the Voice Mail page, enter your email address in Send a copy of my voicemail messages to the following email address (use a semicolon between several addresses). This is the address your call summaries and transcripts are delivered to. You can also set a per-number address in the Line Email column on the Line Manager page."
+      },
+      {
+          "@type": "HowToStep",
           "name": "Create your business profile",
-          "text": "Go to AI → Answer Agent (Beta) and click Create Business Profile. Add your business details, services and hours; this is what the agent uses to answer callers’ questions."
+          "text": "Go to AI → Answer Agent (Beta) and click Create Business Profile. This holds your business details so the agent can answer simple questions about you. If you only want it to take messages, you can keep the profile brief."
       },
       {
           "@type": "HowToStep",
-          "name": "Choose the mode and voice",
-          "text": "Under General Settings set Mode to Message only (a smart voicemail) or Full (answers questions and takes messages). Pick a voice and edit the welcome message; use {$biz} to insert your business name automatically. Tick Confirm details before finalising the message if you want the agent to read details back to the caller."
+          "name": "Choose the mode and the voice",
+          "text": "Under General Settings, set Mode to Message only if you just want a smart message-taker, or Full (answer questions + take messages) if it should also answer questions from your business profile. Then pick a Voice — there are 38 to choose from, with several natural conversational options. To hear a voice before you commit, open AI → AI Receptionist, select it there and use Playback Preview."
       },
       {
           "@type": "HowToStep",
-          "name": "Pick the details to collect",
-          "text": "Under Fields to Collect add the fields you want from each caller: Name, Contact Number, Message, Email Address, Account Number, Company Name, Service Address, or a custom field. Mark the ones that are required."
+          "name": "Write your introduction",
+          "text": "The Welcome message box is your introduction — replace the default with your own wording, for example: “Hi, you’ve reached Kat at Acme. I’m Maggie, her virtual assistant. Kat can’t get to the phone just now — may I take a few details and she’ll get back to you?” Type {$biz} anywhere in the message to have your business name inserted automatically."
       },
       {
           "@type": "HowToStep",
-          "name": "Enable appointment booking (optional)",
-          "text": "Tick Enable local appointment scheduling, set the default duration, earliest booking time, slot interval and how many options to offer, and enter your working days, breaks and time zone. Use Open Calendar to see bookings."
+          "name": "Choose the questions it asks",
+          "text": "Under Fields to Collect, each row is one question the agent asks, and it waits for an answer before moving on. The defaults are exactly what most businesses want: Full name of the caller, Best contact number, and Message or what they need help with. Edit the wording in the Description box to change how a question is asked, set the Type (Text, Email, Phone or Appointment), tick Required, and use the buttons above the table to add Email Address, Account Number, Company Name, Service Address or a Custom Field."
       },
       {
           "@type": "HowToStep",
-          "name": "Turn it on for your number",
-          "text": "Go to Voice → Line Manager, click the number, open Incoming Calls → Voice Mail and tick Send callers to the AI Answer Agent (instead of voicemail). Alternatively tick Prefer AI Answer Agent globally instead of Regular Voicemail on the Answer Agent page to use it on every line. Messages arrive by email and under AI → Recordings."
+          "name": "Set the closing behaviour and save",
+          "text": "Tick Confirm details before finalising the message if you want the agent to read the details back to the caller and confirm them before it finishes — this is how the closing works; there is no separate closing script to write. Optionally enable Appointment Scheduling further down if you want callers to be able to book a time. Click Save Details. Your messages will now arrive by email, and each call is also listed under AI → Recordings with its transcript and summary."
       }
   ],
   "totalTime": "PT15M",
@@ -325,8 +335,8 @@
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">AI Features</span>
         <span class="text-xs text-gray-400">5 min read</span>
       </div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">How to Set Up the AI Answer Agent to Take Messages and Book Appointments</h1>
-      <p class="text-gray-600 leading-relaxed">The Answer Agent is a smart replacement for voicemail. It greets callers in a natural voice, collects the details you choose (name, number, what they need), can answer questions about your business, and can even book appointments. Every message is emailed to you with a transcript.</p>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">How to Ring Your Phone First, Then Let the AI Take a Message</h1>
+      <p class="text-gray-600 leading-relaxed">The Answer Agent is a smart replacement for voicemail. Your phone rings first, and if you cannot get to it the AI answers in a natural voice, asks for the caller&rsquo;s name, number and reason for calling &mdash; waiting for each answer &mdash; and emails you the details with a transcript. You can write its introduction and questions yourself and pick the voice.</p>
 <p class="mt-3 text-sm text-gray-400">Last reviewed: September 2026</p>
     </div>
   </div>
@@ -335,55 +345,72 @@
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <h2 class="text-2xl font-bold text-gray-900 mb-6">Setting Up the AI Answer Agent, Step by Step</h2>
     <div class="mb-12">
-
-<!-- Step 1: Create your business profile -->
+<!-- Step 1: Decide how long your phone rings first -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Create your business profile</h3>
-        <p class="text-gray-600 leading-relaxed">Go to <strong>AI &rarr; Answer Agent (Beta)</strong> and click <strong>Create Business Profile</strong>. Add your business details, services and hours; this is what the agent uses to answer callers&rsquo; questions.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Decide how long your phone rings first</h3>
+        <p class="text-gray-600 leading-relaxed">Go to <strong>Voice &rarr; Line Manager</strong> and click your number to open its Call Flow page. Open the <strong>Incoming Calls</strong> dropdown and choose <strong>Voice Mail</strong>. Set <strong>Call Ringing Time (in seconds)</strong> to how long you want to be able to answer before the AI picks up &mdash; the default is 20 seconds. On the same page, tick <strong>Send callers to the AI Answer Agent (instead of voicemail)</strong>, then save.</p>
     </div>
 </div>
 
-<!-- Step 2: Choose the mode and voice -->
+<!-- Step 2: Tell it where to email the messages -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Choose the mode and voice</h3>
-        <p class="text-gray-600 leading-relaxed">Under <em>General Settings</em> set <strong>Mode</strong> to <em>Message only</em> (a smart voicemail) or <em>Full</em> (answers questions and takes messages). Pick a voice and edit the welcome message; use <code>{$biz}</code> to insert your business name automatically. Tick <strong>Confirm details before finalising the message</strong> if you want the agent to read details back to the caller.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Tell it where to email the messages</h3>
+        <p class="text-gray-600 leading-relaxed">Still on the <strong>Voice Mail</strong> page, enter your email address in <em>Send a copy of my voicemail messages to the following email address</em> (use a semicolon between several addresses). This is the address your call summaries and transcripts are delivered to. You can also set a per-number address in the <strong>Line Email</strong> column on the Line Manager page.</p>
     </div>
 </div>
 
-<!-- Step 3: Pick the details to collect -->
+<!-- Step 3: Create your business profile -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Pick the details to collect</h3>
-        <p class="text-gray-600 leading-relaxed">Under <em>Fields to Collect</em> add the fields you want from each caller: Name, Contact Number, Message, Email Address, Account Number, Company Name, Service Address, or a custom field. Mark the ones that are required.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Create your business profile</h3>
+        <p class="text-gray-600 leading-relaxed">Go to <strong>AI &rarr; Answer Agent (Beta)</strong> and click <strong>Create Business Profile</strong>. This holds your business details so the agent can answer simple questions about you. If you only want it to take messages, you can keep the profile brief.</p>
     </div>
 </div>
 
-<!-- Step 4: Enable appointment booking (optional) -->
+<!-- Step 4: Choose the mode and the voice -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Enable appointment booking (optional)</h3>
-        <p class="text-gray-600 leading-relaxed">Tick <strong>Enable local appointment scheduling</strong>, set the default duration, earliest booking time, slot interval and how many options to offer, and enter your working days, breaks and time zone. Use <em>Open Calendar</em> to see bookings.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Choose the mode and the voice</h3>
+        <p class="text-gray-600 leading-relaxed">Under <em>General Settings</em>, set <strong>Mode</strong> to <em>Message only</em> if you just want a smart message-taker, or <em>Full (answer questions + take messages)</em> if it should also answer questions from your business profile. Then pick a <strong>Voice</strong> &mdash; there are 38 to choose from, with several natural conversational options. To hear a voice before you commit, open <strong>AI &rarr; AI Receptionist</strong>, select it there and use <em>Playback Preview</em>.</p>
     </div>
 </div>
 
-<!-- Step 5: Turn it on for your number -->
+<!-- Step 5: Write your introduction -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Turn it on for your number</h3>
-        <p class="text-gray-600 leading-relaxed">Go to <strong>Voice &rarr; Line Manager</strong>, click the number, open <strong>Incoming Calls &rarr; Voice Mail</strong> and tick <strong>Send callers to the AI Answer Agent (instead of voicemail)</strong>. Alternatively tick <em>Prefer AI Answer Agent globally instead of Regular Voicemail</em> on the Answer Agent page to use it on every line. Messages arrive by email and under <strong>AI &rarr; Recordings</strong>.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Write your introduction</h3>
+        <p class="text-gray-600 leading-relaxed">The <strong>Welcome message</strong> box is your introduction &mdash; replace the default with your own wording, for example: &ldquo;Hi, you&rsquo;ve reached Kat at Acme. I&rsquo;m Maggie, her virtual assistant. Kat can&rsquo;t get to the phone just now &mdash; may I take a few details and she&rsquo;ll get back to you?&rdquo; Type <code>{$biz}</code> anywhere in the message to have your business name inserted automatically.</p>
+    </div>
+</div>
+
+<!-- Step 6: Choose the questions it asks -->
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
+    <div class="flex-1 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Choose the questions it asks</h3>
+        <p class="text-gray-600 leading-relaxed">Under <strong>Fields to Collect</strong>, each row is one question the agent asks, and it waits for an answer before moving on. The defaults are exactly what most businesses want: <em>Full name of the caller</em>, <em>Best contact number</em>, and <em>Message or what they need help with</em>. Edit the wording in the Description box to change how a question is asked, set the <em>Type</em> (Text, Email, Phone or Appointment), tick <em>Required</em>, and use the buttons above the table to add Email Address, Account Number, Company Name, Service Address or a Custom Field.</p>
+    </div>
+</div>
+
+<!-- Step 7: Set the closing behaviour and save -->
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
+    <div class="flex-1 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Set the closing behaviour and save</h3>
+        <p class="text-gray-600 leading-relaxed">Tick <strong>Confirm details before finalising the message</strong> if you want the agent to read the details back to the caller and confirm them before it finishes &mdash; this is how the closing works; there is no separate closing script to write. Optionally enable <strong>Appointment Scheduling</strong> further down if you want callers to be able to book a time. Click <strong>Save Details</strong>. Your messages will now arrive by email, and each call is also listed under <strong>AI &rarr; Recordings</strong> with its transcript and summary.</p>
     </div>
 </div>
 
     </div>
 
-    <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>Good to know:</strong> The Answer Agent takes messages; the <a href="/help/how-to-set-up-ai-receptionist" class="underline">AI Receptionist</a> routes callers to departments. Many businesses use both: the receptionist during the day and the Answer Agent after hours.</div>
+    <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>Good to know:</strong> The Answer Agent <em>takes messages</em>. If instead you want callers routed to different people or departments by what they say, that is the <a href="/help/how-to-set-up-ai-receptionist" class="underline">AI Receptionist</a>. Many businesses use the Receptionist during the day and the Answer Agent after hours. Settings can be account-wide or per number &mdash; use the <em>Settings Scope</em> dropdown at the top of the Answer Agent page.</div>
 <!-- Related articles -->
     <div class="border-t border-gray-200 pt-8 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
