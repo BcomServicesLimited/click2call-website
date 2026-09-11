@@ -23,6 +23,18 @@
 
 var HELP_ARTICLES = [
 
+
+  {
+    url:      "/help/call-flow-ring-mobile-then-voicemail",
+    title:    "Ring Your Mobile and Still Get Voicemail",
+    desc:     "Forwarding to a mobile sends unanswered calls to your carrier's voicemail, not ours. Use Simultaneous Ring so the call stays with us.",
+    tags:     "voicemail call forwarding simultaneous ring divert mobile ring time call flow missed calls no voicemail forward to mobile carrier voicemail not working",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
   /* ── Getting Started ── */
   {
     url:      "/help/how-to-activate-account",
