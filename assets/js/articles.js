@@ -24,6 +24,18 @@
 var HELP_ARTICLES = [
 
 
+
+  {
+    url:      "/help/why-included-minutes-are-not-being-used",
+    title:    "Why Your Included Minutes Are Not Being Used",
+    desc:     "Included minutes belong to one specific number, not the whole account. If calls are charged while your allowance sits untouched, this is why.",
+    tags:     "included minutes not used allowance bundle per number billing charged calls divert forwarded extension billed number plan minutes",
+    category: "billing",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
   {
     url:      "/help/call-flow-ring-mobile-then-voicemail",
     title:    "Ring Your Mobile and Still Get Voicemail",
