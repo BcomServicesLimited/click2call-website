@@ -340,7 +340,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Find your OpenAI Project ID</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Sign in at <a class="text-[#3B9C49] hover:underline" href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a> and open <strong>Settings &rarr; Project &rarr; General</strong>. The Project ID is shown there and begins with <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">proj_</span>.</p><p class="text-gray-600 leading-relaxed mt-3">Copy it &mdash; this is the one value Click2Call needs.</p>
     </div>
@@ -348,7 +348,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set up a webhook that accepts calls</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the OpenAI platform, open <strong>Settings &rarr; Project &rarr; Webhooks</strong> and register an endpoint you control.</p><p class="text-gray-600 leading-relaxed mt-3">When someone rings your number, OpenAI sends that endpoint a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event containing a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span>. Your code accepts the call using that id, and that is also where you give the agent its instructions and context.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This is the step that catches people. Until your webhook accepts the call, the phone will ring and nothing will answer. OpenAI&rsquo;s own <a class="font-semibold underline" href="https://developers.openai.com/api/docs/guides/realtime-sip" target="_blank" rel="noopener">Realtime API with SIP guide</a> has the request format and sample code.</p></div>
     </div>
@@ -356,7 +356,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the portal open <strong>Voice &rarr; Profiles</strong>, set <strong>Connection Type</strong> to <strong>OpenAI</strong>, and paste your Project ID into the <strong>OpenAI Project ID</strong> field.</p><p class="text-gray-600 leading-relaxed mt-3">That field is mandatory &mdash; the profile will not save without it. Click2Call then builds the SIP address for you and sets the number format to +E.164 automatically. There is no SIP URI to type.</p><img src="/assets/images/help/profile-openai.webp" alt="The Click2Call profile settings with Connection Type set to OpenAI, showing the mandatory OpenAI Project ID field and the SIP URI that Click2Call builds from it: sip:project_id@sip.api.openai.com:5061;transport=tls." width="1600" height="744" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
@@ -364,7 +364,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign your number to the profile</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The default profile applies to every line that has no profile assigned, and new numbers land on it automatically. A number left on <em>Default</em> will ignore everything you just configured.</p></div>
     </div>
@@ -372,7 +372,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Check the time zone, then test</h3>
         <p class="text-gray-600 leading-relaxed mt-3">While you are in the profile, confirm the <strong>Time Zone</strong> matches where the business operates &mdash; business hours, after-hours routing and queue schedules all read it.</p><p class="text-gray-600 leading-relaxed mt-3">Then ring the number from a mobile. Your webhook should receive the incoming-call event, and the agent answers once your code accepts it.</p>
     </div>

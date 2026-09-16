@@ -46,3 +46,8 @@ html { scroll-behavior: smooth; }
 
 /* === Navigation link transition === */
 .c2c-nav-link { transition: color 0.15s ease, background-color 0.15s ease; }
+
+/* === Inline code / SIP URIs === */
+/* Long unbroken tokens (URLs, SIP URIs) must wrap rather than force the page
+   to scroll sideways on a phone. */
+code, .font-mono { overflow-wrap: break-word; word-break: break-word; }

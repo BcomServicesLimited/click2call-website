@@ -348,17 +348,17 @@
 <!-- Step 1: Decide how long your phone rings first -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Decide how long your phone rings first</h3>
         <p class="text-gray-600 leading-relaxed">Go to <strong>Voice &rarr; Line Manager</strong> and click your number to open its Call Flow page. Open the <strong>Incoming Calls</strong> dropdown and choose <strong>Voice Mail</strong>. Set <strong>Call Ringing Time (in seconds)</strong> to how long you want to be able to answer before the AI picks up &mdash; the default is 20 seconds. On the same page, tick <strong>Send callers to the AI Answer Agent (instead of voicemail)</strong>, then save.</p>
-        <img src="/assets/images/help/answer-agent-step-1-voicemail-page.webp" alt="The Voicemail Service page showing Call Ringing Time and the Send callers to the AI Answer Agent option." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full" loading="lazy">
+        <img src="/assets/images/help/answer-agent-step-1-voicemail-page.webp" alt="The Voicemail Service page showing Call Ringing Time and the Send callers to the AI Answer Agent option." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full" loading="lazy" width="1600" height="729">
     </div>
 </div>
 
 <!-- Step 2: Tell it where to email the messages -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Tell it where to email the messages</h3>
         <p class="text-gray-600 leading-relaxed">Still on the <strong>Voice Mail</strong> page, enter your email address in <em>Send a copy of my voicemail messages to the following email address</em> (use a semicolon between several addresses). This is the address your call summaries and transcripts are delivered to. You can also set a per-number address in the <strong>Line Email</strong> column on the Line Manager page.</p>
     </div>
@@ -367,7 +367,7 @@
 <!-- Step 3: Create your business profile -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create your business profile</h3>
         <p class="text-gray-600 leading-relaxed">Go to <strong>AI &rarr; Answer Agent (Beta)</strong> and click <strong>Create Business Profile</strong>. This holds your business details so the agent can answer simple questions about you. If you only want it to take messages, you can keep the profile brief.</p>
     </div>
@@ -376,17 +376,17 @@
 <!-- Step 4: Choose the mode and the voice -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Choose the mode and the voice</h3>
         <p class="text-gray-600 leading-relaxed">Under <em>General Settings</em>, set <strong>Mode</strong> to <em>Message only</em> if you just want a smart message-taker, or <em>Full (answer questions + take messages)</em> if it should also answer questions from your business profile. Then pick a <strong>Voice</strong> &mdash; there are 38 to choose from, with several natural conversational options. To hear a voice before you commit, open <strong>AI &rarr; AI Receptionist</strong>, select it there and use <em>Playback Preview</em>.</p>
-        <img src="/assets/images/help/answer-agent-step-4-general-settings.webp" alt="Answer Agent General Settings: Mode, Voice, Welcome message and the Confirmation checkbox." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full" loading="lazy">
+        <img src="/assets/images/help/answer-agent-step-4-general-settings.webp" alt="Answer Agent General Settings: Mode, Voice, Welcome message and the Confirmation checkbox." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full" loading="lazy" width="1600" height="774">
     </div>
 </div>
 
 <!-- Step 5: Write your introduction -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Write your introduction</h3>
         <p class="text-gray-600 leading-relaxed">The <strong>Welcome message</strong> box is your introduction &mdash; replace the default with your own wording, for example: &ldquo;Hi, you&rsquo;ve reached Kat at Acme. I&rsquo;m Maggie, her virtual assistant. Kat can&rsquo;t get to the phone just now &mdash; may I take a few details and she&rsquo;ll get back to you?&rdquo; Type <code>{$biz}</code> anywhere in the message to have your business name inserted automatically.</p>
     </div>
@@ -395,17 +395,17 @@
 <!-- Step 6: Choose the questions it asks -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Choose the questions it asks</h3>
         <p class="text-gray-600 leading-relaxed">Under <strong>Fields to Collect</strong>, each row is one question the agent asks, and it waits for an answer before moving on. The defaults are exactly what most businesses want: <em>Full name of the caller</em>, <em>Best contact number</em>, and <em>Message or what they need help with</em>. Edit the wording in the Description box to change how a question is asked, set the <em>Type</em> (Text, Email, Phone or Appointment), tick <em>Required</em>, and use the buttons above the table to add Email Address, Account Number, Company Name, Service Address or a Custom Field.</p>
-        <img src="/assets/images/help/answer-agent-step-6-fields-to-collect.webp" alt="Fields to Collect table with full name, best contact number and message rows, and the Save Settings button." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full" loading="lazy">
+        <img src="/assets/images/help/answer-agent-step-6-fields-to-collect.webp" alt="Fields to Collect table with full name, best contact number and message rows, and the Save Settings button." class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full" loading="lazy" width="1600" height="791">
     </div>
 </div>
 
 <!-- Step 7: Set the closing behaviour and save -->
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set the closing behaviour and save</h3>
         <p class="text-gray-600 leading-relaxed">Tick <strong>Confirm details before finalising the message</strong> if you want the agent to read the details back to the caller and confirm them before it finishes &mdash; this is how the closing works; there is no separate closing script to write. Optionally enable <strong>Appointment Scheduling</strong> further down if you want callers to be able to book a time. Click <strong>Save Details</strong>. Your messages will now arrive by email, and each call is also listed under <strong>AI &rarr; Recordings</strong> with its transcript and summary.</p>
     </div>

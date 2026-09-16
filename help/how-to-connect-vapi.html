@@ -390,7 +390,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Build the assistant in Vapi</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Vapi dashboard, create the assistant that should answer the phone &mdash; prompt, voice, model and any tools it needs.</p>
     </div>
@@ -398,7 +398,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Copy the Assistant ID</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open the assistant and copy its <strong>ID</strong>. It is a UUID, shown alongside the assistant in the dashboard and also returned by the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">GET /assistant</span> API endpoint.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This is the only value Click2Call needs. Vapi identifies the assistant from the user part of the SIP address, so there is no separate phone-number import step at their end and no SIP credentials to exchange.</p></div>
     </div>
@@ -406,14 +406,14 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>VAPI AI Integration</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">Paste the Assistant ID into the <strong>VAPI Assistant ID</strong> field. It is mandatory &mdash; the profile will not save without it. Click2Call then builds the route for you, shown under the field as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:&lt;assistant_id&gt;@sip.vapi.ai:5060</span>, and sets the number format to +E.164.</p><img src="/assets/images/help/profile-vapi.webp" alt="The Click2Call profile settings with Connection Type set to VAPI AI Integration, showing the mandatory VAPI Assistant ID field and the SIP URI Click2Call builds from it: sip:assistant_id@sip.vapi.ai:5060." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
     </div>
@@ -421,7 +421,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. The assistant should answer, and the call should appear in the Vapi call log.</p>
     </div>

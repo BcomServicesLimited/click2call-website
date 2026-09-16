@@ -141,7 +141,7 @@
   <!-- Search -->
   <form class="mt-8 max-w-md mx-auto flex gap-2" onsubmit="event.preventDefault(); var q=document.getElementById('nf-search').value.trim(); window.location.href='/support/' + (q ? ('?q='+encodeURIComponent(q)) : '');">
     <label for="nf-search" class="sr-only">Search the help centre</label>
-    <input id="nf-search" type="search" placeholder="Search help guides…" class="flex-1 rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus:border-[#3B9C49]" />
+    <input id="nf-search" type="search" placeholder="Search help guides…" class="flex-1 rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus:border-[#3B9C49] min-w-0" />
     <button type="submit" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#3B9C49] text-white text-sm font-semibold hover:bg-[#2E7A3A] transition-colors duration-150">Search</button>
   </form>
 

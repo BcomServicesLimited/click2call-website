@@ -391,7 +391,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Register a Direct SIP phone number with xAI</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Using the xAI API, create a Direct SIP phone number with <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">origin</span> set to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">byo_trunk</span> &mdash; the number is yours, arriving over your own trunk. Include the webhook URL that should receive incoming-call events.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">xAI returns a <strong>signing secret</strong> once and never again. Store it before you close the response; you need it to verify webhook signatures.</p></div>
     </div>
@@ -399,7 +399,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Choose an authentication method</h3>
         <p class="text-gray-600 leading-relaxed mt-3">xAI accepts either an IP allowlist, via <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>, or SIP digest credentials.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>103.212.52.19</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
     </div>
@@ -407,7 +407,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Handle the incoming-call webhook</h3>
         <p class="text-gray-600 leading-relaxed mt-3">When a call arrives, xAI posts a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event to your webhook. Verify the signature with your signing secret, then read the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> from the payload.</p>
     </div>
@@ -415,7 +415,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Open a WebSocket to answer</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Connect to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">wss://api.x.ai/v1/realtime</span> with the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> and your API key. Send <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">session.update</span> to configure the agent for this call, then <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">response.create</span> when it should start speaking.</p>
     </div>
@@ -423,14 +423,14 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>xAI</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">There are no extra fields. The <strong>Inbound SIP URI Route</strong> line already shows <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span> &mdash; note that xAI uses TLS on 5061 rather than plain TCP on 5060 &mdash; and the number format is set to +E.164 automatically.</p><img src="/assets/images/help/profile-xai.webp" alt="The Click2Call profile settings with Connection Type set to xAI, showing the pre-configured Inbound SIP URI Route sip:sip.voice.x.ai:5061;transport=tls." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
     </div>
@@ -438,7 +438,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. Your webhook should receive the incoming-call event, and the agent answers once your WebSocket session is established.</p>
     </div>

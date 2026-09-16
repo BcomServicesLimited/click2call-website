@@ -49,6 +49,8 @@
     table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
     th { background: #f9fafb; text-align: left; padding: 0.6rem 0.8rem; border: 1px solid #e5e7eb; font-size: 0.85rem; }
     td { padding: 0.6rem 0.8rem; border: 1px solid #e5e7eb; font-size: 0.9rem; vertical-align: top; }
+    /* Long URLs and SIP URIs must wrap rather than widen the table on small screens. */
+    th, td, code { overflow-wrap: break-word; word-break: break-word; }
     .meta { font-size: 0.85rem; color: #6b7280; margin-bottom: 2rem; }
     a { color: #0d9488; }
     ul { padding-left: 1.4rem; }

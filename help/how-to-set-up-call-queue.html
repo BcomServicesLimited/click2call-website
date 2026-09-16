@@ -336,7 +336,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Enable the queue on the line</h3>
         <p class="text-gray-600 leading-relaxed">In the portal, open the <strong>Voice</strong> tab and select the number or extension you want the queue to apply to. That opens the <strong>Call Flow</strong> screen for that line.</p><p class="mt-3 text-gray-600 leading-relaxed">Open the <strong>Incoming Calls</strong> dropdown and choose <strong>Call Queue</strong>. This is the same menu that holds Voice Mail, Call Forwarding, Simultaneous Ring, Hunt Group, Auto Attendant and AI Attendant &mdash; so the queue becomes what that line does with an incoming call, in place of whichever behaviour was set before.</p>
         <img src="/assets/images/help/call-queue-navigate.webp" alt="The Call Flow screen for an extension in the Click2Call portal, with the Incoming Calls dropdown open. Call Queue is highlighted among the options, which also include Voice Mail, Call Forwarding, Do not Disturb, Simultaneous Ring, Group Call or Page, Call Screening, Hunt Group, Auto Attendant, AI Attendant and Message Playback." width="1400" height="1251" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><p class="mt-3 text-gray-600 leading-relaxed">The Call Queue settings open. Tick <strong>Call Queue Enabled on this line</strong>, then set the <strong>Time Schedule</strong> below it. Leave it as <em>At all times</em> for a permanently active queue, or pick a schedule so the queue only runs during opening hours.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">A queue is set per line, not per account &mdash; your main published number can queue while a direct line rings straight through. Because it is chosen from the Incoming Calls menu, enabling a queue replaces the previous incoming-call behaviour on that line rather than running alongside it.</p></div>
@@ -345,7 +345,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Add your agents</h3>
         <p class="text-gray-600 leading-relaxed">Add each team member who should answer queued calls to the numbered agent list. The numbering is the order agents are tried — which matters for every strategy except Ring All, where everyone rings at once.</p><p class="text-gray-600 leading-relaxed">Leave unused slots as <em>-- Not Set --</em>. You can change the list at any time without affecting callers already waiting.</p>
         <p class="mt-3 text-gray-600 leading-relaxed">The dropdown lists your extensions by name and login, along with any voicemail destinations on the account &mdash; so a slot can point at a mailbox as well as a person.</p>
@@ -355,7 +355,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Choose the strategy and ring timers</h3>
         <p class="text-gray-600 leading-relaxed">Pick a <strong>Queue Strategy</strong>. <strong>Ring All</strong> rings every agent simultaneously and is the usual choice for a small team.</p><p class="text-gray-600 leading-relaxed">Then set the timers:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Agent Timeout</strong> — how long each agent&rsquo;s phone rings, between 5 and 60 seconds. 15 is a sensible default; much longer and callers notice the silence.</li><li><strong>Retry Timer</strong> — how long before an agent who did not answer is tried again.</li><li><strong>Wrapup Time</strong> — a pause after a call before that agent can receive another. Useful if staff need a moment to finish notes.</li></ul><p class="text-gray-600 leading-relaxed">Two further options sit lower down: whether to <strong>send calls to agents even when they are busy</strong> on an existing call, and whether to <strong>report the caller&rsquo;s hold time to the agent</strong> before connecting them.</p>
         <img src="/assets/images/help/call-queue-settings.webp" alt="The Click2Call call queue settings screen showing Queue Strategy set to Ring All, Maximum Length, Agent Timeout, Retry Timer, Wrapup Time, Position Announcement, Announcement Frequency, Queue Timeout and the Queue Identifier field." width="1600" height="1200" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
@@ -364,7 +364,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Decide what callers hear</h3>
         <p class="text-gray-600 leading-relaxed">This is the part callers actually experience, so it is worth getting right.</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Position Announcement</strong> — seconds between telling the caller their place in the queue. Set 0 to turn it off. You can also choose whether it plays at the beginning.</li><li><strong>Include hold time in position announcements</strong> — adds an estimated wait to that announcement.</li><li><strong>Announcement Frequency</strong> — how often a short &ldquo;thank you for holding&rdquo; message plays between position announcements. 0 turns it off.</li></ul><p class="text-gray-600 leading-relaxed">Use the upload buttons at the bottom of the page to add your own <strong>Music on Hold</strong> and your own <strong>Queue Announcement</strong>. Both are worth doing — default hold music is the fastest way to sound like everybody else.</p>
         <img src="/assets/images/help/call-queue-uploads.webp" alt="Buttons in the Click2Call portal for queue exit options, uploading Music on Hold recordings, and uploading a Queue Announcement message." width="1600" height="513" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
@@ -373,7 +373,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set limits and the exit path</h3>
         <p class="text-gray-600 leading-relaxed"><strong>Maximum Length</strong> caps how many callers may wait; 0 means unlimited. <strong>Queue Timeout</strong> caps how long any one caller waits; 0 means no limit.</p><p class="text-gray-600 leading-relaxed">Use <strong>queue exit options</strong> to decide where a caller goes when the timeout is reached — voicemail, another number, or another part of your call flow.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Unlimited length with no timeout is rarely the right choice. A caller who waits eight minutes and then hangs up is a worse outcome than one sent to voicemail after ninety seconds.</p></div>
     </div>
@@ -381,7 +381,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Give the queue a label, then test it</h3>
         <p class="text-gray-600 leading-relaxed">Set a <strong>Queue Identifier</strong> — the text shown in the caller ID so staff can see a call came from the queue rather than direct. The default is <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">QUEUE:</span>.</p><p class="text-gray-600 leading-relaxed">Then test properly: ring the line from an outside phone while the agents are busy or their phones are unregistered. Confirm you hear your announcement and music, that position announcements play at the interval you set, and that the call is delivered as soon as an agent frees up.</p>
     </div>

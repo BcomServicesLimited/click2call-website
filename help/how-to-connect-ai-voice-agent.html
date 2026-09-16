@@ -386,7 +386,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Check whether your provider is built in</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Profiles</strong> and open the <strong>Connection Type</strong> list. Click2Call ships ready-made profiles for the major AI voice platforms:</p><div class="mt-4 rounded-xl bg-gray-50 border border-gray-200 p-4"><a href="/help/how-to-connect-elevenlabs" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Eleven Labs AI</a><a href="/help/how-to-connect-openai" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">OpenAI</a><a href="/help/how-to-connect-xai" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">xAI</a><a href="/help/how-to-connect-retell-ai" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Retell AI</a><a href="/help/how-to-connect-vapi" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">VAPI AI Integration</a><a href="/help/how-to-connect-synthflow" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Synthflow</a><a href="/help/how-to-connect-livekit" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">LiveKit Cloud</a><a href="/help/how-to-connect-cloudonix" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Cloudonix</a><a href="/help/how-to-connect-twilio" class="inline-block rounded-lg bg-white border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-800 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150 mr-2 mb-2">Twilio Integration</a></div><p class="text-gray-600 leading-relaxed mt-3">If your provider is on that list, select it and Click2Call fills in the SIP route for you. A few profiles ask for one identifier &mdash; an OpenAI Project ID, a VAPI Assistant ID, a Twilio or LiveKit subdomain &mdash; and the rest need nothing at all. Each name above links to a step-by-step guide covering both ends of the connection.</p><img src="/assets/images/help/ai-agent-connection-types.webp" alt="The Connection Type dropdown in the Click2Call profile settings, listing SIP Registration, Registered SIP Trunk, SIP Peering, IAX2 Registration, Microsoft Teams, Cloudonix, Eleven Labs AI, LiveKit Cloud, OpenAI, Retell AI, Synthflow, Twilio Integration, VAPI AI Integration and xAI." width="1600" height="752" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Not on the list? That is fine &mdash; anything that speaks SIP still connects using the generic method in the next step.</p></div>
     </div>
@@ -394,7 +394,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">For any other provider, use SIP Registration</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Set <strong>Connection Type</strong> to <strong>SIP Registration</strong>. Your AI platform then registers to Click2Call the way a softphone or desk phone does, using the phone number as its username.</p><p class="text-gray-600 leading-relaxed mt-3">This is the step people most often get wrong. It is tempting to pick <em>SIP Peering (Direct IP)</em> because you are joining two platforms &mdash; but peering means the two ends trust each other by IP address, with no credentials at all. If you have a username and password, you want registration.</p>
     </div>
@@ -402,7 +402,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Get the credentials for the line</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong>. Each number has a <strong>Password</strong> column with a <strong>View</strong> control that reveals the SIP password for that line. The username is the number itself, in full international format.</p><img src="/assets/images/help/ai-agent-line-credentials.webp" alt="The Click2Call Line Manager screen showing the phone number, Profile and Password columns, with a View control that reveals the SIP password. The password value is masked in this example." width="1600" height="438" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Treat the line password as a credential. Anyone holding it can register a device as that number and place calls billed to your account.</p></div>
     </div>
@@ -410,7 +410,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Enter the details on the AI platform</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the platform&rsquo;s SIP or trunk settings, choose registration-based authentication &mdash; some platforms label this &ldquo;username and password&rdquo; as opposed to &ldquo;IP&rdquo; &mdash; then enter the values below.</p>
     </div>
@@ -423,7 +423,7 @@
         <h2 class="text-sm font-bold text-gray-900 uppercase tracking-wide">SIP Credentials Reference</h2>
         <p class="text-xs text-gray-500 mt-0.5">Enter these values exactly as shown into your phone's SIP account settings.</p>
       </div>
-      <table class="w-full text-sm">
+      <div class="overflow-x-auto"><table class="w-full text-sm">
         <tbody class="divide-y divide-gray-100">
           <tr class="hover:bg-gray-50 transition-colors">
             <td class="px-5 py-3 font-semibold text-gray-700 w-1/2">Username / Login / User ID</td>
@@ -462,12 +462,12 @@
             <td class="px-5 py-3 text-gray-600">Not required</td>
           </tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Check the number is on the right profile</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Back in <strong>Line Manager</strong>, confirm the <strong>Profile</strong> column for that number points at the profile you configured.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This one catches almost everybody. The default profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; so a number left on <em>Default</em> quietly ignores the profile you just spent your morning setting up.</p></div>
     </div>
@@ -475,7 +475,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set the time zone on the profile</h3>
         <p class="text-gray-600 leading-relaxed mt-3">While you are in the profile, check the <strong>Time Zone</strong>. Every time-based behaviour on the account reads it &mdash; business hours, after-hours routing and call queue schedules all follow this setting.</p><img src="/assets/images/help/ai-agent-profile-settings.webp" alt="Click2Call Default Profile settings showing Connection Type set to SIP Registration, the feature checkboxes including Recording Enabled, the Time Zone selector set to GMT+10:00 Australia Brisbane, and the Inbound SIP URI Route field." width="1600" height="742" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><p class="text-gray-600 leading-relaxed mt-3">If the phones open and close at the wrong local time, this is almost always why.</p>
     </div>
@@ -483,7 +483,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test it</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. Your agent should answer within a couple of seconds.</p><p class="text-gray-600 leading-relaxed mt-3">If the call reaches Click2Call voicemail instead, work through the troubleshooting below.</p>
     </div>

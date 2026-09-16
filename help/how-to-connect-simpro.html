@@ -387,7 +387,7 @@
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Setting Up simPRO, Step by Step</h2>
 <div class="mb-12"><div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Turn on the VoIP permission in simPRO</h3>
         <p class="text-gray-600 leading-relaxed mt-3">VoIP is hidden until your security group allows it. In simPRO go to <strong>System &rarr; Setup &rarr; Security Groups</strong> and open the relevant group.</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li>On the <strong>Setup</strong> tab, tick <strong>VoIP</strong> at the bottom of the <strong>Admin</strong> sub-tab.</li><li>On the <strong>Reports</strong> tab, tick <strong>VoIP</strong>.</li><li>Click <strong>Save and Finish</strong>.</li></ul><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">If the VoIP menu or the softphone icon is missing later on, this is almost always why.</p></div>
     </div>
@@ -395,7 +395,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Connect simPRO to Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Go to <strong>System &rarr; Setup &rarr; VoIP</strong> and switch <strong>Integration</strong> to <strong>ON</strong>. Then fill in four fields:</p><div class="mt-4 overflow-x-auto rounded-xl border border-gray-200"><table class="w-full text-sm min-w-[30rem]"><tbody><tr class="border-b border-gray-100"><td class="py-3 px-4 font-semibold text-gray-900 align-top">Server Address</td><td class="py-3 px-4 text-gray-600"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au:5060</span><br><span class="text-xs">The port matters. See the box above.</span></td></tr><tr class="border-b border-gray-100"><td class="py-3 px-4 font-semibold text-gray-900 align-top">Prefix</td><td class="py-3 px-4 text-gray-600">Leave blank. Click2Call does not need a code to reach an outside line.</td></tr><tr class="border-b border-gray-100"><td class="py-3 px-4 font-semibold text-gray-900 align-top">Country Code</td><td class="py-3 px-4 text-gray-600"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61</span></td></tr><tr><td class="py-3 px-4 font-semibold text-gray-900 align-top">Area Code</td><td class="py-3 px-4 text-gray-600">Your local code &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">07</span> for Queensland, <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">03</span> for Victoria, and so on.</td></tr></tbody></table></div><p class="text-gray-600 leading-relaxed mt-3">Click <strong>Save</strong>. If you run a multi-company build, VoIP has its own sharing setting under <strong>System &rarr; Setup &rarr; Company</strong> &mdash; either share one set of details across all companies, or configure each one separately.</p>
     </div>
@@ -403,7 +403,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Get the line password from Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Line Manager</strong>. Each number has a <strong>Password</strong> column with a <strong>View</strong> control that reveals the SIP password for that line.</p><div class="mt-4 rounded-xl bg-amber-50 border-2 border-amber-200 p-4"><p class="text-sm text-amber-900 leading-relaxed"><strong>This is not your portal login password.</strong> The password you use to sign in to the Click2Call portal will not register a phone. Each phone number has its own separate SIP password, and that is the one simPRO needs. This trips up nearly everyone the first time.</p></div><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Treat the line password as a credential. Anyone holding it can register a device as that number and place calls billed to your account.</p></div>
     </div>
@@ -411,7 +411,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Add the credentials to each employee</h3>
         <p class="text-gray-600 leading-relaxed mt-3">simPRO stores VoIP credentials per person, not once for the business. For each employee who needs the softphone, go to <strong>People &rarr; Employees</strong> (or Contractors), open their card, and select the <strong>Settings</strong> sub-tab.</p><p class="text-gray-600 leading-relaxed mt-3">Under <strong>VoIP Details</strong>:</p><div class="mt-4 overflow-x-auto rounded-xl border border-gray-200"><table class="w-full text-sm min-w-[30rem]"><tbody><tr class="border-b border-gray-100"><td class="py-3 px-4 font-semibold text-gray-900 align-top">Username</td><td class="py-3 px-4 text-gray-600">The Click2Call phone number in full international format, no spaces and no plus sign &mdash; for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61755501234</span> for 07 5550 1234.</td></tr><tr class="border-b border-gray-100"><td class="py-3 px-4 font-semibold text-gray-900 align-top">SIP Username</td><td class="py-3 px-4 text-gray-600">Leave blank. Click2Call uses the number as both the username and the authorisation name.</td></tr><tr><td class="py-3 px-4 font-semibold text-gray-900 align-top">Password</td><td class="py-3 px-4 text-gray-600">The line password from step 3.</td></tr></tbody></table></div><p class="text-gray-600 leading-relaxed mt-3">Click <strong>Save and Finish</strong>.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Each person needs their own Click2Call number or extension. Two people sharing one set of credentials will fight over the registration &mdash; whoever logged in last gets the calls.</p></div>
     </div>
@@ -419,7 +419,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Open the softphone and test</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Once the integration is on, a phone icon appears in the simPRO system menu for every user who has VoIP details on their card. Click it to open the softphone, then ring the number from a mobile.</p><p class="text-gray-600 leading-relaxed mt-3">The softphone shows the registration state at the top. Anything other than a connected state means it has not registered &mdash; the troubleshooting below covers what each message means.</p>
     </div>

@@ -397,7 +397,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Find your subdomain and region</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Your SIP subdomain is the LiveKit project ID with the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">p_</span> prefix stripped off. Run <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">lk project list --json</span> and read the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">ProjectId</span> field &mdash; a project ID of <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">p_vjnxecm0tjk</span> gives a subdomain of <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">vjnxecm0tjk</span>.</p><p class="text-gray-600 leading-relaxed mt-3">The region is the LiveKit region your project runs in. Region values look like <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">us1</span> and <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">eu1</span>.</p>
     </div>
@@ -405,7 +405,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create an inbound trunk</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the LiveKit Cloud dashboard open <strong>Telephony &rarr; SIP trunks</strong> and create a trunk with direction <strong>Inbound</strong>. List your Click2Call number in E.164 format.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">If you leave the numbers list empty, LiveKit requires you to set either a username and password or an allowed-addresses list instead &mdash; it will not accept an unauthenticated trunk that matches everything.</p></div><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>103.212.52.19</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
     </div>
@@ -413,7 +413,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create a dispatch rule</h3>
         <p class="text-gray-600 leading-relaxed mt-3">LiveKit will not accept an inbound call without at least one <strong>dispatch rule</strong>, which decides which room the caller is placed into. Putting each caller in their own room is the usual starting point.</p>
     </div>
@@ -421,7 +421,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Make sure an agent is running</h3>
         <p class="text-gray-600 leading-relaxed mt-3">A LiveKit room with nobody in it is silence. Deploy a LiveKit Agents worker that joins the room and handles the conversation before you test.</p>
     </div>
@@ -429,14 +429,14 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>LiveKit Cloud</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">Enter the subdomain in the first field and the region in the second &mdash; both are mandatory and the profile will not save without them. Click2Call joins them into <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:&lt;subdomain&gt;.&lt;region&gt;.sip.livekit.cloud:5060;transport=tcp</span>, shown under the fields.</p><img src="/assets/images/help/profile-livekit.webp" alt="The Click2Call profile settings with Connection Type set to LiveKit Cloud, showing the two mandatory LiveKit Subdomain and Region fields and the resulting route sip:subdomain.region.sip.livekit.cloud:5060;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
     </div>
@@ -444,7 +444,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. The call should appear as a participant in a LiveKit room, and your agent should answer it.</p>
     </div>

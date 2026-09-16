@@ -391,7 +391,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create a SIP Domain in Twilio</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Twilio Console open <strong>Voice &rarr; Manage &rarr; SIP Domains</strong> and create a domain. The name you choose becomes <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">&lt;subdomain&gt;.sip.twilio.com</span>.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">SIP domain names are unique across every Twilio account, not just yours, so the obvious short names are long gone. Something like <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">acme-voice-au</span> will usually be free.</p></div>
     </div>
@@ -399,7 +399,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Point the domain at your call logic</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Set the domain&rsquo;s <strong>Voice Configuration</strong> Request URL. Twilio fetches it when a call arrives and executes whatever TwiML comes back.</p><p class="text-gray-600 leading-relaxed mt-3">If you would rather not write code, point it at a <strong>Studio Flow</strong> or a <strong>TwiML Bin</strong> &mdash; both produce valid TwiML without a server of your own.</p>
     </div>
@@ -407,7 +407,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Secure the domain with an IP Access Control List</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Twilio will not accept SIP traffic to a domain that has neither an IP Access Control List nor a Credential List. Create an <strong>IP Access Control List</strong> and add the Click2Call signalling addresses.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Use an IP Access Control List, not a Credential List. Click2Call cannot present a username and password on an outbound INVITE, so a Credential List alone will reject every call. Add <strong>103.212.52.19</strong> to the Access Control List &mdash; that is the address our switch sends INVITEs from.</p></div>
     </div>
@@ -415,14 +415,14 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>Twilio Integration</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">Enter <em>only the first label</em> in the <strong>Twilio Subdomain</strong> field &mdash; if your Twilio domain is <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">acme-voice.sip.twilio.com</span>, type <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">acme-voice</span>. The field is mandatory. Click2Call appends the rest and shows the finished route under the field.</p><img src="/assets/images/help/profile-twilio.webp" alt="The Click2Call profile settings with Connection Type set to Twilio Integration, showing the mandatory Twilio Subdomain field and the resulting route sip:subdomain.sip.twilio.com:5060;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
     </div>
@@ -430,7 +430,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. Twilio should fetch your Voice Configuration URL and run the TwiML it returns. The Twilio Console call logs will show the request and any errors.</p>
     </div>

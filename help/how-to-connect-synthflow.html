@@ -391,7 +391,7 @@
 <div class="mb-12">
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Build the assistant in Synthflow</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Synthflow dashboard, create the assistant that should answer the phone &mdash; prompt, voice, actions and knowledge. It is all dashboard configuration.</p>
     </div>
@@ -399,7 +399,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Import your Click2Call number into Synthflow</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Phone Numbers</strong> and use the <strong>Import Phone Number</strong> form:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Number type</strong> &mdash; Custom.</li><li><strong>Phone number</strong> &mdash; E.164 format, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>.</li><li><strong>Friendly name</strong> &mdash; whatever helps you find it later.</li></ul><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>103.212.52.19</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
     </div>
@@ -407,7 +407,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign the assistant to the number</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Attach the assistant to the imported number so inbound calls have somewhere to land.</p>
     </div>
@@ -415,14 +415,14 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>Synthflow</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">There are no extra fields. The <strong>Inbound SIP URI Route</strong> line already shows <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sipin.synthflow.ai:35681;transport=tcp</span>. The port is non-standard, which is normal for Synthflow, and Click2Call handles it for you.</p><img src="/assets/images/help/profile-synthflow.webp" alt="The Click2Call profile settings with Connection Type set to Synthflow, showing the pre-configured Inbound SIP URI Route sip:sipin.synthflow.ai:35681;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
     </div>
@@ -430,7 +430,7 @@
 
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-    <div class="flex-1 pt-1">
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
         <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. The assistant should answer and the call should appear in the Synthflow call log.</p>
     </div>

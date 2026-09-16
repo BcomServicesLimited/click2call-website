@@ -301,7 +301,7 @@
     <!-- Step 1 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Enable Microsoft Teams on your Click2Call profile</h3>
         <p class="text-gray-600 leading-relaxed">Sign in to <a class="text-[#3B9C49] font-medium hover:underline" href="https://portal.click2call.com.au/login.php" rel="noopener" target="_blank">portal.click2call.com.au</a> and open <strong>Voice &rarr; Profiles</strong>. Either edit the Default profile or create a new one dedicated to Teams. Change the <strong>Connection Type</strong> dropdown to <strong>Microsoft Teams</strong>.</p>
         <p class="text-gray-600 leading-relaxed mt-3">As soon as you save, the portal displays two important values on the profile:</p>
@@ -309,31 +309,31 @@
           <li><strong>Microsoft Teams Domain</strong> &mdash; something like <code class="text-sm bg-gray-100 rounded px-1.5 py-0.5">ms{account}.sbc.msteams.nz</code>. This is the SBC hostname that Microsoft will send calls to and receive calls from. Copy it to your clipboard.</li>
           <li><strong>Domain TXT Record Value</strong> &mdash; a blank field where you&rsquo;ll paste Microsoft&rsquo;s verification token in a moment.</li>
         </ul>
-        <img alt="Click2Call portal — Microsoft Teams selected as Connection Type on the Voice Profile" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-01-profile.webp"/>
+        <img alt="Click2Call portal — Microsoft Teams selected as Connection Type on the Voice Profile" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-01-profile.webp"/ width="2764" height="1408">
       </div>
     </div>
 
     <!-- Step 2 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Add the SBC domain in Microsoft 365</h3>
         <p class="text-gray-600 leading-relaxed">Open a new tab, sign in to <a class="text-[#3B9C49] font-medium hover:underline" href="https://admin.microsoft.com/" rel="noopener" target="_blank">admin.microsoft.com</a> as a Global Admin, and use the left navigation to open <strong>Settings &rarr; Domains</strong>.</p>
-        <img alt="Microsoft 365 Admin Centre left navigation with Settings expanded and Domains selected" class="mt-4 rounded-xl border border-gray-200 max-w-md" loading="lazy" src="/assets/images/help/teams/teams-02-admin-domains-nav.webp"/>
+        <img alt="Microsoft 365 Admin Centre left navigation with Settings expanded and Domains selected" class="mt-4 rounded-xl border border-gray-200 max-w-md w-full" loading="lazy" src="/assets/images/help/teams/teams-02-admin-domains-nav.webp"/ width="400" height="540">
         <p class="text-gray-600 leading-relaxed mt-4">Click <strong>Add domain</strong> at the top of the domains list.</p>
-        <img alt="Add domain button at the top of the Microsoft 365 Domains page" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-03-add-domain-btn.webp"/>
+        <img alt="Add domain button at the top of the Microsoft 365 Domains page" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-03-add-domain-btn.webp"/ width="1022" height="562">
         <p class="text-gray-600 leading-relaxed mt-4">Paste the Microsoft Teams Domain you copied in Step&nbsp;1 into the <strong>Domain name</strong> field, then click <strong>Use this domain</strong>.</p>
-        <img alt="Microsoft 365 Add a domain wizard with the SBC domain pasted into the Domain name field" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-04-add-domain-form.webp"/>
+        <img alt="Microsoft 365 Add a domain wizard with the SBC domain pasted into the Domain name field" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-04-add-domain-form.webp"/ width="1212" height="429">
       </div>
     </div>
 
     <!-- Step 3 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Verify the domain using the TXT record</h3>
         <p class="text-gray-600 leading-relaxed">Microsoft will next ask you to prove ownership of the SBC domain by adding a TXT record to it. You&rsquo;ll be shown a value that starts with <code class="text-sm bg-gray-100 rounded px-1.5 py-0.5">MS=</code>. Copy that TXT value.</p>
-        <img alt="Domain TXT Record Value field in Click2Call portal, ready to receive the MS= verification token" class="mt-4 rounded-xl border border-gray-200 max-w-md" loading="lazy" src="/assets/images/help/teams/teams-05-txt-record.webp"/>
+        <img alt="Domain TXT Record Value field in Click2Call portal, ready to receive the MS= verification token" class="mt-4 rounded-xl border border-gray-200 max-w-md w-full" loading="lazy" src="/assets/images/help/teams/teams-05-txt-record.webp"/ width="447" height="157">
         <p class="text-gray-600 leading-relaxed mt-4">Switch back to the Click2Call portal, paste it into the <strong>Domain TXT Record Value</strong> field on the Teams profile, and click <strong>Save Default Profile</strong>. The TXT record will be published on the <code class="text-sm bg-gray-100 rounded px-1.5 py-0.5">ms{account}.sbc.msteams.nz</code> domain within seconds.</p>
         <p class="text-gray-600 leading-relaxed mt-3">Return to Microsoft and click <strong>Verify</strong>. If it fails, wait 30&ndash;60 seconds and click it again &mdash; DNS propagation is usually near-instant but occasionally lags. When the domain verifies successfully, Microsoft will offer to add online services (Exchange, SharePoint, etc.) to the domain. <strong>Leave every checkbox unticked</strong> &mdash; this domain is for Direct Routing only, not for mailboxes. Click <strong>Continue</strong> and then <strong>Finish</strong>.</p>
       </div>
@@ -342,44 +342,44 @@
     <!-- Step 4 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Create a trunk user in Microsoft 365</h3>
         <p class="text-gray-600 leading-relaxed">Microsoft won&rsquo;t attach a Direct Routing licence to a raw domain &mdash; it needs a user account on that domain to bind the licence to. The trunk user is a placeholder account that never signs in and never makes calls; its only job is to hold a Teams Phone licence against the SBC domain so Microsoft treats the domain as Teams-enabled.</p>
         <p class="text-gray-600 leading-relaxed mt-3">In the Admin Centre, open <strong>Users &rarr; Active users</strong> and click <strong>Add a user</strong>.</p>
-        <img alt="Active users page in Microsoft 365 Admin Centre with Add a user button highlighted" class="mt-4 rounded-xl border border-gray-200 max-w-lg" loading="lazy" src="/assets/images/help/teams/teams-06-active-users.webp"/>
+        <img alt="Active users page in Microsoft 365 Admin Centre with Add a user button highlighted" class="mt-4 rounded-xl border border-gray-200 max-w-lg w-full" loading="lazy" src="/assets/images/help/teams/teams-06-active-users.webp"/ width="623" height="325">
         <p class="text-gray-600 leading-relaxed mt-4">Fill in the basics. Any name will do &mdash; we use <em>Trunk User</em> / username <code class="text-sm bg-gray-100 rounded px-1.5 py-0.5">tempuser</code>. Critically, in the <strong>Domains</strong> dropdown on the right, pick the SBC domain you just added (not your regular company domain). Leave <em>Automatically create a password</em> and <em>Require this user to change their password when they first sign in</em> ticked. Click <strong>Next</strong>.</p>
-        <img alt="Microsoft 365 Add a user wizard — Basics screen with the SBC domain selected in the Domains dropdown" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-07-add-user.webp"/>
+        <img alt="Microsoft 365 Add a user wizard — Basics screen with the SBC domain selected in the Domains dropdown" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-07-add-user.webp"/ width="898" height="311">
         <p class="text-gray-600 leading-relaxed mt-4">On the <strong>Assign product licenses</strong> screen, choose <strong>Australia</strong> as the location and tick both:</p>
         <ul class="list-disc list-outside ml-6 mt-2 text-gray-600 space-y-1">
           <li><strong>Microsoft Teams Phone Standard</strong> &mdash; the licence that enables Direct Routing calling.</li>
           <li>A base Office 365 licence such as <strong>Office 365 E1</strong> or higher &mdash; required as a companion to Teams Phone Standard.</li>
         </ul>
         <p class="text-gray-600 leading-relaxed mt-3">If you don&rsquo;t have a spare licence handy, temporarily remove one from an unused account, complete this setup, then reassign it. The trunk user only needs the licences during the initial configuration.</p>
-        <img alt="Assign product licenses screen in Microsoft 365 with Teams Phone Standard and Office 365 E1 selected" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-08-assign-license.webp"/>
+        <img alt="Assign product licenses screen in Microsoft 365 with Teams Phone Standard and Office 365 E1 selected" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-08-assign-license.webp"/ width="1142" height="619">
         <p class="text-gray-600 leading-relaxed mt-4">On the <strong>Optional settings</strong> screen leave both sections at their defaults (no admin role, no profile details) and click <strong>Next</strong>.</p>
-        <img alt="Optional settings screen in Microsoft 365 Add a user wizard, left at default values" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-09-optional-settings.webp"/>
+        <img alt="Optional settings screen in Microsoft 365 Add a user wizard, left at default values" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-09-optional-settings.webp"/ width="888" height="683">
         <p class="text-gray-600 leading-relaxed mt-4">Review the summary and click <strong>Finish adding</strong>. The trunk user will appear in your Active users list within a few seconds.</p>
-        <img alt="Finish adding button on the summary step of the Add a user wizard" class="mt-4 rounded-xl border border-gray-200 max-w-xs" loading="lazy" src="/assets/images/help/teams/teams-10-finish-adding.webp"/>
+        <img alt="Finish adding button on the summary step of the Add a user wizard" class="mt-4 rounded-xl border border-gray-200 max-w-xs w-full" loading="lazy" src="/assets/images/help/teams/teams-10-finish-adding.webp"/ width="1248" height="473">
       </div>
     </div>
 
     <!-- Step 5 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Add Teams phone numbers in the Click2Call portal</h3>
         <p class="text-gray-600 leading-relaxed">Back in the Click2Call portal, open <strong>Account &rarr; Numbers</strong> and click <strong>Add a new Number</strong>. For each Teams user you&rsquo;re setting up, choose <strong>Australia</strong> as the country, pick an Area (Sydney, Melbourne, Brisbane, Perth, Adelaide, etc.), and &mdash; the important bit &mdash; choose <strong>Microsoft Teams</strong> from the <strong>Line Type</strong> dropdown. Select a Teams plan and confirm the reservation.</p>
-        <img alt="Add a new Number page in the Click2Call portal with Microsoft Teams selected as the Line Type" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-11-add-number.webp"/>
+        <img alt="Add a new Number page in the Click2Call portal with Microsoft Teams selected as the Line Type" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-11-add-number.webp"/ width="2860" height="1024">
         <p class="text-gray-600 leading-relaxed mt-4">If you&rsquo;re porting existing numbers rather than picking new ones, use the <strong>Port an existing number</strong> button and mark the port request as a Teams line when prompted. See <a class="text-[#3B9C49] font-medium hover:underline" href="/help/how-to-port-number">Porting a number to Click2Call</a> for the full porting flow.</p>
         <p class="text-gray-600 leading-relaxed mt-3">Repeat for every Teams user. When you&rsquo;re done, open <strong>Voice &rarr; Line Manager</strong> and confirm each Teams line has a small blue Teams icon next to it. If the icon isn&rsquo;t showing, edit the line and check that its Profile is set to your Teams-enabled profile from Step&nbsp;1.</p>
-        <img alt="Line Manager in the Click2Call portal listing Teams-enabled phone numbers with the blue Teams icon" class="mt-4 rounded-xl border border-gray-200 max-w-md" loading="lazy" src="/assets/images/help/teams/teams-12-line-manager.webp"/>
+        <img alt="Line Manager in the Click2Call portal listing Teams-enabled phone numbers with the blue Teams icon" class="mt-4 rounded-xl border border-gray-200 max-w-md w-full" loading="lazy" src="/assets/images/help/teams/teams-12-line-manager.webp"/ width="970" height="856">
       </div>
     </div>
 
     <!-- Step 6 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Map Teams numbers to Teams users</h3>
         <p class="text-gray-600 leading-relaxed">Open <strong>Voice &rarr; Microsoft Teams</strong> in the Click2Call portal. You&rsquo;ll see a table listing every Teams-enabled number on your account, with an <strong>Associated Teams User</strong> field next to each.</p>
         <p class="text-gray-600 leading-relaxed mt-3">For each row, enter the Microsoft 365 email address of the user who should own the number &mdash; the same email they use to sign in to Teams (e.g. <code class="text-sm bg-gray-100 rounded px-1.5 py-0.5">joe@yourcompany.com.au</code>). Then choose a <strong>Call Mode</strong>:</p>
@@ -388,18 +388,18 @@
           <li><strong>Teams/SIP Twinning</strong> &mdash; calls ring in Teams <em>and</em> on a paired SIP device (desk phone or softphone). Useful when a user has both a physical phone and Teams.</li>
         </ul>
         <p class="text-gray-600 leading-relaxed mt-3">Optionally set an <strong>Unavailable Forwarding Number</strong> (where calls go if Teams is offline) and a <strong>Failover Forwarding Number</strong> (a backup like a mobile). Leave <strong>Teams Voicemail</strong> enabled unless the user prefers the Click2Call voicemail system. Click <strong>Save Changes</strong>.</p>
-        <img alt="Microsoft Teams Lines page in the Click2Call portal — mapping numbers to user emails with Call Mode selection" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-13-teams-lines.webp"/>
+        <img alt="Microsoft Teams Lines page in the Click2Call portal — mapping numbers to user emails with Call Mode selection" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-13-teams-lines.webp"/ width="2400" height="1400">
       </div>
     </div>
 
     <!-- Step 7 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Run the PowerShell commands</h3>
         <p class="text-gray-600 leading-relaxed">The final piece connects the two sides. Microsoft needs to be told (a) that your SBC exists and is authorised to carry calls, and (b) which users are allowed to route their calls through it. That happens via PowerShell.</p>
         <p class="text-gray-600 leading-relaxed mt-3">Click the orange <strong>Power Shell</strong> button on the Microsoft Teams Lines page. The portal generates the exact commands you need to run, pre-filled with your SBC hostname, each user&rsquo;s email address, and their assigned phone number in E.164 format.</p>
-        <img alt="Microsoft Power Shell Commands page in the Click2Call portal, showing the generated command block" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-14-powershell-page.webp"/>
+        <img alt="Microsoft Power Shell Commands page in the Click2Call portal, showing the generated command block" class="mt-4 rounded-xl border border-gray-200 w-full" loading="lazy" src="/assets/images/help/teams/teams-14-powershell-page.webp"/ width="2400" height="1900">
 
         <h4 class="font-semibold text-gray-900 mt-6 mb-2">Prepare PowerShell</h4>
         <p class="text-gray-600 leading-relaxed">On a Windows machine, open <strong>Windows PowerShell</strong> as Administrator (right-click &rarr; Run as administrator). Then run these four commands one at a time. The first three only need to be run once per machine.</p>
@@ -447,7 +447,7 @@ Set-CsOnlineVoicemailUserSettings `
     <!-- Step 8 -->
     <div class="flex gap-5">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">8</div>
-      <div class="flex-1 pt-1">
+      <div class="flex-1 min-w-0 pt-1">
         <h3 class="text-xl font-bold text-brand-charcoal mb-2">Test the setup</h3>
         <p class="text-gray-600 leading-relaxed">Sign in to Teams (desktop or mobile) as one of the configured users. The dialpad should appear under <strong>Calls</strong> in the left sidebar &mdash; if it doesn&rsquo;t, sign out and back in to force Teams to pick up the new voice routing policy. This can take up to 10 minutes after running the PowerShell commands.</p>
         <p class="text-gray-600 leading-relaxed mt-3">Two quick tests:</p>
