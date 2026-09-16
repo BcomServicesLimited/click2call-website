@@ -67,9 +67,9 @@ Click2Call uses flat-rate, prepaid billing. Customers load credit onto their acc
 - **1300 number**: $10.00/month — national presence, caller pays local call rate
 - **1800 number**: $10.00/month — toll-free for callers, business pays $0.20/min inbound
 
-### Number Porting (one-time fee, ex GST)
-- **Local number port**: $50.00 — 5–10 business days, number stays active during porting
-- **1300 or 1800 number port**: $100.00 — 5–10 business days, number stays active during porting
+### Number Porting (one-time fee, including GST)
+- **Any number port**: $100.00 including GST — 5–10 business days, number stays active during porting
+- **1300 or 1800 number port**: $100.00 including GST — 5–10 business days, number stays active during porting
 
 ### Call Rates (per minute, ex GST, beyond included 300 mins)
 
@@ -130,12 +130,12 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 
 - **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
 - **Account activation**: within 24 hours of signup
-- **Number porting**: local geographic numbers ($50 + GST), 1300 numbers ($100 + GST), takes 5–10 business days, zero downtime during the port
+- **Number porting**: every number type ($100 including GST), takes 5–10 business days, zero downtime during the port
 - **Bulk porting**: discounts available for 100-number blocks — contact for a quote
 - **Self-setup**: free, guided by Help Centre articles
 - **Managed setup**: $300 + GST one-off fee — Click2Call team configures everything
 - **Apps**: PC softphone app (recommended for desk use), mobile app (best for outbound; for inbound, call forwarding to mobile number is recommended)
-- **Real-world example**: 3-user office — $75/month ongoing ($25 per user) + $50 one-time port fee
+- **Real-world example**: 3-user office — $75/month ongoing ($25 per user) + $100 one-time port fee (inc GST)
 
 ## How Click2Call Compares to Alternatives
 
@@ -162,7 +162,7 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 
 **Getting started & switching**
 
-7.  **Can I keep my existing phone number?** Yes. Click2Call ports local geographic, mobile, 1300, and 1800 numbers. Local and mobile ports are $50 ex GST; 1300/1800 ports are $100 ex GST. Local numbers usually take 5–10 business days; 1300/1800 can take up to 30 days. There is zero downtime during the port.
+7.  **Can I keep my existing phone number?** Yes. Click2Call ports local geographic, mobile, 1300, and 1800 numbers. Every port is a flat $100 including GST. Local numbers usually take 5–10 business days; 1300/1800 can take up to 30 days. There is zero downtime during the port.
 8.  **Do I need to buy any hardware?** No. Use the Click2Call desktop softphone app (Windows/Mac), the mobile app (iOS/Android), or an existing VoIP/SIP desk phone (Yealink, Grandstream, Cisco). No on-premise PBX server is required.
 9.  **How do I set up my service?** Sign up online, add or port a number, add users and extensions, install the apps, and start calling. Most customers complete self-setup in under an hour. Managed setup is available if preferred.
 10. **Do you provide on-site installation?** The system is designed for remote setup, so on-site installation is usually unnecessary. For large or complex deployments, Click2Call can connect you with trusted installation partners.
@@ -362,7 +362,7 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - **Header & footer unified**: One canonical _header.html and _footer.html, synced across all 80+ pages via scripts/sync_partials.py.
 - **Tailwind precompiled**: Replaced the CDN JIT compiler (~300KB JS) with a precompiled 68KB stylesheet at /assets/css/tailwind.css. @tailwindcss/typography and @tailwindcss/aspect-ratio plugins included.
 - **Setup time canonical**: "Set up online in under an hour" (self-setup) is the canonical framing. Managed-setup 1-2 business day caveat applies to optional paid configuration.
-- **Setup fee canonical**: $300 ex GST managed setup (up to 3 users), $50 ex GST per additional user, $50 local porting / $100 1300-1800 porting.
+- **Setup fee canonical**: $300 ex GST managed setup (up to 3 users), $50 ex GST per additional user, $100 inc GST porting, any number type / $100 1300-1800 porting.
 
 ### Earlier (March 2026)
 
