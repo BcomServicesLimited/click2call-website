@@ -10,7 +10,7 @@ The company specializes in providing modern, AI-enhanced voice communication sol
 
 ## Services
 
-Click2Call offers a suite of five core services designed to cover every aspect of modern business telephony.
+Click2Call offers seven core services designed to cover every aspect of modern business telephony: Cloud PBX, Call Centre Features (queues and a live dashboard, included with every user rather than sold as a tier), AI Voice Tools, AI Receptionist, Microsoft Teams Calling, SIP Trunks, and a Developer API with built-in connection profiles for nine AI voice platforms. The Call Centre and Developer API pages are summarised in the Help Centre and Blog sections below and at https://www.click2call.com.au/call-centre and https://www.click2call.com.au/api
 
 ### Cloud PBX
 
@@ -23,7 +23,7 @@ Click2Call's Cloud PBX is a complete, hosted business phone system that runs ent
 
 ### AI Voice Tools
 
-This is an add-on service for the Cloud PBX that uses artificial intelligence to analyze and extract insights from voice conversations.
+These are AI features included with every Cloud PBX user at no extra charge — call transcription, sentiment analysis, transcription summaries, profanity analysis, auto language translation and voicemail transcription are all in the Free tier from day one. An optional Premium tier adds speaker diarisation, the most accurate model, priority processing and transcription of historical recordings.
 
 - **Capabilities**: Real-time call transcription, call summaries, sentiment analysis (detecting positive, negative, or neutral tones), and keyword/phrase detection.
 - **Use Cases**: Compliance monitoring, quality assurance, staff training, and extracting business intelligence from customer interactions.
@@ -101,7 +101,7 @@ For full details, see the [official pricing page](https://www.click2call.com.au/
 
 ## Local Service Pages
 
-As of 2026-05-28, Click2Call maintains 4 standalone city guides (Sydney, Melbourne, Brisbane, Perth) plus a national hub (/voip-australia/) that covers the rest of the country with anchored city sections. The previous 8 regional landing pages were consolidated into the national hub on 2026-05-28; old URLs 301-redirect to the appropriate anchor.
+As of 2026-07-16, Click2Call maintains 5 standalone city guides (Sydney, Melbourne, Brisbane, Perth, and Gold Coast — the company's home city, re-established as a standalone page on 2026-07-16) plus a national hub (/voip-australia/) that covers the rest of the country with anchored city sections. The previous regional landing pages were consolidated into the national hub on 2026-05-28; old URLs 301-redirect to the appropriate anchor.
 
 ### Standalone city guides
 
@@ -222,51 +222,75 @@ Click2Call provides two distinct access points depending on whether a customer i
 
 ## Help Centre
 
-The Click2Call Help Centre is a dedicated knowledge base providing step-by-step guides for customers to manage their Cloud PBX phone system via the self-service portal at portal.click2call.com.au. The platform operates on a pre-pay credit system — customers must load account credit before activating paid services such as phone numbers.
+The Click2Call Help Centre provides step-by-step guides for managing your Cloud PBX phone system via the customer portal.
 
-- **Help Centre Index**: https://www.click2call.com.au/help/
+- **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 
 ### Getting Started
-
-- **Activating Your Account**: https://www.click2call.com.au/help/how-to-activate-account.html — Sign up, log in, and complete initial portal setup including account details, plan review, and adding credit.
-- **Making Your First Call**: https://click2call.com.au/help/how-to-make-your-first-call.html — Step-by-step guide to making the first outbound call. Covers adding a phone number to the account, choosing a device type (softphone app on iPhone/Android/Windows/Mac, SIP desk phone, or mobile divert), confirming outbound caller ID, and dialling format for Australian landlines, mobiles, 1300 numbers, and international destinations. Includes a troubleshooting section for registration failures, wrong caller ID, no audio, and insufficient credit. Trial accounts include $11 credit and 10 test calls.
-- **Adding Account Credit**: https://www.click2call.com.au/help/how-to-add-account-credit.html — Top up account balance via Account > Payments. Supports one-off credit card payments, auto top-up, and low credit email alerts.
+- **Activating Your Account**: [https://www.click2call.com.au/help/how-to-activate-account](https://www.click2call.com.au/help/how-to-activate-account)
+- **Understanding Your Free Trial**: [https://www.click2call.com.au/help/understanding-your-free-trial](https://www.click2call.com.au/help/understanding-your-free-trial) — What the $11 trial credit covers, what to set up during the 7 days, and how to upgrade to a paid plan when the trial ends.
+- **Making Your First Call**: [https://click2call.com.au/help/how-to-make-your-first-call](https://click2call.com.au/help/how-to-make-your-first-call) — Add a phone number, register a device (softphone app, SIP desk phone, or mobile divert), and make your first outbound call. Includes troubleshooting for registration failures, wrong caller ID, and no audio.
+- **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit](https://www.click2call.com.au/help/how-to-add-account-credit) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 
 ### Phone Numbers
-
-- **Adding a Phone Number**: https://www.click2call.com.au/help/how-to-add-phone-number.html — Add a new Australian Extra Business Number. Select country, area (e.g. Sydney 02, Brisbane 07), line type (Voice), line plan (Extra Business Number at $10.00/month), and choose from available numbers.
-- **Porting an Existing Number**: https://www.click2call.com.au/help/how-to-port-number.html — Transfer an existing Australian phone number to the Click2Call network.
+- **Adding a Phone Number**: [https://www.click2call.com.au/help/how-to-add-phone-number](https://www.click2call.com.au/help/how-to-add-phone-number)
+- **Porting an Existing Number**: [https://www.click2call.com.au/help/how-to-port-number](https://www.click2call.com.au/help/how-to-port-number)
 
 ### Extensions & Users
-
-- **Adding an Extension**: https://www.click2call.com.au/help/how-to-add-extension.html — Create a new extension via Voice > Numbers > Add Extension. Fields include User Name, Extension Number, Email, PIN, Role, and Password.
-- **Adding a New User**: https://www.click2call.com.au/help/how-to-add-user.html — Create a portal user account and send login credentials.
+- **Adding an Extension**: [https://www.click2call.com.au/help/how-to-add-extension](https://www.click2call.com.au/help/how-to-add-extension)
+- **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user](https://www.click2call.com.au/help/how-to-add-user) — Create a portal login for a team member, set their access level (Administrator or User), enable 2FA, and link them to an extension.
+- **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net Inbound Business Number, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
+- **Setting Up Global Contacts and Speed Dials**: [https://www.click2call.com.au/help/how-to-set-up-speed-dials](https://www.click2call.com.au/help/how-to-set-up-speed-dials) — Save contact names and assign speed-dial codes so any phone on the account can dial contacts quickly, including CSV import of external contacts.
 
 ### Phones & Devices
-
-- **Adding a Desk Phone**: https://www.click2call.com.au/help/how-to-add-desk-phone.html — Provision a physical SIP desk phone on the network.
-- **Setting Up a Softphone**: https://www.click2call.com.au/help/how-to-set-up-softphone.html — Configure a softphone app on desktop or mobile device.
+- **Adding a Desk Phone**: [https://www.click2call.com.au/help/how-to-add-desk-phone](https://www.click2call.com.au/help/how-to-add-desk-phone)
+- **Setting Up a Softphone**: [https://www.click2call.com.au/help/how-to-set-up-softphone](https://www.click2call.com.au/help/how-to-set-up-softphone)
+- **Setting Up Linphone (Free Third-Party Softphone)**: [https://www.click2call.com.au/help/how-to-set-up-linphone](https://www.click2call.com.au/help/how-to-set-up-linphone) — Download and configure Linphone on iPhone, Android, Windows, or Mac as a free SIP softphone with Click2Call, including registration troubleshooting and call testing.
+- **Connecting simPRO to Click2Call**: [https://www.click2call.com.au/help/how-to-connect-simpro](https://www.click2call.com.au/help/how-to-connect-simpro) — Set up the simPRO Premium VoIP integration so its built-in browser softphone places and answers calls on Click2Call numbers. The Server Address must be sip.click2call.com.au:5060 — port 5060, not 5061, because simPRO's softphone reaches Click2Call through a WebRTC-to-SIP gateway that uses UDP/TCP rather than TLS; port 5061 produces "Register failed: Disconnected". Credentials go on each employee card: Username is the phone number in full international format with no plus sign, Password is the line password from Voice > Line Manager (not the portal login password), SIP Username left blank. Requires VoIP enabled in the simPRO security group. Third-party softphones are not supported by simPRO.
 
 ### Call Flows
+- **Setting Up a Call Flow**: [https://www.click2call.com.au/help/how-to-set-up-call-flow](https://www.click2call.com.au/help/how-to-set-up-call-flow)
+- **Setting Up Microsoft Teams Calling**: [https://www.click2call.com.au/help/how-to-set-up-microsoft-teams](https://www.click2call.com.au/help/how-to-set-up-microsoft-teams) — Connect Microsoft Teams to Click2Call Direct Routing: add and verify the SBC domain in Microsoft 365, create the trunk user, provision Teams numbers in the portal, map them to users, and run the generated PowerShell commands. Includes troubleshooting for domain verification, dialpad not appearing, and outbound call failures.
+- **Setting Up a Call Queue**: [https://www.click2call.com.au/help/how-to-set-up-call-queue](https://www.click2call.com.au/help/how-to-set-up-call-queue) — Enable a queue on a line, add agents and set the ring order, choose the queue strategy and the agent timeout, retry and wrap-up timers, configure position and hold-time announcements, upload music on hold and a queue announcement, and set the maximum queue length, timeout and exit path. Note: BLF monitoring and call pickup from the queue require the Ring All strategy.
+- **Using the Live Call Dashboard**: [https://www.click2call.com.au/help/how-to-use-live-call-dashboard](https://www.click2call.com.au/help/how-to-use-live-call-dashboard) — Read the live call counters including missed calls, the active calls and queued calls tables and team status, and open the full-screen TV wallboard view. Includes why the queued calls panel reads "No queues enabled" and why Team Status can appear empty.
+- **Creating a Ring Group**: [https://www.click2call.com.au/help/how-to-create-ring-group](https://www.click2call.com.au/help/how-to-create-ring-group)
+- **Configuring Business Hours**: [https://www.click2call.com.au/help/how-to-configure-business-hours](https://www.click2call.com.au/help/how-to-configure-business-hours)
+- **Forwarding Calls to Your Mobile**: [https://www.click2call.com.au/help/how-to-forward-calls-to-mobile](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile) — Divert your Click2Call number to a mobile during work hours and send after-hours callers to voicemail that is emailed to you, using Call Forwarding, Time Schedules and Voicemail settings.
+- [Ring Your Mobile and Still Get Voicemail](https://www.click2call.com.au/help/call-flow-ring-mobile-then-voicemail): Why forwarding to a mobile loses your voicemail, and the Simultaneous Ring setup that keeps it.
+- [Why Your Included Minutes Are Not Being Used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used): Included minutes belong to one number, not the account; a divert performed by another line is billed to that line.
+- **Setting Up Missed Call Alerts**: [https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) — Turn on Missed Call Notifications so Click2Call emails or texts you whenever an incoming call on your number goes unanswered.
+- **Closing for Holidays**: [https://www.click2call.com.au/help/how-to-close-for-holidays](https://www.click2call.com.au/help/how-to-close-for-holidays) — Use Do Not Disturb with specific dates to send callers to voicemail or a divert number while your business is closed for holidays, without changing your normal call flow.
+- **Setting Up the AI Answer Agent**: [https://www.click2call.com.au/help/how-to-set-up-answer-agent](https://www.click2call.com.au/help/how-to-set-up-answer-agent) — Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.
+- **Adding Portal Logins for Your Team**: [https://www.click2call.com.au/help/how-to-add-portal-logins](https://www.click2call.com.au/help/how-to-add-portal-logins) — Create additional Click2Call portal logins for staff, bookkeepers or receptionists with the right access level, optional two-factor authentication, and recording-deletion protection.
+- **Setting Up Voicemail**: [https://www.click2call.com.au/help/how-to-set-up-voicemail](https://www.click2call.com.au/help/how-to-set-up-voicemail)
+- **Viewing Call Recordings**: [https://www.click2call.com.au/help/how-to-view-call-recordings](https://www.click2call.com.au/help/how-to-view-call-recordings)
 
-- **Setting Up a Call Flow**: https://www.click2call.com.au/help/how-to-set-up-call-flow.html — Create an IVR / auto-attendant to route inbound calls.
-- **Creating a Ring Group**: https://www.click2call.com.au/help/how-to-create-ring-group.html — Configure a group of extensions to ring simultaneously.
-- **Configuring Business Hours**: https://www.click2call.com.au/help/how-to-configure-business-hours.html — Set open and closed hours for call routing rules.
-- **Forwarding Calls to Your Mobile**: https://www.click2call.com.au/help/how-to-forward-calls-to-mobile.html — Divert your Click2Call number to a mobile during work hours and send after-hours callers to voicemail that is emailed to you, using Call Forwarding, Time Schedules and Voicemail settings.
-- **Setting Up Missed Call Alerts**: https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts.html — Turn on Missed Call Notifications so Click2Call emails or texts you whenever an incoming call on your number goes unanswered.
-- **Closing for Holidays**: https://www.click2call.com.au/help/how-to-close-for-holidays.html — Use Do Not Disturb with specific dates to send callers to voicemail or a divert number while your business is closed for holidays, without changing your normal call flow.
-- **Setting Up the AI Answer Agent**: https://www.click2call.com.au/help/how-to-set-up-answer-agent.html — Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.
-- **Adding Portal Logins for Your Team**: https://www.click2call.com.au/help/how-to-add-portal-logins.html — Create additional Click2Call portal logins for staff, bookkeepers or receptionists with the right access level, optional two-factor authentication, and recording-deletion protection.
-- **Setting Up Voicemail**: https://www.click2call.com.au/help/how-to-set-up-voicemail.html — Configure voicemail-to-email delivery.
-- **Viewing Call Recordings**: https://www.click2call.com.au/help/how-to-view-call-recordings.html — Access and download recorded calls from the portal.
+### Billing & Account
 
-### Billing
-
-
+- **Viewing Account History**: [https://www.click2call.com.au/help/how-to-view-account-history](https://www.click2call.com.au/help/how-to-view-account-history) — View invoices, payment history, and credit balance in the portal.
+- **Using Reports & Records**: [https://www.click2call.com.au/help/how-to-use-reports-and-records](https://www.click2call.com.au/help/how-to-use-reports-and-records) — Access call logs, usage reports, and analytics in the portal.
+- **Adding Concurrent Call Channels**: [https://www.click2call.com.au/help/how-to-add-channels](https://www.click2call.com.au/help/how-to-add-channels) — Increase the number of simultaneous calls your system can handle by adding concurrent call channels in the portal.
 
 ### AI Features
+- **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist) — Automated call routing using natural language. Callers say what they need; the AI transfers the call to the right department. Not a conversational agent.
+- **Setting Up AI Agents**: [https://www.click2call.com.au/help/how-to-set-up-ai-agents](https://www.click2call.com.au/help/how-to-set-up-ai-agents) — A conversational AI voice agent that answers calls, holds full conversations, and responds to caller questions 24/7. Configured with a business profile, welcome message, AI voice actor, and call flow settings.
+- **Using AI Speech to Create Voice Recordings**: [https://www.click2call.com.au/help/how-to-use-ai-speech](https://www.click2call.com.au/help/how-to-use-ai-speech) — Text-to-speech tool for generating professional voicemail greetings, auto-attendant messages, and seasonal recordings (e.g. Christmas closure). Replaces the old dial-in self-recording approach.
+- **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
 
-- **Setting Up the AI Receptionist**: https://www.click2call.com.au/help/how-to-set-up-ai-receptionist.html — Configure the 24/7 AI Receptionist to answer, greet, and route inbound calls automatically.
+### Connecting External AI Voice Providers
+Click2Call ships ready-made connection profiles under Voice → Profiles, so an Australian phone number can be pointed at a third-party AI voice agent without custom SIP configuration. All profiles send the number in +E.164 format. Click2Call cannot present a username and password on an outbound INVITE, so the provider must allowlist 103.212.52.19, the address outbound INVITEs leave the switch from.
+
+- **Connecting an AI Voice Agent to Your Number (hub)**: [https://www.click2call.com.au/help/how-to-connect-ai-voice-agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent) — The common method for any provider: built-in profiles, generic SIP registration for anything not listed, the SIP credentials reference, the address to allowlist, and the three settings that catch people out (wrong profile on the line, wrong time zone, a URI route set on a registration profile).
+- **Connecting ElevenLabs**: [https://www.click2call.com.au/help/how-to-connect-elevenlabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs) — No code and no extra Click2Call fields. Import the number into ElevenLabs in E.164 from a SIP trunk, choose ACL authentication, assign an agent. Click2Call routes to sip:sip.rtc.elevenlabs.io:5060;transport=tcp.
+- **Connecting Retell AI**: [https://www.click2call.com.au/help/how-to-connect-retell-ai](https://www.click2call.com.au/help/how-to-connect-retell-ai) — No code and no extra Click2Call fields. Retell does not sell Australian geographic numbers, so bringing a Click2Call number is normally the only way to put a Retell agent on a local landline or 1300 number. Routes to sip:sip.retellai.com;transport=tcp.
+- **Connecting Synthflow**: [https://www.click2call.com.au/help/how-to-connect-synthflow](https://www.click2call.com.au/help/how-to-connect-synthflow) — No code and no extra Click2Call fields. Import the number in Synthflow as a Custom number type. Routes to sip:sipin.synthflow.ai:35681;transport=tcp — a non-standard port that the profile handles automatically.
+- **Connecting Vapi**: [https://www.click2call.com.au/help/how-to-connect-vapi](https://www.click2call.com.au/help/how-to-connect-vapi) — No code. Requires the Vapi Assistant ID, a UUID from the Vapi dashboard, in the mandatory VAPI Assistant ID field. Click2Call builds sip:<assistant_id>@sip.vapi.ai:5060. Nothing to configure at the Vapi end.
+- **Connecting OpenAI**: [https://www.click2call.com.au/help/how-to-connect-openai](https://www.click2call.com.au/help/how-to-connect-openai) — Requires code. The mandatory OpenAI Project ID (starts proj_) goes in the profile, but OpenAI's SIP integration also needs a webhook you host: it sends realtime.call.incoming with a call_id, and your endpoint must accept the call before audio connects. Routes to sip:<project_id>@sip.api.openai.com:5061;transport=tls.
+- **Connecting xAI (Grok)**: [https://www.click2call.com.au/help/how-to-connect-xai](https://www.click2call.com.au/help/how-to-connect-xai) — Requires code. Register a Direct SIP phone number with origin byo_trunk via the xAI API, store the one-time signing secret, host a webhook for realtime.call.incoming, then open a WebSocket to wss://api.x.ai/v1/realtime with the call_id. Routes to sip:sip.voice.x.ai:5061;transport=tls.
+- **Connecting LiveKit Cloud**: [https://www.click2call.com.au/help/how-to-connect-livekit](https://www.click2call.com.au/help/how-to-connect-livekit) — Requires code. Mandatory Subdomain (the project ID minus its p_ prefix) and Region (e.g. us1, eu1). LiveKit also needs an inbound trunk and at least one dispatch rule, and a LiveKit Agents worker must join the room or the caller hears silence. Routes to sip:<subdomain>.<region>.sip.livekit.cloud:5060;transport=tcp.
+- **Connecting Twilio**: [https://www.click2call.com.au/help/how-to-connect-twilio](https://www.click2call.com.au/help/how-to-connect-twilio) — Mandatory Twilio Subdomain (first label only). This targets a Twilio SIP Domain under Programmable Voice, not Elastic SIP Trunking termination, which uses pstn.twilio.com and will not work. Secure the domain with an IP Access Control List. A Studio Flow or TwiML Bin avoids writing code. Routes to sip:<subdomain>.sip.twilio.com:5060;transport=tcp.
+- **Connecting Cloudonix**: [https://www.click2call.com.au/help/how-to-connect-cloudonix](https://www.click2call.com.au/help/how-to-connect-cloudonix) — Programmable SIP middleware rather than an agent: a voice application you author decides what happens to the call, often handing it to another AI provider. Unnecessary for a single agent on a single number. Routes to sip:trunk.cloudonix.com:5060;transport=tcp.
+
 
 ## Industry Pages
 
@@ -328,22 +352,38 @@ Click2Call case studies document real-world outcomes for Australian businesses u
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
 
-- **Blog Index**: https://www.click2call.com.au/blog/index.html
-- What Is a SIP Trunk?: https://www.click2call.com.au/blog/what-is-a-sip-trunk.html
-- VoIP for Small Business: https://www.click2call.com.au/blog/voip-for-small-business.html
-- Cloud PBX vs Traditional Phone Systems: https://www.click2call.com.au/blog/cloud-pbx-vs-traditional.html
-- Microsoft Teams vs Cloud PBX: https://www.click2call.com.au/blog/teams-vs-cloud-pbx.html
-- AI in Business Phones: https://www.click2call.com.au/blog/ai-in-business-phones.html
-- Business Phone System Cost Guide: https://www.click2call.com.au/blog/business-phone-system-cost.html
-- How to Secure Business Communications: https://www.click2call.com.au/blog/how-to-secure-business-communications.html
-- 1300 Number Providers Australia: https://www.click2call.com.au/blog/1300-number-providers.html
-- Why ElevenLabs is the Undisputed Leader in Voice AI: https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk.html
-- How to Get a Business Phone Number: https://www.click2call.com.au/blog/how-to-get-a-business-phone-number.html
-- AI Receptionist Australia: How Virtual Assistants Are Changing Business: https://www.click2call.com.au/blog/ai-receptionist-australia.html
+- **Blog Index**: [https://www.click2call.com.au/blog](https://www.click2call.com.au/blog)
+- **simPRO VoIP Integration: Choosing an Australian Phone Provider**: [https://www.click2call.com.au/blog/simpro-voip-integration-australia](https://www.click2call.com.au/blog/simpro-voip-integration-australia) — Simpro Premium includes a VoIP integration and browser softphone free of charge but does not sell phone service, numbers or porting; you bring your own SIP provider. For Click2Call the Server Address is sip.click2call.com.au:5060 — port 5060, not 5061, because simPRO's softphone reaches the carrier through a WebRTC-to-SIP gateway using UDP/TCP rather than TLS; the TLS port produces "Register failed: Disconnected", which looks like a credential error but is not. Username is the number in full international format with no plus sign; the password is the line password from Voice > Line Manager, not the portal login password. VoIP must be enabled in the simPRO security group. Each simultaneous user needs their own number or extension. Third-party softphones are not supported by simPRO.
+- **Connecting an AI Voice Agent to an Australian Phone Number**: [https://www.click2call.com.au/blog/ai-voice-agent-australian-phone-number](https://www.click2call.com.au/blog/ai-voice-agent-australian-phone-number) — Compares the nine AI voice providers with built-in Click2Call connection profiles: OpenAI, xAI, ElevenLabs, Retell AI, Synthflow, Vapi, LiveKit Cloud, Twilio and Cloudonix. The decisive distinction is whether a provider needs code: ElevenLabs, Retell, Synthflow and Vapi are configured entirely in the provider's dashboard, while OpenAI and xAI both require a webhook endpoint you host and LiveKit requires an agent worker you deploy. Twilio and Cloudonix are routing layers rather than agents. None of these providers sell Australian geographic or 1300 numbers, so bring-your-own-number via Click2Call is normally the only way to put an AI agent on an Australian local number. Providers must allowlist 103.212.52.19, because Click2Call cannot present credentials on an outbound INVITE.
+- What Is a SIP Trunk?: [https://www.click2call.com.au/blog/what-is-a-sip-trunk](https://www.click2call.com.au/blog/what-is-a-sip-trunk)
+- VoIP for Small Business: [https://www.click2call.com.au/blog/voip-for-small-business](https://www.click2call.com.au/blog/voip-for-small-business)
+- Cloud PBX vs Traditional Phone Systems: [https://www.click2call.com.au/blog/cloud-pbx-vs-traditional](https://www.click2call.com.au/blog/cloud-pbx-vs-traditional)
+- Microsoft Teams vs Cloud PBX: [https://www.click2call.com.au/blog/teams-vs-cloud-pbx](https://www.click2call.com.au/blog/teams-vs-cloud-pbx)
+- AI in Business Phones: [https://www.click2call.com.au/blog/ai-in-business-phones](https://www.click2call.com.au/blog/ai-in-business-phones)
+- Business Phone System Cost Guide: [https://www.click2call.com.au/blog/business-phone-system-cost](https://www.click2call.com.au/blog/business-phone-system-cost)
+- How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications](https://www.click2call.com.au/blog/how-to-secure-business-communications)
+- 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers](https://www.click2call.com.au/blog/1300-number-providers)
+- Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
+- How to Get a Business Phone Number: [https://www.click2call.com.au/blog/how-to-get-a-business-phone-number](https://www.click2call.com.au/blog/how-to-get-a-business-phone-number) — A practical guide for new Australian business owners on getting a local phone number, setting up a cloud phone system, and using an AI receptionist to handle calls from day one. Covers local vs 1300 numbers, call diversion to mobile, AI Receptionist setup, voicemail greetings, and a day-one checklist.
+- AI Receptionist Australia: How Virtual Assistants Are Changing Business: [https://www.click2call.com.au/blog/ai-receptionist-australia](https://www.click2call.com.au/blog/ai-receptionist-australia) — Discover how an AI receptionist can help your Australian business handle calls 24/7, reduce costs, and improve customer service. Includes a guide on building your own inbound AI receptionist for just $10/month.
+- How to Set Up a Virtual Office Phone System in Australia: [https://www.click2call.com.au/blog/how-to-set-up-virtual-office-phone](https://www.click2call.com.au/blog/how-to-set-up-virtual-office-phone) — A complete guide to setting up a virtual office phone system for Australian businesses. Covers choosing a local or 1300 number, configuring call routing and auto-attendants, downloading the softphone app, and setting up voicemail-to-email. Ideal for remote, hybrid, and distributed teams. Common queries: "virtual office phone Australia", "how to set up a virtual phone number", "cloud phone system for remote workers".
+- Choosing the Right NBN Business Phone System: [https://www.click2call.com.au/blog/nbn-business-phone-system](https://www.click2call.com.au/blog/nbn-business-phone-system) — A guide for Australian businesses transitioning from legacy PSTN/ISDN lines to an NBN-compatible VoIP phone system. Covers the benefits of cloud PBX over NBN, what to look for in a provider, bandwidth requirements, and QoS configuration. Common queries: "NBN business phone system", "VoIP over NBN Australia", "best phone system for NBN", "NBN phone system for small business".
+## Developer Blog Posts
+- How to Integrate a Phone System into a Cloudflare Worker: [https://www.click2call.com.au/blog/cloudflare-worker-phone-system-api](https://www.click2call.com.au/blog/cloudflare-worker-phone-system-api) — Step-by-step guide for developers on connecting an Australian phone system to a Cloudflare Worker using the Click2Call API and webhooks. Covers authentication, webhook event handling (Ringing, Answered, Ended, Missed), and making API calls from a Worker.
+- Connect ElevenLabs to an Australian Phone Number: [https://www.click2call.com.au/blog/building-ai-call-agent-claude-click2call](https://www.click2call.com.au/blog/building-ai-call-agent-claude-click2call) — How to connect an ElevenLabs AI voice agent to a real Australian phone number using Click2Call's native ElevenLabs profile. Covers the full inbound call workflow (caller dials → ElevenLabs agent answers → Click2Call records and transcribes → email summary delivered), human-in-the-loop oversight, and using the Click2Call API to pull transcription data and continuously improve the ElevenLabs agent over time.
+- Australian VoIP API: Getting Started Guide for AI Developers: [https://www.click2call.com.au/blog/australian-voip-api-getting-started](https://www.click2call.com.au/blog/australian-voip-api-getting-started) — Comprehensive getting started guide for the Click2Call Australian VoIP API. Covers token-based authentication, the single JSON POST endpoint, making your first API call, and the Copy. Paste. Build. shortcut using AI-ready instructions included in every account. No prior API experience required.
+- How to Get Call Transcriptions and Sentiment Data via API in Australia: [https://www.click2call.com.au/blog/call-transcriptions-sentiment-data-api-australia](https://www.click2call.com.au/blog/call-transcriptions-sentiment-data-api-australia) — How to automatically retrieve call transcriptions, AI summaries, and sentiment analysis data using the Click2Call API and webhooks. Covers the AI Analysis webhook event, Get-Transcription, Get-Transcription-Summary, and Get-Audio-Transcription-Summary API actions.
 
 ## Recent Site Updates
 
-**Last updated: 2026-07-14**
+**Last updated: 2026-09-28**
+
+### 2026-09-28 — AI voice platform profiles & content refresh
+
+- **Nine AI voice platform connection profiles**: Click2Call now has built-in profiles for OpenAI, xAI, ElevenLabs, Retell AI, Synthflow, Vapi, LiveKit Cloud, Twilio and Cloudonix. Any reference to ElevenLabs as the *only* native integration is obsolete. Per-platform guides at https://www.click2call.com.au/help/how-to-connect-ai-voice-agent; comparison at https://www.click2call.com.au/blog/ai-voice-agent-australian-phone-number. Providers authenticate Click2Call by IP allowlist (103.212.52.19); Click2Call cannot present credentials on an outbound INVITE.
+- **simPRO integration documented**: help guide and blog post. Server Address must be sip.click2call.com.au:5060 (port 5060, not 5061).
+- **Porting fee canonical**: a flat $100 including GST for every number type (operator decision 2026-09-16). Any $50 local-port figure is obsolete.
+- **Help Centre now 39 articles.**
 
 ### 2026-07-14 — Help content & LLM-context refresh
 

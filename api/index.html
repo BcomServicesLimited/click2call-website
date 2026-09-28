@@ -22,7 +22,7 @@
 <meta content="website" property="og:type"/>
 <meta content="https://www.click2call.com.au/api/" property="og:url"/>
 <meta content="Phone System API for AI Builders | Click2Call" property="og:title"/>
-<meta content="Connect your AI-built app or LLM agent to a real Australian phone system. Full JSON API, webhooks, call transcriptions, and native ElevenLabs integration — included free with every account." property="og:description"/>
+<meta content="Connect your AI-built app or LLM agent to a real Australian phone system. Full JSON API, webhooks, call transcriptions, and built-in profiles for nine AI voice platforms — included free with every account." property="og:description"/>
 <meta content="https://www.click2call.com.au/assets/images/api_developer_hero.webp" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -30,7 +30,7 @@
 <meta content="summary_large_image" property="twitter:card"/>
 <meta content="https://www.click2call.com.au/api" property="twitter:url"/>
 <meta content="Phone System API for AI Builders | Click2Call" property="twitter:title"/>
-<meta content="Connect your AI-built app or LLM agent to a real Australian phone system. Full JSON API, webhooks, call transcriptions, and native ElevenLabs integration — included free with every account." property="twitter:description"/>
+<meta content="Connect your AI-built app or LLM agent to a real Australian phone system. Full JSON API, webhooks, call transcriptions, and built-in profiles for nine AI voice platforms — included free with every account." property="twitter:description"/>
 <meta content="https://www.click2call.com.au/assets/images/api_developer_hero.webp" property="twitter:image"/>
 <link href="https://www.googletagmanager.com" rel="preconnect"/>
 <link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
@@ -50,7 +50,7 @@
       "@type": "SoftwareApplication",
       "name": "Click2Call Developer API",
       "url": "https://www.click2call.com.au/api",
-      "description": "Click2Call's JSON-based REST API gives developers and AI builders full programmatic access to an Australian Cloud PBX phone system. Capabilities include call management, real-time webhooks, AI transcription, sentiment analysis, text-to-speech, and native ElevenLabs voice agent integration.",
+      "description": "Click2Call's JSON-based REST API gives developers and AI builders full programmatic access to an Australian Cloud PBX phone system. Capabilities include call management, real-time webhooks, AI transcription, sentiment analysis, text-to-speech, and built-in connection profiles for nine AI voice agent platforms.",
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "Telephony API / VoIP Gateway",
       "operatingSystem": "Any (REST API)",
@@ -61,7 +61,7 @@
         "Call transcription via API",
         "AI sentiment analysis",
         "Text-to-speech audio generation",
-        "ElevenLabs voice agent integration",
+        "Built-in connection profiles for nine AI voice platforms",
         "Australian phone number management",
         "Call recording access",
         "Inbound and outbound call data",
@@ -86,7 +86,7 @@
     },
     {
       "@type": "FAQPage",
-      "dateModified": "2026-07-14",
+      "dateModified": "2026-09-28",
       "mainEntity": [
         {
           "@type": "Question",
@@ -101,7 +101,7 @@
           "name": "Is there a simple API to add phone calling to an AI chatbot?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The Click2Call API is a single JSON POST endpoint with token authentication — there is no SDK to install and no SIP stack to implement. Any chatbot or agent that speaks SIP can be pointed at a Click2Call Australian phone number to take real calls. ElevenLabs has a native connection profile: select ElevenLabs AI as the connection type for the number and paste the ElevenLabs SIP URI, and the agent answers an Australian number without any telephony code. Calls handled by an AI agent are recorded, transcribed, summarised and sentiment-scored like any other call, which is how developers audit and improve what their agent says to customers. Full reference at portal.click2call.com.au/apidocs."
+            "text": "Yes. The Click2Call API is a single JSON POST endpoint with token authentication — there is no SDK to install and no SIP stack to implement. Any chatbot or agent that speaks SIP can be pointed at a Click2Call Australian phone number to take real calls, and nine platforms — OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix — have a built-in connection profile: select the platform as the connection type for the number, fill in the one field it asks for, and the agent answers an Australian number without any telephony code. Calls handled by an AI agent are recorded, transcribed, summarised and sentiment-scored like any other call, which is how developers audit and improve what their agent says to customers. Full reference at portal.click2call.com.au/apidocs."
           }
         },
         {
@@ -117,15 +117,15 @@
           "name": "What can I build with the Click2Call API?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can build any software that needs to interact with a real Australian phone system. Common use cases include custom CRM integrations that log call data automatically, support portals that display call recordings and transcriptions, AI agents that answer or make calls via ElevenLabs, dashboards showing live call activity, and automation workflows triggered by inbound or outbound call events."
+            "text": "You can build any software that needs to interact with a real Australian phone system. Common use cases include custom CRM integrations that log call data automatically, support portals that display call recordings and transcriptions, AI agents that answer or make calls via OpenAI, ElevenLabs or one of the other seven built-in voice platforms, dashboards showing live call activity, and automation workflows triggered by inbound or outbound call events."
           }
         },
         {
           "@type": "Question",
-          "name": "How does the ElevenLabs integration work?",
+          "name": "How does the AI voice agent integration work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Click2Call has a native ElevenLabs connection profile built directly into the platform. You select 'ElevenLabs AI' as the connection type for your phone number, enter the ElevenLabs SIP URI, and your Click2Call number is immediately connected to your ElevenLabs voice agent. Inbound calls to your Australian number are answered by your AI agent. No third-party forwarding or middleware is required."
+            "text": "Click2Call has built-in connection profiles for nine AI voice platforms: OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix. You select the platform as the connection type for your phone number, fill in the one field it needs, and your Click2Call number is immediately connected to your voice agent. Inbound calls to your Australian number are answered by your AI agent. No third-party forwarding or middleware is required. See how the nine compare at click2call.com.au/help/how-to-connect-ai-voice-agent."
           }
         },
         {
@@ -470,7 +470,7 @@
 <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
 <p class="inline-block mb-4 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-teal-300 bg-teal-900 bg-opacity-60 rounded-full">For Developers &amp; AI Builders</p>
 <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" id="speakable-headline">Connect Your AI-Built App<br/>to a Real Phone System</h1>
-<p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300" id="speakable-summary">Building with Claude, Cursor, or ChatGPT? Click2Call's API connects your custom software directly to a fully hosted Australian phone system. Pull call data, trigger actions, capture transcriptions, and connect ElevenLabs voice agents — all from the app you're building, with no telecom experience required.</p>
+<p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300" id="speakable-summary">Building with Claude, Cursor, or ChatGPT? Click2Call's API connects your custom software directly to a fully hosted Australian phone system. Pull call data, trigger actions, capture transcriptions, and connect an OpenAI, ElevenLabs, xAI or other AI voice agent — all from the app you're building, with no telecom experience required.</p>
 <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
 <a class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-brand-green-dark hover:bg-brand-green-light md:py-4 md:text-lg md:px-10" href="https://portal.click2call.com.au/register">Start Building Free</a>
 <a class="flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-gray-900 md:py-4 md:text-lg md:px-10 transition-colors duration-150" href="https://portal.click2call.com.au/apidocs" rel="noopener noreferrer" target="_blank">View API Docs</a>
@@ -494,7 +494,7 @@
 <ul class="list-disc pl-5 space-y-1" role="list">
 <li><strong>No coding experience required:</strong> Your account includes copy-paste AI instructions for Claude, Cursor, and ChatGPT. Paste them in, describe what you want to build, and your LLM handles the integration.</li>
 <li><strong>Full JSON REST API:</strong> Programmatic access to voice functions, AI transcriptions, sentiment analysis, call recordings, account management, and real-time webhooks.</li>
-<li><strong>Native ElevenLabs integration:</strong> Connect any Click2Call Australian phone number directly to an ElevenLabs voice agent in minutes — no middleware, no forwarding.</li>
+<li><strong>Nine built-in AI voice profiles:</strong> Connect any Click2Call Australian phone number directly to OpenAI, ElevenLabs, xAI and six other agent platforms in minutes — no middleware, no forwarding.</li>
 <li><strong>Real-time webhooks:</strong> Receive instant JSON payloads for every call event — ringing, answered, ended, missed, and AI transcription ready.</li>
 <li><strong>Included free with every account:</strong> API access is available at no extra cost with every Cloud PBX account from $25/month (ex GST). No separate developer tier required.</li>
 </ul>
@@ -556,8 +556,8 @@
 <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
 <svg aria-hidden="true" class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
-<h3 class="text-lg font-semibold text-brand-charcoal">AI Voice Agent (ElevenLabs)</h3>
-<p class="mt-2 text-gray-600 text-sm">Connect your Australian phone number directly to an ElevenLabs voice agent. Inbound calls are answered by your AI in real time. No forwarding, no middleware — the connection is built into the platform.</p>
+<h3 class="text-lg font-semibold text-brand-charcoal">AI Voice Agent</h3>
+<p class="mt-2 text-gray-600 text-sm">Connect your Australian phone number directly to an OpenAI, ElevenLabs, xAI or other voice agent. Inbound calls are answered by your AI in real time. No forwarding, no middleware — the connection is built into the platform. <a href="/help/how-to-connect-ai-voice-agent" class="text-[#3B9C49] hover:underline font-medium">See all nine &rarr;</a></p>
 </div>
 
 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-left">
@@ -602,9 +602,9 @@
 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
 <div>
 <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2">Native Integration</p>
-<h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">Connect ElevenLabs to a Real Australian Number</h2>
-<p class="mt-4 text-gray-600">If you are building a voice AI agent with ElevenLabs, Click2Call gives it a real Australian phone number to answer calls on. The connection is built directly into the platform — select ElevenLabs as the connection type for your number, enter your ElevenLabs SIP URI, and your AI agent is live.</p>
-<p class="mt-4 text-gray-600">There is no call forwarding, no third-party middleware, and no latency introduced by routing calls through an external service. The ElevenLabs agent answers inbound calls directly, just like a human would. Your Australian caller dials a local number and speaks to your AI in real time.</p>
+<h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">Connect Any AI Voice Platform to a Real Australian Number</h2>
+<p class="mt-4 text-gray-600">If you are building a voice AI agent, Click2Call gives it a real Australian phone number to answer calls on. Nine platforms have a built-in connection profile — <a href="/help/how-to-connect-openai" class="text-[#3B9C49] hover:underline">OpenAI</a>, <a href="/help/how-to-connect-xai" class="text-[#3B9C49] hover:underline">xAI</a>, <a href="/help/how-to-connect-elevenlabs" class="text-[#3B9C49] hover:underline">ElevenLabs</a>, <a href="/help/how-to-connect-retell-ai" class="text-[#3B9C49] hover:underline">Retell</a>, <a href="/help/how-to-connect-synthflow" class="text-[#3B9C49] hover:underline">Synthflow</a>, <a href="/help/how-to-connect-vapi" class="text-[#3B9C49] hover:underline">Vapi</a>, <a href="/help/how-to-connect-livekit" class="text-[#3B9C49] hover:underline">LiveKit</a>, <a href="/help/how-to-connect-twilio" class="text-[#3B9C49] hover:underline">Twilio</a> and <a href="/help/how-to-connect-cloudonix" class="text-[#3B9C49] hover:underline">Cloudonix</a> &mdash; select the platform as the connection type for your number and your AI agent is live. Anything else that speaks SIP connects with generic SIP registration.</p>
+<p class="mt-4 text-gray-600">There is no call forwarding, no third-party middleware, and no latency introduced by routing calls through an external service. Your agent answers inbound calls directly, just like a human would, and your Australian caller dials a local number and speaks to it in real time. Four of the nine &mdash; ElevenLabs, Retell, Synthflow and Vapi &mdash; need nothing beyond the connection type; OpenAI, xAI and LiveKit expect you to run a webhook or agent worker on your own infrastructure. <a href="/help/how-to-connect-ai-voice-agent" class="text-[#3B9C49] font-semibold hover:underline">Compare all nine &rarr;</a></p>
 <ul class="mt-6 space-y-3">
 <li class="flex items-start gap-3">
 <svg aria-hidden="true" class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
@@ -649,7 +649,7 @@
 <span class="text-white font-medium">E.164 (+61)</span>
 </div>
 </div>
-<p class="mt-4 text-xs text-gray-500">Select this profile on any Click2Call number to route inbound calls to your ElevenLabs agent.</p>
+<p class="mt-4 text-xs text-gray-500">Shown here for ElevenLabs &mdash; the same one-profile setup applies to each of the other eight platforms, each with its own SIP route filled in automatically. <a href="/blog/ai-voice-agent-australian-phone-number" class="text-teal-400 hover:underline">See how all nine compare &rarr;</a></p>
 </div>
 </div>
 </div>
@@ -740,7 +740,7 @@
 <p class="mt-4 text-gray-600"><strong>Worth being straight about:</strong> there is no one-click app for HubSpot, Salesforce or Pipedrive. Click2Call gives you the events and the data; connecting them to a specific CRM is a small piece of code, or a no-code step in something like Zapier or n8n. That is genuinely an afternoon rather than a project — but it is not zero, and you should know that before you choose. The API is self-service, and Click2Call does not provide paid setup or support for custom integrations.</p>
 
 <h3 class="mt-10 text-xl font-bold text-brand-charcoal">Adding phone calls to an AI chatbot</h3>
-<p class="mt-3 text-gray-600">Yes, and it is one of the most common things people build here. If your chatbot or agent speaks SIP, point it at a Click2Call Australian number and it can take real calls. ElevenLabs has a native connection profile — select &ldquo;ElevenLabs AI&rdquo; as the connection type for your number, paste the ElevenLabs SIP URI, and your agent is answering an Australian phone number without you writing any telephony code.</p>
+<p class="mt-3 text-gray-600">Yes, and it is one of the most common things people build here. If your chatbot or agent speaks SIP, point it at a Click2Call Australian number and it can take real calls. Nine platforms have a built-in connection profile &mdash; OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix &mdash; select the platform as the connection type for your number, fill in the one field it needs, and your agent is answering an Australian phone number without you writing any telephony code.</p>
 <p class="mt-3 text-gray-600">Everything else on the platform still applies to those calls: they are recorded, transcribed, summarised and scored for sentiment like any other. That matters more than it sounds — it is how you find out what your agent is actually saying to customers, and the transcripts are what you use to improve it.</p>
 <p class="mt-3 text-gray-600">Authentication is a single token, and the API is one JSON POST endpoint. No SDK to install, no SIP stack to implement. Full reference at <a class="text-teal-700 font-semibold hover:underline" href="https://portal.click2call.com.au/apidocs">portal.click2call.com.au/apidocs</a>.</p>
 </div>
@@ -764,7 +764,7 @@ $25<span class="ml-1 text-2xl font-medium text-gray-500">/mo</span>
 <li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">Full JSON REST API access</span></li>
 <li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">Real-time webhooks</span></li>
 <li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">AI transcriptions &amp; sentiment</span></li>
-<li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">ElevenLabs native integration</span></li>
+<li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">Nine built-in AI voice platform integrations</span></li>
 <li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">1 × Australian number included</span></li>
 <li class="flex items-start gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm text-gray-700">7-day free trial, no credit card</span></li>
 </ul>
@@ -801,10 +801,10 @@ $25<span class="ml-1 text-2xl font-medium text-gray-500">/mo</span>
 
 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
 <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
-<span>How does the ElevenLabs integration work?</span>
+<span>How does the AI voice agent integration work?</span>
 <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Click2Call has a native ElevenLabs connection profile built directly into the platform. In your portal, navigate to Line Preferences, select a phone number, and choose ElevenLabs AI as the connection type. Enter your ElevenLabs SIP URI and the number is immediately connected to your voice agent. Inbound calls to your Australian number are answered by your ElevenLabs AI in real time — no forwarding, no middleware, no latency from external routing.</p></div>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Click2Call has built-in connection profiles for nine AI voice platforms &mdash; OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix. In your portal, navigate to Line Preferences, select a phone number, and choose the platform as the connection type. Fill in the one field it needs and the number is immediately connected to your voice agent. Inbound calls to your Australian number are answered by your AI in real time &mdash; no forwarding, no middleware, no latency from external routing. <a href="/help/how-to-connect-ai-voice-agent" class="text-[#3B9C49] hover:underline">Compare all nine &rarr;</a></p></div>
 </div>
 
 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
