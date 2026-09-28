@@ -57,23 +57,35 @@
         "@id": "https://www.click2call.com.au/#organization",
         "name": "Click2Call"
       },
-      "description": "A service that enables users to make and receive external phone calls directly from the Microsoft Teams interface using Direct Routing, connecting Teams to the public telephone network via Click2Call's infrastructure.",
+      "description": "Click2Call Microsoft Teams Calling connects Microsoft Teams to the Australian public telephone network using Direct Routing, with a full Click2Call Cloud PBX underneath Teams. Each Teams user gets an Australian number, 300 outbound minutes, unlimited inbound calls, call recording, AI transcription and summaries, sentiment analysis, voicemail to email, auto-attendant and call queues for $25 per user per month ex GST. Requires a Microsoft Teams Phone Standard licence purchased from Microsoft. No lock-in contract; data stored in Australia and New Zealand.",
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Microsoft Teams User",
+        "price": "25.00",
+        "priceCurrency": "AUD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": 25.0,
+          "priceCurrency": "AUD",
+          "unitText": "per user per month",
+          "valueAddedTaxIncluded": false
+        },
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://www.click2call.com.au/#organization",
+          "name": "Click2Call"
+        }
       }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Click2Call Microsoft Teams Calling?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call Microsoft Teams Calling is a Direct Routing service that connects Microsoft Teams to the Australian public phone network. Your staff make and receive real phone calls (to any number in Australia or internationally) directly from the Teams app on their computer or mobile, using a local Australian business number. It replaces the need for Microsoft Teams Phone or a Microsoft Domestic Calling Plan. Teams Calling is $25 per user per month ex GST, with a one-time Teams Direct Routing setup fee of $55 inc GST per user."
-          }
-        },
         {
           "@type": "Question",
           "name": "What is Microsoft Teams Direct Routing?",
@@ -87,7 +99,7 @@
           "name": "Do I need a Microsoft Phone System licence for Direct Routing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Each Teams user needs a Microsoft 365 licence that includes the Phone System add-on. Click2Call provides the phone number and the connection to the phone network. Microsoft provides the software side. Contact us if you’re not sure which licence you have — we can check."
+            "text": "Yes. Each Teams user needs a Microsoft Teams Phone Standard licence (previously called Phone System) — included in Microsoft 365 E5, or added to any Microsoft 365 business plan that includes Teams — bought from Microsoft. Click2Call provides the number, the Direct Routing connection and the Cloud PBX features; it does not sell Microsoft licences. Not sure which licence you have? Ask us and we will check."
           }
         },
         {
@@ -95,7 +107,7 @@
           "name": "How does Direct Routing differ from Microsoft Calling Plans?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Microsoft’s Calling Plans are their own built-in calling service — but they’re expensive and not available in all Australian regions. Click2Call’s Direct Routing does the same thing for 40–60% less, and gives you Australian local numbers and 1300 numbers that Microsoft’s plan often can’t provide."
+            "text": "A Microsoft Calling Plan bundles the carrier service into your Microsoft bill. Microsoft offers its own Calling Plans only in specific markets; in Australia they have come through Telstra Calling for Office 365, which closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026. Direct Routing puts an Australian provider behind Teams instead: Click2Call supplies local, 1300 and 1800 numbers, flat $25/user/month ex GST pricing in AUD, call recording and AI transcription, and Australian support. Compare Direct Routing and Calling Plans side by side →"
           }
         },
         {
@@ -111,7 +123,7 @@
           "name": "What equipment do I need for Microsoft Teams Calling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You do not need any new equipment for Microsoft Teams Calling. Your team can use the Teams app on their existing computers and phones. If preferred, physical desk phones compatible with Teams are available, but most businesses find them unnecessary. The app alone is sufficient for effective communication."
+            "text": "No additional hardware is required. Your team can make and receive calls directly from the Microsoft Teams desktop app, mobile app, or a Teams-certified desk phone. If you prefer physical handsets, we can supply compatible Teams-certified IP phones."
           }
         },
         {
@@ -119,7 +131,7 @@
           "name": "Is Click2Call's Teams Calling available across all of Australia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Click2Call's Microsoft Teams Direct Routing service is available to any Australian business with a stable internet connection, no matter the location. We offer Australian local numbers for all major cities and regions, along with 1300 and 1800 numbers to ensure comprehensive coverage across the country."
+            "text": "Yes. Click2Call's Microsoft Teams Direct Routing service is available to any Australian business with a stable internet connection, regardless of location. We provide Australian local numbers for all major cities and regions, as well as 1300 and 1800 numbers."
           }
         },
         {
@@ -135,7 +147,7 @@
           "name": "What internet connection speed do I need for Teams Calling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A standard NBN connection is sufficient for Teams Calling. Each call requires approximately 100 kbps, so a 5-person office making simultaneous calls needs around 0.5 Mbps upload speed. This level of upload speed is easily supported by any typical NBN plan, ensuring smooth and reliable call quality."
+            "text": "Microsoft Teams requires approximately 100 kbps per concurrent call. A standard NBN connection is more than sufficient for most businesses. We recommend a connection with low jitter and latency for the best call quality. Our team can advise on network requirements during the setup process."
           }
         },
         {
@@ -143,7 +155,7 @@
           "name": "Does Click2Call offer a free trial for Teams Calling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Click2Call offers a free trial for Teams Calling. You can sign up at portal.click2call.com.au/join with no credit card required. Your account is free to create, allowing you to add a Teams number, load credit, and fully test the setup before making any commitment."
+            "text": "Yes, with one caveat. The 7-day free trial gives you a Click2Call account with $11 credit and 10 test calls, no credit card required, so you can test numbers, call flows, recording and transcription. The Microsoft Teams User plan itself is not covered by the trial credit and is purchased separately, and Microsoft licences come from Microsoft. Most businesses run the trial first, then add Teams users when they are ready."
           }
         },
         {
@@ -151,7 +163,39 @@
           "name": "What happens if Microsoft Teams has an outage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If Microsoft Teams experiences an outage, Click2Call can set up call failover to redirect incoming calls to a mobile number, alternative number, or voicemail. This ensures your business stays accessible and communication continues uninterrupted despite the Teams service disruption."
+            "text": "Your numbers live on Click2Call, not inside Microsoft 365, so a Teams outage does not take them down. In the portal (Voice → Microsoft Teams) every Teams line has an Unavailable Forwarding Number for when Teams is offline and a Failover Forwarding Number as a backup — typically a mobile — so calls keep landing. You can also pair a desk phone or softphone with the line using Teams/SIP Twinning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Click2Call Microsoft Teams Calling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click2Call Microsoft Teams Calling connects your Microsoft Teams tenant to the Australian phone network through Direct Routing, with a full Click2Call Cloud PBX underneath. Each Teams user gets an Australian number, 300 outbound minutes, unlimited inbound calls, call recording, AI transcription and summaries, voicemail to email, IVR and call queues for $25 per user per month ex GST, using the Teams dial pad they already have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Teams and a desk phone ring at the same time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each Teams line has a Call Mode in the portal. Teams Only rings the Teams app alone and suits most users. Teams/SIP Twinning rings Teams and a paired SIP device — a desk phone or the Click2Call softphone — at the same time, so someone with a handset on the desk and Teams on the laptop can answer on either."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The dial pad doesn’t appear in Teams after setup — what do I check?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three things, in order: the user has a Teams Phone Standard licence assigned; the two per-user PowerShell commands (Grant-CsTeamsCallingPolicy and Grant-CsOnlineVoiceRoutingPolicy) ran without error; and the user has signed out of Teams and back in. Policy changes can take up to 10 minutes to reach the Teams client. If outbound calls then fail with an immediate busy tone, re-run the two Grant- commands and check the SBC hostname in the voice route matches your Click2Call Teams domain exactly. Full troubleshooting in the setup guide →"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Telstra Calling for Office 365 is being withdrawn — can I move to Click2Call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Telstra Calling for Office 365 is withdrawn from 30 November 2026. Moving to Click2Call Direct Routing keeps your Teams Phone Standard licences and the same Teams dial pad; Click2Call ports your existing numbers for a flat $100 including GST per number (typically 5–10 business days) and adds call recording, AI transcription and the Cloud PBX features. Self-setup takes about 30 minutes, or managed setup is $50 per user. Start well before the withdrawal date so the port completes in time."
           }
         }
       ]
@@ -516,7 +560,7 @@
 <div class="mt-2 text-sm text-green-700">
 <ul class="list-disc pl-5 space-y-1" role="list">
 <li><strong>What it is:</strong> Click2Call Microsoft Teams Calling uses Direct Routing to connect Microsoft Teams to the Australian public telephone network via a full <a class="text-[#3B9C49] hover:underline font-medium" href="/cloud-pbx/">Cloud PBX</a>. Every Teams user gets an Australian phone number, 300 outbound minutes, unlimited inbound calls, call recording, <a class="text-[#3B9C49] hover:underline font-medium" href="/ai-voice-tools/">AI transcription, AI call summaries, sentiment analysis</a>, voicemail-to-email, auto-attendant, and call queues — all included at $25/user/month (ex GST), paid to Click2Call.</li>
-<li><strong>What Microsoft charges separately:</strong> Each user also requires a Microsoft Teams Phone System Licence at $12.10/user/month, paid directly to Microsoft. This is not charged by Click2Call.</li>
+<li><strong>What Microsoft charges separately:</strong> Each user also needs a Microsoft Teams Phone Standard licence (previously called Phone System) &mdash; about $15.00/user/month ex GST on Microsoft&rsquo;s Australian price list &mdash; bought directly from Microsoft. Click2Call does not sell Microsoft licences.</li>
 <li><strong>No lock-in:</strong> Click2Call operates on a prepaid credit model. There is no minimum contract, no minimum monthly spend, and no cancellation fee.</li>
 <li><strong>Data residency:</strong> All call recordings, transcripts, AI outputs, and account data are stored on infrastructure located in Australia and New Zealand. Click2Call does not use offshore servers.</li>
 <li><strong>Number porting:</strong> Existing Australian landline, 1300, and 1800 numbers can be ported to Click2Call and used with Microsoft Teams. The porting process typically takes 5–10 business days.</li>
@@ -558,7 +602,7 @@
 <p class="mt-2 text-gray-600">Once connected, your team can call any landline or mobile in Australia — and customers can call your business number and reach them in Teams.</p>
 </div>
 </div>
-<p class="mt-8 text-gray-500">This approach — called Direct Routing — is Microsoft-approved. It replaces Microsoft's Domestic Calling Plan (which isn't available at an affordable price in Australia) with a local provider like Click2Call.</p>
+<p class="mt-8 text-gray-500">This approach — called Direct Routing — is Microsoft-approved. It replaces a Microsoft Calling Plan &mdash; which in Australia has only been available through Telstra, and is now closed to new customers &mdash; with a local provider like Click2Call.</p>
 </div>
 </div>
 </section>
@@ -640,7 +684,7 @@
 </li>
 </ul>
 <div class="mt-6 rounded-lg bg-indigo-50 border border-indigo-100 px-4 py-3">
-<p class="text-xs text-indigo-800"><strong>Note:</strong> Teams features require a Microsoft 365 Business plan with the Teams Phone System Licence add-on ($12.10/user/month, paid directly to Microsoft). Click2Call does not charge for this.</p>
+<p class="text-xs text-indigo-800"><strong>Note:</strong> Teams features require a Microsoft 365 business plan with the Teams Phone Standard licence add-on (about $15.00/user/month ex GST, bought directly from Microsoft). Click2Call does not charge for this.</p>
 </div>
 </div>
 </div>
@@ -649,6 +693,14 @@
 </div>
 </section>
 
+<!-- SECTION 5B: CALL RECORDING INSIDE TEAMS -->
+<section class="bg-gray-50 py-16 border-b border-gray-100" id="teams-call-recording">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold tracking-tight text-brand-charcoal sm:text-4xl">Does Call Recording and AI Transcription Work Inside Microsoft Teams?</h2>
+<p class="mt-4 text-lg text-gray-600">Yes, on every call, without any Microsoft recording licence. Every call made or received in Teams through Click2Call passes through the Click2Call Cloud PBX, and that is where recording, transcription, the AI summary and the sentiment score happen &mdash; not inside Microsoft 365.</p>
+<p class="mt-4 text-gray-500">Nothing is installed in your tenant and no Microsoft compliance-recording add-on is involved. After each call the recording and transcript are emailed to the user and stored, searchable, in the Click2Call portal on infrastructure in Australia and New Zealand. Managers see the same call activity, reporting and queue dashboards as any other Cloud PBX user. <a class="text-[#3B9C49] hover:underline font-medium" href="/ai-voice-tools/">See what the AI voice tools capture &rarr;</a></p>
+</div>
+</section>
 <!-- SECTION 6: COST COMPARISON -->
 <section class="bg-white py-16 border-b border-gray-100">
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -660,14 +712,14 @@
 </div>
 <!-- Cost breakdown cards -->
 <div class="mt-8 grid gap-6 md:grid-cols-3">
-<!-- Card 1: Phone System Licence -->
+<!-- Card 1: Teams Phone Standard Licence -->
 <div class="rounded-xl border border-gray-200 bg-white p-6 text-left">
 <div class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Paid to Microsoft</div>
-<h3 class="text-base font-bold text-gray-900">Microsoft Teams Phone System Licence</h3>
+<h3 class="text-base font-bold text-gray-900">Microsoft Teams Phone Standard Licence</h3>
 <p class="mt-2 text-sm text-gray-600">This is the licence that unlocks the dial pad inside Teams. Without it, Teams has no phone functionality at all — you can chat and video call your colleagues, but you cannot call a real phone number. It does not include an Australian number or local calling — that is what Click2Call provides.</p>
 <div class="mt-4 pt-4 border-t border-gray-100">
-<span class="text-lg font-bold text-gray-900">$12.10</span>
-<span class="text-sm text-gray-500"> /user/month</span>
+<span class="text-lg font-bold text-gray-900">about $15.00</span>
+<span class="text-sm text-gray-500"> /user/month ex GST</span>
 <p class="text-xs text-gray-400 mt-1">Included in Microsoft 365 E5, or available as an add-on to any Microsoft 365 Business plan. Paid directly to Microsoft.</p>
 </div>
 </div>
@@ -702,9 +754,9 @@
 <td class="px-3 py-4 text-sm text-center text-gray-500">Varies by plan</td>
 </tr>
 <tr>
-<td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Teams Phone System Licence <span class="ml-1 text-xs font-normal text-gray-400">(required to enable the dial pad in Teams)</span></td>
+<td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Teams Phone Standard Licence <span class="ml-1 text-xs font-normal text-gray-400">(required to enable the dial pad in Teams)</span></td>
 <td class="px-3 py-4 text-sm text-center text-gray-500">Microsoft</td>
-<td class="px-3 py-4 text-sm text-center text-gray-500">$12.10/month</td>
+<td class="px-3 py-4 text-sm text-center text-gray-500">about $15.00/month (ex GST)</td>
 </tr>
 <tr>
 <td class="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Microsoft Teams User <span class="ml-1 text-xs font-normal text-gray-400">(Australian number + 300 outbound mins + unlimited inbound)</span></td>
@@ -714,11 +766,11 @@
 <tr class="bg-gray-50">
 <td class="py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-0">Estimated Fixed Monthly Cost (per user, excl. M365 plan)</td>
 <td class="px-3 py-4 text-sm text-center text-gray-500"></td>
-<td class="px-3 py-4 text-sm text-center text-brand-green-dark font-semibold">From $37.10/month (ex GST)</td>
+<td class="px-3 py-4 text-sm text-center text-brand-green-dark font-semibold">From about $40/month (ex GST)</td>
 </tr>
 </tbody>
 </table>
-<p class="text-xs text-gray-500 mt-3">Microsoft pricing sourced from microsoft.com, February 2026. Subject to change. The Microsoft Teams Phone System Licence is paid directly to Microsoft — Click2Call does not charge for this. Click2Call charges $25/month per user for the Microsoft Teams User plan, which includes 300 outbound minutes and unlimited inbound calls. Microsoft does not currently offer local Australian numbers or local calling in Australia.</p>
+<p class="text-xs text-gray-500 mt-3">Microsoft Teams Phone Standard is Microsoft&rsquo;s Australian list price, ex GST on an annual commitment, checked September 2026; monthly billing costs more and prices are set by Microsoft &mdash; confirm at microsoft.com. The licence is bought from Microsoft; Click2Call does not charge for it. Click2Call charges $25/month per user for the Microsoft Teams User plan, which includes an Australian number, 300 outbound minutes and unlimited inbound calls. Microsoft&rsquo;s own Calling Plans are offered only in specific markets; in Australia they have been delivered through Telstra Calling for Office 365, which closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026.</p>
 <div class="mt-8 grid gap-4 sm:grid-cols-2">
 <div class="rounded-lg bg-green-50 border border-green-200 px-6 py-5">
 <div class="flex items-start gap-3">
@@ -745,6 +797,40 @@
 </div>
 </section></div>
 
+<!-- SECTION 6B: DIRECT ROUTING VS OPERATOR CONNECT VS CALLING PLAN -->
+<section class="bg-gray-50 py-16 border-b border-gray-100" id="direct-routing-vs-operator-connect">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Direct Routing, Operator Connect or a Microsoft Calling Plan: Which Is Right for an Australian Business?</h2>
+<p class="mt-4 text-lg text-center text-gray-500 max-w-3xl mx-auto">There are three ways to put real phone calls into Microsoft Teams. All three use the same Teams dial pad; they differ in who carries the calls, what you pay and what you get beyond carriage. Click2Call connects via Direct Routing.</p>
+<div class="mt-8 overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-sm">
+<table class="w-full min-w-[48rem] text-sm">
+<thead class="bg-gray-100">
+<tr><th class="px-4 py-3 text-left text-sm font-bold text-gray-700"></th><th class="px-4 py-3 text-left text-sm font-bold text-gray-700">Direct Routing (Click2Call)</th><th class="px-4 py-3 text-left text-sm font-bold text-gray-700">Operator Connect</th><th class="px-4 py-3 text-left text-sm font-bold text-gray-700">Microsoft Calling Plan</th></tr>
+</thead>
+<tbody>
+<tr class="border-t border-gray-100"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Who carries the calls</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Click2Call, an Australian Cloud PBX, behind your Teams tenant</td><td class="px-4 py-3 text-sm align-top text-gray-600">A Microsoft-certified carrier (in Australia: Telstra, Optus, Symbio, Vocus)</td><td class="px-4 py-3 text-sm align-top text-gray-600">Microsoft, in specific markets &mdash; in Australia via Telstra Calling for Office 365</td></tr>
+<tr class="border-t border-gray-100 bg-gray-50/60"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Available to new Australian customers</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Yes</td><td class="px-4 py-3 text-sm align-top text-gray-600">Yes</td><td class="px-4 py-3 text-sm align-top text-gray-600">Telstra Calling for Office 365 closed to new customers 1 November 2024 and is withdrawn from 30 November 2026; check microsoft.com for current market availability</td></tr>
+<tr class="border-t border-gray-100"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Microsoft licence needed</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Teams Phone Standard</td><td class="px-4 py-3 text-sm align-top text-gray-600">Teams Phone Standard</td><td class="px-4 py-3 text-sm align-top text-gray-600">Teams Phone Standard plus the Calling Plan</td></tr>
+<tr class="border-t border-gray-100 bg-gray-50/60"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Australian numbers</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Local 02/03/07/08, 1300 and 1800; existing numbers ported</td><td class="px-4 py-3 text-sm align-top text-gray-600">Carrier numbers managed in the Teams admin centre</td><td class="px-4 py-3 text-sm align-top text-gray-600">Telstra-supplied numbers</td></tr>
+<tr class="border-t border-gray-100"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Phone-system features beyond Teams</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Full Cloud PBX: IVR, call queues, ring groups, voicemail to email, call recording, AI transcription and summaries, sentiment</td><td class="px-4 py-3 text-sm align-top text-gray-600">Whatever the carrier bundles &mdash; usually carriage only</td><td class="px-4 py-3 text-sm align-top text-gray-600">Carriage only</td></tr>
+<tr class="border-t border-gray-100 bg-gray-50/60"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Pricing</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Flat $25/user/month ex GST in AUD, no lock-in</td><td class="px-4 py-3 text-sm align-top text-gray-600">Set by the carrier</td><td class="px-4 py-3 text-sm align-top text-gray-600">Set by Telstra/Microsoft</td></tr>
+<tr class="border-t border-gray-100"><td class="px-4 py-3 text-sm align-top text-gray-600"><strong class="text-gray-900">Setup</strong></td><td class="px-4 py-3 text-sm align-top font-semibold text-brand-green-dark">Portal-generated PowerShell, about 30 minutes, or managed setup</td><td class="px-4 py-3 text-sm align-top text-gray-600">Carrier onboarding inside the Teams admin centre</td><td class="px-4 py-3 text-sm align-top text-gray-600">&mdash;</td></tr>
+</tbody>
+</table>
+</div>
+<div class="mt-8 grid gap-4 sm:grid-cols-2">
+<div class="rounded-lg bg-white border border-gray-200 px-6 py-5">
+<p class="text-sm font-semibold text-gray-900">Choose Direct Routing with Click2Call if</p>
+<p class="mt-1 text-sm text-gray-600">you want Australian numbers, a real phone system underneath Teams (queues, IVR, recording, AI transcription), flat AUD pricing with no contract, and Australian support &mdash; using the Teams Phone Standard licences you already have.</p>
+</div>
+<div class="rounded-lg bg-white border border-gray-200 px-6 py-5">
+<p class="text-sm font-semibold text-gray-900">Operator Connect may suit you better if</p>
+<p class="mt-1 text-sm text-gray-600">you want the carrier managed entirely inside the Teams admin centre, already have a contract with one of the certified carriers, and do not need phone-system features beyond what Teams itself provides.</p>
+</div>
+</div>
+<p class="mt-6 text-center text-sm text-gray-500"><strong class="text-gray-700">On Telstra Calling for Office 365?</strong> It is withdrawn from 30 November 2026. Direct Routing with Click2Call keeps the same Teams dial pad and ports your existing numbers across. <a class="text-[#3B9C49] hover:underline font-medium" href="/compare/click2call-vs-microsoft-calling-plan/">Full Direct Routing vs Calling Plan comparison &rarr;</a></p>
+</div>
+</section>
 <!-- MID-PAGE CTA -->
 <section class="bg-[#3B9C49] py-12">
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -877,6 +963,21 @@
             </p>
 </div>
 </section>
+<!-- SECTION 7C: AVAILABILITY BY CITY -->
+<section class="bg-gray-50 py-16 border-b border-gray-100" id="teams-calling-australia">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold text-center text-brand-charcoal">Is Microsoft Teams Calling Available in Perth, Sydney, Melbourne and Brisbane?</h2>
+<p class="mt-4 text-lg text-center text-gray-500 max-w-3xl mx-auto">Yes &mdash; Click2Call provides Microsoft Teams calling Australia-wide. When you add a Teams number in the portal you choose the area, so a Perth office gets a local 08 number, a Sydney office an 02 and a Melbourne office an 03, all on one account and one call flow. Regional numbers and 1300/1800 numbers work the same way, and existing numbers port across for a flat $100 including GST.</p>
+<div class="mt-8 grid grid-cols-2 sm:grid-cols-5 gap-4">
+<a class="flex flex-col items-center gap-1 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-150 text-center" href="/voip-perth/"><span class="text-sm font-semibold text-gray-800">Perth</span><span class="text-xs text-gray-500">08 numbers</span></a>
+<a class="flex flex-col items-center gap-1 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-150 text-center" href="/voip-sydney/"><span class="text-sm font-semibold text-gray-800">Sydney</span><span class="text-xs text-gray-500">02 numbers</span></a>
+<a class="flex flex-col items-center gap-1 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-150 text-center" href="/voip-melbourne/"><span class="text-sm font-semibold text-gray-800">Melbourne</span><span class="text-xs text-gray-500">03 numbers</span></a>
+<a class="flex flex-col items-center gap-1 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-150 text-center" href="/voip-brisbane/"><span class="text-sm font-semibold text-gray-800">Brisbane</span><span class="text-xs text-gray-500">07 numbers</span></a>
+<a class="flex flex-col items-center gap-1 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-150 text-center" href="/voip-gold-coast/"><span class="text-sm font-semibold text-gray-800">Gold Coast</span><span class="text-xs text-gray-500">07 numbers</span></a>
+</div>
+<p class="mt-6 text-center text-sm text-gray-500">Somewhere else? <a class="text-[#3B9C49] hover:underline font-medium" href="/voip-australia/">See every area we cover &rarr;</a></p>
+</div>
+</section>
 <!-- SECTION 8: FAQ -->
 <section class="bg-white py-16 border-b border-gray-100">
 <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -894,14 +995,14 @@
 <span>Do I need a Microsoft Phone System licence for Direct Routing?</span>
 <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Yes. Each Teams user needs a Microsoft 365 licence that includes the Phone System add-on. Click2Call provides the phone number and the connection to the phone network. Microsoft provides the software side. Contact us if you’re not sure which licence you have — we can check.</p></div>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Yes. Each Teams user needs a Microsoft Teams Phone Standard licence (previously called Phone System) &mdash; included in Microsoft 365 E5, or added to any Microsoft 365 business plan that includes Teams &mdash; bought from Microsoft. Click2Call provides the number, the Direct Routing connection and the Cloud PBX features; it does not sell Microsoft licences. Not sure which licence you have? Ask us and we will check.</p></div>
 </div>
 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
 <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
 <span>How does Direct Routing differ from Microsoft Calling Plans?</span>
 <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Microsoft Calling Plans are Microsoft's own calling service, which can be expensive and are not always available in all Australian regions. Direct Routing uses a third-party provider like Click2Call to supply the calling capability, which is typically 40–60% cheaper than Microsoft Calling Plans and offers more flexibility, including Australian local numbers and 1300 numbers.</p></div>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>A Microsoft Calling Plan bundles the carrier service into your Microsoft bill. Microsoft offers its own Calling Plans only in specific markets; in Australia they have come through Telstra Calling for Office 365, which closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026. Direct Routing puts an Australian provider behind Teams instead: Click2Call supplies local, 1300 and 1800 numbers, flat $25/user/month ex GST pricing in AUD, call recording and AI transcription, and Australian support. <a class="text-[#3B9C49] hover:underline font-medium" href="/compare/click2call-vs-microsoft-calling-plan/">Compare Direct Routing and Calling Plans side by side &rarr;</a></p></div>
 </div>
 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
 <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
@@ -943,14 +1044,42 @@
 <span>Does Click2Call offer a free trial for Teams Calling?</span>
 <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Yes. Click2Call offers a 7-day free trial for all services, including Microsoft Teams Direct Routing. Your account is loaded with $11 credit and 10 test calls — no credit card required. Sign up at portal.click2call.com.au/join and our team will assist with the initial configuration.</p></div>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Yes, with one caveat. The 7-day free trial gives you a Click2Call account with $11 credit and 10 test calls, no credit card required, so you can test numbers, call flows, recording and transcription. The Microsoft Teams User plan itself is not covered by the trial credit and is purchased separately, and Microsoft licences come from Microsoft. Most businesses run the trial first, then add Teams users when they are ready.</p></div>
 </div>
 <div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
 <button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
 <span>What happens if Microsoft Teams has an outage?</span>
 <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
-<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>In the event of a Microsoft Teams service disruption, Click2Call can configure call failover to redirect incoming calls to a mobile number, alternative number, or voicemail. This ensures your business remains reachable even during platform outages.</p></div>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Your numbers live on Click2Call, not inside Microsoft 365, so a Teams outage does not take them down. In the portal (Voice &rarr; Microsoft Teams) every Teams line has an Unavailable Forwarding Number for when Teams is offline and a Failover Forwarding Number as a backup &mdash; typically a mobile &mdash; so calls keep landing. You can also pair a desk phone or softphone with the line using Teams/SIP Twinning.</p></div>
+</div>
+<div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
+<button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
+<span>What is Click2Call Microsoft Teams Calling?</span>
+<svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Click2Call Microsoft Teams Calling connects your Microsoft Teams tenant to the Australian phone network through Direct Routing, with a full Click2Call Cloud PBX underneath. Each Teams user gets an Australian number, 300 outbound minutes, unlimited inbound calls, call recording, AI transcription and summaries, voicemail to email, IVR and call queues for $25 per user per month ex GST, using the Teams dial pad they already have.</p></div>
+</div>
+<div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
+<button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
+<span>Can Teams and a desk phone ring at the same time?</span>
+<svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Yes. Each Teams line has a Call Mode in the portal. <strong>Teams Only</strong> rings the Teams app alone and suits most users. <strong>Teams/SIP Twinning</strong> rings Teams and a paired SIP device &mdash; a desk phone or the Click2Call softphone &mdash; at the same time, so someone with a handset on the desk and Teams on the laptop can answer on either.</p></div>
+</div>
+<div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
+<button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
+<span>The dial pad doesn&rsquo;t appear in Teams after setup &mdash; what do I check?</span>
+<svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Three things, in order: the user has a Teams Phone Standard licence assigned; the two per-user PowerShell commands (Grant-CsTeamsCallingPolicy and Grant-CsOnlineVoiceRoutingPolicy) ran without error; and the user has signed out of Teams and back in. Policy changes can take up to 10 minutes to reach the Teams client. If outbound calls then fail with an immediate busy tone, re-run the two Grant- commands and check the SBC hostname in the voice route matches your Click2Call Teams domain exactly. <a class="text-[#3B9C49] hover:underline font-medium" href="/help/how-to-set-up-microsoft-teams">Full troubleshooting in the setup guide &rarr;</a></p></div>
+</div>
+<div class="border-b border-gray-200 pb-4 faq-item" x-data="{ open: false }">
+<button @click="open = !open" class="w-full flex justify-between items-center text-left text-lg font-medium text-brand-charcoal">
+<span>Telstra Calling for Office 365 is being withdrawn &mdash; can I move to Click2Call?</span>
+<svg :class="{ 'rotate-180': open }" class="h-6 w-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="mt-2 text-gray-600" x-collapse="" x-show="open"><p>Yes. Telstra Calling for Office 365 is withdrawn from 30 November 2026. Moving to Click2Call Direct Routing keeps your Teams Phone Standard licences and the same Teams dial pad; Click2Call ports your existing numbers for a flat $100 including GST per number (typically 5&ndash;10 business days) and adds call recording, AI transcription and the Cloud PBX features. Self-setup takes about 30 minutes, or managed setup is $50 per user. Start well before the withdrawal date so the port completes in time.</p></div>
 </div>
 </div>
 </div>
