@@ -299,6 +299,19 @@
         style="display:none;"
       ></div>
     </div>
+    <!-- AI answer (Stage 4). Hidden unless the service returns a confident, grounded answer. -->
+    <div id="assist-answer" class="hidden max-w-2xl mx-auto mt-4 text-left bg-white rounded-xl border border-green-200 shadow-sm p-5" aria-live="polite" data-turnstile-sitekey="">
+      <div class="flex items-center justify-between gap-3 mb-2">
+        <span class="text-xs font-semibold uppercase tracking-wide text-[#3B9C49]">AI answer &mdash; check the linked guide</span>
+        <span id="assist-answer-vote" class="flex items-center gap-1 text-gray-400">
+          <button type="button" data-vote="1" class="p-1 rounded hover:bg-green-50 hover:text-[#3B9C49]" aria-label="This answer helped">&#128077;</button>
+          <button type="button" data-vote="-1" class="p-1 rounded hover:bg-red-50 hover:text-red-500" aria-label="This answer did not help">&#128078;</button>
+        </span>
+      </div>
+      <div id="assist-answer-text" class="text-sm text-gray-800 leading-relaxed whitespace-pre-line"></div>
+      <div id="assist-answer-sources" class="mt-3 flex flex-wrap gap-2"></div>
+      <p id="assist-answer-note" class="mt-3 text-xs text-gray-500">Generated from the help guides. For anything about your own account, email <a class="text-[#3B9C49] hover:underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.</p>
+    </div>
     <!-- Search results count (hidden until search is active) -->
     <p id="support-search-count" class="hidden mt-3 text-sm text-gray-500"></p>
   </div>
@@ -847,10 +860,68 @@ window.addEventListener('load', function () {
       });
   }
 
+  /* ── AI answer (Stage 4) ──────────────────────────────────────────────
+     Asks /assist/answer for a grounded answer on Enter, or after the visitor
+     pauses. The service decides whether to show one (confidence, hours, kill
+     switch); the page only renders what it returns. Needs a Turnstile site key
+     in data-turnstile-sitekey; with none set, this block does nothing. */
+  var answerEl   = document.getElementById('assist-answer');
+  var siteKey    = answerEl ? (answerEl.getAttribute('data-turnstile-sitekey') || '') : '';
+  var ANSWER_ENDPOINT = ASSIST_ENDPOINT.replace(/\/search$/, '/answer');
+  var FEEDBACK_ENDPOINT = ASSIST_ENDPOINT.replace(/\/search$/, '/feedback');
+  var answerEnabled = !!(answerEl && siteKey && !assistDisabled);
+  var answerTimer = null, answerSeq = 0, lastAnswered = '', turnstileWidget = null, turnstileToken = '';
+
+  function hideAnswer() { if (answerEl) { answerEl.classList.add('hidden'); answerEl.removeAttribute('data-id'); } }
+  function ensureTurnstile(cb) {
+    if (!answerEnabled) return;
+    if (turnstileToken) return cb(turnstileToken);
+    var start = function () {
+      if (turnstileWidget === null) {
+        var holder = document.createElement('div'); holder.id = 'assist-turnstile'; document.body.appendChild(holder);
+        turnstileWidget = window.turnstile.render('#assist-turnstile', { sitekey: siteKey, size: 'invisible', callback: function (t) { turnstileToken = t; cb(t); }, 'error-callback': function () { answerEnabled = false; } });
+      } else { window.turnstile.reset(turnstileWidget); }
+    };
+    if (window.turnstile) return start();
+    var sc = document.createElement('script'); sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; sc.async = true; sc.onload = start; sc.onerror = function () { answerEnabled = false; }; document.head.appendChild(sc);
+  }
+  function renderAnswer(data) {
+    if (!data || !data.shown) { hideAnswer(); return; }
+    document.getElementById('assist-answer-text').textContent = data.answer;
+    var srcEl = document.getElementById('assist-answer-sources'); srcEl.innerHTML = '';
+    (data.sources || []).forEach(function (s) {
+      var a = document.createElement('a'); a.href = String(s.url || '#').replace(/^https?:\/\/(www\.)?click2call\.com\.au/, ''); a.textContent = s.title || s.slug;
+      a.className = 'text-xs px-2.5 py-1 rounded-full bg-green-50 text-[#2E7A3A] border border-green-200 hover:bg-green-100'; srcEl.appendChild(a);
+    });
+    answerEl.setAttribute('data-id', data.id || ''); answerEl.classList.remove('hidden');
+  }
+  function askAnswer(q) {
+    if (!answerEnabled || q.length < 12 || q === lastAnswered) return;
+    var seq = ++answerSeq;
+    ensureTurnstile(function (token) {
+      turnstileToken = '';
+      fetch(ANSWER_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ q: q, token: token }) })
+        .then(function (r) { if (r.status === 503) { answerEnabled = false; throw new Error('off'); } if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (data) { if (seq !== answerSeq) return; lastAnswered = q; renderAnswer(data); })
+        .catch(function () { if (seq === answerSeq) hideAnswer(); });
+    });
+  }
+  if (answerEl) {
+    answerEl.addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-vote]'); if (!b) return;
+      var id = Number(answerEl.getAttribute('data-id')); if (!id) return;
+      fetch(FEEDBACK_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: id, vote: Number(b.getAttribute('data-vote')) }) }).catch(function () {});
+      answerEl.querySelectorAll('button[data-vote]').forEach(function (x) { x.disabled = true; x.classList.add('opacity-40'); });
+    });
+    searchInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') { clearTimeout(answerTimer); askAnswer(searchInput.value.trim()); } });
+  }
+
   function runSearch() {
     var q = searchInput.value.toLowerCase().trim();
     filterCards(q);
-    if (!q) { closeDropdown(); return; }
+    if (!q) { closeDropdown(); hideAnswer(); return; }
+    clearTimeout(answerTimer);
+    answerTimer = setTimeout(function () { askAnswer(searchInput.value.trim()); }, 1200);
     if (assistDisabled || q.length < 2) { showDropdown(localMatches(q).slice(0, 8), q); return; }
     clearTimeout(assistTimer);
     assistTimer = setTimeout(function () { assistSearch(q); }, 220);
