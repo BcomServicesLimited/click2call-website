@@ -954,7 +954,7 @@ window.addEventListener('load', function () {
   }
   function openChat(seed) {
     if (!chatEnabled) return;
-    chatEl.classList.remove('hidden'); document.body.style.overflow = 'hidden';
+    chatEl.classList.remove('hidden'); document.body.style.overflow = 'hidden'; searchInput.blur(); closeDropdown();
     if (!msgs.children.length) addMsg('assistant', 'Hi &mdash; ask me how to set up or use anything in your Click2Call phone system. I answer from the help guides and link the ones I used.');
     if (seed) { ask(seed); } else { input.focus(); }
   }
@@ -976,6 +976,7 @@ window.addEventListener('load', function () {
   }
 
   function runSearch() {
+    if (chatEl && !chatEl.classList.contains('hidden')) { closeDropdown(); return; }
     var q = searchInput.value.toLowerCase().trim();
     filterCards(q);
     if (!q) { closeDropdown(); return; }
