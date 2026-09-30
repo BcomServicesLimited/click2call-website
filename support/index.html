@@ -673,7 +673,9 @@ window.addEventListener('load', function () {
     'devices':         'Devices & Apps',
     'call-flows':      'Call Flows & Routing',
     'billing':         'Account & Billing',
-    'ai':              'AI Features'
+    'ai':              'AI Features',
+    'guide':           'Guide',
+    'page':            'Page'
   };
 
   var activeIndex = -1;
@@ -718,11 +720,14 @@ window.addEventListener('load', function () {
       var catLabel = CAT_LABELS[item.category] || '';
       var highlighted = highlightMatch(item.title, q);
 
+      var snippet = item.snippet ? '<span class="block text-xs text-gray-500 truncate mt-0.5">' + escHtml(item.snippet) + '</span>' : '';
       li.innerHTML =
         '<a href="' + item.href + '" class="flex items-center justify-between gap-3 px-5 py-3 hover:bg-green-50 transition-colors duration-100">' +
           '<span class="flex items-center gap-3 min-w-0">' +
             '<svg class="flex-shrink-0 w-4 h-4 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' +
-            '<span class="text-sm text-gray-900 font-medium truncate">' + highlighted + '</span>' +
+            '<span class="min-w-0 flex flex-col">' +
+              '<span class="text-sm text-gray-900 font-medium truncate">' + highlighted + '</span>' + snippet +
+            '</span>' +
           '</span>' +
           (catLabel ? '<span class="flex-shrink-0 text-xs text-gray-400">' + escHtml(catLabel) + '</span>' : '') +
         '</a>';
@@ -795,15 +800,60 @@ window.addEventListener('load', function () {
     });
   }
 
+  /* ── Search API (Stage 2 of the support agent rollout) ──────────────────
+     The box asks the help-centre search service for ranked guides. If the
+     service is slow (>2.5 s), errors, or returns nothing, the original
+     client-side filter below answers instead — the visitor never sees a
+     difference. ROLLBACK: set ASSIST_SEARCH = false (or open ?assist=local). */
+  var ASSIST_SEARCH = true;
+  var ASSIST_ENDPOINT = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+    ? 'https://support-assist.royce-clark.workers.dev/search'
+    : '/assist/search';
+  var assistDisabled = !ASSIST_SEARCH || /[?&]assist=local(&|$)/.test(location.search) || typeof fetch !== 'function';
+  var assistTimer = null, assistSeq = 0, assistController = null;
+
+  function localMatches(q) {
+    return getArticleData().filter(function (a) {
+      return a.title.toLowerCase().indexOf(q) !== -1 || a.tags.toLowerCase().indexOf(q) !== -1;
+    });
+  }
+
+  function assistSearch(q) {
+    var seq = ++assistSeq;
+    if (assistController) assistController.abort();
+    assistController = (typeof AbortController === 'function') ? new AbortController() : null;
+    var timer = setTimeout(function () { if (assistController) assistController.abort(); }, 2500);
+    fetch(ASSIST_ENDPOINT + '?q=' + encodeURIComponent(q) + '&limit=8&src=support', assistController ? { signal: assistController.signal } : {})
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (data) {
+        clearTimeout(timer);
+        if (seq !== assistSeq) return;                       /* a newer keystroke is in flight */
+        var items = (data.results || []).map(function (r) {
+          return {
+            href:     String(r.url || '#').replace(/^https?:\/\/(www\.)?click2call\.com\.au/, ''),
+            title:    r.title || '',
+            snippet:  r.snippet || '',
+            tags:     '',
+            category: String(r.url || '').indexOf('/help/') !== -1 ? 'guide' : 'page'
+          };
+        });
+        if (!items.length) items = localMatches(q).slice(0, 8);
+        showDropdown(items, q);
+      })
+      .catch(function () {
+        clearTimeout(timer);
+        if (seq !== assistSeq) return;
+        showDropdown(localMatches(q).slice(0, 8), q);         /* fallback: client-side filter */
+      });
+  }
+
   function runSearch() {
     var q = searchInput.value.toLowerCase().trim();
     filterCards(q);
     if (!q) { closeDropdown(); return; }
-    var articles = getArticleData();
-    var matches = articles.filter(function (a) {
-      return a.title.toLowerCase().indexOf(q) !== -1 || a.tags.toLowerCase().indexOf(q) !== -1;
-    });
-    showDropdown(matches.slice(0, 8), q);
+    if (assistDisabled || q.length < 2) { showDropdown(localMatches(q).slice(0, 8), q); return; }
+    clearTimeout(assistTimer);
+    assistTimer = setTimeout(function () { assistSearch(q); }, 220);
   }
 
   /* Keyboard navigation */
