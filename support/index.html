@@ -299,18 +299,31 @@
         style="display:none;"
       ></div>
     </div>
-    <!-- AI answer (Stage 4). Hidden unless the service returns a confident, grounded answer. -->
-    <div id="assist-answer" class="hidden max-w-2xl mx-auto mt-4 text-left bg-white rounded-xl border border-green-200 shadow-sm p-5" aria-live="polite" data-turnstile-sitekey="0x4AAAAAAFKiasH08vJfhj9C">
-      <div class="flex items-center justify-between gap-3 mb-2">
-        <span class="text-xs font-semibold uppercase tracking-wide text-[#3B9C49]">AI answer &mdash; check the linked guide</span>
-        <span id="assist-answer-vote" class="flex items-center gap-1 text-gray-400">
-          <button type="button" data-vote="1" class="p-1 rounded hover:bg-green-50 hover:text-[#3B9C49]" aria-label="This answer helped">&#128077;</button>
-          <button type="button" data-vote="-1" class="p-1 rounded hover:bg-red-50 hover:text-red-500" aria-label="This answer did not help">&#128078;</button>
-        </span>
+    <!-- AI support chat (Stage 4/5). Launcher shows only when the service reports it is available. -->
+    <div id="assist-launcher" class="hidden mt-4 text-center" data-turnstile-sitekey="0x4AAAAAAFKiasH08vJfhj9C">
+      <button type="button" id="assist-open" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-green-200 text-sm font-semibold text-[#2E7A3A] shadow-sm hover:bg-green-50 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h8m-8 4h5m-9 7l3.5-3.5H18a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v13z"></path></svg>
+        Ask AI support
+      </button>
+      <p class="mt-2 text-xs text-gray-500">Answers come from the help guides. It can&rsquo;t see your account.</p>
+    </div>
+    <div id="assist-chat" class="hidden fixed inset-0 z-[100]" role="dialog" aria-modal="true" aria-label="AI support chat">
+      <div id="assist-chat-backdrop" class="absolute inset-0 bg-gray-900/40"></div>
+      <div class="absolute right-0 top-0 h-full w-full sm:w-[440px] bg-white shadow-2xl flex flex-col">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+          <div>
+            <p class="text-sm font-bold text-gray-900">AI support</p>
+            <p class="text-xs text-gray-500">From the Click2Call help guides &middot; check the linked guide</p>
+          </div>
+          <button type="button" id="assist-close" class="p-2 rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700" aria-label="Close chat">&#10005;</button>
+        </div>
+        <div id="assist-messages" class="flex-1 overflow-y-auto px-5 py-4 space-y-4 text-sm"></div>
+        <form id="assist-form" class="border-t border-gray-100 px-4 py-3 flex items-end gap-2">
+          <textarea id="assist-input" rows="1" maxlength="200" placeholder="Ask about setting up or using your phone system&hellip;" class="flex-1 resize-none rounded-lg border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:border-[#3B9C49]"></textarea>
+          <button type="submit" id="assist-send" class="px-4 py-2 rounded-lg bg-[#3B9C49] text-white text-sm font-semibold hover:bg-[#2E7A3A] disabled:opacity-40">Send</button>
+        </form>
+        <p class="px-5 pb-3 text-[11px] text-gray-400">For anything about your own account, email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>. Don&rsquo;t type passwords or card numbers here.</p>
       </div>
-      <div id="assist-answer-text" class="text-sm text-gray-800 leading-relaxed whitespace-pre-line"></div>
-      <div id="assist-answer-sources" class="mt-3 flex flex-wrap gap-2"></div>
-      <p id="assist-answer-note" class="mt-3 text-xs text-gray-500">Generated from the help guides. For anything about your own account, email <a class="text-[#3B9C49] hover:underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.</p>
     </div>
     <!-- Search results count (hidden until search is active) -->
     <p id="support-search-count" class="hidden mt-3 text-sm text-gray-500"></p>
@@ -714,7 +727,8 @@ window.addEventListener('load', function () {
     activeIndex = -1;
 
     if (!items.length) {
-      dropdown.innerHTML = '<div class="px-5 py-4 text-sm text-gray-500">No guides found for &ldquo;' + escHtml(q) + '&rdquo;</div>';
+      dropdown.innerHTML = '<div class="px-5 py-4 text-sm text-gray-500">No guides found for &ldquo;' + escHtml(q) + '&rdquo;' + ((typeof chatEnabled !== 'undefined' && chatEnabled) ? ' &mdash; <button type="button" id="search-ask-ai-empty" class="text-[#3B9C49] font-semibold hover:underline">ask AI support</button>' : '') + '</div>';
+      var emptyAsk = document.getElementById('search-ask-ai-empty'); if (emptyAsk) emptyAsk.addEventListener('click', function () { var qq = searchInput.value.trim(); closeDropdown(); openChat(qq); });
       dropdown.style.display = 'block';
       searchInput.setAttribute('aria-expanded', 'true');
       return;
@@ -723,6 +737,13 @@ window.addEventListener('load', function () {
     var ul = document.createElement('ul');
     ul.setAttribute('role', 'listbox');
     ul.className = 'py-1';
+    if (typeof chatEnabled !== 'undefined' && chatEnabled) {
+      var askRow = document.createElement('div');
+      askRow.className = 'border-b border-gray-100 bg-green-50/60';
+      askRow.innerHTML = '<button type="button" id="search-ask-ai" class="w-full text-left px-5 py-3 flex items-center gap-3 hover:bg-green-50"><span class="flex-shrink-0 w-4 h-4 text-[#3B9C49]">&#10024;</span><span class="text-sm text-gray-900"><span class="font-semibold">Ask AI support:</span> &ldquo;' + escHtml(searchInput.value.trim()) + '&rdquo;</span></button>';
+      askRow.querySelector('button').addEventListener('click', function () { var qq = searchInput.value.trim(); closeDropdown(); openChat(qq); });
+      dropdown.appendChild(askRow);
+    }
 
     items.forEach(function (item, i) {
       var li = document.createElement('li');
@@ -860,68 +881,104 @@ window.addEventListener('load', function () {
       });
   }
 
-  /* ── AI answer (Stage 4) ──────────────────────────────────────────────
-     Asks /assist/answer for a grounded answer on Enter, or after the visitor
-     pauses. The service decides whether to show one (confidence, hours, kill
-     switch); the page only renders what it returns. Needs a Turnstile site key
-     in data-turnstile-sitekey; with none set, this block does nothing. */
-  var answerEl   = document.getElementById('assist-answer');
-  var siteKey    = answerEl ? (answerEl.getAttribute('data-turnstile-sitekey') || '') : '';
-  var ANSWER_ENDPOINT = ASSIST_ENDPOINT.replace(/\/search$/, '/answer');
-  var FEEDBACK_ENDPOINT = ASSIST_ENDPOINT.replace(/\/search$/, '/feedback');
-  var answerEnabled = !!(answerEl && siteKey && !assistDisabled);
-  var answerTimer = null, answerSeq = 0, lastAnswered = '', turnstileWidget = null, turnstileToken = '';
+  /* ── AI support chat (Stage 4/5) ─────────────────────────────────────
+     A drawer that asks /assist/answer with the conversation so far. The
+     service decides what to say (closed-book, from the guides) and whether
+     it is available at all (kill switch, hours). The launcher is shown only
+     when /assist/health says visible:true. Turnstile (invisible) gives each
+     request a one-time token. */
+  var launcher   = document.getElementById('assist-launcher');
+  var chatEl     = document.getElementById('assist-chat');
+  var siteKey    = launcher ? (launcher.getAttribute('data-turnstile-sitekey') || '') : '';
+  var API_BASE   = ASSIST_ENDPOINT.replace(/\/search$/, '');
+  var chatEnabled = false, turnstileWidget = null, turnstileToken = '', turnstileWaiters = [];
+  var convo = [], convoId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now());
+  var msgs = document.getElementById('assist-messages'), input = document.getElementById('assist-input'), sendBtn = document.getElementById('assist-send');
 
-  function hideAnswer() { if (answerEl) { answerEl.classList.add('hidden'); answerEl.removeAttribute('data-id'); } }
-  function ensureTurnstile(cb) {
-    if (!answerEnabled) return;
-    if (turnstileToken) return cb(turnstileToken);
+  if (launcher && chatEl && siteKey && !assistDisabled && typeof fetch === 'function') {
+    fetch(API_BASE + '/health').then(function (r) { return r.json(); }).then(function (h) {
+      if (h && h.visible) { chatEnabled = true; launcher.classList.remove('hidden'); }
+    }).catch(function () {});
+  }
+
+  function getToken(cb) {
+    if (turnstileToken) { var t = turnstileToken; turnstileToken = ''; return cb(t); }
+    turnstileWaiters.push(cb);
     var start = function () {
       if (turnstileWidget === null) {
         var holder = document.createElement('div'); holder.id = 'assist-turnstile'; document.body.appendChild(holder);
-        turnstileWidget = window.turnstile.render('#assist-turnstile', { sitekey: siteKey, size: 'invisible', callback: function (t) { turnstileToken = t; cb(t); }, 'error-callback': function () { answerEnabled = false; } });
+        turnstileWidget = window.turnstile.render('#assist-turnstile', { sitekey: siteKey, size: 'invisible',
+          callback: function (t) { var w = turnstileWaiters.splice(0); if (w.length) { w.forEach(function (f) { f(t); }); } else { turnstileToken = t; } },
+          'error-callback': function () { var w = turnstileWaiters.splice(0); w.forEach(function (f) { f(''); }); } });
       } else { window.turnstile.reset(turnstileWidget); }
     };
     if (window.turnstile) return start();
-    var sc = document.createElement('script'); sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; sc.async = true; sc.onload = start; sc.onerror = function () { answerEnabled = false; }; document.head.appendChild(sc);
+    var sc = document.createElement('script'); sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; sc.async = true; sc.onload = start;
+    sc.onerror = function () { var w = turnstileWaiters.splice(0); w.forEach(function (f) { f(''); }); }; document.head.appendChild(sc);
   }
-  function renderAnswer(data) {
-    if (!data || !data.shown) { hideAnswer(); return; }
-    document.getElementById('assist-answer-text').textContent = data.answer;
-    var srcEl = document.getElementById('assist-answer-sources'); srcEl.innerHTML = '';
-    (data.sources || []).forEach(function (s) {
-      var a = document.createElement('a'); a.href = String(s.url || '#').replace(/^https?:\/\/(www\.)?click2call\.com\.au/, ''); a.textContent = s.title || s.slug;
-      a.className = 'text-xs px-2.5 py-1 rounded-full bg-green-50 text-[#2E7A3A] border border-green-200 hover:bg-green-100'; srcEl.appendChild(a);
+
+  function addMsg(role, html) {
+    var wrap = document.createElement('div'); wrap.className = role === 'user' ? 'flex justify-end' : 'flex justify-start';
+    var bubble = document.createElement('div');
+    bubble.className = role === 'user' ? 'max-w-[85%] rounded-2xl rounded-br-sm bg-[#3B9C49] text-white px-4 py-2.5 whitespace-pre-line' : 'max-w-[92%] rounded-2xl rounded-bl-sm bg-gray-100 text-gray-900 px-4 py-3';
+    bubble.innerHTML = html; wrap.appendChild(bubble); msgs.appendChild(wrap); msgs.scrollTop = msgs.scrollHeight; return bubble;
+  }
+  function renderReply(data) {
+    var text = escHtml(data.answer || '').replace(/\n/g, '<br>');
+    var chips = (data.sources || []).map(function (s) {
+      return '<a href="' + escHtml(String(s.url || '#').replace(/^https?:\/\/(www\.)?click2call\.com\.au/, '')) + '" class="text-xs px-2.5 py-1 rounded-full bg-white text-[#2E7A3A] border border-green-200 hover:bg-green-50">' + escHtml(s.title || s.slug) + '</a>';
+    }).join(' ');
+    var support = data.needs_support ? '<a class="inline-block mt-2 text-xs font-semibold text-[#2E7A3A] underline" href="mailto:support@click2call.com.au?subject=' + encodeURIComponent('Support question') + '">Email support about this &rarr;</a>' : '';
+    var vote = data.id ? '<span class="flex items-center gap-1 mt-2 text-gray-400" data-vote-for="' + data.id + '"><button type="button" data-vote="1" class="p-1 rounded hover:bg-white hover:text-[#3B9C49]" aria-label="Helpful">&#128077;</button><button type="button" data-vote="-1" class="p-1 rounded hover:bg-white hover:text-red-500" aria-label="Not helpful">&#128078;</button></span>' : '';
+    addMsg('assistant', '<div class="whitespace-pre-line">' + text + '</div>' + (chips ? '<div class="mt-3 flex flex-wrap gap-1.5">' + chips + '</div>' : '') + support + vote);
+  }
+  function ask(question) {
+    var q = String(question || '').trim(); if (!q || !chatEnabled) return;
+    addMsg('user', escHtml(q)); convo.push({ role: 'user', content: q });
+    var thinking = addMsg('assistant', '<span class="text-gray-400">Checking the guides&hellip;</span>');
+    sendBtn.disabled = true; input.value = '';
+    var done = false, timer = setTimeout(function () { if (!done) { done = true; thinking.innerHTML = 'AI support is taking too long. Try the guides above or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'; sendBtn.disabled = false; } }, 15000);
+    getToken(function (token) {
+      if (!token) { done = true; clearTimeout(timer); thinking.innerHTML = 'AI support is not available in this browser right now. Try the guides above or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'; sendBtn.disabled = false; return; }
+      fetch(API_BASE + '/answer', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ q: q, token: token, history: convo.slice(0, -1).slice(-8), conversation_id: convoId }) })
+        .then(function (r) { if (r.status === 503) throw new Error('off'); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (data) {
+          if (done) return; done = true; clearTimeout(timer); thinking.parentNode.remove();
+          if (data && data.shown) { renderReply(data); convo.push({ role: 'assistant', content: data.answer }); }
+          else if (data && data.reason === 'turn_limit') { addMsg('assistant', 'That\'s the limit for one chat. Start a new one, or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'); }
+          else { addMsg('assistant', 'I couldn\'t find that in the help guides. Try different words, pick a guide from the search results, or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'); convo.pop(); }
+          sendBtn.disabled = false; input.focus();
+        })
+        .catch(function () { if (done) return; done = true; clearTimeout(timer); thinking.innerHTML = 'AI support isn\'t available right now (Mon&ndash;Fri 9&ndash;5 AEST). The guides above are always here, or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'; sendBtn.disabled = false; convo.pop(); });
     });
-    answerEl.setAttribute('data-id', data.id || ''); answerEl.classList.remove('hidden');
   }
-  function askAnswer(q) {
-    if (!answerEnabled || q.length < 12 || q === lastAnswered) return;
-    var seq = ++answerSeq;
-    ensureTurnstile(function (token) {
-      turnstileToken = '';
-      fetch(ANSWER_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ q: q, token: token }) })
-        .then(function (r) { if (r.status === 503) { answerEnabled = false; throw new Error('off'); } if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-        .then(function (data) { if (seq !== answerSeq) return; lastAnswered = q; renderAnswer(data); })
-        .catch(function () { if (seq === answerSeq) hideAnswer(); });
-    });
+  function openChat(seed) {
+    if (!chatEnabled) return;
+    chatEl.classList.remove('hidden'); document.body.style.overflow = 'hidden';
+    if (!msgs.children.length) addMsg('assistant', 'Hi &mdash; ask me how to set up or use anything in your Click2Call phone system. I answer from the help guides and link the ones I used.');
+    if (seed) { ask(seed); } else { input.focus(); }
   }
-  if (answerEl) {
-    answerEl.addEventListener('click', function (e) {
+  function closeChat() { chatEl.classList.add('hidden'); document.body.style.overflow = ''; }
+  if (chatEl) {
+    document.getElementById('assist-open').addEventListener('click', function () { closeDropdown(); openChat(searchInput.value.trim().length >= 12 ? searchInput.value.trim() : ''); });
+    document.getElementById('assist-close').addEventListener('click', closeChat);
+    document.getElementById('assist-chat-backdrop').addEventListener('click', closeChat);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !chatEl.classList.contains('hidden')) closeChat(); });
+    document.getElementById('assist-form').addEventListener('submit', function (e) { e.preventDefault(); ask(input.value); });
+    input.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); ask(input.value); } });
+    msgs.addEventListener('click', function (e) {
       var b = e.target.closest('button[data-vote]'); if (!b) return;
-      var id = Number(answerEl.getAttribute('data-id')); if (!id) return;
-      fetch(FEEDBACK_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: id, vote: Number(b.getAttribute('data-vote')) }) }).catch(function () {});
-      answerEl.querySelectorAll('button[data-vote]').forEach(function (x) { x.disabled = true; x.classList.add('opacity-40'); });
+      var holder = b.closest('[data-vote-for]'); var id = Number(holder.getAttribute('data-vote-for'));
+      fetch(API_BASE + '/feedback', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: id, vote: Number(b.getAttribute('data-vote')) }) }).catch(function () {});
+      holder.querySelectorAll('button').forEach(function (x) { x.disabled = true; x.classList.add('opacity-40'); });
     });
-    searchInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') { clearTimeout(answerTimer); askAnswer(searchInput.value.trim()); } });
+    searchInput.addEventListener('keydown', function (e) { if (e.key === 'Enter' && chatEnabled) { e.preventDefault(); closeDropdown(); openChat(searchInput.value.trim()); } });
   }
 
   function runSearch() {
     var q = searchInput.value.toLowerCase().trim();
     filterCards(q);
-    if (!q) { closeDropdown(); hideAnswer(); return; }
-    clearTimeout(answerTimer);
-    answerTimer = setTimeout(function () { askAnswer(searchInput.value.trim()); }, 1200);
+    if (!q) { closeDropdown(); return; }
     if (assistDisabled || q.length < 2) { showDropdown(localMatches(q).slice(0, 8), q); return; }
     clearTimeout(assistTimer);
     assistTimer = setTimeout(function () { assistSearch(q); }, 220);
