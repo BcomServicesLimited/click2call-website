@@ -723,6 +723,7 @@ window.addEventListener('load', function () {
   }
 
   function showDropdown(items, q) {
+    if (typeof chatEl !== 'undefined' && chatEl && !chatEl.classList.contains('hidden')) { closeDropdown(); return; }
     dropdown.innerHTML = '';
     activeIndex = -1;
 
@@ -972,7 +973,7 @@ window.addEventListener('load', function () {
       fetch(API_BASE + '/feedback', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: id, vote: Number(b.getAttribute('data-vote')) }) }).catch(function () {});
       holder.querySelectorAll('button').forEach(function (x) { x.disabled = true; x.classList.add('opacity-40'); });
     });
-    searchInput.addEventListener('keydown', function (e) { if (e.key === 'Enter' && chatEnabled) { e.preventDefault(); closeDropdown(); openChat(searchInput.value.trim()); } });
+    searchInput.addEventListener('keydown', function (e) { if (e.key === 'Enter' && chatEnabled) { e.preventDefault(); clearTimeout(assistTimer); assistSeq++; closeDropdown(); openChat(searchInput.value.trim()); } });
   }
 
   function runSearch() {
