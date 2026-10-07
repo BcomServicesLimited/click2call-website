@@ -517,6 +517,24 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.click2call.com.au/help/sip-trunk-pbx-setup</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/asterisk-freepbx-pjsip</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/3cx-sip-trunk</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.click2call.com.au/help/how-to-set-up-softphone</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
