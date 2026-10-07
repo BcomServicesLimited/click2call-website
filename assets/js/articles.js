@@ -24,6 +24,61 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/sip-settings-for-devices-and-pbx",
+    title:    "SIP Settings for Desk Phones, Adapters and PBX Systems",
+    desc:     "Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide.",
+    tags:     "sip settings desk phone ata adapter pbx username password proxy server port 5060 50600 5061 tls tcp udp codecs g722 g711 dtmf firewall srtp peering iax2 registration",
+    category: "devices",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/sip-alg-one-way-audio",
+    title:    "Fixing One-Way Audio and Dropped Registrations (SIP ALG and NAT)",
+    desc:     "If calls connect but you can't hear the other person (or they can't hear you), if incoming calls ring but go silent when answered, or if your phone keeps.",
+    tags:     "one way audio no audio silence answered sip alg nat router registration dropping tls 50600 firewall port forwarding",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/ghost-and-spam-calls",
+    title:    "Stopping Ghost and Spam Calls",
+    desc:     "If your phone rings and nobody is there, or you get calls from numbers like \"100\" or \"blocked\" several times a day, there are two possible causes. Which.",
+    tags:     "ghost calls silent calls spam robocall blocked anonymous blacklist whitelist reject overseas mobiles call screening port forwarding scanner",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/dtmf-keypad-presses-not-working",
+    title:    "Keypad Presses Not Recognised (DTMF Problems)",
+    desc:     "If callers press options in your auto attendant and nothing happens, or you can't enter a PIN or menu option when you call a bank or another business.",
+    tags:     "dtmf keypad tones digits ivr menu auto attendant pin rfc2833 sip info inband",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/star-codes",
+    title:    "Star Codes: Control Your Phone from the Handset",
+    desc:     "You can change many settings by dialling a code from any phone on your account, without logging in to the portal. Where you see xxx, enter a phone number.",
+    tags:     "star codes feature codes handset voicemail forwarding do not disturb caller id block queue login transfer record park pickup redial",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/webhooks-and-api-during-your-trial",
     title:    "Using the API and Webhooks on a Trial Account",
     desc:     "The trial includes the full API and webhooks. Set up a webhook, see the call states and fields it sends, and check why one did not arrive.",

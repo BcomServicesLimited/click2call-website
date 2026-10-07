@@ -487,6 +487,36 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/sip-alg-one-way-audio</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/ghost-and-spam-calls</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/dtmf-keypad-presses-not-working</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/star-codes</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.click2call.com.au/help/how-to-set-up-softphone</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
