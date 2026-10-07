@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="indexnow-key" content="c545b40a993f47dc8e19d97473df5270fb62e2f6">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <title>Using the API and Webhooks on a Trial Account | Help Centre | Click2Call</title>
+  <link rel="canonical" href="https://www.click2call.com.au/help/webhooks-and-api-during-your-trial" />
+  <meta name="description" content="What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don&#x27;t arrive, and what to send support.">
+  <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/brand.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.click2call.com.au/help/webhooks-and-api-during-your-trial">
+  <meta property="og:title" content="Using the API and Webhooks on a Trial Account | Help Centre | Click2Call">
+  <meta property="og:description" content="What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don&#x27;t arrive, and what to send support.">
+  <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "dateModified": "2026-10-07",
+  "name": "Using the API and Webhooks on a Trial Account",
+  "description": "What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don't arrive, and what to send support.",
+  "url": "https://www.click2call.com.au/help/webhooks-and-api-during-your-trial",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Make a test call you can identify",
+      "text": "Call your Click2Call number from another phone and note the time, the calling number and whether it was answered."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Confirm the call reached your number",
+      "text": "In the portal open Account then Records and find the call by time and caller."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Check the webhook delivery log",
+      "text": "Find the delivery for your test call in the webhook delivery log."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Read the entry for a webhook ID",
+      "text": "A 2xx status means your endpoint accepted it; 4xx or 5xx means it rejected or failed; no entry means the event was not sent."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Check your endpoint's own logs",
+      "text": "Look for a POST at the time of the call and make your receiver tolerate duplicate deliveries."
+    }
+  ]
+}
+</script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Using the API and Webhooks on a Trial Account | Help Centre | Click2Call">
+  <meta name="twitter:description" content="What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don&#x27;t arrive, and what to send support.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.click2call.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Help Centre",
+      "item": "https://www.click2call.com.au/help/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Using the API and Webhooks on a Trial Account",
+      "item": "https://www.click2call.com.au/help/webhooks-and-api-during-your-trial"
+    }
+  ]
+}
+</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ST0JCEZ54X');
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+<!-- ===================== HEADER ===================== -->
+<header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100" id="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a aria-label="Click2Call home" class="flex-shrink-0 flex items-center" href="/">
+<img alt="Click2Call" class="h-14 w-auto" fetchpriority="high" height="56" src="/assets/images/click2call_header_logo_transparent.webp" width="252"/>
+</a>
+<nav aria-label="Primary navigation" class="hidden lg:flex items-center gap-1">
+<a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/">Home</a>
+<div class="relative" id="services-menu-wrapper">
+<button aria-controls="services-dropdown" aria-expanded="false" aria-haspopup="true" class="c2c-nav-link flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49]" id="services-btn">
+            Services
+            <svg aria-hidden="true" class="w-4 h-4 transition-transform duration-200" fill="none" id="services-chevron" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div aria-labelledby="services-btn" class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-1 opacity-0 invisible translate-y-1 transition-all duration-200 ease-out z-50" id="services-dropdown" role="menu">
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors rounded-t-xl" href="/cloud-pbx/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center"><svg class="w-4 h-4 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">Cloud PBX</p><p class="text-xs text-gray-500 mt-0.5">Hosted business phone system</p></div>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/call-centre/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-rose-100 flex items-center justify-center"><svg class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 18v-6a6 6 0 00-12 0v6m12 0a2 2 0 01-2 2h-1a1 1 0 01-1-1v-4a1 1 0 011-1h3m-12 0a2 2 0 002 2h1a1 1 0 001-1v-4a1 1 0 00-1-1H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">Call Centre</p><p class="text-xs text-gray-500 mt-0.5">Queues, live dashboard &amp; routing</p></div>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/ai-voice-tools/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center"><svg class="w-4 h-4 text-[#3850ED]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">AI Voice Tools</p><p class="text-xs text-gray-500 mt-0.5">Transcription &amp; sentiment analysis</p></div>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/ai-receptionist/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center"><svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">AI Receptionist</p><p class="text-xs text-gray-500 mt-0.5">24/7 automated call answering</p></div>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/microsoft-teams-calling/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center"><svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">Microsoft Teams Calling</p><p class="text-xs text-gray-500 mt-0.5">Direct routing for Teams</p></div>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/api/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center"><svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">Developer API</p><p class="text-xs text-gray-500 mt-0.5">Build apps with your phone system</p></div>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-[#3B9C49] transition-colors rounded-b-xl" href="/sip-trunks/" role="menuitem">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center"><svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
+<div><p class="font-semibold">SIP Trunks</p><p class="text-xs text-gray-500 mt-0.5">Connect your own IP PBX</p></div>
+</a>
+</div>
+</div>
+<a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/pricing/">Pricing</a>
+<a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/compare/">Switch</a>
+<a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/about/">About</a>
+<a class="c2c-nav-link px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150" href="/support/">Support</a>
+</nav>
+<div class="hidden lg:flex items-center gap-3">
+<a class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] bg-transparent hover:bg-green-50 transition-colors duration-150" href="https://portal.click2call.com.au/login.php" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">
+          Login to Portal
+        </a>
+<a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center px-5 py-2 rounded-lg bg-[#3B9C49] hover:bg-[#2E7A3A] transition-colors duration-150 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus-visible:ring-offset-2" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
+  <span class="text-sm font-semibold text-white leading-tight">Start Free Trial</span>
+  <span class="text-[10px] font-normal text-white/75 leading-tight">7 days &middot; no card required</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-gray-600 hover:text-[#3B9C49] hover:bg-green-50 transition-colors duration-150 focus:outline-none" id="mobile-menu-btn">
+<svg aria-hidden="true" class="w-6 h-6" fill="none" id="hamburger-icon" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg aria-hidden="true" class="w-6 h-6 hidden" fill="none" id="close-icon" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<div aria-label="Mobile navigation" class="hidden lg:hidden border-t border-gray-100 bg-white" id="mobile-menu">
+<div class="max-w-7xl mx-auto px-4 py-4 space-y-1">
+<a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/">Home</a>
+<div>
+<button aria-controls="mobile-services-list" aria-expanded="false" class="w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors focus:outline-none" id="mobile-services-btn">
+          Services
+          <svg aria-hidden="true" class="w-4 h-4 transition-transform duration-200" fill="none" id="mobile-services-chevron" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="hidden mt-1 ml-3 pl-3 border-l-2 border-green-200 space-y-0.5" id="mobile-services-list">
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/cloud-pbx/">Cloud PBX</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/call-centre/">Call Centre</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/ai-voice-tools/">AI Voice Tools</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/ai-receptionist/">AI Receptionist</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/microsoft-teams-calling/">Microsoft Teams Calling</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/api/">Developer API</a>
+<a class="block px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/sip-trunks/">SIP Trunks</a>
+</div>
+</div>
+<a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/pricing/">Pricing</a>
+<a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/compare/">Switch</a>
+<a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/about/">About</a>
+<a class="block px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-green-50 hover:text-[#3B9C49] transition-colors" href="/support/">Support</a>
+<div class="pt-3 pb-1 grid grid-cols-2 gap-3">
+<a class="flex items-center justify-center px-4 py-2.5 text-sm font-semibold rounded-lg border-2 border-[#3B9C49] text-[#3B9C49] hover:bg-green-50 transition-colors" href="https://portal.click2call.com.au/login.php" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">
+          Login to Portal
+        </a>
+<a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center px-5 py-2 rounded-lg bg-[#3B9C49] hover:bg-[#2E7A3A] transition-colors duration-150 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3B9C49] focus-visible:ring-offset-2" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
+  <span class="text-sm font-semibold text-white leading-tight">Start Free Trial</span>
+  <span class="text-[10px] font-normal text-white/75 leading-tight">7 days &middot; no card required</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- =================== END HEADER =================== -->
+
+<!--
+  ── Header JavaScript ──
+  Paste this <script> block just before </body> on each page,
+  or consolidate into a shared site.js file.
+-->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Services dropdown (desktop) ── */
+  var wrapper  = document.getElementById('services-menu-wrapper');
+  var btn      = document.getElementById('services-btn');
+  var dropdown = document.getElementById('services-dropdown');
+  var chevron  = document.getElementById('services-chevron');
+
+  function openDropdown() {
+    dropdown.classList.remove('opacity-0', 'invisible', 'translate-y-1');
+    dropdown.classList.add('opacity-100', 'visible', 'translate-y-0');
+    btn.setAttribute('aria-expanded', 'true');
+    chevron.style.transform = 'rotate(180deg)';
+  }
+  function closeDropdown() {
+    dropdown.classList.add('opacity-0', 'invisible', 'translate-y-1');
+    dropdown.classList.remove('opacity-100', 'visible', 'translate-y-0');
+    btn.setAttribute('aria-expanded', 'false');
+    chevron.style.transform = '';
+  }
+
+  if (wrapper) {
+    wrapper.addEventListener('mouseenter', openDropdown);
+    wrapper.addEventListener('mouseleave', closeDropdown);
+    btn.addEventListener('click', function () {
+      dropdown.classList.contains('invisible') ? openDropdown() : closeDropdown();
+    });
+    // Close on outside click
+    document.addEventListener('click', function (e) {
+      if (!wrapper.contains(e.target)) closeDropdown();
+    });
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  }
+  /* ── Mobile hamburger ── */
+  var mobileBtn  = document.getElementById('mobile-menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var hamIcon    = document.getElementById('hamburger-icon');
+  var closeIcon  = document.getElementById('close-icon');
+
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', function () {
+      var isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      hamIcon.classList.toggle('hidden', !isOpen ? false : true);
+      closeIcon.classList.toggle('hidden', !isOpen ? true : false);
+      mobileBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  /* ── Mobile services accordion ── */
+  var mobileServicesBtn  = document.getElementById('mobile-services-btn');
+  var mobileServicesList = document.getElementById('mobile-services-list');
+  var mobileChevron      = document.getElementById('mobile-services-chevron');
+
+  if (mobileServicesBtn) {
+    mobileServicesBtn.addEventListener('click', function () {
+      var isOpen = !mobileServicesList.classList.contains('hidden');
+      mobileServicesList.classList.toggle('hidden');
+      mobileChevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+      mobileServicesBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  /* ── Active page highlight ── */
+  // Automatically highlights the nav link whose href matches the current page.
+  var currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  document.querySelectorAll('.c2c-nav-link').forEach(function (el) {
+    var href = el.getAttribute('href');
+    if (!href) return;
+    var linkPath = href.replace(/\/$/, '') || '/';
+    if (currentPath === linkPath || (linkPath !== '/' && currentPath.startsWith(linkPath))) {
+      el.classList.add('text-[#3B9C49]', 'font-semibold');
+      el.classList.remove('text-gray-700');
+    }
+  });
+
+}());
+</script>
+
+<main>
+  <!-- Article header -->
+  <div class="bg-white border-b border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <nav aria-label="Breadcrumb" class="mb-4">
+        <ol class="flex items-center gap-2 text-sm text-gray-400">
+          <li><a href="/" class="hover:text-gray-600 transition-colors">Home</a></li>
+          <li><span class="text-gray-300">/</span></li>
+          <li><a href="/help/" class="hover:text-gray-600 transition-colors">Help Centre</a></li>
+          <li><span class="text-gray-300">/</span></li>
+          <li><a href="/help/?cat=getting-started" class="hover:text-gray-600 transition-colors">Getting Started</a></li>
+          <li><span class="text-gray-300">/</span></li>
+          <li class="text-gray-700 font-medium truncate">API and Webhooks on a Trial</li>
+        </ol>
+      </nav>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Getting Started</span>
+        <span class="text-xs text-gray-400">6 min read</span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Using the API and Webhooks on a Trial Account</h1>
+      <p class="text-gray-600 leading-relaxed">Your Click2Call trial includes full API and webhook access from the day you sign up. This guide explains what is available, how to check whether a webhook was sent, the usual reasons one does not arrive, and what to send support if you are still stuck.</p>
+<p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
+    </div>
+  </div>
+
+  <!-- Article body -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <div class="mb-8 rounded-xl bg-blue-50 border border-blue-200 px-5 py-4">
+      <p class="text-sm font-semibold text-blue-900 mb-1">Who this guide is for</p>
+      <p class="text-sm text-blue-800 leading-relaxed">Developers and businesses testing an integration during the 7-day free trial &mdash; a CRM hook, an automation in Zapier or Make, or your own app that reacts to calls. API and webhook configuration is self-service: Click2Call supports the platform and its documentation, but not your integration code.</p>
+    </div>
+    <h2 id="available-on-trial" class="text-2xl font-bold text-gray-900 mt-12 mb-4">What is available during the 7-day free trial?</h2>
+<p class="text-gray-600 leading-relaxed mb-4">The trial includes the same developer access as a paid account, from the moment the account is created:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>API access</strong> &mdash; the JSON REST API is available immediately. Documentation is at <a href="https://portal.click2call.com.au/apidocs" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">portal.click2call.com.au/apidocs</a>.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>Webhooks</strong> &mdash; configurable from day one, including the <code>transcription_ready</code> event.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>$11 of trial credit</strong> &mdash; enough to activate one local number ($10) and make a few test calls. Inbound calls are free, so you can test incoming-call webhooks for the whole trial.</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">What the trial does not include: help configuring the API, webhooks or a third-party integration (configuration is self-service during the trial), and Microsoft Teams Direct Routing. Limits that apply to trial accounts: <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: any API rate limits, webhook limits or features withheld on trial accounts — or confirm there are none]</mark>.</p>
+    <h2 id="webhook-events" class="text-2xl font-bold text-gray-900 mt-12 mb-4">Which webhook events can I receive?</h2>
+
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200">
+      <table class="w-full text-sm min-w-[32rem]">
+        <thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Group</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Events</th></tr></thead>
+        <tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800">Incoming calls</td><td class="px-4 py-2.5 text-gray-600">Ringing, Answered, Ended, Missed</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800">Outgoing calls</td><td class="px-4 py-2.5 text-gray-600">Ringing, Answered, Ended, Unattended (not answered)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800">AI analysis</td><td class="px-4 py-2.5 text-gray-600"><code>transcription_ready</code> &mdash; the recording has been processed and the AI transcription generated</td></tr></tbody>
+      </table>
+    </div><p class="text-gray-600 leading-relaxed mb-4">Each webhook posts a JSON payload to the URL you set, with a Base64-encoded secret token in the <code>Authorization</code> header. You can set a webhook on one number or across every number on the account. In the portal, webhooks are configured under <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: portal menu path where webhooks are added and edited]</mark>.</p>
+    <h2 id="check-a-webhook" class="text-2xl font-bold text-gray-900 mt-12 mb-4">How do I check whether a webhook fired?</h2>
+<p class="text-gray-600 leading-relaxed mb-4">Work from the call outward: first prove the call happened, then whether Click2Call sent the event, then whether your endpoint received it.</p>
+    <div class="flex gap-5 mb-8">
+      <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+      <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Make a test call you can identify</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Call your Click2Call number from another phone and note the time, the number you called from and whether the call was answered. A Missed event and an Answered event are different webhooks, so decide which one you are testing.</p>
+      </div>
+    </div>
+    <div class="flex gap-5 mb-8">
+      <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+      <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Confirm the call reached your number</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">In the portal, open <strong>Account &rarr; Records</strong> and find the call by time and caller. If it is not there, the problem is the call, not the webhook &mdash; see the reasons below.</p>
+      </div>
+    </div>
+    <div class="flex gap-5 mb-8">
+      <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+      <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Check the webhook delivery log</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Delivery logs are at <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: where webhook delivery logs live in the portal (menu path)]</mark>. Find the entry for your test call. For each delivery, the log shows <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: which fields the log shows — e.g. time sent, event type, target URL, HTTP status returned, retries]</mark>.</p>
+      </div>
+    </div>
+    <div class="flex gap-5 mb-8">
+      <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
+      <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Read the entry for a webhook ID</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Each delivery has a webhook ID <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: name and format of the webhook ID, and where it appears (log and/or payload)]</mark>. A 2xx status means your endpoint accepted it; a 4xx or 5xx means your endpoint rejected or failed it; no entry at all means the event was not sent. Retries on failure: <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: whether failed deliveries are retried, how many times and over what period]</mark>.</p>
+      </div>
+    </div>
+    <div class="flex gap-5 mb-8">
+      <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
+      <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Check your endpoint's own logs</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Look for a POST at the time of the call. Your server's access log is the best evidence: if the delivery log shows a send and your server shows nothing, something between the two (DNS, a firewall, a proxy) dropped it. Build your receiver to tolerate the same event arriving more than once &mdash; deduplicate on the call ID in the payload.</p>
+      </div>
+    </div>
+    <h2 id="common-reasons" class="text-2xl font-bold text-gray-900 mt-12 mb-4">Why didn't my webhook arrive?</h2>
+
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">Your endpoint is not reachable from the internet</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">Click2Call posts from the internet, so <code>localhost</code>, a private IP address, a machine behind a firewall or a development server that is switched off will never receive it. Use a public HTTPS address, or a tunnelling tool while you develop. Certificate requirements: <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: whether the endpoint must be HTTPS with a publicly trusted certificate, and whether self-signed certificates are rejected]</mark>.</p>
+    </div>
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">The URL is wrong, or set on a different number</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">Check for typos, <code>http</code> versus <code>https</code>, the path and a trailing slash. If the webhook is set on one number, calls to a different number &mdash; or to an extension &mdash; will not trigger it. Set it across all numbers while testing if you are unsure.</p>
+    </div>
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">Your endpoint rejected it</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">If your receiver checks the <code>Authorization</code> header, make sure it decodes the Base64 secret token the same way it was set. Return a 2xx status quickly and do slow work afterwards; a receiver that times out looks like a failure.</p>
+    </div>
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">No transcription_ready event</h3>
+      <p class="text-gray-600 leading-relaxed mb-4"><code>transcription_ready</code> fires after a call recording has been processed. If the call was not recorded, or was too short to transcribe, there is nothing to send. Expect it a little after the call ends, not during it.</p>
+    </div>
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">The trial credit has run out</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">When the account balance runs out, service can be suspended until it is topped up, and calls that do not connect produce no call events. Check the balance on the portal Summary page and see <a href="/help/how-to-add-account-credit" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Adding Account Credit</a>.</p>
+    </div>
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">The account is below its IOU limit</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">Accounts can be allowed to run a negative balance up to an IOU limit. <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: plain-language explanation of the IOU limit for customers, and exactly what stops (calls, webhooks, API) when an account reaches it]</mark> Top up the balance and test again.</p>
+    </div>
+    <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
+      <h3 class="font-bold text-gray-900 mb-2">The account is not active yet</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">New accounts are activated within 24 hours of signup, and identity verification usually takes a few hours. Until the account and number are active, test calls will not connect.</p>
+    </div>
+    <h2 id="contact-support" class="text-2xl font-bold text-gray-900 mt-12 mb-4">What should I send support if it still isn't working?</h2>
+<p class="text-gray-600 leading-relaxed mb-4">Email <a href="mailto:support@click2call.com.au" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">support@click2call.com.au</a> with:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your account number and the Click2Call number you called</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The date and time of the test call (AEST), and the number you called from</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The event you expected (for example Incoming &ndash; Answered, or <code>transcription_ready</code>)</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The webhook ID or the delivery-log entry, if there is one</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your endpoint URL &mdash; <strong>never</strong> your API token or the webhook secret</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>What your endpoint logged at that time: the status code it returned, or that it received nothing</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">Support can confirm whether Click2Call sent the event and what your endpoint returned. Debugging your integration code is not included in support.</p>
+
+    <!-- Related articles -->
+    <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
+      <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <a href="/help/understanding-your-free-trial" class="group flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
+          <svg class="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span class="text-sm font-medium text-gray-700 group-hover:text-[#3B9C49] transition-colors">Understanding Your Free Trial</span>
+        </a>
+        <a href="/help/how-to-connect-ai-voice-agent" class="group flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
+          <svg class="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span class="text-sm font-medium text-gray-700 group-hover:text-[#3B9C49] transition-colors">Connecting an AI Voice Agent</span>
+        </a>
+        <a href="/help/how-to-add-account-credit" class="group flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
+          <svg class="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#3B9C49] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span class="text-sm font-medium text-gray-700 group-hover:text-[#3B9C49] transition-colors">Adding Account Credit</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Still need help CTA -->
+    <div class="bg-[#111827] rounded-2xl p-8 text-center">
+      <h2 class="text-xl font-bold text-white mb-2">Still need help?</h2>
+      <p class="text-gray-400 text-sm mb-5">Our Australian support team is available to assist you.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/support/" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-[#3B9C49] text-white text-sm font-semibold hover:bg-[#2E7A3A] transition-colors duration-150">Contact Support</a>
+        <a href="tel:1300884879" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl border-2 border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition-colors duration-150" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">Call 1300 884 879</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer aria-label="Site footer" class="text-gray-400" style="background-color: #111827;">
+<!-- ── Main grid ── -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
+<!-- ── Column 1: Logo + Tagline + Social ── -->
+<div class="sm:col-span-2 lg:col-span-1">
+<!-- Logo — CSS brightness filter inverts to white on dark bg -->
+<a aria-label="Click2Call home" href="/">
+<img alt="Click2Call" class="h-9 w-auto mb-4" height="36" loading="lazy" src="/assets/images/click2call_header_logo_transparent.webp" width="180"/>
+</a>
+<p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
+          Australia's AI-enhanced Cloud PBX and VoIP provider. Enterprise-grade reliability for businesses of all sizes.
+        </p>
+
+</div>
+<!-- ── Column 2: Services ── -->
+<div>
+<h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Services</h3>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/cloud-pbx/">Cloud PBX</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/ai-voice-tools/">AI Voice Tools</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/ai-receptionist/">AI Receptionist</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/api/">Developer API</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/sip-trunks/">SIP Trunks</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/microsoft-teams-calling/">Microsoft Teams Calling</a></li>
+</ul>
+</div>
+<!-- ── Column 3: Company ── -->
+<div>
+<h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Company</h3>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/about/">About</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/blog/">Blog</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/case-studies/">Case Studies</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/compare/#compare-providers">Compare Providers</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/number-porting/">Number Porting</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/contact/">Contact</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/support/">Support</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/faq/">FAQ</a></li>
+</ul>
+</div>
+<!-- ── Column 4: Locations ── -->
+<div>
+<h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Locations</h3>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-australia/">VoIP Australia</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-sydney/">Sydney</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-melbourne/">Melbourne</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-brisbane/">Brisbane</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-gold-coast/">Gold Coast</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/voip-perth/">Perth</a></li>
+<li><a class="text-white font-semibold hover:text-[#3B9C49] transition-colors duration-150" href="/voip-australia/">All regions →</a></li>
+</ul>
+</div>
+<!-- ── Column 5: Contact Details ── -->
+<div>
+<h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Contact</h3>
+<ul class="space-y-3 text-sm">
+<!-- Phone -->
+<li class="flex items-start gap-2.5">
+<svg aria-hidden="true" class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a class="text-gray-400 hover:text-white transition-colors duration-150 font-medium" href="tel:1300884879" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">
+              1300 884 879
+            </a>
+</li>
+<!-- Email -->
+<li class="flex items-start gap-2.5">
+<svg aria-hidden="true" class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a class="text-gray-400 hover:text-white transition-colors duration-150 break-all" href="mailto:support@click2call.com.au">
+              support@click2call.com.au
+            </a>
+</li>
+<!-- ABN + Entity -->
+<li class="flex items-start gap-2.5">
+<svg aria-hidden="true" class="w-4 h-4 mt-0.5 flex-shrink-0 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<div class="text-gray-500 text-xs leading-relaxed">
+<p class="text-gray-400 font-medium">Bcom Services Pty Ltd</p>
+<p>ABN: 92 636 893 108</p>
+</div>
+</li>
+</ul>
+</div>
+</div><!-- /grid -->
+</div><!-- /max-w -->
+<!-- ── Divider ── -->
+<div class="border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+<!-- Copyright -->
+<p>
+          © 2026 Click2Call trading as Bcom Services Pty Ltd. All rights reserved.
+        </p>
+<!-- Legal links -->
+<div class="flex items-center gap-4">
+<a class="hover:text-gray-300 transition-colors duration-150" href="/privacy/">Privacy Policy</a>
+<span aria-hidden="true" class="text-gray-700">•</span>
+<a class="hover:text-gray-300 transition-colors duration-150" href="/terms/">Terms &amp; Conditions</a>
+<span aria-hidden="true" class="text-gray-700">•</span>
+<a class="hover:text-gray-300 transition-colors duration-150" href="/financial-hardship/">Financial Hardship Policy</a>
+<span aria-hidden="true" class="text-gray-700">&bull;</span>
+<a class="hover:text-gray-300 transition-colors duration-150" href="/sitemap.xml">Sitemap</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- =================== END FOOTER =================== -->
+
+<script>
+(function () {
+  var sW=document.getElementById('services-menu-wrapper'),sB=document.getElementById('services-btn'),sD=document.getElementById('services-dropdown'),sC=document.getElementById('services-chevron');
+  function openS(){sD.classList.remove('opacity-0','invisible','translate-y-1');sD.classList.add('opacity-100','visible','translate-y-0');sB.setAttribute('aria-expanded','true');sC.style.transform='rotate(180deg)';}
+  function closeS(){sD.classList.add('opacity-0','invisible','translate-y-1');sD.classList.remove('opacity-100','visible','translate-y-0');sB.setAttribute('aria-expanded','false');sC.style.transform='';}
+  if(sW){sW.addEventListener('mouseenter',openS);sW.addEventListener('mouseleave',closeS);sB.addEventListener('click',function(){sD.classList.contains('invisible')?openS():closeS();});document.addEventListener('click',function(e){if(!sW.contains(e.target))closeS();});}
+  var mB=document.getElementById('mobile-menu-btn'),mM=document.getElementById('mobile-menu'),hI=document.getElementById('hamburger-icon'),cI=document.getElementById('close-icon');
+  if(mB){mB.addEventListener('click',function(){var o=!mM.classList.contains('hidden');mM.classList.toggle('hidden');hI.classList.toggle('hidden',!o?false:true);cI.classList.toggle('hidden',!o?true:false);mB.setAttribute('aria-expanded',String(!o));});}
+  var msB=document.getElementById('mobile-services-btn'),msL=document.getElementById('mobile-services-list'),msC=document.getElementById('mobile-services-chevron');
+  if(msB){msB.addEventListener('click',function(){var o=!msL.classList.contains('hidden');msL.classList.toggle('hidden');msC.style.transform=o?'':'rotate(180deg)';msB.setAttribute('aria-expanded',String(!o));});}
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  var tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.getAttribute('aria-controls');
+      tabBtns.forEach(function(b) {
+        b.setAttribute('aria-selected', 'false');
+        b.classList.remove('border-[#3B9C49]', 'bg-[#3B9C49]', 'text-white');
+        b.classList.add('border-gray-200', 'bg-white', 'text-gray-700');
+      });
+      tabPanels.forEach(function(p) { p.classList.add('hidden'); });
+      btn.setAttribute('aria-selected', 'true');
+      btn.classList.add('border-[#3B9C49]', 'bg-[#3B9C49]', 'text-white');
+      btn.classList.remove('border-gray-200', 'bg-white', 'text-gray-700');
+      document.getElementById(target).classList.remove('hidden');
+    });
+  });
+}());
+</script>
+</body>
+</html>
