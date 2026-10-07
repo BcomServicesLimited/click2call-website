@@ -24,6 +24,83 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/fanvil-phones",
+    title:    "Setting Up Fanvil Phones",
+    desc:     "Click2Call sets up Fanvil desk phones for you. Add the phone in the portal, point it at our provisioning server once, and it downloads your numbers and.",
+    tags:     "fanvil x series auto provisioning fanvil.securevoip.nz desk phone encryption key",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/panasonic-sip-phones",
+    title:    "Setting Up Panasonic SIP Phones",
+    desc:     "Click2Call auto-provisions Panasonic SIP phones, including the KX-HDV, KX-UT, KX-TGP, KX-TPA and KX-HGT ranges. Panasonic's KX-NT phones only work with.",
+    tags:     "panasonic kx-hdv kx-ut kx-tgp kx-tpa kx-hgt sip phone auto provisioning standard file url",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/alcatel-lucent-phones",
+    title:    "Setting Up Alcatel-Lucent Enterprise H and M Series Phones",
+    desc:     "Click2Call auto-provisions Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones. Provisioning keeps the firmware up to date and sets up your lines.",
+    tags:     "alcatel lucent enterprise ale h3 h6 m3 m5 m7 m8 auto provisioning desk phone",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/flyingvoice-phones",
+    title:    "Setting Up FlyingVoice Phones",
+    desc:     "Click2Call auto-provisions several FlyingVoice phones. Add the phone in the portal, enter a few provisioning settings on the phone, and it downloads your.",
+    tags:     "flyingvoice fip phone auto provisioning profile rule firmware",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/yeastar-ta-adaptors",
+    title:    "Setting Up Yeastar TA Analogue Adaptors",
+    desc:     "The Yeastar TA100, TA200, TA400 and TA800 connect ordinary analogue phones to Click2Call. The portal builds the adaptor's settings for you, so you only.",
+    tags:     "yeastar ta100 ta200 ta400 ta800 ata analogue phone adapter auto provisioning aes key",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/gigaset-ip-phones",
+    title:    "Setting Up Gigaset Cordless IP Phones",
+    desc:     "Gigaset IP cordless phones aren't in the portal's auto-provisioning list, so you set them up by hand in the base station's web page. It takes about five.",
+    tags:     "gigaset cordless dect ip phone manual sip setup base station",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/fritzbox-phone-port",
+    title:    "Setting Up the Phone Port on a FRITZ!Box",
+    desc:     "Many FRITZ!Box routers have a built-in phone port. You can register a Click2Call number on it and plug an ordinary analogue phone straight in. This guide.",
+    tags:     "fritzbox fritz box avm phone port analogue phone sip manual setup",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/programming-phone-keys",
     title:    "Programming Phone Keys (BLF, Speed Dial, Pickup and More)",
     desc:     "When you add a desk phone under Voice \u2192 Phones, you can also decide what each programmable key on the phone does \u2014 a second line, a busy lamp for a.",
