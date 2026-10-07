@@ -344,7 +344,7 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/help/how-to-add-desk-phone</loc>
-    <lastmod>2026-04-22</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -602,6 +602,12 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/help/fritzbox-phone-port</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/distinctive-ring-internal-calls</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
