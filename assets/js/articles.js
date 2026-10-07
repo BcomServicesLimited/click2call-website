@@ -24,6 +24,39 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/sip-trunk-pbx-setup",
+    title:    "Connecting Your Own PBX with a SIP Trunk",
+    desc:     "If you already have a PBX \u2014 3CX, FreePBX, Asterisk or another SIP-capable system \u2014 you can keep it and use Click2Call for your phone numbers and calls.",
+    tags:     "sip trunk pbx own pbx registered sip trunk pilot number ddi peering iax2 profile caller id channels 3cx freepbx asterisk",
+    category: "devices",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/asterisk-freepbx-pjsip",
+    title:    "Connecting Asterisk or FreePBX (PJSIP)",
+    desc:     "Asterisk and systems built on it (FreePBX, Issabel and similar) connect to Click2Call as a Registered SIP Trunk using the PJSIP channel driver. Set up the.",
+    tags:     "asterisk freepbx pjsip chan_pjsip trunk config pjsip.conf issabel iax2 sip trunk",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/3cx-sip-trunk",
+    title:    "Connecting 3CX",
+    desc:     "3CX connects to Click2Call as a Registered SIP Trunk. These steps are for 3CX version 20 and.",
+    tags:     "3cx v20 sip trunk pilot number did e164 codec caller id p-asserted-identity",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/sip-settings-for-devices-and-pbx",
     title:    "SIP Settings for Desk Phones, Adapters and PBX Systems",
     desc:     "Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide.",
