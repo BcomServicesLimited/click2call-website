@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Using the API and Webhooks on a Trial Account | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/webhooks-and-api-during-your-trial" />
-  <meta name="description" content="What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don&#x27;t arrive, and what to send support.">
+  <meta name="description" content="The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn&#x27;t arrive.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="/assets/css/brand.css">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/webhooks-and-api-during-your-trial">
   <meta property="og:title" content="Using the API and Webhooks on a Trial Account | Help Centre | Click2Call">
-  <meta property="og:description" content="What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don&#x27;t arrive, and what to send support.">
+  <meta property="og:description" content="The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn&#x27;t arrive.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
   "@type": "HowTo",
   "dateModified": "2026-10-07",
   "name": "Using the API and Webhooks on a Trial Account",
-  "description": "What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don't arrive, and what to send support.",
+  "description": "The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn't arrive.",
   "url": "https://www.click2call.com.au/help/webhooks-and-api-during-your-trial",
   "step": [
     {
@@ -43,25 +43,25 @@
     },
     {
       "@type": "HowToStep",
-      "name": "Check the webhook delivery log",
-      "text": "Find the delivery for your test call in the webhook delivery log."
+      "name": "Check your endpoint's logs",
+      "text": "Look for a POST at the time of the call and log the state and id of every webhook received."
     },
     {
       "@type": "HowToStep",
-      "name": "Read the entry for a webhook ID",
-      "text": "A 2xx status means your endpoint accepted it; 4xx or 5xx means it rejected or failed; no entry means the event was not sent."
+      "name": "Match events by call ID",
+      "text": "All events for one call share its id; make your receiver skip id and state pairs it has already processed."
     },
     {
       "@type": "HowToStep",
-      "name": "Check your endpoint's own logs",
-      "text": "Look for a POST at the time of the call and make your receiver tolerate duplicate deliveries."
+      "name": "Still nothing? Ask us to check",
+      "text": "If the call is in Records but nothing arrived, contact support and we'll check whether the webhook was sent."
     }
   ]
 }
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Using the API and Webhooks on a Trial Account | Help Centre | Click2Call">
-  <meta name="twitter:description" content="What API and webhook access the Click2Call 7-day free trial includes, how to check whether a webhook fired, why webhooks don&#x27;t arrive, and what to send support.">
+  <meta name="twitter:description" content="The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn&#x27;t arrive.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -308,7 +308,7 @@
         <span class="text-xs text-gray-400">6 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Using the API and Webhooks on a Trial Account</h1>
-      <p class="text-gray-600 leading-relaxed">Your Click2Call trial includes full API and webhook access from the day you sign up. This guide explains what is available, how to check whether a webhook was sent, the usual reasons one does not arrive, and what to send support if you are still stuck.</p>
+      <p class="text-gray-600 leading-relaxed">Your Click2Call trial includes the full API and webhooks, with no trial limits, from the day you sign up. This guide covers setting up a webhook, the events and fields it sends, how to check one fired, the usual reasons one does not arrive, and what to send support if you are still stuck.</p>
 <p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
     </div>
   </div>
@@ -321,22 +321,30 @@
       <p class="text-sm text-blue-800 leading-relaxed">Developers and businesses testing an integration during the 7-day free trial &mdash; a CRM hook, an automation in Zapier or Make, or your own app that reacts to calls. API and webhook configuration is self-service: Click2Call supports the platform and its documentation, but not your integration code.</p>
     </div>
     <h2 id="available-on-trial" class="text-2xl font-bold text-gray-900 mt-12 mb-4">What is available during the 7-day free trial?</h2>
-<p class="text-gray-600 leading-relaxed mb-4">The trial includes the same developer access as a paid account, from the moment the account is created:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>API access</strong> &mdash; the JSON REST API is available immediately. Documentation is at <a href="https://portal.click2call.com.au/apidocs" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">portal.click2call.com.au/apidocs</a>.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>Webhooks</strong> &mdash; configurable from day one, including the <code>transcription_ready</code> event.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>$11 of trial credit</strong> &mdash; enough to activate one local number ($10) and make a few test calls. Inbound calls are free, so you can test incoming-call webhooks for the whole trial.</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">What the trial does not include: help configuring the API, webhooks or a third-party integration (configuration is self-service during the trial), and Microsoft Teams Direct Routing. Limits that apply to trial accounts: <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: any API rate limits, webhook limits or features withheld on trial accounts — or confirm there are none]</mark>.</p>
+<p class="text-gray-600 leading-relaxed mb-4">The API and webhooks are fully featured during the trial, with no trial-specific limits. Everything is available from the moment the account is created:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>API access</strong> &mdash; the full JSON REST API. See the <a href="https://portal.click2call.com.au/apidocs/fullapi/index.php" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">full API documentation</a> in the client portal.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>Webhooks</strong> &mdash; every call state, including the <code>aianalysis</code> event that carries the transcript and AI call summary.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>$11 of trial credit</strong> &mdash; enough to activate one local number ($10) and make a few test calls. Inbound calls are free, so you can test incoming-call webhooks for the whole trial.</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">What the trial does not include: help configuring the API, webhooks or a third-party integration (configuration is self-service), and Microsoft Teams Direct Routing.</p>
+    <h2 id="set-up" class="text-2xl font-bold text-gray-900 mt-12 mb-4">How do I set up a webhook?</h2>
+<p class="text-gray-600 leading-relaxed mb-4">Webhooks are set up in the client portal. The <a href="https://portal.click2call.com.au/apidocs/webhooks/index.php" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">webhook documentation</a> explains where to add your webhook URL, the payload format and every field. You can set a webhook on one number or across every number on the account.</p><p class="text-gray-600 leading-relaxed mb-4">Each webhook is an HTTP POST with <code>Content-Type: application/json</code> and your secret token in the <code>Authorization</code> header. You can change that header to a custom header name of your choosing.</p>
     <h2 id="webhook-events" class="text-2xl font-bold text-gray-900 mt-12 mb-4">Which webhook events can I receive?</h2>
-
+<p class="text-gray-600 leading-relaxed mb-4">Every webhook carries a <code>state</code> field that tells you what happened:</p>
     <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200">
       <table class="w-full text-sm min-w-[32rem]">
-        <thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Group</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Events</th></tr></thead>
-        <tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800">Incoming calls</td><td class="px-4 py-2.5 text-gray-600">Ringing, Answered, Ended, Missed</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800">Outgoing calls</td><td class="px-4 py-2.5 text-gray-600">Ringing, Answered, Ended, Unattended (not answered)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800">AI analysis</td><td class="px-4 py-2.5 text-gray-600"><code>transcription_ready</code> &mdash; the recording has been processed and the AI transcription generated</td></tr></tbody>
+        <thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Call direction</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">States</th></tr></thead>
+        <tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800">Received (incoming)</td><td class="px-4 py-2.5 text-gray-600"><code>ringing</code>, <code>answered</code>, <code>ended</code>, <code>missed</code> (an incoming call that was not picked up)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800">Dialed (outgoing)</td><td class="px-4 py-2.5 text-gray-600"><code>ringing</code>, <code>answered</code>, <code>ended</code>, and when the call does not connect: <code>busy</code>, <code>invalid</code>, <code>rejected</code>, <code>notavailable</code>, <code>blocked</code>, <code>noanswer</code></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800">AI analysis</td><td class="px-4 py-2.5 text-gray-600"><code>aianalysis</code> &mdash; the transcript and AI call summary are ready</td></tr></tbody>
       </table>
-    </div><p class="text-gray-600 leading-relaxed mb-4">Each webhook posts a JSON payload to the URL you set, with a Base64-encoded secret token in the <code>Authorization</code> header. You can set a webhook on one number or across every number on the account. In the portal, webhooks are configured under <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: portal menu path where webhooks are added and edited]</mark>.</p>
+    </div><h3 class="font-bold text-gray-900 mb-2">Fields worth knowing</h3>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200">
+      <table class="w-full text-sm min-w-[32rem]">
+        <thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Field</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What it is</th></tr></thead>
+        <tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>id</code></td><td class="px-4 py-2.5 text-gray-600">Unique identifier for this call. Use it to match a webhook to a call and to ignore duplicates.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>originid</code></td><td class="px-4 py-2.5 text-gray-600">The call this one came from. Same as <code>id</code> for the first call in a sequence; different for a transferred or forwarded leg.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>type</code></td><td class="px-4 py-2.5 text-gray-600"><code>received</code> (incoming) or <code>dialed</code> (outgoing).</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>from</code>, <code>to</code></td><td class="px-4 py-2.5 text-gray-600">Calling and called numbers.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>start_time</code></td><td class="px-4 py-2.5 text-gray-600">UTC, <code>YYYY-MM-DD HH:MM:SS</code>. Sent only on ended or missed/failed events.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>duration</code></td><td class="px-4 py-2.5 text-gray-600">Call length in seconds. Sent only on a successful <code>ended</code> event.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>voiceuri</code></td><td class="px-4 py-2.5 text-gray-600">Link to the recording. Sent only on a successful <code>ended</code> event, and only when call recording is enabled.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>aiuri</code>, <code>transcript</code>, <code>callsummary</code></td><td class="px-4 py-2.5 text-gray-600">Sent only on the <code>aianalysis</code> event, and only when AI transcription is enabled. <code>callsummary</code> includes a short and full summary, categories, names mentioned and scores such as sentiment.</td></tr></tbody>
+      </table>
+    </div>
     <h2 id="check-a-webhook" class="text-2xl font-bold text-gray-900 mt-12 mb-4">How do I check whether a webhook fired?</h2>
-<p class="text-gray-600 leading-relaxed mb-4">Work from the call outward: first prove the call happened, then whether Click2Call sent the event, then whether your endpoint received it.</p>
+<p class="text-gray-600 leading-relaxed mb-4">Work from the call outward: first prove the call happened, then whether your endpoint received the event.</p>
     <div class="flex gap-5 mb-8">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
       <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Make a test call you can identify</h3>
-        <p class="text-gray-600 leading-relaxed mb-4">Call your Click2Call number from another phone and note the time, the number you called from and whether the call was answered. A Missed event and an Answered event are different webhooks, so decide which one you are testing.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Call your Click2Call number from another phone and note the time, the number you called from and whether the call was answered. An answered call and a missed call produce different states, so decide which one you are testing.</p>
       </div>
     </div>
     <div class="flex gap-5 mb-8">
@@ -349,29 +357,29 @@
     <div class="flex gap-5 mb-8">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
       <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Check the webhook delivery log</h3>
-        <p class="text-gray-600 leading-relaxed mb-4">Delivery logs are at <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: where webhook delivery logs live in the portal (menu path)]</mark>. Find the entry for your test call. For each delivery, the log shows <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: which fields the log shows — e.g. time sent, event type, target URL, HTTP status returned, retries]</mark>.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Check your endpoint's logs</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Look for a POST at the time of the call. Your server's access log is the best evidence of delivery. Log the <code>state</code> and <code>id</code> of every webhook you receive so you can see exactly which events arrived.</p>
       </div>
     </div>
     <div class="flex gap-5 mb-8">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
       <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Read the entry for a webhook ID</h3>
-        <p class="text-gray-600 leading-relaxed mb-4">Each delivery has a webhook ID <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: name and format of the webhook ID, and where it appears (log and/or payload)]</mark>. A 2xx status means your endpoint accepted it; a 4xx or 5xx means your endpoint rejected or failed it; no entry at all means the event was not sent. Retries on failure: <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: whether failed deliveries are retried, how many times and over what period]</mark>.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Match events by call ID</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">All the events for one call share its <code>id</code>, so you can follow a call from <code>ringing</code> to <code>ended</code>, and to <code>aianalysis</code> afterwards. Build your receiver to tolerate the same event arriving more than once &mdash; skip any <code>id</code> and <code>state</code> pair you have already processed. For retry behaviour on failed deliveries, see the <a href="https://portal.click2call.com.au/apidocs/webhooks/index.php" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">webhook documentation</a>.</p>
       </div>
     </div>
     <div class="flex gap-5 mb-8">
       <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
       <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Check your endpoint's own logs</h3>
-        <p class="text-gray-600 leading-relaxed mb-4">Look for a POST at the time of the call. Your server's access log is the best evidence: if the delivery log shows a send and your server shows nothing, something between the two (DNS, a firewall, a proxy) dropped it. Build your receiver to tolerate the same event arriving more than once &mdash; deduplicate on the call ID in the payload.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Still nothing? Ask us to check</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">If the call is in Records but your endpoint received nothing, contact support and we'll check for you whether the webhook was sent from our side.</p>
       </div>
     </div>
     <h2 id="common-reasons" class="text-2xl font-bold text-gray-900 mt-12 mb-4">Why didn't my webhook arrive?</h2>
 
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
       <h3 class="font-bold text-gray-900 mb-2">Your endpoint is not reachable from the internet</h3>
-      <p class="text-gray-600 leading-relaxed mb-4">Click2Call posts from the internet, so <code>localhost</code>, a private IP address, a machine behind a firewall or a development server that is switched off will never receive it. Use a public HTTPS address, or a tunnelling tool while you develop. Certificate requirements: <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: whether the endpoint must be HTTPS with a publicly trusted certificate, and whether self-signed certificates are rejected]</mark>.</p>
+      <p class="text-gray-600 leading-relaxed mb-4">Click2Call posts from the internet, so <code>localhost</code>, a private IP address, a machine behind a firewall or a development server that is switched off will never receive it. Use a public address, or a tunnelling tool while you develop. For endpoint requirements, see the <a href="https://portal.click2call.com.au/apidocs/fullapi/index.php" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">full API documentation</a>.</p>
     </div>
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
       <h3 class="font-bold text-gray-900 mb-2">The URL is wrong, or set on a different number</h3>
@@ -379,26 +387,26 @@
     </div>
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
       <h3 class="font-bold text-gray-900 mb-2">Your endpoint rejected it</h3>
-      <p class="text-gray-600 leading-relaxed mb-4">If your receiver checks the <code>Authorization</code> header, make sure it decodes the Base64 secret token the same way it was set. Return a 2xx status quickly and do slow work afterwards; a receiver that times out looks like a failure.</p>
+      <p class="text-gray-600 leading-relaxed mb-4">If your receiver checks the <code>Authorization</code> header (or the custom header you chose), make sure it compares against the same secret token you set. Return a 2xx status quickly and do slow work afterwards; a receiver that times out looks like a failure.</p>
     </div>
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
-      <h3 class="font-bold text-gray-900 mb-2">No transcription_ready event</h3>
-      <p class="text-gray-600 leading-relaxed mb-4"><code>transcription_ready</code> fires after a call recording has been processed. If the call was not recorded, or was too short to transcribe, there is nothing to send. Expect it a little after the call ends, not during it.</p>
+      <h3 class="font-bold text-gray-900 mb-2">No aianalysis event, transcript or recording link</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">The <code>aianalysis</code> event, with <code>aiuri</code>, <code>transcript</code> and <code>callsummary</code>, is sent only when AI transcription is enabled. <code>voiceuri</code> is sent only when call recording is enabled. Expect <code>aianalysis</code> a little after the call ends, not during it.</p>
     </div>
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
       <h3 class="font-bold text-gray-900 mb-2">The trial credit has run out</h3>
-      <p class="text-gray-600 leading-relaxed mb-4">When the account balance runs out, service can be suspended until it is topped up, and calls that do not connect produce no call events. Check the balance on the portal Summary page and see <a href="/help/how-to-add-account-credit" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Adding Account Credit</a>.</p>
+      <p class="text-gray-600 leading-relaxed mb-4">Inbound calls are free, but outgoing calls use credit. Check the balance on the portal Summary page and see <a href="/help/how-to-add-account-credit" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Adding Account Credit</a>.</p>
     </div>
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
-      <h3 class="font-bold text-gray-900 mb-2">The account is below its IOU limit</h3>
-      <p class="text-gray-600 leading-relaxed mb-4">Accounts can be allowed to run a negative balance up to an IOU limit. <mark class="bg-yellow-100 text-yellow-900 rounded px-1 font-medium">[CONFIRM: plain-language explanation of the IOU limit for customers, and exactly what stops (calls, webhooks, API) when an account reaches it]</mark> Top up the balance and test again.</p>
+      <h3 class="font-bold text-gray-900 mb-2">The account has gone past its $5 IOU limit</h3>
+      <p class="text-gray-600 leading-relaxed mb-4">Every account can run a small negative balance &mdash; an IOU of up to $5. Once the balance goes past &minus;$5, outgoing calls are blocked automatically, and anyone trying to call out hears a message that outgoing calls can't be made. A blocked call never connects, so it produces no <code>answered</code> or <code>ended</code> events. Topping up releases the block automatically.</p>
     </div>
     <div class="mb-4 rounded-xl border border-gray-200 bg-white px-5 py-4">
       <h3 class="font-bold text-gray-900 mb-2">The account is not active yet</h3>
       <p class="text-gray-600 leading-relaxed mb-4">New accounts are activated within 24 hours of signup, and identity verification usually takes a few hours. Until the account and number are active, test calls will not connect.</p>
     </div>
     <h2 id="contact-support" class="text-2xl font-bold text-gray-900 mt-12 mb-4">What should I send support if it still isn't working?</h2>
-<p class="text-gray-600 leading-relaxed mb-4">Email <a href="mailto:support@click2call.com.au" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">support@click2call.com.au</a> with:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your account number and the Click2Call number you called</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The date and time of the test call (AEST), and the number you called from</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The event you expected (for example Incoming &ndash; Answered, or <code>transcription_ready</code>)</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The webhook ID or the delivery-log entry, if there is one</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your endpoint URL &mdash; <strong>never</strong> your API token or the webhook secret</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>What your endpoint logged at that time: the status code it returned, or that it received nothing</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">Support can confirm whether Click2Call sent the event and what your endpoint returned. Debugging your integration code is not included in support.</p>
+<p class="text-gray-600 leading-relaxed mb-4">Email <a href="mailto:support@click2call.com.au" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">support@click2call.com.au</a> with:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your account number and the Click2Call number you called</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The date and time of the test call (AEST), and the number you called from</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The state you expected (for example <code>answered</code>, <code>missed</code> or <code>aianalysis</code>)</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The call <code>id</code> from any webhook that did arrive for that call</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your endpoint URL &mdash; <strong>never</strong> your API token or the webhook secret</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>What your endpoint logged at that time: the status code it returned, or that it received nothing</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">Support can check whether Click2Call sent the event. Debugging your integration code is not included in support.</p>
 
     <!-- Related articles -->
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
