@@ -23,6 +23,28 @@
 
 var HELP_ARTICLES = [
 
+  {
+    url:      "/help/webhooks-and-api-during-your-trial",
+    title:    "Using the API and Webhooks on a Trial Account",
+    desc:     "The trial includes the full API and webhooks. Set up a webhook, see the call states and fields it sends, and check why one did not arrive.",
+    tags:     "api webhook webhooks trial developer integration aianalysis transcript call summary payload state call id endpoint not arriving fired zapier make crm iou limit credit",
+    category: "getting-started",
+    readTime: "6 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/softphone-setup-and-troubleshooting",
+    title:    "Setting Up a Softphone and Fixing Registration Problems",
+    desc:     "Supported softphones, where your SIP credentials are, why iPhone apps miss calls in the background, and how to check a line is registering.",
+    tags:     "softphone registration registered not registering sip credentials line password line manager tls tcp udp iphone ios background push notifications app closed groundwire linphone zoiper microsip troubleshooting",
+    category: "devices",
+    readTime: "7 min read",
+    featured: true,
+    pinned:   false
+  },
+
 
 
   {
