@@ -24,6 +24,61 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/programming-phone-keys",
+    title:    "Programming Phone Keys (BLF, Speed Dial, Pickup and More)",
+    desc:     "When you add a desk phone under Voice \u2192 Phones, you can also decide what each programmable key on the phone does \u2014 a second line, a busy lamp for a.",
+    tags:     "dss keys line keys blf busy lamp speed dial pickup park intercom programmable keys desk phone provisioning hot desk paging",
+    category: "devices",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/grandstream-desk-phones",
+    title:    "Setting Up Grandstream Desk Phones",
+    desc:     "Click2Call can set up most Grandstream desk, cordless and conference phones for you \u2014 GRP, GXP, GXV, GHP, DP and WP models. You add the phone in the.",
+    tags:     "grandstream grp gxp gxv ghp dp750 wp810 auto provisioning gs.securevoip.nz desk phone firmware",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/grandstream-ht801-ht802",
+    title:    "Connecting an Analogue Phone or Fax with a Grandstream HT801 / HT802",
+    desc:     "A Grandstream HT801 or HT802 (an analogue telephone adaptor, or ATA) lets you plug an ordinary home or office phone \u2014 or a fax machine \u2014 into Click2Call.",
+    tags:     "grandstream ht801 ht802 ht812 ht814 ata analogue phone adapter fax provisioning",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/polycom-vvx-phones",
+    title:    "Setting Up Polycom VVX Phones",
+    desc:     "Click2Call can set up Polycom VVX phones (VVX 101 to VVX 601) for you. Add the phone in the portal, point it at Click2Call's provisioning server, and it.",
+    tags:     "polycom vvx provisioning polycom.securevoip.nz desk phone firmware admin password 456",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/cisco-spa-phones",
+    title:    "Cisco SPA Phones and SPA112 / SPA122 Adapters",
+    desc:     "Older Cisco SPA phones (SPA301 to SPA525G) and the SPA112 and SPA122 phone adaptors still work with Click2Call, and the portal can configure them for you.",
+    tags:     "cisco spa spa112 spa122 spa504g spa525g ata profile rule provisioning certificate custom ca security",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/sip-trunk-pbx-setup",
     title:    "Connecting Your Own PBX with a SIP Trunk",
     desc:     "If you already have a PBX \u2014 3CX, FreePBX, Asterisk or another SIP-capable system \u2014 you can keep it and use Click2Call for your phone numbers and calls.",
