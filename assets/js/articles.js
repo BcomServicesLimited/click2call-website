@@ -24,6 +24,17 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/distinctive-ring-internal-calls",
+    title:    "Different Ringtones for Internal Calls (Yealink and Grandstream)",
+    desc:     "You can make your desk phones ring differently when a colleague calls, so you know it's an internal call before you answer. Click2Call tags internal calls.",
+    tags:     "distinctive ring ringtone internal calls alert-info yealink grandstream custom configuration",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/fanvil-phones",
     title:    "Setting Up Fanvil Phones",
     desc:     "Click2Call sets up Fanvil desk phones for you. Add the phone in the portal, point it at our provisioning server once, and it downloads your numbers and.",
