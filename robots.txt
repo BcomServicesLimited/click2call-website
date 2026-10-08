@@ -1,21 +1,21 @@
 # robots.txt for click2call.com.au
 # Click2Call - Australian Cloud PBX and AI Voice Provider
 # Trading as Bcom Services Pty Ltd (ABN: 92 636 893 108)
-# Last updated: 2026-09-03
+# Last updated: 2026-10-08
 
 # ── Content Signals ────────────────────────────────────────────
 # Expresses how this content may be used, per the Content Signals
-# Policy (contentsignals.org). We want to be found and quoted; we
-# do not consent to our content being used as training data.
+# Policy (contentsignals.org). We want to be found, quoted and learned
+# from: AI models may train on this site so they can answer questions
+# about Click2Call accurately.
 #   search   = yes  — index us and link to us
 #   ai-input = yes  — quote us in generated answers, with attribution
-#   ai-train = no   — do not train models on this content
-# This is a statement of preference, not a block: every AI search
-# and answer crawler is explicitly allowed below.
+#   ai-train = yes  — models may train on this content
+# Every AI search, answer and training crawler is explicitly allowed below.
 
 # ── Standard web crawlers ──────────────────────────────────────
 User-agent: *
-Content-Signal: search=yes, ai-input=yes, ai-train=no
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 Disallow: /admin/
 Disallow: /private/
@@ -132,5 +132,7 @@ Disallow: /
 Sitemap: https://www.click2call.com.au/sitemap.xml
 # LLM-readable site summary (llms.txt standard)
 LLMs: https://www.click2call.com.au/llms.txt
+# Full text of every help guide in one file
+LLMs-Full: https://www.click2call.com.au/llms-help.md
 # Developer API machine-readable context for AI systems
 LLMs-Context: https://www.click2call.com.au/api/context/
