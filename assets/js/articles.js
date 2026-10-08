@@ -24,6 +24,28 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/faxmail",
+    title:    "Sending and Receiving Faxes by Email (Faxmail)",
+    desc:     "Faxmail replaces a fax machine with email. Faxes sent to your number arrive in your inbox as attachments, and you send a fax by emailing a document.",
+    tags:     "fax faxmail email to fax fax to email t.38 pdf fax number",
+    category: "phone-numbers",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/sending-sms",
+    title:    "Sending SMS from Your Business Number",
+    desc:     "You can send text messages from your Click2Call number from the portal, by email, or from your own software. Replies come back to you by email, and you.",
+    tags:     "sms text message email to sms send sms replies api 50c",
+    category: "phone-numbers",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/call-setup-api",
     title:    "Starting a Call from a Web Link (Call Setup API)",
     desc:     "The call setup API connects two phone numbers with a single web request. Click2Call rings the first number, and when it's answered, dials the second. It's.",
