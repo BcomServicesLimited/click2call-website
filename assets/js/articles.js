@@ -24,6 +24,127 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/call-parking-pickup-transfers",
+    title:    "Parking, Picking Up and Transferring Calls",
+    desc:     "Click2Call lets your team park a call and pick it up on another phone, answer a colleague's ringing phone, and transfer callers with a few key presses.",
+    tags:     "call park parking *07 *17 pickup *88 *89 transfer attended blind #0 ## recall",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/hunt-groups",
+    title:    "Hunt Groups: Ringing Phones One After Another",
+    desc:     "A hunt group rings a list of phones one at a time, in the order you choose, until someone answers. Use it when calls should go to your first choice of.",
+    tags:     "hunt group sequential ring linear hunt ring in order ring group simultaneous ring",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/do-not-disturb-and-call-screening",
+    title:    "Do Not Disturb and Call Screening",
+    desc:     "Do not disturb stops your phone ringing and sends callers to voicemail, a busy tone or another number. Call screening asks callers to say their name.",
+    tags:     "dnd do not disturb *78 *79 call screening announce name anonymous busy tone",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/conference-calls",
+    title:    "Conference Calls and Dictation",
+    desc:     "Any Click2Call number can become a conference bridge. Callers dial the number, enter a PIN if you've set one, and join the call together. We recommend.",
+    tags:     "conference call bridge meeting pin supervisor recording dictation",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/busy-lamp-field-blf",
+    title:    "Busy Lamp Field (BLF): Watching Lines, Queues and Voicemail",
+    desc:     "A BLF key is a button on a desk phone with a light that shows what another line is doing. Green means free, red means on a call, and flashing red means.",
+    tags:     "blf busy lamp field presence line monitoring mailbox monitoring queue monitoring light",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/hot-desking",
+    title:    "Hot Desking: Logging In to Any Phone",
+    desc:     "Hot desking lets anyone log in to a shared desk phone with their own extension using a short code. The phone reloads with their number and keys, then goes.",
+    tags:     "hot desk hot desking shared phone login logout *45 *46",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/extension-numbers-and-groups",
+    title:    "Extension Numbers, Calling Groups and Caller Names",
+    desc:     "Every line on your account can have a short extension number and a name. Staff dial the extension instead of the full number, callers can enter it at your.",
+    tags:     "extension number extension dialling calling group billing group caller name intercom *85",
+    category: "extensions",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/outgoing-call-pin-and-call-assignment",
+    title:    "Controlling Outgoing Calls: PIN Codes and Call Assignment",
+    desc:     "You can ask for a PIN before certain calls go out, so only approved people can call overseas or mobiles. On a shared phone, call assignment mode asks for.",
+    tags:     "pin code authorisation outgoing call restriction overseas call assignment smart code",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/remote-call-back-and-dial-tone",
+    title:    "Calling Through Your Business Number While Away",
+    desc:     "Remote dial tone and remote call back let you make calls through your Click2Call number from another phone, such as your mobile. The person you call sees.",
+    tags:     "remote dial tone remote call back callback dial out from mobile business number overseas",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/group-call-and-paging",
+    title:    "Group Calls and Paging",
+    desc:     "A group call rings up to 20 people at once and joins everyone who answers into one call. Paging mode turns it into an announcement: phones answer on.",
+    tags:     "group call page paging announcement intercom *48 auto answer",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/hold-music-and-feature-order",
+    title:    "Hold Music, Caller Tunes and Which Setting Wins",
+    desc:     "You can replace the ringing callers hear with your own music or message, and upload your own music on hold. This guide also explains why one setting can.",
+    tags:     "hold music music on hold caller tunes mp3 call flow priority feature order",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/distinctive-ring-internal-calls",
     title:    "Different Ringtones for Internal Calls (Yealink and Grandstream)",
     desc:     "You can make your desk phones ring differently when a colleague calls, so you know it's an internal call before you answer. Click2Call tags internal calls.",
