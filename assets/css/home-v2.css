@@ -391,3 +391,4 @@
   .hv2 .bill .row,.hv2 .bill-top,.hv2 .bill .note{padding-inline:16px}
   .hv2 .sw-steps li{grid-template-columns:20px 58px 1fr;font-size:.85rem}
 }
+.hv2 .link svg{display:inline-block}
