@@ -170,7 +170,7 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/blog/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -831,6 +831,12 @@
   <url>
     <loc>https://www.click2call.com.au/blog/how-to-set-up-virtual-office-phone</loc>
     <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/blog/business-landline-comeback</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
