@@ -1554,12 +1554,9 @@ Last reviewed: October 2026
 
 ### On iPhone or Android
 
-#### Attended transfer
+The Secure VoIP mobile app supports both blind and attended transfers from the in-call screen. During a call, open the in-call options and choose transfer. Then pick the number or the other call you want to hand over to.
 
-- During the call, tap **+** in the bottom right. Your caller goes on hold and the dial pad opens.
-- Call your colleague. When they answer, you can use **Swap** to move between the two calls.
-- To hand over, tap the **…** button in the bottom left and choose **Transfer**.
-- Choose who to transfer to. The two callers are connected and you drop off the call.
+If you can't find the option, use the keypad codes in the next section. They work in any app or phone.
 
 ### On Windows (Micro Edition)
 
@@ -1578,7 +1575,7 @@ First make sure **Single Call Mode** is turned off in **Settings**.
 
 ### Transferring from any phone
 
-You can also dial `#0` for an attended transfer or `##` for a blind transfer during an incoming call. See [Parking, picking up and transferring calls](https://www.click2call.com.au/help/call-parking-pickup-transfers).
+During an incoming call, open the keypad and dial `#0` then the number for an attended transfer, or `##` then the number for a blind transfer. These work in every app and desk phone because Click2Call handles them, not the app. See [Parking, picking up and transferring calls](https://www.click2call.com.au/help/call-parking-pickup-transfers).
 
 ## Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux
 
@@ -1595,7 +1592,7 @@ Uninstalling the app keeps your settings, so a fresh install picks up where you 
 - Quit the app. Check Task Manager to make sure it isn't still running.
 - Open **Settings → Apps**, find Secure VoIP and click **Uninstall**.
 - In File Explorer, open **View** and turn on **Hidden items**.
-- Go to C:\Users\your name\AppData and delete the **SecureVOIP** folder.
+- Go to C:\Users\your name\AppData. Look in the Local and Roaming folders for the app's folder, usually named after the app (for example SecureVOIP), and delete it.
 - Reinstall from the link in [Setting up the Secure VoIP app](https://www.click2call.com.au/help/how-to-set-up-softphone) and log in again.
 
 ### Make phone links open Secure VoIP
@@ -1620,27 +1617,30 @@ sudo apt install wine64
 
 If you'd rather use a native Linux app, Linphone works too. See [Setting up Linphone](https://www.click2call.com.au/help/how-to-set-up-linphone).
 
-## Secure VoIP on Android: Background Mode and Battery
+## Secure VoIP on Android: Fixing Missed Calls and Battery Saving
 
 Source: https://www.click2call.com.au/help/secure-voip-android-background-mode
 
-The Secure VoIP app for Android uses a notification to wake up when a call comes in. Background mode also keeps the app running all the time. It's on by default so calls arrive on as many phones as possible, but it uses more battery.
+Android phones save battery by putting apps to sleep. The Secure VoIP app is woken by a push notification when a call comes in, but some phones' battery savers block that, so calls are missed while the app is closed. A few settings fix it.
 
 Last reviewed: October 2026
 
-### Should I turn it off?
+### Signs of the problem
 
-Most recent Android phones receive calls fine without background mode. Older phones, phones with strict battery saving, and phones without Google services may miss calls when it's off.
+Calls ring when the app is open, but are missed or go to voicemail when the phone is locked or the app has been closed for a while.
 
-### Turning background mode on or off
+### Let the app run in the background
 
-- In the app, tap **Settings** in the bottom right.
-- Open **Advanced**.
-- Switch **Background Mode** on or off.
+- Open your phone's **Settings → Apps → Secure VoIP**.
+- Open **Battery** and choose **Unrestricted** (on some phones, **Don't optimise** or **Allow background activity**).
+- Check **Notifications** are allowed for the app.
+- On Samsung, Xiaomi, Oppo and Huawei phones, also remove the app from any "sleeping apps" or battery-saver list.
 
-### Test after turning it off
+If the app has its own background or keep-alive setting in its settings, turn it on as well.
 
-Close the app, lock your phone, and call your number from another phone. If it rings, you can leave background mode off. If it doesn't, turn it back on.
+### Test it
+
+Close the app, lock your phone, and call your number from another phone. If it rings, you're set. If it doesn't, check the settings above again, or set a [ring group](https://www.click2call.com.au/help/how-to-create-ring-group) so calls also ring your mobile number directly.
 
 ## Busy Lamp Field (BLF): Watching Lines, Queues and Voicemail
 
