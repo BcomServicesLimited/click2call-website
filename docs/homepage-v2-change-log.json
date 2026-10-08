@@ -1,0 +1,188 @@
+[
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "Structured data changed only by the owner-approved support-tier correction (9 Oct)."
+ },
+ {
+  "kind": "heading-level",
+  "old": "h2: Manage Your Entire Phone System From One Dashboard",
+  "new": "h3: Manage Your Entire Phone System From One Dashboard",
+  "reason": "Dashboard block merged into \"How does Click2Call work?\" (plan 6.2, section 5)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "We offer business hours support as standard, with priority support available on higher-tier plans.",
+  "new": "",
+  "reason": "Correction approved by the owner 9 Oct: Click2Call has no plan tiers and no priority support option."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$25 per user / month ex GST",
+  "reason": "Price label on the pricing strip (plan 6.2, section 7). Matches the pricing page."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "(07) 5XXX XXXX · 3 min 12 s",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "1:07",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AI summary Wants a quote to replace a hot water system this week.",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Asked for a call back before 3 pm.",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Caller needs two extra phone lines for a new staff member starting Monday and wants a price today.",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Caller: Hi, we've got someone starting Monday and need them set up…",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call Call summary · Example Positive",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Example",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Inbound call from 04XX XXX XXX 2 min 48 s",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "New enquiry",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Positive",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Summary.",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The Line Manager in the Click2Call portal (example account).",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "We offer business hours support as standard.",
+  "reason": "Correction approved by the owner 9 Oct: Click2Call has no plan tiers and no priority support option."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "You: No problem, I'll send the quote through this afternoon.",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "portal.click2call.com.au",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "▶ Recording ✓ Transcript emailed",
+  "reason": "Text inside an illustration (example call card, example email summary or portal drawing), marked as an example."
+ },
+ {
+  "kind": "img_alts-removed",
+  "old": "Click2Call portal dashboard showing phone number management, extensions, and call routing controls",
+  "new": "",
+  "reason": "Stock office photo and empty portal screenshot replaced (plan section 4, Fix)."
+ },
+ {
+  "kind": "img_alts-removed",
+  "old": "Gold Coast business communications",
+  "new": "",
+  "reason": "Stock office photo and empty portal screenshot replaced (plan section 4, Fix)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A busy clinic front desk with a receptionist helping a patient",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A clinic receptionist with a headset at the front desk",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A plumber standing beside his work van, smiling as he takes a call on his mobile",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A small IT team working in a bright office",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A tradie beside his ute checking his phone",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A tradie sitting in his ute taking a call on his mobile",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "An agent at an open home holding her phone",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "The Line Manager in the Click2Call portal, showing a business number and four staff extensions with call recording switched on",
+  "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ }
+]

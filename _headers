@@ -1,3 +1,9 @@
+# Preview and pages.dev addresses must never be indexed (www.click2call.com.au is unaffected).
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
 /*
   X-Robots-Tag: all
   Strict-Transport-Security: max-age=15552000
