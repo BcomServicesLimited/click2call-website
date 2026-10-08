@@ -24,6 +24,61 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/call-quality-and-starlink",
+    title:    "Call Quality: Codecs, Your Connection and Starlink",
+    desc:     "Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.",
+    tags:     "call quality choppy audio codecs bandwidth qos starlink satellite internet",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/calls-during-power-or-internet-outage",
+    title:    "Keeping Calls Coming In During an Outage",
+    desc:     "Your phones need power and internet to work. If either goes down, Click2Call can still answer your calls and send them to a mobile or another number.",
+    tags:     "power cut outage internet down forward when offline failover pbx backup mobile",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/which-phones-can-i-use",
+    title:    "Which Phones Can I Use? (And Alarm Systems)",
+    desc:     "Click2Call works with IP desk phones, the Secure VoIP app on your mobile or computer, and ordinary analogue phones through an adaptor. Back-to-base alarm.",
+    tags:     "which phones compatible desk phone existing phone analogue ata alarm system",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/toll-fraud-protection",
+    title:    "Protecting Your Account from Toll Fraud",
+    desc:     "Toll fraud is when someone breaks into a phone account and uses it to make expensive overseas calls. It's the biggest security risk for any internet phone.",
+    tags:     "toll fraud hacking security passwords call barring overseas access control list",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/two-factor-login",
+    title:    "Turning On Two-Factor Login",
+    desc:     "Two-factor login adds a one-time code to your portal sign-in. Even if someone learns your password, they can't get into your account without the code.",
+    tags:     "two factor 2fa login security email verification portal trusted locations",
+    category: "getting-started",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/zoiper-setup",
     title:    "Setting Up Zoiper",
     desc:     "Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own.",
