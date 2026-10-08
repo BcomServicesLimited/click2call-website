@@ -24,6 +24,39 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/call-setup-api",
+    title:    "Starting a Call from a Web Link (Call Setup API)",
+    desc:     "The call setup API connects two phone numbers with a single web request. Click2Call rings the first number, and when it's answered, dials the second. It's.",
+    tags:     "call setup api click to call web request call.php developer integration",
+    category: "getting-started",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/webrtc-sip-over-websocket",
+    title:    "Browser Calling with WebRTC (SIP over WebSocket)",
+    desc:     "You can register a Click2Call number from a web browser, using SIP over a secure WebSocket (WSS). This lets you build calling into your own web app with a.",
+    tags:     "webrtc wss websocket browser calling sip.js jssip turn developer",
+    category: "getting-started",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/zoho-crm-integration",
+    title:    "Connecting Zoho CRM",
+    desc:     "Click2Call connects to Zoho CRM so your team can click a number in Zoho to call it, see who's calling before they answer, and keep every call, note and.",
+    tags:     "zoho crm integration phonebridge click to dial call logging recordings",
+    category: "getting-started",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/call-quality-and-starlink",
     title:    "Call Quality: Codecs, Your Connection and Starlink",
     desc:     "Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.",
