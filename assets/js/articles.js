@@ -24,6 +24,61 @@
 var HELP_ARTICLES = [
 
   {
+    url:      "/help/zoiper-setup",
+    title:    "Setting Up Zoiper",
+    desc:     "Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own.",
+    tags:     "zoiper softphone sip app windows mac linux iphone android setup",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/bria-teams-setup",
+    title:    "Setting Up Bria Teams",
+    desc:     "Bria Teams is a paid softphone from CounterPath that lets an administrator set up calling for the whole team from one web dashboard. It connects to.",
+    tags:     "bria teams counterpath softphone team dashboard sip setup",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/secure-voip-app-transfers",
+    title:    "Transferring Calls in the Secure VoIP App",
+    desc:     "You can pass a call to a colleague from the Secure VoIP app in two ways. A blind transfer sends the call straight through. An attended transfer lets you.",
+    tags:     "secure voip app transfer attended blind micro edition iphone android windows",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/secure-voip-windows-tips",
+    title:    "Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux",
+    desc:     "This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number.",
+    tags:     "secure voip windows reinstall uninstall appdata default calling app tel callto linux wine",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/secure-voip-android-background-mode",
+    title:    "Secure VoIP on Android: Background Mode and Battery",
+    desc:     "The Secure VoIP app for Android uses a notification to wake up when a call comes in. Background mode also keeps the app running all the time. It's on by.",
+    tags:     "secure voip android background mode battery push notification missed calls",
+    category: "devices",
+    readTime: "2 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/call-parking-pickup-transfers",
     title:    "Parking, Picking Up and Transferring Calls",
     desc:     "Click2Call lets your team park a call and pick it up on another phone, answer a colleague's ringing phone, and transfer callers with a few key presses.",
