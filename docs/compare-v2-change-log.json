@@ -1,0 +1,290 @@
+[
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "WebPage url and breadcrumb item now match the canonical (/compare/ with trailing slash); dateModified 2026-10-09."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Create Your Account",
+  "reason": "The 5-step \"at a glance\" infographic is rebuilt as text, so search engines and AI assistants can read it."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Add Your Number",
+  "reason": "The 5-step \"at a glance\" infographic is rebuilt as text, so search engines and AI assistants can read it."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Set Up Your Users",
+  "reason": "The 5-step \"at a glance\" infographic is rebuilt as text, so search engines and AI assistants can read it."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Port Your Old Number",
+  "reason": "The 5-step \"at a glance\" infographic is rebuilt as text, so search engines and AI assistants can read it."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Start Making Calls",
+  "reason": "The 5-step \"at a glance\" infographic is rebuilt as text, so search engines and AI assistants can read it."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "All prices ex GST.",
+  "new": "",
+  "reason": "Owner-confirmed correction 9 Oct 2026: cost table mixed ex/inc GST; note now says monthly prices are ex GST and the porting fee includes GST."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cloud PBX User (monthly) $25 / month",
+  "new": "",
+  "reason": "Owner-confirmed correction 9 Oct 2026: a 3-person office is 3 Cloud PBX Users x $25 = $75/month ex GST (matches the FAQ and the Pricing page)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Extensions for 3 users Free",
+  "new": "",
+  "reason": "Owner-confirmed correction 9 Oct 2026: removed; 3 users are 3 x $25 Cloud PBX Users, not free extensions."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "The porting timeline is the same as for local numbers — typically 5 to 10 business days.",
+  "new": "",
+  "reason": "Owner-confirmed correction 9 Oct 2026: 1300/1800 ports can take up to 30 days (matches FAQ 15 and the Number Porting page). Schema already said 30 days."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Total to get fully operational $75.00",
+  "new": "",
+  "reason": "Owner-confirmed correction 9 Oct 2026: the old total did not add up; replaced by the ongoing monthly cost ($75/month) with the $100 port shown separately."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "1300 and 1800 numbers can take up to 30 days to port, longer than local numbers (typically 5 to 10 business days).",
+  "reason": "Owner-confirmed correction 9 Oct 2026 (cost table / 1300 porting time)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Account activated within 24 hours.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add Your Number",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add a new number or keep your existing one.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add as many users as you need, at $25 per user per month.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Cloud PBX Users (3 × $25 per month) $75 / month",
+  "reason": "Owner-confirmed correction 9 Oct 2026 (cost table / 1300 porting time)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Create Your Account",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Day 1 New number is live",
+  "reason": "Illustration: example card in the hero, taken from the page's own \"How long does it take?\" timeline."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Day 1–2 Phones and apps configured",
+  "reason": "Illustration: example card in the hero, taken from the page's own \"How long does it take?\" timeline."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Day 5–10 Number port completes",
+  "reason": "Illustration: example card in the hero, taken from the page's own \"How long does it take?\" timeline."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each user includes a local number and 300 outbound minutes.",
+  "reason": "Owner-confirmed correction 9 Oct 2026 (cost table / 1300 porting time)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each user includes a local number; extra numbers are $10/month.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Example",
+  "reason": "Illustration: example card in the hero, taken from the page's own \"How long does it take?\" timeline."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Keep your number",
+  "reason": "Hero checklist; labels taken from the Key Takeaways."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Local and mobile numbers take 5–10 business days.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Monthly prices are ex GST; the $100 porting fee includes GST.",
+  "reason": "Owner-confirmed correction 9 Oct 2026 (cost table / 1300 porting time)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No hardware required",
+  "reason": "Hero checklist; labels taken from the Key Takeaways."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Ongoing monthly cost $75 / month",
+  "reason": "Owner-confirmed correction 9 Oct 2026 (cost table / 1300 porting time)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Port Your Old Number",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Set Up Your Users",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Sign up online in minutes.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Start Making Calls",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Use the PC app, mobile app, or forward calls to your mobile.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "We lodge the port request.",
+  "reason": "Infographic rebuilt as text; steps 2-3 corrected per owner (each user $25/month and includes a local number; extra numbers $10/month)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Your old number keeps ringing throughout",
+  "reason": "Illustration: example card in the hero, taken from the page's own \"How long does it take?\" timeline."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Your switch",
+  "reason": "Illustration: example card in the hero, taken from the page's own \"How long does it take?\" timeline."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Zero downtime",
+  "reason": "Hero checklist; labels taken from the Key Takeaways."
+ },
+ {
+  "kind": "events-removed",
+  "old": "begin_free_trial|Free Trial Signup",
+  "new": "",
+  "reason": "Per-button trial tracking: ?src=<placement> and event_label \"Free Trial Signup - <placement>\" (same scheme as the homepage)."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - compare-final-cta",
+  "reason": "Per-button trial tracking: ?src=<placement> and event_label \"Free Trial Signup - <placement>\" (same scheme as the homepage)."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - compare-hero",
+  "reason": "Per-button trial tracking: ?src=<placement> and event_label \"Free Trial Signup - <placement>\" (same scheme as the homepage)."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - compare-self-setup",
+  "reason": "Per-button trial tracking: ?src=<placement> and event_label \"Free Trial Signup - <placement>\" (same scheme as the homepage)."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - compare-start-here",
+  "reason": "Per-button trial tracking: ?src=<placement> and event_label \"Free Trial Signup - <placement>\" (same scheme as the homepage)."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - compare-steps",
+  "reason": "Per-button trial tracking: ?src=<placement> and event_label \"Free Trial Signup - <placement>\" (same scheme as the homepage)."
+ },
+ {
+  "kind": "img_alts-removed",
+  "old": "5-step infographic: create account, add number, set up users, port old number, start making calls",
+  "new": "",
+  "reason": "Infographic image replaced by the same 5 steps as text."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A real estate agent sitting in a car, using a mobile phone",
+  "reason": "Photo added to soften the page (homepage design); alt describes the photo without product claims."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A technician working at a desk with two monitors",
+  "reason": "Photo added to soften the page (homepage design); alt describes the photo without product claims."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "An office worker wearing a headset, smiling while on a call at a desk",
+  "reason": "Photo added to soften the page (homepage design); alt describes the photo without product claims."
+ }
+]

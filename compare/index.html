@@ -11,6 +11,8 @@
     <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/brand.css">
+    <link rel="preload" as="image" href="/assets/images/switch/switch-hero-1200.webp" imagesrcset="/assets/images/switch/switch-hero-720.webp 720w, /assets/images/switch/switch-hero-1200.webp 1200w" imagesizes="(max-width: 860px) 100vw, 560px">
+    <link rel="stylesheet" href="/assets/css/home-v2.css">
     <script defer src="/assets/js/alpine.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -41,15 +43,15 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "dateModified": "2026-07-14",
+  "dateModified": "2026-10-09",
   "name": "Switch to Click2Call — How the Changeover Works",
   "description": "A step-by-step guide to switching your business phone system to Click2Call, including number porting, setup options, and pricing.",
-  "url": "https://www.click2call.com.au/compare",
+  "url": "https://www.click2call.com.au/compare/",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.click2call.com.au/" },
-      { "@type": "ListItem", "position": 2, "name": "Switch", "item": "https://www.click2call.com.au/compare" }
+      { "@type": "ListItem", "position": 2, "name": "Switch", "item": "https://www.click2call.com.au/compare/" }
     ]
   }
 }
@@ -342,439 +344,310 @@
 }());
 </script>
 
-<main class="bg-white">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <!-- HERO -->
-    <div class="py-16 text-center">
-      <p class="text-sm font-semibold text-green-600 uppercase tracking-wider mb-3">Zero downtime. Pay as you go. Your choice of hardware.</p>
-      <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">Switch to Click2Call</h1>
-      <p class="mt-6 text-xl text-gray-500 max-w-2xl mx-auto">Moving your business phone system is simpler than you think. Keep your existing number, keep your existing desk phones if you want them, and be up and running within days.</p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a class="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl text-white shadow-lg transition-all duration-150 hover:scale-105" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" style="background-color: #3B9C49;" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">
-          Start Free Trial
-          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-        </a>
-        <a class="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl border-2 transition-all duration-150 hover:bg-green-50" href="/pricing/" style="border-color: #3B9C49; color: #3B9C49;" onclick="gtag('event', 'view_pricing_click', {'event_category': 'CTA', 'event_label': 'See Pricing'});">
-          See Pricing
-        </a>
-      </div>
-    </div>
-
-    <!-- KEY TAKEAWAYS -->
-    <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-12 rounded-r-lg">
-      <h2 class="text-lg font-semibold text-green-800 mb-3">Key Takeaways</h2>
-      <ul class="space-y-2 text-green-700 text-sm">
-        <li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span><strong>Zero downtime:</strong> Your existing number stays active during the entire porting process.</span></li>
-        <li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span><strong>No hardware required:</strong> Use our free PC and mobile apps, or connect your own SIP-compatible desk phones.</span></li>
-        <li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span><strong>Keep your number:</strong> We port numbers from Telstra, Optus, TPG, and all other major Australian carriers.</span></li>
-        <li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span><strong>Simple setup:</strong> Create an account, add a temporary number, configure your users, and test before you port.</span></li>
-        <li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span><strong>No IT support needed:</strong> The system is designed for self-setup, with our Australian support team ready to help if needed.</span></li>
+<main id="content" class="hv2 sw">
+<section class="hero" aria-labelledby="switch-h1"><div class="wrap"><div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Zero downtime. Pay as you go. Your choice of hardware.</p>
+      <h1 id="switch-h1">Switch to <em>Click2Call</em></h1>
+      <p class="summary">Moving your business phone system is simpler than you think. Keep your existing number, keep your existing desk phones if you want them, and be up and running within days.</p>
+      <div class="ctas"><div><a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=compare-hero" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - compare-hero'});">Start Free Trial</a></div><div><a class="btn btn-ghost" href="/pricing/" onclick="gtag('event', 'view_pricing_click', {'event_category': 'CTA', 'event_label': 'See Pricing'});">See Pricing</a></div></div>
+      <ul class="trust">
+        <li class="check">Keep your number</li>
+        <li class="check">Zero downtime</li>
+        <li class="check">No hardware required</li>
       </ul>
     </div>
+    <div class="photo-wrap"><img class="photo" src="/assets/images/switch/switch-hero-1200.webp" srcset="/assets/images/switch/switch-hero-720.webp 720w, /assets/images/switch/switch-hero-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 560px" width="1200" height="800" fetchpriority="high" alt="An office worker wearing a headset, smiling while on a call at a desk"><div class="call-card" aria-label="Example of a typical switch to Click2Call">
+  <span class="example">Example</span>
+  <div class="cc-top"><span class="cc-av"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><div class="cc-name">Your switch</div><div class="cc-meta">Your old number keeps ringing throughout</div></div></div>
+  <ol class="sw-steps"><li class="done"><b>Day 1</b>New number is live</li><li class="done"><b>Day 1–2</b>Phones and apps configured</li><li class="now"><b>Day 5–10</b>Number port completes</li></ol>
+</div></div>
+  </div></div></section>
 
-    <!-- HERO IMAGE -->
-    <div class="pb-12">
-      <img src="/assets/images/switch-to-voip-hero.webp" alt="Small business team making calls on laptops and mobile phones using Click2Call VoIP" class="w-full rounded-2xl shadow-md" width="1376" height="768" loading="eager" fetchpriority="high"/>
-    </div>
+<section class="kt" aria-labelledby="kt-h"><div class="wrap kt-grid">
+  <h2 id="kt-h">Key Takeaways</h2>
+  <ul><li><strong>Zero downtime:</strong> Your existing number stays active during the entire porting process.</li><li><strong>No hardware required:</strong> Use our free PC and mobile apps, or connect your own SIP-compatible desk phones.</li><li><strong>Keep your number:</strong> We port numbers from Telstra, Optus, TPG, and all other major Australian carriers.</li><li><strong>Simple setup:</strong> Create an account, add a temporary number, configure your users, and test before you port.</li><li><strong>No IT support needed:</strong> The system is designed for self-setup, with our Australian support team ready to help if needed.</li></ul>
+</div></section>
 
-    <!-- START HERE QUICK ACTION -->
-    <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:0.75rem;padding:1.5rem 2rem;margin-bottom:2rem;">
-      <p style="font-size:0.7rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1rem 0;">Start here &mdash; takes 2 minutes</p>
-      <ol style="list-style:none;margin:0 0 1.25rem 0;padding:0;display:flex;flex-direction:column;gap:0.75rem;">
-        <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:#1f2937;"><span style="flex-shrink:0;width:1.75rem;height:1.75rem;border-radius:50%;background:#3B9C49;color:#fff;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">1</span>Create your Click2Call account</li>
-        <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:#1f2937;"><span style="flex-shrink:0;width:1.75rem;height:1.75rem;border-radius:50%;background:#3B9C49;color:#fff;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">2</span>Add a phone number</li>
-        <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:#1f2937;"><span style="flex-shrink:0;width:1.75rem;height:1.75rem;border-radius:50%;background:#3B9C49;color:#fff;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">3</span>Test calls on your mobile or computer</li>
-        <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:#1f2937;"><span style="flex-shrink:0;width:1.75rem;height:1.75rem;border-radius:50%;background:#3B9C49;color:#fff;font-size:0.75rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">4</span>Then port your existing number</li>
-      </ol>
-      <div style="text-align:center;">
-        <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:0.65rem 1.75rem;background:#3B9C49;color:#fff;font-size:0.875rem;font-weight:600;border-radius:0.5rem;text-decoration:none;" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Create your free account &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Comparing providers callout -->
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-4" id="compare-providers">
-      <p class="text-sm text-gray-700 mb-3"><strong class="text-gray-900">Comparing providers?</strong> See how Click2Call stacks up on contracts, setup, features and pricing:</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <a href="/compare/click2call-vs-telstra/" class="group flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
-          <span class="text-sm font-medium text-gray-900">Click2Call vs Telstra IP Telephony</span>
-          <span class="flex-shrink-0 text-sm font-semibold text-[#3B9C49] group-hover:underline">&rarr;</span>
-        </a>
-        <a href="/compare/click2call-vs-optus/" class="group flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
-          <span class="text-sm font-medium text-gray-900">Click2Call vs Optus</span>
-          <span class="flex-shrink-0 text-sm font-semibold text-[#3B9C49] group-hover:underline">&rarr;</span>
-        </a>
-        <a href="/compare/click2call-vs-microsoft-calling-plan/" class="group flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
-          <span class="text-sm font-medium text-gray-900">Click2Call vs Microsoft Calling Plan</span>
-          <span class="flex-shrink-0 text-sm font-semibold text-[#3B9C49] group-hover:underline">&rarr;</span>
-        </a>
-        <a href="/compare/click2call-vs-zoom-phone/" class="group flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
-          <span class="text-sm font-medium text-gray-900">Click2Call vs Zoom Phone</span>
-          <span class="flex-shrink-0 text-sm font-semibold text-[#3B9C49] group-hover:underline">&rarr;</span>
-        </a>
-        <a href="/compare/click2call-vs-3cx/" class="group flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#3B9C49] hover:shadow-sm transition-all duration-200">
-          <span class="text-sm font-medium text-gray-900">Click2Call vs 3CX</span>
-          <span class="flex-shrink-0 text-sm font-semibold text-[#3B9C49] group-hover:underline">&rarr;</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- SECTION — TWO WAYS TO GET SET UP -->
-<section class="bg-white py-16 border-b border-gray-100" id="setup-options">
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-<p class="text-center text-sm font-semibold text-green-700 uppercase tracking-wide mb-2">Two ways to get set up</p>
-<h2 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-3">Set it up yourself, or we'll do it for you</h2>
-<p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Both paths end in the same place — a working phone system. Pick whichever suits how you like to work.</p>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-
-<!-- Card 1 — Self-setup -->
-<div class="bg-white rounded-2xl border-2 border-gray-200 p-6 shadow-sm flex flex-col h-full">
-<div class="flex items-center gap-2 mb-2">
-<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800">Most popular</span>
-</div>
-<h3 class="text-2xl font-bold text-gray-900 mb-1">Set it up yourself</h3>
-<p class="text-sm text-gray-500 mb-4">Follow our step-by-step guides and be making calls in under an hour.</p>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-gray-900">FREE</div>
-<div class="text-sm text-gray-500 mt-1">Live in under an hour</div>
-</div>
-<ul class="space-y-3 text-sm text-gray-700 mb-8 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>Step-by-step <a class="text-[#3B9C49] hover:underline font-medium" href="/help/">Help Centre guides</a> for every feature</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>Free email + phone support if you get stuck</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>You stay in control — change settings any time</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>Most customers are making calls within an hour of signing up</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>$11 free trial credit</strong> to test everything before paying a cent</span></li>
-</ul>
-<a class="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl text-white font-bold transition-all hover:scale-105 shadow-sm" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" style="background-color: #3B9C49;" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Start Free Trial</a>
-<p class="text-xs text-gray-500 mt-3 text-center"><strong>Good for:</strong> tech-comfortable owners, solo operators, simple setups</p>
-</div>
-
-<!-- Card 2 — Managed setup -->
-<div class="bg-white rounded-2xl border-2 border-[#3B9C49] p-6 shadow-md flex flex-col h-full">
-<div class="flex items-center gap-2 mb-2">
-<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">Done for you</span>
-</div>
-<h3 class="text-2xl font-bold text-gray-900 mb-1">We'll set it up for you</h3>
-<p class="text-sm text-gray-500 mb-4">Our team configures everything to your requirements. Live in 1–2 business days.</p>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-gray-900">$300 <span class="text-lg font-normal text-gray-500">ex GST</span></div>
-<div class="text-sm text-gray-500 mt-1">Up to 3 users · additional $50 ex GST per user</div>
-</div>
-<ul class="space-y-3 text-sm text-gray-700 mb-8 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>Scheduled call with a Click2Call setup specialist</strong> to discuss your requirements</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>We configure your <strong>auto-attendant, IVR, ring groups, voicemail greetings, and call routing</strong> to suit your business</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>We <strong>organise your number porting</strong> end-to-end (porting fee $100 inc GST extra)</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>Zero downtime</strong> — your existing number keeps ringing the whole time. You test everything before we commit to the port.</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>Remote walkthrough and training guides</strong> so your team knows how to use it</span></li>
-</ul>
-<a class="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl text-white font-bold transition-all hover:scale-105 shadow-sm" href="mailto:support@click2call.com.au?subject=Managed%20setup%20enquiry&amp;body=Hi%20Click2Call%20team%2C%0A%0AI%27d%20like%20to%20book%20managed%20setup.%20A%20few%20details%20to%20get%20started%3A%0A%0A-%20Business%20name%3A%20%0A-%20Number%20of%20users%3A%20%0A-%20Existing%20phone%20numbers%20to%20port%3A%20%0A-%20Specific%20configuration%20needed%20%5BIVR%20menu%2C%20ring%20groups%2C%20after-hours%20routing%2C%20etc%5D%3A%20%0A%0AWhen%20would%20be%20a%20good%20time%20for%20a%20setup%20call%3F%0A%0AThanks%2C%0A" style="background-color: #3850ED;" onclick="gtag('event', 'managed_setup_enquiry', {'event_category': 'CTA', 'event_label': 'Managed Setup Email'});">Email Us to Book Setup</a>
-<p class="text-xs text-gray-500 mt-3 text-center"><strong>Good for:</strong> prefer hands-off setup, larger teams, complex routing</p>
-</div>
-
-</div>
-
-<!-- Reassurance footer -->
-<div class="mt-10 max-w-2xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-5 text-center">
-<p class="text-sm text-gray-600"><strong>Not sure which one?</strong> Start the free trial first. If you get stuck or decide you'd rather have us handle it, you can switch to managed setup any time during your trial.</p>
-</div>
-
-</div>
-</section>
-
-    <!-- WHO IS THIS FOR -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Who Is This For?</h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">Click2Call is built for Australian businesses that want a reliable, modern phone system without the complexity or cost of traditional phone lines. It suits any business that makes and receives calls as part of their day-to-day operation &mdash; from a sole trader working from home to a small office with a team of ten.</p>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">It is particularly well suited to businesses that are currently paying for a Telstra, Optus, or TPG landline and want to move to a system that works on their existing computers and mobile phones. There is no need to buy new hardware, install anything on your network, or wait for a technician to visit.</p>
-      <p class="text-gray-600 text-lg leading-relaxed">If your team works across multiple locations, from home, or on the road, Click2Call gives everyone access to the same phone system regardless of where they are. Calls come in on your business number and can be routed to any device, anywhere.</p>
-    </div>
-
-    <!-- WHAT YOU NEED -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">What You Need to Get Started</h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-8">There are no special requirements. If you have a reliable internet connection and a device to make calls on, you are ready to go.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-          <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mb-4"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg></div>
-          <h3 class="font-bold text-gray-900 mb-2">Internet Connection</h3>
-          <p class="text-gray-500 text-sm">A standard NBN or business broadband connection is all you need. No dedicated phone lines required.</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-          <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mb-4"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
-          <h3 class="font-bold text-gray-900 mb-2">A PC or Smartphone</h3>
-          <p class="text-gray-500 text-sm">Our free softphone app runs on Windows and Mac. The mobile app is available for iOS and Android.</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-          <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mb-4"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg></div>
-          <h3 class="font-bold text-gray-900 mb-2">A Credit Card for Billing</h3>
-          <p class="text-gray-500 text-sm">Click2Call operates on a prepaid billing system. Add your credit card to load credit and enable auto top-up to cover your monthly flat-rate fees.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- STEP BY STEP -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Exactly how to move your phone system</h2>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">1</div>
-        <div><p class="text-gray-700 font-medium">Create your Click2Call account at <a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer" class="text-green-600 font-semibold hover:underline" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">portal.click2call.com.au/join</a> &mdash; takes 5 minutes, active within 24 hours.</p></div>
-      </div>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">2</div>
-        <div><p class="text-gray-700 font-medium">Add credit and create a temporary phone number from the portal.</p></div>
-      </div>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">3</div>
-        <div><p class="text-gray-700 font-medium">Test calls by diverting the new number to your mobile.</p></div>
-      </div>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">4</div>
-        <div><p class="text-gray-700 font-medium">Divert your existing provider number to Click2Call.</p></div>
-      </div>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">5</div>
-        <div><p class="text-gray-700 font-medium">We remotely configure your existing phones (if compatible).</p></div>
-      </div>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">6</div>
-        <div><p class="text-gray-700 font-medium">Remove the mobile divert so your desk phones ring.</p></div>
-      </div>
-      
-      <div class="flex gap-6 mb-10">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">7</div>
-        <span class="text-gray-700">Submit a port request to move your main number to Click2Call permanently. This takes 5–10 business days. Because of the diversion, there is zero downtime.</span>
-      </div>
-      
-      <div class="flex gap-6">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg" style="background-color:#3B9C49;color:#ffffff;min-width:2.5rem;">8</div>
-        <div><p class="text-gray-700 font-medium">Once porting is complete, remove the temporary number.</p></div>
-
-      <!-- See full pricing link -->
-      <div class="mt-8 text-center">
-        <a href="https://www.click2call.com.au/pricing/" class="inline-flex items-center text-sm font-semibold text-green-700 hover:text-green-800 hover:underline">
-          See full pricing
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- NO DISRUPTION -->
-    <div class="py-12 border-t border-gray-100">
-      <div class="bg-blue-50 border border-blue-200 rounded-xl p-8">
-        <h2 class="text-2xl font-extrabold text-gray-900 mb-5">No disruption to your business</h2>
-        <ul class="space-y-3 text-gray-800">
-          <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Your current phone system stays active during the entire switch</li>
-          <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Calls continue as normal</li>
-          <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>We run both systems in parallel</li>
-          <li class="flex items-center gap-3"><svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>No missed calls</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- WHAT KEEPS WORKING -->
-    <div class="py-12 border-t border-gray-100">
-      <div class="bg-green-50 border border-green-200 rounded-xl p-8">
-        <h2 class="text-2xl font-extrabold text-gray-900 mb-6">What keeps working during the switch?</h2>
-        <ul class="space-y-4 text-gray-800">
-          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Your current phone number</strong> — stays active until the exact moment the port completes.</span></li>
-          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Your internet connection</strong> — phone and internet are separate; switching phones doesn't affect your broadband.</span></li>
-          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Your EFTPOS machines</strong> — modern EFTPOS runs on internet/Wi-Fi, not phone lines.</span></li>
-          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Your alarm systems</strong> — modern alarms use mobile networks or internet, not phone lines.</span></li>
-          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span><strong>Your existing contract</strong> — you only cancel your old provider after the new system is fully working.</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- TIMELINE -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-8">How long does it take?</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
-          <p class="text-xs font-bold text-green-700 uppercase tracking-widest mb-3">Day 1</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Create account</li>
-            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>New number is live</li>
-            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Test calls</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
-          <p class="text-xs font-bold text-green-700 uppercase tracking-widest mb-3">Day 1&ndash;2</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Phones and apps configured</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
-          <p class="text-xs font-bold text-green-700 uppercase tracking-widest mb-3">Day 5&ndash;10</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Number port completes</li>
-            <li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Old provider can be cancelled</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- NUMBER PORTING -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Keeping Your Existing Number &mdash; How Porting Works</h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">Number porting is the process of transferring your existing phone number from your current provider to Click2Call. It is a regulated process in Australia, which means all carriers are required to support it. We can port numbers from Telstra, Optus, TPG, Aussie Broadband, Vonex, and all other major Australian carriers.</p>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">The most important thing to understand about porting is that there is <strong>no downtime</strong>. Your number stays active on your current provider throughout the entire process. On the day the port completes, the number transfers to Click2Call seamlessly.</p>
-      <p class="text-gray-600 text-lg leading-relaxed mb-4">The porting process typically takes 5 to 10 business days from the time we lodge the request. We handle the paperwork &mdash; you just need to provide us with your current account details so we can submit the port request on your behalf.</p>
-      <p class="text-gray-600 text-lg leading-relaxed mb-8"><a class="text-[#3B9C49] font-semibold hover:underline" href="/number-porting/">See the full number porting guide &rarr;</a> &mdash; costs by number type, eligibility, what details you need, and why you should never cancel your old service first.</p>
-      <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-        <div class="px-6 py-4 border-b border-gray-200 bg-white"><h3 class="font-bold text-gray-900">Number Porting Timeline</h3></div>
-        <div class="divide-y divide-gray-200">
-          <div class="flex items-start gap-4 px-6 py-4"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">1</div><div><p class="font-semibold text-gray-900 text-sm">Day 1 &mdash; Sign up and account activation</p><p class="text-gray-500 text-sm mt-0.5">Create your account. Activation within 24 hours. Add a temporary new number to start using the system immediately if needed.</p></div></div>
-          <div class="flex items-start gap-4 px-6 py-4"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">2</div><div><p class="font-semibold text-gray-900 text-sm">Day 1&ndash;3 &mdash; Port request lodged</p><p class="text-gray-500 text-sm mt-0.5">We lodge the port request with your current carrier. Your existing number remains fully active throughout this period.</p></div></div>
-          <div class="flex items-start gap-4 px-6 py-4"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">3</div><div><p class="font-semibold text-gray-900 text-sm">Day 5&ndash;10 &mdash; Port completes</p><p class="text-gray-500 text-sm mt-0.5">Your number transfers to Click2Call. You receive a confirmation email. Calls now ring on your new system. No interruption to service.</p></div></div>
-          <div class="flex items-start gap-4 px-6 py-4"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs font-bold">4</div><div><p class="font-semibold text-gray-900 text-sm">After port &mdash; Cancel your old service</p><p class="text-gray-500 text-sm mt-0.5">Once the port is confirmed, contact your old provider to cancel your line. Do not cancel before the port is complete.</p></div></div>
-        </div>
-      </div>
-      <div class="mt-6 bg-amber-50 border border-amber-200 rounded-xl px-6 py-4">
-        <p class="text-sm text-amber-800"><strong>Important:</strong> Do not cancel your existing phone service before the port is confirmed complete. Cancelling early can cause the port request to fail and may result in losing your number permanently.</p>
-      </div>
-    </div>
-
-    <!-- PC APP VS MOBILE -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">PC App vs Mobile App &mdash; What Works Best</h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-8">Click2Call provides a free app for both PC and smartphone. Understanding how each works will help you set up your team in the way that suits them best.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><h3 class="font-bold text-gray-900">PC Softphone App</h3></div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-3">The PC app is our recommended solution for office-based staff. It is reliable for both inbound and outbound calling and integrates cleanly with your desktop workflow. Calls ring directly on screen, and you can manage transfers, hold, and call recording from the app interface.</p>
-          <p class="text-gray-600 text-sm leading-relaxed">Works on Windows and Mac. A USB headset is recommended for the best call quality, though the built-in microphone and speakers on most laptops work fine for everyday use.</p>
-        </div>
-        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center"><svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div><h3 class="font-bold text-gray-900">Mobile App</h3></div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-3">The mobile app works well for outbound calls when your team is away from the office. However, we recommend against relying on it as the primary way to receive inbound calls. Push notifications on smartphones are not always reliable, which means incoming calls can be missed.</p>
-          <p class="text-gray-600 text-sm leading-relaxed">This is not a limitation specific to Click2Call &mdash; it is a general limitation of SIP apps on mobile operating systems. For reliable inbound call handling on mobile, use call forwarding instead.</p>
-        </div>
-      </div>
-      <div class="bg-green-50 border border-green-200 rounded-xl p-6">
-        <h3 class="font-bold text-gray-900 mb-3">Best Practice: Call Forwarding for Mobile Staff</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-3">The most reliable way to receive calls on a mobile phone is to route inbound calls directly to the staff member's actual mobile number. When a call comes in on your business number, Click2Call forwards it to the mobile number of your choice. The call rings just like a regular mobile call &mdash; no app required.</p>
-        <p class="text-gray-600 text-sm leading-relaxed">This approach gives your team the flexibility to work from anywhere without missing calls. Standard rates apply when calls are forwarded to an external mobile number. See our <a href="/help/how-to-set-up-call-flow" class="text-green-600 font-semibold hover:underline">call flow setup guide</a> for instructions.</p>
-      </div>
-    </div>
-
-    <!-- USE YOUR EXISTING PHONES -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Use your existing phones</h2>
-      <ul class="space-y-3 text-gray-700 mb-4">
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Most VoIP/IP phones work with Click2Call</span></li>
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>We can reconfigure them remotely</span></li>
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>No new hardware required in most cases</span></li>
-      </ul>
-      <p class="text-sm text-gray-500">If unsure, we can confirm compatibility &mdash; call us on <a href="tel:1300884879" class="text-green-600 font-semibold" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a>.</p>
-    </div>
-
-    <!-- SETUP OPTIONS -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Setup Options</h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-8">You have two ways to get set up. Choose the option that suits your team and your level of technical confidence.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-          <div class="mb-3"><span class="text-xs font-bold text-white bg-gray-400 px-2 py-1 rounded-full">Suitable for most businesses</span></div>
-          <div class="flex items-center justify-between mb-4"><h3 class="font-bold text-gray-900 text-lg">Self-Setup</h3><span class="text-sm font-bold text-green-600 bg-green-50 px-3 py-1 rounded-full">Free</span></div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">Configure your own system using our step-by-step Help Centre guides. Each guide covers a specific task &mdash; activating your account, adding phone numbers, setting up users, configuring call routing, and installing the softphone.</p>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">Most customers complete the full setup in under an hour. If you get stuck at any point, our support team is available by phone and email to help.</p>
-          <a href="/help/" class="inline-flex items-center text-sm font-semibold text-green-600 hover:underline">View Help Centre guides <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="bg-white rounded-xl border border-green-300 p-6 shadow-sm">
-          <div class="mb-3"><span class="text-xs font-bold text-white bg-green-600 px-2 py-1 rounded-full">Recommended for busy teams</span></div>
-          <div class="flex items-center justify-between mb-4"><h3 class="font-bold text-gray-900 text-lg">Managed Setup</h3><span class="text-sm font-bold text-gray-700 bg-gray-100 px-3 py-1 rounded-full">$300 ex GST ($330 inc GST)</span></div>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">Our team configures everything for you. This includes setting up all user accounts, configuring your call routing and ring groups, installing and testing the PC softphone on each workstation, and setting up the mobile app on your team's phones.</p>
-          <p class="text-gray-600 text-sm leading-relaxed mb-4">We also lodge your number port request and monitor it through to completion. Once everything is set up and tested, we hand over a brief guide specific to your configuration.</p>
-          <p class="text-gray-500 text-xs">One-off fee. Covers up to 3 users. Additional users are $50 + GST each. Indicate your preference at signup.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- DO YOU NEED IT SUPPORT -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Do you need IT support?</h2>
-      <ul class="space-y-3 text-gray-700">
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>No &mdash; you can set this up yourself</span></li>
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Step-by-step guides are available in our Help Centre</span></li>
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Optional managed setup available for $300 + GST</span></li>
-        <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>We can work with your existing IT provider</span></li>
-      </ul>
-    </div>
-
-    <!-- REAL WORLD EXAMPLE -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Example: Small business switch</h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-8">To give you a concrete idea of what it costs to switch, here is a typical scenario for a small office moving from a Telstra landline to Click2Call.</p>
-      <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-        <div class="px-6 py-4 bg-gray-50 border-b border-gray-200"><p class="font-semibold text-gray-900">Scenario: Small office, 3 users, 1 existing Telstra number to port</p><p class="text-gray-500 text-sm mt-0.5">PC softphone for desk use, mobile app for outbound calls when out of office</p></div>
-        <div class="divide-y divide-gray-100">
-          <div class="flex justify-between items-center px-6 py-3"><span class="text-gray-700 text-sm">Cloud PBX User (monthly)</span><span class="font-semibold text-gray-900 text-sm">$25 / month</span></div>
-          <div class="flex justify-between items-center px-6 py-3"><span class="text-gray-700 text-sm">Extensions for 3 users</span><span class="font-semibold text-green-600 text-sm">Free</span></div>
-          <div class="flex justify-between items-center px-6 py-3"><span class="text-gray-700 text-sm">Number port from Telstra (one-off)</span><span class="font-semibold text-gray-900 text-sm">$100</span></div>
-          <div class="flex justify-between items-center px-6 py-4 bg-gray-50"><span class="font-bold text-gray-900">Total to get fully operational</span><span class="font-bold text-green-600 text-lg">$75.00</span></div>
-        </div>
-        <div class="px-6 py-3 border-t border-gray-100"><p class="text-xs text-gray-400">All prices ex GST. Ongoing cost is $25/month per user.</p></div>
-      </div>
-    </div>
-
-    <!-- PROCESS INFOGRAPHIC -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-6 text-center">The 5-Step Changeover at a Glance</h2>
-      <img src="/assets/images/switch-to-voip-process.webp" alt="5-step infographic: create account, add number, set up users, port old number, start making calls" class="w-full rounded-2xl shadow-sm border border-gray-100" width="1376" height="768" loading="lazy"/>
-    </div>
-
-    <!-- FAQ -->
-    <div class="py-12 border-t border-gray-100">
-      <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-8">Frequently Asked Questions</h2>
-      <div class="space-y-4" id="faq-list">
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-1"><span>How long does it take to switch to Click2Call?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-1" class="hidden px-6 pb-4 text-gray-600">Your account is activated within 24 hours of signing up. If you are keeping your existing number, the port typically takes 5 to 10 business days. You can start making and receiving calls on a new number the same day your account is activated &mdash; you do not need to wait for the port to complete before using the system.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-2"><span>Will there be any downtime when I port my number?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-2" class="hidden px-6 pb-4 text-gray-600">No. Your existing number stays active on your current provider throughout the entire porting process. On the day the port completes, the number transfers to Click2Call seamlessly. There is no gap in service &mdash; calls that were going to your old provider will now ring on your Click2Call system instead.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-3"><span>Can I port my Telstra, Optus, or TPG number to Click2Call?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-3" class="hidden px-6 pb-4 text-gray-600">Yes. We can port numbers from all major Australian carriers including Telstra, Optus, TPG, Aussie Broadband, Vonex, and others. This includes local geographic numbers (02, 03, 07, 08), Australian mobile numbers, and 1300 numbers. Mobile number porting eligibility depends on your current carrier. If you are unsure whether your number can be ported, call us on <a href="tel:1300884879" class="text-green-600 font-semibold" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a> and we will confirm.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-4"><span>Do I need to buy any hardware?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-4" class="hidden px-6 pb-4 text-gray-600">No hardware is required. Click2Call works on your existing PC via the softphone app and on your existing smartphone via the mobile app. If you prefer a physical desk phone, we support SIP-compatible handsets, but they are entirely optional. A USB headset is a useful addition for staff who spend a lot of time on calls, but is not required.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-5"><span>What is the difference between self-setup and managed setup?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-5" class="hidden px-6 pb-4 text-gray-600">Self-setup is free. Our Help Centre guides you through every step including activating your account, adding phone numbers, setting up users, and configuring call routing. Most customers complete the full setup in under an hour. Managed setup costs $300 + GST as a one-off fee. Our team configures everything for you including user accounts, call routing, mobile apps, and PC softphone installation.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-6"><span>How much does it cost to get started?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-6" class="hidden px-6 pb-4 text-gray-600">There are no setup fees for self-setup. A typical small office with three users would pay $75/month ($25 per user), plus a one-off $100 porting fee including GST if keeping an existing number. See our <a href="/pricing/" class="text-green-600 font-semibold hover:underline">pricing page</a> for a full breakdown.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-7"><span>Can I use the mobile app to receive calls?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-7" class="hidden px-6 pb-4 text-gray-600">The mobile app works well for outbound calls. For inbound calls, we recommend routing calls to your actual mobile number rather than relying on the app. Push notifications on smartphones are not always reliable, which can cause missed calls. Forwarding to your mobile number means calls ring just like a normal call &mdash; no app required. Standard rates apply when calls are forwarded to an external mobile number.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-8"><span>Is there a lock-in contract?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-8" class="hidden px-6 pb-4 text-gray-600">No. Click2Call is entirely month-to-month with no lock-in contracts. You can add or remove phone numbers and users at any time from the portal. If you decide to leave, simply cancel from the portal &mdash; there are no cancellation fees.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-9"><span>What happens to my existing phone service during the switchover?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-9" class="hidden px-6 pb-4 text-gray-600">Your existing phone service continues to operate normally throughout the entire switchover process. You can run both systems simultaneously &mdash; your old service and your new Click2Call system &mdash; until you are confident everything is working correctly. Only cancel your old service after the port is confirmed complete and you have tested your new system.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-10"><span>Can I add more users or phone numbers later?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-10" class="hidden px-6 pb-4 text-gray-600">Yes. You can add phone numbers, users, and extensions at any time from the portal. Additional users are $25 per month each. Additional PBX lines are $10 per month. 1300 numbers are also $10 per month (inbound only).</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-11"><span>What support is available if I get stuck?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-11" class="hidden px-6 pb-4 text-gray-600">Our Australian support team is available by phone on <a href="tel:1300884879" class="text-green-600 font-semibold" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a> and by email at <a href="mailto:support@click2call.com.au" class="text-green-600 font-semibold">support@click2call.com.au</a>. We also have a full <a href="/help/" class="text-green-600 font-semibold hover:underline">Help Centre</a> with step-by-step guides covering every aspect of the setup process.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-12"><span>Can I port a 1300 number to Click2Call?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-12" class="hidden px-6 pb-4 text-gray-600">Yes. We support porting of 1300 numbers from other Australian carriers. The one-off porting fee for a 1300 number is $100 including GST. The porting timeline is the same as for local numbers &mdash; typically 5 to 10 business days. Once ported, your 1300 number will ring on your Click2Call system just like any other number.</div></div>
-        
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-13"><span>Can I use my existing phones?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-13" class="hidden px-6 pb-4 text-gray-600">If you have modern SIP-compatible IP phones (like Yealink, Grandstream, or Polycom), yes, you can usually reconfigure them to work with Click2Call. If you have old analogue phones plugged into a wall socket, they won't work. However, most of our customers choose to ditch desk phones entirely and just use our free PC and mobile apps.</div></div>
-        
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-14"><span>Do I need IT support to set this up?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-14" class="hidden px-6 pb-4 text-gray-600">Not at all. The system is designed to be set up by anyone who can use a web browser. Our Help Centre has step-by-step guides for everything. If you do get stuck, our Australian support team is just a phone call away. If you'd rather not touch it at all, we offer a Managed Setup service where we do it all for you.</div></div>
-        <div class="border border-gray-200 rounded-lg overflow-hidden"><button class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false" aria-controls="faq-15"><span>How fast can I port a number from Telstra or Optus?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div id="faq-15" class="hidden px-6 pb-4 text-gray-600">Porting a local or mobile number from Telstra, Optus, or any other Australian carrier typically takes 5&ndash;10 business days from lodgement (1300/1800 numbers can take up to 30 days). Porting is regulated in Australia, so every carrier must support it, and there's zero downtime &mdash; your number stays live with your current provider until the moment it transfers. While the port runs, you can set up and test your whole system on a temporary number, so you're ready the second it lands. Every port is a flat $100 including GST.</div></div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <section class="bg-white py-12 border-b border-gray-100">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm text-center">
-            <h3 class="font-bold text-gray-900 text-lg mb-2">Existing Customers</h3>
-            <p class="text-sm text-gray-600 mb-4">Log in to manage your account, add users, numbers, and more.</p>
-            <a href="https://portal.click2call.com.au/login.php" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-green-600 text-green-700 font-semibold hover:bg-green-50 transition-colors" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">Login to Portal</a>
-          </div>
-          <div class="bg-white rounded-xl border border-green-300 p-6 shadow-sm text-center">
-            <h3 class="font-bold text-gray-900 text-lg mb-2">New Customers</h3>
-            <p class="text-sm text-gray-600 mb-4">Ready to get started? Fill in our signup form &mdash; takes about 5 minutes.</p>
-            <a class="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white font-semibold transition-colors shadow-sm hover:opacity-90" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" style="background-color:#3B9C49;" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Start Free Trial</a>
-            <p class="text-xs text-gray-400 mt-2">Activation takes up to 24 hours after signup</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+<section class="sec tight" aria-label="Start here"><div class="wrap">
+  <div class="quick">
+    <p class="eyebrow">Start here &mdash; takes 2 minutes</p>
+    <ol class="quick-steps">
+      <li><span>1</span>Create your Click2Call account</li>
+      <li><span>2</span>Add a phone number</li>
+      <li><span>3</span>Test calls on your mobile or computer</li>
+      <li><span>4</span>Then port your existing number</li>
+    </ol>
+    <div class="quick-cta"><a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=compare-start-here" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - compare-start-here'});">Create your free account &rarr;</a></div>
   </div>
-</div>
+</div></section>
+
+<section class="sec tight soft" id="compare-providers" aria-label="Compare providers"><div class="wrap">
+  <p class="cmp-intro"><strong>Comparing providers?</strong> See how Click2Call stacks up on contracts, setup, features and pricing:</p>
+  <div class="cmp">
+    <a href="/compare/click2call-vs-telstra/"><span>Click2Call vs Telstra IP Telephony</span>
+      <span class="arr" aria-hidden="true">&rarr;</span></a>
+    <a href="/compare/click2call-vs-optus/"><span>Click2Call vs Optus</span>
+      <span class="arr" aria-hidden="true">&rarr;</span></a>
+    <a href="/compare/click2call-vs-microsoft-calling-plan/"><span>Click2Call vs Microsoft Calling Plan</span>
+      <span class="arr" aria-hidden="true">&rarr;</span></a>
+    <a href="/compare/click2call-vs-zoom-phone/"><span>Click2Call vs Zoom Phone</span>
+      <span class="arr" aria-hidden="true">&rarr;</span></a>
+    <a href="/compare/click2call-vs-3cx/"><span>Click2Call vs 3CX</span>
+      <span class="arr" aria-hidden="true">&rarr;</span></a>
+  </div>
+</div></section>
+
+<section class="sec" id="setup-options" aria-labelledby="setup-h"><div class="wrap">
+  <div class="head"><p class="eyebrow">Two ways to get set up</p><h2 id="setup-h">Set it up yourself, or we'll do it for you</h2><p class="lead">Both paths end in the same place — a working phone system. Pick whichever suits how you like to work.</p></div>
+  <div class="paths">
+    <div class="path">
+      <img src="/assets/images/switch/self-setup-720.webp" width="720" height="402" loading="lazy" alt="A real estate agent sitting in a car, using a mobile phone">
+      <div class="path-body">
+        <span class="pill">Most popular</span>
+        <h3>Set it up yourself</h3>
+        <p>Follow our step-by-step guides and be making calls in under an hour.</p>
+        <div class="cost"><div class="amt">FREE</div><div class="sub">Live in under an hour</div></div>
+        <ul class="checks">
+          <li class="check"><span>Step-by-step <a class="link" href="/help/">Help Centre guides</a> for every feature</span></li>
+          <li class="check"><span>Free email + phone support if you get stuck</span></li>
+          <li class="check"><span>You stay in control — change settings any time</span></li>
+          <li class="check"><span>Most customers are making calls within an hour of signing up</span></li>
+          <li class="check"><span><strong>$11 free trial credit</strong> to test everything before paying a cent</span></li>
+        </ul>
+        <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=compare-self-setup" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - compare-self-setup'});">Start Free Trial</a>
+        <p class="good"><strong>Good for:</strong> tech-comfortable owners, solo operators, simple setups</p>
+      </div>
+    </div>
+    <div class="path team">
+      <img src="/assets/images/switch/managed-setup-720.webp" width="720" height="405" loading="lazy" alt="A technician working at a desk with two monitors">
+      <div class="path-body">
+        <span class="pill">Done for you</span>
+        <h3>We'll set it up for you</h3>
+        <p>Our team configures everything to your requirements. Live in 1–2 business days.</p>
+        <div class="cost"><div class="amt">$300 <span>ex GST</span></div><div class="sub">Up to 3 users · additional $50 ex GST per user</div></div>
+        <ul class="checks">
+          <li class="check"><span><strong>Scheduled call with a Click2Call setup specialist</strong> to discuss your requirements</span></li>
+          <li class="check"><span>We configure your <strong>auto-attendant, IVR, ring groups, voicemail greetings, and call routing</strong> to suit your business</span></li>
+          <li class="check"><span>We <strong>organise your number porting</strong> end-to-end (porting fee $100 inc GST extra)</span></li>
+          <li class="check"><span><strong>Zero downtime</strong> — your existing number keeps ringing the whole time. You test everything before we commit to the port.</span></li>
+          <li class="check"><span><strong>Remote walkthrough and training guides</strong> so your team knows how to use it</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="mailto:support@click2call.com.au?subject=Managed%20setup%20enquiry&amp;body=Hi%20Click2Call%20team%2C%0A%0AI%27d%20like%20to%20book%20managed%20setup.%20A%20few%20details%20to%20get%20started%3A%0A%0A-%20Business%20name%3A%20%0A-%20Number%20of%20users%3A%20%0A-%20Existing%20phone%20numbers%20to%20port%3A%20%0A-%20Specific%20configuration%20needed%20%5BIVR%20menu%2C%20ring%20groups%2C%20after-hours%20routing%2C%20etc%5D%3A%20%0A%0AWhen%20would%20be%20a%20good%20time%20for%20a%20setup%20call%3F%0A%0AThanks%2C%0A" onclick="gtag('event', 'managed_setup_enquiry', {'event_category': 'CTA', 'event_label': 'Managed Setup Email'});">Email Us to Book Setup</a>
+        <p class="good"><strong>Good for:</strong> prefer hands-off setup, larger teams, complex routing</p>
+      </div>
+    </div>
+  </div>
+  <p class="already"><strong>Not sure which one?</strong> Start the free trial first. If you get stuck or decide you'd rather have us handle it, you can switch to managed setup any time during your trial.</p>
+</div></section>
+
+<section class="sec soft" aria-labelledby="who-h"><div class="wrap capture">
+  <div class="copy">
+    <h2 id="who-h">Who Is This For?</h2>
+    <p>Click2Call is built for Australian businesses that want a reliable, modern phone system without the complexity or cost of traditional phone lines. It suits any business that makes and receives calls as part of their day-to-day operation &mdash; from a sole trader working from home to a small office with a team of ten.</p>
+    <p>It is particularly well suited to businesses that are currently paying for a Telstra, Optus, or TPG landline and want to move to a system that works on their existing computers and mobile phones. There is no need to buy new hardware, install anything on your network, or wait for a technician to visit.</p>
+    <p>If your team works across multiple locations, from home, or on the road, Click2Call gives everyone access to the same phone system regardless of where they are. Calls come in on your business number and can be routed to any device, anywhere.</p>
+  </div>
+  <figure class="pic"><img src="/assets/images/switch/team-office-900.webp" width="900" height="502" loading="lazy" alt="Small business team making calls on laptops and mobile phones using Click2Call VoIP"></figure>
+</div></section>
+
+<section class="sec" aria-labelledby="need-h"><div class="wrap">
+  <div class="head"><h2 id="need-h">What You Need to Get Started</h2><p class="lead">There are no special requirements. If you have a reliable internet connection and a device to make calls on, you are ready to go.</p></div>
+  <div class="need">
+    <div><span class="ico"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg></span><h3>Internet Connection</h3><p>A standard NBN or business broadband connection is all you need. No dedicated phone lines required.</p></div>
+    <div><span class="ico"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span><h3>A PC or Smartphone</h3><p>Our free softphone app runs on Windows and Mac. The mobile app is available for iOS and Android.</p></div>
+    <div><span class="ico"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg></span><h3>A Credit Card for Billing</h3><p>Click2Call operates on a prepaid billing system. Add your credit card to load credit and enable auto top-up to cover your monthly flat-rate fees.</p></div>
+  </div>
+</div></section>
+
+<section class="sec soft" aria-labelledby="move-h"><div class="wrap">
+  <div class="head"><h2 id="move-h">Exactly how to move your phone system</h2></div>
+  <ol class="move">
+    <li><span class="num">1</span><p>Create your Click2Call account at <a href="https://portal.click2call.com.au/join/?src=compare-steps" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - compare-steps'});">portal.click2call.com.au/join</a> &mdash; takes 5 minutes, active within 24 hours.</p></li>
+    <li><span class="num">2</span><p>Add credit and create a temporary phone number from the portal.</p></li>
+    <li><span class="num">3</span><p>Test calls by diverting the new number to your mobile.</p></li>
+    <li><span class="num">4</span><p>Divert your existing provider number to Click2Call.</p></li>
+    <li><span class="num">5</span><p>We remotely configure your existing phones (if compatible).</p></li>
+    <li><span class="num">6</span><p>Remove the mobile divert so your desk phones ring.</p></li>
+    <li><span class="num">7</span><p>Submit a port request to move your main number to Click2Call permanently. This takes 5–10 business days. Because of the diversion, there is zero downtime.</p></li>
+    <li><span class="num">8</span><p>Once porting is complete, remove the temporary number.</p></li>
+  </ol>
+  <p class="center-note"><a class="link" href="/pricing/">See full pricing <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-3px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></p>
+</div></section>
+
+<section class="sec" aria-label="During the switch"><div class="wrap duo">
+  <div class="card">
+    <h2>No disruption to your business</h2>
+    <ul class="checks">
+      <li class="check">Your current phone system stays active during the entire switch</li>
+      <li class="check">Calls continue as normal</li>
+      <li class="check">We run both systems in parallel</li>
+      <li class="check">No missed calls</li>
+    </ul>
+  </div>
+  <div class="card green">
+    <h2>What keeps working during the switch?</h2>
+    <ul class="checks">
+      <li class="check"><span><strong>Your current phone number</strong> — stays active until the exact moment the port completes.</span></li>
+      <li class="check"><span><strong>Your internet connection</strong> — phone and internet are separate; switching phones doesn't affect your broadband.</span></li>
+      <li class="check"><span><strong>Your EFTPOS machines</strong> — modern EFTPOS runs on internet/Wi-Fi, not phone lines.</span></li>
+      <li class="check"><span><strong>Your alarm systems</strong> — modern alarms use mobile networks or internet, not phone lines.</span></li>
+      <li class="check"><span><strong>Your existing contract</strong> — you only cancel your old provider after the new system is fully working.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="sec soft" aria-labelledby="long-h"><div class="wrap">
+  <div class="head"><h2 id="long-h">How long does it take?</h2></div>
+  <div class="days">
+    <div class="day"><p class="eyebrow">Day 1</p><ul class="checks"><li class="check">Create account</li><li class="check">New number is live</li><li class="check">Test calls</li></ul></div>
+    <div class="day"><p class="eyebrow">Day 1&ndash;2</p><ul class="checks"><li class="check">Phones and apps configured</li></ul></div>
+    <div class="day"><p class="eyebrow">Day 5&ndash;10</p><ul class="checks"><li class="check">Number port completes</li><li class="check">Old provider can be cancelled</li></ul></div>
+  </div>
+</div></section>
+
+<section class="sec" aria-labelledby="port-h"><div class="wrap port">
+  <div class="copy">
+    <h2 id="port-h">Keeping Your Existing Number &mdash; How Porting Works</h2>
+    <p>Number porting is the process of transferring your existing phone number from your current provider to Click2Call. It is a regulated process in Australia, which means all carriers are required to support it. We can port numbers from Telstra, Optus, TPG, Aussie Broadband, Vonex, and all other major Australian carriers.</p>
+    <p>The most important thing to understand about porting is that there is <strong>no downtime</strong>. Your number stays active on your current provider throughout the entire process. On the day the port completes, the number transfers to Click2Call seamlessly.</p>
+    <p>The porting process typically takes 5 to 10 business days from the time we lodge the request. We handle the paperwork &mdash; you just need to provide us with your current account details so we can submit the port request on your behalf.</p>
+    <p><a href="/number-porting/">See the full number porting guide &rarr;</a> &mdash; costs by number type, eligibility, what details you need, and why you should never cancel your old service first.</p>
+  </div>
+  <div>
+    <div class="ptl">
+      <h3>Number Porting Timeline</h3>
+      <ol>
+        <li><span class="n">1</span><div><p class="t">Day 1 &mdash; Sign up and account activation</p><p>Create your account. Activation within 24 hours. Add a temporary new number to start using the system immediately if needed.</p></div></li>
+        <li><span class="n">2</span><div><p class="t">Day 1&ndash;3 &mdash; Port request lodged</p><p>We lodge the port request with your current carrier. Your existing number remains fully active throughout this period.</p></div></li>
+        <li><span class="n">3</span><div><p class="t">Day 5&ndash;10 &mdash; Port completes</p><p>Your number transfers to Click2Call. You receive a confirmation email. Calls now ring on your new system. No interruption to service.</p></div></li>
+        <li><span class="n">4</span><div><p class="t">After port &mdash; Cancel your old service</p><p>Once the port is confirmed, contact your old provider to cancel your line. Do not cancel before the port is complete.</p></div></li>
+      </ol>
+    </div>
+    <div class="warn"><p><strong>Important:</strong> Do not cancel your existing phone service before the port is confirmed complete. Cancelling early can cause the port request to fail and may result in losing your number permanently.</p></div>
+  </div>
+</div></section>
+
+<section class="sec soft" aria-labelledby="app-h"><div class="wrap">
+  <div class="head"><h2 id="app-h">PC App vs Mobile App &mdash; What Works Best</h2><p class="lead">Click2Call provides a free app for both PC and smartphone. Understanding how each works will help you set up your team in the way that suits them best.</p></div>
+  <div class="duo">
+    <div class="card">
+      <div class="card-top"><span class="ico"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span><h3>PC Softphone App</h3></div>
+      <p>The PC app is our recommended solution for office-based staff. It is reliable for both inbound and outbound calling and integrates cleanly with your desktop workflow. Calls ring directly on screen, and you can manage transfers, hold, and call recording from the app interface.</p>
+      <p>Works on Windows and Mac. A USB headset is recommended for the best call quality, though the built-in microphone and speakers on most laptops work fine for everyday use.</p>
+    </div>
+    <div class="card">
+      <div class="card-top"><span class="ico"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></span><h3>Mobile App</h3></div>
+      <p>The mobile app works well for outbound calls when your team is away from the office. However, we recommend against relying on it as the primary way to receive inbound calls. Push notifications on smartphones are not always reliable, which means incoming calls can be missed.</p>
+      <p>This is not a limitation specific to Click2Call &mdash; it is a general limitation of SIP apps on mobile operating systems. For reliable inbound call handling on mobile, use call forwarding instead.</p>
+    </div>
+  </div>
+  <div class="tip">
+    <h3>Best Practice: Call Forwarding for Mobile Staff</h3>
+    <p>The most reliable way to receive calls on a mobile phone is to route inbound calls directly to the staff member's actual mobile number. When a call comes in on your business number, Click2Call forwards it to the mobile number of your choice. The call rings just like a regular mobile call &mdash; no app required.</p>
+    <p>This approach gives your team the flexibility to work from anywhere without missing calls. Standard rates apply when calls are forwarded to an external mobile number. See our <a href="/help/how-to-set-up-call-flow">call flow setup guide</a> for instructions.</p>
+  </div>
+</div></section>
+
+<section class="sec" aria-label="Phones and IT support"><div class="wrap duo">
+  <div class="card">
+    <h2>Use your existing phones</h2>
+    <ul class="checks">
+      <li class="check"><span>Most VoIP/IP phones work with Click2Call</span></li>
+      <li class="check"><span>We can reconfigure them remotely</span></li>
+      <li class="check"><span>No new hardware required in most cases</span></li>
+    </ul>
+    <p class="small">If unsure, we can confirm compatibility &mdash; call us on <a href="tel:1300884879" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a>.</p>
+  </div>
+  <div class="card">
+    <h2>Do you need IT support?</h2>
+    <ul class="checks">
+      <li class="check"><span>No &mdash; you can set this up yourself</span></li>
+      <li class="check"><span>Step-by-step guides are available in our Help Centre</span></li>
+      <li class="check"><span>Optional managed setup available for $300 + GST</span></li>
+      <li class="check"><span>We can work with your existing IT provider</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="sec soft" aria-labelledby="opt-h"><div class="wrap">
+  <div class="head"><h2 id="opt-h">Setup Options</h2><p class="lead">You have two ways to get set up. Choose the option that suits your team and your level of technical confidence.</p></div>
+  <div class="duo">
+    <div class="card">
+      <span class="pill grey">Suitable for most businesses</span>
+      <div class="card-top split"><h3>Self-Setup</h3><span class="tag">Free</span></div>
+      <p>Configure your own system using our step-by-step Help Centre guides. Each guide covers a specific task &mdash; activating your account, adding phone numbers, setting up users, configuring call routing, and installing the softphone.</p>
+      <p>Most customers complete the full setup in under an hour. If you get stuck at any point, our support team is available by phone and email to help.</p>
+      <a class="link" href="/help/">View Help Centre guides <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-3px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="card green">
+      <span class="pill">Recommended for busy teams</span>
+      <div class="card-top split"><h3>Managed Setup</h3><span class="tag">$300 ex GST ($330 inc GST)</span></div>
+      <p>Our team configures everything for you. This includes setting up all user accounts, configuring your call routing and ring groups, installing and testing the PC softphone on each workstation, and setting up the mobile app on your team's phones.</p>
+      <p>We also lodge your number port request and monitor it through to completion. Once everything is set up and tested, we hand over a brief guide specific to your configuration.</p>
+      <p class="small">One-off fee. Covers up to 3 users. Additional users are $50 + GST each. Indicate your preference at signup.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" aria-labelledby="ex-h"><div class="wrap">
+  <div class="head"><h2 id="ex-h">Example: Small business switch</h2><p class="lead">To give you a concrete idea of what it costs to switch, here is a typical scenario for a small office moving from a Telstra landline to Click2Call.</p></div>
+  <div class="bill">
+    <div class="bill-top"><p class="t">Scenario: Small office, 3 users, 1 existing Telstra number to port</p><p>PC softphone for desk use, mobile app for outbound calls when out of office</p></div>
+    <div class="row"><span>Cloud PBX Users (3 &times; $25 per month)</span><b>$75 / month</b></div>
+    <div class="row"><span>Number port from Telstra (one-off)</span><b>$100</b></div>
+    <div class="row total"><span>Ongoing monthly cost</span><b>$75 / month</b></div>
+    <p class="note">Monthly prices are ex GST; the $100 porting fee includes GST. Ongoing cost is $25/month per user. Each user includes a local number and 300 outbound minutes. Self-setup is free.</p>
+  </div>
+</div></section>
+
+<section class="sec soft" aria-labelledby="glance-h"><div class="wrap">
+  <div class="head"><h2 id="glance-h">The 5-Step Changeover at a Glance</h2></div>
+  <ol class="glance">
+    <li><span class="num">1</span><h3>Create Your Account</h3><p>Sign up online in minutes. Account activated within 24 hours.</p></li>
+    <li><span class="num">2</span><h3>Add Your Number</h3><p>Add a new number or keep your existing one. Each user includes a local number; extra numbers are $10/month.</p></li>
+    <li><span class="num">3</span><h3>Set Up Your Users</h3><p>Add as many users as you need, at $25 per user per month.</p></li>
+    <li><span class="num">4</span><h3>Port Your Old Number</h3><p>We lodge the port request. Local and mobile numbers take 5–10 business days. Zero downtime.</p></li>
+    <li><span class="num">5</span><h3>Start Making Calls</h3><p>Use the PC app, mobile app, or forward calls to your mobile.</p></li>
+  </ol>
+</div></section>
+
+<section class="sec" aria-labelledby="faq-heading"><div class="wrap">
+  <div class="head"><h2 id="faq-heading">Frequently Asked Questions</h2></div>
+  <div class="faq" id="faq-list">
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-1"><span>How long does it take to switch to Click2Call?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-1" class="faq-body hidden">Your account is activated within 24 hours of signing up. If you are keeping your existing number, the port typically takes 5 to 10 business days. You can start making and receiving calls on a new number the same day your account is activated &mdash; you do not need to wait for the port to complete before using the system.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-2"><span>Will there be any downtime when I port my number?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-2" class="faq-body hidden">No. Your existing number stays active on your current provider throughout the entire porting process. On the day the port completes, the number transfers to Click2Call seamlessly. There is no gap in service &mdash; calls that were going to your old provider will now ring on your Click2Call system instead.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-3"><span>Can I port my Telstra, Optus, or TPG number to Click2Call?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-3" class="faq-body hidden">Yes. We can port numbers from all major Australian carriers including Telstra, Optus, TPG, Aussie Broadband, Vonex, and others. This includes local geographic numbers (02, 03, 07, 08), Australian mobile numbers, and 1300 numbers. Mobile number porting eligibility depends on your current carrier. If you are unsure whether your number can be ported, call us on <a href="tel:1300884879" class="text-green-600 font-semibold" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a> and we will confirm.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-4"><span>Do I need to buy any hardware?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-4" class="faq-body hidden">No hardware is required. Click2Call works on your existing PC via the softphone app and on your existing smartphone via the mobile app. If you prefer a physical desk phone, we support SIP-compatible handsets, but they are entirely optional. A USB headset is a useful addition for staff who spend a lot of time on calls, but is not required.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-5"><span>What is the difference between self-setup and managed setup?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-5" class="faq-body hidden">Self-setup is free. Our Help Centre guides you through every step including activating your account, adding phone numbers, setting up users, and configuring call routing. Most customers complete the full setup in under an hour. Managed setup costs $300 + GST as a one-off fee. Our team configures everything for you including user accounts, call routing, mobile apps, and PC softphone installation.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-6"><span>How much does it cost to get started?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-6" class="faq-body hidden">There are no setup fees for self-setup. A typical small office with three users would pay $75/month ($25 per user), plus a one-off $100 porting fee including GST if keeping an existing number. See our <a href="/pricing/" class="text-green-600 font-semibold hover:underline">pricing page</a> for a full breakdown.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-7"><span>Can I use the mobile app to receive calls?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-7" class="faq-body hidden">The mobile app works well for outbound calls. For inbound calls, we recommend routing calls to your actual mobile number rather than relying on the app. Push notifications on smartphones are not always reliable, which can cause missed calls. Forwarding to your mobile number means calls ring just like a normal call &mdash; no app required. Standard rates apply when calls are forwarded to an external mobile number.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-8"><span>Is there a lock-in contract?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-8" class="faq-body hidden">No. Click2Call is entirely month-to-month with no lock-in contracts. You can add or remove phone numbers and users at any time from the portal. If you decide to leave, simply cancel from the portal &mdash; there are no cancellation fees.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-9"><span>What happens to my existing phone service during the switchover?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-9" class="faq-body hidden">Your existing phone service continues to operate normally throughout the entire switchover process. You can run both systems simultaneously &mdash; your old service and your new Click2Call system &mdash; until you are confident everything is working correctly. Only cancel your old service after the port is confirmed complete and you have tested your new system.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-10"><span>Can I add more users or phone numbers later?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-10" class="faq-body hidden">Yes. You can add phone numbers, users, and extensions at any time from the portal. Additional users are $25 per month each. Additional PBX lines are $10 per month. 1300 numbers are also $10 per month (inbound only).</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-11"><span>What support is available if I get stuck?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-11" class="faq-body hidden">Our Australian support team is available by phone on <a href="tel:1300884879" class="text-green-600 font-semibold" onclick="gtag('event', 'phone_call_click', {'event_category': 'CTA', 'event_label': 'Phone Call'});">1300 884 879</a> and by email at <a href="mailto:support@click2call.com.au" class="text-green-600 font-semibold">support@click2call.com.au</a>. We also have a full <a href="/help/" class="text-green-600 font-semibold hover:underline">Help Centre</a> with step-by-step guides covering every aspect of the setup process.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-12"><span>Can I port a 1300 number to Click2Call?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-12" class="faq-body hidden">Yes. We support porting of 1300 numbers from other Australian carriers. The one-off porting fee for a 1300 number is $100 including GST. 1300 and 1800 numbers can take up to 30 days to port, longer than local numbers (typically 5 to 10 business days). Once ported, your 1300 number will ring on your Click2Call system just like any other number.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-13"><span>Can I use my existing phones?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-13" class="faq-body hidden">If you have modern SIP-compatible IP phones (like Yealink, Grandstream, or Polycom), yes, you can usually reconfigure them to work with Click2Call. If you have old analogue phones plugged into a wall socket, they won't work. However, most of our customers choose to ditch desk phones entirely and just use our free PC and mobile apps.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-14"><span>Do I need IT support to set this up?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-14" class="faq-body hidden">Not at all. The system is designed to be set up by anyone who can use a web browser. Our Help Centre has step-by-step guides for everything. If you do get stuck, our Australian support team is just a phone call away. If you'd rather not touch it at all, we offer a Managed Setup service where we do it all for you.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="faq-15"><span>How fast can I port a number from Telstra or Optus?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="faq-15" class="faq-body hidden">Porting a local or mobile number from Telstra, Optus, or any other Australian carrier typically takes 5&ndash;10 business days from lodgement (1300/1800 numbers can take up to 30 days). Porting is regulated in Australia, so every carrier must support it, and there's zero downtime &mdash; your number stays live with your current provider until the moment it transfers. While the port runs, you can set up and test your whole system on a temporary number, so you're ready the second it lands. Every port is a flat $100 including GST.</div></div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0" aria-label="Get started"><div class="wrap">
+  <div class="final-duo">
+    <div class="fd new">
+      <h3>New Customers</h3>
+      <p>Ready to get started? Fill in our signup form &mdash; takes about 5 minutes.</p>
+      <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=compare-final-cta" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - compare-final-cta'});">Start Free Trial</a>
+      <p class="talk">Activation takes up to 24 hours after signup</p>
+    </div>
+    <div class="fd">
+      <h3>Existing Customers</h3>
+      <p>Log in to manage your account, add users, numbers, and more.</p>
+      <a class="btn btn-ghost" href="https://portal.click2call.com.au/login.php" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">Login to Portal</a>
+    </div>
+  </div>
+</div></section>
 </main>
 
 <script>
