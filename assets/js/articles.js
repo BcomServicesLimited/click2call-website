@@ -179,9 +179,9 @@ var HELP_ARTICLES = [
 
   {
     url:      "/help/secure-voip-android-background-mode",
-    title:    "Secure VoIP on Android: Background Mode and Battery",
-    desc:     "The Secure VoIP app for Android uses a notification to wake up when a call comes in. Background mode also keeps the app running all the time. It's on by.",
-    tags:     "secure voip android background mode battery push notification missed calls",
+    title:    "Secure VoIP on Android: Fixing Missed Calls and Battery Saving",
+    desc:     "Android phones save battery by putting apps to sleep. The Secure VoIP app is woken by a push notification when a call comes in, but some phones' battery.",
+    tags:     "secure voip android battery optimisation background missed calls push notification",
     category: "devices",
     readTime: "2 min read",
     featured: true,
