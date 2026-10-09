@@ -69,7 +69,7 @@ Click2Call uses flat-rate, prepaid billing. Customers load credit onto their acc
 
 ### Number Porting (one-time fee, including GST)
 - **Any number port**: $100.00 including GST — 5–10 business days, number stays active during porting
-- **1300 or 1800 number port**: $100.00 including GST — 5–10 business days, number stays active during porting
+- **1300 or 1800 number port**: $100.00 including GST — up to 30 days, number stays active during porting
 
 ### Call Rates (per minute, ex GST, beyond included 300 mins)
 
@@ -130,12 +130,12 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 
 - **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
 - **Account activation**: within 24 hours of signup
-- **Number porting**: every number type ($100 including GST), takes 5–10 business days, zero downtime during the port
+- **Number porting**: every number type ($100 including GST), takes 5–10 business days (1300/1800 up to 30 days), zero downtime during the port. A ported number then runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User
 - **Bulk porting**: discounts available for 100-number blocks — contact for a quote
 - **Self-setup**: free, guided by Help Centre articles
 - **Managed setup**: $300 + GST one-off fee — Click2Call team configures everything
 - **Apps**: PC softphone app (recommended for desk use), mobile app (best for outbound; for inbound, call forwarding to mobile number is recommended)
-- **Real-world example**: 3-user office — $75/month ongoing ($25 per user) + $100 one-time port fee (inc GST)
+- **Real-world example**: 3-user office keeping its existing number — $85/month ongoing ($75 for 3 users + $10 plan for the ported number) + $100 one-time port fee (inc GST)
 
 ## How Click2Call Compares to Alternatives
 
@@ -432,6 +432,7 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - **Nine AI voice platform connection profiles**: Click2Call now has built-in profiles for OpenAI, xAI, ElevenLabs, Retell AI, Synthflow, Vapi, LiveKit Cloud, Twilio and Cloudonix. Any reference to ElevenLabs as the *only* native integration is obsolete. Per-platform guides at https://www.click2call.com.au/help/how-to-connect-ai-voice-agent; comparison at https://www.click2call.com.au/blog/ai-voice-agent-australian-phone-number. Providers authenticate Click2Call by IP allowlist (103.212.52.19); Click2Call cannot present credentials on an outbound INVITE.
 - **simPRO integration documented**: help guide and blog post. Server Address must be sip.click2call.com.au:5060 (port 5060, not 5061).
 - **Porting fee canonical**: a flat $100 including GST for every number type (operator decision 2026-09-16). Any $50 local-port figure is obsolete.
+- **Ported numbers need their own plan** (operator decision 2026-10-09): $10/month as an Inbound Business Number, or $25/month as a Cloud PBX User; a ported number is not free on top of a user plan. 1300/1800 ports can take up to 30 days.
 - **Help Centre now 39 articles.**
 
 ### 2026-07-14 — Help content & LLM-context refresh
