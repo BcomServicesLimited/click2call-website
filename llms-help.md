@@ -397,6 +397,23 @@ For example, a small business might keep the $10 number for inbound calls and ad
 
 To get started, simply log in to the portal, add a credit card, and add the plans you need under the Subscriptions tab.
 
+### What to do next
+
+Ready to keep it? Here’s what to do before your 7 days are up.
+
+[#### Add a card and credit
+
+Outbound calls stop at day 7, or sooner if the $11 runs out](https://www.click2call.com.au/help/how-to-add-account-credit)
+[#### Keep your existing number
+
+Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
+[#### Add your team
+
+$25 a user a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
+[#### Have us set it up
+
+Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](https://www.click2call.com.au/contact/)
+
 ## Making Your First Call
 
 Source: https://www.click2call.com.au/help/how-to-make-your-first-call
@@ -513,6 +530,23 @@ On desktop, check that the correct audio input and output devices are selected i
 My call failed with “Insufficient credit”
 
 Your account balance has run out. Log in to the portal, go to **Account → Payments**, and add credit. We recommend enabling **auto top-up** so your balance is topped up automatically when it falls below a threshold you set. See the [Adding Account Credit](https://www.click2call.com.au/help/how-to-add-account-credit) guide for details.
+
+### What to do next
+
+Calls working? Here’s how to make it your business line.
+
+[#### Ring your mobile when you’re out
+
+Business hours to your mobile, voicemail to email after hours](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile)
+[#### Keep your existing number
+
+Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
+[#### Add your team
+
+$25 a user a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
+[#### Keep it after the trial
+
+Add a card and credit before day 7 so outbound calls keep working](https://www.click2call.com.au/help/how-to-add-account-credit)
 
 ## Adding Account Credit
 
@@ -3058,6 +3092,23 @@ Go to the **Telephone** menu in the top left of your screen and select **Prefere
 #### Adjust audio and call settings (optional)
 
 In **Preferences**, use the **General** and **Sound** sections to select your preferred microphone and speaker or headset. If you do not want to receive a second call while already on a call, untick **Call waiting** in the General section.
+
+### What to do next
+
+The app is working. Here’s what most people do next.
+
+[#### Make your first call
+
+Test a call in and out on your new number](https://www.click2call.com.au/help/how-to-make-your-first-call)
+[#### Keep your existing number
+
+Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
+[#### Add your team
+
+$25 a user a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
+[#### Have us set it up
+
+Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](https://www.click2call.com.au/contact/)
 
 ## Connecting simPRO to Click2Call
 
