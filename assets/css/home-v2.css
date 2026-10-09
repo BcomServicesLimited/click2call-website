@@ -536,3 +536,7 @@
 .hv2 .plan ul.checks li.info::before{background:none;border:1.5px solid var(--line)}
 .hv2 .soft-row{background:var(--soft)}
 .hv2 .soft-row .x-h{margin:0}
+.hv2.pr .hero h1 em{white-space:nowrap}
+.hv2 .addons{grid-template-columns:1fr}
+.hv2 .addons .hw{grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:640px){.hv2 .addons .hw{grid-template-columns:1fr}}

@@ -867,9 +867,10 @@ function updateCalc() {
   var moGst = moSub * 0.10, moTotal = moSub + moGst;
   var m = '';
   if (users > 0) m += calcLine('Cloud PBX Users (' + users + ' &times; $25)', fmt(moUsers));
-  if (local > 0) m += calcLine('Local numbers (' + local + ' &times; $10)', fmt(moLocal));
-  if (n1300 > 0) m += calcLine('1300 numbers (' + n1300 + ' &times; $10)', fmt(mo1300));
-  if (n1800 > 0) m += calcLine('1800 numbers (' + n1800 + ' &times; $10)', fmt(mo1800));
+  var incl = function (k) { return k > 0 ? ', incl. ' + k + ' brought across' : ''; };
+  if (local > 0) m += calcLine('Local numbers (' + local + ' &times; $10' + incl(portLocal) + ')', fmt(moLocal));
+  if (n1300 > 0) m += calcLine('1300 numbers (' + n1300 + ' &times; $10' + incl(calcPortType === '1300' ? ports : 0) + ')', fmt(mo1300));
+  if (n1800 > 0) m += calcLine('1800 numbers (' + n1800 + ' &times; $10' + incl(calcPortType === '1800' ? ports : 0) + ')', fmt(mo1800));
   if (users > 0) m += calcLine('Included outbound minutes', (users * 300).toLocaleString() + ' mins', 'note');
   if (!m) m = '<p class="r-zero">Add a user or a number to see a monthly price</p>';
   document.getElementById('r-monthly').innerHTML = m;
@@ -964,6 +965,8 @@ function applyPreset(name, scroll) {
   document.getElementById('calc-desk').value = 0;
   document.getElementById('calc-cordless').value = 0;
   calcPortType = 'local';
+  document.getElementById('calc-setup-self').checked = true;
+  calcRecDismissed = false;
   document.getElementById('calc-extras').open = p.local > 0 || p.n1300 > 0 || p.n1800 > 0;
   updateCalc();
   if (typeof gtag === 'function') gtag('event', 'calculator_preset', { 'event_category': 'Calculator', 'event_label': name });
