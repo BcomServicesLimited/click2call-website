@@ -336,8 +336,8 @@
     mobileBtn.addEventListener('click', function () {
       var isOpen = !mobileMenu.classList.contains('hidden');
       mobileMenu.classList.toggle('hidden');
-      hamIcon.classList.toggle('hidden', !isOpen ? false : true);
-      closeIcon.classList.toggle('hidden', !isOpen ? true : false);
+      hamIcon.classList.toggle('hidden', !isOpen);    // opening: hide the hamburger
+      closeIcon.classList.toggle('hidden', isOpen);   // opening: show the close icon
       mobileBtn.setAttribute('aria-expanded', String(!isOpen));
     });
   }
