@@ -540,3 +540,6 @@
 .hv2 .addons{grid-template-columns:1fr}
 .hv2 .addons .hw{grid-template-columns:1fr 1fr;gap:20px}
 @media (max-width:640px){.hv2 .addons .hw{grid-template-columns:1fr}}
+.hv2 .addons{grid-template-columns:minmax(0,1fr)}
+.hv2 .card,.hv2 .plan,.hv2 .sc,.hv2 .q,.hv2 .receipt,.hv2 .duo>*{min-width:0}
+.hv2.pr .btn{white-space:normal;text-align:center}
