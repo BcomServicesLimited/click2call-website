@@ -12,6 +12,7 @@
 <link as="image" fetchpriority="high" href="/assets/images/click2call_header_logo_transparent.webp" rel="preload"/>
 <link rel="stylesheet" href="/assets/css/tailwind.css">
 <link href="/assets/css/brand.css" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/home-v2.css">
 <script defer="" src="/assets/js/alpine.min.js"></script>
 <!-- Favicon -->
 <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
@@ -164,7 +165,7 @@
       "name": "Can I port my existing phone number?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We can port most Australian landline and mobile numbers. A one-time porting fee of $100 including GST applies to every number type. Porting typically takes 5–10 business days and your number remains active throughout the process — there is no downtime."
+        "text": "Yes. We can port most Australian landline and mobile numbers. A one-time porting fee of $100 including GST applies to every number type. Porting typically takes 5–10 business days (1300 and 1800 numbers can take up to 30 days) and your number remains active throughout the process — there is no downtime. Once it arrives, each ported number runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User."
       }
     },
     {
@@ -228,7 +229,7 @@
       "name": "What does it cost to move from an on-premise PBX to Click2Call?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most businesses, only the number porting fee: $100 including GST per number, any type, with no downtime. Setup is free if you follow the help guides; managed setup is $300 ex GST for up to 3 users plus $50 per additional user. Handsets are optional — the softphone app is free, and pre-configured Yealink desk phones are $450 ex GST if you want them. There is no line rental and no maintenance contract."
+        "text": "For most businesses, the only one-off cost is the number porting fee: $100 including GST per number, any type, with no downtime. Each number you bring across then runs on its own plan ($10/month as an inbound number, or $25/month as a Cloud PBX User). Setup is free if you follow the help guides; managed setup is $300 ex GST for up to 3 users plus $50 per additional user. Handsets are optional — the softphone app is free, and pre-configured Yealink desk phones are $450 ex GST if you want them. There is no line rental and no maintenance contract."
       }
     }
   ]
@@ -360,7 +361,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "dateModified": "2026-09-29",
+  "dateModified": "2026-10-09",
   "name": "Click2Call Pricing — Cloud PBX from $25/user/month",
   "url": "https://www.click2call.com.au/pricing",
   "speakable": {
@@ -373,8 +374,6 @@
 }
 </script>
 <!-- jsPDF for quote generation -->
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 
 <style>
 /* Quote-builder calculator: rows hidden by default; updateCalc() reveals
@@ -577,354 +576,193 @@
 <!-- ===================== MAIN CONTENT ===================== -->
 
 <!-- ===================== MAIN CONTENT ===================== -->
-<main id="main-content">
-<!-- GST NOTICE BANNER -->
-<div class="bg-amber-50 border-b border-amber-200 py-2 px-4 text-center text-sm text-amber-800 font-medium">
-    All prices shown exclude GST. GST of 10% applies to all charges.
+<main id="main-content" class="hv2 pr">
+<p class="notice">All prices shown exclude GST. GST of 10% applies to all charges.</p>
+
+<section class="hero" aria-labelledby="speakable-headline"><div class="wrap"><div class="hero-grid">
+  <div class="hero-copy">
+    <h1 id="speakable-headline">Simple, <em>Flat-Rate</em> Pricing</h1>
+    <p class="summary" id="speakable-summary">Click2Call offers flat-rate Cloud PBX (hosted PBX) pricing from $25 per user per month (ex GST) with no lock-in contracts, no hidden fees, and no hardware required. Includes a local Australian phone number, 300 outbound minutes, and unlimited inbound calls. Inbound Business Numbers are $10/month each. 7-day free trial available with $11 credit.</p>
+    <div class="ctas"><div><a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-hero" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-hero'});">Start free 7-day trial</a></div><div><a class="btn btn-ghost" href="#calculator" onclick="gtag('event', 'team_quote_click', {'event_category': 'CTA', 'event_label': 'Team Quote - pricing-hero'});">Price my team</a></div></div>
+    <p class="micro">No credit card required to sign up &middot; $11 credit included</p>
   </div>
+  <div class="today" aria-label="What it costs to start">
+    <span class="k">Starting today</span>
+    <div class="t-row"><span>7-day free trial</span><b>$0</b></div>
+    <div class="t-row"><span>$11 credit, enough for a local number</span><b>Included</b></div>
+    <div class="t-row"><span>No credit card to sign up</span><b>$0</b></div>
+    <div class="t-row"><span>If you keep it</span><b>From $10/month</b></div>
+    <div class="t-row big"><span>Due today</span><b>$0</b></div>
+  </div>
+</div></div></section>
 
-<!-- SECTION 1 — HERO -->
-<section class="bg-white py-16 border-b border-gray-100">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl" id="speakable-headline">Simple, Flat-Rate Pricing</h1>
-<p class="mt-4 text-xl text-gray-500 max-w-2xl mx-auto" id="speakable-summary">Click2Call offers flat-rate Cloud PBX (hosted PBX) pricing from $25 per user per month (ex GST) with no lock-in contracts, no hidden fees, and no hardware required. Includes a local Australian phone number, 300 outbound minutes, and unlimited inbound calls. Inbound Business Numbers are $10/month each. 7-day free trial available with $11 credit.</p>
-<div class="mt-8">
-<a href="https://portal.click2call.com.au/join/" class="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-green-600 text-white font-semibold text-lg hover:bg-green-700 transition-colors shadow-sm" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Start free 7-day trial</a>
-<p class="text-xs text-gray-400 mt-2">No credit card required to sign up &middot; $11 credit included</p>
-</div>
-</div>
-</section>
+<section class="kt" aria-labelledby="kt-h"><div class="wrap kt-grid">
+  <h2 id="kt-h">Key Takeaways</h2>
+  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Inbound only, no outbound calling.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
+</div></section>
 
-<!-- SECTION 2 — KEY TAKEAWAYS (LLM-optimised summary) -->
-<div class="bg-green-50 border-l-4 border-green-500 p-6 max-w-4xl mx-auto mt-8 mb-8 px-4 sm:px-6 lg:px-8 rounded-r-lg">
-<h2 class="text-lg font-semibold text-green-800 mb-3">Key Takeaways</h2>
-<ul class="space-y-2.5 text-green-700 text-sm leading-relaxed">
-<li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" fill-rule="evenodd"></path></svg><span><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</span></li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" fill-rule="evenodd"></path></svg><span><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Inbound only, no outbound calling.</span></li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" fill-rule="evenodd"></path></svg><span><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</span></li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" fill-rule="evenodd"></path></svg><span><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</span></li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" fill-rule="evenodd"></path></svg><span><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</span></li>
-</ul>
-</div>
+<section class="sec" aria-labelledby="plans-h"><div class="wrap">
+  <div class="head"><p class="eyebrow">Two plans, no tiers</p><h2 id="plans-h">Start free. Choose your plan later.</h2><p class="lead">You don't need to pick a plan to start your trial. Your $11 credit covers a local number, and you add users in the portal when you're ready.</p></div>
+  <div class="plans">
+    <div class="plan main">
+      <span class="pill">Most Popular</span>
+      <h3>Cloud PBX User</h3>
+      <span class="plan-sub">Inbound &amp; Outbound</span>
+      <div class="cost"><div class="amt">$25<span>/mo</span></div><div class="sub">per user (ex GST)</div></div>
+      <ul class="checks">
+        <li class="check">1 &times; Local Australian Number</li>
+        <li class="check">300 mins outbound included</li>
+        <li class="check info">Covers typical small business usage</li>
+        <li class="check">Unlimited inbound calls</li>
+        <li class="check">All Cloud PBX features</li>
+        <li class="check">AI Receptionist included free</li>
+      </ul>
+      <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-plan-user" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-plan-user'});">Start free trial</a>
+    </div>
+    <div class="plan">
+      <h3>Inbound Business Number</h3>
+      <span class="plan-sub">Inbound only</span>
+      <div class="cost"><div class="amt">$10<span>/mo</span></div><div class="sub">per line (ex GST)</div></div>
+      <ul class="checks">
+        <li class="check">Shared numbers, reception, or extra inbound routing</li>
+        <li class="check">Unlimited inbound calling</li>
+        <li class="check">Full Cloud PBX features</li>
+        <li class="check">1300 numbers available ($10/mo)</li>
+        <li class="check">AI Receptionist included free</li>
+      </ul>
+      <a class="btn btn-ghost" href="https://portal.click2call.com.au/join/?src=pricing-plan-number" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-plan-number'});">Start free trial</a>
+    </div>
+    <a class="plan team" href="#calculator" onclick="gtag('event', 'team_quote_click', {'event_category': 'CTA', 'event_label': 'Team Quote - pricing-plans'});">
+      <span class="pill">For teams</span>
+      <h3>Pricing a team?</h3>
+      <p>Add up users, numbers, porting, phones and setup in the quote builder. See your monthly and one-off totals as you go, then start a trial or download a formal PDF quote.</p>
+      <span class="more">Build your quote &rarr;</span>
+    </a>
+  </div>
+  <div class="duo explain">
+    <div class="card">
+      <p class="eyebrow">Choosing the right plan</p>
+      <p>The <strong>Cloud PBX User</strong> ($25/month) is for anyone who needs to make and receive calls &mdash; includes a local number, 300 outbound minutes, and all Cloud PBX features.</p>
+      <p>The <strong>Inbound Business Number</strong> ($10/month) is for receiving calls only &mdash; ideal for a shared reception line or 1300 number. No outbound calling. All Cloud PBX features are included with both plans.</p>
+    </div>
+    <div class="card green">
+      <p class="eyebrow">Switching from your current system</p>
+      <ul class="checks">
+        <li class="check">Keep your existing number</li>
+        <li class="check">No downtime during port</li>
+        <li class="check">Your current system stays active during the switch</li>
+        <li class="check">Use your current phones (if compatible)</li>
+        <li class="check">Setup in 1&ndash;2 days &middot; port completes in 5&ndash;10 business days</li>
+      </ul>
+      <p class="small">Each number you bring across needs its own plan: an Inbound Business Number ($10/month), or a Cloud PBX User ($25/month) if it needs to make calls.</p>
+      <div class="row-links"><a class="btn btn-dark" href="/compare/">See exactly how the switch works</a></div>
+      <p class="small">Weighing up options? Compare Click2Call with <a href="/compare/click2call-vs-telstra/">Telstra IP Telephony</a> or <a href="/compare/click2call-vs-zoom-phone/">Zoom Phone</a>.</p>
+    </div>
+  </div>
+</div></section>
 
-<!-- SECTION 3 — PRICING CARDS -->
-<section class="bg-gray-50 py-16 border-b border-gray-100">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-<!-- Card 1: Cloud PBX User -->
-<div class="bg-white rounded-xl border-2 border-green-500 p-6 shadow-md flex flex-col relative">
-<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Popular</div>
-<h3 class="text-xl font-bold text-gray-900 mb-1">Cloud PBX User</h3>
-<span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Inbound &amp; Outbound</span>
-<div class="text-4xl font-extrabold text-gray-900 mb-1">$25<span class="text-lg font-normal text-gray-500">/mo</span></div>
-<div class="text-sm text-gray-500 mb-6">per user (ex GST)</div>
-<ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>1 &times; Local Australian Number</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>300 mins outbound included</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span class="text-gray-500 italic">Covers typical small business usage</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Unlimited inbound calls</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>All Cloud PBX features</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>AI Receptionist included free</li>
-</ul>
-<a class="w-full block text-center px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors" href="https://portal.click2call.com.au/join/" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Get Started</a>
-</div>
-<!-- Card 2: Inbound Business Number -->
-<div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col">
-<h3 class="text-xl font-bold text-gray-900 mb-1">Inbound Business Number</h3>
-<span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3">Inbound only</span>
-<div class="text-4xl font-extrabold text-gray-900 mb-1">$10<span class="text-lg font-normal text-gray-500">/mo</span></div>
-<div class="text-sm text-gray-500 mb-6">per line (ex GST)</div>
-<ul class="space-y-3 text-sm text-gray-600 mb-8 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Shared numbers, reception, or extra inbound routing</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Unlimited inbound calling</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Full Cloud PBX features</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>1300 numbers available ($10/mo)</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>AI Receptionist included free</li>
-</ul>
-<a class="w-full block text-center px-4 py-2 border-2 border-green-600 text-green-700 rounded-lg font-semibold hover:bg-green-50 transition-colors" href="https://portal.click2call.com.au/join/" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Get Started</a>
-</div>
-</div>
-<!-- Which plan / Switching info box -->
-<div class="mt-8 max-w-3xl mx-auto bg-green-50 border border-green-200 rounded-xl p-6 md:p-8 shadow-sm">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-<!-- Left: Plan explainer -->
-<div>
-<p class="text-sm font-semibold text-gray-700 mb-2">Choosing the right plan</p>
-<p class="text-sm text-gray-700 mb-3">The <strong>Cloud PBX User</strong> ($25/month) is for anyone who needs to make and receive calls &mdash; includes a local number, 300 outbound minutes, and all Cloud PBX features.</p>
-<p class="text-sm text-gray-700">The <strong>Inbound Business Number</strong> ($10/month) is for receiving calls only &mdash; ideal for a shared reception line or 1300 number. No outbound calling. All Cloud PBX features are included with both plans.</p>
-</div>
-<!-- Right: Switch checklist -->
-<div>
-<p class="text-sm font-semibold text-gray-700 mb-2">Switching from your current system</p>
-<ul class="space-y-2 text-sm text-gray-700">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Keep your existing number</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>No downtime during port</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Your current system stays active during the switch</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Use your current phones (if compatible)</li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Setup in 1&ndash;2 days &middot; port completes in 5&ndash;10 business days</li>
-</ul>
-</div>
-</div>
-<a class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-lg bg-green-600 text-white hover:bg-green-700 transition-colors" href="https://www.click2call.com.au/compare/">
-          See exactly how the switch works
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-<p class="mt-3 text-sm text-gray-500">Weighing up options? Compare Click2Call with <a class="text-[#3B9C49] font-medium hover:underline" href="/compare/click2call-vs-telstra/">Telstra IP Telephony</a> or <a class="text-[#3B9C49] font-medium hover:underline" href="/compare/click2call-vs-zoom-phone/">Zoom Phone</a>.</p>
-</div>
-</div>
-</section>
+<section class="sec soft" aria-labelledby="scen-h"><div class="wrap">
+  <div class="head"><h2 id="scen-h">What will I actually pay?</h2><p class="lead">Three real-world scenarios to show exactly how our pricing works in practice.</p></div>
+  <div class="scen">
+    <div class="sc">
+      <h3>Solo operator</h3>
+      <p class="who">1 user</p>
+      <div class="amt">$25<span>/month</span></div>
+      <ul class="checks"><li class="check">No setup required</li><li class="check">Includes local number</li><li class="check">300 outbound mins</li></ul>
+      <button type="button" class="btn btn-ghost" data-preset="solo">Price this in the builder</button>
+    </div>
+    <div class="sc">
+      <h3>Small office</h3>
+      <p class="who">3 users + your existing number</p>
+      <div class="amt">$85<span>/month</span></div>
+      <ul class="checks"><li class="check">$75 for 3 users + $10 for your ported number</li><li class="check">$100 one-time number port (inc GST)</li><li class="check">Optional $300 managed setup</li><li class="check">300 outbound mins per user</li></ul>
+      <button type="button" class="btn btn-ghost" data-preset="office">Price this in the builder</button>
+    </div>
+    <div class="sc">
+      <h3>Growing team</h3>
+      <p class="who">5 users + extra number</p>
+      <div class="amt">$135<span>/month</span></div>
+      <ul class="checks"><li class="check">$125 for 5 users</li><li class="check">$10 for extra inbound line</li><li class="check">Scalable anytime</li></ul>
+      <button type="button" class="btn btn-ghost" data-preset="team">Price this in the builder</button>
+    </div>
+  </div>
+</div></section>
 
-<!-- SECTION 3.5 — What you're getting (service link strip) -->
-<section class="bg-white py-12 border-b border-gray-100">
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-<p class="text-center text-sm font-semibold text-green-700 uppercase tracking-wide mb-2">What's included</p>
-<h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-2">What you're actually buying for $25/user/month</h2>
-<p class="text-center text-gray-600 mb-10">A Cloud PBX User plan bundles a full phone system with our AI tools and integrations — all included, no per-feature add-ons.</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-<a class="bg-white rounded-xl border border-gray-200 p-5 hover:border-[#3B9C49] hover:shadow-md transition-all" href="/cloud-pbx/">
-<div class="flex items-center gap-2 mb-2"><svg class="w-5 h-5 text-[#3B9C49]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><h3 class="font-bold text-gray-900">Cloud PBX</h3></div>
-<p class="text-sm text-gray-600">Local Australian number, call routing, auto-attendant, voicemail, ring groups, mobile + desk apps. The phone-system backbone &mdash; and it includes the <span class="text-[#3B9C49] font-semibold">call centre features</span> other providers charge extra for.</p>
-<span class="inline-block mt-3 text-xs font-semibold text-[#3B9C49]">Learn more →</span>
-</a>
-<a class="bg-white rounded-xl border border-gray-200 p-5 hover:border-[#3B9C49] hover:shadow-md transition-all" href="/ai-receptionist/">
-<div class="flex items-center gap-2 mb-2"><svg class="w-5 h-5 text-[#3850ED]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><h3 class="font-bold text-gray-900">AI Receptionist</h3></div>
-<p class="text-sm text-gray-600">Conversational AI answers calls 24/7 in a natural voice. Routes, takes messages, books simple appointments. Included free.</p>
-<span class="inline-block mt-3 text-xs font-semibold text-[#3B9C49]">Learn more →</span>
-</a>
-<a class="bg-white rounded-xl border border-gray-200 p-5 hover:border-[#3B9C49] hover:shadow-md transition-all" href="/ai-voice-tools/">
-<div class="flex items-center gap-2 mb-2"><svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><h3 class="font-bold text-gray-900">AI Voice Tools</h3></div>
-<p class="text-sm text-gray-600">Every call recorded, transcribed and summarised in plain English. Sentiment + key topics in your portal. Included free.</p>
-<span class="inline-block mt-3 text-xs font-semibold text-[#3B9C49]">Learn more →</span>
-</a>
-<a class="bg-white rounded-xl border border-gray-200 p-5 hover:border-[#3B9C49] hover:shadow-md transition-all" href="/microsoft-teams-calling/">
-<div class="flex items-center gap-2 mb-2"><svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><h3 class="font-bold text-gray-900">Microsoft Teams Calling</h3></div>
-<p class="text-sm text-gray-600">Already use Teams? Make real phone calls from inside Teams using Direct Routing. No Microsoft Calling Plan needed.</p>
-<span class="inline-block mt-3 text-xs font-semibold text-[#3B9C49]">Learn more →</span>
-</a>
-<a class="bg-white rounded-xl border border-gray-200 p-5 hover:border-[#3B9C49] hover:shadow-md transition-all" href="/sip-trunks/">
-<div class="flex items-center gap-2 mb-2"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v4H4zm0 6h16v4H4zm0 6h16v4H4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><h3 class="font-bold text-gray-900">SIP Trunks</h3></div>
-<p class="text-sm text-gray-600">Got an existing on-premise PBX you want to keep? Connect it to our Australian-hosted voice network. For developers + larger setups.</p>
-<span class="inline-block mt-3 text-xs font-semibold text-[#3B9C49]">Learn more →</span>
-</a>
-<a class="bg-white rounded-xl border border-gray-200 p-5 hover:border-[#3B9C49] hover:shadow-md transition-all" href="/api/">
-<div class="flex items-center gap-2 mb-2"><svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><h3 class="font-bold text-gray-900">Developer API</h3></div>
-<p class="text-sm text-gray-600">Build your own integrations. Webhooks, call control, transcripts. Self-serve docs at portal.click2call.com.au/apidocs.</p>
-<span class="inline-block mt-3 text-xs font-semibold text-[#3B9C49]">Learn more →</span>
-</a>
-</div>
-<p class="text-center text-sm text-gray-600 mt-6">Call queues, the live call dashboard and intelligent routing are part of Cloud PBX, not a contact-centre upgrade &mdash; see <a class="text-[#3B9C49] font-semibold hover:underline" href="/call-centre/">call centre features</a>.</p>
-</div>
-</section>
+<section class="sec" id="calculator" aria-labelledby="calc-h"><div class="wrap">
+  <div class="head"><p class="eyebrow">Pricing &amp; Quote Builder</p><h2 id="calc-h">Build your plan</h2><p class="lead">Estimate your monthly cost and generate a formal quote in seconds. All figures exclude GST unless stated.</p></div>
+  <div class="calc">
+    <div class="calc-q">
+      <div class="chips" role="group" aria-label="Start from an example">
+        <span class="chips-l">Start from:</span>
+        <button type="button" data-preset="solo">Just me</button>
+        <button type="button" data-preset="number">Reception number only</button>
+        <button type="button" data-preset="office">Small office</button>
+        <button type="button" data-preset="team">Growing team</button>
+      </div>
+      <h3 class="calc-h3">Section 1 — Monthly subscription</h3>
+      <div class="q">
+        <div class="q-l"><label for="calc-users">Cloud PBX Users — $25/user/month</label><p class="hint">Each user includes 1 local number + 300 outbound minutes per month</p></div>
+        <div class="stepper"><button type="button" data-step="calc-users:-1" aria-label="One fewer user">&minus;</button><input id="calc-users" type="number" inputmode="numeric" min="0" max="500" value="1"><button type="button" data-step="calc-users:1" aria-label="One more user">+</button></div>
+      </div>
+      <div class="q">
+        <div class="q-l"><label for="calc-ports">Numbers you're bringing across</label><p class="hint">$100 one-time port each (inc GST). Each one runs on its own $10/month number plan. Your number keeps working while it moves.</p>
+          <div class="seg" role="group" aria-label="Type of number"><button type="button" data-porttype="local" aria-pressed="true">Local or mobile</button><button type="button" data-porttype="1300" aria-pressed="false">1300</button><button type="button" data-porttype="1800" aria-pressed="false">1800</button></div>
+        </div>
+        <div class="stepper"><button type="button" data-step="calc-ports:-1" aria-label="One fewer number">&minus;</button><input id="calc-ports" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-ports:1" aria-label="One more number">+</button></div>
+      </div>
+      <details class="extras" id="calc-extras">
+        <summary>Add extras: new numbers, desk phones and setup</summary>
+        <div class="x">
+          <p class="x-h">Inbound Phone Numbers — $10/month each</p>
+          <p class="hint">Only count numbers beyond the ones already included with your users above</p>
+          <p class="hint">New numbers only. Numbers you're bringing across are counted above.</p>
+          <div class="q sm"><div class="q-l"><label for="calc-local">Local or mobile numbers (02/03/07/08 or mobile)</label><p class="hint">Geographic or mobile presence</p></div><div class="stepper"><button type="button" data-step="calc-local:-1" aria-label="One fewer local number">&minus;</button><input id="calc-local" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-local:1" aria-label="One more local number">+</button></div></div>
+          <div class="q sm"><div class="q-l"><label for="calc-1300">1300 numbers</label><p class="hint">National. Caller pays local rate</p></div><div class="stepper"><button type="button" data-step="calc-1300:-1" aria-label="One fewer 1300 number">&minus;</button><input id="calc-1300" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-1300:1" aria-label="One more 1300 number">+</button></div></div>
+          <div class="q sm"><div class="q-l"><label for="calc-1800">1800 numbers</label><p class="hint">Toll-free. You pay $0.20/min inbound</p></div><div class="stepper"><button type="button" data-step="calc-1800:-1" aria-label="One fewer 1800 number">&minus;</button><input id="calc-1800" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-1800:1" aria-label="One more 1800 number">+</button></div></div>
+          <h3 class="calc-h3">Section 2 — One-time upfront costs (optional)</h3>
+          <p class="x-h">System setup</p>
+          <div class="radios">
+            <label class="radio"><input type="radio" id="calc-setup-self" name="calc-setup" value="self" checked> Self-setup via Help Centre (Free)</label>
+            <label class="radio"><input type="radio" id="calc-setup-managed" name="calc-setup" value="managed"> Managed Setup (from $300 + GST)</label>
+          </div>
+          <p class="x-h">Hardware</p>
+          <div class="q sm"><div class="q-l"><label for="calc-desk">Yealink T43U desk phones — $450 each</label><p class="hint">Includes config &amp; postage</p></div><div class="stepper"><button type="button" data-step="calc-desk:-1" aria-label="One fewer desk phone">&minus;</button><input id="calc-desk" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-desk:1" aria-label="One more desk phone">+</button></div></div>
+          <div class="q sm"><div class="q-l"><label for="calc-cordless">Yealink W76P cordless — $400 each</label><p class="hint">Includes config &amp; postage</p></div><div class="stepper"><button type="button" data-step="calc-cordless:-1" aria-label="One fewer cordless phone">&minus;</button><input id="calc-cordless" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-cordless:1" aria-label="One more cordless phone">+</button></div></div>
+          <div class="q sm soft-row"><div class="q-l"><p class="x-h">Softphone users</p><p class="hint">Free — PC &amp; mobile app</p></div></div>
+        </div>
+      </details>
+      <div class="rec" id="smart-rec" hidden>
+        <p id="smart-rec-msg">This setup is getting more advanced — most customers choose Managed Setup for this.</p>
+        <div class="rec-btns"><button type="button" class="btn btn-primary sm" id="rec-managed">Switch to Managed Setup</button><button type="button" class="btn btn-ghost sm" id="rec-keep">Keep self-setup</button></div>
+      </div>
+      <a class="calc-bar" href="#calc-receipt" aria-label="See the full estimate"><span><b id="bar-mo">$27.50</b>/month inc GST <span id="bar-up"></span></span><span class="go">See total</span></a>
+    </div>
+    <div class="receipt" id="calc-receipt" aria-live="polite">
+      <h3>Your estimated costs</h3>
+      <div class="r-today"><span>Today</span><b>$0 &middot; free 7-day trial</b></div>
+      <p class="r-k">Monthly</p>
+      <div id="r-monthly"><div class="r-line"><span>Cloud PBX Users (1 &times; $25)</span><b>$25.00</b></div><div class="r-line note"><span>Included outbound minutes</span><b>300 mins</b></div></div>
+      <div class="r-line sub"><span>Subtotal ex GST</span><b id="r-mo-sub">$25.00</b></div>
+      <div class="r-line sub"><span>GST (10%)</span><b id="r-mo-gst">$2.50</b></div>
+      <div class="r-line total"><span>Monthly total inc GST</span><b id="r-mo-total">$27.50</b></div>
+      <p class="r-k">One-time upfront</p>
+      <div id="r-upfront"><p class="r-zero">No upfront costs selected</p></div>
+      <div id="r-up-totals" hidden>
+        <div class="r-line sub"><span>Subtotal ex GST</span><b id="r-up-sub">$0.00</b></div>
+        <div class="r-line sub"><span>GST (10%)</span><b id="r-up-gst">$0.00</b></div>
+        <div class="r-line total"><span>Upfront total inc GST</span><b id="r-up-total">$0.00</b></div>
+      </div>
+      <p class="r-note" id="setup-cost-note" hidden></p>
+      <div class="r-btns">
+        <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-calculator" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-calculator'});">Start free trial</a>
+        <button type="button" class="btn btn-dark" id="open-quote-modal" onclick="openQuoteModal();">Generate Formal Quote</button>
+      </div>
+      <p class="r-note">Use this for budgeting or generate a formal quote for approval.</p>
+      <p class="r-note">The trial needs no card. Add these users and numbers in the portal when you're ready.</p>
+    </div>
+  </div>
+</div></section>
 
-<!-- SECTION 4 — CALCULATOR (QUOTE BUILDER) — moved up before scenarios -->
-<section class="bg-white py-16 border-b border-gray-100" id="calculator">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<p class="text-center text-sm font-semibold text-green-700 uppercase tracking-wide mb-2">Pricing &amp; Quote Builder</p>
-<h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Build your plan</h2>
-<p class="text-center text-gray-500 mb-8 max-w-2xl mx-auto">Estimate your monthly cost and generate a formal quote in seconds. All figures exclude GST unless stated.</p>
-<div class="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-6 md:p-8 max-w-3xl mx-auto">
-<!-- ── SECTION 1: MONTHLY ── -->
-<div class="mb-8">
-<h3 style="font-size:0.7rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1rem 0;">Section 1 — Monthly subscription</h3>
-<!-- Cloud PBX Users -->
-<div class="mb-5">
-<label class="block text-sm font-semibold text-gray-700 mb-1" for="calc-users">Cloud PBX Users — $25/user/month</label>
-<p class="text-xs text-gray-500 mb-2">Each user includes 1 local number + 300 outbound minutes per month</p>
-<input class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" id="calc-users" max="500" min="0" style="max-width:160px;" type="number" value="1"/>
-</div>
-<!-- Additional Numbers -->
-<div class="mb-2">
-<label class="block text-sm font-semibold text-gray-700 mb-1">Inbound Phone Numbers — $10/month each</label>
-<p class="text-xs text-gray-500 mb-3">Only count numbers <em>beyond</em> the ones already included with your users above</p>
-<div style="display:flex;flex-direction:column;gap:0.75rem;">
-<!-- Local numbers row -->
-<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
-<div style="min-width:180px;">
-<label class="block text-xs text-gray-600 mb-1" for="calc-local">Local or mobile numbers (02/03/07/08 or mobile)</label>
-<input id="calc-local" max="100" min="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;" type="number" value="0"/>
-<span class="text-xs text-gray-400 ml-2">Geographic or mobile presence</span>
-</div>
-<label id="port-local-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
-<input id="calc-port-local-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;" type="checkbox"/>
-                  Port existing number <span style="color:#6b7280;">(+$90.91 each)</span>
-</label>
-</div>
-
-<!-- 1300 numbers row -->
-<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
-<div style="min-width:180px;">
-<label class="block text-xs text-gray-600 mb-1" for="calc-1300">1300 numbers</label>
-<input id="calc-1300" max="100" min="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;" type="number" value="0"/>
-<span class="text-xs text-gray-400 ml-2">National. Caller pays local rate</span>
-</div>
-<label id="port-1300-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
-<input id="calc-port-1300-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;" type="checkbox"/>
-                  Port existing number <span style="color:#6b7280;">(+$90.91 each)</span>
-</label>
-</div>
-<!-- 1800 numbers row -->
-<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
-<div style="min-width:180px;">
-<label class="block text-xs text-gray-600 mb-1" for="calc-1800">1800 numbers</label>
-<input id="calc-1800" max="100" min="0" style="width:100px;border:1px solid #d1d5db;border-radius:0.5rem;padding:0.4rem 0.6rem;font-size:0.875rem;outline:none;" type="number" value="0"/>
-<span class="text-xs text-gray-400 ml-2">Toll-free. You pay $0.20/min inbound</span>
-</div>
-<label id="port-1800-label" style="display:none;align-items:center;gap:0.4rem;cursor:pointer;font-size:0.8rem;color:#374151;">
-<input id="calc-port-1800-chk" onchange="updateCalc();" style="width:15px;height:15px;accent-color:#3B9C49;cursor:pointer;" type="checkbox"/>
-                  Port existing number <span style="color:#6b7280;">(+$90.91 each)</span>
-</label>
-</div>
-</div>
-</div>
-</div>
-<!-- ── SECTION 2: ONE-TIME UPFRONT ── -->
-<div class="mb-8 border-t border-gray-200 pt-8" id="upfront-section" style="display:none;">
-<h3 style="font-size:0.7rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1rem 0;">Section 2 — One-time upfront costs <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></h3>
-<!-- B. Setup -->
-<div class="mb-6">
-<label class="block text-sm font-semibold text-gray-700 mb-2">System setup</label>
-<div class="flex flex-col sm:flex-row gap-3">
-<label class="flex items-center gap-2 cursor-pointer">
-<input checked="" class="text-green-600 focus:ring-green-500" id="calc-setup-self" name="calc-setup" type="radio" value="self"/>
-<span class="text-sm text-gray-700">Self-setup via Help Centre <span class="text-green-700 font-semibold">(Free)</span></span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="text-green-600 focus:ring-green-500" id="calc-setup-managed" name="calc-setup" type="radio" value="managed"/>
-<span class="text-sm text-gray-700">Managed Setup <span class="text-gray-500 font-normal">(from $300 + GST)</span></span>
-</label>
-</div>
-<p class="text-xs text-gray-400 mt-2" id="setup-cost-note" style="display:none;"></p>
-</div>
-<!-- C. Hardware -->
-<div class="mb-2">
-<label class="block text-sm font-semibold text-gray-700 mb-2">Hardware</label>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-<div class="flex flex-col">
-<label class="block text-xs text-gray-600 mb-1 flex-grow" for="calc-desk">Yealink T43U desk phones — $450 each</label>
-<input class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" id="calc-desk" max="100" min="0" type="number" value="0"/>
-<p class="text-xs text-gray-400 mt-1">Includes config &amp; postage</p>
-</div>
-<div class="flex flex-col">
-<label class="block text-xs text-gray-600 mb-1 flex-grow" for="calc-cordless">Yealink W76P cordless — $400 each</label>
-<input class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" id="calc-cordless" max="100" min="0" type="number" value="0"/>
-<p class="text-xs text-gray-400 mt-1">Includes config &amp; postage</p>
-</div>
-<div class="flex flex-col">
-<label class="block text-xs text-gray-600 mb-1 flex-grow" for="calc-softphone">Softphone users</label>
-<input class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500" id="calc-softphone" max="500" min="0" type="number" value="0"/>
-<p class="text-xs text-gray-400 mt-1">Free — PC &amp; mobile app</p>
-</div>
-</div>
-</div>
-</div>
-<!-- ── SMART RECOMMENDATION BANNER ── -->
-<div id="smart-rec" style="display:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:0.5rem;padding:1rem 1.25rem;margin-bottom:1.5rem;">
-<p id="smart-rec-msg" style="font-size:0.85rem;color:#1e40af;font-weight:600;margin:0 0 0.5rem 0;">This setup is getting more advanced — most customers choose Managed Setup for this.</p>
-<div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
-<button onclick="document.getElementById('calc-setup-managed').checked=true;updateCalc();" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:#1d4ed8;color:#fff;border:none;border-radius:0.375rem;cursor:pointer;font-weight:600;">Switch to Managed Setup</button>
-<button onclick="document.getElementById('smart-rec').style.display='none';" style="font-size:0.8rem;padding:0.35rem 0.9rem;background:transparent;color:#1e40af;border:1px solid #93c5fd;border-radius:0.375rem;cursor:pointer;">Keep self-setup</button>
-</div>
-</div>
-<!-- ── LIVE SUMMARY ── -->
-<div class="border-t border-gray-200 pt-6">
-<h3 class="font-bold text-gray-900 text-base mb-4">Your estimated costs</h3>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-<!-- Monthly card -->
-<div class="bg-white border border-green-200 rounded-xl p-4 shadow-sm">
-<p style="font-size:0.65rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.75rem 0;">Monthly</p>
-<div style="font-size:0.82rem;display:flex;flex-direction:column;gap:0.35rem;">
-<div id="sum-users-row" style="display:flex;justify-content:space-between;color:#4b5563;">
-<span>Cloud PBX Users (<span id="s-users">1</span> × $25)</span>
-<span id="s-users-cost">$25</span>
-</div>
-<div class="hidden-row" id="sum-local-row" style="justify-content:space-between;color:#4b5563;">
-<span>Local numbers (<span id="s-local">0</span> × $10)</span>
-<span id="s-local-cost">$0.00</span>
-</div>
-<div class="hidden-row" id="sum-1300-row" style="justify-content:space-between;color:#4b5563;">
-<span>1300 numbers (<span id="s-1300">0</span> × $10)</span>
-<span id="s-1300-cost">$0.00</span>
-</div>
-<div class="hidden-row" id="sum-1800-row" style="justify-content:space-between;color:#4b5563;">
-<span>1800 numbers (<span id="s-1800">0</span> × $10)</span>
-<span id="s-1800-cost">$0.00</span>
-</div>
-<div style="border-top:1px solid #e5e7eb;margin:0.35rem 0;"></div>
-<div style="display:flex;justify-content:space-between;color:#15803d;font-size:0.75rem;">
-<span>Included outbound minutes</span>
-<span id="s-mins">300 mins</span>
-</div>
-<div style="border-top:1px solid #d1fae5;margin:0.35rem 0;"></div>
-<div style="display:flex;justify-content:space-between;font-weight:600;color:#111827;">
-<span>Subtotal ex GST</span>
-<span id="s-mo-sub">$25</span>
-</div>
-<div style="display:flex;justify-content:space-between;color:#6b7280;">
-<span>GST (10%)</span>
-<span id="s-mo-gst">$2.50</span>
-</div>
-<div style="display:flex;justify-content:space-between;font-weight:800;font-size:1rem;color:#111827;border-top:1px solid #d1fae5;padding-top:0.4rem;margin-top:0.2rem;">
-<span>Monthly total inc GST</span>
-<span id="s-mo-total">$27.50</span>
-</div>
-</div>
-</div>
-<!-- Upfront card -->
-<div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm" id="upfront-card">
-<p style="font-size:0.65rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.75rem 0;">One-time upfront</p>
-<div style="font-size:0.82rem;display:flex;flex-direction:column;gap:0.35rem;">
-<div class="hidden-row" id="sum-port-local-row" style="justify-content:space-between;color:#4b5563;">
-<span>Port local numbers (<span id="s-port-local">0</span> × $90.91)</span>
-<span id="s-port-local-cost">$0.00</span>
-</div>
-
-<div class="hidden-row" id="sum-port-1300-row" style="justify-content:space-between;color:#4b5563;">
-<span>Port 1300/1800 (<span id="s-port-1300">0</span> × $90.91)</span>
-<span id="s-port-1300-cost">$0.00</span>
-</div>
-<div class="hidden-row" id="sum-setup-row" style="justify-content:space-between;color:#4b5563;">
-<span id="s-setup-label">Managed Setup</span>
-<span id="s-setup-cost">$0.00</span>
-</div>
-<div class="hidden-row" id="sum-desk-row" style="justify-content:space-between;color:#4b5563;">
-<span>Yealink T43U (<span id="s-desk">0</span> × $450)</span>
-<span id="s-desk-cost">$0.00</span>
-</div>
-<div class="hidden-row" id="sum-cordless-row" style="justify-content:space-between;color:#4b5563;">
-<span>Yealink W76P (<span id="s-cordless">0</span> × $400)</span>
-<span id="s-cordless-cost">$0.00</span>
-</div>
-<div class="hidden-row" id="sum-softphone-row" style="justify-content:space-between;color:#4b5563;">
-<span>Softphones (<span id="s-softphone">0</span> users)</span>
-<span>Free</span>
-</div>
-<div id="upfront-zero-msg" style="color:#9ca3af;font-size:0.8rem;font-style:italic;">No upfront costs selected</div>
-<div class="hidden-row" id="upfront-divider" style="border-top:1px solid #e5e7eb;margin:0.35rem 0;"></div>
-<div class="hidden-row" id="upfront-sub-row" style="justify-content:space-between;font-weight:600;color:#111827;">
-<span>Subtotal ex GST</span>
-<span id="s-up-sub">$0.00</span>
-</div>
-<div class="hidden-row" id="upfront-gst-row" style="justify-content:space-between;color:#6b7280;">
-<span>GST (10%)</span>
-<span id="s-up-gst">$0.00</span>
-</div>
-<div class="hidden-row" id="upfront-total-row" style="justify-content:space-between;font-weight:800;font-size:1rem;color:#111827;border-top:1px solid #e5e7eb;padding-top:0.4rem;margin-top:0.2rem;">
-<span>Upfront total inc GST</span>
-<span id="s-up-total">$0.00</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Quote CTA -->
-<div style="text-align:center;margin-top:1.5rem;padding:1.25rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:0.75rem;">
-<p style="font-size:0.8rem;color:#6b7280;margin:0 0 0.75rem 0;">Use this for budgeting or generate a formal quote for approval.</p>
-<button id="open-quote-modal" onclick="openQuoteModal();" style="display:inline-block;padding:0.7rem 2rem;background:#3B9C49;color:#fff;font-size:0.9rem;font-weight:700;border-radius:0.5rem;border:none;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.12);">Generate Formal Quote</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ── QUOTE MODAL ── -->
 <div id="quote-modal-overlay" onclick="closeQuoteModal(event);" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;overflow-y:auto;padding:2rem 1rem;">
 <div onclick="event.stopPropagation();" style="background:#fff;border-radius:0.75rem;max-width:520px;margin:0 auto;padding:2rem;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.25);">
 <button aria-label="Close" onclick="closeQuoteModal();" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.4rem;color:#9ca3af;cursor:pointer;line-height:1;">×</button>
@@ -965,149 +803,175 @@
 </div>
 </div>
 <p id="quote-error" style="display:none;color:#dc2626;font-size:0.8rem;margin-bottom:0.75rem;"></p>
-<button onclick="generateQuote();" style="width:100%;padding:0.8rem;background:#3B9C49;color:#fff;font-size:0.95rem;font-weight:700;border:none;border-radius:0.5rem;cursor:pointer;">Generate PDF Quote</button>
+<button onclick="generateQuoteLazy();" style="width:100%;padding:0.8rem;background:#3B9C49;color:#fff;font-size:0.95rem;font-weight:700;border:none;border-radius:0.5rem;cursor:pointer;">Generate PDF Quote</button>
 </div>
 <div id="quote-success" style="display:none;text-align:center;padding:1rem 0;">
 <svg fill="none" stroke="currentColor" style="width:3rem;height:3rem;color:#16a34a;margin:0 auto 1rem;" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 <p style="font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.5rem 0;">Your quote has been downloaded.</p>
 <p style="font-size:0.85rem;color:#6b7280;margin:0 0 1.25rem 0;">Save the PDF for your records or share it with your team for approval.</p>
+<a href="https://portal.click2call.com.au/join/?src=pricing-quote-success" target="_blank" rel="noopener noreferrer" style="display:block;margin:0 0 10px;padding:12px 16px;border-radius:10px;background:#3B9C49;color:#fff;font-weight:700;text-align:center;text-decoration:none" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-quote-success'});">Try it free while your quote is approved</a>
 <button onclick="closeQuoteModal();" style="padding:0.55rem 1.5rem;background:#f3f4f6;color:#374151;font-size:0.875rem;font-weight:600;border:1px solid #e5e7eb;border-radius:0.5rem;cursor:pointer;">Close</button>
 </div>
 </div>
 </div>
+
 <script>
 // ── CALCULATOR STATE ──────────────────────────────────────────────────────────
+// calcState keeps the shape generateQuote() and the Formspree payload expect.
+// Numbers brought across (ported) each run on their own $10 number plan, so they
+// count as numbers of their type plus a port.
 var calcState = {
   users: 1, local: 0, n1300: 0, n1800: 0,
   portLocal: 0, port1300: 0,
   setup: 'self',
   desk: 0, cordless: 0, softphone: 0
 };
+var calcPortType = 'local';
+var calcRecDismissed = false;
+var calcUsedSent = false;
 
 function fmt(n) { return '$' + n.toFixed(2); }
-function showRow(id, show) {
+function calcNum(id) {
   var el = document.getElementById(id);
-  if (el) el.style.display = show ? 'flex' : 'none';
+  var v = Math.max(0, parseInt(el.value, 10) || 0);
+  var max = parseInt(el.getAttribute('max'), 10);
+  if (!isNaN(max) && v > max) v = max;
+  return v;
+}
+function calcLine(label, value, cls) {
+  return '<div class="r-line' + (cls ? ' ' + cls : '') + '"><span>' + label + '</span><b>' + value + '</b></div>';
 }
 
 function updateCalc() {
-  var users     = Math.max(0, parseInt(document.getElementById('calc-users').value) || 0);
-  var local     = Math.max(0, parseInt(document.getElementById('calc-local').value) || 0);
-  var n1300     = Math.max(0, parseInt(document.getElementById('calc-1300').value) || 0);
-  var n1800     = Math.max(0, parseInt(document.getElementById('calc-1800').value) || 0);
-  // Port checkboxes: if checked, port qty = number qty; else 0
-  var portLocalChk  = document.getElementById('calc-port-local-chk');
-  var port1300Chk   = document.getElementById('calc-port-1300-chk');
-  var port1800Chk   = document.getElementById('calc-port-1800-chk');
-  var portLocal  = (portLocalChk && portLocalChk.checked) ? local : 0;
-  var port1300   = ((port1300Chk && port1300Chk.checked) ? n1300 : 0) + ((port1800Chk && port1800Chk.checked) ? n1800 : 0);
-  // Show/hide port checkboxes based on whether numbers > 0
-  var portLocalLabel  = document.getElementById('port-local-label');
-  var port1300Label   = document.getElementById('port-1300-label');
-  var port1800Label   = document.getElementById('port-1800-label');
-  if (portLocalLabel)  portLocalLabel.style.display  = local > 0 ? 'flex' : 'none';
-  if (port1300Label)   port1300Label.style.display   = n1300 > 0 ? 'flex' : 'none';
-  if (port1800Label)   port1800Label.style.display   = n1800 > 0 ? 'flex' : 'none';
-  // Reset checkboxes when qty drops to 0
-  if (local === 0 && portLocalChk)   portLocalChk.checked   = false;
-  if (n1300 === 0 && port1300Chk)    port1300Chk.checked    = false;
-  if (n1800 === 0 && port1800Chk)    port1800Chk.checked    = false;;
-  var setup     = document.querySelector('input[name="calc-setup"]:checked') ? document.querySelector('input[name="calc-setup"]:checked').value : 'self';
-  var desk      = Math.max(0, parseInt(document.getElementById('calc-desk').value) || 0);
-  var cordless  = Math.max(0, parseInt(document.getElementById('calc-cordless').value) || 0);
-  var softphone = Math.max(0, parseInt(document.getElementById('calc-softphone').value) || 0);
+  var users    = calcNum('calc-users');
+  var ports    = calcNum('calc-ports');
+  var newLocal = calcNum('calc-local');
+  var new1300  = calcNum('calc-1300');
+  var new1800  = calcNum('calc-1800');
+  var desk     = calcNum('calc-desk');
+  var cordless = calcNum('calc-cordless');
+  var setupEl  = document.querySelector('input[name="calc-setup"]:checked');
+  var setup    = setupEl ? setupEl.value : 'self';
 
-  calcState = { users, local, n1300, n1800, portLocal, port1300, setup, desk, cordless, softphone };
+  var local = newLocal + (calcPortType === 'local' ? ports : 0);
+  var n1300 = new1300 + (calcPortType === '1300' ? ports : 0);
+  var n1800 = new1800 + (calcPortType === '1800' ? ports : 0);
+  var portLocal = calcPortType === 'local' ? ports : 0;
+  var port1300  = calcPortType === 'local' ? 0 : ports;
 
-  // Show upfront section once users > 0
-  document.getElementById('upfront-section').style.display = users > 0 ? 'block' : 'none';
+  calcState = { users: users, local: local, n1300: n1300, n1800: n1800, portLocal: portLocal, port1300: port1300, setup: setup, desk: desk, cordless: cordless, softphone: 0 };
 
-  // ── Monthly calcs ──
-  var moUsers = users * 25;
-  var moLocal = local * 10;
-  var mo1300  = n1300 * 10;
-  var mo1800  = n1800 * 10;
-  var moSub   = moUsers + moLocal + mo1300 + mo1800;
-  var moGst   = moSub * 0.10;
-  var moTotal = moSub + moGst;
-  var mins    = users * 300;
+  // ── Monthly ──
+  var moUsers = users * 25, moLocal = local * 10, mo1300 = n1300 * 10, mo1800 = n1800 * 10;
+  var moSub = moUsers + moLocal + mo1300 + mo1800;
+  var moGst = moSub * 0.10, moTotal = moSub + moGst;
+  var m = '';
+  if (users > 0) m += calcLine('Cloud PBX Users (' + users + ' &times; $25)', fmt(moUsers));
+  var incl = function (k) { return k > 0 ? ', incl. ' + k + ' brought across' : ''; };
+  if (local > 0) m += calcLine('Local numbers (' + local + ' &times; $10' + incl(portLocal) + ')', fmt(moLocal));
+  if (n1300 > 0) m += calcLine('1300 numbers (' + n1300 + ' &times; $10' + incl(calcPortType === '1300' ? ports : 0) + ')', fmt(mo1300));
+  if (n1800 > 0) m += calcLine('1800 numbers (' + n1800 + ' &times; $10' + incl(calcPortType === '1800' ? ports : 0) + ')', fmt(mo1800));
+  if (users > 0) m += calcLine('Included outbound minutes', (users * 300).toLocaleString() + ' mins', 'note');
+  if (!m) m = '<p class="r-zero">Add a user or a number to see a monthly price</p>';
+  document.getElementById('r-monthly').innerHTML = m;
+  document.getElementById('r-mo-sub').textContent = fmt(moSub);
+  document.getElementById('r-mo-gst').textContent = fmt(moGst);
+  document.getElementById('r-mo-total').textContent = fmt(moTotal);
 
-  // ── Upfront calcs ──
-  var upPortLocal  = portLocal * 90.91;
-  var upPort1300   = port1300 * 90.91;
+  // ── One-time upfront ──
+  var upPortLocal = portLocal * 90.91, upPort1300 = port1300 * 90.91;
   var upSetup = 0;
+  if (setup === 'managed' && users > 0) upSetup = users <= 3 ? 300 : 300 + (users - 3) * 50;
+  var upDesk = desk * 450, upCordless = cordless * 400;
+  var upSub = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
+  var upGst = upSub * 0.10, upTotal = upSub + upGst;
+  var u = '';
+  if (portLocal > 0) u += calcLine('Port local numbers (' + portLocal + ' &times; $90.91)', fmt(upPortLocal));
+  if (port1300 > 0)  u += calcLine('Port 1300/1800 (' + port1300 + ' &times; $90.91)', fmt(upPort1300));
+  if (upSetup > 0)   u += calcLine(users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + users + ' users)', fmt(upSetup));
+  if (desk > 0)      u += calcLine('Yealink T43U (' + desk + ' &times; $450)', fmt(upDesk));
+  if (cordless > 0)  u += calcLine('Yealink W76P (' + cordless + ' &times; $400)', fmt(upCordless));
+  document.getElementById('r-upfront').innerHTML = u || '<p class="r-zero">No upfront costs selected</p>';
+  document.getElementById('r-up-totals').hidden = !(upSub > 0);
+  document.getElementById('r-up-sub').textContent = fmt(upSub);
+  document.getElementById('r-up-gst').textContent = fmt(upGst);
+  document.getElementById('r-up-total').textContent = fmt(upTotal);
+  var note = document.getElementById('setup-cost-note');
   if (setup === 'managed' && users > 0) {
-    upSetup = users <= 3 ? 300 : 300 + (users - 3) * 50;
-  }
-  var upDesk     = desk * 450;
-  var upCordless = cordless * 400;
-  var upSub      = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
-  var upGst      = upSub * 0.10;
-  var upTotal    = upSub + upGst;
-
-  // ── Update monthly summary ──
-  document.getElementById('s-users').textContent = users;
-  document.getElementById('s-users-cost').textContent = fmt(moUsers);
-  showRow('sum-local-row', local > 0);
-  if (local > 0) { document.getElementById('s-local').textContent = local; document.getElementById('s-local-cost').textContent = fmt(moLocal); }
-  showRow('sum-1300-row', n1300 > 0);
-  if (n1300 > 0) { document.getElementById('s-1300').textContent = n1300; document.getElementById('s-1300-cost').textContent = fmt(mo1300); }
-  showRow('sum-1800-row', n1800 > 0);
-  if (n1800 > 0) { document.getElementById('s-1800').textContent = n1800; document.getElementById('s-1800-cost').textContent = fmt(mo1800); }
-  document.getElementById('s-mins').textContent = mins.toLocaleString() + ' mins';
-  document.getElementById('s-mo-sub').textContent = fmt(moSub);
-  document.getElementById('s-mo-gst').textContent = fmt(moGst);
-  document.getElementById('s-mo-total').textContent = fmt(moTotal);
-
-  // ── Update upfront summary ──
-  var hasUpfront = upSub > 0 || softphone > 0;
-  document.getElementById('upfront-zero-msg').style.display = hasUpfront ? 'none' : 'block';
-  showRow('sum-port-local-row', portLocal > 0);
-  if (portLocal > 0) { document.getElementById('s-port-local').textContent = portLocal; document.getElementById('s-port-local-cost').textContent = fmt(upPortLocal); }
-  showRow('sum-port-1300-row', port1300 > 0);
-  if (port1300 > 0) { document.getElementById('s-port-1300').textContent = port1300; document.getElementById('s-port-1300-cost').textContent = fmt(upPort1300); }
-  showRow('sum-setup-row', setup === 'managed' && users > 0);
-  if (setup === 'managed' && users > 0) {
-    var setupLabel = users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + users + ' users)';
-    document.getElementById('s-setup-label').textContent = setupLabel;
-    document.getElementById('s-setup-cost').textContent = fmt(upSetup);
-    var noteEl = document.getElementById('setup-cost-note');
-    noteEl.style.display = 'block';
-    noteEl.textContent = users <= 3 ? 'Flat rate for up to 3 users: $300 ex GST' : 'Base $300 + ' + (users - 3) + ' additional user(s) at $50 each = $' + upSetup.toFixed(2) + ' ex GST';
+    note.hidden = false;
+    note.textContent = users <= 3 ? 'Flat rate for up to 3 users: $300 ex GST' : 'Base $300 + ' + (users - 3) + ' additional user(s) at $50 each = $' + upSetup.toFixed(2) + ' ex GST';
   } else {
-    document.getElementById('setup-cost-note').style.display = 'none';
+    note.hidden = true;
   }
-  showRow('sum-desk-row', desk > 0);
-  if (desk > 0) { document.getElementById('s-desk').textContent = desk; document.getElementById('s-desk-cost').textContent = fmt(upDesk); }
-  showRow('sum-cordless-row', cordless > 0);
-  if (cordless > 0) { document.getElementById('s-cordless').textContent = cordless; document.getElementById('s-cordless-cost').textContent = fmt(upCordless); }
-  showRow('sum-softphone-row', softphone > 0);
-  if (softphone > 0) { document.getElementById('s-softphone').textContent = softphone; }
 
-  var showUpfrontTotals = upSub > 0;
-  document.getElementById('upfront-divider').style.display    = showUpfrontTotals ? 'block' : 'none';
-  document.getElementById('upfront-sub-row').style.display    = showUpfrontTotals ? 'flex' : 'none';
-  document.getElementById('upfront-gst-row').style.display    = showUpfrontTotals ? 'flex' : 'none';
-  document.getElementById('upfront-total-row').style.display  = showUpfrontTotals ? 'flex' : 'none';
-  if (showUpfrontTotals) {
-    document.getElementById('s-up-sub').textContent   = fmt(upSub);
-    document.getElementById('s-up-gst').textContent   = fmt(upGst);
-    document.getElementById('s-up-total').textContent = fmt(upTotal);
-  }
+  // ── Phone total bar ──
+  document.getElementById('bar-mo').textContent = fmt(moTotal);
+  document.getElementById('bar-up').textContent = upTotal > 0 ? '+ ' + fmt(upTotal) + ' once' : '';
+
+  // ── Steppers ──
+  document.querySelectorAll('[data-step]').forEach(function (b) {
+    var p = b.getAttribute('data-step').split(':'), el = document.getElementById(p[0]);
+    var v = parseInt(el.value, 10) || 0, max = parseInt(el.getAttribute('max'), 10);
+    b.disabled = +p[1] < 0 ? v <= 0 : v >= max;
+  });
+  document.querySelectorAll('[data-porttype]').forEach(function (b) {
+    b.setAttribute('aria-pressed', String(b.getAttribute('data-porttype') === calcPortType));
+  });
 
   // ── Smart recommendation ──
   var showRec = (users >= 5 || desk > 0 || cordless > 0 || n1300 > 0 || n1800 > 0 || port1300 > 0);
   var recEl = document.getElementById('smart-rec');
-  if (showRec && setup === 'self') {
-    recEl.style.display = 'block';
+  if (showRec && setup === 'self' && !calcRecDismissed) {
+    recEl.hidden = false;
     var msg = 'This setup is getting more advanced — most customers choose Managed Setup for this.';
     if (desk > 0 || cordless > 0) msg = 'We can pre-configure your devices before delivery and handle the full setup for you.';
     else if (port1300 > 0) msg = 'We can manage 1300/1800 porting and routing for you.';
     else if (users >= 5) msg = 'Recommended for teams — we can handle the full setup for you.';
     document.getElementById('smart-rec-msg').textContent = msg;
   } else {
-    recEl.style.display = 'none';
+    recEl.hidden = true;
   }
+
+  // ── Preset highlight ──
+  var match = null;
+  Object.keys(CALC_PRESETS).forEach(function (k) {
+    var p = CALC_PRESETS[k];
+    if (p.users === users && p.ports === ports && p.local === newLocal && p.n1300 === new1300 && p.n1800 === new1800 && desk === 0 && cordless === 0 && (ports === 0 || calcPortType === 'local')) match = k;
+  });
+  document.querySelectorAll('.chips [data-preset]').forEach(function (b) {
+    b.setAttribute('aria-pressed', String(b.getAttribute('data-preset') === match));
+  });
+}
+
+var CALC_PRESETS = {
+  solo:   { users: 1, ports: 0, local: 0, n1300: 0, n1800: 0 },
+  number: { users: 0, ports: 0, local: 1, n1300: 0, n1800: 0 },
+  office: { users: 3, ports: 1, local: 0, n1300: 0, n1800: 0 },
+  team:   { users: 5, ports: 0, local: 1, n1300: 0, n1800: 0 }
+};
+function calcUsed(how) {
+  if (calcUsedSent || typeof gtag !== 'function') return;
+  calcUsedSent = true;
+  gtag('event', 'calculator_used', { 'event_category': 'Calculator', 'event_label': how });
+}
+function applyPreset(name, scroll) {
+  var p = CALC_PRESETS[name];
+  if (!p) return;
+  document.getElementById('calc-users').value = p.users;
+  document.getElementById('calc-ports').value = p.ports;
+  document.getElementById('calc-local').value = p.local;
+  document.getElementById('calc-1300').value = p.n1300;
+  document.getElementById('calc-1800').value = p.n1800;
+  document.getElementById('calc-desk').value = 0;
+  document.getElementById('calc-cordless').value = 0;
+  calcPortType = 'local';
+  document.getElementById('calc-setup-self').checked = true;
+  calcRecDismissed = false;
+  document.getElementById('calc-extras').open = p.local > 0 || p.n1300 > 0 || p.n1800 > 0;
+  updateCalc();
+  if (typeof gtag === 'function') gtag('event', 'calculator_preset', { 'event_category': 'Calculator', 'event_label': name });
+  calcUsed('preset');
+  if (scroll) document.getElementById('calculator').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // ── MODAL ────────────────────────────────────────────────────────────────────
@@ -1117,7 +981,10 @@ function openQuoteModal() {
   document.getElementById('quote-success').style.display = 'none';
   document.getElementById('quote-error').style.display = 'none';
   document.body.style.overflow = 'hidden';
+  if (typeof gtag === 'function') gtag('event', 'quote_modal_open', { 'event_category': 'CTA', 'event_label': 'Generate Formal Quote' });
+  loadPdfLibs();
 }
+
 function closeQuoteModal(e) {
   if (e && e.target !== document.getElementById('quote-modal-overlay')) return;
   document.getElementById('quote-modal-overlay').style.display = 'none';
@@ -1428,433 +1295,279 @@ function generateQuote() {
   document.getElementById('quote-success').style.display = 'block';
 }
 
-// ── INIT ─────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
-  ['calc-users','calc-local','calc-1300','calc-1800','calc-desk','calc-cordless','calc-softphone'].forEach(function(id) {
-    var el = document.getElementById(id);
-    if (el) { el.addEventListener('input', updateCalc); el.addEventListener('change', updateCalc); }
+
+// ── PDF LIBRARIES (loaded only when someone asks for a quote) ─────────────────
+var pdfLibsPromise = null;
+function loadScript(src) {
+  return new Promise(function (resolve, reject) {
+    var s = document.createElement('script');
+    s.src = src; s.onload = resolve; s.onerror = reject;
+    document.head.appendChild(s);
   });
-  document.querySelectorAll('input[name="calc-setup"]').forEach(function(el) {
+}
+function loadPdfLibs() {
+  if (window.jspdf && window.jspdf.jsPDF && window.jspdf.jsPDF.API && window.jspdf.jsPDF.API.autoTable) return Promise.resolve();
+  if (!pdfLibsPromise) {
+    pdfLibsPromise = loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js')
+      .then(function () { return loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js'); })
+      .catch(function (e) { pdfLibsPromise = null; throw e; });
+  }
+  return pdfLibsPromise;
+}
+function generateQuoteLazy() {
+  loadPdfLibs().then(function () {
+    generateQuote();
+    if (document.getElementById('quote-success').style.display === 'block' && typeof gtag === 'function') {
+      gtag('event', 'quote_generated', { 'event_category': 'CTA', 'event_label': 'Formal Quote PDF' });
+    }
+  }).catch(function () {
+    var errEl = document.getElementById('quote-error');
+    errEl.textContent = 'The quote tool could not load. Check your connection and try again, or email support@click2call.com.au.';
+    errEl.style.display = 'block';
+  });
+}
+
+// ── INIT ─────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+  ['calc-users', 'calc-ports', 'calc-local', 'calc-1300', 'calc-1800', 'calc-desk', 'calc-cordless'].forEach(function (id) {
+    var el = document.getElementById(id);
+    el.addEventListener('input', function () { updateCalc(); calcUsed('input'); });
     el.addEventListener('change', updateCalc);
   });
+  document.querySelectorAll('input[name="calc-setup"]').forEach(function (el) {
+    el.addEventListener('change', function () { updateCalc(); calcUsed('setup'); });
+  });
+  document.querySelectorAll('[data-step]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var p = b.getAttribute('data-step').split(':'), el = document.getElementById(p[0]);
+      var max = parseInt(el.getAttribute('max'), 10);
+      el.value = Math.max(0, Math.min(max, (parseInt(el.value, 10) || 0) + (+p[1])));
+      if (p[0] !== 'calc-users' && p[0] !== 'calc-ports' && +el.value > 0) document.getElementById('calc-extras').open = true;
+      updateCalc(); calcUsed('stepper');
+    });
+  });
+  document.querySelectorAll('[data-porttype]').forEach(function (b) {
+    b.addEventListener('click', function () { calcPortType = b.getAttribute('data-porttype'); updateCalc(); calcUsed('port-type'); });
+  });
+  document.querySelectorAll('[data-preset]').forEach(function (b) {
+    b.addEventListener('click', function () { applyPreset(b.getAttribute('data-preset'), !b.closest('.chips')); });
+  });
+  document.getElementById('rec-managed').addEventListener('click', function () {
+    document.getElementById('calc-setup-managed').checked = true;
+    document.getElementById('calc-extras').open = true;
+    updateCalc();
+  });
+  document.getElementById('rec-keep').addEventListener('click', function () { calcRecDismissed = true; updateCalc(); });
   updateCalc();
 });
+
 </script>
-<!-- SECTION 5 — REAL-WORLD SCENARIOS -->
-<section class="bg-gray-50 py-16 border-b border-gray-100">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">What will I actually pay?</h2>
-<p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Three real-world scenarios to show exactly how our pricing works in practice.</p>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-<!-- Scenario 1 -->
-<div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col">
-<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-<svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</div>
-<h3 class="text-lg font-bold text-gray-900 mb-1">Solo operator</h3>
-<p class="text-sm text-gray-500 mb-4">1 user</p>
-<div class="text-3xl font-extrabold text-gray-900 mb-4">$25<span class="text-base font-normal text-gray-500">/month</span></div>
-<ul class="space-y-2 text-sm text-gray-600 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>No setup required</li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Includes local number</li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>300 outbound mins</li>
-</ul>
-</div>
-<!-- Scenario 2 -->
-<div class="bg-white rounded-xl border-2 border-green-500 p-6 shadow-md flex flex-col relative">
-<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Common</div>
-<div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mb-4">
-<svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</div>
-<h3 class="text-lg font-bold text-gray-900 mb-1">Small office</h3>
-<p class="text-sm text-gray-500 mb-4">3 users</p>
-<div class="text-3xl font-extrabold text-gray-900 mb-4">$75<span class="text-base font-normal text-gray-500">/month</span></div>
-<ul class="space-y-2 text-sm text-gray-600 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>$100 one-time number port (inc GST)</li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Optional $300 managed setup</li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>300 outbound mins per user</li>
-</ul>
-</div>
-<!-- Scenario 3 -->
-<div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col">
-<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-<svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</div>
-<h3 class="text-lg font-bold text-gray-900 mb-1">Growing team</h3>
-<p class="text-sm text-gray-500 mb-4">5 users + extra number</p>
-<div class="text-3xl font-extrabold text-gray-900 mb-4">$135<span class="text-base font-normal text-gray-500">/month</span></div>
-<ul class="space-y-2 text-sm text-gray-600 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>$125 for 5 users</li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>$10 for extra inbound line</li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Scalable anytime</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
 
-<!-- SECTION 5B — HOSTED PBX COST (per-user maths, migration, overage) -->
-<section class="bg-white py-16 border-b border-gray-100" id="hosted-pbx-cost">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">How Much Does a Hosted PBX Cost in Australia?</h2>
-<p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto text-lg">With Click2Call, a hosted (cloud) PBX costs <strong>$25 per user per month ex GST</strong>, and that is the whole monthly price for most businesses: the local number, 300 outbound minutes, unlimited inbound calls, IVR, ring groups, call queues, call recording and AI transcription are all in it. There is no base fee, no per-feature licence and no minimum number of users.</p>
-<div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-<div class="lg:col-span-3 overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
-<table class="w-full text-sm min-w-[28rem]">
-<thead class="bg-gray-900 text-white">
-<tr><th class="px-4 py-3 text-left font-semibold">Team size</th><th class="px-4 py-3 text-left font-semibold">Per month ex GST</th><th class="px-4 py-3 text-left font-semibold">Per month inc GST</th><th class="px-4 py-3 text-left font-semibold">Outbound minutes (per user)</th></tr>
-</thead>
-<tbody>
-<tr class="border-t border-gray-100"><td class="px-4 py-3 font-medium text-gray-900">1 user</td><td class="px-4 py-3 text-gray-700">$25</td><td class="px-4 py-3 text-gray-500">$27.50</td><td class="px-4 py-3 text-gray-500">300 min each</td></tr>
-<tr class="bg-gray-50/60 border-t border-gray-100"><td class="px-4 py-3 font-medium text-gray-900">3 users</td><td class="px-4 py-3 text-gray-700">$75</td><td class="px-4 py-3 text-gray-500">$82.50</td><td class="px-4 py-3 text-gray-500">300 min each</td></tr>
-<tr class="border-t border-gray-100"><td class="px-4 py-3 font-medium text-gray-900">5 users</td><td class="px-4 py-3 text-gray-700">$125</td><td class="px-4 py-3 text-gray-500">$137.50</td><td class="px-4 py-3 text-gray-500">300 min each</td></tr>
-<tr class="bg-gray-50/60 border-t border-gray-100"><td class="px-4 py-3 font-medium text-gray-900">10 users</td><td class="px-4 py-3 text-gray-700">$250</td><td class="px-4 py-3 text-gray-500">$275.00</td><td class="px-4 py-3 text-gray-500">300 min each</td></tr>
-<tr class="border-t border-gray-100"><td class="px-4 py-3 font-medium text-gray-900">20 users</td><td class="px-4 py-3 text-gray-700">$500</td><td class="px-4 py-3 text-gray-500">$550.00</td><td class="px-4 py-3 text-gray-500">300 min each</td></tr>
-</tbody>
-</table>
-<p class="px-4 py-3 text-xs text-gray-500 bg-gray-50 border-t border-gray-100">Add $10 ex GST a month for each extra inbound number (a shared reception line, a 1300 or an 1800). Each user&rsquo;s 300 minutes are attached to that user&rsquo;s number &mdash; they are not pooled across the account. <a class="text-green-700 font-semibold hover:underline" href="#calculator">Build your own estimate in the calculator &rarr;</a></p>
-</div>
-<div class="lg:col-span-2 space-y-6">
-<div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
-<h3 class="text-lg font-bold text-gray-900 mb-2">What does it cost to migrate from an on-premise PBX to the cloud?</h3>
-<p class="text-sm text-gray-600 mb-3">Usually only the porting fee. One-off costs, all optional except porting:</p>
-<ul class="space-y-2 text-sm text-gray-600">
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span><strong>Number porting:</strong> $100 including GST per number, any type. Your number keeps working during the 5&ndash;10 business days it takes.</span></li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span><strong>Setup:</strong> free if you do it yourself with the help guides; managed setup is $300 ex GST for up to 3 users, then $50 per extra user.</span></li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span><strong>Handsets:</strong> optional. The softphone app is free; pre-configured Yealink desk phones are $450 and cordless $400 ex GST, posted ready to plug in.</span></li>
-<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span><strong>Nothing else:</strong> no line rental, no PBX maintenance contract, no technician call-outs.</span></li>
-</ul>
-</div>
-<div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
-<h3 class="text-lg font-bold text-gray-900 mb-2">What do calls cost beyond the 300 minutes?</h3>
-<p class="text-sm text-gray-600">Calls to Australian and New Zealand numbers past the allowance are charged per minute &mdash; 10c a minute to landlines and 20c a minute to mobiles, ex GST. Calling a 1300 number is a flat 50c connection fee. If you hold a 1300 or 1800 number, inbound calls to it are 20c a minute to your account; inbound calls to local numbers are free. <button class="text-green-700 font-semibold hover:underline" onclick="document.getElementById('rates-modal').style.display='flex';" type="button">See the full calling rates schedule &rarr;</button></p>
-</div>
-<div class="bg-gray-50 rounded-xl border border-gray-200 p-6">
-<h3 class="text-lg font-bold text-gray-900 mb-2">Is there a cheaper VoIP-only or basic plan?</h3>
-<p class="text-sm text-gray-600">There is no stripped-down tier, because nothing is held back from the $25 user. Two things are cheaper because they do less: an <strong>Inbound Business Number</strong> at $10 a month receives calls and runs a call flow but cannot dial out, and if you already own a PBX, a <a class="text-green-700 font-semibold hover:underline" href="/sip-trunks/">SIP trunk</a> at $50 a month supplies the lines without the phone system.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 6 — FREE TRIAL + NO SURPRISES (merged) -->
-<section class="bg-white py-16 border-b border-gray-100">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Free trial card -->
-<div class="bg-green-50 rounded-2xl p-8 border border-green-100 shadow-sm flex flex-col">
-<div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white text-green-600 shadow-sm mb-4 flex-shrink-0">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-</div>
-<h2 class="text-xl font-extrabold text-gray-900 mb-2">Your 7-day free trial</h2>
-<p class="text-green-800 font-medium text-sm mb-4">Includes $11 account credit to get you started.</p>
-<p class="text-sm text-gray-600 mb-3">When you create a free account, we automatically load it with $11 credit &mdash; exactly enough to activate one local number for $10, leaving $1 for a handful of test outbound calls. Inbound calls are completely free throughout the trial.</p>
-<div class="bg-white rounded-lg p-4 border border-green-100 mt-auto">
-<p class="text-xs font-bold text-gray-700 mb-1">After the trial</p>
-<p class="text-sm text-gray-600">Many businesses keep the $10 Inbound Number permanently for reception routing, then add Cloud PBX User plans ($25/month each) for staff who need to make outbound calls. <a href="/help/understanding-your-free-trial" class="text-[#3B9C49] hover:underline font-medium">Read the full free trial guide &rarr;</a></p>
-</div>
-</div>
-<!-- No surprises card -->
-<div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm flex flex-col">
-<div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gray-100 text-gray-600 shadow-sm mb-4 flex-shrink-0">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-</div>
-<h2 class="text-xl font-extrabold text-gray-900 mb-6">No surprises</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-grow">
-<div class="flex items-center gap-3 bg-green-50 px-4 py-3 rounded-lg">
-<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span class="font-semibold text-gray-900 text-sm">No lock-in contracts</span>
-</div>
-<div class="flex items-center gap-3 bg-green-50 px-4 py-3 rounded-lg">
-<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span class="font-semibold text-gray-900 text-sm">No downtime during porting</span>
-</div>
-<div class="flex items-center gap-3 bg-green-50 px-4 py-3 rounded-lg">
-<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span class="font-semibold text-gray-900 text-sm">Cancel anytime</span>
-</div>
-<div class="flex items-center gap-3 bg-green-50 px-4 py-3 rounded-lg">
-<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span class="font-semibold text-gray-900 text-sm">Prepaid system (no bills)</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<section class="sec soft" aria-labelledby="trial-h"><div class="wrap trial">
+  <div class="card">
+    <h2 id="trial-h">Your 7-day free trial</h2>
+    <p class="t-lead">Includes $11 account credit to get you started.</p>
+    <p>When you create a free account, we automatically load it with $11 credit &mdash; exactly enough to activate one local number for $10, leaving $1 for a handful of test outbound calls. Inbound calls are completely free throughout the trial.</p>
+    <p>Every new account is checked by our team before it's activated. That can take a minute, or up to 24 hours if your account needs extra verification.</p>
+    <div class="after">
+      <p class="eyebrow">After the trial</p>
+      <p>Many businesses keep the $10 Inbound Number permanently for reception routing, then add Cloud PBX User plans ($25/month each) for staff who need to make outbound calls. <a href="/help/understanding-your-free-trial">Read the full free trial guide &rarr;</a></p>
+    </div>
+    <div><a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-trial" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-trial'});">Start free 7-day trial</a></div>
+  </div>
+  <div class="card nos">
+    <h2>No surprises</h2>
+    <ul class="checks">
+      <li class="check">No lock-in contracts</li>
+      <li class="check">No downtime during porting</li>
+      <li class="check">Cancel anytime</li>
+      <li class="check">Prepaid system (no bills)</li>
+    </ul>
+  </div>
+</div></section>
 
-<!-- SECTION — TWO WAYS TO GET SET UP -->
-<section class="bg-white py-16 border-b border-gray-100" id="setup-options">
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-<p class="text-center text-sm font-semibold text-green-700 uppercase tracking-wide mb-2">Two ways to get set up</p>
-<h2 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-3">Set it up yourself, or we'll do it for you</h2>
-<p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Both paths end in the same place — a working phone system. Pick whichever suits how you like to work.</p>
+<section class="sec" aria-labelledby="buy-h"><div class="wrap">
+  <div class="head"><p class="eyebrow">What's included</p><h2 id="buy-h">What you're actually buying for $25/user/month</h2><p class="lead">A Cloud PBX User plan bundles a full phone system with our AI tools and integrations — all included, no per-feature add-ons.</p></div>
+  <div class="svc">
+    <a href="/cloud-pbx/"><h3>Cloud PBX</h3><p>Local Australian number, call routing, auto-attendant, voicemail, ring groups, mobile + desk apps. The phone-system backbone &mdash; and it includes the call centre features other providers charge extra for.</p><span class="more">Learn more →</span></a>
+    <a href="/ai-receptionist/"><h3>AI Receptionist</h3><p>Conversational AI answers calls 24/7 in a natural voice. Routes, takes messages, books simple appointments. Included free.</p><span class="more">Learn more →</span></a>
+    <a href="/ai-voice-tools/"><h3>AI Voice Tools</h3><p>Every call recorded, transcribed and summarised in plain English. Sentiment + key topics in your portal. Included free.</p><span class="more">Learn more →</span></a>
+    <a href="/microsoft-teams-calling/"><h3>Microsoft Teams Calling</h3><p>Already use Teams? Make real phone calls from inside Teams using Direct Routing. No Microsoft Calling Plan needed.</p><span class="more">Learn more →</span></a>
+    <a href="/sip-trunks/"><h3>SIP Trunks</h3><p>Got an existing on-premise PBX you want to keep? Connect it to our Australian-hosted voice network. For developers + larger setups.</p><span class="more">Learn more →</span></a>
+    <a href="/api/"><h3>Developer API</h3><p>Build your own integrations. Webhooks, call control, transcripts. Self-serve docs at portal.click2call.com.au/apidocs.</p><span class="more">Learn more →</span></a>
+  </div>
+  <p class="center-note">Call queues, the live call dashboard and intelligent routing are part of Cloud PBX, not a contact-centre upgrade &mdash; see <a class="link" href="/call-centre/">call centre features</a>.</p>
+</div></section>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+<section class="sec soft" id="setup-options" aria-labelledby="setup-h"><div class="wrap">
+  <div class="head"><p class="eyebrow">Two ways to get set up</p><h2 id="setup-h">Set it up yourself, or we'll do it for you</h2><p class="lead">Both paths end in the same place — a working phone system. Pick whichever suits how you like to work.</p></div>
+  <div class="paths">
+    <div class="path">
+      <img src="/assets/images/switch/self-setup-720.webp" width="720" height="402" loading="lazy" alt="A real estate agent sitting in a car, using a mobile phone">
+      <div class="path-body">
+        <span class="pill">Most popular</span>
+        <h3>Set it up yourself</h3>
+        <p>Follow our step-by-step guides and be making calls in under an hour.</p>
+        <div class="cost"><div class="amt">FREE</div><div class="sub">Live in under an hour</div></div>
+        <ul class="checks">
+          <li class="check"><span>Step-by-step <a class="link" href="/help/">Help Centre guides</a> for every feature</span></li>
+          <li class="check"><span>Free email + phone support if you get stuck</span></li>
+          <li class="check"><span>You stay in control — change settings any time</span></li>
+          <li class="check"><span>Most customers are making calls within an hour of signing up</span></li>
+          <li class="check"><span><strong>$11 free trial credit</strong> to test everything before paying a cent</span></li>
+        </ul>
+        <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-self-setup" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-self-setup'});">Start Free Trial</a>
+        <p class="good"><strong>Good for:</strong> tech-comfortable owners, solo operators, simple setups</p>
+      </div>
+    </div>
+    <div class="path team">
+      <img src="/assets/images/switch/managed-setup-720.webp" width="720" height="405" loading="lazy" alt="A technician working at a desk with two monitors">
+      <div class="path-body">
+        <span class="pill">Done for you</span>
+        <h3>We'll set it up for you</h3>
+        <p>Our team configures everything to your requirements. Live in 1–2 business days.</p>
+        <div class="cost"><div class="amt">$300 <span>ex GST</span></div><div class="sub">Up to 3 users · additional $50 ex GST per user</div></div>
+        <ul class="checks">
+          <li class="check"><span><strong>Scheduled call with a Click2Call setup specialist</strong> to discuss your requirements</span></li>
+          <li class="check"><span>We configure your <strong>auto-attendant, IVR, ring groups, voicemail greetings, and call routing</strong> to suit your business</span></li>
+          <li class="check"><span>We <strong>organise your number porting</strong> end-to-end (porting fee $100 inc GST extra)</span></li>
+          <li class="check"><span><strong>Zero downtime</strong> — your existing number keeps ringing the whole time. You test everything before we commit to the port.</span></li>
+          <li class="check"><span><strong>Remote walkthrough and training guides</strong> so your team knows how to use it</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="mailto:support@click2call.com.au?subject=Managed%20setup%20enquiry&amp;body=Hi%20Click2Call%20team%2C%0A%0AI%27d%20like%20to%20book%20managed%20setup.%20A%20few%20details%20to%20get%20started%3A%0A%0A-%20Business%20name%3A%20%0A-%20Number%20of%20users%3A%20%0A-%20Existing%20phone%20numbers%20to%20port%3A%20%0A-%20Specific%20configuration%20needed%20%5BIVR%20menu%2C%20ring%20groups%2C%20after-hours%20routing%2C%20etc%5D%3A%20%0A%0AWhen%20would%20be%20a%20good%20time%20for%20a%20setup%20call%3F%0A%0AThanks%2C%0A" onclick="gtag('event', 'managed_setup_enquiry', {'event_category': 'CTA', 'event_label': 'Managed Setup Email'});">Email Us to Book Setup</a>
+        <p class="good"><strong>Good for:</strong> prefer hands-off setup, larger teams, complex routing</p>
+      </div>
+    </div>
+  </div>
+  <p class="already"><strong>Not sure which one?</strong> Start the free trial first. If you get stuck or decide you'd rather have us handle it, you can switch to managed setup any time during your trial.</p>
+</div></section>
 
-<!-- Card 1 — Self-setup -->
-<div class="bg-white rounded-2xl border-2 border-gray-200 p-6 shadow-sm flex flex-col h-full">
-<div class="flex items-center gap-2 mb-2">
-<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800">Most popular</span>
-</div>
-<h3 class="text-2xl font-bold text-gray-900 mb-1">Set it up yourself</h3>
-<p class="text-sm text-gray-500 mb-4">Follow our step-by-step guides and be making calls in under an hour.</p>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-gray-900">FREE</div>
-<div class="text-sm text-gray-500 mt-1">Live in under an hour</div>
-</div>
-<ul class="space-y-3 text-sm text-gray-700 mb-8 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>Step-by-step <a class="text-[#3B9C49] hover:underline font-medium" href="/help/">Help Centre guides</a> for every feature</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>Free email + phone support if you get stuck</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>You stay in control — change settings any time</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>Most customers are making calls within an hour of signing up</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>$11 free trial credit</strong> to test everything before paying a cent</span></li>
-</ul>
-<a class="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl text-white font-bold transition-all hover:scale-105 shadow-sm" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" style="background-color: #3B9C49;" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Start Free Trial</a>
-<p class="text-xs text-gray-500 mt-3 text-center"><strong>Good for:</strong> tech-comfortable owners, solo operators, simple setups</p>
-</div>
+<section class="sec" id="managed-setup" aria-labelledby="ms-h"><div class="wrap narrow">
+  <div class="head left"><h2 id="ms-h">Managed Phone System Setup &amp; Number Porting</h2><p class="lead">Setting up Click2Call yourself is completely free. Our team can handle everything for you if you prefer — including end-to-end number porting from your existing carrier.</p></div>
+  <span id="number-porting"></span>
+  <div class="tbl"><table>
+    <thead><tr><th>Service</th><th>Cost (ex GST)</th><th>Inc GST</th></tr></thead>
+    <tbody>
+      <tr><td>Self-setup (via Help Centre)</td><td>FREE</td><td>FREE</td></tr>
+      <tr><td>Number porting</td><td>$90.91</td><td>$100</td></tr>
+      <tr><td>Cloud PBX Setup (up to 3 users)</td><td>$300 ex GST</td><td>$330 inc GST</td></tr>
+      <tr><td>Additional user setup (per user)</td><td>$50</td><td>$55</td></tr>
+      <tr><td>Microsoft Teams Setup (per user)</td><td>$50</td><td>$55</td></tr>
+      <tr><td>Eleven Labs AI Agent Setup<p class="cell-note">An advanced AI voice agent for businesses that need more than the AI Receptionist included free</p></td><td>$500</td><td>$550.00</td></tr>
+    </tbody>
+  </table></div>
+  <p class="tnote"><strong>Note:</strong> Our free Help Centre guides you through every step of the setup process. Most customers are up and running within 24 hours of signing up. <a class="link" href="/help/">Visit Help Centre &rarr;</a></p>
+</div></section>
 
-<!-- Card 2 — Managed setup -->
-<div class="bg-white rounded-2xl border-2 border-[#3B9C49] p-6 shadow-md flex flex-col h-full">
-<div class="flex items-center gap-2 mb-2">
-<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">Done for you</span>
-</div>
-<h3 class="text-2xl font-bold text-gray-900 mb-1">We'll set it up for you</h3>
-<p class="text-sm text-gray-500 mb-4">Our team configures everything to your requirements. Live in 1–2 business days.</p>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-gray-900">$300 <span class="text-lg font-normal text-gray-500">ex GST</span></div>
-<div class="text-sm text-gray-500 mt-1">Up to 3 users · additional $50 ex GST per user</div>
-</div>
-<ul class="space-y-3 text-sm text-gray-700 mb-8 flex-grow">
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>Scheduled call with a Click2Call setup specialist</strong> to discuss your requirements</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>We configure your <strong>auto-attendant, IVR, ring groups, voicemail greetings, and call routing</strong> to suit your business</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span>We <strong>organise your number porting</strong> end-to-end (porting fee $100 inc GST extra)</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>Zero downtime</strong> — your existing number keeps ringing the whole time. You test everything before we commit to the port.</span></li>
-<li class="flex items-start gap-2"><svg class="w-5 h-5 text-[#3B9C49] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span><strong>Remote walkthrough and training guides</strong> so your team knows how to use it</span></li>
-</ul>
-<a class="w-full inline-flex items-center justify-center px-6 py-3 rounded-xl text-white font-bold transition-all hover:scale-105 shadow-sm" href="mailto:support@click2call.com.au?subject=Managed%20setup%20enquiry&amp;body=Hi%20Click2Call%20team%2C%0A%0AI%27d%20like%20to%20book%20managed%20setup.%20A%20few%20details%20to%20get%20started%3A%0A%0A-%20Business%20name%3A%20%0A-%20Number%20of%20users%3A%20%0A-%20Existing%20phone%20numbers%20to%20port%3A%20%0A-%20Specific%20configuration%20needed%20%5BIVR%20menu%2C%20ring%20groups%2C%20after-hours%20routing%2C%20etc%5D%3A%20%0A%0AWhen%20would%20be%20a%20good%20time%20for%20a%20setup%20call%3F%0A%0AThanks%2C%0A" style="background-color: #3850ED;" onclick="gtag('event', 'managed_setup_enquiry', {'event_category': 'CTA', 'event_label': 'Managed Setup Email'});">Email Us to Book Setup</a>
-<p class="text-xs text-gray-500 mt-3 text-center"><strong>Good for:</strong> prefer hands-off setup, larger teams, complex routing</p>
-</div>
+<section class="sec soft" aria-labelledby="addons-h"><div class="wrap">
+  <div class="head"><h2 id="addons-h">Add-Ons</h2><p class="lead">Everything below is optional. Most customers start with just the plan above and add these as their business grows.</p></div>
+  <div class="addons">
+    <div class="card">
+      <h3>Additional Phone Numbers</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Number Type</th><th>Monthly Cost</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Local number (02, 03, 07, 08)</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>Geographic presence in any Australian city</td></tr>
+          <tr><td>1300 number</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>National presence. Caller pays local call rate.</td></tr>
+          <tr><td>1800 number</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>Toll-free for callers. You pay $0.20/min inbound.</td></tr>
+          <tr><td>Port local number</td><td>$90.91 one-time ex GST<br><span class="inc">$100 inc GST</span></td><td>5&ndash;10 business days. Stays active during porting.</td></tr>
+          <tr><td>Port 1300/1800 number</td><td>$90.91 one-time ex GST<br><span class="inc">$100 inc GST</span></td><td>Up to 30 days. Stays active during porting.</td></tr>
+        </tbody>
+      </table></div>
+      <p class="small muted">A number you bring across runs on its own plan once it arrives: $10/month as an inbound number, or $25/month as a Cloud PBX User.</p>
+    </div>
+    <div class="card">
+      <h3>Optional Hardware</h3>
+      <p>Choose between a physical desk phone, a softphone app, or use both together &mdash; whatever works best for your team. Desk phones come pre-configured and posted to you, ready to plug in and go.</p>
+      <div class="hw">
+        <div class="hw-i"><img alt="Yealink T43U VoIP Desk Phone" src="/assets/images/yealink-t43u.webp" width="160" height="160" loading="lazy"><div><h4>Yealink T43U</h4><p class="small muted">Pre-configured VoIP Desk Phone</p><p class="hw-p">$450 <span>+ GST</span></p><ul class="checks"><li class="check">Plug &amp; play ready</li><li class="check">Configuration &amp; postage included</li></ul></div></div>
+        <div class="hw-i"><img alt="Yealink W76P VoIP Cordless Phone" src="/assets/images/yealink-w76p.webp" width="160" height="160" loading="lazy"><div><h4>Yealink W76P</h4><p class="small muted">Pre-configured VoIP Cordless Phone</p><p class="hw-p">$400 <span>+ GST</span></p><ul class="checks"><li class="check">Plug &amp; play ready</li><li class="check">Configuration &amp; postage included</li></ul></div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
 
-</div>
+<section class="sec" id="hosted-pbx-cost" aria-labelledby="hp-h"><div class="wrap narrow">
+  <div class="head left"><h2 id="hp-h">How Much Does a Hosted PBX Cost in Australia?</h2><p class="lead">With Click2Call, a hosted (cloud) PBX costs <strong>$25 per user per month ex GST</strong>, and that is the whole monthly price for most businesses: the local number, 300 outbound minutes, unlimited inbound calls, IVR, ring groups, call queues, call recording and AI transcription are all in it. There is no base fee, no per-feature licence and no minimum number of users.</p></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Team size</th><th>Per month ex GST</th><th>Per month inc GST</th><th>Outbound minutes (per user)</th></tr></thead>
+    <tbody>
+      <tr><td>1 user</td><td>$25</td><td>$27.50</td><td>300 min each</td></tr>
+      <tr><td>3 users</td><td>$75</td><td>$82.50</td><td>300 min each</td></tr>
+      <tr><td>5 users</td><td>$125</td><td>$137.50</td><td>300 min each</td></tr>
+      <tr><td>10 users</td><td>$250</td><td>$275.00</td><td>300 min each</td></tr>
+      <tr><td>20 users</td><td>$500</td><td>$550.00</td><td>300 min each</td></tr>
+    </tbody>
+  </table></div>
+  <p class="tnote">Add $10 ex GST a month for each extra inbound number (a shared reception line, a 1300 or an 1800). Each user&rsquo;s 300 minutes are attached to that user&rsquo;s number &mdash; they are not pooled across the account. <a class="link" href="#calculator">Build your own estimate in the calculator &rarr;</a></p>
+  <div class="hp-q">
+    <div class="card">
+      <h3>What does it cost to migrate from an on-premise PBX to the cloud?</h3>
+      <p>Usually only the porting fee. One-off costs, all optional except porting:</p>
+      <ul class="checks">
+        <li class="check"><span><strong>Number porting:</strong> $100 including GST per number, any type. Your number keeps working during the 5&ndash;10 business days it takes.</span></li>
+        <li class="check"><span><strong>Setup:</strong> free if you do it yourself with the help guides; managed setup is $300 ex GST for up to 3 users, then $50 per extra user.</span></li>
+        <li class="check"><span><strong>Handsets:</strong> optional. The softphone app is free; pre-configured Yealink desk phones are $450 and cordless $400 ex GST, posted ready to plug in.</span></li>
+        <li class="check"><span><strong>Nothing else:</strong> no line rental, no PBX maintenance contract, no technician call-outs.</span></li>
+      </ul>
+      <p class="small muted">1300 and 1800 numbers can take up to 30 days to port. Each number you bring across then runs on its own plan ($10/month as an inbound number).</p>
+    </div>
+    <div class="card">
+      <h3>What do calls cost beyond the 300 minutes?</h3>
+      <p>Calls to Australian and New Zealand numbers past the allowance are charged per minute &mdash; 10c a minute to landlines and 20c a minute to mobiles, ex GST. Calling a 1300 number is a flat 50c connection fee. If you hold a 1300 or 1800 number, inbound calls to it are 20c a minute to your account; inbound calls to local numbers are free. <button class="linkbtn" onclick="document.getElementById('rates-modal').style.display='flex';" type="button">See the full calling rates schedule &rarr;</button></p>
+    </div>
+    <div class="card">
+      <h3>Is there a cheaper VoIP-only or basic plan?</h3>
+      <p>There is no stripped-down tier, because nothing is held back from the $25 user. Two things are cheaper because they do less: an <strong>Inbound Business Number</strong> at $10 a month receives calls and runs a call flow but cannot dial out, and if you already own a PBX, a <a href="/sip-trunks/">SIP trunk</a> at $50 a month supplies the lines without the phone system.</p>
+    </div>
+  </div>
+</div></section>
 
-<!-- Reassurance footer -->
-<div class="mt-10 max-w-2xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-5 text-center">
-<p class="text-sm text-gray-600"><strong>Not sure which one?</strong> Start the free trial first. If you get stuck or decide you'd rather have us handle it, you can switch to managed setup any time during your trial.</p>
-</div>
+<section class="sec soft" aria-labelledby="pq-h"><div class="wrap">
+  <div class="head"><h2 id="pq-h">Pricing Questions</h2></div>
+  <div class="faq" id="pricing-faq">
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-1"><span>What is included in the monthly fee?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-1" class="faq-body hidden"><ul class="space-y-1 list-disc list-inside"><li>$25/month per user (ex GST)</li><li>$10/month per extra inbound line (ex GST)</li><li>Includes 1 local number, 300 outbound minutes, and unlimited inbound calls</li><li>No hidden fees, no minimum spend, no lock-in contracts</li></ul></div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-2"><span>What happens if my payment fails?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-2" class="faq-body hidden">Click2Call operates on a prepaid billing system. You load credit onto your account, and your monthly flat-rate fees and any extra usage are deducted from this balance. If your credit runs out, your service may be suspended. We recommend saving a credit card and enabling the auto top-up feature in the customer portal to ensure uninterrupted service.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-3"><span>How do I manage my subscription?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-3" class="faq-body hidden">Log in to the customer portal at portal.click2call.com.au and go to the Payments section to manage your account balance, enable auto top-up, update saved credit cards, and view invoices. We accept all major credit cards.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-4"><span>Can I add or remove users at any time?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-4" class="faq-body hidden">Yes. You can add or remove users at any time through the customer portal. Changes take effect immediately and your flat-rate monthly fees are adjusted accordingly. There are no penalties for scaling up or down.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-5"><span>Are inbound calls free?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-5" class="faq-body hidden">Inbound calls to your local numbers are included and unlimited. If you route inbound calls to an external mobile number, standard rates apply. If you have a 1300 or 1800 number, inbound calls to that number are charged at standard rates to your account.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-6"><span>Is there a contract or lock-in period?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-6" class="faq-body hidden">No. Click2Call is completely month-to-month with no lock-in contracts. You can cancel your account at any time via the customer portal. Unused credit is refundable &mdash; contact us at support@click2call.com.au.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-7"><span>Can I port my existing phone number?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-7" class="faq-body hidden">Yes. We can port most Australian landline and mobile numbers. A one-time porting fee of $100 including GST applies to every number type. Porting typically takes 5&ndash;10 business days (1300 and 1800 numbers can take up to 30 days) and your number remains active throughout the process &mdash; there is no downtime. Once it arrives, each ported number runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-9"><span>How much does it cost to call a 1300 number?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-9" class="faq-body hidden">Calls to 13 and 1300 numbers are charged a flat $0.50 connection fee per call. There is no additional per-minute charge regardless of how long the call lasts.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-10"><span>What is the difference between a 1300 and 1800 number?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-10" class="faq-body hidden">With a 1300 number, your caller pays their local call rate to reach you. With an 1800 number, the call is completely free for your caller &mdash; you pay the $0.20/min inbound rate. Both number types cost $10/month (ex GST) on Click2Call.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-11"><span>Do you charge GST?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-11" class="faq-body hidden">Yes. Click2Call is an Australian business (ABN: 92 636 893 108). GST of 10% applies to all charges. All prices on this page are shown excluding GST. Your tax invoice will show the ex-GST amount and GST separately.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-12"><span>How do I get started?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-12" class="faq-body hidden">Fill in our signup form at portal.click2call.com.au/join &mdash; it takes about 5 minutes. Account activation takes up to 24 hours. Once active, you are ready to make and receive calls immediately.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-13"><span>How much does a hosted PBX cost per user in Australia?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-13" class="faq-body hidden">Click2Call&rsquo;s hosted PBX is $25 per user per month ex GST ($27.50 inc GST). That includes a local Australian number, 300 outbound minutes, unlimited inbound calls and every feature &mdash; IVR, ring groups, call queues, call recording, AI transcription and voicemail to email. Five users cost $125 a month ex GST; ten users $250. Extra inbound numbers are $10 a month each.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-14"><span>Is there a cheaper VoIP-only or inbound-only plan?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-14" class="faq-body hidden">There is no cut-down tier because every feature is already included in the $25 user. If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email) but cannot make outbound calls. If you own a PBX already, a SIP trunk is $50 a month for the lines only.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-15"><span>What do calls cost after the 300 included minutes?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-15" class="faq-body hidden">Calls to Australian and New Zealand numbers beyond the allowance are charged per minute ex GST &mdash; 10c to landlines and 20c to mobiles. Calls to 1300 numbers are a flat 50c connection fee with no per-minute charge. Inbound calls to your local numbers are always free; inbound calls to a 1300 or 1800 number you hold are 20c a minute. The full schedule, including international destinations, is in the calling rates table on this page.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-16"><span>What does it cost to move from an on-premise PBX to Click2Call?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-16" class="faq-body hidden">For most businesses, the only one-off cost is the number porting fee: $100 including GST per number, any type, with no downtime. Each number you bring across then runs on its own plan ($10/month as an inbound number, or $25/month as a Cloud PBX User). Setup is free if you follow the help guides; managed setup is $300 ex GST for up to 3 users plus $50 per additional user. Handsets are optional &mdash; the softphone app is free, and pre-configured Yealink desk phones are $450 ex GST if you want them. There is no line rental and no maintenance contract.</div></div>
+  </div>
+</div></section>
 
-</div>
-</section>
+<section class="sec tight" aria-label="Calling rates"><div class="wrap">
+  <div class="rates">
+    <p>Need to check rates for calls beyond the 300-minute allowance, 1300/1800 inbound, or international destinations?</p>
+    <button class="btn btn-ghost" type="button" onclick="document.getElementById('rates-modal').style.display='flex';">View Full Calling Rates Schedule</button>
+    <p class="small muted">All rates ex GST • per minute unless noted • subject to 30 days notice of change</p>
+  </div>
+</div></section>
 
-<!-- SECTION 7 — OPTIONAL SETUP SERVICES -->
-<section class="bg-gray-50 py-16 border-b border-gray-100" id="managed-setup">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Managed Phone System Setup &amp; Number Porting</h2>
-<p class="text-center text-gray-500 mb-8 max-w-2xl mx-auto">Setting up Click2Call yourself is completely free. Our team can handle everything for you if you prefer — including end-to-end number porting from your existing carrier.</p>
-<span id="number-porting" class="block -mt-32 pt-32" aria-hidden="true"></span>
-<div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
-<table class="min-w-full text-sm">
-<thead>
-<tr class="bg-white border-b border-gray-200">
-<th class="px-4 py-3 text-left font-semibold text-gray-700">Service</th>
-<th class="px-4 py-3 text-left font-semibold text-gray-700">Cost (ex GST)</th>
-<th class="px-4 py-3 text-left font-semibold text-gray-700">Inc GST</th>
-</tr>
-</thead>
-<tbody>
-<tr class="border-b border-gray-100 bg-white"><td class="px-4 py-3 text-gray-800">Self-setup (via Help Centre)</td><td class="px-4 py-3 text-green-700 font-semibold">FREE</td><td class="px-4 py-3 text-green-700 font-semibold">FREE</td></tr>
-<tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-3 text-gray-800">Number porting</td><td class="px-4 py-3 text-gray-800">$90.91</td><td class="px-4 py-3 text-gray-800">$100</td></tr>
-<tr class="border-b border-gray-100 bg-white"><td class="px-4 py-3 text-gray-800">Cloud PBX Setup (up to 3 users)</td><td class="px-4 py-3 text-gray-800">$300 ex GST</td><td class="px-4 py-3 text-gray-800">$330 inc GST</td></tr>
-<tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-3 text-gray-800">Additional user setup (per user)</td><td class="px-4 py-3 text-gray-800">$50</td><td class="px-4 py-3 text-gray-800">$55</td></tr>
-<tr class="border-b border-gray-100 bg-white"><td class="px-4 py-3 text-gray-800">Microsoft Teams Setup (per user)</td><td class="px-4 py-3 text-gray-800">$50</td><td class="px-4 py-3 text-gray-800">$55</td></tr>
-<tr class="bg-gray-50"><td class="px-4 py-3 text-gray-800">Eleven Labs AI Agent Setup</td><td class="px-4 py-3 text-gray-800">$500</td><td class="px-4 py-3 text-gray-800">$550.00</td></tr>
-</tbody>
-</table>
-</div>
-<div class="mt-5 bg-green-50 border border-green-200 rounded-lg p-4 text-sm text-green-800">
-<strong>Note:</strong> Our free Help Centre guides you through every step of the setup process. Most customers are up and running within 24 hours of signing up. <a class="underline font-semibold hover:text-green-900" href="/help/">Visit Help Centre &rarr;</a>
-</div>
-</div>
-</section>
-
-<!-- SECTION 8 — ADD-ONS: PHONE NUMBERS + HARDWARE (combined) -->
-<section class="bg-white py-16 border-b border-gray-100">
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Add-Ons</h2>
-<p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Everything below is optional. Most customers start with just the plan above and add these as their business grows.</p>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-<!-- Phone Numbers -->
-<div>
-<h3 class="text-xl font-bold text-gray-900 mb-4">Additional Phone Numbers</h3>
-<div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
-<table class="min-w-full text-sm">
-<thead>
-<tr class="bg-gray-50 border-b border-gray-200">
-<th class="px-4 py-3 text-left font-semibold text-gray-700">Number Type</th>
-<th class="px-4 py-3 text-left font-semibold text-gray-700">Monthly Cost</th>
-<th class="px-4 py-3 text-left font-semibold text-gray-700">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="border-b border-gray-100 bg-white"><td class="px-4 py-3 text-gray-800">Local number (02, 03, 07, 08)</td><td class="px-4 py-3 text-gray-800">$10 ex GST<br/><span class="text-xs text-gray-400">$11 inc GST</span></td><td class="px-4 py-3 text-gray-600">Geographic presence in any Australian city</td></tr>
-<tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-3 text-gray-800">1300 number</td><td class="px-4 py-3 text-gray-800">$10 ex GST<br/><span class="text-xs text-gray-400">$11 inc GST</span></td><td class="px-4 py-3 text-gray-600">National presence. Caller pays local call rate.</td></tr>
-<tr class="border-b border-gray-100 bg-white"><td class="px-4 py-3 text-gray-800">1800 number</td><td class="px-4 py-3 text-gray-800">$10 ex GST<br/><span class="text-xs text-gray-400">$11 inc GST</span></td><td class="px-4 py-3 text-gray-600">Toll-free for callers. You pay $0.20/min inbound.</td></tr>
-<tr class="bg-gray-50 border-b border-gray-100"><td class="px-4 py-3 text-gray-800">Port local number</td><td class="px-4 py-3 text-gray-800">$90.91 one-time ex GST<br/><span class="text-xs text-gray-400">$100 inc GST</span></td><td class="px-4 py-3 text-gray-600">5&ndash;10 business days. Stays active during porting.</td></tr>
-<tr class="bg-white"><td class="px-4 py-3 text-gray-800">Port 1300/1800 number</td><td class="px-4 py-3 text-gray-800">$90.91 one-time ex GST<br/><span class="text-xs text-gray-400">$100 inc GST</span></td><td class="px-4 py-3 text-gray-600">5&ndash;10 business days. Stays active during porting.</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- Hardware -->
-<div>
-<h3 class="text-xl font-bold text-gray-900 mb-1">Optional Hardware</h3>
-<p class="text-sm text-gray-500 mb-4">Choose between a physical desk phone, a softphone app, or use both together &mdash; whatever works best for your team. Desk phones come pre-configured and posted to you, ready to plug in and go.</p>
-<div class="space-y-4">
-<!-- T43U -->
-<div class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm flex flex-row items-center gap-5 hover:shadow-md transition-shadow">
-<div class="flex-shrink-0 flex justify-center" style="width:90px;">
-<img alt="Yealink T43U VoIP Desk Phone" class="object-contain drop-shadow-sm" src="/assets/images/yealink-t43u.webp" style="height:90px;width:auto;" width="687" height="488">
-</div>
-<div class="flex-1 min-w-0">
-<h4 class="text-base font-bold text-gray-900 mb-0.5">Yealink T43U</h4>
-<p class="text-xs text-gray-500 mb-2">Pre-configured VoIP Desk Phone</p>
-<div class="text-xl font-extrabold text-gray-900 mb-2">$450 <span class="text-xs font-normal text-gray-500">+ GST</span></div>
-<ul class="space-y-1 text-xs text-gray-600">
-<li class="flex items-center gap-1.5"><svg class="h-4 w-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Plug &amp; play ready</li>
-<li class="flex items-center gap-1.5"><svg class="h-4 w-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Configuration &amp; postage included</li>
-</ul>
-</div>
-</div>
-<!-- W76P -->
-<div class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm flex flex-row items-center gap-5 hover:shadow-md transition-shadow">
-<div class="flex-shrink-0 flex justify-center" style="width:90px;">
-<img alt="Yealink W76P VoIP Cordless Phone" class="object-contain drop-shadow-sm" src="/assets/images/yealink-w76p.webp" style="height:90px;width:auto;" width="642" height="616">
-</div>
-<div class="flex-1 min-w-0">
-<h4 class="text-base font-bold text-gray-900 mb-0.5">Yealink W76P</h4>
-<p class="text-xs text-gray-500 mb-2">Pre-configured VoIP Cordless Phone</p>
-<div class="text-xl font-extrabold text-gray-900 mb-2">$400 <span class="text-xs font-normal text-gray-500">+ GST</span></div>
-<ul class="space-y-1 text-xs text-gray-600">
-<li class="flex items-center gap-1.5"><svg class="h-4 w-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Plug &amp; play ready</li>
-<li class="flex items-center gap-1.5"><svg class="h-4 w-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Configuration &amp; postage included</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- SECTION 9 — PRICING FAQ -->
-<section class="bg-gray-50 py-16 border-b border-gray-100">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-3xl font-extrabold text-gray-900 mb-3 text-center">Pricing Questions</h2>
-<div class="space-y-2" id="pricing-faq">
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-1" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>What is included in the monthly fee?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-1"><ul class="space-y-1 list-disc list-inside"><li>$25/month per user (ex GST)</li><li>$10/month per extra inbound line (ex GST)</li><li>Includes 1 local number, 300 outbound minutes, and unlimited inbound calls</li><li>No hidden fees, no minimum spend, no lock-in contracts</li></ul></div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-2" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>What happens if my payment fails?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-2">Click2Call operates on a prepaid billing system. You load credit onto your account, and your monthly flat-rate fees and any extra usage are deducted from this balance. If your credit runs out, your service may be suspended. We recommend saving a credit card and enabling the auto top-up feature in the customer portal to ensure uninterrupted service.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-3" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>How do I manage my subscription?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-3">Log in to the customer portal at portal.click2call.com.au and go to the Payments section to manage your account balance, enable auto top-up, update saved credit cards, and view invoices. We accept all major credit cards.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-4" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>Can I add or remove users at any time?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-4">Yes. You can add or remove users at any time through the customer portal. Changes take effect immediately and your flat-rate monthly fees are adjusted accordingly. There are no penalties for scaling up or down.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-5" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>Are inbound calls free?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-5">Inbound calls to your local numbers are included and unlimited. If you route inbound calls to an external mobile number, standard rates apply. If you have a 1300 or 1800 number, inbound calls to that number are charged at standard rates to your account.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-6" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>Is there a contract or lock-in period?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-6">No. Click2Call is completely month-to-month with no lock-in contracts. You can cancel your account at any time via the customer portal. Unused credit is refundable &mdash; contact us at support@click2call.com.au.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-7" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>Can I port my existing phone number?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-7">Yes. We can port most Australian landline and mobile numbers. A one-time porting fee of $100 including GST applies to every number type. Porting typically takes 5&ndash;10 business days and your number remains active throughout the process &mdash; there is no downtime.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-9" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>How much does it cost to call a 1300 number?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-9">Calls to 13 and 1300 numbers are charged a flat $0.50 connection fee per call. There is no additional per-minute charge regardless of how long the call lasts.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-10" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>What is the difference between a 1300 and 1800 number?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-10">With a 1300 number, your caller pays their local call rate to reach you. With an 1800 number, the call is completely free for your caller &mdash; you pay the $0.20/min inbound rate. Both number types cost $10/month (ex GST) on Click2Call.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-11" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>Do you charge GST?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-11">Yes. Click2Call is an Australian business (ABN: 92 636 893 108). GST of 10% applies to all charges. All prices on this page are shown excluding GST. Your tax invoice will show the ex-GST amount and GST separately.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-12" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>How do I get started?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-12">Fill in our signup form at portal.click2call.com.au/join &mdash; it takes about 5 minutes. Account activation takes up to 24 hours. Once active, you are ready to make and receive calls immediately.</div>
-</div>
-</div>
-<div class="mt-12 text-center">
-<a class="inline-flex items-center text-lg font-bold text-green-700 hover:text-green-800 hover:underline" href="/compare/">
-          See exactly how the switch works
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-13" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>How much does a hosted PBX cost per user in Australia?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-13">Click2Call&rsquo;s hosted PBX is $25 per user per month ex GST ($27.50 inc GST). That includes a local Australian number, 300 outbound minutes, unlimited inbound calls and every feature &mdash; IVR, ring groups, call queues, call recording, AI transcription and voicemail to email. Five users cost $125 a month ex GST; ten users $250. Extra inbound numbers are $10 a month each.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-14" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>Is there a cheaper VoIP-only or inbound-only plan?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-14">There is no cut-down tier because every feature is already included in the $25 user. If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email) but cannot make outbound calls. If you own a PBX already, a SIP trunk is $50 a month for the lines only.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-15" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>What do calls cost after the 300 included minutes?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-15">Calls to Australian and New Zealand numbers beyond the allowance are charged per minute ex GST &mdash; 10c to landlines and 20c to mobiles. Calls to 1300 numbers are a flat 50c connection fee with no per-minute charge. Inbound calls to your local numbers are always free; inbound calls to a 1300 or 1800 number you hold are 20c a minute. The full schedule, including international destinations, is in the calling rates table on this page.</div>
-</div>
-<div class="border border-gray-200 rounded-lg overflow-hidden bg-white">
-<button aria-controls="pfaq-16" aria-expanded="false" class="w-full text-left px-6 py-4 font-semibold text-gray-900 flex justify-between items-center focus:outline-none faq-toggle"><span>What does it cost to move from an on-premise PBX to Click2Call?</span><svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
-<div class="hidden px-6 pb-4 text-gray-600 text-sm" id="pfaq-16">For most businesses, only the number porting fee: $100 including GST per number, any type, with no downtime. Setup is free if you follow the help guides; managed setup is $300 ex GST for up to 3 users plus $50 per additional user. Handsets are optional &mdash; the softphone app is free, and pre-configured Yealink desk phones are $450 ex GST if you want them. There is no line rental and no maintenance contract.</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="bg-white py-6 border-b border-gray-100">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-sm text-gray-500 mb-3">Need to check rates for calls beyond the 300-minute allowance, 1300/1800 inbound, or international destinations?</p>
-<button class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-lg border-2" onclick="document.getElementById('rates-modal').style.display='flex';" style="border-color:#16a34a;color:#16a34a;background:transparent;">
-<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-        View Full Calling Rates Schedule
-      </button>
-<p class="text-xs text-gray-400 mt-2">All rates ex GST • per minute unless noted • subject to 30 days notice of change</p>
-</div>
-</section>
-<!-- SECTION 11 — BOTTOM CTA -->
-<section class="bg-white py-12 border-b border-gray-100">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm text-center">
-<h3 class="font-bold text-gray-900 text-lg mb-2">Existing Customers</h3>
-<p class="text-sm text-gray-600 mb-4">Log in to manage your account, add users, numbers, and more.</p>
-<a class="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-green-600 text-green-700 font-semibold hover:bg-green-50 transition-colors" href="https://portal.click2call.com.au/login.php" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">Login to Portal</a>
-</div>
-<div class="bg-white rounded-xl border border-green-300 p-6 shadow-sm text-center">
-<h3 class="font-bold text-gray-900 text-lg mb-2">New Customers</h3>
-<p class="text-sm text-gray-600 mb-4">Ready to get started? Fill in our signup form — takes about 5 minutes.</p>
-<a class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition-colors shadow-sm" href="https://portal.click2call.com.au/join/" rel="noopener noreferrer" style="background-color:#16a34a;color:#ffffff;display:inline-flex;padding:0.75rem 1.5rem;border-radius:0.5rem;font-weight:600;text-decoration:none;" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup'});">Start Free Trial</a>
-<p class="text-xs text-gray-400 mt-2">Activation takes up to 24 hours after signup</p>
-</div>
-</div>
-</div>
-</section>
-<!-- PRICING ACCURACY DISCLAIMER -->
-<div class="py-6 border-t border-gray-100">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<p class="text-xs text-gray-400 text-center">Prices are current as at May 2026 and are subject to change. Click2Call will provide 30 days notice of any price changes. Click2Call is operated by Bcom Services Pty Ltd ABN 92 636 893 108.</p>
-</div>
-</div>
+<section class="sec" style="padding-top:0" aria-label="Get started"><div class="wrap">
+  <div class="final-duo">
+    <div class="fd new">
+      <h3>New Customers</h3>
+      <p>Ready to get started? Fill in our signup form — takes about 5 minutes.</p>
+      <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-final-cta" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-final-cta'});">Start Free Trial</a>
+      <p class="talk">Activation takes up to 24 hours after signup</p>
+    </div>
+    <div class="fd">
+      <h3>Existing Customers</h3>
+      <p>Log in to manage your account, add users, numbers, and more.</p>
+      <a class="btn btn-ghost" href="https://portal.click2call.com.au/login.php" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'portal_login', {'event_category': 'CTA', 'event_label': 'Portal Login'});">Login to Portal</a>
+    </div>
+  </div>
+  <p class="disclaimer">Prices are current as at May 2026 and are subject to change. Click2Call will provide 30 days notice of any price changes. Click2Call is operated by Bcom Services Pty Ltd ABN 92 636 893 108.</p>
+</div></section>
 <!-- ── CALLING RATES MODAL ── -->
 <div id="rates-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;padding:1rem;">
 <div style="background:#fff;border-radius:0.75rem;width:100%;max-width:720px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
@@ -2137,7 +1850,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </div><!-- end scrollable area -->
 </div><!-- end modal box -->
 </div><!-- end rates-modal -->
-
 </main>
 <script>
 
@@ -2209,10 +1921,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="text-sm text-gray-900">
 <span class="font-bold">$25</span><span class="text-gray-600">/user/mo ex GST &middot; no lock-in &middot; set up in under an hour</span>
 </div>
-<a href="https://portal.click2call.com.au/join/" target="_blank" rel="noopener noreferrer"
+<a href="https://portal.click2call.com.au/join/?src=pricing-sticky" target="_blank" rel="noopener noreferrer"
    class="inline-flex items-center gap-1 px-5 py-2 rounded-lg text-white font-bold text-sm whitespace-nowrap hover:opacity-90 transition-opacity"
    style="background-color: #3B9C49;"
-   onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Sticky Trial Bar'});">
+   onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-sticky'});">
 Start Free Trial
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
 </a>
@@ -2224,8 +1936,12 @@ Start Free Trial
   if (!bar) return;
   var calc = document.getElementById('calculator');
   var threshold = calc ? calc.offsetTop + 600 : 1200;
+  var inCalc = false;
+  if (calc && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries){ inCalc = entries[0].isIntersecting; onScroll(); }, {rootMargin: '0px 0px -40% 0px'}).observe(calc);
+  }
   function onScroll(){
-    if (window.scrollY > threshold) {
+    if (window.scrollY > threshold && !inCalc) {
       bar.classList.remove('hidden');
       requestAnimationFrame(function(){ bar.classList.remove('translate-y-full'); });
     } else {

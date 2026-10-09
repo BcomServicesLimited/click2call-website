@@ -1,0 +1,614 @@
+[
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "FAQPage schema: the two owner-confirmed porting corrections (same text as the visible FAQ); dateModified 2026-10-09."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h2: Start free. Choose your plan later.",
+  "reason": "\"Start free, choose later\" plans header and the team card that opens the quote builder (review sections 7–8)."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Pricing a team?",
+  "reason": "\"Start free, choose later\" plans header and the team card that opens the quote builder (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$0.00",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$2.50",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$75 /month",
+  "new": "",
+  "reason": "Owner-confirmed 9 Oct 2026: a number you bring across needs its own $10 plan, so the Small office example (3 users + port) is $85/month, not $75."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "1300 numbers ( 0 × $10)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "1800 numbers ( 0 × $10)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "300 mins",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cloud PBX Users ( 1 × $25)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "For most businesses, only the number porting fee: $100 including GST per number, any type, with no downtime.",
+  "new": "",
+  "reason": "Owner-confirmed 9 Oct 2026: one-off cost wording; ported numbers need their own plan (visible FAQ + schema)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "GST (10%)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Get Started",
+  "new": "",
+  "reason": "Plan buttons now say what happens: start the free trial (tagged per card)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Included outbound minutes",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Local numbers ( 0 × $10)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Managed Setup",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Monthly total inc GST",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most Common",
+  "new": "",
+  "reason": "Badge removed: September billing data shows single-line accounts are the most common, not 3-user offices."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Port 1300/1800 ( 0 × $90.91)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Port existing number (+$90.91 each)",
+  "new": "",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Port local numbers ( 0 × $90.91)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Porting typically takes 5–10 business days and your number remains active throughout the process — there is no downtime.",
+  "new": "",
+  "reason": "Owner-confirmed 9 Oct 2026: 1300/1800 ports up to 30 days; ported numbers need their own plan (visible FAQ + schema)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Softphones ( 0 users)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Subtotal ex GST",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Upfront total inc GST",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Yealink T43U ( 0 × $450)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Yealink W76P ( 0 × $400)",
+  "new": "",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$100 one-time port each (inc GST).",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$11 credit, enough for a local number Included",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$27.50 /month inc GST See total",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$75 for 3 users + $10 for your ported number",
+  "reason": "Owner-confirmed 9 Oct 2026: Small office breakdown."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$85 /month",
+  "reason": "Owner-confirmed 9 Oct 2026: Small office = 3 users ($75) + $10 plan for the ported number."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "1300",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "1300 and 1800 numbers can take up to 30 days to port.",
+  "reason": "Owner-confirmed 9 Oct 2026: 1300/1800 port time."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "1800",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "3 users + your existing number",
+  "reason": "Owner-confirmed 9 Oct 2026: Small office example now states it includes porting the existing number."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "7-day free trial $0",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A number you bring across runs on its own plan once it arrives: $10/month as an inbound number, or $25/month as a Cloud PBX User.",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add extras: new numbers, desk phones and setup",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add these users and numbers in the portal when you're ready.",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add up users, numbers, porting, phones and setup in the quote builder.",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An advanced AI voice agent for businesses that need more than the AI Receptionist included free",
+  "reason": "Owner-confirmed 9 Oct 2026: explains the $500 ElevenLabs agent vs the free built-in AI receptionist."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Build your quote →",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Choose your plan later.",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Cloud PBX Users (1 × $25) $25.00",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Due today $0",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each number you bring across needs its own plan: an Inbound Business Number ($10/month), or a Cloud PBX User ($25/month) if it needs to make calls.",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each number you bring across then runs on its own plan ($10/month as an inbound number).",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each number you bring across then runs on its own plan ($10/month as an inbound number, or $25/month as a Cloud PBX User).",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each one runs on its own $10/month number plan.",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Every new account is checked by our team before it's activated.",
+  "reason": "Owner-confirmed 9 Oct 2026: activation is manual."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "For most businesses, the only one-off cost is the number porting fee: $100 including GST per number, any type, with no downtime.",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "For teams",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "GST (10%) $0.00",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "GST (10%) $2.50",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you keep it From $10/month",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Included outbound minutes 300 mins",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Just me",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Local or mobile",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Monthly total inc GST $27.50",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "New numbers only.",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No credit card to sign up $0",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Numbers you're bringing across",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Numbers you're bringing across are counted above.",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Once it arrives, each ported number runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User.",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Porting typically takes 5–10 business days (1300 and 1800 numbers can take up to 30 days) and your number remains active throughout the process — there is no downtime.",
+  "reason": "Owner-confirmed 9 Oct 2026: ported numbers need their own plan ($10, or $25 as a user); 1300/1800 up to 30 days."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Price my team",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Price this in the builder",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Pricing a team?",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Reception number only",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "See your monthly and one-off totals as you go, then start a trial or download a formal PDF quote.",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Start free trial",
+  "reason": "Plan buttons now say what happens: start the free trial (tagged per card)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Start free.",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Start from:",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Starting today",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Subtotal ex GST $0.00",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Subtotal ex GST $25.00",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "That can take a minute, or up to 24 hours if your account needs extra verification.",
+  "reason": "Owner-confirmed 9 Oct 2026: activation time."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The trial needs no card.",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Today $0 · free 7-day trial",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Try it free while your quote is approved",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Two plans, no tiers",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Up to 30 days.",
+  "reason": "Owner-confirmed 9 Oct 2026: 1300/1800 port time in the Add-ons table (was 5–10 business days)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Upfront total inc GST $0.00",
+  "reason": "Quote builder summary re-laid out as a receipt: same labels and maths, label and amount on one line."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "You don't need to pick a plan to start your trial.",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Your $11 credit covers a local number, and you add users in the portal when you're ready.",
+  "reason": "\"Start free, choose later\": what it costs today and the team path (review sections 7–8)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Your number keeps working while it moves.",
+  "reason": "Quote builder: examples, \"numbers you're bringing across\" question, trial button beside the quote (review section 6)."
+ },
+ {
+  "kind": "events-removed",
+  "old": "begin_free_trial|Free Trial Signup",
+  "new": "",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-calculator",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-final-cta",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-hero",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-plan-number",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-plan-user",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-quote-success",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-self-setup",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "begin_free_trial|Free Trial Signup - pricing-trial",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "quote_generated|Formal Quote PDF",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "quote_modal_open|Generate Formal Quote",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "team_quote_click|Team Quote - pricing-hero",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "team_quote_click|Team Quote - pricing-plans",
+  "reason": "Per-button tracking (?src=pricing-<placement>, matching labels) plus quote_modal_open / quote_generated / team_quote_click events."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A real estate agent sitting in a car, using a mobile phone",
+  "reason": "Setup-path photos, same as the Switch page."
+ },
+ {
+  "kind": "img_alts-added",
+  "old": "",
+  "new": "A technician working at a desk with two monitors",
+  "reason": "Setup-path photos, same as the Switch page."
+ }
+]
