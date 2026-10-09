@@ -105,17 +105,17 @@ As of 2026-07-16, Click2Call maintains 5 standalone city guides (Sydney, Melbour
 
 ### Standalone city guides
 
-- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers. Covers CBD, Parramatta, Surry Hills, North Shore, Northern Beaches, Barangaroo, Chatswood. Cross-links to /voip-australia/#newcastle and /voip-australia/#wollongong.
-- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers. Covers CBD, Southbank, Richmond, St Kilda Road, Docklands.
-- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Covers CBD, Fortitude Valley, South Brisbane, Eagle Farm, Ipswich. Cross-links to /voip-australia/#gold-coast and /voip-australia/#sunshine-coast.
-- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers. Covers CBD, Joondalup, Subiaco, Fremantle, Mandurah. Includes a Microsoft Teams Calling section for Perth-based MSPs.
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers (NSW and ACT). Rebuilt October 2026: multi-site Sydney businesses on one system, daylight saving vs support hours, hybrid work, Teams Direct Routing, moving office without changing number, a professional-services call flow example and a six-person cost example ($160/month ex GST).
+- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers (VIC and TAS). Rebuilt October 2026: six-step self-setup guide, example setups (Fitzroy, Caulfield/Moorabbin, Southbank), co-working Wi-Fi, choosing phones, Victorian public holidays, managed setup, three users plus a ported number for $85/month ex GST.
+- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Rebuilt October 2026: storm-season fallback with Forward when Offline, Queensland time vs daylight-saving states, support on Brisbane time, preparing office internet for calls, Teams and SIP trunks. Cross-links to /voip-gold-coast/.
+- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers (WA, SA, NT). Rebuilt October 2026: support from 7 am to 3 pm Perth time, the Answer Agent for east-coast callers before Perth opens, 02/03 numbers for east-coast clients, Teams Direct Routing, remote sites and Starlink, an eight-person Teams cost example.
 
 ### National hub (with anchored regional sections)
 
 - **VoIP Australia**: https://www.click2call.com.au/voip-australia — National overview plus anchored sections for the 8 regional markets consolidated on 2026-05-28:
   - **Adelaide** (`/voip-australia/#adelaide`) — 08 numbers, South Australia. Mawson Lakes, CBD, Adelaide Hills.
   - **Canberra** (`/voip-australia/#canberra`) — 02 numbers, ACT. Barton, Civic, Fyshwick, Gungahlin.
-  - **Gold Coast** — now a standalone page at `/voip-gold-coast/` (re-established 2026-07-16; Click2Call's home city). 07 numbers, QLD. Southport, Surfers Paradise, Broadbeach, Robina, Burleigh Heads, Coomera, Nerang, Varsity Lakes.
+  - **Gold Coast** — standalone page at `/voip-gold-coast/` (re-established 2026-07-16, rebuilt October 2026; Click2Call's home city). 07 numbers, QLD. Covers hosted PBX basics, peak seasons, the Tweed Heads/Coolangatta daylight-saving split, storm outages and replacing older on-site phone systems. Southport, Surfers Paradise, Broadbeach, Robina, Coomera, Nerang, Varsity Lakes, Helensvale.
   - **Sunshine Coast** (`/voip-australia/#sunshine-coast`) — 07 numbers, QLD. Maroochydore, Noosa, Caloundra.
   - **Newcastle** (`/voip-australia/#newcastle`) — 02 numbers, NSW Hunter. Honeysuckle, Mayfield, Wickham.
   - **Wollongong** (`/voip-australia/#wollongong`) — 02 numbers, NSW Illawarra. Crown Street, UoW area.
@@ -346,19 +346,19 @@ Click2Call provides tailored VoIP and Cloud PBX solutions for specific Australia
 
 ### VoIP for Tradies Australia
 URL: https://www.click2call.com.au/voip-tradies-australia/
-Click2Call provides VoIP phone systems for Australian tradespeople including plumbers, electricians, builders, and HVAC technicians. Key features include a business number that rings on any mobile, the AI Receptionist to capture missed calls while on the tools, automatic call recording for quoting disputes, voicemail to email with transcription, and ring groups for multi-trade businesses. Plans are $25 per user per month ex GST with no hardware required, no setup fee, and no lock-in contract.
+Rebuilt October 2026. Phone systems for Australian trade businesses. A business number can forward to the mobile you already carry (the most dependable way to receive calls on the road; forwarded calls are billed as outbound from your line) and the Secure VoIP app makes outgoing calls show the business number. The Answer Agent (included free) rings your phone first (20 seconds by default), then asks for the caller's name, number, suburb and job and emails the details with a transcript; it does not quote or book. Also covers missed-call alerts by SMS or email, after-hours emergency routing, simPRO Premium softphone (about 20 minutes, port 5060 not 5061), the free Zoho CRM integration, porting ($100 inc GST; mobile porting depends on the carrier and the SIM loses the number), Starlink and SMS. $25 per user per month ex GST, no lock-in.
 
 ### VoIP for Real Estate Agents
 URL: https://www.click2call.com.au/voip-real-estate-agents-australia/
-Click2Call provides VoIP phone systems for Australian real estate agents and agencies. Key features include an AI Receptionist that captures after-hours property enquiries and emails the details instantly, automatic call recording for compliance and dispute resolution, voicemail to email with transcription, call routing by agent or suburb, and 1300 numbers for $10 per month. Plans are $25 per agent per month ex GST with no hardware required, no setup fee, and no lock-in contract. The AI Receptionist is included free with every plan and takes approximately 10 minutes to configure via the Help Centre.
+Rebuilt October 2026. Phone systems for Australian real estate agencies. The three topics agencies ask Click2Call support about most are call recording, landlines for staff so they stop using personal mobiles, and call transcription. Each agent gets a direct number in the Secure VoIP app with per-extension caller ID, and the number stays with the agency when an agent leaves. The Answer Agent (included free) takes messages at open homes; the AI Receptionist routes calls by voice and does not converse. Recording is switched on per line with an optional notice; recordings and transcripts are stored in Australia and New Zealand. Rex, AgentBox, VaultRE and PropertyMe connect through the API and webhooks (no one-click app). Example: four agents plus the office number cost $110 per month ex GST, plus $100 inc GST once to port the number.
 
 ### VoIP for Medical Clinics
 URL: https://www.click2call.com.au/voip-medical-clinics-australia/
-Click2Call provides VoIP phone systems for Australian medical clinics and GP practices. Key features include ring groups so multiple reception staff can answer calls from the same number simultaneously (eliminating engaged tones on Monday mornings), call queues with custom on-hold messages that can include health information or appointment booking instructions, after-hours routing to an answering service or on-call doctor, 1300 numbers for multi-location clinics at $10 per month, automatic call recording for staff training and dispute resolution, and voicemail to email with transcription. Plans are $25 per user per month ex GST with no hardware required, no setup fee, and no lock-in contract.
+Rebuilt October 2026. Phone systems for Australian medical, dental and allied health practices. Call queues hold callers with music and announcements and tell them their position; ring groups, hunt groups, direct lines and extensions for consult rooms. Every greeting should start with the emergency message (hang up and call 000). The AI tools take messages and route calls; they never assess symptoms or give clinical advice. After hours, calls switch automatically to a deputising service, an on-call mobile or a message, with public holidays set by date. Recordings are off until enabled per line and are stored in Australia and New Zealand. Also SMS reminders, Faxmail ($10 per month), multi-site clinics and channels (two per account plus one per user number). There is no ready-made connection to practice management software. Example: five users plus the clinic number cost $135 per month ex GST.
 
 ### VoIP and Microsoft Teams Calling for IT Companies
 URL: https://www.click2call.com.au/voip-it-companies-australia/
-Click2Call provides VoIP, Cloud PBX, and Microsoft Teams Direct Routing for Australian IT companies and managed service providers. Three integration paths are available: Microsoft Teams Direct Routing (staff make and receive calls through Teams on any device using an Australian business number, one-time setup $55 per user inc GST), Cloud PBX with no hardware (full hosted PBX via the Click2Call app, $25 per user per month ex GST), and SIP trunk integration (connect existing 3CX, FreePBX, Asterisk, or Cisco PBX systems to Click2Call SIP trunks, replacing ISDN lines). All plans include automatic call recording with full text transcription for every client interaction, one consistent business number for the whole team regardless of location, after-hours call routing, voicemail to email with transcript, and 300 outbound minutes per user per month. Plans are $25 per user per month ex GST with no hardware required and no lock-in contract.
+Rebuilt October 2026. For Australian IT companies and MSPs. Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026; clients still using it need another Teams calling provider. Click2Call Teams Direct Routing: Teams User plan $25 per user per month ex GST (Australian number, 300 outbound minutes, unlimited inbound) plus a Microsoft Teams Phone Standard licence from Microsoft at about $15; self-setup takes 30–45 minutes and is free, managed setup is $55 inc GST per user; recording without a Microsoft recording licence. SIP trunks for 3CX, FreePBX, Asterisk and Yeastar are $50 per month with 500 outbound minutes, unlimited inbound and 2 concurrent channels. Webhooks report ringing, answered, ended and missed calls and AI analysis; the call setup API enables click-to-dial; integrations are self-service. Click2Call is run by Royce Clark, who also runs bcom ICT, a business IT services company.
 
 ## Case Studies
 
@@ -426,6 +426,11 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 ## Recent Site Updates
 
 **Last updated: 2026-09-28**
+
+### 2026-10-09 — Landing page rebuild
+
+- **All nine landing pages rewritten with original content**: Sydney, Melbourne, Brisbane, Perth, Gold Coast, Real Estate, Medical Clinics, Tradies and IT Companies. Each page is roughly 1,900–2,700 words, written around questions specific to that city or industry, and shares no more than 12% of its five-word phrases with any other landing page (rule: 25%, checked by scripts/check_landing_overlap.py).
+- **Accuracy**: product names follow the help centre (AI Receptionist routes calls by voice; the Answer Agent takes messages and is included free; AI Agents hold conversations). Unverifiable claims, invented customer stories and incorrect LocalBusiness addresses for Sydney, Melbourne, Brisbane and Perth were removed. Click2Call is run from the Gold Coast only.
 
 ### 2026-09-28 — AI voice platform profiles & content refresh
 
