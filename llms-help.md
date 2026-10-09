@@ -974,7 +974,7 @@ At the bottom of the form, enter the phone number(s) you wish to port. You can a
 
 - You will receive email notifications to keep you updated throughout the porting process.
 
-- On the day of the port, your number will be **pre-provisioned** on your account. This gives you time to set up your call flow in advance, so the moment the number is ported it starts working immediately — with no downtime.
+- On the day of the port, your number will be **pre-provisioned** on your account. This gives you time to set up your call flow in advance, so the moment the number is ported it starts working on your call flow.
 
 # Extensions & Users
 
