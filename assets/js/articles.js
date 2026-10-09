@@ -642,7 +642,7 @@ var HELP_ARTICLES = [
   {
     url:      "/help/how-to-port-number",
     title:    "Porting an Existing Number",
-    desc:     "How to transfer your current phone number to Click2Call with no downtime.",
+    desc:     "How to transfer your current phone number to Click2Call while it keeps working.",
     tags:     "port number transfer porting existing number move porting fee transfer number keep my number bring my number port request",
     category: "phone-numbers",
     readTime: "3 min read",
