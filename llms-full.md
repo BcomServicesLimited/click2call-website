@@ -130,7 +130,7 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 
 - **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
 - **Account activation**: within 24 hours of signup
-- **Number porting**: every number type ($100 including GST), takes 5–10 business days (1300/1800 up to 30 days), zero downtime during the port. A ported number then runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User
+- **Number porting**: every number type ($100 including GST), takes 5–10 business days (1300/1800 up to 30 days); the number stays live with the current provider until it moves. A ported number then runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User
 - **Bulk porting**: discounts available for 100-number blocks — contact for a quote
 - **Self-setup**: free, guided by Help Centre articles
 - **Managed setup**: $300 + GST one-off fee — Click2Call team configures everything
@@ -162,7 +162,7 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 
 **Getting started & switching**
 
-7.  **Can I keep my existing phone number?** Yes. Click2Call ports local geographic, mobile, 1300, and 1800 numbers. Every port is a flat $100 including GST. Local numbers usually take 5–10 business days; 1300/1800 can take up to 30 days. There is zero downtime during the port.
+7.  **Can I keep my existing phone number?** Yes. Click2Call ports local geographic, mobile, 1300, and 1800 numbers. Every port is a flat $100 including GST. Local numbers usually take 5–10 business days; 1300/1800 can take up to 30 days. The number stays live with your current provider until it moves.
 8.  **Do I need to buy any hardware?** No. Use the Click2Call desktop softphone app (Windows/Mac), the mobile app (iOS/Android), or an existing VoIP/SIP desk phone (Yealink, Grandstream, Cisco). No on-premise PBX server is required.
 9.  **How do I set up my service?** Sign up online, add or port a number, add users and extensions, install the apps, and start calling. Most customers complete self-setup in under an hour. Managed setup is available if preferred.
 10. **Do you provide on-site installation?** The system is designed for remote setup, so on-site installation is usually unnecessary. For large or complex deployments, Click2Call can connect you with trusted installation partners.
