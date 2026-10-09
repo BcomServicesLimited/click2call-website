@@ -735,54 +735,11 @@
 <!-- =================== END FOOTER =================== -->
 
 <script>
+/* Page-specific behaviour only: the header menus are handled once by the
+   shared header script above (a second copy here made phone menus open and
+   close on the same tap). */
 (function () {
-  var btn = document.getElementById('services-btn');
-  var dropdown = document.getElementById('services-dropdown');
-  var chevron = document.getElementById('services-chevron');
-  if (btn && dropdown) {
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      var open = dropdown.classList.contains('opacity-100');
-      if (open) {
-        dropdown.classList.remove('opacity-100', 'visible', 'translate-y-0');
-        dropdown.classList.add('opacity-0', 'invisible', 'translate-y-1');
-        btn.setAttribute('aria-expanded', 'false');
-        if (chevron) chevron.style.transform = '';
-      } else {
-        dropdown.classList.remove('opacity-0', 'invisible', 'translate-y-1');
-        dropdown.classList.add('opacity-100', 'visible', 'translate-y-0');
-        btn.setAttribute('aria-expanded', 'true');
-        if (chevron) chevron.style.transform = 'rotate(180deg)';
-      }
-    });
-    document.addEventListener('click', function () {
-      dropdown.classList.remove('opacity-100', 'visible', 'translate-y-0');
-      dropdown.classList.add('opacity-0', 'invisible', 'translate-y-1');
-      btn.setAttribute('aria-expanded', 'false');
-      if (chevron) chevron.style.transform = '';
-    });
-  }
-  var mobileBtn = document.getElementById('mobile-menu-btn');
-  var mobileMenu = document.getElementById('mobile-menu');
-  var hamburger = document.getElementById('hamburger-icon');
-  var closeIcon = document.getElementById('close-icon');
-  if (mobileBtn && mobileMenu) {
-    mobileBtn.addEventListener('click', function () {
-      var open = !mobileMenu.classList.contains('hidden');
-      if (open) {
-        mobileMenu.classList.add('hidden');
-        mobileBtn.setAttribute('aria-expanded', 'false');
-        if (hamburger) hamburger.classList.remove('hidden');
-        if (closeIcon) closeIcon.classList.add('hidden');
-      } else {
-        mobileMenu.classList.remove('hidden');
-        mobileBtn.setAttribute('aria-expanded', 'true');
-        if (hamburger) hamburger.classList.add('hidden');
-        if (closeIcon) closeIcon.classList.remove('hidden');
-      }
-    });
-  }
-  var faqBtns = document.querySelectorAll('.faq-btn');
+var faqBtns = document.querySelectorAll('.faq-btn');
   faqBtns.forEach(function (btn) {
     btn.addEventListener('click', function () {
       var body = btn.nextElementSibling;

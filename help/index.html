@@ -1416,22 +1416,7 @@
     if (!popularHtml) popularSection.style.display = 'none';
   }
 
-  /* ── Services dropdown ── */
-  var sWrapper  = document.getElementById('services-menu-wrapper');
-  var sBtn      = document.getElementById('services-btn');
-  var sDropdown = document.getElementById('services-dropdown');
-  var sChevron  = document.getElementById('services-chevron');
-  function openS()  { sDropdown.classList.remove('opacity-0','invisible','translate-y-1'); sDropdown.classList.add('opacity-100','visible','translate-y-0'); sBtn.setAttribute('aria-expanded','true'); sChevron.style.transform='rotate(180deg)'; }
-  function closeS() { sDropdown.classList.add('opacity-0','invisible','translate-y-1'); sDropdown.classList.remove('opacity-100','visible','translate-y-0'); sBtn.setAttribute('aria-expanded','false'); sChevron.style.transform=''; }
-  if (sWrapper) { sWrapper.addEventListener('mouseenter', openS); sWrapper.addEventListener('mouseleave', closeS); sBtn.addEventListener('click', function(){ sDropdown.classList.contains('invisible') ? openS() : closeS(); }); document.addEventListener('click', function(e){ if(!sWrapper.contains(e.target)) closeS(); }); }
-
-  /* ── Mobile hamburger ── */
-  var mBtn  = document.getElementById('mobile-menu-btn');
-  var mMenu = document.getElementById('mobile-menu');
-  var hamIcon   = document.getElementById('hamburger-icon');
-  var closeIcon = document.getElementById('close-icon');
-  if (mBtn) { mBtn.addEventListener('click', function(){ var isOpen = !mMenu.classList.contains('hidden'); mMenu.classList.toggle('hidden'); hamIcon.classList.toggle('hidden', !isOpen ? false : true); closeIcon.classList.toggle('hidden', !isOpen ? true : false); mBtn.setAttribute('aria-expanded', String(!isOpen)); }); }
-
+  /* Header menus are handled by the shared header script above. */
   /* ── Search & filter ── */
   var searchInput = document.getElementById('help-search');
   var filterBtns  = document.querySelectorAll('.cat-pill');

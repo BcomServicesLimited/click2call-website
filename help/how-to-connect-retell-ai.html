@@ -589,16 +589,5 @@
 </footer>
 <!-- =================== END FOOTER =================== -->
 
-<script>
-(function () {
-  var sW=document.getElementById('services-menu-wrapper'),sB=document.getElementById('services-btn'),sD=document.getElementById('services-dropdown'),sC=document.getElementById('services-chevron');
-  function openS(){sD.classList.remove('opacity-0','invisible','translate-y-1');sD.classList.add('opacity-100','visible','translate-y-0');sB.setAttribute('aria-expanded','true');sC.style.transform='rotate(180deg)';}
-  function closeS(){sD.classList.add('opacity-0','invisible','translate-y-1');sD.classList.remove('opacity-100','visible','translate-y-0');sB.setAttribute('aria-expanded','false');sC.style.transform='';}
-  if(sW){sW.addEventListener('mouseenter',openS);sW.addEventListener('mouseleave',closeS);sB.addEventListener('click',function(){sD.classList.contains('invisible')?openS():closeS();});document.addEventListener('click',function(e){if(!sW.contains(e.target))closeS();});}
-  );document.addEventListener('click',function(e){if(!supW.contains(e.target))closeSup();});}
-  var mB=document.getElementById('mobile-menu-btn'),mM=document.getElementById('mobile-menu'),hI=document.getElementById('hamburger-icon'),cI=document.getElementById('close-icon');
-  if(mB){mB.addEventListener('click',function(){var o=!mM.classList.contains('hidden');mM.classList.toggle('hidden');hI.classList.toggle('hidden',!o?false:true);cI.classList.toggle('hidden',!o?true:false);mB.setAttribute('aria-expanded',String(!o));});}
-}());
-</script>
 </body>
 </html>

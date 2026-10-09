@@ -1004,12 +1004,11 @@ see <a class="text-[#3B9C49] font-semibold hover:underline" href="/voip-australi
 <!-- =================== END FOOTER =================== -->
 <!-- Mobile menu toggle script -->
 <script>
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    });
-
-    // FAQ accordion
+/* Page-specific behaviour only: the header menus are handled once by the
+   shared header script above (a second copy here made phone menus open and
+   close on the same tap). */
+(function () {
+// FAQ accordion
     document.querySelectorAll('.faq-toggle').forEach(function(btn) {
       btn.addEventListener('click', function() {
         const answer = this.nextElementSibling;
@@ -1026,6 +1025,7 @@ see <a class="text-[#3B9C49] font-semibold hover:underline" href="/voip-australi
         }
       });
     });
-  </script>
+}());
+</script>
 </body>
 </html>
