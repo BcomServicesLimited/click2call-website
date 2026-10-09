@@ -880,35 +880,11 @@ Click2Call works with Australian managed service providers and IT resellers. If 
 </footer>
 <!-- =================== END FOOTER =================== -->
 <script>
+/* Page-specific behaviour only: the header menus are handled once by the
+   shared header script above (a second copy here made phone menus open and
+   close on the same tap). */
 (function () {
-  /* Mobile menu */
-  var btn = document.getElementById('mobile-menu-btn');
-  var menu = document.getElementById('mobile-menu');
-  if (btn && menu) {
-    btn.addEventListener('click', function () {
-      var open = menu.classList.toggle('hidden');
-      btn.setAttribute('aria-expanded', String(!open));
-    });
-  }
-  /* Services dropdown */
-  var svcBtn = document.getElementById('services-btn');
-  var svcDrop = document.getElementById('services-dropdown');
-  var svcChev = document.getElementById('services-chevron');
-  if (svcBtn && svcDrop) {
-    svcBtn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      var isOpen = !svcDrop.classList.contains('hidden');
-      svcDrop.classList.toggle('hidden');
-      svcChev && (svcChev.style.transform = isOpen ? '' : 'rotate(180deg)');
-      svcBtn.setAttribute('aria-expanded', String(!isOpen));
-    });
-    document.addEventListener('click', function () {
-      svcDrop.classList.add('hidden');
-      svcChev && (svcChev.style.transform = '');
-      svcBtn.setAttribute('aria-expanded', 'false');
-    });
-  }
-  /* FAQ accordion */
+/* FAQ accordion */
   document.querySelectorAll('.faq-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var body    = btn.nextElementSibling;

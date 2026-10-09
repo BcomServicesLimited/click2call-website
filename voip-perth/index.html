@@ -981,37 +981,11 @@ see <a class="text-[#3B9C49] font-semibold hover:underline" href="/voip-australi
 </footer>
 <!-- =================== END FOOTER =================== -->
 <script>
-  // Mobile menu toggle
-  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenuBtn.addEventListener('click', () => {
-    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-    mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
-    mobileMenu.classList.toggle('hidden');
-  });
-
-  // Services dropdown toggle
-  const servicesBtn = document.getElementById('services-btn');
-  const servicesDropdown = document.getElementById('services-dropdown');
-  const servicesChevron = document.getElementById('services-chevron');
-  servicesBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const isExpanded = servicesBtn.getAttribute('aria-expanded') === 'true';
-    servicesBtn.setAttribute('aria-expanded', !isExpanded);
-    servicesDropdown.classList.toggle('opacity-0');
-    servicesDropdown.classList.toggle('invisible');
-    servicesDropdown.classList.toggle('translate-y-1');
-    servicesChevron.classList.toggle('rotate-180');
-  });
-  document.addEventListener('click', () => {
-    if (servicesBtn.getAttribute('aria-expanded') === 'true') {
-      servicesBtn.setAttribute('aria-expanded', 'false');
-      servicesDropdown.classList.add('opacity-0', 'invisible', 'translate-y-1');
-      servicesChevron.classList.remove('rotate-180');
-    }
-  });
-
-  // FAQ toggle
+/* Page-specific behaviour only: the header menus are handled once by the
+   shared header script above (a second copy here made phone menus open and
+   close on the same tap). */
+(function () {
+// FAQ toggle
   const faqToggles = document.querySelectorAll('.faq-toggle');
   faqToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
@@ -1021,6 +995,7 @@ see <a class="text-[#3B9C49] font-semibold hover:underline" href="/voip-australi
       chevron.classList.toggle('rotate-180');
     });
   });
+}());
 </script>
 </body>
 </html>

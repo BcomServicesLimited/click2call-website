@@ -378,20 +378,6 @@
 }());
 </script>
 
-<script>
-(function(){
-  var wrapper=document.getElementById('services-menu-wrapper'),btn=document.getElementById('services-btn'),dropdown=document.getElementById('services-dropdown'),chevron=document.getElementById('services-chevron');
-  function openMenu(){dropdown.classList.remove('opacity-0','invisible','translate-y-1');dropdown.classList.add('opacity-100','visible','translate-y-0');btn.setAttribute('aria-expanded','true');chevron.style.transform='rotate(180deg)';}
-  function closeMenu(){dropdown.classList.add('opacity-0','invisible','translate-y-1');dropdown.classList.remove('opacity-100','visible','translate-y-0');btn.setAttribute('aria-expanded','false');chevron.style.transform='';}
-  if(wrapper){wrapper.addEventListener('mouseenter',openMenu);wrapper.addEventListener('mouseleave',closeMenu);btn.addEventListener('click',function(){dropdown.classList.contains('invisible')?openMenu():closeMenu();});document.addEventListener('click',function(e){if(!wrapper.contains(e.target))closeMenu();});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});}
-  var mb=document.getElementById('mobile-menu-btn'),mm=document.getElementById('mobile-menu'),hi=document.getElementById('hamburger-icon'),ci=document.getElementById('close-icon');
-  if(mb){mb.addEventListener('click',function(){var o=!mm.classList.contains('hidden');mm.classList.toggle('hidden');hi.classList.toggle('hidden',!o?false:true);ci.classList.toggle('hidden',!o?true:false);mb.setAttribute('aria-expanded',String(!o));});}
-  var msb=document.getElementById('mobile-services-btn'),msl=document.getElementById('mobile-services-list'),mc=document.getElementById('mobile-services-chevron');
-  if(msb){msb.addEventListener('click',function(){var o=!msl.classList.contains('hidden');msl.classList.toggle('hidden');mc.style.transform=o?'':'rotate(180deg)';msb.setAttribute('aria-expanded',String(!o));});}
-  var cp=window.location.pathname.replace(/\/$/,'')||'/';
-  document.querySelectorAll('.c2c-nav-link').forEach(function(el){var h=el.getAttribute('href');if(!h)return;var lp=h.replace(/\/$/,'')||'/';if(cp===lp||(lp!=='/'&&cp.startsWith(lp))){el.classList.add('text-brand','font-semibold');el.classList.remove('text-gray-700');}});
-}());
-</script>
 
 <main id="content" class="hv2 sw">
 <section class="hero" aria-labelledby="switch-h1"><div class="wrap"><div class="hero-grid">
