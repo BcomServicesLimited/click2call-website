@@ -3919,7 +3919,7 @@ Last reviewed: October 2026
 | *561xxx / *562xxx / *563xxx | Also ring xxx (simultaneous ring 1, 2 or 3) |
 | *571 / *572 / *573 | Stop simultaneous ring 1, 2 or 3 |
 | *54n | Ring for n seconds before diverting |
-| *38 / *39 | Record / remove the message played to whoever you forward a call to |
+| *38 / *39 | Record / remove the message played to whoever you forward a call to. Or tick Play a notification to the callee at the start of the call when the call has been forwarded at the bottom of the Call Forwarding page, and they hear “call-forwarding” before the call connects. |
 
 ### Do not disturb, privacy and blocking
 
@@ -3973,7 +3973,7 @@ Source: https://www.click2call.com.au/help/call-flow-ring-mobile-then-voicemail
 
 A common setup that quietly does not work: forward the business number to a mobile, then wonder why voicemail never arrives and why the mobile ring time cannot be changed. Here is what is happening and the setup that does what you want.
 
-Last reviewed: September 2026
+Last reviewed: October 2026
 
 ### Why a forward loses your voicemail
 
@@ -3999,11 +3999,13 @@ Use Simultaneous Ring instead. It rings the mobile alongside your app while keep
 
 - Open **Incoming Calls** then **Voice Mail**. Set **Call Ringing Time (in seconds)** to cover the whole ring period you want before voicemail answers, and enter an address in **Send a copy of my voicemail messages to the following email address**.
 
-### Two things worth knowing
+### Three things worth knowing
 
 Simultaneous Ring gives you one total ring period rather than a separate count for the app and then the mobile. You choose how long everything rings before voicemail takes over, not a precise handover between devices.
 
 Check your mobile's own voicemail delay as well. If your carrier answers after 15 seconds and you have set a 25 second ring time here, your carrier will take the message before our voicemail gets the chance. Either raise the carrier delay or turn its voicemail off.
+
+If you keep a plain forward to your mobile, you can still tell those calls apart from personal ones. Tick **Play a notification to the callee at the start of the call when the call has been forwarded** at the bottom of the Call Forwarding page, and whoever answers hears “call-forwarding” before the call connects. To play your own message instead, dial *38 to record it (*39 removes it).
 
 ### Still not behaving?
 
@@ -4653,7 +4655,7 @@ Go to **Voice → Line Manager** and click your business number to open its Call
 
 #### Forward to your mobile during work hours
 
-Back on the line page, open the **Incoming Calls** dropdown and choose **Call Forwarding**. Under Forward Always Rule #1 tick **Enabled**, enter your mobile number, set Time Schedule to **During Work Hours**, and tick **Forward Before all other features** so the divert wins over any other routing. Save.
+Back on the line page, open the **Incoming Calls** dropdown and choose **Call Forwarding**. Under Forward Always Rule #1 tick **Enabled**, enter your mobile number, set Time Schedule to **During Work Hours**, and tick **Forward Before all other features** so the divert wins over any other routing. Save. To know when a call has come through your business number, tick **Play a notification to the callee at the start of the call when the call has been forwarded** at the bottom of the Call Forwarding page. Whoever answers hears “call-forwarding” before the call connects. To play your own message instead, dial ***38** to record it (***39** removes it).
 
 4
 
