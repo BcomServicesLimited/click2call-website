@@ -368,7 +368,7 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/help/how-to-configure-business-hours</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -782,7 +782,7 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/help/how-to-set-up-voicemail</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -980,6 +980,36 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/help/ai-geo-routing</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/message-playback</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/call-waiting-intercom-and-caller-id-options</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/call-barring</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/call-recording-settings</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.click2call.com.au/help/remote-extension-options</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

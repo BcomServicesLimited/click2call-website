@@ -4268,6 +4268,15 @@ At the top of the page, you can click the blue button to **add your own custom h
 
 Once your schedules are saved, you can apply them to various call flow features. For example, you can make a **Simultaneous Ring** group only active 'During Work Hours', or set a **Call Forwarding** rule to send calls to your mobile 'Outside of Work Hours'. This allows for powerful and automated call routing based on time of day.
 
+### Public holidays
+
+Public holidays come from the time zone in the line’s **Profile**. With a New Zealand time zone, New Zealand public holidays are left out of Work Hours automatically. Australian public holidays are not added automatically, so add them yourself with **Click here to add your own custom holiday dates** at the top of the Time Schedules page.
+
+- **Include Public Holidays for Work Hours?** Tick this if you work on public holidays and want them counted as normal work days.
+- **Region for Anniversary Day** applies to New Zealand regional holidays only. Leave it as Not Set in Australia.
+
+**Good to know:** A time is entered in 24-hour format with a colon, such as 09:00 and 17:30. Schedules use the time zone in the line’s Profile, so check it is your own state’s zone.
+
 ## Setting Up Voicemail
 
 Source: https://www.click2call.com.au/help/how-to-set-up-voicemail
@@ -4319,6 +4328,28 @@ Scroll down to find the greeting options. You have two main choices:
 #### Save and Test
 
 Once you are happy with your settings, click the green **Save Settings** button at the bottom. To test, call your number from a different phone (e.g., your mobile), let it ring out, and leave a short message. Within a few minutes, you should receive an email with the audio file attached, along with an AI transcript and summary of the message — so you can read a voicemail at a glance without playing it back.
+
+### Every voicemail option
+
+| Option | What it does |
+| Disable Voicemail / AI Answer Agent service | Turns voicemail off for this number. |
+| Send callers to the AI Answer Agent | The Answer Agent answers instead of the voicemail recording. |
+| Call Ringing Time | Seconds the phone rings before voicemail answers. |
+| Assign alternate Voice Mailbox | Messages go to another mailbox, such as a shared one. |
+| External Voicemail Access Number | Call +64 9 242 0000 to check messages from any phone, with your PIN. |
+| Voicemail Access PIN | The PIN for checking messages. |
+| If the caller presses a key… forward to this number | Lets a caller press a key during the greeting to reach another number, such as a mobile. |
+| Do not play any voicemail greeting | Starts recording straight away. |
+| Do not allow callers to leave a message | Plays the greeting, then hangs up. Good for a closed-for-holidays notice. |
+| Playback the Caller ID information before each message | Reads out who called before each message. |
+| Always prompt for mailbox number | Asks which mailbox when you call in, instead of opening your own. |
+| Send a copy to email | Emails each message; separate several addresses with a semicolon. |
+| Only send an email copy | Emails the message and does not keep it in the mailbox. |
+| Disable speech to text transcription | Leaves the transcript out of emails and SMS alerts. |
+| Mailbox monitoring (BLF) | Lets a phone key light up for new messages, using the number followed by VM. |
+| SMS when I have a new voicemail | Texts a mobile when a message arrives. |
+| Automatically remove old voicemail messages | Deletes messages after the number of days you set. |
+| After a voicemail is left, call this phone number | Rings a number and connects it to the mailbox so the message can be heard straight away. |
 
 ## Viewing Call Recordings
 
@@ -4706,6 +4737,143 @@ It does not work for the Click2Call smartphone apps, SIP peering (direct IP) tru
 If the number has its own **Message Playback** recording, that recording is played on the call instead of the standard message.
 
 **Good to know:** For an app on a mobile, use [missed call alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) instead, so you hear about calls you did not answer.
+
+## Play a Message Before a Call Connects (Message Playback)
+
+Source: https://www.click2call.com.au/help/message-playback
+
+Message Playback plays a short recorded message to callers before their call goes through, for example “Calls are recorded for training” or a notice about holiday hours.
+
+Last reviewed: October 2026
+
+### Set it up
+
+- Go to **Voice → Line Manager** and click the number or extension. From the **Incoming Calls** menu, choose **Message Playback**.
+- Tick **Enable message playback feature on this line**.
+- Choose the **Time Schedule**: at all times, or during or outside one of your schedules (work hours, available hours and so on).
+- Optionally set **Seconds to wait after playing playback message** before the call continues.
+- Save.
+
+### Record the message
+
+- From your desk phone or app, dial `*35` and follow the prompts. Dial `*36` to hear it back.
+- Or click **Click here to upload a WAV or MP3 file** on the same page.
+- Or use the link on that page to record it by calling from another phone.
+
+**Good to know:** To write the message and have it read in a natural voice, make the file with [AI Speech](https://www.click2call.com.au/help/how-to-use-ai-speech) and upload it. Message Playback plays before everything else in the call flow, so callers hear it before any menu or voicemail.
+
+## Call Waiting, Intercom and Incoming Caller ID Options
+
+Source: https://www.click2call.com.au/help/call-waiting-intercom-and-caller-id-options
+
+One settings page on each number controls what happens when a second call arrives, the intercom, and the name your phone shows for incoming calls, including which of your numbers the caller dialled.
+
+Last reviewed: October 2026
+
+### Open the settings
+
+Go to **Voice → Line Manager** and click the number or extension. From the **Incoming Calls** menu, choose **Caller ID, Call Waiting & Intercom**. Save after making changes.
+
+| Setting | What it does |
+| Disable Call Waiting | A second caller is not put through while you are on a call; they go to voicemail or your busy option instead. We recommend turning call waiting off on the phone itself, because this setting cannot see transferred calls. |
+| Reverse answer mode | Changes how incoming calls from mobiles are answered. Leave it off unless support suggests it. |
+| Intercom | Lets someone in the same account and group dial *85 followed by this extension to reach it as an intercom call. |
+| Reverse Whitepages Name Lookups | Looks up the caller’s name from public listings. Experimental, and not always right. |
+| Enforce Caller ID Privacy | Hides the number of every incoming caller. Rarely wanted. |
+| Incoming Call Identifier | Text shown as the caller’s name on your phone, so you can tell which of your numbers was called, for example Sales or Support. |
+| Distinctive Ring Identifier | A tag the phone can match to play a different ringtone. Internal calls only, unless you tick Apply Distinctive Ring to ALL calls. |
+
+### Knowing which number a caller dialled
+
+If you have several numbers ringing the same phones, set an **Incoming Call Identifier** on each number, such as Sales on one and Accounts on the other. The text appears on the phone or app as the call rings.
+
+**Good to know:** For a different ringtone on internal calls, see [Distinctive Ring for Internal Calls](https://www.click2call.com.au/help/distinctive-ring-internal-calls).
+
+## Block Outgoing Call Types (Call Barring)
+
+Source: https://www.click2call.com.au/help/call-barring
+
+Call Barring stops a number or extension making some kinds of outgoing call: overseas, mobiles, or everything. It is useful for a lobby phone, a shared phone, or as protection against fraud.
+
+Last reviewed: October 2026
+
+### Set it up
+
+- Go to **Voice → Line Manager** and click the number or extension. From the **Outgoing Calls** menu, choose **Call Barring**.
+- Tick **Enable the call Barring feature for this line**.
+- Tick at least one of the options below. Barring does nothing until one is ticked.
+- Save.
+
+| Option | Blocks |
+| Block Non-Local Calls | Calls outside the local area. Emergency and toll-free calls still work unless blocked below. |
+| Block all Fixed Line Calls | Calls to landlines. |
+| Block all Mobile Calls | Calls to mobiles. |
+| Block all Toll Free Calls | Calls to 1800 and other free-call numbers. |
+| Block all Emergency Calls | Calls to emergency services. Not recommended. |
+| Block all Overseas Calls Except Australia | International calls, apart from Australian numbers. |
+| Block all All Overseas Calls | Every international call. |
+| Block ALL Outgoing Calls | Every outgoing call. Emergency calls still work unless blocked above. |
+
+**Good to know:** For wider protection, see [Toll Fraud Protection](https://www.click2call.com.au/help/toll-fraud-protection). To ask for a PIN before certain calls instead of blocking them, use **PIN Code & Call Assignment** on the same Outgoing Calls menu.
+
+## Call Recording Settings on a Number
+
+Source: https://www.click2call.com.au/help/call-recording-settings
+
+Each number or extension has its own call recording settings. You can record every call or only calls with certain numbers, play an announcement, email each recording, and pause or start recording during a call.
+
+Last reviewed: October 2026
+
+### Open the settings
+
+Go to **Voice → Line Manager** and click the number or extension. From the **Other Settings** menu, choose **Call Recording**. Untick **Disable ALL call recording features on this number** to turn recording on, choose your options, then save.
+
+| Option | What it does |
+| Play a message before the call starts | Tells the other person the call may be monitored or recorded. |
+| Record ALL of my calls / Only record calls for the following numbers | Record everything, or only calls with the numbers you list (one per line, with the area code). |
+| Direction | Record both directions, only outgoing calls, or only incoming calls. |
+| Do NOT allow manual recording options during a call | Turns off the in-call codes below. |
+| Send a copy of all call recordings to my email address | Emails each recording. Add an alternative address, or it goes to the account email. |
+
+### Codes during a call
+
+| Dial | To |
+| #3 | Pause recording, for example while a card number is read out. |
+| #4 | Resume recording. |
+| *1 | Start or stop a separate recording of part of the call. |
+| *20 + number | Make one outgoing call without recording, when recording is normally on. |
+| *21 + number | Record one outgoing call, when recording is normally off. |
+
+### Recording and the law
+
+To comply with Australian law, the people on a call must know it is being recorded. The simplest way is the announcement option above, or a [Message Playback](https://www.click2call.com.au/help/message-playback) notice.
+
+**Good to know:** Recordings are in the portal under **AI → Recordings** and **Account → Records**. To have them transcribed and summarised, see [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+
+## Change Another Extension’s Settings or Call as It (*44)
+
+Source: https://www.click2call.com.au/help/remote-extension-options
+
+Remote Extension Options let someone on one extension change another number’s settings with star codes, or make a call that shows the other number. A common use is switching the main office number to after-hours from any desk.
+
+Last reviewed: October 2026
+
+### Allow it on the number
+
+- Go to **Voice → Line Manager** and click the number or extension. From the **Other Settings** menu, choose **Remote Extension Options**.
+- Tick **Allow other extensions within the account and group to program settings against this line** to let them change its settings.
+- Tick **Allow other extensions within the account and group to make outgoing calls from this number** to let them call as it.
+- Tick **Global extension** if extensions in other groups of the account should reach it too.
+- Save.
+
+### Use it
+
+| Dial | Does |
+| *44*XX*YY | Runs star code YY on number or extension XX. For example *44*23*78 turns on Do Not Disturb on extension 23. |
+| *44*XX | Makes a call from XX: you are asked for the number to dial, and the call shows XX’s caller ID. |
+| *44*XX*YY#… | Up to 5 star codes in one go, separated by #. Handy on a phone key. |
+
+**Good to know:** The full list of star codes is on [Star Codes](https://www.click2call.com.au/help/star-codes). To put one on a button, see [Programming Phone Keys](https://www.click2call.com.au/help/programming-phone-keys).
 
 # Billing & Account
 
@@ -6797,7 +6965,7 @@ AI Premium is $10 + GST per billing cycle. Click **Upgrade to AI Premium** on **
 
 ### Telling callers they are recorded
 
-At least one person on a call must know it is being recorded. To tell callers, open the number in **Voice → Line Manager**, choose **Other Settings → Call Recording** and tick the option to play a message before the call starts.
+To comply with Australian law, the people on a call must know it is being recorded. To tell callers, open the number in **Voice → Line Manager**, choose **Other Settings → Call Recording** and tick the option to play a message before the call starts.
 
 **Good to know:** To stop a staff login deleting recordings, edit the login under **Account → Logins** and tick **Prevent recording deletion**.
 

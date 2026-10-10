@@ -1132,6 +1132,56 @@ var HELP_ARTICLES = [
     readTime: "3 min read",
     featured: false,
     pinned:   false
+  },
+  {
+    url:      "/help/message-playback",
+    title:    "Play a Message Before a Call Connects (Message Playback)",
+    desc:     "Play a recorded message to every caller before the call connects, at the times you choose.",
+    tags:     "message playback announcement before call connects notice recorded message *35 *36 privacy notice greeting before ringing",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/call-waiting-intercom-and-caller-id-options",
+    title:    "Call Waiting, Intercom and Incoming Caller ID Options",
+    desc:     "Turn call waiting off, use the intercom, show which of your numbers was called, and tag calls for a distinctive ring.",
+    tags:     "call waiting disable second call intercom *85 incoming call identifier which number was called caller name lookup whitepages distinctive ring caller id privacy",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/call-barring",
+    title:    "Block Outgoing Call Types (Call Barring)",
+    desc:     "Stop a number calling mobiles, overseas, toll-free or any outgoing call.",
+    tags:     "call barring block outgoing calls overseas international mobile toll free restrict calls lobby phone fraud",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/call-recording-settings",
+    title:    "Call Recording Settings on a Number",
+    desc:     "Record all calls or selected numbers, one direction or both, with an announcement, email copies and in-call pause codes.",
+    tags:     "call recording settings record calls announcement selected numbers direction email recording pause #3 #4 *1 *20 *21 law consent",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/remote-extension-options",
+    title:    "Change Another Extension’s Settings or Call as It (*44)",
+    desc:     "Switch on features for another number, such as Do Not Disturb on the main line, or make a call showing that number.",
+    tags:     "remote extension options *44 star code another extension main line night mode call as another number caller id",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: false,
+    pinned:   false
   }
 ];
 

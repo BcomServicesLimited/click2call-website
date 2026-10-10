@@ -274,7 +274,7 @@ Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in co
 
 ## Help Centre
 
-The Click2Call Help Centre has 94 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
+The Click2Call Help Centre has 99 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
 - **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
@@ -366,6 +366,11 @@ The Click2Call Help Centre has 94 step-by-step guides for setting up and running
 - **Setting Up Missed Call Alerts**: [https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) — Turn on Missed Call Notifications so Click2Call emails or texts you whenever an incoming call on your number goes unanswered.
 - **Closing for Holidays**: [https://www.click2call.com.au/help/how-to-close-for-holidays](https://www.click2call.com.au/help/how-to-close-for-holidays) — Use Do Not Disturb with specific dates to send callers to voicemail or a divert number while your business is closed for holidays, without changing your normal call flow.
 - **Get an Alert When a Phone Goes Offline**: [https://www.click2call.com.au/help/phone-offline-alerts](https://www.click2call.com.au/help/phone-offline-alerts) — Line Monitoring emails you, or rings another number, when a desk phone, adaptor or PBX goes offline.
+- **Play a Message Before a Call Connects (Message Playback)**: [https://www.click2call.com.au/help/message-playback](https://www.click2call.com.au/help/message-playback) — Play a recorded message to every caller before the call connects, at the times you choose.
+- **Call Waiting, Intercom and Incoming Caller ID Options**: [https://www.click2call.com.au/help/call-waiting-intercom-and-caller-id-options](https://www.click2call.com.au/help/call-waiting-intercom-and-caller-id-options) — Turn call waiting off, use the intercom, show which of your numbers was called, and tag calls for a distinctive ring.
+- **Block Outgoing Call Types (Call Barring)**: [https://www.click2call.com.au/help/call-barring](https://www.click2call.com.au/help/call-barring) — Stop a number calling mobiles, overseas, toll-free or any outgoing call.
+- **Call Recording Settings on a Number**: [https://www.click2call.com.au/help/call-recording-settings](https://www.click2call.com.au/help/call-recording-settings) — Record all calls or selected numbers, one direction or both, with an announcement, email copies and in-call pause codes.
+- **Change Another Extension’s Settings or Call as It (*44)**: [https://www.click2call.com.au/help/remote-extension-options](https://www.click2call.com.au/help/remote-extension-options) — Switch on features for another number, such as Do Not Disturb on the main line, or make a call showing that number.
 
 ### Billing & Account
 - [Why Your Included Minutes Are Not Being Used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used): Included minutes belong to one number, not the account; a divert performed by another line is billed to that line.
