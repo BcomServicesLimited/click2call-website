@@ -1340,6 +1340,44 @@ Can I delete all my contacts at once?
 
 Yes. Scroll to the bottom of the Global Contacts and Speed Dials page and click the red **Delete All Contacts** button. Please note that this action is permanent and cannot be undone.
 
+## Line Profiles: Time Zone, Connection Type and Line-Wide Settings
+
+Source: https://www.click2call.com.au/help/line-profiles-and-time-zone
+
+A profile is a set of settings shared by lines: how a phone connects, its time zone, caller ID and which calls are blocked. Every line uses the **Default** profile unless you give it another.
+
+Last reviewed: October 2026
+
+### Check your time zone first
+
+Go to **Voice → Profiles** and look at **Time Zone**. Choose your own city, such as (GMT+10:00) Australia, Brisbane or (GMT+11:00) Australia, Sydney, and click **Save**.
+
+Every time schedule (work hours, after hours, holidays) runs on this time zone, and public holidays are left out of work hours automatically only for a New Zealand time zone. If it is wrong, calls are routed as if you open and close at the wrong time.
+
+### What a profile controls
+
+| Setting | What it does |
+| Connection Type | How the line connects: an app or desk phone (SIP Registration), a PBX (SIP Trunk or SIP Peering), Microsoft Teams, or an AI voice platform. |
+| Profile Caller ID | The number shown when lines on this profile call out. |
+| BLF/Presence | Lets phone keys show whether a colleague is on a call. |
+| Recording Enabled | Allows call recording on these lines. |
+| Global Extension Dialing | Lets extensions in different groups of the account call each other. |
+| Voicemail, Music On Hold, Inband Transfers, Video, Parking | Turn each feature on or off for every line on the profile. |
+| Reject Private Callers | Refuses calls with a hidden number. |
+| Overseas Calls Blocked / Block Expensive Calls | Stops international or premium calls. |
+| Name Lookups for Incoming Calls | Looks up the caller’s name. |
+| Disable Transcriptions / Sentiment Analysis | Turns off AI analysis for these lines. |
+| Phone Reboots | Restarts provisioned phones daily, weekly or monthly at 2 am. |
+| Limit Channels | Limits a line to 1 or 2 calls at once. |
+| Number Format | How numbers are sent to a PBX: domestic, E.164 or +E.164. |
+| Call Barring | Blocks call types for every line on the profile. See Call Barring. |
+
+### More than one profile
+
+Click **Create New Profile** to make another, for example one for desk phones and one for a PBX trunk. Then choose the profile for each line in **Voice → Line Manager**. New lines use the Default profile.
+
+**Good to know:** Settings on a single number’s call flow, such as its own call barring or recording, apply to that number on top of its profile.
+
 # Phones & Devices
 
 ## Call Quality: Codecs, Your Connection and Starlink
@@ -4232,7 +4270,7 @@ Source: https://www.click2call.com.au/help/how-to-configure-business-hours
 
 Business hours rules allow your phone system to behave differently depending on the time of day. During business hours, calls can ring your team; outside hours, they can go to voicemail or an after-hours message.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
 ### Configuring Business Hours, Step by Step
 
@@ -4285,7 +4323,7 @@ Source: https://www.click2call.com.au/help/how-to-set-up-voicemail
 
 Voicemail-to-email sends you an email notification with an audio attachment every time someone leaves a voicemail on your extension. This guide shows you how to set it up.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
 ### Setting Up Voicemail-to-Email, Step by Step
 
@@ -4874,6 +4912,40 @@ Last reviewed: October 2026
 | *44*XX*YY#… | Up to 5 star codes in one go, separated by #. Handy on a phone key. |
 
 **Good to know:** The full list of star codes is on [Star Codes](https://www.click2call.com.au/help/star-codes). To put one on a button, see [Programming Phone Keys](https://www.click2call.com.au/help/programming-phone-keys).
+
+## Conference Rooms, Scheduled Meetings and Groups
+
+Source: https://www.click2call.com.au/help/conference-rooms-and-meetings
+
+Every account has a conference room in the portal’s **Conferencing** menu. People join by phone with a PIN or from a browser with a link, and you can schedule meetings that send invitations for you.
+
+Last reviewed: October 2026
+
+### Your conference room
+
+Go to **Conferencing → Rooms**. Your room shows:
+
+- **Moderator PIN** and **Guest PIN**, each with a link you can copy.
+- **Audio Bridge Number** to dial in: +64 9 242 0777. This is a New Zealand number, so from Australia it is an international call.
+- **Conference Access Link** to join from a browser, with no call charges.
+
+The included room is a **Lite Conference**: up to 5 people and no recordings. Click **Upgrade** for a larger room with recordings.
+
+### Schedule a meeting
+
+- Go to **Conferencing → Meetings** and click **Schedule a new meeting**.
+- Choose the room, add a description, the date and the start and end time.
+- Choose the **Invitation Link Type**: a direct link (no PIN), or a link that asks for the PIN.
+- Choose **Meeting Access**: guests can join at any time, only between the start and end, or from 5 minutes to 1 hour before.
+- Choose whether to email participants and send a reminder (5 minutes to 1 hour before).
+- Optionally set PINs for this meeting only; otherwise the room PINs are used.
+- Add the email subject, the organiser (who gets moderator access and receives replies), and each participant with Guest or Moderator access. Save.
+
+### Groups for regular meetings
+
+For a meeting that repeats with the same people, go to **Conferencing → Groups** and click **Create a conference group**. Name it, choose its room, and add each participant with their default access level.
+
+**Good to know:** To turn one of your phone numbers into a conference line instead, see [Conference Calls](https://www.click2call.com.au/help/conference-calls).
 
 # Billing & Account
 

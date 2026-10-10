@@ -1182,6 +1182,26 @@ var HELP_ARTICLES = [
     readTime: "2 min read",
     featured: false,
     pinned:   false
+  },
+  {
+    url:      "/help/line-profiles-and-time-zone",
+    title:    "Line Profiles: Time Zone, Connection Type and Line-Wide Settings",
+    desc:     "A profile holds settings shared by lines: connection type, time zone, caller ID and call blocking. Check the time zone first.",
+    tags:     "profile profiles time zone timezone wrong hours connection type sip trunk caller id block overseas reject private callers phone reboot limit channels number format e164",
+    category: "extensions",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/conference-rooms-and-meetings",
+    title:    "Conference Rooms, Scheduled Meetings and Groups",
+    desc:     "Use your conference room PIN or link, schedule meetings with invitations and reminders, and keep groups of regular participants.",
+    tags:     "conference room meeting schedule invite pin moderator guest audio bridge dial in link lite conference upgrade group participants reminder",
+    category: "call-flows",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
   }
 ];
 

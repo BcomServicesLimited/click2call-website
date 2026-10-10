@@ -274,7 +274,7 @@ Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in co
 
 ## Help Centre
 
-The Click2Call Help Centre has 99 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
+The Click2Call Help Centre has 101 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
 - **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
@@ -304,6 +304,7 @@ The Click2Call Help Centre has 99 step-by-step guides for setting up and running
 - **Adding a New User**: [https://www.click2call.com.au/help/how-to-add-user](https://www.click2call.com.au/help/how-to-add-user) — Create a portal login for a team member, set their access level (Administrator or User), enable 2FA, and link them to an extension.
 - **Setting Outbound Caller ID**: [https://www.click2call.com.au/help/how-to-set-outbound-caller-id](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) — Configure what number is displayed when making outbound calls. Options include default number, on-net Inbound Business Number, verified off-net number, random group, or call privacy (*67). Covers Force Caller ID on diverted calls and verifying external numbers.
 - **Setting Up Global Contacts and Speed Dials**: [https://www.click2call.com.au/help/how-to-set-up-speed-dials](https://www.click2call.com.au/help/how-to-set-up-speed-dials) — Save contact names and assign speed-dial codes so any phone on the account can dial contacts quickly, including CSV import of external contacts.
+- **Line Profiles: Time Zone, Connection Type and Line-Wide Settings**: [https://www.click2call.com.au/help/line-profiles-and-time-zone](https://www.click2call.com.au/help/line-profiles-and-time-zone) — A profile holds settings shared by lines: connection type, time zone, caller ID and call blocking. Check the time zone first.
 
 ### Phones & Devices
 - **Call Quality: Codecs, Your Connection and Starlink**: [https://www.click2call.com.au/help/call-quality-and-starlink](https://www.click2call.com.au/help/call-quality-and-starlink) — Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.
@@ -371,6 +372,7 @@ The Click2Call Help Centre has 99 step-by-step guides for setting up and running
 - **Block Outgoing Call Types (Call Barring)**: [https://www.click2call.com.au/help/call-barring](https://www.click2call.com.au/help/call-barring) — Stop a number calling mobiles, overseas, toll-free or any outgoing call.
 - **Call Recording Settings on a Number**: [https://www.click2call.com.au/help/call-recording-settings](https://www.click2call.com.au/help/call-recording-settings) — Record all calls or selected numbers, one direction or both, with an announcement, email copies and in-call pause codes.
 - **Change Another Extension’s Settings or Call as It (*44)**: [https://www.click2call.com.au/help/remote-extension-options](https://www.click2call.com.au/help/remote-extension-options) — Switch on features for another number, such as Do Not Disturb on the main line, or make a call showing that number.
+- **Conference Rooms, Scheduled Meetings and Groups**: [https://www.click2call.com.au/help/conference-rooms-and-meetings](https://www.click2call.com.au/help/conference-rooms-and-meetings) — Use your conference room PIN or link, schedule meetings with invitations and reminders, and keep groups of regular participants.
 
 ### Billing & Account
 - [Why Your Included Minutes Are Not Being Used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used): Included minutes belong to one number, not the account; a divert performed by another line is billed to that line.
