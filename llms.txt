@@ -274,7 +274,7 @@ Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in co
 
 ## Help Centre
 
-The Click2Call Help Centre has 101 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
+The Click2Call Help Centre has 102 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
 - **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
@@ -291,6 +291,7 @@ The Click2Call Help Centre has 101 step-by-step guides for setting up and runnin
 - **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit](https://www.click2call.com.au/help/how-to-add-account-credit) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 - **Adding Portal Logins for Your Team**: [https://www.click2call.com.au/help/how-to-add-portal-logins](https://www.click2call.com.au/help/how-to-add-portal-logins) — Create additional Click2Call portal logins for staff, bookkeepers or receptionists with the right access level, optional two-factor authentication, and recording-deletion protection.
 - **Your Portal Password and Your Phone Passwords**: [https://www.click2call.com.au/help/account-and-line-passwords](https://www.click2call.com.au/help/account-and-line-passwords) — Your portal login and each phone number have separate passwords. Change your portal password without breaking your phones.
+- **Is There an Outage? Checking Network Status**: [https://www.click2call.com.au/help/network-status](https://www.click2call.com.au/help/network-status) — Check current incidents and planned maintenance before troubleshooting your own phones or internet.
 
 ### Phone Numbers
 - **Sending and Receiving Faxes by Email (Faxmail)**: [https://www.click2call.com.au/help/faxmail](https://www.click2call.com.au/help/faxmail) — Faxmail replaces a fax machine with email. Faxes sent to your number arrive in your inbox as attachments, and you send a fax by emailing a document.

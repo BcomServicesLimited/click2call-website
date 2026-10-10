@@ -660,6 +660,26 @@ Click **Forgot your password?** on the portal login page.
 
 **Good to know:** If an app suddenly says “wrong username or password”, check whether the portal password was changed recently. The app needs the new phone password.
 
+## Is There an Outage? Checking Network Status
+
+Source: https://www.click2call.com.au/help/network-status
+
+If calls suddenly fail for everyone, check whether there is a known incident or planned maintenance before you restart phones or call your internet provider.
+
+Last reviewed: October 2026
+
+### Check the status page
+
+- Log in to the portal and go to **Account → Network Status**.
+- Click **Open full status page** to see current incidents, planned maintenance and service availability.
+- Bookmark the full status page so you can check it even when you cannot log in.
+
+### If nothing is listed
+
+The problem is more likely at your end. Check that your phones are online in **Voice → Line Manager** (a registered phone shows its IP address and last registration), restart your router and phones, and see [Calls During a Power or Internet Outage](https://www.click2call.com.au/help/calls-during-power-or-internet-outage).
+
+**Good to know:** To be told when one of your own phones goes offline, turn on [Line Monitoring](https://www.click2call.com.au/help/phone-offline-alerts).
+
 # Phone Numbers
 
 ## Sending and Receiving Faxes by Email (Faxmail)
@@ -1280,7 +1300,7 @@ Source: https://www.click2call.com.au/help/how-to-set-up-speed-dials
 
 The **Global Contacts** feature allows you to save names and numbers to your Click2Call account. Once saved, these contact names will automatically display on your phone screen when they call you. You can also assign a speed dial code to each contact, allowing you to call them quickly by dialling ** followed by their speed dial number from any phone on your account.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
 ### Setting Up Speed Dials, Step by Step
 
@@ -1339,6 +1359,15 @@ Your CSV file must have exactly 3 columns with no header row. The columns must b
 Can I delete all my contacts at once?
 
 Yes. Scroll to the bottom of the Global Contacts and Speed Dials page and click the red **Delete All Contacts** button. Please note that this action is permanent and cannot be undone.
+
+### One-digit speed dials on a number
+
+Separately from the account-wide speed dial codes above, each number can have eight one-digit speed dials, for the digits 2 to 9.
+
+- Go to **Voice → Line Manager**, click the number, and from **Outgoing Calls** choose **Speed Dial**.
+- Enter a phone number against any of the digits 2 to 9, and save.
+
+You can also program one from the phone: dial `*74` followed by the digit (2 to 9). See [Star Codes](https://www.click2call.com.au/help/star-codes).
 
 ## Line Profiles: Time Zone, Connection Type and Line-Wide Settings
 
@@ -1639,6 +1668,19 @@ sudo apt install wine64
 ```
 
 If you'd rather use a native Linux app, Linphone works too. See [Setting up Linphone](https://www.click2call.com.au/help/how-to-set-up-linphone).
+
+### Settings you control from the portal
+
+Some of the Windows app’s behaviour is set per number in the portal: **Voice → Line Manager**, click the number, then **Other Settings → Micro App Settings**, and save.
+
+| Setting | What it does |
+| Call Mode | Locally selected (the app decides), Single (Basic) Call Mode, or Advanced Call Mode. |
+| Disable Video Calling in App | Hides video calls. |
+| Disable Local Recording Button in App | Removes the record button from the app. |
+| Disable Call Waiting in App | Stops a second call ringing while you are on one. |
+| App Shortcuts 1–12 | Buttons in the app. Each has a type (Call, Video Call, Attended Transfer, Directed Pickup, Group Pickup, Check Voicemail, URL Popup, Conference, Send DTMF or Assistant), a number or extension, and a label. |
+
+**Good to know:** The Windows app also shows whether colleagues are on a call (BLF). Its contacts list comes from the **Directory of Users URL** on **Account → Apps**.
 
 ## Secure VoIP on Android: Fixing Missed Calls and Battery Saving
 
@@ -2922,7 +2964,7 @@ Phones & Devices
 
 Click2Call recommends the **Secure VoIP App** for iPhone, Android, and Windows users, and the **Telephone App** for Mac users. Both apps are free to download and work with your Click2Call phone number and password. Select your platform below to get started.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
 To find your app download links, log in to the portal, click the **Account** tab, and select **Apps** from the left-hand menu. From here you can download the app for your device and access the installation instructions for each platform.
 
@@ -3098,6 +3140,14 @@ $25 a user a month ex GST, each with their own number and 300 outbound minutes](
 [#### Have us set it up
 
 Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](https://www.click2call.com.au/contact/)
+
+### Basic apps and the contacts list
+
+- **Basic apps.** **Account → Apps** also lists an Alternative iPhone Basic App and an Alternative Android Basic App. Try one if the main app does not suit your phone; you log in with the same number and password.
+- **Mac.** The Telephone app is recommended. A legacy Mac app is also listed, but may not work on some Macs.
+- **Show only logged-in users.** Under **App Settings** on the same page, tick this to hide colleagues who are not logged in from the contacts list inside the apps.
+
+To see whether there is a wider problem before troubleshooting an app, see [Network Status](https://www.click2call.com.au/help/network-status).
 
 ## Connecting simPRO to Click2Call
 

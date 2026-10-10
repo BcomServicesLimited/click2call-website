@@ -1202,6 +1202,16 @@ var HELP_ARTICLES = [
     readTime: "3 min read",
     featured: false,
     pinned:   false
+  },
+  {
+    url:      "/help/network-status",
+    title:    "Is There an Outage? Checking Network Status",
+    desc:     "Check current incidents and planned maintenance before troubleshooting your own phones or internet.",
+    tags:     "network status outage down not working incident maintenance all calls failing service status",
+    category: "getting-started",
+    readTime: "1 min read",
+    featured: false,
+    pinned:   false
   }
 ];
 
