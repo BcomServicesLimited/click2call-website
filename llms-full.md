@@ -222,7 +222,7 @@ Click2Call provides two distinct access points depending on whether a customer i
 
 ## Help Centre
 
-The Click2Call Help Centre has 85 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
+The Click2Call Help Centre has 89 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
 - **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
@@ -238,6 +238,7 @@ The Click2Call Help Centre has 85 step-by-step guides for setting up and running
 - **Making Your First Call**: [https://www.click2call.com.au/help/how-to-make-your-first-call](https://www.click2call.com.au/help/how-to-make-your-first-call) — Add a phone number, register a device (softphone app, SIP desk phone, or mobile divert), and make your first outbound call. Includes troubleshooting for registration failures, wrong caller ID, and no audio.
 - **Adding Account Credit**: [https://www.click2call.com.au/help/how-to-add-account-credit](https://www.click2call.com.au/help/how-to-add-account-credit) — Click2Call operates on a pre-pay system; credit must be loaded before using paid features.
 - **Adding Portal Logins for Your Team**: [https://www.click2call.com.au/help/how-to-add-portal-logins](https://www.click2call.com.au/help/how-to-add-portal-logins) — Create additional Click2Call portal logins for staff, bookkeepers or receptionists with the right access level, optional two-factor authentication, and recording-deletion protection.
+- **Your Portal Password and Your Phone Passwords**: [https://www.click2call.com.au/help/account-and-line-passwords](https://www.click2call.com.au/help/account-and-line-passwords) — Your portal login and each phone number have separate passwords. Change your portal password without breaking your phones.
 
 ### Phone Numbers
 - **Sending and Receiving Faxes by Email (Faxmail)**: [https://www.click2call.com.au/help/faxmail](https://www.click2call.com.au/help/faxmail) — Faxmail replaces a fax machine with email. Faxes sent to your number arrive in your inbox as attachments, and you send a fax by emailing a document.
@@ -312,12 +313,14 @@ The Click2Call Help Centre has 85 step-by-step guides for setting up and running
 - **Forwarding Calls to Your Mobile**: [https://www.click2call.com.au/help/how-to-forward-calls-to-mobile](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile) — Divert your Click2Call number to a mobile during work hours and send after-hours callers to voicemail that is emailed to you, using Call Forwarding, Time Schedules and Voicemail settings.
 - **Setting Up Missed Call Alerts**: [https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) — Turn on Missed Call Notifications so Click2Call emails or texts you whenever an incoming call on your number goes unanswered.
 - **Closing for Holidays**: [https://www.click2call.com.au/help/how-to-close-for-holidays](https://www.click2call.com.au/help/how-to-close-for-holidays) — Use Do Not Disturb with specific dates to send callers to voicemail or a divert number while your business is closed for holidays, without changing your normal call flow.
+- **Get an Alert When a Phone Goes Offline**: [https://www.click2call.com.au/help/phone-offline-alerts](https://www.click2call.com.au/help/phone-offline-alerts) — Line Monitoring emails you, or rings another number, when a desk phone, adaptor or PBX goes offline.
 
 ### Billing & Account
 - [Why Your Included Minutes Are Not Being Used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used): Included minutes belong to one number, not the account; a divert performed by another line is billed to that line.
 - **Adding Concurrent Call Channels**: [https://www.click2call.com.au/help/how-to-add-channels](https://www.click2call.com.au/help/how-to-add-channels) — Increase the number of simultaneous calls your system can handle by adding concurrent call channels in the portal.
 - **Viewing Account History**: [https://www.click2call.com.au/help/how-to-view-account-history](https://www.click2call.com.au/help/how-to-view-account-history) — View invoices, payment history, and credit balance in the portal.
 - **Using Reports & Records**: [https://www.click2call.com.au/help/how-to-use-reports-and-records](https://www.click2call.com.au/help/how-to-use-reports-and-records) — Access call logs, usage reports, and analytics in the portal.
+- **Plans, Numbers and Channels**: [https://www.click2call.com.au/help/plans-numbers-and-channels](https://www.click2call.com.au/help/plans-numbers-and-channels) — What each number costs, why extensions are free, how included minutes work, and how to change a number's plan or add channels.
 
 ### AI Features
 - **Setting Up the AI Receptionist**: [https://www.click2call.com.au/help/how-to-set-up-ai-receptionist](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist) — Automated call routing using natural language. Callers say what they need; the AI transfers the call to the right department. Not a conversational agent.
@@ -325,6 +328,7 @@ The Click2Call Help Centre has 85 step-by-step guides for setting up and running
 - **Using AI Speech to Create Voice Recordings**: [https://www.click2call.com.au/help/how-to-use-ai-speech](https://www.click2call.com.au/help/how-to-use-ai-speech) — Text-to-speech tool for generating professional voicemail greetings, auto-attendant messages, and seasonal recordings (e.g. Christmas closure). Replaces the old dial-in self-recording approach.
 - **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
 - **Setting Up the AI Answer Agent**: [https://www.click2call.com.au/help/how-to-set-up-answer-agent](https://www.click2call.com.au/help/how-to-set-up-answer-agent) — Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.
+- **Letting the AI Book Appointments**: [https://www.click2call.com.au/help/ai-appointment-booking](https://www.click2call.com.au/help/ai-appointment-booking) — The Answer Agent (Beta) can book appointments during a call. Set booking rules, hours, time zone, holidays and services.
 
 ### Connecting External AI Voice Providers
 Click2Call ships ready-made connection profiles under Voice → Profiles, so an Australian phone number can be pointed at a third-party AI voice agent without custom SIP configuration. All profiles send the number in +E.164 format. Click2Call cannot present a username and password on an outbound INVITE, so the provider must allowlist 103.212.52.19, the address outbound INVITEs leave the switch from. If a built-in platform doesn't answer, the call is not failed over to voicemail or another number; connect with SIP Registration if continuity matters.

@@ -548,147 +548,46 @@ $25 a user a month ex GST, each with their own number and 300 outbound minutes](
 
 Add a card and credit before day 7 so outbound calls keep working](https://www.click2call.com.au/help/how-to-add-account-credit)
 
-## Adding Account Credit
+## Adding Credit: Top-ups and Automatic Payments
 
 Source: https://www.click2call.com.au/help/how-to-add-account-credit
 
-Getting Started
-3 min read
+Click2Call is prepaid: your monthly charges and calls come out of your account credit. You can top up by hand, or store a card and let it pay automatically.
 
-## How to Manage Your Subscription
+Last reviewed: October 2026
 
-Click2Call operates on a **pre-pay system**. Before you can make calls, add phone numbers, or use paid features, you need to load credit into your account. This guide walks you through the Account → Payments page and explains every element.
+### Add credit now
 
-Last reviewed: August 2026
+- Go to **Account → Payments** and click **Make a One Off Payment**. Your current balance is shown at the top.
+- Enter the **Top-up Amount**. The minimum is $10.00.
+- Enter your card details. Tick **Save this card for easier payments** if you want to use it for automatic payments later.
+- Click **Top up**.
 
-How the pre-pay system works
+### Store a card
 
-- Your account balance is charged for monthly line fees, call usage, and any add-ons.
+On **Account → Payments**, click **Enter Card Details**, enter your card and click **Save Card**. Card details are processed by our payment provider; Click2Call never stores your card number.
 
-- You can set up **auto top-up** so your account never runs out of credit.
+### Automatic payments and automatic top-ups
 
-- All prices are shown in **AUD ex GST**.
+Once a card is stored, you can turn on either or both:
 
-- Minimum top-up amount is **$10**.
+| Setting | What it does |
+| Enable automatic payments | Charges your card at the start of each billing cycle for your known monthly costs: plans, bundles and line charges. It does not cover call charges. |
+| Enable automatic top-ups | Adds the Auto Top-up Amount to your credit when your balance runs low, so call charges are covered too. |
 
-1
+Using both together is usually best. Tick the boxes, enter your Auto Top-up Amount, and click **Update**.
 
-### Log in and check your Account Summary
+### Get an email when credit is low
 
-Go to portal.click2call.com.au and sign in. After logging in you will land on the **Account Summary** page. This page shows your current balance at a glance.
+Under **Notification Settings**, tick **Receive warning email when account credit drops below**, enter an amount, and click **Update**.
 
-| Element | Description |
+### If your credit runs out
 
-| Account Balance | Your total credit balance including any pending charges. |
+Incoming calls keep working. Outgoing calls stop once your balance goes below −$5: anyone who tries to call out hears a message that they cannot make calls. Add credit and outgoing calls start working again automatically.
 
-| Available Balance | The amount available to spend after reserving funds for your next bill date. |
+Your invoices and receipts are under **Account → History**.
 
-| Next Bill Date | The date your monthly line fees will next be deducted from your balance. |
-
-| Phone Services table | A breakdown of your active services, their unit prices (ex. GST), and total monthly cost. |
-
-| Add Credit Now button | A shortcut button that takes you directly to the Payments page to top up your balance. |
-
-2
-
-### Navigate to Account → Payments
-
-Click **Payments** in the left sidebar under the Account section, or click the yellow **Add Credit Now** button on the Account Summary page. Both take you to the same Payments page.
-
-3
-
-### Understanding the Payments page
-
-The Payments page is divided into two sections: **Stored Card Details** and **Notification Settings**. Here is a full explanation of every element.
-
-#### Stored Card Details
-
-| Element | Description |
-
-| Card number field | Enter your Visa or Mastercard credit or debit card number here. The portal uses Stripe for secure card processing — your card details are never stored on Click2Call servers. |
-
-| Save Card button | Saves your card details securely for future payments and auto top-ups. You must save a card before enabling automatic payments. |
-
-| Make a One Off Payment button | Charges your saved card immediately for the amount shown in the Auto Top-up Amount field. Use this when you want to manually add credit without setting up automatic top-ups. |
-
-| Enable automatic payments | When ticked, the portal will automatically charge your saved card on your monthly bill date to cover your line fees. |
-
-| Enable automatic top-ups | When ticked, the portal will automatically top up your account when your available balance falls below a threshold. This prevents service interruptions during high-usage periods. |
-
-| Auto Top-up Amount | The dollar amount (AUD inc. GST) to charge your card each time an automatic top-up is triggered. Minimum value is $10. |
-
-| Store Card Details button | Saves your automatic payment preferences (checkboxes and top-up amount) after you have made changes. |
-
-| Visa / Mastercard logos | Indicates the accepted card types. Both Visa and Mastercard credit and debit cards are accepted. |
-
-#### Notification Settings
-
-| Element | Description |
-
-| Enable low credit warning emails | When ticked, the portal will send an email to the account administrator when your balance falls below the threshold you set. Recommended if you are not using auto top-up. |
-
-| Credit amount threshold | The balance level (in AUD) at which a low credit warning email is sent. For example, entering $10 will trigger a warning email when your balance drops below $10. |
-
-| Update button | Saves your notification settings after making changes. |
-
-4
-
-### Add credit to your account
-
-The Add Credit page has two separate areas. It is important to use the correct one depending on what you want to do. Follow the steps below carefully.
-
-#### To manually add credit right now (one-off payment)
-
-Use the fields at the **top** of the Add Credit page.
-
--
-1
-In the **Card number** field at the top of the page, enter your Visa or Mastercard number, or select a previously saved card from the dropdown.
-
--
-2
-In the **Top-up amount** field directly below the card field, enter the dollar amount you want to add to your account (for example, **20.00**).
-
--
-3
-Click the small **Top up** link that appears directly below the Top-up amount field. This is the button that processes your payment immediately.
-
-**Important:** Do not scroll down and click the larger green button further down the page — that button is for a different purpose (see below). The correct button for a manual one-off top-up is the small **Top up** link directly below the Top-up amount field.
-
-#### To set up automatic top-ups (recurring)
-
-Use the fields **further down** the Add Credit page, under the “Add Credit Amount” heading.
-
--
-1
-Ensure your card is already saved (see the manual top-up steps above).
-
--
-2
-Tick **Enable automatic top-ups** and set the **Auto Top-up Amount** to the amount you want charged each time your balance runs low.
-
--
-3
-In the **Add Credit Amount** field further down the page, enter the same amount, then click the large green **Add Credit** button to save your automatic top-up settings.
-
-**Tip:** We recommend enabling both **automatic top-ups** and **low credit warning emails** to ensure your service is never interrupted.
-
-#### ✓ Credit added — you are ready to go
-
-With credit in your account you can now add phone numbers, make calls, and use all platform features. Next steps:
-
-- [Add a phone number](https://www.click2call.com.au/help/how-to-add-phone-number) to start receiving calls
-
-- [Add an extension](https://www.click2call.com.au/help/how-to-add-extension) for each team member
-
-- [Set up a call flow](https://www.click2call.com.au/help/how-to-set-up-call-flow) to route inbound calls
-
-### Related articles
-
-[Activating Your Account
-First steps after signing up](https://www.click2call.com.au/help/how-to-activate-account)
-[How to Add a Phone Number
-Add a Sydney, Melbourne or Brisbane number](https://www.click2call.com.au/help/how-to-add-phone-number)
+**Good to know:** All prices are in Australian dollars. Add credit before you add numbers or channels, because their monthly charges come out of your credit.
 
 ## Adding Portal Logins for Your Team
 
@@ -721,6 +620,45 @@ Pick the level that fits: **Administrator** or **Full Access** for owners; **Bil
 Enter a password of 8+ characters with upper and lower case letters and a number. Optionally enable **Two-factor authentication** (email verification), tick Remember trusted locations to only prompt once per office connection, and tick **Prevent recording deletion** if this person should never be able to delete call recordings. Click **Add Login**.
 
 **Good to know:** To change your own name, password or 2FA, use the account menu in the top-right corner of the portal and choose Manage my login.
+
+## Your Portal Password and Your Phone Passwords
+
+Source: https://www.click2call.com.au/help/account-and-line-passwords
+
+Click2Call uses two kinds of password: the one you log in to the portal with, and a separate password for each phone number and extension, which your apps and desk phones use. Changing one can change the other, so read this before you change your portal password.
+
+Last reviewed: October 2026
+
+### The two kinds of password
+
+| Password | What uses it | Where to change it |
+| Portal login | You, signing in at portal.click2call.com.au | Account → Details → Change Password |
+| Phone password | Apps, desk phones and PBXs, which log in with the number and this password | Voice → Line Manager (numbers) or Voice → User Extensions (extensions) |
+
+Staff who have their own portal login have their own password too. Manage those under **Account → Logins**.
+
+### Before you change your portal password
+
+On **Account → Details**, the **Change Account Password** section asks where to **apply the password change**. It starts on **Account login and all non-restricted phone number passwords**.
+
+If you leave that selected, your phones get the new password too, and every app and desk phone on the account stops working until you enter the new password on each one.
+
+To change only your portal password, choose **Account login only — do not change phone number passwords**.
+
+Passwords need at least 8 characters, with uppercase and lowercase letters and a number. Allowed symbols are `! @ _ - # ? = * + : ; .`.
+
+### Change one phone’s password
+
+- **A phone number:** go to **Voice → Line Manager**, type the new password in the number’s Password column, and click **Save Changes**.
+- **An extension:** go to **Voice → User Extensions**, open the extension, enter a new password (or click **Generate a random password**), and click **Update Extension**.
+
+Then enter the new password in the app or phone that uses that number. The username stays the same: the number exactly as Line Manager shows it.
+
+### Forgot your portal password?
+
+Click **Forgot your password?** on the portal login page.
+
+**Good to know:** If an app suddenly says “wrong username or password”, check whether the portal password was changed recently. The app needs the new phone password.
 
 # Phone Numbers
 
@@ -788,9 +726,13 @@ Received faxes can look rough on screen. Zoom a PDF to 150%, or print it, to see
 
 Source: https://www.click2call.com.au/help/sending-sms
 
-You can send text messages from your Click2Call number from the portal, by email, or from your own software. Replies come back to you by email, and you can forward them to a mobile.
+You can send text messages from the portal, by email, or from your own software. Texts are sent from a shared SMS number, not your own phone number, and can only go to mobiles. Replies come back to you by email, and you can forward them to a mobile.
 
 Last reviewed: October 2026
+
+### Turn on sending first
+
+Sending is off until our support team turns it on. Contact support and ask for SMS to be enabled; we verify your identity before sending is allowed. Until then, the Compose and Groups pages under **SMS** say that sending is not enabled.
 
 ### Send from the portal
 
@@ -823,7 +765,16 @@ A text holds 160 characters. Anything longer is cut off, so split long messages 
 
 ### Replies
 
-When someone replies, you get an email showing their reply, their number and your original message. On the **SMS Messaging** page you can choose which email addresses receive replies, or forward replies to a mobile number. Each forwarded reply is charged as a text.
+When someone replies, you get an email showing their reply, their number and your original message. Replies go to the email address set for the sending number, or to your account email if none is set.
+
+To change that for the whole account, go to **SMS → Settings**:
+
+- **Disable SMS Reply Emails** stops reply emails.
+- **SMS Reply Email Address(es)** sends replies to the addresses you list.
+- **SMS Forwarding Number** forwards each reply to a mobile. Each forwarded reply is charged as a text.
+- **SMS Webhook Callback URL** sends replies to your own system, with the **SMS API Key**.
+
+For one number only, use the same options on its **Other Settings → SMS Messaging** page.
 
 You can only receive texts that reply to a message you sent.
 
@@ -996,7 +947,7 @@ Log in to the portal, go to the **Voice** tab, and select **Numbers** from the l
 
 #### Submit Your Port Request Details
 
-Fill out the form with your current provider's details, your account information, and the desired port activation date. It is critical that the details you enter here exactly match the details on the phone bill from your current provider.
+For an Australian number, tick This request is for International / Non New Zealand numbers and leave the Current Provider menu as it is. Then fill in your account details with your current provider and the port date you want. The details must exactly match the phone bill from your current provider.
 
 3
 
@@ -4729,6 +4680,33 @@ Dial ***58** from any phone on the account to record an unavailable greeting men
 
 **Good to know:** If your business has set Work Hours, public holidays can also be treated as closed under **Other Settings → Time Schedules**, where you can add custom holiday dates for the whole year.
 
+## Get an Alert When a Phone Goes Offline
+
+Source: https://www.click2call.com.au/help/phone-offline-alerts
+
+Line Monitoring checks every 5 minutes that your desk phone, adaptor or PBX is still connected. If it goes offline, you get an email, and it can also ring a number of your choice to tell you.
+
+Last reviewed: October 2026
+
+### What it can watch
+
+Desk phones, adaptors and PBXs that log in (register) with the number’s SIP details, and registered SIP trunks.
+
+It does not work for the Click2Call smartphone apps, SIP peering (direct IP) trunks, IAX2 connections or Microsoft Teams.
+
+### Turn it on
+
+- Go to **Voice → Line Manager** and click the number.
+- Open the **Other Settings** menu and choose **Line Monitoring**.
+- Tick **Enable Monitoring for the Line**.
+- Alerts go to the account holder’s email. To send them elsewhere, list the addresses in **Alert Email Address recipients**, one per line.
+- Optionally, enter a number at **If the phone goes offline then dial out to this number**. It is called and a message says the line has been disconnected.
+- Save.
+
+If the number has its own **Message Playback** recording, that recording is played on the call instead of the standard message.
+
+**Good to know:** For an app on a mobile, use [missed call alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) instead, so you hear about calls you did not answer.
+
 # Billing & Account
 
 ## Why Your Included Minutes Are Not Being Used
@@ -5112,6 +5090,52 @@ Top up your pre-pay balance](https://www.click2call.com.au/help/how-to-add-accou
 Route inbound calls to the right destination](https://www.click2call.com.au/help/how-to-set-up-call-flow)
 [Back to Help Centre
 Browse all guides](https://www.click2call.com.au/help/)
+
+## Plans, Numbers and Channels
+
+Source: https://www.click2call.com.au/help/plans-numbers-and-channels
+
+: What You Pay For
+
+You pay for each phone number on its own plan, and extensions are free. Your account also has a number of channels: how many calls can be in progress at once. This guide explains each charge and how to change a number’s plan.
+
+Last reviewed: October 2026
+
+### What each number costs
+
+| Plan | Price | What it’s for |
+| Cloud PBX User | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
+| Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls. It has no included minutes. |
+| Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
+
+### Included minutes belong to one number
+
+The 300 minutes on a Cloud PBX User plan are used only by calls made from that number. Calls made from your other numbers or extensions are charged per minute, even though they are on the same account and the same bill. If your minutes seem unused, check which number the calls were made from.
+
+### See what you are paying for
+
+- **Account → Numbers** lists every number and extension with its line type, line plan, minutes used and monthly cost including GST.
+- **Account → Plan → Line Plans** shows the plan on each number.
+- **Current Account Details**, at the bottom of the Plan page, lists every monthly charge on the account.
+
+### Change a number’s plan
+
+- Go to **Account → Numbers**.
+- Under **Your Numbers**, click **Edit this number** next to the number.
+- Choose the new **Line plan**. You can also change the **Line type** to Voice, Web Conference or Microsoft Teams.
+- Click **Update Line**.
+
+### Your account plan and bundles
+
+**Account → Plan → Account Plan** shows the base plan for the whole account: its monthly charge and what it includes, such as channels. Account bundles are minute bundles that any number on the account can use. If bundles are available on your account, you will find them under **Account → Plan → Account Bundles**.
+
+### Channels
+
+A channel is one call in progress. Your account includes 2 channels, and some numbers you add bring an extra one. If every channel is busy, the next caller goes to voicemail or hears a busy tone.
+
+Extra channels are $3 + GST each. To add them, go to **Account → Plan → Channels**, choose the total you need, and review the price before you confirm.
+
+**Good to know:** Prices are in Australian dollars. Your call charges and monthly fees come out of your account credit, so keep enough credit on the account or turn on automatic top-ups.
 
 # AI Features
 
@@ -6648,7 +6672,7 @@ Go to **AI → Answer Agent (Beta)** and click **Create Business Profile**. This
 
 #### Choose the mode and the voice
 
-Under General Settings, set **Mode** to Message only if you just want a smart message-taker, or Full (answer questions + take messages) if it should also answer questions from your business profile. Then pick a **Voice** — there are 38 to choose from, with several natural conversational options. To hear a voice before you commit, open **AI → AI Receptionist**, select it there and use Playback Preview.
+On the General tab, set **Answering mode** to Message only if you just want a smart message-taker, or Answer questions and take messages if it should also answer questions from your business profile. Then pick a **Voice actor** and click **Generate preview** to hear it before you save.
 
 5
 
@@ -6669,3 +6693,65 @@ Under **Fields to Collect**, each row is one question the agent asks, and it wai
 Tick **Confirm details before finalising the message** if you want the agent to read the details back to the caller and confirm them before it finishes — this is how the closing works; there is no separate closing script to write. Optionally enable **Appointment Scheduling** further down if you want callers to be able to book a time. Click **Save Details**. Your messages will now arrive by email, and each call is also listed under **AI → Recordings** with its transcript and summary.
 
 **Good to know:** The Answer Agent takes messages. If instead you want callers routed to different people or departments by what they say, that is the [AI Receptionist](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist). Many businesses use the Receptionist during the day and the Answer Agent after hours. Settings can be account-wide or per number — use the Settings Scope dropdown at the top of the Answer Agent page.
+
+**Good to know:** The Answer Agent (Beta) can also book appointments while it takes a call. See [Letting the AI Book Appointments](https://www.click2call.com.au/help/ai-appointment-booking).
+
+## Letting the AI Book Appointments
+
+Source: https://www.click2call.com.au/help/ai-appointment-booking
+
+When it answers a call, the Answer Agent (Beta) can offer the caller times you are free and book an appointment. You set the rules, your hours and your services, and bookings appear in its calendar.
+
+Last reviewed: October 2026
+
+### Before you start
+
+Set up the Answer Agent first, so it answers your calls. See [Setting Up the AI Answer Agent](https://www.click2call.com.au/help/how-to-set-up-answer-agent).
+
+### Turn on booking
+
+- Go to **AI → Answer Agent (Beta)**.
+- At **Settings for**, choose **Account defaults**, or one number if only that number should take bookings.
+- Open the **Appointments** tab and tick **Enable appointment scheduling**.
+- Set the options below, then click **Save changes**.
+
+### Booking settings
+
+| Setting | What it does |
+| Appointment mode | Optional takes messages as normal and books only when the caller asks. Required books an appointment with every message. |
+| Default duration | How long an appointment lasts, in minutes. The default is 60. |
+| Minimum notice | How far ahead a booking must be, in minutes. 1,440 minutes is 24 hours. |
+| Slot interval | The spacing between start times: 15, 30 or 60 minutes. |
+| Options to offer | How many times the AI suggests. The default is one. |
+| Email reminder | How many minutes before the appointment a reminder is set. 0 means no reminder. |
+
+### Set your hours and time zone
+
+Under **Availability**:
+
+- **Timezone** starts on Pacific/Auckland. Change it to your own, for example Australia/Sydney, Australia/Brisbane or Australia/Perth, or appointments will be offered at the wrong times.
+- **Working days & hours** start at Monday to Friday, 9am to 5pm.
+- **Regular breaks & busy hours** start with a 12:30 to 1:30pm lunch break. Click **+ Add break** for more.
+- **Treat NZ public holidays as unavailable** uses New Zealand holidays only. In Australia, leave it off and add your public holidays yourself (see below).
+
+#### Australian public holidays
+
+Add them as custom holiday dates: open the number in **Voice → Line Manager**, choose **Other Settings → Time Schedules**, and click **Click here to add your own custom holiday dates**. You can also block a single day in the calendar with **Add blocked time**.
+
+### Services with different lengths
+
+If your services take different amounts of time, tick **Use service-specific appointment durations** under **Services**. The AI asks the caller which service they want and books the right length.
+
+- Click **Add service** and enter a category, the service name, a short description the AI can say, and its length in minutes. Untick **Active** to hide a service.
+- Or click **Import CSV** to load a list. The columns are `category`, `service_name`, `description` and `duration_minutes`.
+
+### The calendar
+
+Click **Open calendar** to see bookings by week or as an agenda.
+
+- **Add appointment** to book one yourself, with the caller’s name and number, notes, and a status: Confirmed, Tentative, Busy or Cancelled.
+- **Add blocked time** to stop the AI booking a period, such as a public holiday or a day off.
+
+The calendar shows your available hours, appointments, breaks and blocked time, busy times from an external calendar, and holidays in different colours.
+
+**Good to know:** Check the time zone first. It is the most common reason for appointments offered at the wrong time.

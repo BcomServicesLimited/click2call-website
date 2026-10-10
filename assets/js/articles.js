@@ -37,8 +37,8 @@ var HELP_ARTICLES = [
   {
     url:      "/help/sending-sms",
     title:    "Sending SMS from Your Business Number",
-    desc:     "You can send text messages from your Click2Call number from the portal, by email, or from your own software. Replies come back to you by email, and you.",
-    tags:     "sms text message email to sms send sms replies api 50c",
+    desc:     "Send texts from the portal, by email or from your own software. Ask support to turn sending on first. Replies come back by email.",
+    tags:     "sms text message email to sms send sms replies api 50c enable sms turn on sms verify identity reply email forwarding webhook",
     category: "phone-numbers",
     readTime: "2 min read",
     featured: true,
@@ -619,8 +619,8 @@ var HELP_ARTICLES = [
   },
   {
     url:      "/help/how-to-add-account-credit",
-    title:    "Adding Account Credit",
-    desc:     "How to load credit onto your account and set up auto top-up.",
+    title:    "Adding Credit: Top-ups and Automatic Payments",
+    desc:     "Top up by hand, or store a card for automatic payments and automatic top-ups, and get an email when credit is low.",
     tags:     "add credit top up prepay billing payment auto top-up auto top up automatic payments credit card low balance warning stored card one off payment",
     category: "getting-started",
     readTime: "2 min read",
@@ -1040,6 +1040,47 @@ var HELP_ARTICLES = [
     category: "getting-started",
     readTime: "3 min read",
     featured: true,
+    pinned:   false
+  },
+
+  {
+    url:      "/help/plans-numbers-and-channels",
+    title:    "Plans, Numbers and Channels",
+    desc:     "What each number costs, why extensions are free, how included minutes work, and how to change a number's plan or add channels.",
+    tags:     "plan pricing cloud pbx user inbound business number line plan change plan edit number account plan bundles channels included minutes cost",
+    category: "billing",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/account-and-line-passwords",
+    title:    "Your Portal Password and Your Phone Passwords",
+    desc:     "Your portal login and each phone number have separate passwords. Change your portal password without breaking your phones.",
+    tags:     "password change password reset forgot password line password sip password app stopped working wrong username or password portal login",
+    category: "getting-started",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/ai-appointment-booking",
+    title:    "Letting the AI Book Appointments",
+    desc:     "The Answer Agent (Beta) can book appointments during a call. Set booking rules, hours, time zone, holidays and services.",
+    tags:     "appointment booking calendar answer agent book appointments services availability time zone public holidays reminder",
+    category: "ai",
+    readTime: "4 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/phone-offline-alerts",
+    title:    "Get an Alert When a Phone Goes Offline",
+    desc:     "Line Monitoring emails you, or rings another number, when a desk phone, adaptor or PBX goes offline.",
+    tags:     "line monitoring offline alert phone offline disconnected registration desk phone pbx trunk alert email",
+    category: "call-flows",
+    readTime: "2 min read",
+    featured: false,
     pinned:   false
   }
 ];
