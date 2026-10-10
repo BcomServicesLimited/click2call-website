@@ -4999,6 +4999,22 @@ For a meeting that repeats with the same people, go to **Conferencing → Groups
 
 **Good to know:** To turn one of your phone numbers into a conference line instead, see [Conference Calls](https://www.click2call.com.au/help/conference-calls).
 
+## Watching Live Calls (Voice Console)
+
+Source: https://www.click2call.com.au/help/voice-console-live-calls
+
+The Console in the portal shows the calls on your account while they are happening, like a dashboard. Use it to see who is on the phone right now.
+
+Last reviewed: October 2026
+
+### Open the Console
+
+- Log in to the portal and go to **Voice → Console**.
+- Under **Callback Number**, choose your own number or extension.
+- Live calls appear on the page while they are in progress. When nobody is on a call, the page shows only the Callback Number.
+
+**Good to know:** For calls that have finished, use **Account → Records**, or see [Reports and Records](https://www.click2call.com.au/help/how-to-use-reports-and-records). For charts of call volume and length, see [AI Call Reports](https://www.click2call.com.au/help/ai-call-reports).
+
 # Billing & Account
 
 ## Why Your Included Minutes Are Not Being Used

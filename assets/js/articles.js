@@ -1212,6 +1212,16 @@ var HELP_ARTICLES = [
     readTime: "1 min read",
     featured: false,
     pinned:   false
+  },
+  {
+    url:      "/help/voice-console-live-calls",
+    title:    "Watching Live Calls (Voice Console)",
+    desc:     "The Voice Console is a live view of the calls on your account as they happen, like a dashboard.",
+    tags:     "console live calls dashboard who is on the phone current calls in progress monitor real time wallboard",
+    category: "call-flows",
+    readTime: "1 min read",
+    featured: false,
+    pinned:   false
   }
 ];
 

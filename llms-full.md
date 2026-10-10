@@ -222,7 +222,7 @@ Click2Call provides two distinct access points depending on whether a customer i
 
 ## Help Centre
 
-The Click2Call Help Centre has 102 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
+The Click2Call Help Centre has 103 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
 - **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
@@ -322,6 +322,7 @@ The Click2Call Help Centre has 102 step-by-step guides for setting up and runnin
 - **Call Recording Settings on a Number**: [https://www.click2call.com.au/help/call-recording-settings](https://www.click2call.com.au/help/call-recording-settings) — Record all calls or selected numbers, one direction or both, with an announcement, email copies and in-call pause codes.
 - **Change Another Extension’s Settings or Call as It (*44)**: [https://www.click2call.com.au/help/remote-extension-options](https://www.click2call.com.au/help/remote-extension-options) — Switch on features for another number, such as Do Not Disturb on the main line, or make a call showing that number.
 - **Conference Rooms, Scheduled Meetings and Groups**: [https://www.click2call.com.au/help/conference-rooms-and-meetings](https://www.click2call.com.au/help/conference-rooms-and-meetings) — Use your conference room PIN or link, schedule meetings with invitations and reminders, and keep groups of regular participants.
+- **Watching Live Calls (Voice Console)**: [https://www.click2call.com.au/help/voice-console-live-calls](https://www.click2call.com.au/help/voice-console-live-calls) — The Voice Console is a live view of the calls on your account as they happen, like a dashboard.
 
 ### Billing & Account
 - [Why Your Included Minutes Are Not Being Used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used): Included minutes belong to one number, not the account; a divert performed by another line is billed to that line.
