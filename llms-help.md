@@ -5106,7 +5106,10 @@ Last reviewed: October 2026
 | Plan | Price | What it’s for |
 | Cloud PBX User | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
 | Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls. It has no included minutes. |
+| Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
+
+When you add a number partway through a month, you first pay for the part of the month that is left. After that it is charged in full each month.
 
 ### Included minutes belong to one number
 
