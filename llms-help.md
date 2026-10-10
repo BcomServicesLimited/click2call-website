@@ -1377,9 +1377,11 @@ A profile is a set of settings shared by lines: how a phone connects, its time z
 
 Last reviewed: October 2026
 
-### Check your time zone first
+### Check your time zone
 
-Go to **Voice → Profiles** and look at **Time Zone**. Choose your own city, such as (GMT+10:00) Australia, Brisbane or (GMT+11:00) Australia, Sydney, and click **Save**.
+New accounts start on Australia, Brisbane time. That is right for Queensland. Brisbane has no daylight saving, so if you are in New South Wales, Victoria, the ACT, Tasmania, South Australia, the Northern Territory or Western Australia, change it to your own city.
+
+Go to **Voice → Profiles**, choose your city under **Time Zone**, such as Australia, Sydney, Australia, Adelaide or Australia, Perth, and click **Save**.
 
 Every time schedule (work hours, after hours, holidays) runs on this time zone, and public holidays are left out of work hours automatically only for a New Zealand time zone. If it is wrong, calls are routed as if you open and close at the wrong time.
 

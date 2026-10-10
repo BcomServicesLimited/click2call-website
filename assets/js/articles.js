@@ -1186,7 +1186,7 @@ var HELP_ARTICLES = [
   {
     url:      "/help/line-profiles-and-time-zone",
     title:    "Line Profiles: Time Zone, Connection Type and Line-Wide Settings",
-    desc:     "A profile holds settings shared by lines: connection type, time zone, caller ID and call blocking. Check the time zone first.",
+    desc:     "A profile holds settings shared by lines: connection type, time zone, caller ID and call blocking. New accounts start on Brisbane time.",
     tags:     "profile profiles time zone timezone wrong hours connection type sip trunk caller id block overseas reject private callers phone reboot limit channels number format e164",
     category: "extensions",
     readTime: "3 min read",
