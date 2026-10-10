@@ -274,7 +274,7 @@ Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in co
 
 ## Help Centre
 
-The Click2Call Help Centre has 89 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
+The Click2Call Help Centre has 94 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
 - **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
@@ -381,6 +381,11 @@ The Click2Call Help Centre has 89 step-by-step guides for setting up and running
 - **Setting Up AI Voicemail Greetings**: [https://www.click2call.com.au/help/how-to-set-up-ai-voicemail](https://www.click2call.com.au/help/how-to-set-up-ai-voicemail) — Creates consistent, professional voicemail greetings across every extension using text-to-speech. Uses the MAILBOXNAME placeholder to personalise each greeting automatically.
 - **Setting Up the AI Answer Agent**: [https://www.click2call.com.au/help/how-to-set-up-answer-agent](https://www.click2call.com.au/help/how-to-set-up-answer-agent) — Replace voicemail with the AI Answer Agent: create a business profile, choose message-only or full Q&A mode, pick the details to collect from callers, and optionally let callers book appointments.
 - **Letting the AI Book Appointments**: [https://www.click2call.com.au/help/ai-appointment-booking](https://www.click2call.com.au/help/ai-appointment-booking) — The Answer Agent (Beta) can book appointments during a call. Set booking rules, hours, time zone, holidays and services.
+- **Recording, Transcription and AI Analysis: Free vs Premium**: [https://www.click2call.com.au/help/ai-settings-free-vs-premium](https://www.click2call.com.au/help/ai-settings-free-vs-premium) — Turn on call recording, transcription, summaries, sentiment and profanity detection, and see what AI Premium adds for $10 + GST per billing cycle.
+- **Email Alerts from Your Calls (AI Alerts)**: [https://www.click2call.com.au/help/ai-alerts](https://www.click2call.com.au/help/ai-alerts) — AI Alerts emails you when a call mentions words you choose, a follow-up is promised, profanity is used, or a caller sounds unhappy.
+- **Custom Queries: Ask the AI About Every Call**: [https://www.click2call.com.au/help/ai-custom-queries](https://www.click2call.com.au/help/ai-custom-queries) — Ask the AI the same question about every call, such as whether a booking was made, and record the answer.
+- **AI Call Reports**: [https://www.click2call.com.au/help/ai-call-reports](https://www.click2call.com.au/help/ai-call-reports) — Charts of sentiment by user, call categories, call length by user, and names spoken or mentioned on your calls.
+- **Geo Routing: Send Callers to Their Nearest Location**: [https://www.click2call.com.au/help/ai-geo-routing](https://www.click2call.com.au/help/ai-geo-routing) — Geo Routing asks callers where they are and connects them to your nearest location.
 
 ### Connecting External AI Voice Providers
 Click2Call ships ready-made connection profiles under Voice → Profiles, so an Australian phone number can be pointed at a third-party AI voice agent without custom SIP configuration. All profiles send the number in +E.164 format. Click2Call cannot present a username and password on an outbound INVITE, so the provider must allowlist 103.212.52.19, the address outbound INVITEs leave the switch from. If a built-in platform doesn't answer, the call is not failed over to voicemail or another number; connect with SIP Registration if continuity matters.

@@ -6758,3 +6758,164 @@ Click **Open calendar** to see bookings by week or as an agenda.
 The calendar shows your available hours, appointments, breaks and blocked time, busy times from an external calendar, and holidays in different colours.
 
 **Good to know:** Check the time zone first. It is the most common reason for appointments offered at the wrong time.
+
+## Recording, Transcription and AI Analysis: Free vs Premium
+
+Source: https://www.click2call.com.au/help/ai-settings-free-vs-premium
+
+AI Settings is where you turn on call recording for the whole account and choose what the AI does with each call: transcripts, summaries, sentiment and profanity detection. Most of it is free. AI Premium adds speed, accuracy and more.
+
+Last reviewed: October 2026
+
+### Turn it on
+
+- Go to **AI → Settings**.
+- Under **Call recording**, tick **Enable account-wide call recording**.
+- Under **Transcription & analysis**, tick what you want.
+- Click **Save changes**.
+
+| Setting | What it does |
+| Transcribe calls | Turns call recordings into text. |
+| Transcribe voicemail | Turns voicemail messages into text. |
+| Analyse sentiment | Rates the tone of each conversation. |
+| Generate call summaries | Writes the main points of each call. |
+| Detect profanity | Flags swearing in conversations. |
+
+You find the results in **AI → Recordings**: search by number or by words said on the call, play the recording, and read the summary and transcript.
+
+### Free vs AI Premium
+
+| Feature | Free | AI Premium |
+| Transcripts, summaries, sentiment, profanity, translation | Within several hours | Priority, within minutes |
+| Voicemail transcripts | Included | Included |
+| Who said what (speaker identification) | Not included | Included |
+| Most accurate transcription model | Not included | Included |
+| Transcribe older recordings | Not included | The past 12 months |
+| Custom queries | 1 | Up to 5 |
+
+AI Premium is $10 + GST per billing cycle. Click **Upgrade to AI Premium** on **AI → Settings**. The two Premium-only settings, **Identify individual speakers** and **Transcribe historical recordings**, then become available.
+
+### Telling callers they are recorded
+
+At least one person on a call must know it is being recorded. To tell callers, open the number in **Voice → Line Manager**, choose **Other Settings → Call Recording** and tick the option to play a message before the call starts.
+
+**Good to know:** To stop a staff login deleting recordings, edit the login under **Account → Logins** and tick **Prevent recording deletion**.
+
+## Email Alerts from Your Calls (AI Alerts)
+
+Source: https://www.click2call.com.au/help/ai-alerts
+
+AI Alerts reads your call transcripts and emails you when something needs attention: words you choose, a promised call back, swearing, or a caller who sounds unhappy.
+
+Last reviewed: October 2026
+
+### Before you start
+
+Alerts work from transcripts, so call recording and transcription must be on. See [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+
+### Set it up
+
+- Go to **AI → Alerts** and tick **Enable email alerts**.
+- Choose the recipients: **Use account email addresses** (this follows any later change to them), or **Use custom recipients** and add each address.
+- Choose the triggers below.
+- Click **Save changes**.
+
+| Trigger | Sends an alert when |
+| Keywords or phrases | Any of your words or phrases is said. Separate them with commas. |
+| Follow-up actions | The AI hears an action agreed on a call, such as a promised call back. |
+| Profanity detected | Swearing is detected. |
+| Negative sentiment | Dissatisfaction or frustration is above the threshold you set, for example 30%. |
+
+**Good to know:** Turning alerts off keeps your recipients and triggers, so you can turn them back on later.
+
+## Custom Queries: Ask the AI About Every Call
+
+Source: https://www.click2call.com.au/help/ai-custom-queries
+
+A custom query is a question the AI answers about every call from its transcript, such as “Did the caller book a job?” or “What product did they ask about?”. The answers are saved with each call.
+
+Last reviewed: October 2026
+
+### Before you start
+
+Queries read transcripts, so call recording and transcription must be on. The free plan has 1 query; AI Premium has up to 5. See [Free vs Premium](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+
+### Create a query
+
+- Go to **AI → Custom Queries** and click **Create query**.
+- Give it a **Name** and, if you like, a **Description**.
+- Write the **Question**, and any **Additional instructions** to guide the answer.
+- Choose the **Response type** (below).
+- Make sure **Enabled** is ticked, and click **Save changes**.
+
+| Response type | The answer is |
+| Free text | A short written answer. |
+| Single choice | One of the choices you list. |
+| Multiple choice | Any of the choices you list, with a minimum and maximum number. |
+| Yes / No | Yes or no. |
+| Score | A score between a minimum and maximum you set. |
+| Number | A number. |
+| Support ticket | A support-ticket style summary of the call. |
+
+### Where the answers go
+
+Each call’s answers are saved with its AI analysis. If you use webhooks, they are sent as `custom_responses` in the call summary.
+
+### Free up a slot
+
+A query that already has results can be archived instead of deleted. Click **Archive query**: it stops running, its past answers stay, and the slot is free for a new query.
+
+## AI Call Reports
+
+Source: https://www.click2call.com.au/help/ai-call-reports
+
+AI Call Reports turn your call transcripts into charts: how calls felt, what they were about, how long each person spends on the phone, and who was named.
+
+Last reviewed: October 2026
+
+### Run a report
+
+- Go to **AI → Reports**.
+- Choose the **Range**: the past month, the past week, a specific month, or a custom date range.
+- Choose the **Calls**: all, inbound, outbound or queue calls.
+- Click **Run report**, then pick a report, or **All reports**.
+
+| Report | Shows |
+| Sentiment by user | Each person’s average sentiment score, above or below the average for the calls you chose. |
+| Category volume | How many calls fell into each category the AI found. |
+| Call length by user | Each person’s average call length. |
+| Speaking names | The names of people who spoke on calls. |
+| Mentioned names | Names mentioned during calls. |
+
+Previous months include the whole month; the current month runs to today.
+
+**Good to know:** Reports need transcripts with sentiment and summaries turned on. See [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+
+## Geo Routing: Send Callers to Their Nearest Location
+
+Source: https://www.click2call.com.au/help/ai-geo-routing
+
+If your business has several locations, Geo Routing asks each caller for their address or postcode and connects them to the nearest one.
+
+Last reviewed: October 2026
+
+### Set your locations
+
+- Go to **AI → Geo Routing**.
+- Under **Locations**, click **Add location**. Enter the address and postcode, an optional name, and choose where calls for that location go.
+- Tick **Make this the default location** on one of them. It takes calls when no location can be matched.
+- Click **Save location**. Repeat for each location.
+
+To load many at once, click **Import** and choose a CSV or TSV file with a header row and the columns Address, Post Code and Number (Label is optional), up to 5 MB.
+
+### Choose the numbers and hours
+
+- Under **Routing settings**, choose the incoming numbers that use Geo Routing.
+- Choose the **Routing hours**, for example at all times or outside work hours.
+- Click **Save routing settings**.
+
+### The greeting
+
+Under **Greeting**, write what callers hear (up to 500 characters), for example “Please tell me your suburb or postcode so I can connect you to your nearest store.” Choose a voice, click **Preview greeting** to hear it, then **Save greeting**.
+
+**Good to know:** Work hours and other routing hours come from the number’s [time schedules](https://www.click2call.com.au/help/how-to-configure-business-hours).

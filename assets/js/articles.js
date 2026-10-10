@@ -1082,6 +1082,56 @@ var HELP_ARTICLES = [
     readTime: "2 min read",
     featured: false,
     pinned:   false
+  },
+  {
+    url:      "/help/ai-settings-free-vs-premium",
+    title:    "Recording, Transcription and AI Analysis: Free vs Premium",
+    desc:     "Turn on call recording, transcription, summaries, sentiment and profanity detection, and see what AI Premium adds for $10 + GST per billing cycle.",
+    tags:     "ai settings call recording transcription transcribe voicemail sentiment summaries profanity premium free speaker identification historical recordings upgrade price",
+    category: "ai",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/ai-alerts",
+    title:    "Email Alerts from Your Calls (AI Alerts)",
+    desc:     "AI Alerts emails you when a call mentions words you choose, a follow-up is promised, profanity is used, or a caller sounds unhappy.",
+    tags:     "ai alerts email alert keywords phrases follow-up profanity negative sentiment threshold recipients notification",
+    category: "ai",
+    readTime: "2 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/ai-custom-queries",
+    title:    "Custom Queries: Ask the AI About Every Call",
+    desc:     "Ask the AI the same question about every call, such as whether a booking was made, and record the answer.",
+    tags:     "custom queries question every call response type yes no score support ticket archive custom_responses webhook premium",
+    category: "ai",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/ai-call-reports",
+    title:    "AI Call Reports",
+    desc:     "Charts of sentiment by user, call categories, call length by user, and names spoken or mentioned on your calls.",
+    tags:     "ai reports call reports sentiment by user category volume call length speaking names mentioned names analytics",
+    category: "ai",
+    readTime: "2 min read",
+    featured: false,
+    pinned:   false
+  },
+  {
+    url:      "/help/ai-geo-routing",
+    title:    "Geo Routing: Send Callers to Their Nearest Location",
+    desc:     "Geo Routing asks callers where they are and connects them to your nearest location.",
+    tags:     "geo routing nearest location store branch postcode address suburb multiple locations import csv greeting route callers",
+    category: "ai",
+    readTime: "3 min read",
+    featured: false,
+    pinned:   false
   }
 ];
 
