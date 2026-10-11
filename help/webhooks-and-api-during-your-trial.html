@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-10-07",
+  "dateModified": "2026-10-11",
   "name": "Using the API and Webhooks on a Trial Account",
   "description": "The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn't arrive.",
   "url": "https://www.click2call.com.au/help/webhooks-and-api-during-your-trial",
@@ -408,6 +408,12 @@
     </div>
     <h2 id="contact-support" class="text-2xl font-bold text-gray-900 mt-12 mb-4">What should I send support if it still isn't working?</h2>
 <p class="text-gray-600 leading-relaxed mb-4">Email <a href="mailto:support@click2call.com.au" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">support@click2call.com.au</a> with:</p><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your account number and the Click2Call number you called</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The date and time of the test call (AEST), and the number you called from</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The state you expected (for example <code>answered</code>, <code>missed</code> or <code>aianalysis</code>)</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>The call <code>id</code> from any webhook that did arrive for that call</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>Your endpoint URL &mdash; <strong>never</strong> your API token or the webhook secret</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span>What your endpoint logged at that time: the status code it returned, or that it received nothing</span></li></ul><p class="text-gray-600 leading-relaxed mb-4">Support can check whether Click2Call sent the event. Debugging your integration code is not included in support.</p>
+
+<div id="kb-crm">
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Connecting a CRM such as HighLevel</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">There is no ready-made integration for HighLevel (GoHighLevel, including white-label versions such as TekMatix), HubSpot, Salesforce or Pipedrive. Your CRM consultant or developer connects it with our webhooks: they fire when a call rings, is answered, ends or is missed, and again with the AI summary and transcript once processing finishes. HighLevel workflows can receive webhooks, so summaries and transcripts can be saved against the right contact. Looking up contacts or booking into a CRM calendar during a call is custom work on the CRM side.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">There is no direct Google Drive or Google Workspace connection. Recordings, transcripts and summaries can be emailed after each call, or sent on through the same webhooks with a tool such as Zapier or Make.</p>
+</div><!-- /kb-crm -->
 
     <!-- Related articles -->
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">

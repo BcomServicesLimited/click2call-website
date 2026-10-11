@@ -277,6 +277,12 @@ Email support@click2call.com.au with:
 - •What your endpoint logged at that time: the status code it returned, or that it received nothing
 Support can check whether Click2Call sent the event. Debugging your integration code is not included in support.
 
+### Connecting a CRM such as HighLevel
+
+There is no ready-made integration for HighLevel (GoHighLevel, including white-label versions such as TekMatix), HubSpot, Salesforce or Pipedrive. Your CRM consultant or developer connects it with our webhooks: they fire when a call rings, is answered, ends or is missed, and again with the AI summary and transcript once processing finishes. HighLevel workflows can receive webhooks, so summaries and transcripts can be saved against the right contact. Looking up contacts or booking into a CRM calendar during a call is custom work on the CRM side.
+
+There is no direct Google Drive or Google Workspace connection. Recordings, transcripts and summaries can be emailed after each call, or sent on through the same webhooks with a tool such as Zapier or Make.
+
 ## Activating Your Account
 
 Source: https://www.click2call.com.au/help/how-to-activate-account
@@ -3151,6 +3157,14 @@ Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](h
 
 To see whether there is a wider problem before troubleshooting an app, see [Network Status](https://www.click2call.com.au/help/network-status).
 
+### Using the apps from overseas
+
+The apps work anywhere with an internet connection, so staff working overseas, for example a remote team in the Philippines, can make and receive calls on their extension as if they were in Australia.
+
+- **Caller ID:** outbound calls show the number you choose, such as your Australian business number. See [Setting Outbound Caller ID](https://www.click2call.com.au/help/how-to-set-outbound-caller-id).
+- **Charges:** calls are charged by the number dialled, at the same rates as from Australia. There are no location restrictions and no extra charge for using the apps overseas.
+- **Internet:** a call uses about 100 kbps. A stable connection matters more than a fast one; see [Call Quality](https://www.click2call.com.au/help/call-quality-and-starlink).
+
 ## Connecting simPRO to Click2Call
 
 Source: https://www.click2call.com.au/help/how-to-connect-simpro
@@ -5547,6 +5561,24 @@ callers can be transferred directly to a user's extension.
 #### Test the AI Receptionist
 
 Call one of the numbers you assigned to the AI Receptionist from an external phone. When prompted, say the name of a department or a phrase a real caller might use — for example, 'I'd like to speak to someone about a quote' or just 'Sales'. Confirm that the call transfers to the correct destination. Test each department you have configured. If a call routes incorrectly, update the department description to include more specific keywords.
+
+### Routing clients to their account manager
+
+Callers do not need to know who looks after them. Make one department for each account manager and list their clients in its description:
+
+- **Department Name:** the manager, for example Sam – account manager.
+- **Description:** the client businesses Sam looks after, for example Asset Transport, Aquaneo, Harbour Freight, plus anything else a caller might say.
+- **Route to Number:** Sam’s extension.
+
+A caller who says “I’m Jamie from Asset Transport” is matched to Sam’s department and transferred. When a client moves to another manager, move their name to that manager’s description. A team leader can do this with their own [portal login](https://www.click2call.com.au/help/how-to-add-portal-logins).
+
+**A backup for each manager:** point the department at a [hunt group](https://www.click2call.com.au/help/hunt-groups) that rings the manager first and then their backup, instead of at one extension.
+
+### Screening sales calls
+
+Add a department for calls you do not want put through, with a description such as sales calls, marketing, advertising, special offers, suppliers selling a product, and route it to a voicemail box. Those callers are sent to voicemail instead of to you.
+
+**Good to know:** For new enquiries, route a department to the [Answer Agent](https://www.click2call.com.au/help/how-to-set-up-answer-agent), which can take the caller’s details or [book an appointment](https://www.click2call.com.au/help/ai-appointment-booking). The AI Receptionist, Answer Agent and AI Agent are included at no extra cost.
 
 ## Connecting an AI Voice Agent to Your Number
 
