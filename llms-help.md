@@ -631,6 +631,8 @@ Pick the level that fits: **Administrator** or **Full Access** for owners; **Bil
 
 Enter a password of 8+ characters with upper and lower case letters and a number. Optionally enable **Two-factor authentication** (email verification), tick Remember trusted locations to only prompt once per office connection, and tick **Prevent recording deletion** if this person should never be able to delete call recordings. Click **Add Login**.
 
+To stop someone listening to call recordings at all, not just deleting them, contact support and we can restrict that login’s access to recordings.
+
 **Good to know:** To change your own name, password or 2FA, use the account menu in the top-right corner of the portal and choose Manage my login.
 
 ## Your Portal Password and Your Phone Passwords
