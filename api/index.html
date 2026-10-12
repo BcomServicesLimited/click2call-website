@@ -87,7 +87,7 @@
     },
     {
       "@type": "FAQPage",
-      "dateModified": "2026-10-07",
+      "dateModified": "2026-10-12",
       "mainEntity": [
         {
           "@type": "Question",
@@ -673,6 +673,14 @@
 <p class="mt-6 text-gray-600">The flow is deliberately plain. Register a webhook URL in the portal. Click2Call fires <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Ringing</code>, <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Answered</code>, <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Ended</code> and <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Missed</code> as the call progresses, then <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">AI Analysis</code> once transcription and summarisation finish. Your endpoint receives the payload and writes it wherever it belongs — a deal record, a support ticket, a spreadsheet, a Slack channel. Pull the detail with <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Get-Transcription</code> and <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Get-Transcription-Summary</code> whenever you need it.</p>
 
 <p class="mt-4 text-gray-600"><strong>Worth being straight about:</strong> there is no one-click app for HubSpot, Salesforce or Pipedrive. Click2Call gives you the events and the data; connecting them to a specific CRM is a small piece of code, or a no-code step in something like Zapier or n8n. That is genuinely an afternoon rather than a project — but it is not zero, and you should know that before you choose. The API is self-service, and Click2Call does not provide paid setup or support for custom integrations.</p>
+
+<h3 class="mt-10 text-xl font-bold text-brand-charcoal">Worked example: summaries and transcripts in HighLevel</h3>
+<p class="mt-3 text-gray-600">HighLevel (GoHighLevel, including white-label versions such as TekMatix) has no ready-made Click2Call integration, but its workflows can receive webhooks. A typical setup is a HighLevel workflow that starts from an inbound webhook, with that URL registered in the Click2Call portal. When the <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">AI Analysis</code> event arrives after each call, the workflow finds the contact by the caller&rsquo;s number and saves the summary and transcript against it. A <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">Missed</code> event can create a follow-up task the same way.</p>
+<p class="mt-3 text-gray-600">Looking up a contact or booking into the HighLevel calendar while the caller is still on the line is a different job. That is custom work on the CRM side, not something the webhooks do.</p>
+
+<h3 class="mt-10 text-xl font-bold text-brand-charcoal">Worked example: call transcripts in Google Drive</h3>
+<p class="mt-3 text-gray-600">There is no direct Google Drive or Google Workspace connection either. Two simple routes work. The first is to have each call&rsquo;s recording, transcript and summary emailed to you and filed by a mail rule. The second is to send the <code class="text-sm bg-gray-100 px-1.5 py-0.5 rounded">AI Analysis</code> webhook to Zapier or Make and add a step that saves each call&rsquo;s summary and transcript as a document in a shared folder.</p>
+<p class="mt-3 text-gray-600">Whichever route you take, the API is self-service: your CRM consultant, developer or IT provider sets it up.</p>
 
 <h3 class="mt-10 text-xl font-bold text-brand-charcoal">Adding phone calls to an AI chatbot</h3>
 <p class="mt-3 text-gray-600">Yes, and it is one of the most common things people build here. If your chatbot or agent speaks SIP, point it at a Click2Call Australian number and it can take real calls. Nine platforms have a built-in connection profile &mdash; OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix &mdash; select the platform as the connection type for your number, fill in the one field it needs, and your agent is answering an Australian phone number without you writing any telephony code.</p>
