@@ -14,17 +14,24 @@ USAGE
     python3 scripts/indexnow.py --changed        # URLs from the last commit
     python3 scripts/indexnow.py --changed --dry-run
 
-Bing is submitted alongside Yandex but will 403 until the domain is verified
-in Bing Webmaster Tools. That is expected and is reported, not treated as a
-failure — Yandex succeeding is enough to trigger a recrawl.
+Every IndexNow engine shares the URLs it receives with the others (Bing
+included), so one acceptance is enough. Several endpoints are tried because
+any one can be unreachable: in October 2026 yandex.com stopped answering from
+this network altogether (the connection was dropped), which crashed the old
+version before it reached the next engine. A dropped connection or timeout is
+now reported per endpoint and retried once; the run succeeds if any endpoint
+accepts. Bing answers 403 "UserForbiddedToAccessSite" until it has verified
+the key; that is reported, not treated as a failure.
 
 Standard library only.
 """
 import argparse
+import http.client
 import json
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -36,6 +43,9 @@ KEY_LOCATION = f"{BASE}/{KEY}.txt"
 
 ENDPOINTS = [
     ("Yandex", "https://yandex.com/indexnow"),
+    ("Seznam", "https://search.seznam.cz/indexnow"),
+    ("Naver", "https://searchadvisor.naver.com/indexnow"),
+    ("Yep", "https://indexnow.yep.com/indexnow"),
     ("Bing", "https://www.bing.com/indexnow"),
 ]
 
@@ -75,7 +85,7 @@ def changed_urls() -> list:
     return sorted({url_for(f) for f in out if f.endswith(".html")})
 
 
-def submit(name: str, endpoint: str, urls: list) -> bool:
+def submit(name: str, endpoint: str, urls: list, retries: int = 1) -> bool:
     payload = json.dumps({
         "host": HOST,
         "key": KEY,
@@ -85,19 +95,31 @@ def submit(name: str, endpoint: str, urls: list) -> bool:
     req = urllib.request.Request(
         endpoint, data=payload, method="POST",
         headers={"Content-Type": "application/json; charset=utf-8"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            print(f"  {name:8s} HTTP {resp.status} — accepted")
-            return True
-    except urllib.error.HTTPError as e:
-        note = ""
-        if name == "Bing" and e.code == 403:
-            note = "  (expected until the domain is verified in Bing Webmaster Tools)"
-        print(f"  {name:8s} HTTP {e.code}{note}")
-        return False
-    except urllib.error.URLError as e:
-        print(f"  {name:8s} unreachable: {e.reason}")
-        return False
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                print(f"  {name:8s} HTTP {resp.status} — accepted")
+                return True
+        except urllib.error.HTTPError as e:
+            # A refusal is an answer, not a network fault: report it, don't retry.
+            detail = ""
+            try:
+                body = json.loads(e.read().decode("utf-8", "replace") or "{}")
+                detail = f"  {body.get('errorCode', '')}".rstrip()
+            except (ValueError, OSError):
+                pass
+            print(f"  {name:8s} HTTP {e.code}{detail}")
+            return False
+        except (urllib.error.URLError, http.client.HTTPException, OSError) as e:
+            # Dropped connections, resets and timeouts land here (RemoteDisconnected
+            # is an HTTPException, not a URLError, and used to crash the whole run).
+            reason = getattr(e, "reason", None) or e.__class__.__name__
+            if attempt < retries:
+                time.sleep(3)
+                continue
+            print(f"  {name:8s} unreachable: {reason}")
+            return False
+    return False
 
 
 def main() -> int:
@@ -130,9 +152,9 @@ def main() -> int:
 
     print()
     results = [submit(name, ep, urls) for name, ep in ENDPOINTS]
-    # Yandex alone is enough to trigger a recrawl, so succeed if any endpoint
-    # accepted. Exiting non-zero only when every endpoint rejected keeps this
-    # usable in a chain without Bing's expected 403 breaking the build.
+    # One acceptance reaches every IndexNow engine, so succeed if any endpoint
+    # accepted. Exiting non-zero only when every endpoint failed keeps this
+    # usable in a chain without one unreachable engine breaking the build.
     return 0 if any(results) else 1
 
 
