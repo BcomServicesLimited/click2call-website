@@ -20,8 +20,9 @@ any one can be unreachable: in October 2026 yandex.com stopped answering from
 this network altogether (the connection was dropped), which crashed the old
 version before it reached the next engine. A dropped connection or timeout is
 now reported per endpoint and retried once; the run succeeds if any endpoint
-accepts. Bing answers 403 "UserForbiddedToAccessSite" until it has verified
-the key; that is reported, not treated as a failure.
+accepts. Bing answered 403 "UserForbiddedToAccessSite" to the original key and
+accepts the current one (12 Oct 2026). If Bing ever refuses again, publish a
+fresh key file (exact content, no newline) and switch KEY to it.
 
 Standard library only.
 """
@@ -38,7 +39,11 @@ from pathlib import Path
 
 HOST = "www.click2call.com.au"
 BASE = f"https://{HOST}"
-KEY = "c545b40a993f47dc8e19d97473df5270fb62e2f6"
+# Key file at the site root holds exactly the key, with no trailing newline.
+# The first key (c545b40a…, file still deployed) was refused by Bing with 403
+# UserForbiddedToAccessSite even though it served correctly; Bing caches a
+# failed verification against a key, and a fresh key was accepted (202) at once.
+KEY = "ec21cbeaf5895e1e2bbccc02b965b09d"
 KEY_LOCATION = f"{BASE}/{KEY}.txt"
 
 ENDPOINTS = [
@@ -47,6 +52,7 @@ ENDPOINTS = [
     ("Naver", "https://searchadvisor.naver.com/indexnow"),
     ("Yep", "https://indexnow.yep.com/indexnow"),
     ("Bing", "https://www.bing.com/indexnow"),
+    ("IndexNow", "https://api.indexnow.org/indexnow"),
 ]
 
 # IndexNow accepts at most 10,000 URLs per submission; nowhere near a concern
