@@ -3578,6 +3578,12 @@ If you connect your own PBX with a SIP trunk, set call forwarding on the trunk's
 
 Voicemail runs in the cloud too. If nobody answers, callers can leave a message and you'll get it by email.
 
+### If calls still aren't coming through
+
+With forwarding on, check the portal under Voice → Line Manager: a phone or app that has lost power or internet shows as Offline. Then ring your number from another phone and note what you hear: ringing, an engaged tone, a message or silence.
+
+If it still isn't right, contact support on 1300 884 879 or at support@click2call.com.au with the number, the time of your test call and what you heard. Support runs Monday to Friday, 9 am to 5 pm Queensland time, on a best-effort basis: there's no guaranteed response time and no 24/7 service, which is why setting up forwarding first matters.
+
 ## Parking, Picking Up and Transferring Calls
 
 Source: https://www.click2call.com.au/help/call-parking-pickup-transfers
