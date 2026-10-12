@@ -2772,6 +2772,13 @@ Yes — contact support with the number or extension and the time of a failed at
 - •You have tried a second app (Linphone) with the same details, to rule out the app
 Still stuck? Email support@click2call.com.au with your account number, the number or extension, the app and version, your device and operating system, the time of a failed attempt, and a screenshot of any error. Never send your password.
 
+### “Offline” or “No registration recorded” in the portal
+
+The **Your Services** card on the portal’s Account Overview shows **Offline** and **No registration recorded** for a number that no phone or app has logged in with yet. The line itself shows **Not Registered** in **Voice → Line Manager**.
+
+- To make and receive calls on it, log in to an app or desk phone with the number and its password: see [Setting Up the Apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
+- A number that only forwards calls to a mobile, or is answered by the AI Receptionist or Answer Agent, works without a phone logged in, so “Offline” is normal for it.
+
 ## Registering a Desk Phone
 
 Source: https://www.click2call.com.au/help/how-to-add-desk-phone
@@ -4770,6 +4777,15 @@ Dial ***58** from any phone on your account to record your unavailable greeting,
 **Good to know:** During work hours, a diverted call that rings out is answered by your mobile’s own voicemail, not Click2Call’s. If you would rather always use Click2Call voicemail, use [Simultaneous Ring](https://www.click2call.com.au/help/how-to-create-ring-group) instead of Forward Always.
 
 **What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outbound call from the number that forwards it. On a Cloud PBX User number it uses that number’s 300 included minutes first, then 20c a minute to mobiles; an Inbound Business Number has no included minutes, so it is charged per minute from the start. Calls you answer in the [Secure VoIP app](https://www.click2call.com.au/help/how-to-set-up-softphone) instead don’t use minutes at all. See [why your included minutes may not be used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
+
+### Knowing a call was forwarded from your business number
+
+A forwarded call shows the caller’s number on your mobile, so it can look like a personal call. To tell them apart, have the call announced before it connects:
+
+- On the **Call Forwarding** page, tick **Play a notification to the callee at the start of the call when the call has been forwarded**. You hear “call-forwarding” before the caller is put through.
+- Or record your own message, such as “Business call”: dial `*38` from your phone and follow the prompts. `*39` removes it.
+
+This applies to the forwards on the Call Forwarding page: Forward Always, on No Answer, on Busy and when Offline. Simultaneous Ring has no announcement setting.
 
 ## Setting Up Missed Call Alerts
 
