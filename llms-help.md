@@ -4757,6 +4757,8 @@ Dial ***58** from any phone on your account to record your unavailable greeting,
 
 **Good to know:** During work hours, a diverted call that rings out is answered by your mobile’s own voicemail, not Click2Call’s. If you would rather always use Click2Call voicemail, use [Simultaneous Ring](https://www.click2call.com.au/help/how-to-create-ring-group) instead of Forward Always.
 
+**What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outbound call from the number that forwards it. On a Cloud PBX User number it uses that number’s 300 included minutes first, then 20c a minute to mobiles; an Inbound Business Number has no included minutes, so it is charged per minute from the start. Calls you answer in the [Secure VoIP app](https://www.click2call.com.au/help/how-to-set-up-softphone) instead don’t use minutes at all. See [why your included minutes may not be used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
+
 ## Setting Up Missed Call Alerts
 
 Source: https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts

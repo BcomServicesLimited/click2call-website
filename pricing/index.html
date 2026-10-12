@@ -132,7 +132,7 @@
       "name": "What happens if my payment fails?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Click2Call operates on a prepaid billing system. You load credit onto your account, and your monthly flat-rate fees and any extra usage are deducted from this balance. If your credit runs out, your service may be suspended. We recommend saving a credit card and enabling the auto top-up feature in the customer portal to ensure uninterrupted service."
+        "text": "Click2Call operates on a prepaid billing system. You load credit onto your account, and your monthly flat-rate fees and any extra usage are deducted from this balance. If your credit runs out, incoming calls keep working, but outgoing calls stop once the balance goes below −$5 and start again as soon as you add credit. Saving a credit card and turning on auto top-up in the customer portal keeps your balance from running out."
       }
     },
     {
@@ -368,7 +368,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "dateModified": "2026-10-09",
+  "dateModified": "2026-10-12",
   "name": "Click2Call Pricing — Cloud PBX from $25/user/month",
   "url": "https://www.click2call.com.au/pricing",
   "speakable": {
@@ -1440,6 +1440,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <li class="check"><span><strong>Your number keeps ringing</strong> with your current provider until the port completes. You test everything before we lodge the port.</span></li>
           <li class="check"><span><strong>Remote walkthrough and training guides</strong> so your team knows how to use it</span></li>
         </ul>
+        <p class="good"><strong>Priced separately:</strong> building an ElevenLabs AI Agent ($500 ex GST), Microsoft Teams setup ($50 ex GST per user), and connecting a CRM, which you do yourself with the API.</p>
         <a class="btn btn-ghost" href="mailto:support@click2call.com.au?subject=Managed%20setup%20enquiry&amp;body=Hi%20Click2Call%20team%2C%0A%0AI%27d%20like%20to%20book%20managed%20setup.%20A%20few%20details%20to%20get%20started%3A%0A%0A-%20Business%20name%3A%20%0A-%20Number%20of%20users%3A%20%0A-%20Existing%20phone%20numbers%20to%20port%3A%20%0A-%20Specific%20configuration%20needed%20%5BIVR%20menu%2C%20ring%20groups%2C%20after-hours%20routing%2C%20etc%5D%3A%20%0A%0AWhen%20would%20be%20a%20good%20time%20for%20a%20setup%20call%3F%0A%0AThanks%2C%0A" onclick="gtag('event', 'managed_setup_enquiry', {'event_category': 'CTA', 'event_label': 'Managed Setup Email'});">Email Us to Book Setup</a>
         <p class="good"><strong>Good for:</strong> prefer hands-off setup, larger teams, complex routing</p>
       </div>
@@ -1526,6 +1527,21 @@ document.addEventListener('DOMContentLoaded', function () {
       <h3>Is there a cheaper VoIP-only or basic plan?</h3>
       <p>There is no stripped-down tier, because nothing is held back from the $25 user. Two things are cheaper because they do less: an <strong>Inbound Business Number</strong> at $10 a month receives calls and runs a call flow but cannot dial out, and if you already own a PBX, a <a href="/sip-trunks/">SIP trunk</a> at $50 a month supplies the lines without the phone system.</p>
     </div>
+    <div class="card">
+      <h3>How your minutes and credit work day to day</h3>
+      <p>Calls you answer are free when they ring on Click2Call itself: in the Secure VoIP app, a softphone or a desk phone, incoming calls to your local numbers don&rsquo;t touch your minutes or your credit.</p>
+      <p>Forwarding to a mobile works differently. The call leaves our platform, so the leg out to the mobile is billed as an outbound call from the number that forwards it. On a Cloud PBX User number it comes out of that number&rsquo;s 300 minutes first, then costs 20c a minute. An Inbound Business Number has no included minutes, so forwarded calls are charged per minute from the start. If most of your calls will be answered away from the office, answering them in the app keeps them free.</p>
+      <p>There is no unlimited plan. Each user&rsquo;s 300 minutes belong to that user&rsquo;s number, and calls past them are 10c a minute to landlines and 20c to mobiles.</p>
+      <p>Because Click2Call is prepaid, the monthly fees and any extra calls come out of your credit. Turn on <strong>auto top-up</strong> and credit is added automatically when the balance runs low, and set a <strong>low-credit warning email</strong> for an amount you choose. If credit does run out, incoming calls keep working; outgoing calls stop once the balance goes below &minus;$5 and start again as soon as you add credit. <a class="link" href="/help/how-to-add-account-credit">How to add credit and set up auto top-up &rarr;</a></p>
+    </div>
+    <div class="card">
+      <h3>Two worked examples</h3>
+      <ul class="checks">
+        <li class="check"><span><strong>One user with a Melbourne 03 number and a 1300 number:</strong> $25 for the user (the 03 number is included) plus $10 for the 1300 is <strong>$35 a month ex GST, $38.50 inc GST</strong>, plus 20c a minute for calls into the 1300. Adding a Sydney 02 number later is another $10 ex GST a month, and all three numbers sit in the same system.</span></li>
+        <li class="check"><span><strong>Five users sharing one practice number, with managed setup:</strong> five users at $25 plus $10 for the shared number is <strong>$135 a month ex GST, $148.50 inc GST</strong>. Managed setup is $300 for the first three users plus $50 each for the other two: <strong>$400 ex GST, $440 inc GST</strong>, once.</span></li>
+      </ul>
+      <p class="small muted">The <a class="link" href="#calculator">quote builder</a> works out any other combination, with GST.</p>
+    </div>
   </div>
 </div></section>
 
@@ -1533,7 +1549,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="head"><h2 id="pq-h">Pricing Questions</h2></div>
   <div class="faq" id="pricing-faq">
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-1"><span>What is included in the monthly fee?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-1" class="faq-body hidden"><ul class="space-y-1 list-disc list-inside"><li>$25/month per user (ex GST)</li><li>$10/month per extra inbound line (ex GST)</li><li>Includes 1 local number, 300 outbound minutes, and unlimited inbound calls</li><li>No hidden fees, no minimum spend, no lock-in contracts</li></ul></div></div>
-    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-2"><span>What happens if my payment fails?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-2" class="faq-body hidden">Click2Call operates on a prepaid billing system. You load credit onto your account, and your monthly flat-rate fees and any extra usage are deducted from this balance. If your credit runs out, your service may be suspended. We recommend saving a credit card and enabling the auto top-up feature in the customer portal to ensure uninterrupted service.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-2"><span>What happens if my payment fails?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-2" class="faq-body hidden">Click2Call operates on a prepaid billing system. You load credit onto your account, and your monthly flat-rate fees and any extra usage are deducted from this balance. If your credit runs out, incoming calls keep working, but outgoing calls stop once the balance goes below &minus;$5 and start again as soon as you add credit. Saving a credit card and turning on auto top-up in the customer portal keeps your balance from running out.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-3"><span>How do I manage my subscription?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-3" class="faq-body hidden">Log in to the customer portal at portal.click2call.com.au and go to the Payments section to manage your account balance, enable auto top-up, update saved credit cards, and view invoices. We accept all major credit cards.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-4"><span>Can I add or remove users at any time?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-4" class="faq-body hidden">Yes. You can add or remove users at any time through the customer portal. Changes take effect immediately and your flat-rate monthly fees are adjusted accordingly. There are no penalties for scaling up or down.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-5"><span>Are inbound calls free?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-5" class="faq-body hidden">Inbound calls to your local numbers are included and unlimited. If you route inbound calls to an external mobile number, standard rates apply. If you have a 1300 or 1800 number, inbound calls to that number are charged at standard rates to your account.</div></div>
