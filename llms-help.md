@@ -389,6 +389,12 @@ To get the most out of your trial, we recommend following these steps:
 
 - **Explore features:** Set up a voicemail greeting, create a ring group, or build an auto-attendant menu.
 
+### Testing with your team, including staff overseas
+
+The $11 credit covers one local number and a few test calls. To try the system with several people, top up your credit and add a Cloud PBX User ($25 a month ex GST) for each person who needs to make calls. Each one gets their own extension and can use the app.
+
+Staff overseas can join the test the same way. They install the app, sign in to their extension and take calls as if they were in Australia, and their outbound calls show your Australian number. There's no extra charge for using the app from another country. See [Setting up the apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
+
 ### What happens after the trial?
 
 At the end of the 7 days, or when your $11 credit runs out (whichever comes first), your outbound calling will be suspended until you add a payment method and top up your account.
@@ -5575,10 +5581,10 @@ Call one of the numbers you assigned to the AI Receptionist from an external pho
 Callers do not need to know who looks after them. Make one department for each account manager and list their clients in its description:
 
 - **Department Name:** the manager, for example Sam – account manager.
-- **Description:** the client businesses Sam looks after, for example Asset Transport, Aquaneo, Harbour Freight, plus anything else a caller might say.
+- **Description:** the client businesses Sam looks after, for example Ridgeline Transport, Bluewater Dental, Northside Joinery, plus anything else a caller might say.
 - **Route to Number:** Sam’s extension.
 
-A caller who says “I’m Jamie from Asset Transport” is matched to Sam’s department and transferred. When a client moves to another manager, move their name to that manager’s description. A team leader can do this with their own [portal login](https://www.click2call.com.au/help/how-to-add-portal-logins).
+A caller who says “I’m Jamie from Ridgeline Transport” is matched to Sam’s department and transferred. When a client moves to another manager, move their name to that manager’s description. A team leader can do this with their own [portal login](https://www.click2call.com.au/help/how-to-add-portal-logins).
 
 **A backup for each manager:** point the department at a [hunt group](https://www.click2call.com.au/help/hunt-groups) that rings the manager first and then their backup, instead of at one extension.
 
