@@ -378,41 +378,14 @@ Rebuilt October 2026. Phone systems for Australian medical, dental and allied he
 URL: https://www.click2call.com.au/voip-it-companies-australia/
 Rebuilt October 2026. For Australian IT companies and MSPs. Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026; clients still using it need another Teams calling provider. Click2Call Teams Direct Routing: Teams User plan $25 per user per month ex GST (Australian number, 300 outbound minutes, unlimited inbound) plus a Microsoft Teams Phone Standard licence from Microsoft at about $15; self-setup takes 30–45 minutes and is free, managed setup is $55 inc GST per user; recording without a Microsoft recording licence. SIP trunks for 3CX, FreePBX, Asterisk and Yeastar are $50 per month with 500 outbound minutes, unlimited inbound and 2 concurrent channels. Webhooks report ringing, answered, ended and missed calls and AI analysis; the call setup API enables click-to-dial; integrations are self-service. Click2Call is run by Royce Clark, who also runs bcom ICT, a business IT services company.
 
-## Case Studies
+## Example Setups
 
-Click2Call case studies document real-world outcomes for Australian businesses using Click2Call VoIP, Cloud PBX, and AI Voice Tools.
+The pages under /case-studies/ are worked examples of how typical Australian businesses could set up Click2Call, using real features and current prices. They are illustrations, not customer stories: the businesses are not real and the pages contain no results, statistics or quotes. (Until October 2026 these pages were presented as customer case studies with figures such as "40% fewer missed calls"; those figures were not real and were removed.)
 
-- **Case Studies Index**: https://www.click2call.com.au/case-studies — Overview of all case studies with industry, location, key stats, and links to full pages.
-
-### Brisbane Accounting Firm — AI Receptionist
-- **URL**: https://www.click2call.com.au/case-studies/accounting-firm-ai-receptionist/
-- **Industry**: Accounting / Professional Services
-- **Location**: Brisbane, Queensland
-- **Challenge**: A Brisbane accounting firm with four staff was missing 40% of inbound calls during peak periods (tax season, EOFY). Calls went to voicemail and were not returned promptly, causing client frustration and lost referrals.
-- **Solution**: Click2Call Cloud PBX with AI Receptionist. The AI answers every call 24/7, greets callers, routes to the right accountant, and captures after-hours enquiries via voicemail-to-email.
-- **Results**: 40% reduction in missed calls, 24/7 coverage including weekends and public holidays, 90% of routine enquiries handled without staff intervention.
-- **Key features used**: AI Receptionist, Cloud PBX, voicemail-to-email, call recording, business hours routing.
-- **Pricing**: $25/user/month (4 users = $100/month total, ex GST).
-
-### Sydney Plumbing Business — Cloud PBX Multi-Location
-- **URL**: https://www.click2call.com.au/case-studies/plumbing-business-cloud-pbx/
-- **Industry**: Trades / Plumbing
-- **Location**: Sydney, New South Wales
-- **Challenge**: A Sydney plumbing business operating across three locations (Parramatta, Penrith, Liverpool) had three separate phone systems with no visibility across sites. Staff were using personal mobiles for job calls, with no call recording for dispute resolution.
-- **Solution**: Click2Call Cloud PBX unifying all three locations under one system. One 02 Sydney number rings all three offices. Ring groups ensure every call is answered. Call recording captures every job conversation.
-- **Results**: 1 unified phone system replacing 3 separate systems, 50% cost reduction vs previous provider, 100% call analytics visibility across all locations.
-- **Key features used**: Cloud PBX, ring groups, call recording, voicemail-to-email, multi-location routing.
-- **Pricing**: $25/user/month per user, no hardware required.
-
-### Melbourne Medical Clinic — AI Voice Tools Transcription
-- **URL**: https://www.click2call.com.au/case-studies/medical-clinic-ai-transcription/
-- **Industry**: Healthcare / Medical
-- **Location**: Melbourne, Victoria
-- **Challenge**: A Melbourne medical clinic was required to maintain records of all patient phone interactions for compliance. Staff were manually taking notes during calls, leading to inconsistencies and time wasted on post-call documentation.
-- **Solution**: Click2Call Cloud PBX with AI Voice Tools. Every inbound and outbound call is automatically recorded and transcribed. Transcripts are delivered to staff email within minutes of the call ending.
-- **Results**: 100% of calls transcribed automatically, 75% reduction in post-call documentation time, 99% transcription accuracy across Australian accents.
-- **Key features used**: AI Voice Tools (transcription), call recording, voicemail-to-email, ring groups, after-hours routing.
-- **Pricing**: $25/user/month per user, no hardware required.
+- **Index**: https://www.click2call.com.au/case-studies/
+- **Brisbane accounting firm (15 staff)**: https://www.click2call.com.au/case-studies/accounting-firm-ai-receptionist/ — AI Receptionist routes clients to their own accountant (one department per accountant listing their clients, a hunt group for backup), a sales-calls department goes to voicemail, a call queue for tax season, the Answer Agent after hours (messages and bookings in its own calendar), recording with restricted access. Cost: 15 users + main number = $385/month ex GST ($423.50 inc); porting $100 inc GST; optional managed setup $900 ex GST.
+- **Three-depot Sydney plumbing business (16 staff)**: https://www.click2call.com.au/case-studies/plumbing-business-cloud-pbx/ — depot numbers on one account, Geo Routing to the nearest depot, office ring groups and internal transfers, technicians on the Secure VoIP app (plus forwarding for incoming calls), numbers stay with the business, after-hours emergency option to the on-call technician, Answer Agent for job details, simPRO Premium softphone. Cost: 16 users + 3 depot numbers = $430/month ex GST ($473 inc); porting $300 inc GST; optional managed setup $950 ex GST.
+- **Melbourne GP clinic (11 staff)**: https://www.click2call.com.au/case-studies/medical-clinic-ai-transcription/ — emergency (000) message first, call queue with position announcements, reception ring group, recording and transcripts on the reception line with access restricted to the practice manager, after-hours to a deputising service, SMS reminders, Faxmail, no clinical advice from AI. Cost: 11 users + main number + fax line = $295/month ex GST ($324.50 inc); porting $200 inc GST; optional managed setup $700 ex GST.
 
 ## Blog
 
