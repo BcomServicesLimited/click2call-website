@@ -426,6 +426,10 @@ $25 a user a month ex GST, each with their own number and 300 outbound minutes](
 
 Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](https://www.click2call.com.au/contact/)
 
+### What the trial credit covers
+
+The trial credit is enough to add a $10 Inbound Business Number and make a few outgoing calls, and to try the AI features and the API. To test more, such as extra users or numbers, add credit during the trial; see [Adding credit](https://www.click2call.com.au/help/how-to-add-account-credit).
+
 ## Making Your First Call
 
 Source: https://www.click2call.com.au/help/how-to-make-your-first-call
@@ -831,7 +835,7 @@ Phone Numbers
 
 Add a new Australian phone number to your Click2Call account. Choose between a **Cloud PBX** line (full PBX features including Auto Attendant) or a **Inbound Business Number** line (basic inbound/outbound). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
 Before you begin
 
@@ -941,6 +945,13 @@ Your new Sydney number **02 7238 0358** is now active. Next steps you might want
 - [Add an extension](https://www.click2call.com.au/help/how-to-add-extension) and assign this number to a user
 
 - [Set up voicemail-to-email](https://www.click2call.com.au/help/how-to-set-up-voicemail) for this number
+
+### 1300 numbers
+
+- **A new 1300 number is free to get.** It is allocated automatically, so we cannot offer a list to choose from. There is no upfront or porting charge; it then costs the usual monthly plan for the number.
+- **To choose a specific 1300 number,** search for one and register it yourself at The Numbering System (you create a login there). This costs more upfront: their number fee, plus our $100 porting fee to bring it to Click2Call. See [Porting a number](https://www.click2call.com.au/help/how-to-port-number).
+
+**Good to know:** We do not recommend a 1300 number as your outgoing caller ID: some carriers do not support it and show the call as a private number. Use a local number for outgoing calls.
 
 #### Related articles
 
@@ -1190,7 +1201,7 @@ Source: https://www.click2call.com.au/help/how-to-set-outbound-caller-id
 
 By default, when you make an outbound call from an extension, your main account number is presented to the person you are calling. The **Caller ID and Privacy** settings let you change this on a per-extension basis — presenting a different number from your account, a verified external number, or hiding your number entirely for private calls.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
 ### How to Set Outbound Caller ID, Step by Step
 
@@ -1307,6 +1318,10 @@ Yes. Each extension has its own independent Caller ID and Privacy settings. For 
 Does this setting affect incoming calls?
 
 No. The Caller ID and Privacy settings only affect outbound calls made from this extension. Incoming call routing is configured separately in the **Incoming Calls** section of the Call Flow.
+
+### Can a 1300 number be my caller ID?
+
+Yes, but we do not recommend it. Some carriers do not support 1300 numbers as caller ID and show the call as a **private number**, which many people will not answer. Show a local or mobile-style number for outgoing calls instead.
 
 ## Setting Up Global Contacts and Speed Dials
 
@@ -4789,6 +4804,10 @@ A forwarded call shows the caller’s number on your mobile, so it can look like
 
 This applies to the forwards on the Call Forwarding page: Forward Always, on No Answer, on Busy and when Offline. Simultaneous Ring has no announcement setting.
 
+### What a forwarded call costs
+
+A call forwarded to a mobile is an outgoing call to a mobile from your Click2Call number, so it is charged the same way: it uses your included minutes first, then the standard mobile rate on the [pricing page](https://www.click2call.com.au/pricing/). Incoming calls to your number are free.
+
 ## Setting Up Missed Call Alerts
 
 Source: https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts
@@ -5769,6 +5788,10 @@ Yes — provided **Recording Enabled** is ticked on the profile, calls answered 
 
 #### Can I use my existing business number?
 Yes. Port it across first — see [number porting](https://www.click2call.com.au/number-porting/) — then point it at your agent. Or test on a new number and move the main one once you are happy.
+
+### If the AI platform does not answer
+
+Set an overflow so a call the AI does not pick up still reaches someone. Send the department or group the AI answers for to voicemail, or to another number, when it is not answered. See [voicemail](https://www.click2call.com.au/help/how-to-set-up-voicemail), [hunt groups](https://www.click2call.com.au/help/hunt-groups) and [forwarding on no answer](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile).
 
 ## Connecting ElevenLabs to Your Phone Number
 
