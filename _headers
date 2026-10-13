@@ -7,6 +7,7 @@ https://:project.pages.dev/*
 /*
   X-Robots-Tag: all
   Strict-Transport-Security: max-age=15552000
+  X-Frame-Options: SAMEORIGIN
 /help/primary-knowledge-base.html
   X-Robots-Tag: noindex, nofollow, noarchive
 /pricing.html
