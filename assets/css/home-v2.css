@@ -165,7 +165,7 @@
 .hv2 .ind h3{font-size:1.15rem;font-weight:800}
 .hv2 .ind p{font-size:.92rem;line-height:1.6;color:var(--ink-2)}
 .hv2 .ind .more{margin-top:auto;color:var(--g-dark);font-weight:700;font-size:.92rem}
-.hv2 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hv2 .cases{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .hv2 .cases a{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:22px;text-decoration:none;transition:border-color .15s}
 .hv2 .cases a:hover{border-color:var(--g)}
 .hv2 .cases .t{font-weight:800;font-size:1.05rem}
