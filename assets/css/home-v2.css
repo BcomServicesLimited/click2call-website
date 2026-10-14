@@ -66,7 +66,7 @@
 /* ---------- 2. key takeaways ---------- */
 .hv2 .kt{border-block:1px solid var(--line);background:#fff;padding-block:30px}
 .hv2 .kt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 32px;align-items:start}
-.hv2 .kt h2{align-self:center;font-size:1.35rem;letter-spacing:-.01em;text-transform:none;color:var(--ink);font-weight:800;padding:0;border-left:3px solid var(--g);padding-left:12px} .hv2 .kt h2.x{font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--g-dark);font-weight:800;padding-top:4px}
+.hv2 .kt h2{grid-column:1/-1;align-self:center;font-size:1.35rem;letter-spacing:-.01em;text-transform:none;color:var(--ink);font-weight:800;padding:0;border-left:3px solid var(--g);padding-left:12px} .hv2 .kt h2.x{font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--g-dark);font-weight:800;padding-top:4px}
 .hv2 .kt ul{display:contents}
 .hv2 .kt li{font-size:.9rem;line-height:1.55;color:var(--ink-2);border-left:3px solid var(--g-tint);padding-left:12px}
 .hv2 .kt li strong{color:var(--ink)}
