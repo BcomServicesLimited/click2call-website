@@ -3617,7 +3617,7 @@ Voicemail runs in the cloud too. If nobody answers, callers can leave a message 
 
 With forwarding on, check the portal under Voice → Line Manager: a phone or app that has lost power or internet shows as Offline. Then ring your number from another phone and note what you hear: ringing, an engaged tone, a message or silence.
 
-If it still isn't right, contact support on 1300 884 879 or at support@click2call.com.au with the number, the time of your test call and what you heard. Support runs Monday to Friday, 9 am to 5 pm Queensland time, on a best-effort basis: there's no guaranteed response time and no 24/7 service, which is why setting up forwarding first matters.
+If it still isn't right, email support@click2call.com.au with the number, the time of your test call and what you heard. Support runs Monday to Friday, 9 am to 5 pm Queensland time, on a best-effort basis: there's no guaranteed response time and no 24/7 service, which is why setting up forwarding first matters.
 
 ## Parking, Picking Up and Transferring Calls
 
@@ -4758,7 +4758,6 @@ The Skype for Business Online service was retired by Microsoft in July 2021. If 
 Our Australian team can complete the whole Teams Direct Routing configuration end-to-end — SBC, licences, PowerShell, testing.
 
 [Managed setup service](https://www.click2call.com.au/pricing/#managed-setup)
-Call 1300 884 879
 
 ## Forwarding Calls to Your Mobile
 
@@ -5282,7 +5281,7 @@ Account History is visible to the account administrator. Sub-users with limited 
 
 A transaction is missing from my history — what should I do?
 
-If you believe a transaction is missing, first try refreshing the page and scrolling to the bottom of the list. If it is still not visible, contact our support team at support@click2call.com.au or call 1300 884 879 and we will investigate.
+If you believe a transaction is missing, first try refreshing the page and scrolling to the bottom of the list. If it is still not visible, email our support team at support@click2call.com.au and we will investigate.
 
 #### Related articles
 
