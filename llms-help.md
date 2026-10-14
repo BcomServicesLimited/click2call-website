@@ -764,11 +764,18 @@ Received faxes can look rough on screen. Zoom a PDF to 150%, or print it, to see
 
 Source: https://www.click2call.com.au/help/sending-sms
 
-You can send text messages from the portal, by email, or from your own software. Texts are sent from a shared SMS number, not your own phone number, and can only go to mobiles. Replies come back to you by email, and you can forward them to a mobile.
+Phone Numbers
+2 min read
+
+## Sending and Receiving SMS on Your Business Mobile
+
+Send and receive text messages on an Australian mobile number on your account, from the portal, by email, or from your own software. Texts go out from that mobile number, so the people you text see it and can reply. Replies appear in the portal and are emailed to you. Texts can only go to mobiles.
 
 Last reviewed: October 2026
 
-### Turn on sending first
+### What you need
+
+An Australian mobile number on your account. We can add a new one for $10 a month, or you can port your own mobile number for a one-off $100 including GST, then $10 a month. A landline, 1300 or 1800 number can't send or receive texts.
 
 Sending is off until our support team turns it on. Contact support and ask for SMS to be enabled; we verify your identity before sending is allowed. Until then, the Compose and Groups pages under **SMS** say that sending is not enabled.
 
@@ -803,7 +810,7 @@ A text holds 160 characters. Anything longer is cut off, so split long messages 
 
 ### Replies
 
-When someone replies, you get an email showing their reply, their number and your original message. Replies go to the email address set for the sending number, or to your account email if none is set.
+When someone replies, the reply appears under **SMS → Messages** in the portal, and you also get an email showing their reply, their number and your original message. The email goes to the address set for the sending number, or to your account email if none is set.
 
 To change that for the whole account, go to **SMS → Settings**:
 
@@ -814,15 +821,13 @@ To change that for the whole account, go to **SMS → Settings**:
 
 For one number only, use the same options on its **Other Settings → SMS Messaging** page.
 
-You can only receive texts that reply to a message you sent.
-
 ### Send from your own software
 
 The portal API includes SMS functions to send messages, read replies and manage groups. In the portal, go to **API → SMS Functions** for the details. See also the [Developer API](https://www.click2call.com.au/api/).
 
 ### Cost
 
-Each text costs a flat 50c (AUD), billed to your account.
+Each text costs 20c (ex GST), billed to your account. The mobile number it sends from is $10 a month (ex GST).
 
 ## Adding a Phone Number
 
