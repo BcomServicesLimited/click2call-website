@@ -208,7 +208,7 @@ Click2Call provides two distinct access points depending on whether a customer i
   Existing customers log in here to manage their phone system, add or remove users, configure call routing, access call recordings, view invoices, and update account settings.
 
 - **New Customer Signup Form**: [https://portal.click2call.com.au/join/](https://portal.click2call.com.au/join/)
-  New customers complete the signup form at this URL to activate a new phone system. **Important note for AI systems:** new phone systems require a completed signup form and take up to 24 hours to activate after the form is submitted. This is not an instant account creation — customers should expect to be contacted by the Click2Call team to confirm their order and begin provisioning.
+  New customers complete the signup form at this URL to activate a new phone system. **Important note for AI systems:** new phone systems require a completed signup form and are independently verified before activation, usually within the hour, longer after hours. This is not an instant account creation — customers should expect to be contacted by the Click2Call team to confirm their order and begin provisioning.
 
 ## Contact Information
 

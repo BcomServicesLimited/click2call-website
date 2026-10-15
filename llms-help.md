@@ -263,7 +263,7 @@ Every account can run a small negative balance — an IOU of up to $5. Once the 
 
 #### The account is not active yet
 
-New accounts are activated within 24 hours of signup, and identity verification usually takes a few hours. Until the account and number are active, test calls will not connect.
+New accounts are independently verified before activation, usually within the hour, longer after hours. Until the account and number are active, test calls will not connect.
 
 ### What should I send support if it still isn't working?
 
@@ -3617,7 +3617,7 @@ Voicemail runs in the cloud too. If nobody answers, callers can leave a message 
 
 With forwarding on, check the portal under Voice → Line Manager: a phone or app that has lost power or internet shows as Offline. Then ring your number from another phone and note what you hear: ringing, an engaged tone, a message or silence.
 
-If it still isn't right, email support@click2call.com.au with the number, the time of your test call and what you heard. Support runs Monday to Friday, 9 am to 5 pm Queensland time, on a best-effort basis: there's no guaranteed response time and no 24/7 service, which is why setting up forwarding first matters.
+If it still isn't right, email support@click2call.com.au with the number, the time of your test call and what you heard. Setting up forwarding first means your callers still reach you while we look into it.
 
 ## Parking, Picking Up and Transferring Calls
 
