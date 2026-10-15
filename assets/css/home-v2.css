@@ -456,6 +456,14 @@
 .hv2 .extras .x{display:grid;gap:10px;margin-top:14px}
 .hv2 .x-h{font-weight:700;font-size:.95rem;margin-top:4px}
 .hv2 .radios{display:grid;gap:8px}
+.hv2 .radio.mode,.hv2 .radio.fwd{align-items:flex-start;background:#fff}
+.hv2 .radio.mode input,.hv2 .radio.fwd input{margin-top:4px}
+.hv2 .radio.mode span,.hv2 .radio.fwd span{display:block}
+.hv2 .radio.mode b{font-weight:800}
+.hv2 .radio.mode em{font-style:normal;font-weight:800;color:var(--g-dark);margin-left:6px}
+.hv2 .radio.mode small,.hv2 .radio.fwd small{display:block;font-size:.85rem;color:var(--ink-2);line-height:1.5;margin-top:2px}
+.hv2 .radio.mode:has(input:checked){border-color:var(--g);background:var(--g-tint)}
+.hv2 .radio.fwd{font-size:.95rem}
 .hv2 .radio{display:flex;align-items:center;gap:10px;font-size:.95rem;border:1px solid var(--line);border-radius:12px;padding:10px 14px;cursor:pointer}
 .hv2 .radio input{accent-color:var(--g);width:18px;height:18px}
 .hv2 .rec{background:var(--g-soft);border:1px solid #D7EBDB;border-radius:var(--r-md);padding:14px 16px;display:grid;gap:10px;font-size:.93rem;color:var(--ink-2)}
