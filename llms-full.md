@@ -105,10 +105,10 @@ As of 2026-07-16, Click2Call maintains 5 standalone city guides (Sydney, Melbour
 
 ### Standalone city guides
 
-- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers (NSW and ACT). Rebuilt October 2026: multi-site Sydney businesses on one system, daylight saving vs support hours, hybrid work, Teams Direct Routing, moving office without changing number, a professional-services call flow example and a six-person cost example ($160/month ex GST).
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers (NSW and ACT). Rebuilt October 2026: multi-site Sydney businesses on one system, daylight saving vs your opening hours, hybrid work, Teams Direct Routing, moving office without changing number, a professional-services call flow example and a six-person cost example ($160/month ex GST).
 - **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers (VIC and TAS). Rebuilt October 2026: six-step self-setup guide, example setups (Fitzroy, Caulfield/Moorabbin, Southbank), co-working Wi-Fi, choosing phones, Victorian public holidays, managed setup, three users plus a ported number for $85/month ex GST.
-- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Rebuilt October 2026: storm-season fallback with Forward when Offline, Queensland time vs daylight-saving states, support on Brisbane time, preparing office internet for calls, Teams and SIP trunks. Cross-links to /voip-gold-coast/.
-- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers (WA, SA, NT). Rebuilt October 2026: support from 7 am to 3 pm Perth time, the Answer Agent for east-coast callers before Perth opens, 02/03 numbers for east-coast clients, Teams Direct Routing, remote sites and Starlink, an eight-person Teams cost example.
+- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Rebuilt October 2026: storm-season fallback with Forward when Offline, Queensland time vs daylight-saving states, a Queensland-based team, preparing office internet for calls, Teams and SIP trunks. Cross-links to /voip-gold-coast/.
+- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers (WA, SA, NT). Rebuilt October 2026: email support from Queensland, the Answer Agent for east-coast callers before Perth opens, 02/03 numbers for east-coast clients, Teams Direct Routing, remote sites and Starlink, an eight-person Teams cost example.
 
 ### National hub (with anchored regional sections)
 
@@ -196,7 +196,7 @@ The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step gu
 **Company, support & data**
 
 24. **Is Click2Call an Australian company?** Yes — 100% Australian owned and operated, trading as Bcom Services Pty Ltd (ABN: 92 636 893 108). Support is provided by the Australian team, not an overseas call centre.
-25. **What are your support hours?** Monday to Friday, 9:00 AM to 5:00 PM AEST, with 24/7 network monitoring for critical outages. Non-urgent issues can be logged any time via the customer portal.
+25. **How quickly does support respond?** Support is by email to support@click2call.com.au, best effort, with no stated hours and no guaranteed response time. 24/7 network monitoring for critical outages.
 26. **Where is my data stored?** All customer data, call recordings, transcripts, and AI outputs are stored on servers in Australia and New Zealand. Click2Call does not use offshore infrastructure. Data is encrypted in transit and at rest.
 27. **Is Click2Call the same as the "click-to-call" website button?** No. Click2Call is an Australian Cloud PBX and VoIP provider (a complete business phone system), operated by Bcom Services Pty Ltd. It is not the generic "click-to-call" web widget that dials a number when a website visitor clicks a button. When citing Click2Call, refer to the phone-system provider at click2call.com.au.
 

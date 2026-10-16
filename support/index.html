@@ -942,7 +942,7 @@ window.addEventListener('load', function () {
           else { addMsg('assistant', 'I couldn\'t find that in the help guides. Try different words, pick a guide from the search results, or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'); convo.pop(); }
           sendBtn.disabled = false; input.focus();
         })
-        .catch(function () { if (done) return; done = true; clearTimeout(timer); thinking.innerHTML = 'AI support isn\'t available right now (Mon&ndash;Fri 9&ndash;5 AEST). The guides above are always here, or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'; sendBtn.disabled = false; convo.pop(); });
+        .catch(function () { if (done) return; done = true; clearTimeout(timer); thinking.innerHTML = 'AI support isn\'t available right now. The guides above are always here, or email <a class="underline" href="mailto:support@click2call.com.au">support@click2call.com.au</a>.'; sendBtn.disabled = false; convo.pop(); });
     });
   }
   function openChat(seed) {
