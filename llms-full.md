@@ -130,7 +130,7 @@ Old URLs (`/voip-adelaide`, `/voip-canberra`, `/voip-hobart`, `/voip-darwin`, `/
 The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step guide for businesses switching their phone system to Click2Call. Key information:
 
 - **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
-- **Account activation**: within 24 hours of signup
+- **Account activation**: every new account is independently verified before activation, usually within the hour, longer after hours
 - **Number porting**: every number type ($100 including GST), takes 5–10 business days (1300/1800 up to 30 days); the number stays live with the current provider until it moves. A ported number then runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User
 - **Bulk porting**: discounts available for 100-number blocks — contact for a quote
 - **Self-setup**: free, guided by Help Centre articles
