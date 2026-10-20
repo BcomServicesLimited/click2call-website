@@ -1378,6 +1378,19 @@ document.addEventListener('DOMContentLoaded', function () {
       updateCalc(); calcUsed('stepper');
     });
   });
+  // A click on a stepper's label adds the first one (visitors expect the label to act, not just focus the box).
+  document.querySelectorAll('.q-l label[for^="calc-"]').forEach(function (lab) {
+    var el = document.getElementById(lab.getAttribute('for'));
+    if (!el || el.type !== 'number') return;
+    lab.addEventListener('click', function (e) {
+      e.preventDefault();
+      if ((parseInt(el.value, 10) || 0) === 0) {
+        el.value = 1;
+        if (el.id !== 'calc-users' && el.id !== 'calc-ports') document.getElementById('calc-extras').open = true;
+        updateCalc(); calcUsed('label');
+      }
+    });
+  });
   document.querySelectorAll('[data-porttype]').forEach(function (b) {
     b.addEventListener('click', function () { calcPortType = b.getAttribute('data-porttype'); updateCalc(); calcUsed('port-type'); });
   });
