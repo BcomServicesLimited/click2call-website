@@ -170,7 +170,7 @@ The API and webhooks are fully featured during the trial, with no trial-specific
 
 - •**API access** — the full JSON REST API. See the full API documentation in the client portal.
 - •**Webhooks** — every call state, including the `aianalysis` event that carries the transcript and AI call summary.
-- •**$11 of trial credit** — enough to activate one local number ($10) and make a few test calls. Inbound calls are free, so you can test incoming-call webhooks for the whole trial.
+- •**$11 + GST ($12.10) of trial credit** — enough to activate one local number ($10 + GST) and make a few test calls. Inbound calls are free, so you can test incoming-call webhooks for the whole trial.
 What the trial does not include: help configuring the API, webhooks or a third-party integration (configuration is self-service), and Microsoft Teams Direct Routing.
 
 ### How do I set up a webhook?
@@ -349,31 +349,31 @@ Your account is now active and ready to use. Follow the guides below to add your
 
 Source: https://www.click2call.com.au/help/understanding-your-free-trial
 
-Everything you need to know about your 7-day free trial, the $11 account credit, and what happens when the trial ends.
+Everything you need to know about your 7-day free trial, the $11 + GST account credit, and what happens when the trial ends.
 
 Quick Summary
 
-- Your account comes with **$11 free credit** automatically loaded.
+- Your account comes with **$11 + GST ($12.10) free credit** automatically loaded.
 
-- This covers the cost of one **local landline number ($10)** and leaves **$1 for test outbound calls**.
+- This covers the cost of one **local landline number ($10 + GST)** and leaves **$1 + GST ($1.10) for test outbound calls**.
 
 - Inbound calls are completely free.
 
 - No credit card is required to start the trial.
 
-### What the $11 credit covers
+### What the $11 + GST credit covers
 
-When you create a free Click2Call account, we automatically load it with $11 of credit. This credit is designed to let you test the system fully before committing.
+When you create a free Click2Call account, we automatically load it with $11 + GST ($12.10) of credit. This credit is designed to let you test the system fully before committing.
 
-The $11 is exactly enough to:
+The $11 + GST is exactly enough to:
 
-- **Activate one local regional landline number** (02, 03, 07, or 08) which costs $10 per month.
+- **Activate one local regional landline number** (02, 03, 07, or 08) which costs $10 + GST per month.
 
-- **Make a handful of test outbound calls** using the remaining $1 credit.
+- **Make a handful of test outbound calls** using the remaining $1 + GST credit.
 
 Because inbound calls are completely free, this setup gives you the full 7 days to add a number, set up an auto-attendant, register a softphone or desk phone, and test receiving calls without spending a cent.
 
-**Note on 1300/1800 numbers:** National 1300 and 1800 numbers cost more than local numbers and are not covered by the $11 trial credit. If you wish to test a 1300 number, you will need to add a credit card and top up your account balance.
+**Note on 1300/1800 numbers:** National 1300 and 1800 numbers cost more than local numbers and are not covered by the $11 + GST trial credit. If you wish to test a 1300 number, you will need to add a credit card and top up your account balance.
 
 ### What to do during your 7 days
 
@@ -385,19 +385,19 @@ To get the most out of your trial, we recommend following these steps:
 
 - **Test inbound calls:** Call your new Click2Call number from your mobile to ensure it rings your device.
 
-- **Test outbound calls:** Use your remaining $1 credit to make a few short test calls to your mobile.
+- **Test outbound calls:** Use your remaining $1 + GST credit to make a few short test calls to your mobile.
 
 - **Explore features:** Set up a voicemail greeting, create a ring group, or build an auto-attendant menu.
 
 ### Testing with your team, including staff overseas
 
-The $11 credit covers one local number and a few test calls. To try the system with several people, top up your credit and add a Cloud PBX User ($25 a month ex GST) for each person who needs to make calls. Each one gets their own extension and can use the app.
+The $11 + GST credit covers one local number and a few test calls. To try the system with several people, top up your credit and add a Cloud PBX User ($25 a month ex GST) for each person who needs to make calls. Each one gets their own extension and can use the app.
 
 Staff overseas can join the test the same way. They install the app, sign in to their extension and take calls as if they were in Australia, and their outbound calls show your Australian number. There's no extra charge for using the app from another country. See [Setting up the apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
 
 ### What happens after the trial?
 
-At the end of the 7 days, or when your $11 credit runs out (whichever comes first), your outbound calling will be suspended until you add a payment method and top up your account.
+At the end of the 7 days, or when your $11 + GST credit runs out (whichever comes first), your outbound calling will be suspended until you add a payment method and top up your account.
 
 #### Building your setup after the trial
 
@@ -415,7 +415,7 @@ Ready to keep it? Here’s what to do before your 7 days are up.
 
 [#### Add a card and credit
 
-Outbound calls stop at day 7, or sooner if the $11 runs out](https://www.click2call.com.au/help/how-to-add-account-credit)
+Outbound calls stop at day 7, or sooner if the $11 + GST runs out](https://www.click2call.com.au/help/how-to-add-account-credit)
 [#### Keep your existing number
 
 Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
@@ -441,11 +441,11 @@ Getting Started
 
 Before you can make an outbound call with Click2Call, you need two things: a **phone number** on your account (so you have a caller ID to display) and a **registered device** to dial from. This guide walks you through both steps and covers all three ways to make calls — softphone app, SIP desk phone, or diverting to your mobile.
 
-Last reviewed: August 2026
+Last reviewed: October 2026
 
-Your 7-day trial includes $11 credit and 10 test calls
+Your 7-day trial includes $11 + GST credit and 10 test calls
 
-New accounts are loaded with $11 credit automatically — enough to make your first test calls without adding a payment method. Outbound calls to Australian mobiles and landlines are charged at standard per-minute rates.
+New accounts are loaded with $11 + GST ($12.10) credit automatically — enough to make your first test calls without adding a payment method. Outbound calls to Australian mobiles and landlines are charged at standard per-minute rates.
 
 ### What you need before making a call
 
@@ -523,7 +523,7 @@ Open your softphone app or pick up your desk phone. Dial any Australian number �
 
 | International | + [country code] [number] | +64 9 000 0000 |
 
-**Tip:** Your trial account includes $11 credit. A call to an Australian mobile costs approximately $0.09/min, so you have around 120 minutes of test calls available. Check your balance at any time in the portal under **Account → Summary**.
+**Tip:** Your trial account includes $11 + GST ($12.10) credit. A call to an Australian mobile costs approximately $0.09/min, so you have around 120 minutes of test calls available. Check your balance at any time in the portal under **Account → Summary**.
 
 ### Troubleshooting
 
@@ -5485,8 +5485,10 @@ Last reviewed: October 2026
 | Plan | Price | What it’s for |
 | Cloud PBX User | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
 | Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
-| Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. |
+| Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: an Inbound Business Number can’t be used with Teams. Teams setup is $50 + GST ($55.00) per user. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
+
+New 04 mobile numbers cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand. This can take up to 24 hours, and we email you when the number is active.
 
 When you add a number partway through a month, you first pay for the part of the month that is left. After that it is charged in full each month.
 
