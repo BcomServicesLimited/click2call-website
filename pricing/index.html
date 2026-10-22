@@ -12,7 +12,7 @@
 <link as="image" fetchpriority="high" href="/assets/images/click2call_header_logo_transparent.webp" rel="preload"/>
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=39d66cb806">
 <link href="/assets/css/brand.css?v=3912708188" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/css/home-v2.css?v=cf84e18a18">
+<link rel="stylesheet" href="/assets/css/home-v2.css?v=6604580530">
 <script defer="" src="/assets/js/alpine.min.js?v=358d9afbb1"></script>
 <!-- Favicon -->
 <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
@@ -706,46 +706,50 @@
         <button type="button" data-preset="office">Small office</button>
         <button type="button" data-preset="team">Growing team</button>
       </div>
-      <h3 class="calc-h3">Section 1 — How will you use it?</h3>
-      <div class="radios modes" role="group" aria-label="How will you use Click2Call">
-        <label class="radio mode"><input type="radio" name="calc-mode" value="receive" checked><span><b>Just receive calls on my business number</b> <em>$10/month</em><small>Answer in the free Click2Call app on your mobile or laptop: incoming calls cost nothing. Keep making calls from your own mobile, or call out from the app showing this number at 10c a minute to landlines and 20c to mobiles. Most common choice.</small></span></label>
-        <label class="radio mode"><input type="radio" name="calc-mode" value="both"><span><b>Make and receive calls through Click2Call</b> <em>$25/user/month</em><small>Each person gets a line with 300 outbound minutes, and calls out show your business number.</small></span></label>
-      </div>
-      <label class="radio fwd" id="calc-fwd-row"><input type="checkbox" id="calc-fwd"><span><b>Forward calls to my mobile number instead of the app</b><small>Rings your normal mobile without data. Each forwarded call is billed as an outbound call: 20c a minute to mobiles, since the $10 number has no included minutes.</small></span></label>
-      <h3 class="calc-h3">Section 2 — Monthly subscription</h3>
-      <div class="q" id="calc-numbers-row">
-        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Unlimited incoming calls, voicemail to email and the AI Receptionist. No included minutes: extensions can call out on a local number at standard rates. One new local number is already included with each Cloud PBX user. New local numbers are free to add; a new 04 mobile number adds a one-off $50 inc GST allocation fee, and a new 1300 or 1800 adds $100 inc GST.</p>
-          <div class="seg" role="group" aria-label="Type of new number"><button type="button" data-numtype="local" aria-pressed="true">Local</button><button type="button" data-numtype="mobile" aria-pressed="false">04 mobile</button><button type="button" data-numtype="1300" aria-pressed="false">1300</button><button type="button" data-numtype="1800" aria-pressed="false">1800</button></div>
-        </div>
-        <div class="stepper"><button type="button" data-step="calc-local:-1" aria-label="One fewer number">&minus;</button><input id="calc-local" type="number" inputmode="numeric" min="0" max="100" value="1"><button type="button" data-step="calc-local:1" aria-label="One more number">+</button></div>
-      </div>
-      <div class="q" id="calc-users-row" hidden>
-        <div class="q-l"><label for="calc-users">Cloud PBX Users — $25/user/month</label><p class="hint">Each user includes 1 local number + 300 outbound minutes per month</p></div>
-        <div class="stepper"><button type="button" data-step="calc-users:-1" aria-label="One fewer user">&minus;</button><input id="calc-users" type="number" inputmode="numeric" min="0" max="500" value="0"><button type="button" data-step="calc-users:1" aria-label="One more user">+</button></div>
+      <h3 class="calc-h3">Step 1 — Your business number</h3>
+      <div class="radios two" role="group" aria-label="New number or keep your own">
+        <label class="radio mode"><input type="radio" name="calc-src" value="new" checked><span><b>Get a new number</b><small>Most people start here. Pick the kind of number below.</small></span></label>
+        <label class="radio mode"><input type="radio" name="calc-src" value="keep"><span><b>Keep a number I already have</b><small>We move it across for $100 inc GST, once. It keeps working while it moves.</small></span></label>
       </div>
       <div class="q">
-        <div class="q-l"><label for="calc-ports">Numbers you're bringing across</label><p class="hint">$100 one-time port each (inc GST). Each one runs on its own $10/month number plan. Your number keeps working while it moves. A ported 04 mobile leaves the mobile network, so its SIM stops working.</p>
-          <div class="seg" role="group" aria-label="Type of number"><button type="button" data-porttype="local" aria-pressed="true">Local</button><button type="button" data-porttype="mobile" aria-pressed="false">04 mobile</button><button type="button" data-porttype="1300" aria-pressed="false">1300</button><button type="button" data-porttype="1800" aria-pressed="false">1800</button></div>
+        <div class="q-l"><p class="x-h">What kind of number?</p>
+          <div class="seg types" role="group" aria-label="Kind of number">
+            <button type="button" data-ntype="local" aria-pressed="true">Local<small data-fee="local">Free to set up</small></button>
+            <button type="button" data-ntype="mobile" aria-pressed="false">04 mobile<small data-fee="mobile">+$50 once</small></button>
+            <button type="button" data-ntype="1300" aria-pressed="false">1300<small data-fee="1300">+$100 once</small></button>
+            <button type="button" data-ntype="1800" aria-pressed="false">1800<small data-fee="1800">+$100 once</small></button>
+          </div>
+          <p class="hint type-note" id="calc-type-note">A local 02, 03, 07 or 08 number. Free to set up, then $10 a month.</p>
         </div>
-        <div class="stepper"><button type="button" data-step="calc-ports:-1" aria-label="One fewer number">&minus;</button><input id="calc-ports" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-ports:1" aria-label="One more number">+</button></div>
       </div>
+
+      <h3 class="calc-h3">Step 2 — Who makes calls?</h3>
+      <div class="radios" role="group" aria-label="Who makes calls">
+        <label class="radio mode"><input type="radio" name="calc-mode" value="receive" checked><span><b>I just need to answer calls</b> <em>$10/month</em><small>The number on its own. Answer in the free Click2Call app on your mobile or laptop: incoming calls are free. Call out from the app at 10c a minute to landlines and 20c to mobiles, or keep using your own mobile.</small></span></label>
+        <label class="radio mode"><input type="radio" name="calc-mode" value="both"><span><b>Staff with their own calling line</b> <em>$25/person/month</em><small>Each person gets 300 outbound minutes a month and calls out showing your business number.</small></span></label>
+      </div>
+      <label class="radio fwd" id="calc-fwd-row"><input type="checkbox" id="calc-fwd"><span><b>Ring my normal mobile instead of the app</b><small>Works without mobile data. Each forwarded call costs 20c a minute, because the $10 number has no included minutes.</small></span></label>
+      <div class="q" id="calc-users-row" hidden>
+        <div class="q-l"><label for="calc-users">How many people make calls?</label><p class="hint" id="calc-users-note">Your business number becomes the first person&rsquo;s line, so it isn&rsquo;t charged separately. Each extra person gets their own local number.</p></div>
+        <div class="stepper"><button type="button" data-step="calc-users:-1" aria-label="One fewer person">&minus;</button><input id="calc-users" type="number" inputmode="numeric" min="1" max="500" value="1"><button type="button" data-step="calc-users:1" aria-label="One more person">+</button></div>
+      </div>
+
       <details class="extras" id="calc-extras">
-        <summary>Add extras: 1300/1800 numbers, desk phones and setup</summary>
+        <summary>Optional: more numbers, desk phones and setup help</summary>
         <div class="x">
           <p class="x-h">More new numbers — $10/month each</p>
-          <p class="hint">New numbers only. Numbers you're bringing across are counted above.</p>
-          <div class="q sm"><div class="q-l"><label for="calc-1300">1300 numbers</label><p class="hint">National. Caller pays local rate</p></div><div class="stepper"><button type="button" data-step="calc-1300:-1" aria-label="One fewer 1300 number">&minus;</button><input id="calc-1300" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-1300:1" aria-label="One more 1300 number">+</button></div></div>
-          <div class="q sm"><div class="q-l"><label for="calc-1800">1800 numbers</label><p class="hint">Toll-free. You pay $0.20/min inbound</p></div><div class="stepper"><button type="button" data-step="calc-1800:-1" aria-label="One fewer 1800 number">&minus;</button><input id="calc-1800" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-1800:1" aria-label="One more 1800 number">+</button></div></div>
-          <h3 class="calc-h3">Section 2 — One-time upfront costs (optional)</h3>
-          <p class="x-h">System setup</p>
+          <div class="q sm"><div class="q-l"><label for="calc-xlocal">Extra local numbers</label><p class="hint">Free to set up</p></div><div class="stepper"><button type="button" data-step="calc-xlocal:-1" aria-label="One fewer local number">&minus;</button><input id="calc-xlocal" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-xlocal:1" aria-label="One more local number">+</button></div></div>
+          <div class="q sm"><div class="q-l"><label for="calc-1300">Extra 1300 numbers</label><p class="hint">Caller pays a local rate. $100 inc GST once to set up</p></div><div class="stepper"><button type="button" data-step="calc-1300:-1" aria-label="One fewer 1300 number">&minus;</button><input id="calc-1300" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-1300:1" aria-label="One more 1300 number">+</button></div></div>
+          <div class="q sm"><div class="q-l"><label for="calc-1800">Extra 1800 numbers</label><p class="hint">Free for callers; you pay 20c a minute. $100 inc GST once to set up</p></div><div class="stepper"><button type="button" data-step="calc-1800:-1" aria-label="One fewer 1800 number">&minus;</button><input id="calc-1800" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-1800:1" aria-label="One more 1800 number">+</button></div></div>
+          <p class="x-h">Setup</p>
           <div class="radios">
-            <label class="radio"><input type="radio" id="calc-setup-self" name="calc-setup" value="self" checked> Self-setup via Help Centre (Free)</label>
-            <label class="radio"><input type="radio" id="calc-setup-managed" name="calc-setup" value="managed"> Managed Setup (from $300 + GST)</label>
+            <label class="radio"><input type="radio" id="calc-setup-self" name="calc-setup" value="self" checked> I&rsquo;ll set it up myself with the help guides (free)</label>
+            <label class="radio"><input type="radio" id="calc-setup-managed" name="calc-setup" value="managed"> Set it up for me (from $300 + GST)</label>
           </div>
-          <p class="x-h">Hardware</p>
+          <p class="x-h">Desk phones</p>
           <div class="q sm"><div class="q-l"><label for="calc-desk">Yealink T43U desk phones — $450 each</label><p class="hint">Includes config &amp; postage</p></div><div class="stepper"><button type="button" data-step="calc-desk:-1" aria-label="One fewer desk phone">&minus;</button><input id="calc-desk" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-desk:1" aria-label="One more desk phone">+</button></div></div>
           <div class="q sm"><div class="q-l"><label for="calc-cordless">Yealink W76P cordless — $400 each</label><p class="hint">Includes config &amp; postage</p></div><div class="stepper"><button type="button" data-step="calc-cordless:-1" aria-label="One fewer cordless phone">&minus;</button><input id="calc-cordless" type="number" inputmode="numeric" min="0" max="100" value="0"><button type="button" data-step="calc-cordless:1" aria-label="One more cordless phone">+</button></div></div>
-          <div class="q sm soft-row"><div class="q-l"><p class="x-h">Softphone users</p><p class="hint">Free — PC &amp; mobile app</p></div></div>
+          <div class="q sm soft-row"><div class="q-l"><p class="x-h">The Click2Call app</p><p class="hint">Free on PC, Mac, iPhone and Android</p></div></div>
         </div>
       </details>
       <div class="rec" id="smart-rec" hidden>
@@ -758,16 +762,16 @@
       <h3>Your estimated costs</h3>
       <div class="r-today"><span>Today</span><b>$0 &middot; free 7-day trial</b></div>
       <p class="r-k">Monthly</p>
-      <div id="r-monthly"><div class="r-line"><span>Local numbers (1 &times; $10)</span><b>$10.00</b></div><div class="r-line note"><span>Incoming calls in the app</span><b>Free</b></div></div>
+      <div id="r-monthly"><div class="r-line"><span>Your new local number</span><b>$10.00</b></div><div class="r-line note"><span>Incoming calls in the app</span><b>Free</b></div></div>
       <div class="r-line sub"><span>Subtotal ex GST</span><b id="r-mo-sub">$10.00</b></div>
       <div class="r-line sub"><span>GST (10%)</span><b id="r-mo-gst">$1.00</b></div>
       <div class="r-line total"><span>Monthly total inc GST</span><b id="r-mo-total">$11.00</b></div>
-      <p class="r-k">One-time upfront</p>
-      <div id="r-upfront"><p class="r-zero">No upfront costs selected</p></div>
+      <p class="r-k">One-off (charged once)</p>
+      <div id="r-upfront"><div class="r-line"><span>Setting up a new local number</span><b>Free</b></div></div>
       <div id="r-up-totals" hidden>
         <div class="r-line sub"><span>Subtotal ex GST</span><b id="r-up-sub">$0.00</b></div>
         <div class="r-line sub"><span>GST (10%)</span><b id="r-up-gst">$0.00</b></div>
-        <div class="r-line total"><span>Upfront total inc GST</span><b id="r-up-total">$0.00</b></div>
+        <div class="r-line total"><span>One-off total inc GST</span><b id="r-up-total">$0.00</b></div>
       </div>
       <p class="r-note" id="setup-cost-note" hidden></p>
       <div class="r-btns">
@@ -834,19 +838,21 @@
 
 <script>
 // ── CALCULATOR STATE ──────────────────────────────────────────────────────────
-// calcState keeps the shape generateQuote() and the Formspree payload expect.
-// Numbers brought across (ported) each run on their own $10 number plan, so they
-// count as numbers of their type plus a port.
+// Step 1 picks the business number (new or kept, and its kind); step 2 picks who
+// makes calls. calcState keeps the shape generateQuote() and the Formspree
+// payload expect. Fees: new local free, new 04 mobile $50 inc GST, new 1300/1800
+// $100 inc GST, moving (porting) any number $100 inc GST.
 var calcState = {
-  users: 1, local: 0, mobile: 0, n1300: 0, n1800: 0,
+  users: 0, local: 1, mobile: 0, n1300: 0, n1800: 0,
   portLocal: 0, port1300: 0, portMobile: 0, mobileNew: 0, alloc: 0,
   setup: 'self',
   desk: 0, cordless: 0, softphone: 0
 };
-var calcPortType = 'local';
+var calcSrc = 'new';
+var calcType = 'local';
 var calcRecDismissed = false;
-var calcNumType = 'local';
 var calcUsedSent = false;
+var CALC_TYPE_NAME = { local: 'local number', mobile: '04 mobile number', '1300': '1300 number', '1800': '1800 number' };
 
 function fmt(n) { return '$' + n.toFixed(2); }
 function calcNum(id) {
@@ -861,110 +867,133 @@ function calcLine(label, value, cls) {
 }
 
 function updateCalc() {
-  var users    = calcNum('calc-users');
-  var ports    = calcNum('calc-ports');
-  var newLocal = calcNum('calc-local');
-  var new1300  = calcNum('calc-1300');
-  var new1800  = calcNum('calc-1800');
-  var desk     = calcNum('calc-desk');
-  var cordless = calcNum('calc-cordless');
-  var setupEl  = document.querySelector('input[name="calc-setup"]:checked');
-  var setup    = setupEl ? setupEl.value : 'self';
-
-  var newMain = newLocal; newLocal = calcNumType === 'local' ? newMain : 0;
-  var newMobile = calcNumType === 'mobile' ? newMain : 0;
-  var portMobile = calcPortType === 'mobile' ? ports : 0;
-  var mobileAll = newMobile + portMobile;
-  new1300 += calcNumType === '1300' ? newMain : 0;
-  new1800 += calcNumType === '1800' ? newMain : 0;
-  var local = newLocal + (calcPortType === 'local' ? ports : 0);
-  var n1300 = new1300 + (calcPortType === '1300' ? ports : 0);
-  var n1800 = new1800 + (calcPortType === '1800' ? ports : 0);
   var mode = (document.querySelector('input[name="calc-mode"]:checked') || {}).value || 'receive';
+  calcSrc = (document.querySelector('input[name="calc-src"]:checked') || {}).value || 'new';
+  var isNew = calcSrc === 'new', t = calcType, inboundOnly = (t === '1300' || t === '1800');
+  var users = mode === 'both' ? Math.max(1, calcNum('calc-users')) : 0;
+  var xLocal = calcNum('calc-xlocal'), x1300 = calcNum('calc-1300'), x1800 = calcNum('calc-1800');
+  var desk = calcNum('calc-desk'), cordless = calcNum('calc-cordless');
+  var setupEl = document.querySelector('input[name="calc-setup"]:checked');
+  var setup = setupEl ? setupEl.value : 'self';
   var fwd = mode === 'receive' && document.getElementById('calc-fwd').checked;
+
   document.getElementById('calc-users-row').hidden = mode !== 'both';
   document.getElementById('calc-fwd-row').hidden = mode !== 'receive';
-  var portLocal = calcPortType === 'local' ? ports : 0;
-  var port1300  = (calcPortType === '1300' || calcPortType === '1800') ? ports : 0;
 
-  calcState = { users: users, local: local, mobile: mobileAll, mobileNew: newMobile, portMobile: portMobile, n1300: n1300, n1800: n1800, portLocal: portLocal, port1300: port1300, alloc: new1300 + new1800, setup: setup, desk: desk, cordless: cordless, softphone: 0 };
+  // The business number is charged $10 on its own, unless it becomes the first
+  // person's $25 line (local or mobile only; 1300/1800 can't make calls).
+  var mainOwnPlan = mode === 'receive' || inboundOnly;
+  var name = CALC_TYPE_NAME[t];
+  var nameFull = (isNew ? 'Your new ' : 'Your existing ') + name;
+
+  calcState = {
+    users: users,
+    local: (t === 'local' && mainOwnPlan ? 1 : 0) + xLocal,
+    mobile: (t === 'mobile' && mainOwnPlan ? 1 : 0),
+    mobileNew: (isNew && t === 'mobile') ? 1 : 0,
+    n1300: (t === '1300' ? 1 : 0) + x1300,
+    n1800: (t === '1800' ? 1 : 0) + x1800,
+    portLocal: (!isNew && t === 'local') ? 1 : 0,
+    portMobile: (!isNew && t === 'mobile') ? 1 : 0,
+    port1300: (!isNew && inboundOnly) ? 1 : 0,
+    alloc: (isNew && inboundOnly ? 1 : 0) + x1300 + x1800,
+    setup: setup, desk: desk, cordless: cordless, softphone: 0
+  };
 
   // ── Monthly ──
-  var moUsers = users * 25, moLocal = local * 10, moMobile = mobileAll * 10, mo1300 = n1300 * 10, mo1800 = n1800 * 10;
-  var moSub = moUsers + moLocal + moMobile + mo1300 + mo1800;
+  var moMain = mainOwnPlan ? 10 : 0, moUsers = users * 25, moX = (xLocal + x1300 + x1800) * 10;
+  var moSub = moMain + moUsers + moX;
   var moGst = moSub * 0.10, moTotal = moSub + moGst;
   var m = '';
-  if (users > 0) m += calcLine('Cloud PBX Users (' + users + ' &times; $25)', fmt(moUsers));
-  var incl = function (k) { return k > 0 ? ', incl. ' + k + ' brought across' : ''; };
-  if (local > 0) m += calcLine('Local numbers (' + local + ' &times; $10' + incl(portLocal) + ')', fmt(moLocal));
-  if (mobileAll > 0) m += calcLine('04 mobile numbers (' + mobileAll + ' &times; $10' + incl(portMobile) + ')', fmt(moMobile));
-  if (n1300 > 0) m += calcLine('1300 numbers (' + n1300 + ' &times; $10' + incl(calcPortType === '1300' ? ports : 0) + ')', fmt(mo1300));
-  if (n1800 > 0) m += calcLine('1800 numbers (' + n1800 + ' &times; $10' + incl(calcPortType === '1800' ? ports : 0) + ')', fmt(mo1800));
+  if (mainOwnPlan) m += calcLine(nameFull, fmt(10));
+  if (users > 0) m += calcLine((users === 1 ? '1 calling line' : users + ' calling lines') + ' (' + users + ' &times; $25)' + (mainOwnPlan ? '' : ', the first uses your ' + name), fmt(moUsers));
+  if (xLocal > 0) m += calcLine('Extra local numbers (' + xLocal + ' &times; $10)', fmt(xLocal * 10));
+  if (x1300 > 0) m += calcLine('Extra 1300 numbers (' + x1300 + ' &times; $10)', fmt(x1300 * 10));
+  if (x1800 > 0) m += calcLine('Extra 1800 numbers (' + x1800 + ' &times; $10)', fmt(x1800 * 10));
   if (users > 0) m += calcLine('Included outbound minutes', (users * 300).toLocaleString() + ' mins', 'note');
-  if (mode === 'receive' && users === 0) m += calcLine(fwd ? 'Calls forwarded to your mobile' : 'Incoming calls in the app', fwd ? '20c/min' : 'Free', 'note');
-  if (mode === 'receive' && users === 0 && !fwd) m += calcLine('Outgoing calls', 'From your own mobile', 'note');
-  if (!m) m = '<p class="r-zero">Add a user or a number to see a monthly price</p>';
+  if (inboundOnly) m += calcLine('Calls into your ' + name, '20c/min', 'note');
+  else if (x1300 + x1800 > 0) m += calcLine('Calls into a 1300 or 1800 number', '20c/min', 'note');
+  if (mode === 'receive' && !inboundOnly) m += calcLine('Incoming calls in the app', 'Free', 'note');
+  if (fwd) m += calcLine('Calls forwarded to your mobile', '20c/min', 'note');
+  if (mode === 'receive' && !inboundOnly) m += calcLine('Calls out from the app', '10c/20c per min', 'note');
+  if (mode === 'receive' && inboundOnly) m += calcLine('Calls out', 'Add a calling line in step 2', 'note');
   document.getElementById('r-monthly').innerHTML = m;
   document.getElementById('r-mo-sub').textContent = fmt(moSub);
   document.getElementById('r-mo-gst').textContent = fmt(moGst);
   document.getElementById('r-mo-total').textContent = fmt(moTotal);
 
-  // ── One-time upfront ──
-  var upPortLocal = portLocal * 90.91, upPort1300 = port1300 * 90.91, upPortMobile = portMobile * 90.91;
-  var upSetup = 0;
-  if (setup === 'managed' && users > 0) upSetup = users <= 3 ? 300 : 300 + (users - 3) * 50;
+  // ── One-off ──
+  var feeMain = 0, feeLabel;
+  if (!isNew) { feeMain = 100 / 1.1; feeLabel = 'Moving your existing ' + name + ' across'; }
+  else if (t === 'mobile') { feeMain = 50 / 1.1; feeLabel = 'New 04 mobile number (allocation fee)'; }
+  else if (inboundOnly) { feeMain = 100 / 1.1; feeLabel = 'New ' + name + ' (allocation fee)'; }
+  else { feeLabel = 'Setting up a new local number'; }
+  var upX = (x1300 + x1800) * 100 / 1.1;
+  var setupUsers = Math.max(1, users);
+  var upSetup = setup === 'managed' ? (setupUsers <= 3 ? 300 : 300 + (setupUsers - 3) * 50) : 0;
   var upDesk = desk * 450, upCordless = cordless * 400;
-  var upAlloc = (new1300 + new1800) * 90.91;
-  var upAllocMobile = newMobile * 50 / 1.1;
-  var upSub = upPortLocal + upPortMobile + upPort1300 + upAlloc + upAllocMobile + upSetup + upDesk + upCordless;
+  var upSub = feeMain + upX + upSetup + upDesk + upCordless;
   var upGst = upSub * 0.10, upTotal = upSub + upGst;
-  var u = '';
-  if (portLocal > 0) u += calcLine('Port local numbers (' + portLocal + ' &times; $90.91)', fmt(upPortLocal));
-  if (portMobile > 0) u += calcLine('Port 04 mobile numbers (' + portMobile + ' &times; $90.91)', fmt(upPortMobile));
-  if (port1300 > 0)  u += calcLine('Port 1300/1800 (' + port1300 + ' &times; $90.91)', fmt(upPort1300));
-  if (upAlloc > 0)   u += calcLine('New 1300/1800 allocation (' + (new1300 + new1800) + ' &times; $90.91)', fmt(upAlloc));
-  if (upAllocMobile > 0) u += calcLine('New 04 mobile allocation (' + newMobile + ' &times; $45.45)', fmt(upAllocMobile));
-  if (upSetup > 0)   u += calcLine(users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + users + ' users)', fmt(upSetup));
-  if (desk > 0)      u += calcLine('Yealink T43U (' + desk + ' &times; $450)', fmt(upDesk));
-  if (cordless > 0)  u += calcLine('Yealink W76P (' + cordless + ' &times; $400)', fmt(upCordless));
-  document.getElementById('r-upfront').innerHTML = u || '<p class="r-zero">No upfront costs selected</p>';
+  var u = calcLine(feeLabel, feeMain > 0 ? fmt(feeMain) : 'Free');
+  if (!isNew && t === 'mobile') u += calcLine('Note: a moved 04 mobile leaves the mobile network, so its SIM stops working', '', 'note');
+  if (x1300 + x1800 > 0) u += calcLine('Extra 1300/1800 numbers (' + (x1300 + x1800) + ' &times; $90.91)', fmt(upX));
+  if (upSetup > 0) u += calcLine(setupUsers <= 3 ? 'Setup done for you (up to 3 people)' : 'Setup done for you (' + setupUsers + ' people)', fmt(upSetup));
+  if (desk > 0) u += calcLine('Yealink T43U (' + desk + ' &times; $450)', fmt(upDesk));
+  if (cordless > 0) u += calcLine('Yealink W76P (' + cordless + ' &times; $400)', fmt(upCordless));
+  document.getElementById('r-upfront').innerHTML = u;
   document.getElementById('r-up-totals').hidden = !(upSub > 0);
   document.getElementById('r-up-sub').textContent = fmt(upSub);
   document.getElementById('r-up-gst').textContent = fmt(upGst);
   document.getElementById('r-up-total').textContent = fmt(upTotal);
   var note = document.getElementById('setup-cost-note');
-  if (setup === 'managed' && users > 0) {
+  if (setup === 'managed') {
     note.hidden = false;
-    note.textContent = users <= 3 ? 'Flat rate for up to 3 users: $300 ex GST' : 'Base $300 + ' + (users - 3) + ' additional user(s) at $50 each = $' + upSetup.toFixed(2) + ' ex GST';
+    note.textContent = setupUsers <= 3 ? 'Flat rate for up to 3 people: $300 ex GST' : 'Base $300 + ' + (setupUsers - 3) + ' more people at $50 each = $' + upSetup.toFixed(2) + ' ex GST';
   } else {
     note.hidden = true;
   }
+
+  // ── Step 1 labels: what each kind of number costs to start ──
+  var fees = isNew ? { local: 'Free to set up', mobile: '+$50 once', '1300': '+$100 once', '1800': '+$100 once' }
+                   : { local: '+$100 once', mobile: '+$100 once', '1300': '+$100 once', '1800': '+$100 once' };
+  document.querySelectorAll('[data-fee]').forEach(function (el) { el.textContent = fees[el.getAttribute('data-fee')]; });
+  var notes = {
+    'new-local': 'A local 02, 03, 07 or 08 number. Free to set up, then $10 a month.',
+    'new-mobile': 'A new Australian 04 mobile number, which can also send and receive texts. $50 inc GST once, then $10 a month. No SIM card: it works in the app.',
+    'new-1300': 'A national 1300 number; callers pay a local rate. $100 inc GST once, then $10 a month plus 20c a minute for calls in. Receives calls only.',
+    'new-1800': 'A toll-free 1800 number. $100 inc GST once, then $10 a month plus 20c a minute for calls in. Receives calls only.',
+    'keep-local': 'Your existing local number moves across for $100 inc GST once, then $10 a month. Usually 5 to 10 business days.',
+    'keep-mobile': 'Your existing mobile number moves across for $100 inc GST once, then $10 a month. Once moved, its SIM card stops working.',
+    'keep-1300': 'Your existing 1300 number moves across for $100 inc GST once, then $10 a month. Can take up to 30 days.',
+    'keep-1800': 'Your existing 1800 number moves across for $100 inc GST once, then $10 a month. Can take up to 30 days.'
+  };
+  document.getElementById('calc-type-note').textContent = notes[calcSrc + '-' + t];
+  document.getElementById('calc-users-note').textContent = inboundOnly
+    ? 'Your ' + name + ' stays on its own $10 plan and rings your staff. Each person also gets their own local number.'
+    : 'Your business number becomes the first person’s line, so it isn’t charged separately. Each extra person gets their own local number.';
 
   // ── Phone total bar ──
   document.getElementById('bar-mo').textContent = fmt(moTotal);
   document.getElementById('bar-up').textContent = upTotal > 0 ? '+ ' + fmt(upTotal) + ' once' : '';
 
-  // ── Steppers ──
+  // ── Steppers and toggles ──
   document.querySelectorAll('[data-step]').forEach(function (b) {
     var p = b.getAttribute('data-step').split(':'), el = document.getElementById(p[0]);
-    var v = parseInt(el.value, 10) || 0, max = parseInt(el.getAttribute('max'), 10);
-    b.disabled = +p[1] < 0 ? v <= 0 : v >= max;
+    var v = parseInt(el.value, 10) || 0, max = parseInt(el.getAttribute('max'), 10), min = parseInt(el.getAttribute('min'), 10) || 0;
+    b.disabled = +p[1] < 0 ? v <= min : v >= max;
   });
-  document.querySelectorAll('[data-porttype]').forEach(function (b) {
-    b.setAttribute('aria-pressed', String(b.getAttribute('data-porttype') === calcPortType));
-  });
-  document.querySelectorAll('[data-numtype]').forEach(function (b) {
-    b.setAttribute('aria-pressed', String(b.getAttribute('data-numtype') === calcNumType));
+  document.querySelectorAll('[data-ntype]').forEach(function (b) {
+    b.setAttribute('aria-pressed', String(b.getAttribute('data-ntype') === t));
   });
 
   // ── Smart recommendation ──
-  var showRec = (users >= 5 || desk > 0 || cordless > 0 || n1300 > 0 || n1800 > 0 || port1300 > 0);
+  var showRec = (users >= 5 || desk > 0 || cordless > 0 || x1300 + x1800 > 0 || (!isNew && inboundOnly));
   var recEl = document.getElementById('smart-rec');
   if (showRec && setup === 'self' && !calcRecDismissed) {
     recEl.hidden = false;
-    var msg = 'This setup is getting more advanced — most customers choose Managed Setup for this.';
+    var msg = 'This setup is getting more advanced — most customers choose to have it set up for them.';
     if (desk > 0 || cordless > 0) msg = 'We can pre-configure your devices before delivery and handle the full setup for you.';
-    else if (port1300 > 0) msg = 'We can manage 1300/1800 porting and routing for you.';
+    else if (!isNew && inboundOnly) msg = 'We can manage 1300/1800 porting and routing for you.';
     else if (users >= 5) msg = 'Recommended for teams — we can handle the full setup for you.';
     document.getElementById('smart-rec-msg').textContent = msg;
   } else {
@@ -975,7 +1004,7 @@ function updateCalc() {
   var match = null;
   Object.keys(CALC_PRESETS).forEach(function (k) {
     var p = CALC_PRESETS[k];
-    if (p.mode === mode && p.users === users && p.ports === ports && p.local === newMain && p.n1300 === new1300 - (calcNumType === '1300' ? newMain : 0) && p.n1800 === new1800 - (calcNumType === '1800' ? newMain : 0) && desk === 0 && cordless === 0 && calcNumType === 'local' && (ports === 0 || calcPortType === 'local')) match = k;
+    if (p.src === calcSrc && p.type === t && p.mode === mode && (mode === 'receive' || p.users === users) && xLocal + x1300 + x1800 + desk + cordless === 0) match = k;
   });
   document.querySelectorAll('.chips [data-preset]').forEach(function (b) {
     b.setAttribute('aria-pressed', String(b.getAttribute('data-preset') === match));
@@ -983,10 +1012,10 @@ function updateCalc() {
 }
 
 var CALC_PRESETS = {
-  solo:   { mode: 'receive', users: 0, ports: 0, local: 1, n1300: 0, n1800: 0 },
-  number: { mode: 'receive', users: 0, ports: 1, local: 0, n1300: 0, n1800: 0 },
-  office: { mode: 'both', users: 3, ports: 1, local: 0, n1300: 0, n1800: 0 },
-  team:   { mode: 'both', users: 5, ports: 0, local: 1, n1300: 0, n1800: 0 }
+  solo:   { src: 'new',  type: 'local', mode: 'receive', users: 0 },
+  number: { src: 'keep', type: 'local', mode: 'receive', users: 0 },
+  office: { src: 'keep', type: 'local', mode: 'both',    users: 3 },
+  team:   { src: 'new',  type: 'local', mode: 'both',    users: 5 }
 };
 function calcUsed(how) {
   if (calcUsedSent || typeof gtag !== 'function') return;
@@ -996,20 +1025,15 @@ function calcUsed(how) {
 function applyPreset(name, scroll) {
   var p = CALC_PRESETS[name];
   if (!p) return;
+  document.querySelector('input[name="calc-src"][value="' + p.src + '"]').checked = true;
   document.querySelector('input[name="calc-mode"][value="' + p.mode + '"]').checked = true;
   document.getElementById('calc-fwd').checked = false;
-  calcNumType = 'local';
-  document.getElementById('calc-users').value = p.users;
-  document.getElementById('calc-ports').value = p.ports;
-  document.getElementById('calc-local').value = p.local;
-  document.getElementById('calc-1300').value = p.n1300;
-  document.getElementById('calc-1800').value = p.n1800;
-  document.getElementById('calc-desk').value = 0;
-  document.getElementById('calc-cordless').value = 0;
-  calcPortType = 'local';
+  calcType = p.type;
+  document.getElementById('calc-users').value = Math.max(1, p.users);
+  ['calc-xlocal', 'calc-1300', 'calc-1800', 'calc-desk', 'calc-cordless'].forEach(function (id) { document.getElementById(id).value = 0; });
   document.getElementById('calc-setup-self').checked = true;
   calcRecDismissed = false;
-  document.getElementById('calc-extras').open = p.n1300 > 0 || p.n1800 > 0;
+  document.getElementById('calc-extras').open = false;
   updateCalc();
   if (typeof gtag === 'function') gtag('event', 'calculator_preset', { 'event_category': 'Calculator', 'event_label': name });
   calcUsed('preset');
@@ -1381,7 +1405,7 @@ function generateQuoteLazy() {
 
 // ── INIT ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function () {
-  ['calc-users', 'calc-ports', 'calc-local', 'calc-1300', 'calc-1800', 'calc-desk', 'calc-cordless'].forEach(function (id) {
+  ['calc-users', 'calc-xlocal', 'calc-1300', 'calc-1800', 'calc-desk', 'calc-cordless'].forEach(function (id) {
     var el = document.getElementById(id);
     el.addEventListener('input', function () { updateCalc(); calcUsed('input'); });
     el.addEventListener('change', updateCalc);
@@ -1392,9 +1416,8 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('[data-step]').forEach(function (b) {
     b.addEventListener('click', function () {
       var p = b.getAttribute('data-step').split(':'), el = document.getElementById(p[0]);
-      var max = parseInt(el.getAttribute('max'), 10);
-      el.value = Math.max(0, Math.min(max, (parseInt(el.value, 10) || 0) + (+p[1])));
-      if (p[0] !== 'calc-users' && p[0] !== 'calc-ports' && +el.value > 0) document.getElementById('calc-extras').open = true;
+      var max = parseInt(el.getAttribute('max'), 10), min = parseInt(el.getAttribute('min'), 10) || 0;
+      el.value = Math.max(min, Math.min(max, (parseInt(el.value, 10) || 0) + (+p[1])));
       updateCalc(); calcUsed('stepper');
     });
   });
@@ -1404,29 +1427,19 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!el || el.type !== 'number') return;
     lab.addEventListener('click', function (e) {
       e.preventDefault();
-      if ((parseInt(el.value, 10) || 0) === 0) {
-        el.value = 1;
-        if (el.id !== 'calc-users' && el.id !== 'calc-ports') document.getElementById('calc-extras').open = true;
-        updateCalc(); calcUsed('label');
-      }
+      if ((parseInt(el.value, 10) || 0) === 0) { el.value = 1; updateCalc(); calcUsed('label'); }
     });
   });
-  document.querySelectorAll('[data-porttype]').forEach(function (b) {
-    b.addEventListener('click', function () { calcPortType = b.getAttribute('data-porttype'); updateCalc(); calcUsed('port-type'); });
+  document.querySelectorAll('input[name="calc-src"]').forEach(function (r) {
+    r.addEventListener('change', function () { updateCalc(); calcUsed('source'); });
+  });
+  document.querySelectorAll('[data-ntype]').forEach(function (b) {
+    b.addEventListener('click', function () { calcType = b.getAttribute('data-ntype'); updateCalc(); calcUsed('numtype'); });
   });
   document.querySelectorAll('input[name="calc-mode"]').forEach(function (r) {
-    r.addEventListener('change', function () {
-      var u = document.getElementById('calc-users');
-      if (r.value === 'both' && (parseInt(u.value, 10) || 0) === 0) u.value = 1;
-      if (r.value === 'both' && (parseInt(document.getElementById('calc-local').value, 10) || 0) === 1 && (parseInt(document.getElementById('calc-ports').value, 10) || 0) === 0) document.getElementById('calc-local').value = 0;
-      if (r.value === 'receive') { u.value = 0; if ((parseInt(document.getElementById('calc-local').value, 10) || 0) === 0 && (parseInt(document.getElementById('calc-ports').value, 10) || 0) === 0) document.getElementById('calc-local').value = 1; }
-      updateCalc(); calcUsed('mode');
-    });
+    r.addEventListener('change', function () { updateCalc(); calcUsed('mode'); });
   });
   document.getElementById('calc-fwd').addEventListener('change', function () { updateCalc(); calcUsed('forward'); });
-  document.querySelectorAll('[data-numtype]').forEach(function (b) {
-    b.addEventListener('click', function () { calcNumType = b.getAttribute('data-numtype'); updateCalc(); calcUsed('numtype'); });
-  });
   document.querySelectorAll('[data-preset]').forEach(function (b) {
     b.addEventListener('click', function () { applyPreset(b.getAttribute('data-preset'), !b.closest('.chips')); });
   });
