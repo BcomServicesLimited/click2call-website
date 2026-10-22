@@ -714,8 +714,8 @@
       <label class="radio fwd" id="calc-fwd-row"><input type="checkbox" id="calc-fwd"><span><b>Forward calls to my mobile number instead of the app</b><small>Rings your normal mobile without data. Each forwarded call is billed as an outbound call: 20c a minute to mobiles, since the $10 number has no included minutes.</small></span></label>
       <h3 class="calc-h3">Section 2 — Monthly subscription</h3>
       <div class="q" id="calc-numbers-row">
-        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Unlimited incoming calls, voicemail to email and the AI Receptionist. No included minutes: extensions can call out on a local number at standard rates. One new local number is already included with each Cloud PBX user. A new 04 mobile number also has a one-off $50 inc GST allocation fee.</p>
-          <div class="seg" role="group" aria-label="Type of new number"><button type="button" data-numtype="local" aria-pressed="true">Local or mobile</button><button type="button" data-numtype="1300" aria-pressed="false">1300</button><button type="button" data-numtype="1800" aria-pressed="false">1800</button></div>
+        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Unlimited incoming calls, voicemail to email and the AI Receptionist. No included minutes: extensions can call out on a local number at standard rates. One new local number is already included with each Cloud PBX user. New local numbers are free to add; a new 04 mobile number adds a one-off $50 inc GST allocation fee, and a new 1300 or 1800 adds $100 inc GST.</p>
+          <div class="seg" role="group" aria-label="Type of new number"><button type="button" data-numtype="local" aria-pressed="true">Local</button><button type="button" data-numtype="mobile" aria-pressed="false">04 mobile</button><button type="button" data-numtype="1300" aria-pressed="false">1300</button><button type="button" data-numtype="1800" aria-pressed="false">1800</button></div>
         </div>
         <div class="stepper"><button type="button" data-step="calc-local:-1" aria-label="One fewer number">&minus;</button><input id="calc-local" type="number" inputmode="numeric" min="0" max="100" value="1"><button type="button" data-step="calc-local:1" aria-label="One more number">+</button></div>
       </div>
@@ -838,7 +838,7 @@
 // Numbers brought across (ported) each run on their own $10 number plan, so they
 // count as numbers of their type plus a port.
 var calcState = {
-  users: 1, local: 0, n1300: 0, n1800: 0,
+  users: 1, local: 0, mobile: 0, n1300: 0, n1800: 0,
   portLocal: 0, port1300: 0, alloc: 0,
   setup: 'self',
   desk: 0, cordless: 0, softphone: 0
@@ -872,6 +872,7 @@ function updateCalc() {
   var setup    = setupEl ? setupEl.value : 'self';
 
   var newMain = newLocal; newLocal = calcNumType === 'local' ? newMain : 0;
+  var newMobile = calcNumType === 'mobile' ? newMain : 0;
   new1300 += calcNumType === '1300' ? newMain : 0;
   new1800 += calcNumType === '1800' ? newMain : 0;
   var local = newLocal + (calcPortType === 'local' ? ports : 0);
@@ -884,16 +885,17 @@ function updateCalc() {
   var portLocal = calcPortType === 'local' ? ports : 0;
   var port1300  = calcPortType === 'local' ? 0 : ports;
 
-  calcState = { users: users, local: local, n1300: n1300, n1800: n1800, portLocal: portLocal, port1300: port1300, alloc: new1300 + new1800, setup: setup, desk: desk, cordless: cordless, softphone: 0 };
+  calcState = { users: users, local: local, mobile: newMobile, n1300: n1300, n1800: n1800, portLocal: portLocal, port1300: port1300, alloc: new1300 + new1800, setup: setup, desk: desk, cordless: cordless, softphone: 0 };
 
   // ── Monthly ──
-  var moUsers = users * 25, moLocal = local * 10, mo1300 = n1300 * 10, mo1800 = n1800 * 10;
-  var moSub = moUsers + moLocal + mo1300 + mo1800;
+  var moUsers = users * 25, moLocal = local * 10, moMobile = newMobile * 10, mo1300 = n1300 * 10, mo1800 = n1800 * 10;
+  var moSub = moUsers + moLocal + moMobile + mo1300 + mo1800;
   var moGst = moSub * 0.10, moTotal = moSub + moGst;
   var m = '';
   if (users > 0) m += calcLine('Cloud PBX Users (' + users + ' &times; $25)', fmt(moUsers));
   var incl = function (k) { return k > 0 ? ', incl. ' + k + ' brought across' : ''; };
   if (local > 0) m += calcLine('Local numbers (' + local + ' &times; $10' + incl(portLocal) + ')', fmt(moLocal));
+  if (newMobile > 0) m += calcLine('04 mobile numbers (' + newMobile + ' &times; $10)', fmt(moMobile));
   if (n1300 > 0) m += calcLine('1300 numbers (' + n1300 + ' &times; $10' + incl(calcPortType === '1300' ? ports : 0) + ')', fmt(mo1300));
   if (n1800 > 0) m += calcLine('1800 numbers (' + n1800 + ' &times; $10' + incl(calcPortType === '1800' ? ports : 0) + ')', fmt(mo1800));
   if (users > 0) m += calcLine('Included outbound minutes', (users * 300).toLocaleString() + ' mins', 'note');
@@ -911,12 +913,14 @@ function updateCalc() {
   if (setup === 'managed' && users > 0) upSetup = users <= 3 ? 300 : 300 + (users - 3) * 50;
   var upDesk = desk * 450, upCordless = cordless * 400;
   var upAlloc = (new1300 + new1800) * 90.91;
-  var upSub = upPortLocal + upPort1300 + upAlloc + upSetup + upDesk + upCordless;
+  var upAllocMobile = newMobile * 50 / 1.1;
+  var upSub = upPortLocal + upPort1300 + upAlloc + upAllocMobile + upSetup + upDesk + upCordless;
   var upGst = upSub * 0.10, upTotal = upSub + upGst;
   var u = '';
   if (portLocal > 0) u += calcLine('Port local numbers (' + portLocal + ' &times; $90.91)', fmt(upPortLocal));
   if (port1300 > 0)  u += calcLine('Port 1300/1800 (' + port1300 + ' &times; $90.91)', fmt(upPort1300));
   if (upAlloc > 0)   u += calcLine('New 1300/1800 allocation (' + (new1300 + new1800) + ' &times; $90.91)', fmt(upAlloc));
+  if (upAllocMobile > 0) u += calcLine('New 04 mobile allocation (' + newMobile + ' &times; $45.45)', fmt(upAllocMobile));
   if (upSetup > 0)   u += calcLine(users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + users + ' users)', fmt(upSetup));
   if (desk > 0)      u += calcLine('Yealink T43U (' + desk + ' &times; $450)', fmt(upDesk));
   if (cordless > 0)  u += calcLine('Yealink W76P (' + cordless + ' &times; $400)', fmt(upCordless));
@@ -1058,9 +1062,10 @@ function generateQuote() {
   var s = calcState;
   var moUsers = s.users * 25;
   var moLocal = s.local * 10;
+  var moMobile = (s.mobile || 0) * 10;
   var mo1300  = s.n1300 * 10;
   var mo1800  = s.n1800 * 10;
-  var moSub   = moUsers + moLocal + mo1300 + mo1800;
+  var moSub   = moUsers + moLocal + moMobile + mo1300 + mo1800;
   var moGst   = moSub * 0.10;
   var moTotal = moSub + moGst;
   var mins    = s.users * 300;
@@ -1074,7 +1079,8 @@ function generateQuote() {
   var upDesk     = s.desk * 450;
   var upCordless = s.cordless * 400;
   var upAlloc    = (s.alloc || 0) * 90.91;
-  var upSub      = upPortLocal + upPort1300 + upAlloc + upSetup + upDesk + upCordless;
+  var upAllocMobile = (s.mobile || 0) * 50 / 1.1;
+  var upSub      = upPortLocal + upPort1300 + upAlloc + upAllocMobile + upSetup + upDesk + upCordless;
   var upGst      = upSub * 0.10;
   var upTotal    = upSub + upGst;
 
@@ -1157,6 +1163,7 @@ function generateQuote() {
   var moRows = [];
   moRows.push(['Cloud PBX Users', s.users + ' × $25/month', '$' + moUsers.toFixed(2)]);
   if (s.local > 0)  moRows.push(['Additional Local Numbers', s.local + ' × $10/month', '$' + moLocal.toFixed(2)]);
+  if (s.mobile > 0) moRows.push(['04 Mobile Numbers', s.mobile + ' × $10/month', '$' + moMobile.toFixed(2)]);
   if (s.n1300 > 0)  moRows.push(['Additional 1300 Numbers', s.n1300 + ' × $10/month', '$' + mo1300.toFixed(2)]);
   if (s.n1800 > 0)  moRows.push(['Additional 1800 Numbers', s.n1800 + ' × $10/month', '$' + mo1800.toFixed(2)]);
   moRows.push(['Included outbound minutes', s.users + ' users × 300 mins', mins.toLocaleString() + ' mins']);
@@ -1207,6 +1214,7 @@ function generateQuote() {
     if (s.portLocal > 0)  upRows.push(['Port local number', s.portLocal + ' × $90.91', '$' + upPortLocal.toFixed(2)]);
     if (s.port1300 > 0)   upRows.push(['Port 1300/1800 number', s.port1300 + ' × $90.91', '$' + upPort1300.toFixed(2)]);
     if (s.alloc > 0)      upRows.push(['New 1300/1800 number allocation', s.alloc + ' × $90.91', '$' + upAlloc.toFixed(2)]);
+    if (s.mobile > 0)     upRows.push(['New 04 mobile number allocation', s.mobile + ' × $45.45', '$' + upAllocMobile.toFixed(2)]);
     if (s.setup === 'managed' && s.users > 0) {
       var setupDesc = s.users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + s.users + ' users)';
       upRows.push([setupDesc, s.users <= 3 ? 'Flat rate' : 'Base $300 + ' + (s.users-3) + ' extra users', '$' + upSetup.toFixed(2)]);
@@ -1307,6 +1315,7 @@ function generateQuote() {
     'Sales Agent Follow-up': contactAgent ? 'YES — please contact' : 'No',
     'Cloud PBX Users': s.users,
     'Additional Local Numbers': s.local,
+    'New 04 Mobile Numbers': s.mobile,
     'Additional 1300 Numbers': s.n1300,
     'Additional 1800 Numbers': s.n1800,
     'Port Local Numbers': s.portLocal,
