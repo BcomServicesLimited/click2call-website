@@ -30,7 +30,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-10-22",
   "name": "How to connect ElevenLabs to an Australian phone number with Click2Call",
   "description": "Route calls from a Click2Call Australian number to an ElevenLabs voice agent using the built-in Eleven Labs AI connection profile.",
   "totalTime": "PT30M",
@@ -376,7 +376,7 @@
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting ElevenLabs to Your Phone Number</h1>
       <p class="text-gray-600 leading-relaxed">Click2Call has a built-in Eleven Labs AI connection profile, so pointing an Australian number at an ElevenLabs agent takes one dropdown at our end and a number import at theirs. No code, no SIP settings to type.</p>
-<p class="mt-3 text-sm text-gray-400">Last reviewed: September 2026</p>
+<p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
     </div>
   </div>
 
@@ -444,6 +444,7 @@
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
 <div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls stopped after our move to the new platform</h3><p class="text-gray-600 leading-relaxed">Delete the number from your ElevenLabs agent, then import it again as in the steps above, allowlisting 103.212.52.19. Don&rsquo;t use the old IP address. This makes ElevenLabs connect to our new platform.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">The call reaches ElevenLabs but no agent answers</h3><p class="text-gray-600 leading-relaxed">Either the number was not imported in exactly the format Click2Call sends (+E.164, with the plus), or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Calls are rejected before ringing</h3><p class="text-gray-600 leading-relaxed">The ACL on the ElevenLabs side does not include the address Click2Call is signalling from. Ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current addresses.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than your ElevenLabs profile, so it never leaves for ElevenLabs. Check the Profile column in Line Manager.</p></div>

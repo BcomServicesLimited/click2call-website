@@ -574,10 +574,10 @@ Last reviewed: October 2026
 
 ### Add credit now
 
-- Go to **Account → Payments** and click **Make a One Off Payment**. Your current balance is shown at the top.
+- Go to **Account → Payments** and click **Add Credit**. This button used to be called “Make a One Off Payment”. Your current balance is shown at the top.
 - Enter the **Top-up Amount**. The minimum is $10.00.
-- Enter your card details. Tick **Save this card for easier payments** if you want to use it for automatic payments later.
-- Click **Top up**.
+- Enter your card details and click **Save Card**.
+- After your card is saved, you may need to do this a second time. Check your balance in the portal after you top up.
 
 ### Store a card
 
@@ -2773,6 +2773,8 @@ Click the number. The call-flow diagram shows the registration state (Not Regist
 #### Make a test call both ways
 
 Call the number from another phone, then call out from the app. Registration problems usually stop incoming calls; outgoing problems are often the number format you dialled.
+
+If outgoing calls to mobiles fail, try dialling the same mobile three ways: 04xx xxx xxx, +614xx xxx xxx and 00614xx xxx xxx. Let us know which ones work.
 
 #### Can support see failed registration attempts?
 Yes — contact support with the number or extension and the time of a failed attempt, and we'll check for you. Noting the exact time makes it much quicker to trace.
@@ -5803,7 +5805,7 @@ Source: https://www.click2call.com.au/help/how-to-connect-elevenlabs
 
 Click2Call has a built-in Eleven Labs AI connection profile, so pointing an Australian number at an ElevenLabs agent takes one dropdown at our end and a number import at theirs. No code, no SIP settings to type.
 
-Last reviewed: September 2026
+Last reviewed: October 2026
 
 ### At a glance
 
@@ -5869,6 +5871,9 @@ Ring the number from a mobile. The agent should answer. If it does not, work thr
 
 #### The provider replies 407 Proxy Authentication Required
 The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+
+#### Calls stopped after our move to the new platform
+Delete the number from your ElevenLabs agent, then import it again as in the steps above, allowlisting 103.212.52.19. Don’t use the old IP address. This makes ElevenLabs connect to our new platform.
 
 #### The call reaches ElevenLabs but no agent answers
 Either the number was not imported in exactly the format Click2Call sends (+E.164, with the plus), or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.

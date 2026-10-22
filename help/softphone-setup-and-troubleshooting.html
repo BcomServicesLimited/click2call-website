@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-22",
   "name": "Setting Up a Softphone and Fixing Registration Problems",
   "description": "Which softphones work with Click2Call, where to find your SIP credentials in Line Manager, why iPhone apps miss calls in the background, and how to check a line is registering.",
   "url": "https://www.click2call.com.au/help/softphone-setup-and-troubleshooting",
@@ -49,7 +49,7 @@
     {
       "@type": "HowToStep",
       "name": "Make a test call both ways",
-      "text": "Call the number from another phone, then call out from the app."
+      "text": "Call the number from another phone, then call out from the app. If outgoing calls to mobiles fail, try dialling the same mobile three ways: 04xx xxx xxx, +614xx xxx xxx and 00614xx xxx xxx. Let us know which ones work."
     }
   ]
 }
@@ -362,6 +362,7 @@
       <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Make a test call both ways</h3>
         <p class="text-gray-600 leading-relaxed mb-4">Call the number from another phone, then call out from the app. Registration problems usually stop incoming calls; outgoing problems are often the number format you dialled.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">If outgoing calls to mobiles fail, try dialling the same mobile three ways: <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">04xx xxx xxx</span>, <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+614xx xxx xxx</span> and <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">00614xx xxx xxx</span>. Let us know which ones work.</p>
       </div>
     </div><h3 class="font-bold text-gray-900 mb-2">Can support see failed registration attempts?</h3><p class="text-gray-600 leading-relaxed mb-4">Yes &mdash; contact support with the number or extension and the time of a failed attempt, and we'll check for you. Noting the exact time makes it much quicker to trace.</p><h3 class="font-bold text-gray-900 mb-2">What common errors mean</h3><ul class="space-y-2 text-gray-600 leading-relaxed mb-6"><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>Login refused or authentication failed</strong> &mdash; the username or line password is wrong, or no password has been set yet.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>Registration failed: Disconnected</strong> &mdash; usually the transport or port does not match. Check the transport setting, or switch to TCP or UDP on port 5060.</span></li><li class="flex gap-2"><span class="text-[#3B9C49] flex-shrink-0">&bull;</span><span><strong>A chirping or Morse-code-like tone when you dial out</strong> &mdash; the number was not dialled in a format the network accepts. Try the full number with the area code.</span></li></ul>
     <h2 id="checklist" class="text-2xl font-bold text-gray-900 mt-12 mb-4">Before you contact support: a quick checklist</h2>
