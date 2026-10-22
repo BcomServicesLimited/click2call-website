@@ -262,6 +262,7 @@ Click2Call uses simple, transparent flat-rate prepaid pricing with no lock-in co
 - **Cloud PBX User**: $25.00/month per user (includes one local Australian number, 300 outbound minutes/month, unlimited inbound calls, voicemail, call recording, AI transcription, AI summaries, and API access)
 - **Microsoft Teams User**: $25.00/month per user (full Cloud PBX features delivered inside Microsoft Teams via Direct Routing)
 - **Inbound Business Number**: $10.00/month per number (unlimited inbound, no included minutes; extensions can call out on it at standard rates; ideal for shared lines, reception, 1300 numbers, or AI Receptionist)
+- **New 1300 or 1800 number**: one-off $100 including GST allocation fee (the same amount as porting one in), then $10/month
 - **New Australian mobile (04) number**: one-off $50 including GST allocation fee, then $10/month (or $25/month as a Cloud PBX User); new local numbers have no allocation fee; porting an existing mobile is $100 including GST
 - **PBX Extensions**: Free
 - **Channels**: Included with Cloud PBX User
@@ -422,7 +423,7 @@ Click2Call ships ready-made connection profiles under Voice → Profiles, so an 
 - **Type**: Free interactive web tool — no account or sales call required
 - **Purpose**: Allows Australian businesses to calculate the exact cost of a Click2Call VoIP phone system and download a formal PDF quote for internal approval.
 - **What it calculates**:
-  - Monthly costs: Cloud PBX users at $25.00/user/month (ex GST), Inbound Business Numbers (local) at $10.00/month, 1300 numbers at $10.00/month, 1800 numbers at $10.00/month
+  - Monthly costs: Cloud PBX users at $25.00/user/month (ex GST), Inbound Business Numbers (local) at $10.00/month, 1300 numbers at $10.00/month, 1800 numbers at $10.00/month (new 1300/1800 numbers: one-off $100 including GST allocation fee)
   - One-time upfront costs: number porting ($100.00 including GST per number, any type; mobile porting eligibility depends on carrier), system setup (self-setup free or Click2Call managed setup $300.00 for up to 3 users), hardware (Yealink T43U desk phone $450.00, Yealink W76P cordless $400.00)
   - GST (10%) calculated and displayed separately for both monthly and upfront totals
 - **Quote generation**: Enter business name, contact name, and email to generate and download a formal PDF quote. The quote includes a line-item breakdown, GST, 14-day validity, Click2Call logo, ABN 92 636 893 108, and a reference to terms at click2call.com.au/terms/.

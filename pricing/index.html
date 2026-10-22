@@ -247,7 +247,7 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Click2Call Cloud PBX",
-  "description": "Hosted cloud PBX phone system for Australian businesses. $25 per user per month ex GST includes a local Australian number, 300 outbound minutes, unlimited inbound calls, IVR, ring groups, call queues, call recording, AI transcription and voicemail to email. Extra inbound numbers, 1300 and 1800 numbers are $10 per month. Number porting is a flat $100 including GST. No lock-in contract, prepaid billing.",
+  "description": "Hosted cloud PBX phone system for Australian businesses. $25 per user per month ex GST includes a local Australian number, 300 outbound minutes, unlimited inbound calls, IVR, ring groups, call queues, call recording, AI transcription and voicemail to email. Extra inbound numbers, 1300 and 1800 numbers are $10 per month; a new 1300 or 1800 number has a one-off $100 including GST allocation fee. Number porting is a flat $100 including GST. No lock-in contract, prepaid billing.",
   "image": "https://www.click2call.com.au/assets/images/cloud_pbx_hero.webp",
   "brand": {
     "@type": "Brand",
@@ -605,7 +605,7 @@
 
 <section class="kt" aria-labelledby="kt-h"><div class="wrap kt-grid">
   <h2 id="kt-h">Key Takeaways</h2>
-  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Unlimited inbound calls and no included minutes; your team's free extensions can call out on a local number at 10c a minute to landlines and 20c to mobiles.</li><li><strong>Business SMS</strong> &mdash; send and receive texts on an Australian mobile number on your account: a new mobile number is a one-off $50 inc GST allocation fee, then $10/month, or port your own ($100 inc GST, then $10/month). Texts are 20c each (ex GST); replies appear in the portal and are emailed to you.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
+  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Unlimited inbound calls and no included minutes; your team's free extensions can call out on a local number at 10c a minute to landlines and 20c to mobiles.</li><li><strong>Business SMS</strong> &mdash; send and receive texts on an Australian mobile number on your account: a new mobile number is a one-off $50 inc GST allocation fee, then $10/month, or port your own ($100 inc GST, then $10/month). Texts are 20c each (ex GST); replies appear in the portal and are emailed to you.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number. A new 1300 or 1800 number has the same one-off $100 inc GST as an allocation fee; a new 04 mobile number is $50 inc GST; new local numbers are free to add.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
 </div></section>
 
 <section class="sec" aria-labelledby="plans-h"><div class="wrap">
@@ -634,7 +634,7 @@
         <li class="check">Shared numbers, reception, or extra inbound routing</li>
         <li class="check">Unlimited inbound calling</li>
         <li class="check">Full Cloud PBX features</li>
-        <li class="check">1300 numbers available ($10/mo)</li>
+        <li class="check">1300 numbers available ($10/mo, plus $100 inc GST once for a new number)</li>
         <li class="check">AI Receptionist included free</li>
       </ul>
       <a class="btn btn-ghost" href="https://portal.click2call.com.au/join/?src=pricing-plan-number" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-plan-number'});">Start free trial</a>
@@ -839,7 +839,7 @@
 // count as numbers of their type plus a port.
 var calcState = {
   users: 1, local: 0, n1300: 0, n1800: 0,
-  portLocal: 0, port1300: 0,
+  portLocal: 0, port1300: 0, alloc: 0,
   setup: 'self',
   desk: 0, cordless: 0, softphone: 0
 };
@@ -884,7 +884,7 @@ function updateCalc() {
   var portLocal = calcPortType === 'local' ? ports : 0;
   var port1300  = calcPortType === 'local' ? 0 : ports;
 
-  calcState = { users: users, local: local, n1300: n1300, n1800: n1800, portLocal: portLocal, port1300: port1300, setup: setup, desk: desk, cordless: cordless, softphone: 0 };
+  calcState = { users: users, local: local, n1300: n1300, n1800: n1800, portLocal: portLocal, port1300: port1300, alloc: new1300 + new1800, setup: setup, desk: desk, cordless: cordless, softphone: 0 };
 
   // ── Monthly ──
   var moUsers = users * 25, moLocal = local * 10, mo1300 = n1300 * 10, mo1800 = n1800 * 10;
@@ -910,11 +910,13 @@ function updateCalc() {
   var upSetup = 0;
   if (setup === 'managed' && users > 0) upSetup = users <= 3 ? 300 : 300 + (users - 3) * 50;
   var upDesk = desk * 450, upCordless = cordless * 400;
-  var upSub = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
+  var upAlloc = (new1300 + new1800) * 90.91;
+  var upSub = upPortLocal + upPort1300 + upAlloc + upSetup + upDesk + upCordless;
   var upGst = upSub * 0.10, upTotal = upSub + upGst;
   var u = '';
   if (portLocal > 0) u += calcLine('Port local numbers (' + portLocal + ' &times; $90.91)', fmt(upPortLocal));
   if (port1300 > 0)  u += calcLine('Port 1300/1800 (' + port1300 + ' &times; $90.91)', fmt(upPort1300));
+  if (upAlloc > 0)   u += calcLine('New 1300/1800 allocation (' + (new1300 + new1800) + ' &times; $90.91)', fmt(upAlloc));
   if (upSetup > 0)   u += calcLine(users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + users + ' users)', fmt(upSetup));
   if (desk > 0)      u += calcLine('Yealink T43U (' + desk + ' &times; $450)', fmt(upDesk));
   if (cordless > 0)  u += calcLine('Yealink W76P (' + cordless + ' &times; $400)', fmt(upCordless));
@@ -1071,7 +1073,8 @@ function generateQuote() {
   }
   var upDesk     = s.desk * 450;
   var upCordless = s.cordless * 400;
-  var upSub      = upPortLocal + upPort1300 + upSetup + upDesk + upCordless;
+  var upAlloc    = (s.alloc || 0) * 90.91;
+  var upSub      = upPortLocal + upPort1300 + upAlloc + upSetup + upDesk + upCordless;
   var upGst      = upSub * 0.10;
   var upTotal    = upSub + upGst;
 
@@ -1203,6 +1206,7 @@ function generateQuote() {
     var upRows = [];
     if (s.portLocal > 0)  upRows.push(['Port local number', s.portLocal + ' × $90.91', '$' + upPortLocal.toFixed(2)]);
     if (s.port1300 > 0)   upRows.push(['Port 1300/1800 number', s.port1300 + ' × $90.91', '$' + upPort1300.toFixed(2)]);
+    if (s.alloc > 0)      upRows.push(['New 1300/1800 number allocation', s.alloc + ' × $90.91', '$' + upAlloc.toFixed(2)]);
     if (s.setup === 'managed' && s.users > 0) {
       var setupDesc = s.users <= 3 ? 'Managed Setup (up to 3 users)' : 'Managed Setup (' + s.users + ' users)';
       upRows.push([setupDesc, s.users <= 3 ? 'Flat rate' : 'Base $300 + ' + (s.users-3) + ' extra users', '$' + upSetup.toFixed(2)]);
@@ -1307,6 +1311,7 @@ function generateQuote() {
     'Additional 1800 Numbers': s.n1800,
     'Port Local Numbers': s.portLocal,
     'Port 1300/1800 Numbers': s.port1300,
+    'New 1300/1800 Allocations': s.alloc,
     'Setup Type': s.setup === 'managed' ? 'Managed Setup' : 'Self-setup',
     'Desk Phones (T43U)': s.desk,
     'Cordless Phones (W76P)': s.cordless,
@@ -1512,6 +1517,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <tr><td>Self-setup (via Help Centre)</td><td>FREE</td><td>FREE</td></tr>
       <tr><td>Number porting</td><td>$90.91</td><td>$100</td></tr>
       <tr><td>New Australian mobile (04) number allocation</td><td>$45.45</td><td>$50</td></tr>
+      <tr><td>New 1300 or 1800 number allocation</td><td>$90.91</td><td>$100</td></tr>
       <tr><td>Cloud PBX Setup (up to 3 users)</td><td>$300 ex GST</td><td>$330 inc GST</td></tr>
       <tr><td>Additional user setup (per user)</td><td>$50</td><td>$55</td></tr>
       <tr><td>Microsoft Teams Setup (per user)</td><td>$50</td><td>$55</td></tr>
@@ -1530,8 +1536,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <thead><tr><th>Number Type</th><th>Monthly Cost</th><th>Notes</th></tr></thead>
         <tbody>
           <tr><td>Local number (02, 03, 07, 08)</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>Geographic presence in any Australian city</td></tr>
-          <tr><td>1300 number</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>National presence. Caller pays local call rate.</td></tr>
-          <tr><td>1800 number</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>Toll-free for callers. You pay $0.20/min inbound.</td></tr>
+          <tr><td>1300 number</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>National presence. Caller pays local call rate. A new number has a one-off $100 inc GST allocation fee.</td></tr>
+          <tr><td>1800 number</td><td>$10 ex GST<br><span class="inc">$11 inc GST</span></td><td>Toll-free for callers. You pay $0.20/min inbound. A new number has a one-off $100 inc GST allocation fee.</td></tr>
           <tr><td>Port local number</td><td>$90.91 one-time ex GST<br><span class="inc">$100 inc GST</span></td><td>5&ndash;10 business days. Stays active during porting.</td></tr>
           <tr><td>Port 1300/1800 number</td><td>$90.91 one-time ex GST<br><span class="inc">$100 inc GST</span></td><td>Up to 30 days. Stays active during porting.</td></tr>
         </tbody>
@@ -1561,7 +1567,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <tr><td>20 users</td><td>$500</td><td>$550.00</td><td>300 min each</td></tr>
     </tbody>
   </table></div>
-  <p class="tnote">Add $10 ex GST a month for each extra inbound number (a shared reception line, a 1300 or an 1800). Each user&rsquo;s 300 minutes are attached to that user&rsquo;s number &mdash; they are not pooled across the account. <a class="link" href="#calculator">Build your own estimate in the calculator &rarr;</a></p>
+  <p class="tnote">Add $10 ex GST a month for each extra inbound number (a shared reception line, a 1300 or an 1800). A new 1300 or 1800 number also has a one-off $100 inc GST allocation fee. Each user&rsquo;s 300 minutes are attached to that user&rsquo;s number &mdash; they are not pooled across the account. <a class="link" href="#calculator">Build your own estimate in the calculator &rarr;</a></p>
   <div class="hp-q">
     <div class="card">
       <h3>What does it cost to migrate from an on-premise PBX to the cloud?</h3>
@@ -1592,7 +1598,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="card">
       <h3>Two worked examples</h3>
       <ul class="checks">
-        <li class="check"><span><strong>One user with a Melbourne 03 number and a 1300 number:</strong> $25 for the user (the 03 number is included) plus $10 for the 1300 is <strong>$35 a month ex GST, $38.50 inc GST</strong>, plus 20c a minute for calls into the 1300. Adding a Sydney 02 number later is another $10 ex GST a month, and all three numbers sit in the same system.</span></li>
+        <li class="check"><span><strong>One user with a Melbourne 03 number and a 1300 number:</strong> $25 for the user (the 03 number is included) plus $10 for the 1300 is <strong>$35 a month ex GST, $38.50 inc GST</strong>, plus 20c a minute for calls into the 1300, and a one-off $100 inc GST allocation fee if the 1300 number is new. Adding a Sydney 02 number later is another $10 ex GST a month, and all three numbers sit in the same system.</span></li>
         <li class="check"><span><strong>Five users sharing one practice number, with managed setup:</strong> five users at $25 plus $10 for the shared number is <strong>$135 a month ex GST, $148.50 inc GST</strong>. Managed setup is $300 for the first three users plus $50 each for the other two: <strong>$400 ex GST, $440 inc GST</strong>, once.</span></li>
       </ul>
       <p class="small muted">The <a class="link" href="#calculator">quote builder</a> works out any other combination, with GST.</p>

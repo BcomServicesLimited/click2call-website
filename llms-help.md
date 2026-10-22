@@ -953,7 +953,7 @@ Your new Sydney number **02 7238 0358** is now active. Next steps you might want
 
 ### 1300 numbers
 
-- **A new 1300 number is free to get.** It is allocated automatically, so we cannot offer a list to choose from. There is no upfront or porting charge; it then costs the usual monthly plan for the number.
+- **A new 1300 or 1800 number has a one-off $100 allocation fee including GST.** It is allocated automatically, so we cannot offer a list to choose from. After the allocation fee it costs the usual monthly plan for the number. New local numbers have no allocation fee, and a new 04 mobile number is a one-off $50 including GST.
 - **To choose a specific 1300 number,** search for one and register it yourself at The Numbering System (you create a login there). This costs more upfront: their number fee, plus our $100 porting fee to bring it to Click2Call. See [Porting a number](https://www.click2call.com.au/help/how-to-port-number).
 
 **Good to know:** We do not recommend a 1300 number as your outgoing caller ID: some carriers do not support it and show the call as a private number. Use a local number for outgoing calls.

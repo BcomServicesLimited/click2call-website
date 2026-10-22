@@ -61,12 +61,12 @@ Click2Call uses flat-rate, prepaid billing. Customers load credit onto their acc
 - **Cloud PBX User**: $25.00/month — includes 1 local Australian number, 300 outbound minutes, unlimited inbound calls, and all Cloud PBX features (IVR, call recording, voicemail-to-email, queues, ring groups)
 - **Extra Business Number (Inbound Line)**: $10.00/month — additional local number for shared lines, reception, or extra inbound routing. Unlimited inbound calling. No included minutes: the account's free extensions can make outbound calls showing this number, charged at standard rates (10c/min to Australian and NZ landlines, 20c/min to mobiles, ex GST). Extensions are free; calls between extensions and incoming calls are free. 1300 and 1800 numbers remain inbound only.
 - **Microsoft Teams User**: $25.00/month — includes 1 local Australian number, 300 outbound minutes, unlimited inbound calls, via Microsoft Direct Routing
-- **New Australian mobile (04) number**: one-off $50 including GST allocation fee (passed on from the upstream carrier; confirmed 2026-10-23), then the same monthly plan as a local number ($10/month, or $25/month as a Cloud PBX User). New local numbers have no allocation fee. Porting an existing mobile is $100 including GST instead. A mobile number on the account is needed for two-way SMS (texts 20c each ex GST).
+- **New Australian mobile (04) number**: one-off $50 including GST allocation fee (passed on from the upstream carrier; confirmed 2026-10-23), then the same monthly plan as a local number ($10/month, or $25/month as a Cloud PBX User). New local numbers have no allocation fee; new 1300 and 1800 numbers have a one-off $100 including GST allocation fee (confirmed 2026-10-23). Porting an existing mobile is $100 including GST instead. A mobile number on the account is needed for two-way SMS (texts 20c each ex GST).
 
 ### Phone Number Options (monthly, ex GST)
 - **Local number (02, 03, 07, 08)**: $10.00/month — geographic presence in any Australian city
-- **1300 number**: $10.00/month — national presence, caller pays local call rate
-- **1800 number**: $10.00/month — toll-free for callers, business pays $0.20/min inbound
+- **1300 number**: $10.00/month — national presence, caller pays local call rate; a new 1300 number has a one-off $100 including GST allocation fee
+- **1800 number**: $10.00/month — toll-free for callers, business pays $0.20/min inbound; a new 1800 number has a one-off $100 including GST allocation fee
 
 ### Number Porting (one-time fee, including GST)
 - **Any number port**: $100.00 including GST — 5–10 business days, number stays active during porting
