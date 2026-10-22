@@ -605,7 +605,7 @@
 
 <section class="kt" aria-labelledby="kt-h"><div class="wrap kt-grid">
   <h2 id="kt-h">Key Takeaways</h2>
-  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Unlimited inbound calls and no included minutes; your team's free extensions can call out on a local number at 10c a minute to landlines and 20c to mobiles.</li><li><strong>Business SMS</strong> &mdash; send and receive texts on an Australian mobile number on your account: a new mobile number is $10/month, or port your own ($100 inc GST, then $10/month). Texts are 20c each (ex GST); replies appear in the portal and are emailed to you.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
+  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Unlimited inbound calls and no included minutes; your team's free extensions can call out on a local number at 10c a minute to landlines and 20c to mobiles.</li><li><strong>Business SMS</strong> &mdash; send and receive texts on an Australian mobile number on your account: a new mobile number is a one-off $50 inc GST allocation fee, then $10/month, or port your own ($100 inc GST, then $10/month). Texts are 20c each (ex GST); replies appear in the portal and are emailed to you.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
 </div></section>
 
 <section class="sec" aria-labelledby="plans-h"><div class="wrap">
@@ -714,7 +714,7 @@
       <label class="radio fwd" id="calc-fwd-row"><input type="checkbox" id="calc-fwd"><span><b>Forward calls to my mobile number instead of the app</b><small>Rings your normal mobile without data. Each forwarded call is billed as an outbound call: 20c a minute to mobiles, since the $10 number has no included minutes.</small></span></label>
       <h3 class="calc-h3">Section 2 — Monthly subscription</h3>
       <div class="q" id="calc-numbers-row">
-        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Unlimited incoming calls, voicemail to email and the AI Receptionist. No included minutes: extensions can call out on a local number at standard rates. One new local number is already included with each Cloud PBX user.</p>
+        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Unlimited incoming calls, voicemail to email and the AI Receptionist. No included minutes: extensions can call out on a local number at standard rates. One new local number is already included with each Cloud PBX user. A new 04 mobile number also has a one-off $50 inc GST allocation fee.</p>
           <div class="seg" role="group" aria-label="Type of new number"><button type="button" data-numtype="local" aria-pressed="true">Local or mobile</button><button type="button" data-numtype="1300" aria-pressed="false">1300</button><button type="button" data-numtype="1800" aria-pressed="false">1800</button></div>
         </div>
         <div class="stepper"><button type="button" data-step="calc-local:-1" aria-label="One fewer number">&minus;</button><input id="calc-local" type="number" inputmode="numeric" min="0" max="100" value="1"><button type="button" data-step="calc-local:1" aria-label="One more number">+</button></div>
@@ -1511,6 +1511,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <tbody>
       <tr><td>Self-setup (via Help Centre)</td><td>FREE</td><td>FREE</td></tr>
       <tr><td>Number porting</td><td>$90.91</td><td>$100</td></tr>
+      <tr><td>New Australian mobile (04) number allocation</td><td>$45.45</td><td>$50</td></tr>
       <tr><td>Cloud PBX Setup (up to 3 users)</td><td>$300 ex GST</td><td>$330 inc GST</td></tr>
       <tr><td>Additional user setup (per user)</td><td>$50</td><td>$55</td></tr>
       <tr><td>Microsoft Teams Setup (per user)</td><td>$50</td><td>$55</td></tr>

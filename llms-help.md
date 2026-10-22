@@ -775,7 +775,7 @@ Last reviewed: October 2026
 
 ### What you need
 
-An Australian mobile number on your account. We can add a new one for $10 a month, or you can port your own mobile number for a one-off $100 including GST, then $10 a month. A landline, 1300 or 1800 number can't send or receive texts.
+An Australian mobile number on your account. We can add a new one for a one-off $50 allocation fee including GST, then $10 a month, or you can port your own mobile number for a one-off $100 including GST, then $10 a month. A landline, 1300 or 1800 number can't send or receive texts.
 
 Sending is off until our support team turns it on. Contact support and ask for SMS to be enabled; we verify your identity before sending is allowed. Until then, the Compose and Groups pages under **SMS** say that sending is not enabled.
 
@@ -827,7 +827,7 @@ The portal API includes SMS functions to send messages, read replies and manage 
 
 ### Cost
 
-Each text costs 20c (ex GST), billed to your account. The mobile number it sends from is $10 a month (ex GST).
+Each text costs 20c (ex GST), billed to your account. The mobile number it sends from is $10 a month (ex GST). A new mobile number also has a one-off $50 allocation fee including GST.
 
 ## Adding a Phone Number
 
@@ -5488,7 +5488,7 @@ Last reviewed: October 2026
 | Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: an Inbound Business Number can’t be used with Teams. Teams setup is $50 + GST ($55.00) per user. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 
-New 04 mobile numbers cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand. This can take up to 24 hours, and we email you when the number is active.
+New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand. This can take up to 24 hours, and we email you when the number is active.
 
 When you add a number partway through a month, you first pay for the part of the month that is left. After that it is charged in full each month.
 
