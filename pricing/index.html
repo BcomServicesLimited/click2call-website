@@ -729,7 +729,6 @@
         <label class="radio mode"><input type="radio" name="calc-mode" value="receive" checked><span><b>Pay as I call</b> <em>$10/month</em><small>The number on its own. Answer in the free Click2Call app on your mobile or laptop: incoming calls are free. Call out from the app at 10c a minute to landlines and 20c to mobiles. Most people choose this.</small></span></label>
         <label class="radio mode"><input type="radio" name="calc-mode" value="both"><span><b>Calling lines with 300 minutes each</b> <em>$25/user/month</em><small>For people who make a lot of calls: cheaper than paying per call above about 75 minutes of mobile calls a month.</small></span></label>
       </div>
-      <label class="radio fwd" id="calc-fwd-row"><input type="checkbox" id="calc-fwd"><span><b>Ring my normal mobile instead of the app</b><small>Works without mobile data. Each forwarded call costs 20c a minute, because the $10 number has no included minutes.</small></span></label>
       <div class="q" id="calc-users-row" hidden>
         <div class="q-l"><label for="calc-users">How many users?</label><p class="hint" id="calc-users-note">With one user, your business number becomes your calling line, so it isn&rsquo;t charged separately.</p></div>
         <div class="stepper"><button type="button" data-step="calc-users:-1" aria-label="One fewer person">&minus;</button><input id="calc-users" type="number" inputmode="numeric" min="1" max="500" value="1"><button type="button" data-step="calc-users:1" aria-label="One more person">+</button></div>
@@ -876,10 +875,8 @@ function updateCalc() {
   var desk = calcNum('calc-desk'), cordless = calcNum('calc-cordless');
   var setupEl = document.querySelector('input[name="calc-setup"]:checked');
   var setup = setupEl ? setupEl.value : 'self';
-  var fwd = mode === 'receive' && document.getElementById('calc-fwd').checked;
 
   document.getElementById('calc-users-row').hidden = mode !== 'both';
-  document.getElementById('calc-fwd-row').hidden = mode !== 'receive';
 
   // The business number is charged $10 on its own, unless it becomes the first
   // person's $25 line (local or mobile only; 1300/1800 can't make calls).
@@ -917,7 +914,6 @@ function updateCalc() {
   if (inboundOnly) m += calcLine('Calls into your ' + name, '20c/min', 'note');
   else if (x1300 + x1800 > 0) m += calcLine('Calls into a 1300 or 1800 number', '20c/min', 'note');
   if (mode === 'receive' && !inboundOnly) m += calcLine('Incoming calls in the app', 'Free', 'note');
-  if (fwd) m += calcLine('Calls forwarded to your mobile', '20c/min', 'note');
   if (mode === 'receive' && !inboundOnly) m += calcLine('Calls out from the app', '10c/20c per min', 'note');
   if (mode === 'receive' && inboundOnly) m += calcLine('Calls out', 'Add a calling line in step 2', 'note');
   document.getElementById('r-monthly').innerHTML = m;
@@ -1032,7 +1028,6 @@ function applyPreset(name, scroll) {
   if (!p) return;
   document.querySelector('input[name="calc-src"][value="' + p.src + '"]').checked = true;
   document.querySelector('input[name="calc-mode"][value="' + p.mode + '"]').checked = true;
-  document.getElementById('calc-fwd').checked = false;
   calcType = p.type;
   document.getElementById('calc-users').value = Math.max(1, p.users);
   ['calc-xlocal', 'calc-1300', 'calc-1800', 'calc-desk', 'calc-cordless'].forEach(function (id) { document.getElementById(id).value = 0; });
@@ -1444,7 +1439,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('input[name="calc-mode"]').forEach(function (r) {
     r.addEventListener('change', function () { updateCalc(); calcUsed('mode'); });
   });
-  document.getElementById('calc-fwd').addEventListener('change', function () { updateCalc(); calcUsed('forward'); });
   document.querySelectorAll('[data-preset]').forEach(function (b) {
     b.addEventListener('click', function () { applyPreset(b.getAttribute('data-preset'), !b.closest('.chips')); });
   });
