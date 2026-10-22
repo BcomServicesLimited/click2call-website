@@ -897,7 +897,7 @@ Choose the billing plan for your number. Two options are available:
 
 | Plan | Monthly Cost | Best for |
 
-| Inbound Business Number | $10+ / month | Inbound-only or basic voice line |
+| Inbound Business Number | $10+ / month | Unlimited inbound calls, no included minutes; extensions can call out on it at standard rates |
 
 | Inbound Business Number | $10+ / month | Full inbound & outbound PBX line. Required for Auto Attendant (IVR) features. |
 
@@ -5482,7 +5482,7 @@ Last reviewed: October 2026
 
 | Plan | Price | What it’s for |
 | Cloud PBX User | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
-| Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls. It has no included minutes. |
+| Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
 | Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 

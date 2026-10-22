@@ -220,7 +220,7 @@
       "name": "Is there a cheaper VoIP-only or inbound-only plan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no cut-down tier because every feature is already included in the $25 user. If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email) but cannot make outbound calls. If you own a PBX already, a SIP trunk is $50 a month for the lines only."
+        "text": "There is no cut-down tier because every feature is already included in the $25 user. If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email). It has no included minutes, but your team's free extensions can call out showing that number at standard rates (10c a minute to landlines, 20c to mobiles). If you own a PBX already, a SIP trunk is $50 a month for the lines only."
       }
     },
     {
@@ -605,7 +605,7 @@
 
 <section class="kt" aria-labelledby="kt-h"><div class="wrap kt-grid">
   <h2 id="kt-h">Key Takeaways</h2>
-  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Inbound only, no outbound calling.</li><li><strong>Business SMS</strong> &mdash; send and receive texts on an Australian mobile number on your account: a new mobile number is $10/month, or port your own ($100 inc GST, then $10/month). Texts are 20c each (ex GST); replies appear in the portal and are emailed to you.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
+  <ul><li><strong>$25 per user / month (ex GST)</strong> &mdash; a local Australian number, 300 outbound minutes and unlimited inbound calls.</li><li><strong>$10 per inbound number / month (ex GST)</strong> &mdash; for shared lines, reception or 1300 numbers. Unlimited inbound calls and no included minutes; your team's free extensions can call out on a local number at 10c a minute to landlines and 20c to mobiles.</li><li><strong>Business SMS</strong> &mdash; send and receive texts on an Australian mobile number on your account: a new mobile number is $10/month, or port your own ($100 inc GST, then $10/month). Texts are 20c each (ex GST); replies appear in the portal and are emailed to you.</li><li><strong>$100 per number to port (inc GST)</strong> &mdash; charged once, whatever the number type. Mobile porting depends on your current carrier releasing the number.</li><li><strong>Prepaid billing</strong> &mdash; load credit, turn on auto top-up, and flat-rate fees are deducted monthly.</li><li><strong>No lock-in contracts</strong> &mdash; no hidden fees, no hardware to buy and no technician visit.</li></ul>
 </div></section>
 
 <section class="sec" aria-labelledby="plans-h"><div class="wrap">
@@ -628,7 +628,7 @@
     </div>
     <div class="plan">
       <h3>Inbound Business Number</h3>
-      <span class="plan-sub">Inbound only</span>
+      <span class="plan-sub">No included minutes</span>
       <div class="cost"><div class="amt">$10<span>/mo</span></div><div class="sub">per line (ex GST)</div></div>
       <ul class="checks">
         <li class="check">Shared numbers, reception, or extra inbound routing</li>
@@ -649,8 +649,8 @@
   <div class="duo explain">
     <div class="card">
       <p class="eyebrow">Choosing the right plan</p>
-      <p>The <strong>Cloud PBX User</strong> ($25/month) is for anyone who needs to make and receive calls &mdash; includes a local number, 300 outbound minutes, and all Cloud PBX features.</p>
-      <p>The <strong>Inbound Business Number</strong> ($10/month) is for receiving calls only &mdash; ideal for a shared reception line or 1300 number. No outbound calling. All Cloud PBX features are included with both plans.</p>
+      <p>The <strong>Cloud PBX User</strong> ($25/month) is for anyone who makes regular calls &mdash; includes a local number, 300 outbound minutes, and all Cloud PBX features.</p>
+      <p>The <strong>Inbound Business Number</strong> ($10/month) has unlimited inbound calls and no included minutes &mdash; ideal for a shared reception line or 1300 number. Your team&rsquo;s free extensions can call out showing a local number at our standard rates (10c a minute to landlines, 20c to mobiles); 1300 and 1800 numbers are inbound only. All Cloud PBX features are included with both plans.</p>
     </div>
     <div class="card green">
       <p class="eyebrow">Switching from your current system</p>
@@ -661,7 +661,7 @@
         <li class="check">Use your current phones (if compatible)</li>
         <li class="check">Setup in 1&ndash;2 days &middot; port completes in 5&ndash;10 business days</li>
       </ul>
-      <p class="small">Each number you bring across needs its own plan: an Inbound Business Number ($10/month), or a Cloud PBX User ($25/month) if it needs to make calls.</p>
+      <p class="small">Each number you bring across needs its own plan: an Inbound Business Number ($10/month), or a Cloud PBX User ($25/month) if you want 300 outbound minutes included.</p>
       <div class="row-links"><a class="btn btn-dark" href="/compare/">See exactly how the switch works</a></div>
       <p class="small">Weighing up options? Compare Click2Call with <a href="/compare/click2call-vs-telstra/">Telstra IP Telephony</a> or <a href="/compare/click2call-vs-zoom-phone/">Zoom Phone</a>.</p>
     </div>
@@ -708,13 +708,13 @@
       </div>
       <h3 class="calc-h3">Section 1 — How will you use it?</h3>
       <div class="radios modes" role="group" aria-label="How will you use Click2Call">
-        <label class="radio mode"><input type="radio" name="calc-mode" value="receive" checked><span><b>Just receive calls on my business number</b> <em>$10/month</em><small>Answer in the free Click2Call app on your mobile or laptop: incoming calls cost nothing. Keep making calls from your own mobile as you do now. Most common choice.</small></span></label>
+        <label class="radio mode"><input type="radio" name="calc-mode" value="receive" checked><span><b>Just receive calls on my business number</b> <em>$10/month</em><small>Answer in the free Click2Call app on your mobile or laptop: incoming calls cost nothing. Keep making calls from your own mobile, or call out from the app showing this number at 10c a minute to landlines and 20c to mobiles. Most common choice.</small></span></label>
         <label class="radio mode"><input type="radio" name="calc-mode" value="both"><span><b>Make and receive calls through Click2Call</b> <em>$25/user/month</em><small>Each person gets a line with 300 outbound minutes, and calls out show your business number.</small></span></label>
       </div>
       <label class="radio fwd" id="calc-fwd-row"><input type="checkbox" id="calc-fwd"><span><b>Forward calls to my mobile number instead of the app</b><small>Rings your normal mobile without data. Each forwarded call is billed as an outbound call: 20c a minute to mobiles, since the $10 number has no included minutes.</small></span></label>
       <h3 class="calc-h3">Section 2 — Monthly subscription</h3>
       <div class="q" id="calc-numbers-row">
-        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Receive-only, with voicemail to email and the AI Receptionist. One new local number is already included with each Cloud PBX user.</p>
+        <div class="q-l"><label for="calc-local">Inbound business numbers — $10/month each</label><p class="hint">Unlimited incoming calls, voicemail to email and the AI Receptionist. No included minutes: extensions can call out on a local number at standard rates. One new local number is already included with each Cloud PBX user.</p>
           <div class="seg" role="group" aria-label="Type of new number"><button type="button" data-numtype="local" aria-pressed="true">Local or mobile</button><button type="button" data-numtype="1300" aria-pressed="false">1300</button><button type="button" data-numtype="1800" aria-pressed="false">1800</button></div>
         </div>
         <div class="stepper"><button type="button" data-step="calc-local:-1" aria-label="One fewer number">&minus;</button><input id="calc-local" type="number" inputmode="numeric" min="0" max="100" value="1"><button type="button" data-step="calc-local:1" aria-label="One more number">+</button></div>
@@ -1579,7 +1579,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
     <div class="card">
       <h3>Is there a cheaper VoIP-only or basic plan?</h3>
-      <p>There is no stripped-down tier, because nothing is held back from the $25 user. Two things are cheaper because they do less: an <strong>Inbound Business Number</strong> at $10 a month receives calls and runs a call flow but cannot dial out, and if you already own a PBX, a <a href="/sip-trunks/">SIP trunk</a> at $50 a month supplies the lines without the phone system.</p>
+      <p>There is no stripped-down tier, because nothing is held back from the $25 user. Two things are cheaper because they do less: an <strong>Inbound Business Number</strong> at $10 a month receives calls and runs a call flow, with no included minutes (your extensions can still call out on it at standard rates), and if you already own a PBX, a <a href="/sip-trunks/">SIP trunk</a> at $50 a month supplies the lines without the phone system.</p>
     </div>
     <div class="card">
       <h3>How your minutes and credit work day to day</h3>
@@ -1614,7 +1614,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-11"><span>Do you charge GST?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-11" class="faq-body hidden">Yes. Click2Call is an Australian business (ABN: 92 636 893 108). GST of 10% applies to all charges. All prices on this page are shown excluding GST. Your tax invoice will show the ex-GST amount and GST separately.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-12"><span>How do I get started?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-12" class="faq-body hidden">Fill in our signup form at portal.click2call.com.au/join &mdash; it takes about 5 minutes. Your account is independently verified before activation, usually within the hour, longer after hours. Once active, you are ready to make and receive calls immediately.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-13"><span>How much does a hosted PBX cost per user in Australia?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-13" class="faq-body hidden">Click2Call&rsquo;s hosted PBX is $25 per user per month ex GST ($27.50 inc GST). That includes a local Australian number, 300 outbound minutes, unlimited inbound calls and every feature &mdash; IVR, ring groups, call queues, call recording, AI transcription and voicemail to email. Five users cost $125 a month ex GST; ten users $250. Extra inbound numbers are $10 a month each.</div></div>
-    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-14"><span>Is there a cheaper VoIP-only or inbound-only plan?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-14" class="faq-body hidden">There is no cut-down tier because every feature is already included in the $25 user. If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email) but cannot make outbound calls. If you own a PBX already, a SIP trunk is $50 a month for the lines only.</div></div>
+    <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-14"><span>Is there a cheaper VoIP-only or inbound-only plan?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-14" class="faq-body hidden">There is no cut-down tier because every feature is already included in the $25 user. If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email). It has no included minutes, but your team's free extensions can call out showing that number at standard rates (10c a minute to landlines, 20c to mobiles). If you own a PBX already, a SIP trunk is $50 a month for the lines only.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-15"><span>What do calls cost after the 300 included minutes?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-15" class="faq-body hidden">Calls to Australian and New Zealand numbers beyond the allowance are charged per minute ex GST &mdash; 10c to landlines and 20c to mobiles. Calls to 1300 numbers are a flat 50c connection fee with no per-minute charge. Texts (SMS) from a mobile number on your account are 20c each. Inbound calls to your local numbers are always free; inbound calls to a 1300 or 1800 number you hold are 20c a minute. The full schedule, including international destinations, is in the calling rates table on this page.</div></div>
     <div class="faq-item"><button class="faq-btn faq-toggle" aria-expanded="false" aria-controls="pfaq-16"><span>What does it cost to move from an on-premise PBX to Click2Call?</span><svg class="faq-chevron faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div id="pfaq-16" class="faq-body hidden">For most businesses, the only one-off cost is the number porting fee: $100 including GST per number, any type. Each number you bring across then runs on its own plan ($10/month as an inbound number, or $25/month as a Cloud PBX User). Setup is free if you follow the help guides; managed setup is $300 ex GST for up to 3 users plus $50 per additional user. Handsets are optional &mdash; the softphone app is free, and pre-configured Yealink desk phones are $450 ex GST if you want them. There is no line rental and no maintenance contract.</div></div>
   </div>
