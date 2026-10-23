@@ -184,5 +184,323 @@
   "old": "",
   "new": "The Line Manager in the Click2Call portal, showing a business number and four staff extensions with call recording switched on",
   "reason": "New photos with descriptive alt text (plan 7.2 imagery)."
+ },
+ {
+  "kind": "title",
+  "old": "Cloud PBX & VoIP Phone Systems Australia | Click2Call",
+  "new": "Business Phone Numbers & Phone Systems Australia | Click2Call",
+  "reason": "Step 2 (23 Oct): homepage retitled to the number-led term Royce chose; Cloud PBX stays on /cloud-pbx/, which owns that term."
+ },
+ {
+  "kind": "description",
+  "old": "Australian Cloud PBX from $25/user/month ex GST. Local number, AI receptionist, call recording and transcription included. Set up online, no lock-in.",
+  "new": "Australian business phone numbers in minutes: local, 04 mobile, 1300 or 1800 from $10/month ex GST, or a full cloud phone system at $25/user. 7-day free trial, no card.",
+  "reason": "Step 2 (23 Oct): description aligned to the number-led H1 and the two plans."
+ },
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "Step 2 (23 Oct): Organization, WebSite and WebPage descriptions set to the canonical number-led sentence; WebPage name matches the new title; FAQ answers 3, 5 and 15 updated to current facts; dateModified 2026-10-23."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "All prices ex GST.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Businesses can be fully operational in under an hour using existing internet connections and devices.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call is an Australian business communications provider trading as Bcom Services Pty Ltd (ABN: 92 636 893 108), delivering cloud-based phone systems to businesses of all sizes across Australia.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call is available to businesses across all of Australia , with Australian-hosted infrastructure and local support from an Australian-based team.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cloud PBX Users are $25/month (ex GST) , which includes a local number and 300 minutes of outbound calling.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cloud PBX Users are $25/month (ex GST) and include a local number and 300 minutes of outbound calling.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Compare all plans →",
+  "new": "",
+  "reason": "Queued 14 Oct fix: the link said 'Compare all plans' but went to the Switch guide; it now goes to /pricing/ where the plans are."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Core services include Cloud PBX, AI Voice Tools, AI Receptionist, Developer API, and Microsoft Teams Direct Routing — all managed from a single online portal.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "For businesses migrating from an existing system, our team handles the number porting process end-to-end so there is zero downtime.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "No hardware or IT expertise is required.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "No lock-in contracts and a 7-day free trial available — $11 credit included.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Our team manages the entire porting process on your behalf.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Port your existing business numbers across with zero downtime.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "SIP Trunks are $50/month (ex GST) and include 500 minutes of outbound calling.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "See our full comparison →",
+  "new": "",
+  "reason": "Queued 14 Oct fix: /compare/ is the switching guide, not a comparison; label now says so."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Switch to a Click2Call business landline number, turn on recording for the line, and every inbound and outbound call on it is recorded, transcribed by AI, and delivered to your email inbox the moment the call ends.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): plain-English search terms 'virtual landline' and 'business number without a landline' woven into existing sentences."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "The porting process typically takes 5 to 10 business days and your service continues uninterrupted during the transfer.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "There is no hardware to rack, no technician to book, and no waiting weeks for a line to be provisioned.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "These are capabilities that previously required enterprise-level budgets, now available to any Australian business.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "We focus on what matters to a business owner: crystal-clear calls, zero setup headaches, and technology that actually earns its keep.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "We support number porting for most Australian geographic numbers (02, 03, 07, 08), 13/1300/1800 numbers, and mobile numbers.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Whether you are on a desk phone, laptop, or mobile app, every call sounds professional.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "With Click2Call your numbers, extensions, voicemail and call routing are hosted in the cloud, so your team can answer on desk phones, computers or mobiles anywhere, and you manage everything from an online portal.",
+  "new": "",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "You sign up online, configure your system through our intuitive web portal, and your team can start making and receiving calls within hours.",
+  "new": "",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Cloud PBX user is $25 a month ex GST and includes a number and 300 minutes of outbound calling.",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Cloud PBX user is $25 a month ex GST with a number and 300 outbound minutes, with ring groups, call queues, IVR menus and Microsoft Teams calling included.",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A VoIP business number works like a virtual landline: it rings your mobile, computer or desk phone wherever you are, with no phone line to install.",
+  "reason": "Step 2 (23 Oct): plain-English search terms 'virtual landline' and 'business number without a landline' woven into existing sentences."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A business phone number is $10 a month ex GST: unlimited incoming calls, no included minutes, and calls out at 10c a minute to landlines and 20c to mobiles.",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Call recording, AI transcripts and summaries, and the AI Receptionist are included with every number, with recordings and transcripts stored in Australia and New Zealand.",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Clear calls, a quick setup, and AI that does useful work.",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call gives Australian businesses a business phone number in minutes: a local 02, 03, 07 or 08 number, an 04 mobile number, or a 1300 or 1800 number, from $10 a month ex GST, paying only for the calls you make.",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call is a trading name of Bcom Services Pty Ltd (ABN: 92 636 893 108), serving businesses across Australia and New Zealand with support by email from an Australian team.",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you are moving from another provider, your existing number keeps working while it ports across.",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Local and mobile numbers usually move in 5 to 10 business days; 1300 and 1800 numbers can take up to 30 days.",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Need a phone system for a team?",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No hardware to rack, no technician to book, no waiting weeks for a line.",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No hardware, no technician, no lock-in contract.",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Port your existing business numbers across; they keep working while they move.",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Porting costs $100 including GST for any number.",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "SIP Trunks are $50 a month ex GST with 500 outbound minutes.",
+  "reason": "Step 2 (23 Oct): FAQ 3 answer leads with the $10 number then the $25 user; prices from /pricing/."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "See how switching works →",
+  "reason": "Queued 14 Oct fix: /compare/ is the switching guide, not a comparison; label now says so."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "See plans and pricing →",
+  "reason": "Queued 14 Oct fix: the link said 'Compare all plans' but went to the Switch guide; it now goes to /pricing/ where the plans are."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Set up online in under an hour.",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Sign up online, set up your system in the web portal, and start taking calls within the hour.",
+  "reason": "Queued 14 Oct fix: 'Why choose' section trimmed where it repeated the 'How does it work' steps and the service cards."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Start with a 7-day free trial, $11 credit included, no credit card.",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Switch to a Click2Call business number instead: a virtual landline that rings your mobile or laptop, so you get a business number without a landline to install.",
+  "reason": "Step 2 (23 Oct): plain-English search terms 'virtual landline' and 'business number without a landline' woven into existing sentences."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Turn on recording for the line, and every inbound and outbound call on it is recorded, transcribed by AI, and delivered to your email inbox the moment the call ends.",
+  "reason": "Step 2 (23 Oct): Key Takeaways rewritten number-led (numbers from $10, $25 user, AI included, under an hour, Bcom Services Pty Ltd)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With Click2Call your numbers, extensions, voicemail and call routing are hosted in the cloud, and you manage everything from an online portal.",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "You can port most Australian local numbers (02, 03, 07, 08), 1300 and 1800 numbers, and mobile numbers, depending on your current carrier.",
+  "reason": "Step 2 (23 Oct): FAQ 5 answer now states the real porting facts ($100 inc GST, 5–10 business days, 1300/1800 up to 30 days)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Your number keeps working while it moves.",
+  "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
  }
 ]
