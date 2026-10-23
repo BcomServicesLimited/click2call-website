@@ -838,7 +838,7 @@ Phone Numbers
 
 ## How to Add a Phone Number
 
-Add a new Australian phone number to your Click2Call account. Choose between a **Cloud PBX** line (full PBX features including Auto Attendant) or a **Inbound Business Number** line (basic inbound/outbound). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more.
+Add a new Australian phone number to your Click2Call account. Choose between a **Cloud PBX** line (full PBX features including Auto Attendant) or a **Inbound Business Number** line (basic inbound/outbound). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more. Not sure which type to pick? The [business phone numbers page](https://www.click2call.com.au/business-phone-numbers/) compares local, 04 mobile, 1300 and 1800 numbers and their fees.
 
 Last reviewed: October 2026
 
@@ -6070,7 +6070,7 @@ Warm and cold transfers are configured in the Retell agent, not in Click2Call. I
 No. Retell is one of the no-code providers. Compare with [OpenAI](https://www.click2call.com.au/help/how-to-connect-openai) and [xAI](https://www.click2call.com.au/help/how-to-connect-xai), which both need a webhook you host.
 
 #### Do I have to buy a number from Retell?
-No — that is the point of this setup. Retell does not sell Australian geographic numbers, so importing a Click2Call number is how you get an agent on a local landline or a [1300 number](https://www.click2call.com.au/blog/1300-number-providers).
+No — that is the point of this setup. Retell does not sell Australian geographic numbers, so importing a Click2Call number is how you get an agent on a local landline or a [1300 number](https://www.click2call.com.au/1300-numbers/).
 
 #### Are calls still recorded and transcribed?
 Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
@@ -6261,7 +6261,7 @@ In the Vapi dashboard, opened against the assistant — it is a UUID. The GET /a
 Not for routing. The assistant is dashboard-configured; code is only needed if you want custom tools. Compare with [OpenAI](https://www.click2call.com.au/help/how-to-connect-openai) and [xAI](https://www.click2call.com.au/help/how-to-connect-xai), where a webhook is mandatory.
 
 #### Do I have to buy a number from Vapi?
-No. Vapi does not sell Australian geographic numbers, so bringing a Click2Call number is normally the only way to put a Vapi assistant on a local landline or a [1300 number](https://www.click2call.com.au/blog/1300-number-providers).
+No. Vapi does not sell Australian geographic numbers, so bringing a Click2Call number is normally the only way to put a Vapi assistant on a local landline or a [1300 number](https://www.click2call.com.au/1300-numbers/).
 
 #### Are calls still recorded and transcribed?
 Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).

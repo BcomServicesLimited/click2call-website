@@ -18,6 +18,10 @@ Click2Call offers seven core services designed to cover every aspect of modern b
 
 Click2Call sells four kinds of Australian business phone number, each $10 a month ex GST with unlimited incoming calls to local numbers and every Cloud PBX feature: local 02/03/07/08 numbers (free to allocate), 04 mobile numbers ($50 inc GST once, two-way SMS at 20c a message), 1300 numbers ($100 inc GST once, callers pay a local rate, the business pays 20c a minute for incoming calls, receive-only) and 1800 numbers ($100 inc GST once, free for callers, the business pays 20c a minute, receive-only). Calls out from a $10 number cost 10c a minute to landlines and 20c to mobiles; a $25 Cloud PBX user adds 300 outbound minutes. The number rings the free Secure VoIP app on a mobile or computer, a desk phone, or forwards to a mobile, so it works as a virtual landline with no line to install. Page: https://www.click2call.com.au/business-phone-numbers/
 
+### 1300 and 1800 Numbers
+
+A new 1300 or 1800 number costs $100 inc GST once, then $10 a month ex GST. Incoming calls cost the business 20c a minute on both; 1300 callers pay a local rate and 1800 callers pay nothing. Both receive calls only. Porting an existing 1300 or 1800 number is $100 inc GST and can take up to 30 days. Click2Call does not sell 13 numbers or smartnumbers. Page: https://www.click2call.com.au/1300-numbers/
+
 ### Cloud PBX
 
 Click2Call's Cloud PBX is a complete, hosted business phone system that runs entirely over the internet, eliminating the need for on-premise PBX hardware. It is designed for businesses seeking enterprise-grade features without the complexity or cost of a traditional system.
@@ -412,7 +416,6 @@ The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI tele
 - AI in Business Phones: [https://www.click2call.com.au/blog/ai-in-business-phones](https://www.click2call.com.au/blog/ai-in-business-phones)
 - Business Phone System Cost Guide: [https://www.click2call.com.au/blog/business-phone-system-cost](https://www.click2call.com.au/blog/business-phone-system-cost)
 - How to Secure Business Communications: [https://www.click2call.com.au/blog/how-to-secure-business-communications](https://www.click2call.com.au/blog/how-to-secure-business-communications)
-- 1300 Number Providers Australia: [https://www.click2call.com.au/blog/1300-number-providers](https://www.click2call.com.au/blog/1300-number-providers)
 - Why ElevenLabs is the Undisputed Leader in Voice AI: [https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk](https://www.click2call.com.au/blog/elevenlabs-voice-ai-sip-trunk) — Why ElevenLabs leads the voice AI market, how enterprises use it, and how Click2Call connects it to your phone system via SIP trunk.
 - How to Get a Business Phone Number: [https://www.click2call.com.au/blog/how-to-get-a-business-phone-number](https://www.click2call.com.au/blog/how-to-get-a-business-phone-number) — A practical guide for new Australian business owners on getting a local phone number, setting up a cloud phone system, and using an AI receptionist to handle calls from day one. Covers local vs 1300 numbers, call diversion to mobile, AI Receptionist setup, voicemail greetings, and a day-one checklist.
 - AI Receptionist Australia: How Virtual Assistants Are Changing Business: [https://www.click2call.com.au/blog/ai-receptionist-australia](https://www.click2call.com.au/blog/ai-receptionist-australia) — Discover how an AI receptionist can help your Australian business handle calls 24/7, reduce costs, and improve customer service. Includes a guide on building your own inbound AI receptionist for just $10/month.
