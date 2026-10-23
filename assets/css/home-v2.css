@@ -47,6 +47,9 @@
 .hv2 .hero h1{margin-top:22px;font-size:clamp(2.4rem,4.4vw,3.5rem);font-weight:800;line-height:1.02;letter-spacing:-.035em;margin-top:12px}
 .hv2 .hero h1 em{font-style:normal;color:var(--g)}
 .hv2 .hero .hero-sub{margin-top:14px;font-size:1.35rem;font-weight:600;color:var(--muted);letter-spacing:-.01em}
+.hv2 .num-types{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.hv2 .num-types a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:.9rem;font-weight:700;color:var(--ink);text-decoration:none;transition:border-color .15s,background .15s,color .15s}
+.hv2 .num-types a:hover,.hv2 .num-types a:focus-visible{border-color:var(--g);background:var(--g-tint);color:var(--g-dark)}
 .hv2 .hero .price-note{margin-top:20px;font-size:.92rem;line-height:1.55;color:var(--muted);max-width:38em}
 .hv2 .hero .summary{font-size:1.2rem;line-height:1.55;color:var(--ink-2);margin-top:22px;max-width:34em}
 .hv2 .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}

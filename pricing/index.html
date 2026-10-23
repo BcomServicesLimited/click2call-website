@@ -12,7 +12,7 @@
 <link as="image" fetchpriority="high" href="/assets/images/click2call_header_logo_transparent.webp" rel="preload"/>
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=39d66cb806">
 <link href="/assets/css/brand.css?v=3912708188" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/css/home-v2.css?v=86304b1f3b">
+<link rel="stylesheet" href="/assets/css/home-v2.css?v=d0353f8623">
 <script defer="" src="/assets/js/alpine.min.js?v=358d9afbb1"></script>
 <!-- Favicon -->
 <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
@@ -1485,7 +1485,16 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCalc();
   });
   document.getElementById('rec-keep').addEventListener('click', function () { calcRecDismissed = true; updateCalc(); });
+  // A link like /pricing/?number=1300#calculator opens the builder with that kind of new number chosen.
+  var qpNum = new URLSearchParams(location.search).get('number');
+  if (qpNum && CALC_TYPE_NAME[qpNum]) { calcType = qpNum; calcUsed('link-' + qpNum); }
   updateCalc();
+  // The builder redraws as it starts, which can cancel the browser's smooth jump to #calculator.
+  if (location.hash === '#calculator') {
+    var toCalc = function () { document.getElementById('calculator').scrollIntoView({ block: 'start', behavior: 'instant' }); };
+    toCalc();
+    window.addEventListener('load', function () { setTimeout(toCalc, 60); });
+  }
 });
 
 </script>
