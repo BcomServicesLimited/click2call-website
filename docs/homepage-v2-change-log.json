@@ -502,5 +502,11 @@
   "old": "",
   "new": "Your number keeps working while it moves.",
   "reason": "Queued 14 Oct fix: 'zero downtime' and 'uninterrupted' claims replaced with the owner-approved wording that the number keeps working while it moves."
+ },
+ {
+  "kind": "links-added",
+  "old": "",
+  "new": "/business-phone-numbers/",
+  "reason": "Step 4 (23 Oct): hero number chips and the 'Get a Business Number' link now point at the new /business-phone-numbers/ hub (anchors #local #mobile #1300 #1800); footer gains 'Business Phone Numbers' first, matching _footer.html."
  }
 ]

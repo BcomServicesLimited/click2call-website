@@ -14,6 +14,10 @@ In one sentence: Click2Call gives Australian small businesses a business phone n
 
 Click2Call offers seven core services designed to cover every aspect of modern business telephony: Cloud PBX, Call Centre Features (queues and a live dashboard, included with every user rather than sold as a tier), AI Voice Tools, AI Receptionist, Microsoft Teams Calling, SIP Trunks, and a Developer API with built-in connection profiles for nine AI voice platforms. The Call Centre and Developer API pages are summarised in the Help Centre and Blog sections below and at https://www.click2call.com.au/call-centre and https://www.click2call.com.au/api
 
+### Business Phone Numbers
+
+Click2Call sells four kinds of Australian business phone number, each $10 a month ex GST with unlimited incoming calls to local numbers and every Cloud PBX feature: local 02/03/07/08 numbers (free to allocate), 04 mobile numbers ($50 inc GST once, two-way SMS at 20c a message), 1300 numbers ($100 inc GST once, callers pay a local rate, the business pays 20c a minute for incoming calls, receive-only) and 1800 numbers ($100 inc GST once, free for callers, the business pays 20c a minute, receive-only). Calls out from a $10 number cost 10c a minute to landlines and 20c to mobiles; a $25 Cloud PBX user adds 300 outbound minutes. The number rings the free Secure VoIP app on a mobile or computer, a desk phone, or forwards to a mobile, so it works as a virtual landline with no line to install. Page: https://www.click2call.com.au/business-phone-numbers/
+
 ### Cloud PBX
 
 Click2Call's Cloud PBX is a complete, hosted business phone system that runs entirely over the internet, eliminating the need for on-premise PBX hardware. It is designed for businesses seeking enterprise-grade features without the complexity or cost of a traditional system.
