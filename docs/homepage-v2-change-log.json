@@ -508,5 +508,107 @@
   "old": "",
   "new": "/business-phone-numbers/",
   "reason": "Step 4 (23 Oct): hero number chips and the 'Get a Business Number' link now point at the new /business-phone-numbers/ hub (anchors #local #mobile #1300 #1800); footer gains 'Business Phone Numbers' first, matching _footer.html."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h1: Business Phone Numbers. Powered by AI.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h1: Australian Business Phone Numbers. Powered by AI.",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "7-day free trial, no credit card.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Business Phone Numbers.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Ex GST.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "For Australian Businesses",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Make and receive calls anywhere, with intelligent call routing, AI call summaries and an optional AI receptionist.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "No hardware or lock-in contracts.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Sign up online in minutes for an Australian business phone number.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Then from $10/month per number, paying as you call, or $25/user/month with 300 minutes included.",
+  "new": "",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "7-day free trial, no credit card",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A local, 04 mobile, 1300 or 1800 number from $10 a month, or a complete small business phone system ( cloud PBX ) at $25 a user.",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AI call summaries included",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Australian Business Phone Numbers.",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Optional AI receptionist",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Prices ex GST.",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Set up online in minutes, with intelligent call routing and no hardware or lock-in contracts.",
+  "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
  }
 ]
