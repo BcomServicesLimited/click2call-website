@@ -33,7 +33,7 @@ DEFAULT_THRESHOLD = 0.25
 
 def landing_pages():
     names = sorted(p.name for p in ROOT.iterdir()
-                   if p.is_dir() and (p.name.startswith("voip-") or p.name == "call-centre")
+                   if p.is_dir() and (p.name.startswith("voip-") or p.name in ("call-centre", "business-phone-numbers", "1300-numbers"))
                    and (p / "index.html").is_file())
     return names
 
@@ -41,9 +41,11 @@ def landing_pages():
 def body_text(name):
     s = (ROOT / name / "index.html").read_text(encoding="utf-8")
     s = re.sub(r"<head.*?</head>", " ", s, flags=re.S | re.I)
+    # Comments first: the shared header note mentions "<script>" inside a comment,
+    # and stripping scripts first would swallow that comment's closing marker.
+    s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
     for tag in ("script", "style", "svg", "header", "nav", "footer", "noscript"):
         s = re.sub(rf"<{tag}\b.*?</{tag}>", " ", s, flags=re.S | re.I)
-    s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", s)).split())
 
 
