@@ -12,7 +12,7 @@
 <link as="image" fetchpriority="high" href="/assets/images/click2call_header_logo_transparent.webp" rel="preload"/>
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=39d66cb806">
 <link href="/assets/css/brand.css?v=3912708188" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/css/home-v2.css?v=6604580530">
+<link rel="stylesheet" href="/assets/css/home-v2.css?v=6cbc2dd3c6">
 <script defer="" src="/assets/js/alpine.min.js?v=358d9afbb1"></script>
 <!-- Favicon -->
 <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
@@ -617,12 +617,11 @@
       <span class="plan-sub">Pay as you call</span>
       <div class="cost"><div class="amt">$10<span>/mo</span></div><div class="sub">per number (ex GST)</div></div>
       <ul class="checks">
-        <li class="check">Your own Australian number: local, 04 mobile, 1300 or 1800</li>
-        <li class="check">Unlimited incoming calls</li>
-        <li class="check">Calls out from the app: 10c a minute to landlines, 20c to mobiles</li>
+        <li class="check">The full phone system and AI features</li>
+        <li class="check">Your own number: local, 04 mobile, 1300 or 1800</li>
+        <li class="check">Unlimited incoming calls and free extensions for your team</li>
+        <li class="check"><strong>Calls out: 10c a minute to landlines, 20c to mobiles</strong></li>
         <li class="check info">Most of our $10 customers spend under $5 a month on calls</li>
-        <li class="check">Free internal extensions for your whole team, all answering and calling from this number</li>
-        <li class="check">Every Cloud PBX feature, including the AI Receptionist</li>
         <li class="check info">Shown as &ldquo;Inbound Business Number&rdquo; in the portal. 1300 and 1800 numbers receive calls only</li>
       </ul>
       <a class="btn btn-primary" href="https://portal.click2call.com.au/join/?src=pricing-plan-number" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-plan-number'});">Start free trial</a>
@@ -633,11 +632,11 @@
       <span class="plan-sub">300 minutes included</span>
       <div class="cost"><div class="amt">$25<span>/mo</span></div><div class="sub">per user (ex GST)</div></div>
       <ul class="checks">
-        <li class="check">A direct local number for one person</li>
-        <li class="check">300 outbound minutes a month included</li>
-        <li class="check info">Cheaper than pay as you call above about 75 minutes of mobile calls a month</li>
-        <li class="check">Unlimited incoming calls</li>
-        <li class="check">Every Cloud PBX feature, including the AI Receptionist</li>
+        <li class="check">The full phone system and AI features</li>
+        <li class="check">Your own local number</li>
+        <li class="check">Unlimited incoming calls and free extensions for your team</li>
+        <li class="check"><strong>Calls out: 300 minutes included each month</strong></li>
+        <li class="check info">Cheaper if you make more than about an hour of calls to mobiles a month. Microsoft Teams users are also $25</li>
       </ul>
       <a class="btn btn-ghost" href="https://portal.click2call.com.au/join/?src=pricing-plan-user" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - pricing-plan-user'});">Start free trial</a>
     </div>
@@ -1503,16 +1502,27 @@ document.addEventListener('DOMContentLoaded', function () {
 </div></section>
 
 <section class="sec" aria-labelledby="buy-h"><div class="wrap">
-  <div class="head"><p class="eyebrow">What's included</p><h2 id="buy-h">What you're actually buying for $25/user/month</h2><p class="lead">A Cloud PBX User plan bundles a full phone system with our AI tools and integrations — all included, no per-feature add-ons.</p></div>
+  <div class="head"><p class="eyebrow">What&rsquo;s included</p><h2 id="buy-h">Same phone system on both plans. Only calls out are different.</h2><p class="lead">Every number comes with the whole phone system and the AI features. The only thing you&rsquo;re choosing is how you pay for the calls you make.</p></div>
+  <div class="tbl compare-plans"><table>
+    <thead><tr><th></th><th>$10 a month<br><span class="small">Pay as you call</span></th><th>$25 a month<br><span class="small">300 minutes included</span></th></tr></thead>
+    <tbody>
+      <tr><td>Your business number and unlimited incoming calls</td><td>&#10003;</td><td>&#10003;</td></tr>
+      <tr><td>A phone menu (&ldquo;press 1 for sales&rdquo;), calls that ring your whole team, voicemail sent to your email</td><td>&#10003;</td><td>&#10003;</td></tr>
+      <tr><td>AI Receptionist: answers when you can&rsquo;t and emails you the message</td><td>&#10003;</td><td>&#10003;</td></tr>
+      <tr><td>Every call recorded, transcribed and summarised</td><td>&#10003;</td><td>&#10003;</td></tr>
+      <tr><td>Free extensions and the app for your whole team</td><td>&#10003;</td><td>&#10003;</td></tr>
+      <tr><td><strong>Calls out</strong></td><td><strong>10c a minute to landlines, 20c to mobiles</strong></td><td><strong>300 minutes included, then 10c/20c</strong></td></tr>
+      <tr><td><strong>Best for</strong></td><td>Mostly answering calls</td><td>Making a lot of calls</td></tr>
+    </tbody>
+  </table></div>
+  <p class="center-note">If you&rsquo;ll make more than about an hour of calls to mobiles a month, the $25 plan is cheaper (the exact break-even is about 75 minutes to mobiles, or 150 to landlines). Prefer to call from your own mobile? Take the $10 plan and keep doing that; your customers will see your mobile number instead of your business number.</p>
+  <h3 class="sub-h">What every number includes</h3>
   <div class="svc">
-    <a href="/cloud-pbx/"><h3>Cloud PBX</h3><p>Local Australian number, call routing, auto-attendant, voicemail, ring groups, mobile + desk apps. The phone-system backbone &mdash; and it includes the call centre features other providers charge extra for.</p><span class="more">Learn more →</span></a>
-    <a href="/ai-receptionist/"><h3>AI Receptionist</h3><p>Conversational AI answers calls 24/7 in a natural voice. Routes, takes messages, books simple appointments. Included free.</p><span class="more">Learn more →</span></a>
-    <a href="/ai-voice-tools/"><h3>AI Voice Tools</h3><p>Every call recorded, transcribed and summarised in plain English. Sentiment + key topics in your portal. Included free.</p><span class="more">Learn more →</span></a>
-    <a href="/microsoft-teams-calling/"><h3>Microsoft Teams Calling</h3><p>Already use Teams? Make real phone calls from inside Teams using Direct Routing. No Microsoft Calling Plan needed.</p><span class="more">Learn more →</span></a>
-    <a href="/sip-trunks/"><h3>SIP Trunks</h3><p>Got an existing on-premise PBX you want to keep? Connect it to our Australian-hosted voice network. For developers + larger setups.</p><span class="more">Learn more →</span></a>
-    <a href="/api/"><h3>Developer API</h3><p>Build your own integrations. Webhooks, call control, transcripts. Self-serve docs at portal.click2call.com.au/apidocs.</p><span class="more">Learn more →</span></a>
+    <a href="/cloud-pbx/"><h3>A proper business phone system</h3><p>A phone menu, calls that ring your whole team, voicemail to email, call queues and a live dashboard. It works in the app on your mobile or computer, or on a desk phone.</p><span class="more">Learn more →</span></a>
+    <a href="/ai-receptionist/"><h3>An AI receptionist</h3><p>Answers when you can&rsquo;t, day or night, in a natural voice. It puts callers through or takes a message and emails it to you.</p><span class="more">Learn more →</span></a>
+    <a href="/ai-voice-tools/"><h3>Every call written down</h3><p>Calls are recorded, transcribed and summarised in plain English, so you can see what was said without listening back.</p><span class="more">Learn more →</span></a>
   </div>
-  <p class="center-note">Call queues, the live call dashboard and intelligent routing are part of Cloud PBX, not a contact-centre upgrade &mdash; see <a class="link" href="/call-centre/">call centre features</a>.</p>
+  <p class="center-note">Also available: <a class="link" href="/microsoft-teams-calling/">Microsoft Teams calling</a> ($25 per Teams user, because a $10 number can&rsquo;t be used in Teams), <a class="link" href="/sip-trunks/">SIP trunks</a> for an existing phone system, and a <a class="link" href="/api/">developer API</a> included free on every account.</p>
 </div></section>
 
 <section class="sec soft" id="setup-options" aria-labelledby="setup-h"><div class="wrap">
@@ -2055,7 +2065,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="sticky-trial-cta" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 transform translate-y-full transition-transform duration-300 hidden">
 <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
 <div class="text-sm text-gray-900">
-<span class="font-bold">$25</span><span class="text-gray-600">/user/mo ex GST &middot; no lock-in &middot; set up in under an hour</span>
+<span class="font-bold">$10</span><span class="text-gray-600">/month a number ex GST &middot; no lock-in</span>
 </div>
 <a href="https://portal.click2call.com.au/join/?src=pricing-sticky" target="_blank" rel="noopener noreferrer"
    class="inline-flex items-center gap-1 px-5 py-2 rounded-lg text-white font-bold text-sm whitespace-nowrap hover:opacity-90 transition-opacity"
