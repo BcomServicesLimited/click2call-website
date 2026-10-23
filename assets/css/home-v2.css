@@ -557,3 +557,11 @@
 .hv2 .addons{grid-template-columns:minmax(0,1fr)}
 .hv2 .card,.hv2 .plan,.hv2 .sc,.hv2 .q,.hv2 .receipt,.hv2 .duo>*{min-width:0}
 .hv2.pr .btn{white-space:normal;text-align:center}
+.hv2 .compare-plans{max-width:860px;margin:0 auto}
+.hv2 .compare-plans table{min-width:0}
+.hv2 .compare-plans th{text-transform:none;letter-spacing:0;font-size:1rem;font-weight:800;color:var(--ink)}
+.hv2 .compare-plans th .small{font-weight:600;font-size:.8rem;color:var(--muted)}
+.hv2 .compare-plans th:not(:first-child),.hv2 .compare-plans td:not(:first-child){text-align:center;width:26%}
+.hv2 .compare-plans td:not(:first-child){color:var(--g-dark);font-weight:700}
+.hv2 .sub-h{font-size:1.25rem;font-weight:800;text-align:center;margin:48px 0 18px;color:var(--ink)}
+@media (max-width:640px){.hv2 .compare-plans th,.hv2 .compare-plans td{padding:10px 8px;font-size:.85rem}}
