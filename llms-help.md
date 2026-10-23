@@ -769,7 +769,7 @@ Phone Numbers
 
 ## Sending and Receiving SMS on Your Business Mobile
 
-Send and receive text messages on an Australian mobile number on your account, from the portal, by email, or from your own software. Texts go out from that mobile number, so the people you text see it and can reply. Replies appear in the portal and are emailed to you. Texts can only go to mobiles.
+Send and receive text messages on an [Australian mobile number](https://www.click2call.com.au/business-phone-numbers/#mobile) on your account, from the portal, by email, or from your own software. Texts go out from that mobile number, so the people you text see it and can reply. Replies appear in the portal and are emailed to you. Texts can only go to mobiles.
 
 Last reviewed: October 2026
 
@@ -953,7 +953,7 @@ Your new Sydney number **02 7238 0358** is now active. Next steps you might want
 
 ### 1300 numbers
 
-- **A new 1300 or 1800 number has a one-off $100 allocation fee including GST.** It is allocated automatically, so we cannot offer a list to choose from. After the allocation fee it costs the usual monthly plan for the number. New local numbers have no allocation fee, and a new 04 mobile number is a one-off $50 including GST.
+- **A new [1300 or 1800 number](https://www.click2call.com.au/1300-numbers/) has a one-off $100 allocation fee including GST.** It is allocated automatically, so we cannot offer a list to choose from. After the allocation fee it costs the usual monthly plan for the number. New local numbers have no allocation fee, and a new 04 mobile number is a one-off $50 including GST.
 - **To choose a specific 1300 number,** search for one and register it yourself at The Numbering System (you create a login there). This costs more upfront: their number fee, plus our $100 porting fee to bring it to Click2Call. See [Porting a number](https://www.click2call.com.au/help/how-to-port-number).
 
 **Good to know:** We do not recommend a 1300 number as your outgoing caller ID: some carriers do not support it and show the call as a private number. Use a local number for outgoing calls.
@@ -973,13 +973,13 @@ Ring multiple extensions at the same time](https://www.click2call.com.au/help/ho
 
 Source: https://www.click2call.com.au/help/how-to-port-number
 
-Number porting allows you to transfer your existing phone number — including local geographic numbers and Australian mobile numbers — from your current provider to Click2Call. Your number stays the same; only the carrier changes.
+Number porting allows you to transfer your existing phone number — including [local geographic numbers](https://www.click2call.com.au/business-phone-numbers/#local) and Australian mobile numbers — from your current provider to Click2Call. Your number stays the same; only the carrier changes.
 
 ### Porting Your Number, Step by Step
 
 **Important Information Before You Start:**
 
-- **Cost:** Porting any number — landline, mobile, 1300 or 1800 — costs a flat $100 including GST.
+- **Cost:** Porting any number — landline, mobile, [1300 or 1800](https://www.click2call.com.au/1300-numbers/) — costs a flat $100 including GST.
 
 - **Mobile number porting:** Click2Call can port most Australian mobile numbers. Eligibility depends on your current carrier — contact us to confirm before submitting a request.
 
@@ -1326,7 +1326,7 @@ No. The Caller ID and Privacy settings only affect outbound calls made from this
 
 ### Can a 1300 number be my caller ID?
 
-Yes, but we do not recommend it. Some carriers do not support 1300 numbers as caller ID and show the call as a **private number**, which many people will not answer. Show a local or mobile-style number for outgoing calls instead.
+Yes, but we do not recommend it. Some carriers do not support [1300 numbers](https://www.click2call.com.au/1300-numbers/) as caller ID and show the call as a **private number**, which many people will not answer. Show a local or mobile-style number for outgoing calls instead.
 
 ## Setting Up Global Contacts and Speed Dials
 
@@ -5476,7 +5476,7 @@ Source: https://www.click2call.com.au/help/plans-numbers-and-channels
 
 : What You Pay For
 
-You pay for each phone number on its own plan, and extensions are free. Your account also has a number of channels: how many calls can be in progress at once. This guide explains each charge and how to change a number’s plan.
+You pay for [each phone number](https://www.click2call.com.au/business-phone-numbers/) on its own plan, and extensions are free. Your account also has a number of channels: how many calls can be in progress at once. This guide explains each charge and how to change a number’s plan.
 
 Last reviewed: October 2026
 
@@ -5488,7 +5488,7 @@ Last reviewed: October 2026
 | Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: an Inbound Business Number can’t be used with Teams. Teams setup is $50 + GST ($55.00) per user. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 
-New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand. This can take up to 24 hours, and we email you when the number is active.
+New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within the hour in business hours; a request made at 10 pm is done the next morning. We email you when the number is active.
 
 When you add a number partway through a month, you first pay for the part of the month that is left. After that it is charged in full each month.
 
