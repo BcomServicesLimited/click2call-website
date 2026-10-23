@@ -83,3 +83,7 @@
 
 # --- Missing blog article ---
 /blog/ai-voice-tools-guide.html  /ai-voice-tools/  301
+
+# --- 1300 guide folded into the 1300 numbers page (23 Oct 2026) ---
+/blog/1300-number-providers       /1300-numbers/    301
+/blog/1300-number-providers.html  /1300-numbers/    301
