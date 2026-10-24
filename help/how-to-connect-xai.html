@@ -147,7 +147,7 @@
       "name": "Are calls still recorded and transcribed by Click2Call?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side in addition to anything xAI logs, with the data stored in Australia and New Zealand."
+        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side in addition to anything xAI logs, with the data stored in Australia."
       }
     }
   ]
@@ -463,7 +463,7 @@
 <div><h3 class="font-bold text-gray-900 mb-1">Do I need to write code?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; a webhook and a WebSocket. Same shape as <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-openai">OpenAI</a>. For a dashboard-only agent, use <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a>, <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-retell-ai">Retell</a> or <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-synthflow">Synthflow</a>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">What does byo_trunk mean?</h3><p class="text-gray-600 leading-relaxed">That the number is yours and arrives over your own SIP trunk rather than being provisioned by xAI. Provisioning xAI numbers through the API is not supported, so this is how an Australian number reaches a Grok voice agent.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Why port 5061 and TLS?</h3><p class="text-gray-600 leading-relaxed">xAI terminates SIP over TLS. The built-in profile already uses <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span>, so there is nothing to change.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Are calls still recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes, provided <strong>Recording Enabled</strong> is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Are calls still recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes, provided <strong>Recording Enabled</strong> is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Can I use my existing business number?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; <a class="text-[#3B9C49] hover:underline" href="/number-porting/">port it across</a> first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.</p></div>
 </div>
     <div class="bg-white rounded-2xl border border-gray-200 p-6 mb-8">

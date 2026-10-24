@@ -622,5 +622,11 @@
   "old": "",
   "new": "Australian-owned & operated · Your data stays in Australia",
   "reason": "24 Oct 2026, Royce: hero eyebrow says 'Your data stays in Australia' (New Zealand dropped from this line only; data-residency statements elsewhere unchanged)."
+ },
+ {
+  "kind": "wording",
+  "old": "stored in Australia and New Zealand (data-residency statements)",
+  "new": "stored in Australia",
+  "reason": "25 Oct 2026, Royce: describe where recordings and data are stored as 'Australia' only, site-wide. Availability ('businesses in Australia and New Zealand') unchanged."
  }
 ]

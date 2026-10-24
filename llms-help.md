@@ -5900,7 +5900,7 @@ No. This is one of the no-code providers — the agent is built in the ElevenLab
 E.164 — +61355551234, not 03 5555 1234. Click2Call sends +E.164 automatically, so import it that way.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile.
@@ -5980,7 +5980,7 @@ Yes, for OpenAI specifically. The Click2Call side is configuration only, but Ope
 platform.openai.com → Settings → Project → General. It starts with proj_.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Most businesses test on a new number and move the main one once the agent behaves.
@@ -6075,7 +6075,7 @@ No. Retell is one of the no-code providers. Compare with [OpenAI](https://www.cl
 No — that is the point of this setup. Retell does not sell Australian geographic numbers, so importing a Click2Call number is how you get an agent on a local landline or a [1300 number](https://www.click2call.com.au/1300-numbers/).
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.
@@ -6175,7 +6175,7 @@ No. Synthflow is one of the no-code providers. [OpenAI](https://www.click2call.c
 Synthflow runs its inbound SIP service on a high port rather than the usual 5060. The built-in profile already points at it, so there is nothing for you to configure.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.
@@ -6266,7 +6266,7 @@ Not for routing. The assistant is dashboard-configured; code is only needed if y
 No. Vapi does not sell Australian geographic numbers, so bringing a Click2Call number is normally the only way to put a Vapi assistant on a local landline or a [1300 number](https://www.click2call.com.au/1300-numbers/).
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 ## Connecting LiveKit Cloud to Your Phone Number
 
@@ -6374,7 +6374,7 @@ Whichever region your LiveKit project runs in — values look like us1 and eu1. 
 Yes. LiveKit is media infrastructure, so you deploy an agent that joins the room. For a dashboard-only agent use [ElevenLabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs), [Retell](https://www.click2call.com.au/help/how-to-connect-retell-ai) or [Synthflow](https://www.click2call.com.au/help/how-to-connect-synthflow) instead.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.
@@ -6481,7 +6481,7 @@ That the number is yours and arrives over your own SIP trunk rather than being p
 xAI terminates SIP over TLS. The built-in profile already uses sip:sip.voice.x.ai:5061;transport=tls, so there is nothing to change.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.
@@ -6585,7 +6585,7 @@ SIP Domain. Elastic SIP Trunking termination ends in pstn.twilio.com and is for 
 Not necessarily — a Studio Flow or a TwiML Bin returns valid TwiML with no server of your own. You only need code if the call logic has to reach your systems.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.
@@ -6684,7 +6684,7 @@ Programmable call logic between the carrier and whatever handles the call. It ea
 No. Connect the provider directly — [Vapi](https://www.click2call.com.au/help/how-to-connect-vapi), [Retell](https://www.click2call.com.au/help/how-to-connect-retell-ai), [ElevenLabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs) and the rest all have their own built-in profile.
 
 #### Are calls still recorded and transcribed?
-Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia and New Zealand. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
+Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
 
 #### Can I use my existing business number?
 Yes — [port it across](https://www.click2call.com.au/number-porting/) first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.
