@@ -610,5 +610,17 @@
   "old": "",
   "new": "Set up online in minutes, with intelligent call routing and no hardware or lock-in contracts.",
   "reason": "Hero refresh 24 Oct 2026 (Option 1, approved by Royce): H1 gains 'Australian' for the business-phone-number-australia family; summary carries the $10 number / $25 small business phone system (cloud PBX, linked) prices and the number types; the pill badge becomes an eyebrow line, the long price note becomes three tick items plus a one-line ex-GST/AU-NZ note, and the call card moves inside the photo so the hero fits above the fold. speakable ids, chips, tracked buttons unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Australian-owned & operated · Your data stays in Australia & New Zealand",
+  "new": "",
+  "reason": "24 Oct 2026, Royce: hero eyebrow says 'Your data stays in Australia' (New Zealand dropped from this line only; data-residency statements elsewhere unchanged)."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Australian-owned & operated · Your data stays in Australia",
+  "reason": "24 Oct 2026, Royce: hero eyebrow says 'Your data stays in Australia' (New Zealand dropped from this line only; data-residency statements elsewhere unchanged)."
  }
 ]
