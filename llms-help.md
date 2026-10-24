@@ -874,7 +874,7 @@ In the **Select Country** dropdown, choose **Australia**. The **Area** dropdown 
 
 Choose the city area for your new number. Available areas include **Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Hobart** and more. In this example we are selecting **Sydney** to get a 02 number.
 
-**Need a regional number?** City areas are listed in the dropdown. For a regional town, such as Shepparton (03 58), Tamworth (02 67) or Townsville (07 47), email support@click2call.com.au with the town and our team adds the number to your account at the same $10 a month ex GST, usually within the hour in business hours. See [regional numbers](https://www.click2call.com.au/business-phone-numbers/#regional) for more examples.
+**Need a regional number?** City areas are listed in the dropdown. For a regional town, such as Shepparton (03 58), Tamworth (02 67) or Townsville (07 47), email support@click2call.com.au with the town and our team adds the number to your account at the same $10 a month ex GST, usually within 24 hours, Monday to Friday. See [regional numbers](https://www.click2call.com.au/business-phone-numbers/#regional) for more examples.
 
 **Area code reference:**
 
@@ -5490,7 +5490,7 @@ Last reviewed: October 2026
 | Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: an Inbound Business Number can’t be used with Teams. Teams setup is $50 + GST ($55.00) per user. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 
-New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within the hour in business hours; a request made at 10 pm is done the next morning. We email you when the number is active.
+New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within 24 hours, Monday to Friday, and we email you when the number is active.
 
 When you add a number partway through a month, you first pay for the part of the month that is left. After that it is charged in full each month.
 
