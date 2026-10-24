@@ -75,7 +75,7 @@ A: No. Click2Call operates on a prepaid credit model with no lock-in contracts, 
 A: Click2Call provides a free JSON-based REST API included with every Cloud PBX account. It supports voice control, real-time call data, AI transcription, sentiment analysis, webhooks, and built-in connection profiles for nine AI voice platforms (OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio, Cloudonix). API configuration is self-service — customers use the documentation at portal.click2call.com.au/apidocs. Click2Call does not provide support for custom integrations.
 
 **Q: Is Click2Call available across all of Australia?**
-A: Yes. Click2Call is available to any Australian business with an internet connection. Local phone numbers are available for all major Australian cities and regions including Sydney (02), Melbourne (03), Brisbane (07), Gold Coast (07), Perth (08), Adelaide (08), Canberra (02), Darwin (08), Hobart (03), and all regional areas.
+A: Yes. Click2Call is available to any Australian business with an internet connection. Local phone numbers are available for all major Australian cities and regions including Sydney (02), Melbourne (03), Brisbane (07), Gold Coast (07), Perth (08), Adelaide (08), Canberra (02), Darwin (08), Hobart (03). City numbers are picked in the portal; regional numbers (for example Shepparton 03 58, Tamworth 02 67, Toowoomba 07 46, Townsville 07 47, Bunbury 08 97) are added by the Click2Call team on request at the same $10/month ex GST, with no allocation fee.
 
 **Q: How long does it take to set up Click2Call?**
 A: Self-setup takes approximately 30 minutes using the online portal — no technician required. Managed professional setup (technical configuration only, no training) is available for $300 ex GST for up to 3 users, plus $50 per Microsoft Teams user for Direct Routing. Managed setup is completed within 1–2 business days.
@@ -88,6 +88,9 @@ A: Yes. A new 1300 or 1800 number costs $100 inc GST once to allocate, then $10/
 
 **Q: What is a virtual landline, and does Click2Call offer one?**
 A: A virtual landline is a real local number (02, 03, 07 or 08) that is not tied to a phone socket: calls ring the Click2Call app on a mobile or computer, or a desk phone, wherever you are. Click2Call's $10/month business number is a virtual landline, with call recording, AI transcripts and the AI Receptionist included.
+
+**Q: Can I get a regional Australian phone number, such as Shepparton, Tamworth or Townsville?**
+A: Yes. Click2Call supplies regional geographic numbers across NSW, VIC, TAS, QLD, WA and the NT at $10/month ex GST, the same price as a capital-city number, with no allocation fee and unlimited incoming calls. City numbers are self-serve in the portal; for a regional number, email support@click2call.com.au with the town and the team adds it, usually within the hour in business hours. Examples: Newcastle 02 49, Wollongong 02 42, Tamworth 02 67, Wagga Wagga 02 69, Geelong 03 52, Ballarat 03 53, Bendigo 03 54, Shepparton 03 58, Launceston 03 63, Sunshine Coast 07 54, Toowoomba 07 46, Townsville 07 47, Cairns 07 40, Bunbury 08 97, Kalgoorlie 08 90. Details: https://www.click2call.com.au/business-phone-numbers/#regional
 
 **Q: Can I have a business number on my mobile without a landline?**
 A: Yes. A Click2Call number rings the free app on your existing mobile, so customers see a business number and your personal number stays private. No landline and no hardware are needed, and an 04 mobile number also supports two-way SMS. ("Business number" here means a phone number, not an Australian Business Number, which is a tax registration.)

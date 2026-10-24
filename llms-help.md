@@ -874,6 +874,8 @@ In the **Select Country** dropdown, choose **Australia**. The **Area** dropdown 
 
 Choose the city area for your new number. Available areas include **Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Hobart** and more. In this example we are selecting **Sydney** to get a 02 number.
 
+**Need a regional number?** City areas are listed in the dropdown. For a regional town, such as Shepparton (03 58), Tamworth (02 67) or Townsville (07 47), email support@click2call.com.au with the town and our team adds the number to your account at the same $10 a month ex GST, usually within the hour in business hours. See [regional numbers](https://www.click2call.com.au/business-phone-numbers/#regional) for more examples.
+
 **Area code reference:**
 
 **02** — Sydney / NSW

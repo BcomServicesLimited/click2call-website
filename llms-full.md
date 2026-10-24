@@ -29,7 +29,7 @@ Click2Call's Cloud PBX is a complete, hosted business phone system that runs ent
 - **Key Features**: Auto-attendant (IVR), call recording, voicemail-to-email, call queues, ring groups, music on hold, call transfer, conference calling, and a user-friendly web portal and mobile app.
 - **Who It's For**: Small to medium-sized businesses (1-100 staff), multi-site businesses, and companies with remote or hybrid workforces.
 - **How It Works**: Calls are routed through Click2Call's cloud infrastructure to VoIP handsets, desktop softphones, or mobile apps. Users can manage their entire phone system through a web browser.
-- **Pricing**: Flat-rate prepaid pricing. Cloud PBX User $25.00/month (includes local number + 300 outbound mins + unlimited inbound). Extra Business Number (Inbound Line) $10.00/month. Microsoft Teams User $25.00/month (includes local number + 300 outbound mins + unlimited inbound). No lock-in contracts. See [Pricing Overview](#pricing-overview).
+- **Pricing**: Flat-rate prepaid pricing. Cloud PBX User $25.00/month (includes local number + 300 outbound mins + unlimited inbound). Extra Business Number (Inbound Line) $10.00/month. Regional numbers (e.g. Shepparton 03 58, Tamworth 02 67, Townsville 07 47, Bunbury 08 97) are added by the team on request at the same $10.00/month, no allocation fee; city numbers are self-serve in the portal. See https://www.click2call.com.au/business-phone-numbers/#regional. Microsoft Teams User $25.00/month (includes local number + 300 outbound mins + unlimited inbound). No lock-in contracts. See [Pricing Overview](#pricing-overview).
 
 ### AI Voice Tools
 
