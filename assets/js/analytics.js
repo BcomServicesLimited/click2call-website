@@ -10,6 +10,11 @@
  * says so (set disable_session_recording to false to turn them on). No person
  * profiles are created for anonymous visitors (person_profiles: identified_only).
  *
+ * Meta Pixel (dataset click2call.com.au, 975293862298878), added 24 Oct 2026
+ * after privacy policy section 5B went live: PageView on every page,
+ * ViewContent on /pricing/, and Lead when a trial button is clicked (same
+ * trigger as trial_click). No form fields or personal details are sent.
+ *
  * It only sends from the live site, never from *.pages.dev previews or local
  * copies. POSTHOG_KEY is the project's public key (phc_...): it is designed to
  * sit in page source, like the GA measurement ID.
@@ -35,6 +40,17 @@
     disable_session_recording: true
   });
 
+  /* Meta Pixel: Meta's standard base code (fbevents.js), then our three events. */
+  var META_PIXEL_ID = '975293862298878';
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  window.fbq('init', META_PIXEL_ID);
+  window.fbq('track', 'PageView');
+  if (location.pathname.indexOf('/pricing') === 0) window.fbq('track', 'ViewContent', { content_name: 'Pricing' });
+
   /* One clean event per trial button, named by its ?src= tag (e.g. voip-sydney-hero). */
   document.addEventListener('click', function (e) {
     var a = e.target && e.target.closest ? e.target.closest('a[href*="portal.click2call.com.au/join"]') : null;
@@ -42,5 +58,6 @@
     var placement = 'untagged';
     try { placement = new URL(a.href).searchParams.get('src') || 'untagged'; } catch (err) {}
     window.posthog.capture('trial_click', { placement: placement, page_path: location.pathname });
+    if (window.fbq) window.fbq('track', 'Lead', { content_name: placement });
   }, true);
 })();
