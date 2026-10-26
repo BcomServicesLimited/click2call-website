@@ -2625,7 +2625,7 @@ Most devices take the port on the end of the server address, e.g. sip.click2call
 
 ### Do I need firewall rules?
 
-Usually not. Click2Call handles devices behind NAT and most firewalls, and you should never need to forward ports 5060 or 5061 to your phone or PBX. If your firewall blocks outbound traffic by default, allow your devices to reach sip.click2call.com.au (103.55.116.140) on the ports above. Call audio uses UDP to the same address.
+Usually not. Click2Call handles devices behind NAT and most firewalls, and you should never need to forward ports 5060 or 5061 to your phone or PBX. If your firewall blocks outbound traffic by default, allow your devices to reach sip.click2call.com.au (52.63.154.234) on the ports above. Call audio uses UDP to the same address.
 
 ### Can I encrypt the audio too? (Secure RTP)
 

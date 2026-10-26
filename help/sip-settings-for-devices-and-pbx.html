@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-10-26",
   "headline": "SIP Settings for Desk Phones, Adapters and PBX Systems",
   "description": "Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide.",
   "url": "https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx",
@@ -302,7 +302,7 @@
     <h3 class="font-bold text-gray-900 mt-6 mb-2">Where the port goes</h3>
     <p class="text-gray-600 leading-relaxed mb-4">Most devices take the port on the end of the server address, e.g. <span class="font-mono">sip.click2call.com.au:50600</span>. Some have a separate Port field. Enter Click2Call's port there, not your device's own local SIP port.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Do I need firewall rules?</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Usually not. Click2Call handles devices behind NAT and most firewalls, and you should never need to forward ports 5060 or 5061 to your phone or PBX. If your firewall blocks outbound traffic by default, allow your devices to reach <span class="font-mono">sip.click2call.com.au</span> (103.55.116.140) on the ports above. Call audio uses UDP to the same address.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Usually not. Click2Call handles devices behind NAT and most firewalls, and you should never need to forward ports 5060 or 5061 to your phone or PBX. If your firewall blocks outbound traffic by default, allow your devices to reach <span class="font-mono">sip.click2call.com.au</span> (52.63.154.234) on the ports above. Call audio uses UDP to the same address.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Can I encrypt the audio too? (Secure RTP)</h2>
     <p class="text-gray-600 leading-relaxed mb-4">TLS encrypts the call setup; Secure RTP (SRTP) encrypts the voice itself. To require it on a line: Voice → Line Manager → click the number → Other Settings → Voice Quality &amp; Codecs → turn on Secure Encrypted RTP → Save. Only do this if your device is set up for SRTP — calls will fail otherwise. The same page lets you force a particular transport or restrict codecs. Leave codecs alone unless you have a reason; the defaults suit nearly everyone.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Registration, peering or IAX2 — which connection type?</h2>
