@@ -5727,11 +5727,11 @@ If the call reaches Click2Call voicemail instead, work through the troubleshooti
 
 When Click2Call delivers a call to an external SIP endpoint — any of the built-in provider profiles, or your own **Inbound SIP URI Route** — the INVITE leaves our switch from:
 
-103.212.52.19
+52.63.154.234
 
 That is the address to put on the provider’s IP allowlist, ACL or access control list. Click2Call cannot present a username and password on an outbound INVITE, so allowlisting is the only way a provider can trust us — if they challenge the call for credentials, it fails.
 
-Some providers only accept individual addresses rather than CIDR ranges. This is a single address, so that is not a problem. Do not allowlist the address that sip.click2call.com.au resolves to — that is the inbound proxy, used when a device registers to us, and it is not where outbound INVITEs come from.
+Some providers only accept individual addresses rather than CIDR ranges. This is a single address, so that is not a problem. Since the October 2026 platform upgrade it is the same address sip.click2call.com.au resolves to. If your provider still lists an older Click2Call address, replace it with this one.
 
 ### Guides for Each Built-In Provider
 
@@ -5762,7 +5762,7 @@ The Click2Call side is much the same for all of them. What differs is what the p
 #### 407 Proxy Authentication Required, over and over
 Work out which way the 407 is travelling, because the two causes are opposites.
 **The AI platform is being challenged as it registers to Click2Call.** The profile is set to **SIP Peering (Direct IP)** when it should be **SIP Registration**. Peering carries no username or password — the two ends trust each other by IP. If you have credentials, switch to SIP Registration and let the platform register in.
-**The provider is challenging our outbound INVITE.** Their end is asking us to authenticate, which means our signalling address is not on their allowlist. Click2Call cannot present a username and password on an outbound INVITE, so this is never fixed with credentials — have the provider allowlist **103.212.52.19**, the address our switch sends INVITEs from. Callers hear “the number you have called is not available from this service” while this is happening.
+**The provider is challenging our outbound INVITE.** Their end is asking us to authenticate, which means our signalling address is not on their allowlist. Click2Call cannot present a username and password on an outbound INVITE, so this is never fixed with credentials — have the provider allowlist **52.63.154.234**, the address our switch sends INVITEs from. Callers hear “the number you have called is not available from this service” while this is happening.
 
 #### Calls land on Click2Call voicemail instead of the agent
 Check three things, in this order. Is the platform actually registered? Is the number assigned to your profile rather than Default? And is an **Inbound SIP URI Route** set on the profile? A URI route overrides delivery to registered endpoints and forces the call to that URI — so never set one on a profile that uses registration.
@@ -5788,7 +5788,7 @@ Ready-made profiles exist for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI, Synt
 With a built-in profile (Eleven Labs AI, OpenAI, Retell AI and the others), Click2Call sends the call straight to the platform. If the platform doesn’t answer, the call is **not** failed over to voicemail or another number. If continuity matters, connect the platform with **SIP Registration** instead.
 
 #### What address does my AI provider need to allowlist?
-103.212.52.19. That is where outbound INVITEs leave our switch when a call is delivered to an external SIP endpoint. It is not the same as the address sip.click2call.com.au resolves to, which is the inbound proxy used for registration.
+52.63.154.234. That is where outbound INVITEs leave our switch when a call is delivered to an external SIP endpoint. Since the October 2026 platform upgrade it is also the address sip.click2call.com.au resolves to. Replace any older Click2Call address on your provider with this one.
 
 #### What username and password does the platform use?
 Username and authorisation name are both the phone number in full international format. The password is the line password from Line Manager. Host and outbound proxy are sip.click2call.com.au.
@@ -5817,7 +5817,7 @@ Mandatory Click2Call fieldNone — just pick the connection type
 
 Where Click2Call sends callssip:sip.rtc.elevenlabs.io:5060;transport=tcp
 
-AuthenticationIP allowlist (ACL) on the ElevenLabs side — add 103.212.52.19
+AuthenticationIP allowlist (ACL) on the ElevenLabs side — add 52.63.154.234
 
 Number format+E.164, set automatically
 
@@ -5843,7 +5843,7 @@ Open **Phone Numbers** and choose **Import a phone number from SIP trunk**. Fill
 - **Phone number** — in E.164 format, e.g. +61355551234. It has to match exactly.
 - **Transport** — TCP, to match what Click2Call sends.
 - **Authentication** — choose ACL and allowlist the Click2Call signalling addresses.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **103.212.52.19** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
 
 3
 
@@ -5874,10 +5874,10 @@ Ring the number from a mobile. The agent should answer. If it does not, work thr
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### Calls stopped after our move to the new platform
-Delete the number from your ElevenLabs agent, then import it again as in the steps above, allowlisting 103.212.52.19. Don’t use the old IP address. This makes ElevenLabs connect to our new platform.
+Delete the number from your ElevenLabs agent, then import it again as in the steps above, allowlisting 52.63.154.234. Don’t use the old IP address. This makes ElevenLabs connect to our new platform.
 
 #### The call reaches ElevenLabs but no agent answers
 Either the number was not imported in exactly the format Click2Call sends (+E.164, with the plus), or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.
@@ -5957,7 +5957,7 @@ Then ring the number from a mobile. Your webhook should receive the incoming-cal
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The profile will not save
 The **OpenAI Project ID** field is empty or malformed. It is mandatory, and the value should begin with proj_. Copy it from Settings → Project → General rather than typing it.
@@ -5999,7 +5999,7 @@ Mandatory Click2Call fieldNone — just pick the connection type
 
 Where Click2Call sends callssip:sip.retellai.com;transport=tcp
 
-AuthenticationIP allowlist on the Retell side — add 103.212.52.19
+AuthenticationIP allowlist on the Retell side — add 52.63.154.234
 
 Number format+E.164, set automatically
 
@@ -6027,7 +6027,7 @@ This is the whole reason to use bring-your-own-number: Retell does not sell Aust
 #### Assign the agent to the number
 
 Attach the agent you built as the **inbound** agent for that number. Until one is assigned, calls arrive at Retell and are not answered.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **103.212.52.19** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
 
 4
 
@@ -6052,7 +6052,7 @@ Ring the number from a mobile. The agent should answer, and the call should appe
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The call reaches Retell but no agent answers
 The number was not imported in the format Click2Call sends (+E.164, with the plus), or no inbound agent is assigned to it. Check both in the Retell Phone Numbers screen.
@@ -6094,7 +6094,7 @@ Mandatory Click2Call fieldNone — just pick the connection type
 
 Where Click2Call sends callssip:sipin.synthflow.ai:35681;transport=tcp
 
-AuthenticationIP allowlist on the Synthflow side — add 103.212.52.19
+AuthenticationIP allowlist on the Synthflow side — add 52.63.154.234
 
 Number format+E.164, set automatically
 
@@ -6121,7 +6121,7 @@ Open **Phone Numbers** and use the **Import Phone Number** form:
 - **Number type** — Custom.
 - **Phone number** — E.164 format, e.g. +61355551234.
 - **Friendly name** — whatever helps you find it later.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **103.212.52.19** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
 
 3
 
@@ -6152,7 +6152,7 @@ Ring the number from a mobile. The assistant should answer and the call should a
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The call reaches Synthflow but nothing answers
 The number was not imported in +E.164 format, or no assistant is assigned to it. Check both on the Synthflow Phone Numbers screen.
@@ -6240,7 +6240,7 @@ Ring the number from a mobile. The assistant should answer, and the call should 
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The profile will not save
 The **VAPI Assistant ID** field is empty or the value is not a valid assistant UUID. Copy it from the Vapi dashboard rather than typing it.
@@ -6311,7 +6311,7 @@ The region is the LiveKit region your project runs in. Region values look like u
 In the LiveKit Cloud dashboard open **Telephony → SIP trunks** and create a trunk with direction **Inbound**. List your Click2Call number in E.164 format.
 If you leave the numbers list empty, LiveKit requires you to set either a username and password or an allowed-addresses list instead — it will not accept an unauthenticated trunk that matches everything.
 
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **103.212.52.19** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
 
 3
 
@@ -6348,7 +6348,7 @@ Ring the number from a mobile. The call should appear as a participant in a Live
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The profile will not save
 Both the **Subdomain** and **Region** fields are mandatory. Fill in both, without the p_ prefix on the subdomain and without .sip.livekit.cloud on either.
@@ -6396,7 +6396,7 @@ Mandatory Click2Call fieldNone — just pick the connection type
 
 Where Click2Call sends callssip:sip.voice.x.ai:5061;transport=tls
 
-AuthenticationIP allowlist (allowed_addresses) on the xAI side — add 103.212.52.19
+AuthenticationIP allowlist (allowed_addresses) on the xAI side — add 52.63.154.234
 
 Number format+E.164, set automatically
 
@@ -6418,7 +6418,7 @@ xAI returns a **signing secret** once and never again. Store it before you close
 #### Choose an authentication method
 
 xAI accepts either an IP allowlist, via allowed_addresses, or SIP digest credentials.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **103.212.52.19** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
 
 3
 
@@ -6455,7 +6455,7 @@ Ring the number from a mobile. Your webhook should receive the incoming-call eve
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The phone rings but nothing answers
 Almost always the webhook. Either the Direct SIP number was registered without a webhook URL, the endpoint is not reachable from the internet, or it receives the event but never opens the WebSocket. Check your endpoint logs for a realtime.call.incoming event.
@@ -6502,7 +6502,7 @@ Where Click2Call sends callssip:<subdomain>.sip.twilio.com:5060;transport=tcp
 
 Twilio productSIP Domain (Programmable Voice) — not Elastic SIP Trunking
 
-AuthenticationIP Access Control List on the Twilio SIP Domain — add 103.212.52.19
+AuthenticationIP Access Control List on the Twilio SIP Domain — add 52.63.154.234
 
 Number format+E.164, set automatically
 
@@ -6531,7 +6531,7 @@ If you would rather not write code, point it at a **Studio Flow** or a **TwiML B
 #### Secure the domain with an IP Access Control List
 
 Twilio will not accept SIP traffic to a domain that has neither an IP Access Control List nor a Credential List. Create an **IP Access Control List** and add the Click2Call signalling addresses.
-Use an IP Access Control List, not a Credential List. Click2Call cannot present a username and password on an outbound INVITE, so a Credential List alone will reject every call. Add **103.212.52.19** to the Access Control List — that is the address our switch sends INVITEs from.
+Use an IP Access Control List, not a Credential List. Click2Call cannot present a username and password on an outbound INVITE, so a Credential List alone will reject every call. Add **52.63.154.234** to the Access Control List — that is the address our switch sends INVITEs from.
 
 4
 
@@ -6556,7 +6556,7 @@ Ring the number from a mobile. Twilio should fetch your Voice Configuration URL 
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The profile will not save
 The **Twilio Subdomain** field is empty. It is mandatory. Enter only the first label, not the full hostname and not a sip: prefix.
@@ -6607,7 +6607,7 @@ Mandatory Click2Call fieldNone — just pick the connection type
 
 Where Click2Call sends callssip:trunk.cloudonix.com:5060;transport=tcp
 
-AuthenticationIP allowlist on the Cloudonix inbound trunk — add 103.212.52.19
+AuthenticationIP allowlist on the Cloudonix inbound trunk — add 52.63.154.234
 
 Number format+E.164, set automatically
 
@@ -6629,7 +6629,7 @@ You need a separate Cloudonix SIP trunk for each domain, so plan the domain layo
 #### Configure the inbound trunk
 
 In **Inbound Trunks**, set up the trunk that will receive calls from Click2Call and allowlist the Click2Call signalling addresses.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **103.212.52.19** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
 
 3
 
@@ -6661,7 +6661,7 @@ Ring the number from a mobile and watch the Cloudonix call logs. You should see 
 ### Troubleshooting
 
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 103.212.52.19 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The call arrives at Cloudonix and stops
 No voice application is attached to the domain, or the application is not matching the dialled number. Remember the number arrives in +E.164 format, with the leading plus.
