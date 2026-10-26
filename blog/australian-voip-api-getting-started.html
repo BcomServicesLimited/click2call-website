@@ -299,7 +299,7 @@
                     <ul class="!mt-4">
                         <li><strong>Local Infrastructure:</strong> Build with a true Australian VoIP provider for low latency and local compliance.</li>
                         <li><strong>RESTful JSON API:</strong> Interact with your phone system using standard JSON payloads and simple HTTP requests.</li>
-                        <li><strong>AI-Ready Instructions:</strong> Copy-paste our pre-written LLM instructions into Claude or Cursor to build integrations instantly.</li>
+                        <li><strong>Built for AI Coding Tools:</strong> Give the API documentation from your portal to Claude or Cursor and describe the integration you want.</li>
                         <li><strong>Comprehensive Webhooks:</strong> Get real-time event notifications for ringing, answered, and ended calls.</li>
                     </ul>
                 </div>
@@ -320,11 +320,11 @@
                 <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">The "No Experience Needed" Approach</h2>
                 <p>We know that many people building AI tools today aren't traditional telecom engineers. That's why we've optimized our API for LLM-assisted coding.</p>
                 
-                <p>Inside your Click2Call portal, you'll find a complete set of copy-paste instructions written specifically for AI coding tools like Claude, Cursor, and ChatGPT. You don't need to read pages of API documentation. Just paste our instructions into your LLM, describe what you want to build, and let the AI write the integration code for you.</p>
+                <p>Inside your Click2Call portal, under API, you'll find the full API documentation, including a Full API Document page that lists every function. You don't need to read it all yourself. Give it to an AI coding tool like Claude, Cursor, or ChatGPT, describe what you want to build, and let the AI write the integration code for you.</p>
 
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 my-6">
                     <h3 class="font-bold text-brand-charcoal mb-2">Example LLM Prompt:</h3>
-                    <p class="text-gray-600 italic">"I'm building a Cloudflare Worker. Here are the Click2Call API instructions: [PASTE INSTRUCTIONS]. Write a script that listens for the 'Ended Event' webhook, fetches the call transcription using the API, and sends it to my Slack channel."</p>
+                    <p class="text-gray-600 italic">"I'm building a Cloudflare Worker. Here is the Click2Call API documentation: [PASTE THE FULL API DOCUMENT]. Write a script that listens for the 'Ended Event' webhook, fetches the call transcription using the API, and sends it to my Slack channel."</p>
                 </div>
 
                 <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Core API Capabilities</h2>
@@ -350,7 +350,7 @@
                 </div>
 
                 <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Authentication</h2>
-                <p>All API queries must be authenticated using a Token-based system. You generate your secret token within the Click2Call portal. This token is passed in the header of your JSON requests, ensuring your data remains secure.</p>
+                <p>All API queries must be authenticated using a Token-based system. You get a session token by sending the Get-Token request with a portal login and password, ideally a separate login made for the API under Account → Logins. The token then goes in the JSON body of every request.</p>
                 
                 <blockquote class="border-l-4 border-brand-green-dark pl-4 italic text-gray-700 my-6">
                     "Click2Call bridges the gap between traditional Australian telecommunications and modern AI software development."
@@ -358,7 +358,7 @@
 
                 <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4">Getting Started</h2>
                 <p>API access is included free with every Click2Call Cloud PBX account. You don't need a special enterprise plan to start building.</p>
-                <p>Sign up for a 7-day free trial, grab your API token from the portal, and <a href="/api/" class="text-brand-green-dark hover:underline font-semibold">explore the Developer API</a> to bring your software to life.</p>
+                <p>Sign up for a 7-day free trial, get your API token with the Get-Token request, and <a href="/api/" class="text-brand-green-dark hover:underline font-semibold">explore the Developer API</a> to bring your software to life.</p>
 
                 <!-- FAQ Section -->
                 <div class="mt-16">
@@ -376,7 +376,7 @@
                                 <span>Where can I find the API documentation?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600 hidden">Full documentation, including endpoint details and the AI-ready copy-paste instructions, is available inside the Click2Call customer portal under the API section.</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">Full documentation, including endpoint details and how to get a token, is available inside the Click2Call customer portal under the API section.</div>
                         </div>
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">

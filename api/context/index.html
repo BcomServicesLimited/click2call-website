@@ -62,7 +62,7 @@
 <h1>Click2Call API — Developer Context &amp; Integration Reference</h1>
 <p class="meta">
   Provider: Click2Call (Bcom Services Pty Ltd, ABN: 92 636 893 108) &bull;
-  Last updated: 16 April 2026 &bull;
+  Last updated: 26 October 2026 &bull;
   <a href="https://www.click2call.com.au/api">Marketing page</a> &bull;
   <a href="https://portal.click2call.com.au/apidocs">Full API documentation</a>
 </p>
@@ -88,7 +88,7 @@
   <tr><td>Base URL</td><td><code>https://portal.click2call.com.au/api/</code></td></tr>
   <tr><td>Protocol</td><td>HTTPS only</td></tr>
   <tr><td>Format</td><td>JSON (POST requests)</td></tr>
-  <tr><td>Authentication</td><td>Token-based (Bearer token, obtained from the portal under API &gt; Getting Started)</td></tr>
+  <tr><td>Authentication</td><td>Token-based. Send the <code>Get-Token</code> request with a portal login and password to get a session token, then include it as the <code>token</code> field in the JSON body of every request. The portal recommends a separate login for the API, made under Account &gt; Logins. The method is described under API &gt; Getting Started.</td></tr>
   <tr><td>Request structure</td><td>Every request must include a <code>context</code> parameter (e.g. <code>account</code>, <code>voice</code>, <code>ai</code>) and an <code>action</code> parameter specifying the function to call</td></tr>
   <tr><td>Documentation</td><td><a href="https://portal.click2call.com.au/apidocs">https://portal.click2call.com.au/apidocs</a></td></tr>
   <tr><td>Cost</td><td>Free with every Cloud PBX account</td></tr>
@@ -225,11 +225,11 @@ Content:
 
 <p>This integration is available on any Click2Call phone line. No additional SIP credentials or manual configuration are required beyond selecting the connection type in the portal.</p>
 
-<h2>Copy-Paste AI Instructions</h2>
+<h2>Building with AI Coding Tools</h2>
 
-<p>Every Click2Call account includes a complete set of ready-made instructions written specifically for AI coding tools such as Claude, Cursor, and ChatGPT. These instructions are available in the portal under <strong>API &gt; Getting Started</strong>.</p>
+<p>The portal does not include instructions written for a particular AI tool. The full API documentation is in the portal under <strong>API</strong>: <strong>Getting Started</strong> explains the request format and how to get a token, and <strong>Full API Document</strong> lists every function on one page.</p>
 
-<p>Developers can copy these instructions and paste them directly into their AI coding tool to get a working API integration without any prior API experience. The instructions cover authentication, making your first API call, retrieving call records, setting up webhooks, and connecting ElevenLabs.</p>
+<p>Developers give that documentation to an AI coding tool such as Claude, Cursor or ChatGPT and describe what they want to build. The AI tool writes the integration code, which the developer runs on their own hosting.</p>
 
 <h2>Common Developer Use Cases</h2>
 
@@ -261,8 +261,9 @@ Content:
 <ol>
   <li>Create a free account at <a href="https://portal.click2call.com.au/join/?src=api-context-getting-started" onclick="gtag('event', 'begin_free_trial', {'event_category': 'CTA', 'event_label': 'Free Trial Signup - api-context-getting-started'});">https://portal.click2call.com.au/join/</a></li>
   <li>Every new account is independently verified before activation, usually within the hour, longer after hours</li>
-  <li>Go to API &gt; Getting Started in the portal to get your API token and copy the AI-ready integration instructions</li>
-  <li>Paste the instructions into Claude, Cursor, or ChatGPT and describe what you want to build</li>
+  <li>Go to API &gt; Getting Started in the portal for the request format and how to get your API token</li>
+  <li>Add a portal login for the API under Account &gt; Logins and send the Get-Token request with it to get your token</li>
+  <li>Give the API documentation (API &gt; Full API Document) to Claude, Cursor or ChatGPT and describe what you want to build</li>
   <li>Full API documentation is at <a href="https://portal.click2call.com.au/apidocs">https://portal.click2call.com.au/apidocs</a></li>
 </ol>
 
