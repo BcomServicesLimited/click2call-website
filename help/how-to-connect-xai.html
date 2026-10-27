@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>How to Connect xAI (Grok) to Your Phone Number | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/how-to-connect-xai" />
-  <meta name="description" content="Connect an xAI Grok voice agent to an Australian phone number using the built-in Click2Call xAI profile. Covers the byo_trunk number, the webhook and the WebSocket.">
+  <meta name="description" content="Connect a Grok voice agent to an Australian number, with screenshots: the Click2Call xAI profile, SRTP, a Direct SIP number in the xAI console and the webhook.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_transparent.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=39e33e4e51">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,22 +18,22 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/how-to-connect-xai">
   <meta property="og:title" content="Connecting xAI to Your Phone Number | Help Centre | Click2Call">
-  <meta property="og:description" content="Connect an xAI Grok voice agent to an Australian phone number using the built-in Click2Call xAI profile. Covers the byo_trunk number, the webhook and the WebSocket.">
+  <meta property="og:description" content="Connect a Grok voice agent to an Australian number, with screenshots: the Click2Call xAI profile, SRTP, a Direct SIP number in the xAI console and the webhook.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Connecting xAI to Your Phone Number | Help Centre | Click2Call">
-<meta name="twitter:description" content="Connect an xAI Grok voice agent to an Australian phone number using the built-in Click2Call xAI profile. Covers the byo_trunk number, the webhook and the WebSocket.">
+<meta name="twitter:description" content="Connect a Grok voice agent to an Australian number, with screenshots: the Click2Call xAI profile, SRTP, a Direct SIP number in the xAI console and the webhook.">
 <meta name="twitter:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-10-27",
   "name": "How to connect xAI to an Australian phone number with Click2Call",
-  "description": "Route calls from a Click2Call Australian number to an xAI Grok voice agent using the built-in xAI connection profile.",
-  "totalTime": "PT30M",
+  "description": "Route calls from a Click2Call Australian number to an xAI Grok voice agent: the built-in xAI profile and SRTP in Click2Call, a Direct SIP number in the xAI console, and a webhook that answers each call.",
+  "totalTime": "PT45M",
   "estimatedCost": {
     "@type": "MonetaryAmount",
     "currency": "AUD",
@@ -43,38 +43,62 @@
     {
       "@type": "HowToTool",
       "name": "Click2Call portal"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "xAI console"
     }
   ],
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Create a Direct SIP phone number in xAI",
-      "text": "Using the xAI API, create a Direct SIP phone number with origin set to byo_trunk, since the number is yours rather than one xAI supplied. Include the webhook URL that should receive incoming-call events. xAI returns a signing secret once only — store it securely."
+      "name": "Create a new xAI profile",
+      "text": "In the Click2Call portal open Voice then Profiles, click Create New Profile and set Connection Type to xAI."
     },
     {
       "@type": "HowToStep",
-      "name": "Choose an authentication method",
-      "text": "xAI accepts either an IP allowlist, where you supply your provider's SIP signalling ranges in allowed_addresses, or SIP digest credentials. Use the IP allowlist and allowlist 52.63.154.234, the address Click2Call sends INVITEs from."
+      "name": "Choose your number and save the profile",
+      "text": "Set Profile Caller ID to the number the agent will answer. The Inbound SIP URI Route sip:sip.voice.x.ai:5061;transport=tls and the +E.164 number format are set automatically. Tick Recording Enabled if wanted, then save."
     },
     {
       "@type": "HowToStep",
-      "name": "Build the webhook handler",
-      "text": "When a call arrives, xAI sends a realtime.call.incoming webhook. Verify the signature using the signing secret, then take the call_id from the payload."
+      "name": "Put the profile on your number",
+      "text": "In Voice then Line Manager, set the Profile column for the number to the xAI profile. A number left on the Default profile never reaches xAI."
     },
     {
       "@type": "HowToStep",
-      "name": "Open a WebSocket to answer the call",
-      "text": "Connect to wss://api.x.ai/v1/realtime with the call_id and your API key, send session.update to configure the voice agent for this call, then response.create when the agent should start speaking."
+      "name": "Open Voice Quality & Codecs for the number",
+      "text": "Click the number in Line Manager to open its Call Flow, then under Other Settings choose Voice Quality & Codecs."
     },
     {
       "@type": "HowToStep",
-      "name": "Create the profile in Click2Call",
-      "text": "In the Click2Call portal open Voice then Profiles and set Connection Type to xAI. There are no extra fields — Click2Call routes to sip:sip.voice.x.ai:5061;transport=tls automatically and sends the number in +E.164 format."
+      "name": "Turn on encrypted audio (SRTP)",
+      "text": "Tick Force calls to use Secure Encrypted RTP and click Save Settings. xAI takes calls over TLS with encrypted audio."
     },
     {
       "@type": "HowToStep",
-      "name": "Assign your number and set the time zone",
-      "text": "Open Voice then Line Manager and set the Profile column for your number to the new profile. Set the Time Zone on the profile to where the business operates."
+      "name": "Create your voice agent",
+      "text": "In the xAI console select Voice Agents, click Create agent, set up the instructions and voice, and publish it."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set up a phone number for the agent",
+      "text": "On the agent's Configuration tab, click Set up next to Set up a phone number to call your agent."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Fill in the form with your Click2Call number",
+      "text": "On the Direct SIP tab enter a name, the Click2Call number in +E.164 format (for example +61721402648), add 52.63.154.234 to Allowed addresses, leave Authentication blank and click Add number. Store the signing secret, which is shown once."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set up the webhook that answers each call",
+      "text": "Host a webhook set as the number's webhook URL in xAI. On the realtime.call.incoming event, verify the signature, read the call_id, open a WebSocket to wss://api.x.ai/v1/realtime with the call_id and API key, send session.update and then response.create. Without it calls ring then drop with 486 Rejected."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test the call",
+      "text": "Ring the number from a mobile. The webhook logs realtime.call.incoming and the agent answers once the WebSocket session is open."
     }
   ]
 }
@@ -115,31 +139,23 @@
       "name": "Do I need to write code to connect xAI to a phone number?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Like OpenAI, xAI's SIP integration is a developer integration rather than a no-code one. You register a Direct SIP phone number through their API, host a webhook that receives the realtime.call.incoming event, and open a WebSocket to wss://api.x.ai/v1/realtime with the call_id to actually handle the call. If you want an agent configured in a dashboard instead, ElevenLabs, Retell or Synthflow are the no-code options and Click2Call supports all three."
+        "text": "Yes. The xAI console creates the voice agent and registers the phone number, but xAI only answers a call when your own webhook receives the realtime.call.incoming event and opens a WebSocket to wss://api.x.ai/v1/realtime with the call_id. If you want an agent configured entirely in a dashboard, ElevenLabs, Retell or Synthflow are the no-code options and Click2Call supports all three."
       }
     },
     {
       "@type": "Question",
-      "name": "What is origin byo_trunk?",
+      "name": "What does Direct SIP mean in xAI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It tells xAI that the phone number belongs to you and arrives over your own SIP trunk, rather than being a number xAI provisioned. Provisioning xAI numbers through the API is not supported, so bring-your-own-trunk is how an Australian number reaches a Grok voice agent."
+        "text": "It tells xAI that the phone number belongs to you and arrives over your own SIP connection from Click2Call, rather than being a number xAI provides. In the xAI API it is origin byo_trunk. xAI does not provide Australian numbers, so this is how an Australian number reaches a Grok voice agent."
       }
     },
     {
       "@type": "Question",
-      "name": "Which SIP address does Click2Call send calls to?",
+      "name": "Why does xAI use port 5061 and TLS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "sip:sip.voice.x.ai:5061 over TLS. That is pre-configured in the xAI connection profile, so there is nothing to type. Note that xAI uses TLS on port 5061 rather than plain TCP on 5060."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How should I authenticate Click2Call to xAI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use the IP allowlist. xAI accepts either an allowed_addresses list of SIP signalling ranges or SIP digest credentials, and the built-in Click2Call provider profiles do not send digest credentials. Allowlist 52.63.154.234, the address Click2Call sends INVITEs from."
+        "text": "xAI takes SIP calls over TLS on port 5061 with encrypted audio. The built-in xAI profile already sends calls to sip:sip.voice.x.ai:5061;transport=tls, so there is nothing to type; turn on Force calls to use Secure Encrypted RTP for the number."
       }
     },
     {
@@ -372,97 +388,129 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">AI Features</span>
-        <span class="text-xs text-gray-400">6 min read</span>
+        <span class="text-xs text-gray-400">8 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting xAI to Your Phone Number</h1>
-      <p class="text-gray-600 leading-relaxed">Click2Call has a built-in xAI connection profile, so the routing is one dropdown. The work is at the xAI end: register a bring-your-own-trunk number, host a webhook, and open a WebSocket to answer each call.</p>
-<p class="mt-3 text-sm text-gray-400">Last reviewed: September 2026</p>
+      <p class="text-gray-600 leading-relaxed">Click2Call has a built-in xAI connection profile, so the Click2Call side is a few clicks: create the profile, put your number on it and turn on encrypted audio. Then register the number with your Grok voice agent in the xAI console, and host the webhook that answers each call.</p>
+<p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
     </div>
   </div>
 
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<div class="mb-10 rounded-2xl border-2 border-amber-200 bg-amber-50 p-6"><h2 class="text-base font-bold text-amber-900 mb-2">Before you start: this one needs code</h2><p class="text-sm text-amber-900 leading-relaxed">xAI&rsquo;s SIP integration is a developer integration. You register the phone number through their API, host a webhook that receives the <span class="font-mono text-xs bg-amber-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event, and open a WebSocket to answer each call. If you want an agent you configure in a dashboard with no server of your own, <a class="font-semibold underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a>, <a class="font-semibold underline" href="/help/how-to-connect-retell-ai">Retell</a> or <a class="font-semibold underline" href="/help/how-to-connect-synthflow">Synthflow</a> are the simpler choices.</p></div>
+<div class="mb-10 rounded-2xl border-2 border-amber-200 bg-amber-50 p-6"><h2 class="text-base font-bold text-amber-900 mb-2">Before you start: this one needs code</h2><p class="text-sm text-amber-900 leading-relaxed">You create the agent and register your number in the xAI console, but xAI only answers a call when <strong>your own webhook</strong> receives its <span class="font-mono text-xs bg-amber-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event and opens a WebSocket to start the conversation. You need somewhere to host that code. If you want an agent you set up entirely in a dashboard, <a class="font-semibold underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a>, <a class="font-semibold underline" href="/help/how-to-connect-retell-ai">Retell</a> or <a class="font-semibold underline" href="/help/how-to-connect-synthflow">Synthflow</a> are the simpler choices.</p></div>
 <div class="mb-10 rounded-2xl border border-gray-200 bg-white p-6">
 <h2 class="text-base font-bold text-gray-900 mb-4">At a glance</h2>
 <dl class="space-y-3 text-sm">
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Mandatory Click2Call field</dt><dd class="text-gray-600 leading-relaxed">None &mdash; just pick the connection type</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Click2Call profile</dt><dd class="text-gray-600 leading-relaxed">Connection Type <strong>xAI</strong> &mdash; no other fields</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Where Click2Call sends calls</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Authentication</dt><dd class="text-gray-600 leading-relaxed">IP allowlist (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>) on the xAI side &mdash; add <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format</dt><dd class="text-gray-600 leading-relaxed">+E.164, set automatically</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">On the number</dt><dd class="text-gray-600 leading-relaxed">Force calls to use Secure Encrypted RTP (SRTP) &mdash; on</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">xAI phone number</dt><dd class="text-gray-600 leading-relaxed">Direct SIP, your number as +E.164 (e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61721402648</span>)</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Allowed addresses (xAI)</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span> &mdash; Authentication left blank</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Code required</dt><dd class="text-gray-600 leading-relaxed">Yes &mdash; a webhook plus a WebSocket connection</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Provider documentation</dt><dd class="text-gray-600 leading-relaxed"><a class="text-[#3B9C49] hover:underline" href="https://docs.x.ai/developers/model-capabilities/audio/voice-agent/sip" target="_blank" rel="noopener">xAI SIP phone calls</a></dd></div>
 </dl></div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Connecting xAI, Step by Step</h2>
 <div class="mb-12">
+<h3 class="text-lg font-bold text-gray-900 mb-1 mt-2">Part 1 &mdash; In the Click2Call portal</h3><p class="text-sm text-gray-500 mb-6">Create the xAI profile, put your number on it and turn on encrypted audio.</p>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Register a Direct SIP phone number with xAI</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Using the xAI API, create a Direct SIP phone number with <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">origin</span> set to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">byo_trunk</span> &mdash; the number is yours, arriving over your own trunk. Include the webhook URL that should receive incoming-call events.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">xAI returns a <strong>signing secret</strong> once and never again. Store it before you close the response; you need it to verify webhook signatures.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Create a new xAI profile</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Log in to the portal and open <strong>Voice &rarr; Profiles</strong>. Under <strong>Other Profiles</strong>, click <strong>Create New Profile</strong> and set <strong>Connection Type</strong> to <strong>xAI</strong>. Give it a name you will recognise &mdash; in our example it is <em>XAI Test</em>.</p><img src="/assets/images/help/xai-step-1-create-profile.webp" alt="The Other Profiles list in the Click2Call portal with the Create New Profile button, showing a profile called XAI Test with connection type xAI Integration." width="2048" height="501" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Choose an authentication method</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">xAI accepts either an IP allowlist, via <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span>, or SIP digest credentials.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>52.63.154.234</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Choose your number and save the profile</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">On the profile, set <strong>Profile Caller ID</strong> to the number the agent will answer &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61721402648</span> in our example. There is nothing else to type: the <strong>Inbound SIP URI Route</strong> already shows <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span> and the <strong>Number Format</strong> is set to +E.164 for you.</p><p class="text-gray-600 leading-relaxed mt-3">Tick <strong>Recording Enabled</strong> if you want Click2Call to record and transcribe the calls, then click <strong>Save</strong>.</p><img src="/assets/images/help/xai-step-2-edit-profile.webp" alt="The Edit Profile screen with Connection Type set to xAI, Profile Caller ID 61721402648, Number Format +E.164 and the Inbound SIP URI Route sip:sip.voice.x.ai:5061;transport=tls." width="2046" height="1290" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Handle the incoming-call webhook</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">When a call arrives, xAI posts a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event to your webhook. Verify the signature with your signing secret, then read the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> from the payload.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Put the profile on your number</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Go back to <strong>Voice &rarr; Line Manager</strong>. In the <strong>Profile</strong> column for your number, choose the xAI profile you just created.</p><img src="/assets/images/help/xai-step-3-line-manager.webp" alt="Line Manager in the Click2Call portal with the number 61721402648 and the Profile column set to XAI Test." width="2048" height="461" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">New numbers start on the <em>Default</em> profile, and a number left on Default ignores everything you just set up &mdash; calls never leave Click2Call for xAI.</p></div>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Open a WebSocket to answer</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Connect to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">wss://api.x.ai/v1/realtime</span> with the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> and your API key. Send <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">session.update</span> to configure the agent for this call, then <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">response.create</span> when it should start speaking.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Open Voice Quality &amp; Codecs for the number</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In Line Manager, click the number to open its <strong>Call Flow</strong>. Open the settings menu and, under <strong>Other Settings</strong>, choose <strong>Voice Quality &amp; Codecs</strong>.</p><img src="/assets/images/help/xai-step-4-other-settings.webp" alt="The Call Flow screen for 61721402648 with the Other Settings menu open, listing Call Recording, Voice Quality and Codecs, Media Options and other settings." width="2048" height="1298" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>xAI</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">There are no extra fields. The <strong>Inbound SIP URI Route</strong> line already shows <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span> &mdash; note that xAI uses TLS on 5061 rather than plain TCP on 5060 &mdash; and the number format is set to +E.164 automatically.</p><img src="/assets/images/help/profile-xai.webp" alt="The Click2Call profile settings with Connection Type set to xAI, showing the pre-configured Inbound SIP URI Route sip:sip.voice.x.ai:5061;transport=tls." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
+        <h3 class="font-bold text-gray-900 mb-2">Turn on encrypted audio (SRTP)</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Tick <strong>Force calls to use Secure Encrypted RTP?</strong> and click <strong>Save Settings</strong>.</p><img src="/assets/images/help/xai-step-5-srtp.webp" alt="The Voice Quality and Codecs settings with Force calls to use Secure Encrypted RTP ticked and the Save Settings button." width="2048" height="583" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The portal warns that this can make calls fail if the other end is not set up for SRTP. xAI is &mdash; it takes calls over TLS with encrypted audio &mdash; so turn it on for the number connected to xAI. Leave it off on numbers that ring ordinary desk phones or softphones unless they are set up for SRTP.</p></div>
     </div>
 </div>
+<h3 class="text-lg font-bold text-gray-900 mb-1 mt-2">Part 2 &mdash; In the xAI console</h3><p class="text-sm text-gray-500 mb-6">Create the voice agent and register your Click2Call number with it.</p>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Create your voice agent</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the xAI console, select <strong>Voice Agents</strong> and click <strong>Create agent</strong>. You can start from a template such as <em>Customer Support</em> or <em>Appointment Scheduler</em>, or from scratch. Set up the agent&rsquo;s instructions and voice, then <strong>Publish</strong> it.</p><img src="/assets/images/help/xai-step-6-voice-agents.webp" alt="The Voice Agents page in the xAI console with the Create agent button and templates including Customer Support, Sales Associate and Appointment Scheduler." width="2048" height="788" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
     <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Set up a phone number for the agent</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Open the agent. On its <strong>Configuration</strong> tab, next to <em>Set up a phone number to call your agent</em>, click <strong>Set up</strong>.</p><img src="/assets/images/help/xai-step-7-set-up-number.webp" alt="An xAI voice agent&rsquo;s Configuration tab with the Set up button beside Set up a phone number to call your agent." width="2048" height="613" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
+    </div>
+</div>
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">8</div>
+    <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Fill in the form with your Click2Call number</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Choose the <strong>Direct SIP</strong> tab (not Twilio) and fill it in:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5">
+<li><strong>Name</strong> &mdash; anything you like, for example <em>Click2Call Demo</em>.</li>
+<li><strong>Phone number</strong> &mdash; your Click2Call number in international format with the plus sign: <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61721402648</span> in our example.</li>
+<li><strong>SIP URI</strong> &mdash; fills itself in, for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:+61721402648@sip.voice.x.ai;transport=tls</span>. You do not need to copy it into Click2Call; the xAI profile already sends calls there.</li>
+<li><strong>Allowed addresses</strong> &mdash; add <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span>, the address Click2Call sends calls from.</li>
+<li><strong>Authentication</strong> &mdash; leave it blank. Click2Call is trusted by its address, so no username or password is needed for inbound calls.</li>
+</ul><p class="text-gray-600 leading-relaxed mt-3">Click <strong>Add number</strong>.</p><img src="/assets/images/help/xai-step-8-new-phone-number.webp" alt="The xAI New phone number form on the Direct SIP tab: Name Click2Call Demo, Phone number +61721402648, SIP URI sip:+61721402648@sip.voice.x.ai;transport=tls and Allowed addresses 52.63.154.234." width="1150" height="1164" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full max-w-md"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">xAI shows a <strong>signing secret</strong> for the number once and never again. Store it before you close the screen &mdash; your webhook needs it to check that events really come from xAI.</p></div>
+    </div>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-1 mt-2">Part 3 &mdash; Your webhook</h3><p class="text-sm text-gray-500 mb-6">The step that makes the agent actually pick up. This is code you host yourself.</p>
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">9</div>
+    <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Set up the webhook that answers each call</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">xAI does not answer a call on its own. When a call arrives it sends a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event to your webhook URL, and the call is only answered if your application responds. Your webhook needs to:</p><ol class="mt-3 space-y-2 text-gray-600 leading-relaxed list-decimal pl-5">
+<li>Be set as the webhook URL for the number in xAI, and be reachable from the internet.</li>
+<li>Check the event&rsquo;s signature with the signing secret, then read the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span>.</li>
+<li>Open a WebSocket to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">wss://api.x.ai/v1/realtime</span> with the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> and your xAI API key.</li>
+<li>Send <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">session.update</span> to set up the agent for the call, then <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">response.create</span> when it should start speaking.</li>
+</ol><p class="text-gray-600 leading-relaxed mt-3">xAI&rsquo;s <a class="text-[#3B9C49] hover:underline" href="https://docs.x.ai/developers/model-capabilities/audio/voice-agent/sip" target="_blank" rel="noopener">SIP documentation</a> has the event format and example code. For how webhooks work on the Click2Call side &mdash; for example sending call details to your CRM &mdash; see <a class="text-[#3B9C49] hover:underline" href="/help/webhooks-and-api-during-your-trial">using the API and webhooks</a>.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Without a working webhook the call reaches xAI, starts ringing and then drops about half a second later with <strong>486 Rejected</strong>. See Troubleshooting below.</p></div>
+    </div>
+</div>
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">10</div>
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. Your webhook should receive the incoming-call event, and the agent answers once your WebSocket session is established.</p>
+        <p class="text-gray-600 leading-relaxed mt-3">Ring your number from a mobile. Your webhook should log a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event, and the agent answers once your WebSocket session is open. The call also shows in your Click2Call call history.</p>
     </div>
 </div>
 
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">The phone rings but nothing answers</h3><p class="text-gray-600 leading-relaxed">Almost always the webhook. Either the Direct SIP number was registered without a webhook URL, the endpoint is not reachable from the internet, or it receives the event but never opens the WebSocket. Check your endpoint logs for a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Webhook signature verification fails</h3><p class="text-gray-600 leading-relaxed">The signing secret is only returned when the number is created. If it was not stored, register the number again to get a fresh one.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">xAI rejects the call before it rings</h3><p class="text-gray-600 leading-relaxed">The <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">allowed_addresses</span> list does not include the address Click2Call is signalling from. Ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current addresses.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than the provider profile, so the call never leaves for the provider at all. Check the Profile column in Line Manager.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">It rings, then drops after about half a second (486 Rejected)</h3><p class="text-gray-600 leading-relaxed">The call is reaching xAI &mdash; it answers with <em>100 Trying</em> and <em>180 Ringing</em> &mdash; but then rejects it, because no application took the call. Check, in order: the number is registered in xAI as <strong>Direct SIP</strong> with your number in +E.164 format; a webhook URL is set for it; your webhook is receiving the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event; it reads the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> and opens the WebSocket; and <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">session.update</span> and <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">response.create</span> are sent without errors or timeouts. xAI&rsquo;s logs in the console show errors with routing, webhook delivery or starting the agent.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">xAI is asking our call for a username and password, which means <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span> is not in the number&rsquo;s <strong>Allowed addresses</strong>. Click2Call cannot answer that challenge, so add the address in xAI and leave Authentication blank. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">xAI rejects the call before it rings</h3><p class="text-gray-600 leading-relaxed">The <strong>Allowed addresses</strong> list does not include the address Click2Call is calling from. Add <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span>, or ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current address.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls fail as soon as they connect</h3><p class="text-gray-600 leading-relaxed">Check that <strong>Force calls to use Secure Encrypted RTP</strong> is ticked under <strong>Voice Quality &amp; Codecs</strong> for the number (step 5). xAI expects encrypted audio.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Webhook signature verification fails</h3><p class="text-gray-600 leading-relaxed">The signing secret is only shown when the number is created. If it was not stored, add the number again in xAI to get a new one.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than the xAI profile, so the call never leaves Click2Call. Check the Profile column in Line Manager.</p></div>
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6 mt-4">Frequently Asked Questions</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">Do I need to write code?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; a webhook and a WebSocket. Same shape as <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-openai">OpenAI</a>. For a dashboard-only agent, use <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a>, <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-retell-ai">Retell</a> or <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-synthflow">Synthflow</a>.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">What does byo_trunk mean?</h3><p class="text-gray-600 leading-relaxed">That the number is yours and arrives over your own SIP trunk rather than being provisioned by xAI. Provisioning xAI numbers through the API is not supported, so this is how an Australian number reaches a Grok voice agent.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Why port 5061 and TLS?</h3><p class="text-gray-600 leading-relaxed">xAI terminates SIP over TLS. The built-in profile already uses <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span>, so there is nothing to change.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Do I need to write code?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; a webhook and a WebSocket. The xAI console creates the agent and registers the number, but a call is only answered when your webhook picks up the incoming-call event. Same shape as <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-openai">OpenAI</a>. For a dashboard-only agent, use <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-elevenlabs">ElevenLabs</a>, <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-retell-ai">Retell</a> or <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-synthflow">Synthflow</a>.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">What does Direct SIP mean?</h3><p class="text-gray-600 leading-relaxed">That the number is yours and arrives over your own SIP connection from Click2Call, rather than being a number xAI supplied (in xAI&rsquo;s API this is <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">origin: byo_trunk</span>). xAI does not provide Australian numbers, so this is how an Australian number reaches a Grok voice agent.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Why port 5061 and TLS?</h3><p class="text-gray-600 leading-relaxed">xAI takes SIP calls over TLS, with encrypted audio. The built-in profile already uses <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.voice.x.ai:5061;transport=tls</span>, so there is nothing to change on the profile &mdash; just turn on SRTP for the number (step 5).</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Are calls still recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes, provided <strong>Recording Enabled</strong> is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Can I use my existing business number?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; <a class="text-[#3B9C49] hover:underline" href="/number-porting/">port it across</a> first, then assign it to the profile. Local and mobile numbers typically port in 5 to 10 business days.</p></div>
 </div>
@@ -471,6 +519,7 @@
       <div class="space-y-3">
         <a href="/help/how-to-set-up-softphone" class="block text-[#3B9C49] hover:underline">Setting Up a Softphone or Mobile App</a>
         <a href="/help/how-to-set-up-ai-receptionist" class="block text-[#3B9C49] hover:underline">Setting Up the AI Receptionist</a>
+        <a href="/help/webhooks-and-api-during-your-trial" class="block text-[#3B9C49] hover:underline">Using the API and Webhooks</a>
         <a href="/api/" class="block text-[#3B9C49] hover:underline">Developer API &amp; webhooks</a>
         <a href="/ai-voice-tools/" class="block text-[#3B9C49] hover:underline">AI voice tools overview</a>
       </div>

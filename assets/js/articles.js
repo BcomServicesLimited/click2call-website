@@ -933,10 +933,10 @@ var HELP_ARTICLES = [
   {
     url:      "/help/how-to-connect-xai",
     title:    "Connecting xAI to Your Phone Number",
-    desc:     "Register a bring-your-own-trunk number with xAI, host the webhook, and route calls to Grok.",
-    tags:     "xai x.ai grok voice agent sip byo_trunk webhook websocket realtime connection type profile",
+    desc:     "Step by step with screenshots: the xAI profile and SRTP in Click2Call, a Direct SIP number in the xAI console, and the webhook that answers calls.",
+    tags:     "xai x.ai grok voice agent sip direct sip byo_trunk srtp encrypted rtp allowed addresses 486 rejected webhook websocket realtime connection type profile",
     category: "ai",
-    readTime: "6 min read",
+    readTime: "8 min read",
     featured: false,
     pinned:   false
   },

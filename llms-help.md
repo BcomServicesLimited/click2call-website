@@ -6383,22 +6383,24 @@ Yes — [port it across](https://www.click2call.com.au/number-porting/) first, t
 
 Source: https://www.click2call.com.au/help/how-to-connect-xai
 
-Click2Call has a built-in xAI connection profile, so the routing is one dropdown. The work is at the xAI end: register a bring-your-own-trunk number, host a webhook, and open a WebSocket to answer each call.
+Click2Call has a built-in xAI connection profile, so the Click2Call side is a few clicks: create the profile, put your number on it and turn on encrypted audio. Then register the number with your Grok voice agent in the xAI console, and host the webhook that answers each call.
 
-Last reviewed: September 2026
+Last reviewed: October 2026
 
 ### Before you start: this one needs code
-xAI’s SIP integration is a developer integration. You register the phone number through their API, host a webhook that receives the realtime.call.incoming event, and open a WebSocket to answer each call. If you want an agent you configure in a dashboard with no server of your own, [ElevenLabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs), [Retell](https://www.click2call.com.au/help/how-to-connect-retell-ai) or [Synthflow](https://www.click2call.com.au/help/how-to-connect-synthflow) are the simpler choices.
+You create the agent and register your number in the xAI console, but xAI only answers a call when **your own webhook** receives its realtime.call.incoming event and opens a WebSocket to start the conversation. You need somewhere to host that code. If you want an agent you set up entirely in a dashboard, [ElevenLabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs), [Retell](https://www.click2call.com.au/help/how-to-connect-retell-ai) or [Synthflow](https://www.click2call.com.au/help/how-to-connect-synthflow) are the simpler choices.
 
 ### At a glance
 
-Mandatory Click2Call fieldNone — just pick the connection type
+Click2Call profileConnection Type **xAI** — no other fields
 
 Where Click2Call sends callssip:sip.voice.x.ai:5061;transport=tls
 
-AuthenticationIP allowlist (allowed_addresses) on the xAI side — add 52.63.154.234
+On the numberForce calls to use Secure Encrypted RTP (SRTP) — on
 
-Number format+E.164, set automatically
+xAI phone numberDirect SIP, your number as +E.164 (e.g. +61721402648)
+
+Allowed addresses (xAI)52.63.154.234 — Authentication left blank
 
 Code requiredYes — a webhook plus a WebSocket connection
 
@@ -6406,79 +6408,132 @@ Provider documentationxAI SIP phone calls
 
 ### Connecting xAI, Step by Step
 
+#### Part 1 — In the Click2Call portal
+Create the xAI profile, put your number on it and turn on encrypted audio.
+
 1
 
-#### Register a Direct SIP phone number with xAI
+#### Create a new xAI profile
 
-Using the xAI API, create a Direct SIP phone number with origin set to byo_trunk — the number is yours, arriving over your own trunk. Include the webhook URL that should receive incoming-call events.
-xAI returns a **signing secret** once and never again. Store it before you close the response; you need it to verify webhook signatures.
+Log in to the portal and open **Voice → Profiles**. Under **Other Profiles**, click **Create New Profile** and set **Connection Type** to **xAI**. Give it a name you will recognise — in our example it is XAI Test.
 
 2
 
-#### Choose an authentication method
+#### Choose your number and save the profile
 
-xAI accepts either an IP allowlist, via allowed_addresses, or SIP digest credentials.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+On the profile, set **Profile Caller ID** to the number the agent will answer — 61721402648 in our example. There is nothing else to type: the **Inbound SIP URI Route** already shows sip:sip.voice.x.ai:5061;transport=tls and the **Number Format** is set to +E.164 for you.
+Tick **Recording Enabled** if you want Click2Call to record and transcribe the calls, then click **Save**.
 
 3
 
-#### Handle the incoming-call webhook
+#### Put the profile on your number
 
-When a call arrives, xAI posts a realtime.call.incoming event to your webhook. Verify the signature with your signing secret, then read the call_id from the payload.
+Go back to **Voice → Line Manager**. In the **Profile** column for your number, choose the xAI profile you just created.
+New numbers start on the Default profile, and a number left on Default ignores everything you just set up — calls never leave Click2Call for xAI.
 
 4
 
-#### Open a WebSocket to answer
+#### Open Voice Quality & Codecs for the number
 
-Connect to wss://api.x.ai/v1/realtime with the call_id and your API key. Send session.update to configure the agent for this call, then response.create when it should start speaking.
+In Line Manager, click the number to open its **Call Flow**. Open the settings menu and, under **Other Settings**, choose **Voice Quality & Codecs**.
 
 5
 
-#### Create the profile in Click2Call
+#### Turn on encrypted audio (SRTP)
 
-In the Click2Call portal open **Voice → Profiles** and set **Connection Type** to **xAI**.
-There are no extra fields. The **Inbound SIP URI Route** line already shows sip:sip.voice.x.ai:5061;transport=tls — note that xAI uses TLS on 5061 rather than plain TCP on 5060 — and the number format is set to +E.164 automatically.
+Tick **Force calls to use Secure Encrypted RTP?** and click **Save Settings**.
+The portal warns that this can make calls fail if the other end is not set up for SRTP. xAI is — it takes calls over TLS with encrypted audio — so turn it on for the number connected to xAI. Leave it off on numbers that ring ordinary desk phones or softphones unless they are set up for SRTP.
+
+#### Part 2 — In the xAI console
+Create the voice agent and register your Click2Call number with it.
 
 6
 
-#### Assign your number, then check the time zone
+#### Create your voice agent
 
-Open **Voice → Line Manager** and set the **Profile** column for your number to the profile you just created.
-The Default profile applies to every line with no profile assigned, and new numbers land on it automatically — a number left on Default will ignore everything you just configured. While you are in the profile, set the **Time Zone** to where the business operates: business hours, after-hours routing and queue schedules all read it.
+In the xAI console, select **Voice Agents** and click **Create agent**. You can start from a template such as Customer Support or Appointment Scheduler, or from scratch. Set up the agent’s instructions and voice, then **Publish** it.
 
 7
 
+#### Set up a phone number for the agent
+
+Open the agent. On its **Configuration** tab, next to Set up a phone number to call your agent, click **Set up**.
+
+8
+
+#### Fill in the form with your Click2Call number
+
+Choose the **Direct SIP** tab (not Twilio) and fill it in:
+
+- **Name** — anything you like, for example Click2Call Demo.
+
+- **Phone number** — your Click2Call number in international format with the plus sign: +61721402648 in our example.
+
+- **SIP URI** — fills itself in, for example sip:+61721402648@sip.voice.x.ai;transport=tls. You do not need to copy it into Click2Call; the xAI profile already sends calls there.
+
+- **Allowed addresses** — add 52.63.154.234, the address Click2Call sends calls from.
+
+- **Authentication** — leave it blank. Click2Call is trusted by its address, so no username or password is needed for inbound calls.
+
+Click **Add number**.
+xAI shows a **signing secret** for the number once and never again. Store it before you close the screen — your webhook needs it to check that events really come from xAI.
+
+#### Part 3 — Your webhook
+The step that makes the agent actually pick up. This is code you host yourself.
+
+9
+
+#### Set up the webhook that answers each call
+
+xAI does not answer a call on its own. When a call arrives it sends a realtime.call.incoming event to your webhook URL, and the call is only answered if your application responds. Your webhook needs to:
+
+- Be set as the webhook URL for the number in xAI, and be reachable from the internet.
+
+- Check the event’s signature with the signing secret, then read the call_id.
+
+- Open a WebSocket to wss://api.x.ai/v1/realtime with the call_id and your xAI API key.
+
+- Send session.update to set up the agent for the call, then response.create when it should start speaking.
+
+xAI’s SIP documentation has the event format and example code. For how webhooks work on the Click2Call side — for example sending call details to your CRM — see [using the API and webhooks](https://www.click2call.com.au/help/webhooks-and-api-during-your-trial).
+Without a working webhook the call reaches xAI, starts ringing and then drops about half a second later with **486 Rejected**. See Troubleshooting below.
+
+10
+
 #### Test the call
 
-Ring the number from a mobile. Your webhook should receive the incoming-call event, and the agent answers once your WebSocket session is established.
+Ring your number from a mobile. Your webhook should log a realtime.call.incoming event, and the agent answers once your WebSocket session is open. The call also shows in your Click2Call call history.
 
 ### Troubleshooting
 
+#### It rings, then drops after about half a second (486 Rejected)
+The call is reaching xAI — it answers with 100 Trying and 180 Ringing — but then rejects it, because no application took the call. Check, in order: the number is registered in xAI as **Direct SIP** with your number in +E.164 format; a webhook URL is set for it; your webhook is receiving the realtime.call.incoming event; it reads the call_id and opens the WebSocket; and session.update and response.create are sent without errors or timeouts. xAI’s logs in the console show errors with routing, webhook delivery or starting the agent.
+
 #### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
-
-#### The phone rings but nothing answers
-Almost always the webhook. Either the Direct SIP number was registered without a webhook URL, the endpoint is not reachable from the internet, or it receives the event but never opens the WebSocket. Check your endpoint logs for a realtime.call.incoming event.
-
-#### Webhook signature verification fails
-The signing secret is only returned when the number is created. If it was not stored, register the number again to get a fresh one.
+xAI is asking our call for a username and password, which means 52.63.154.234 is not in the number’s **Allowed addresses**. Click2Call cannot answer that challenge, so add the address in xAI and leave Authentication blank. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### xAI rejects the call before it rings
-The allowed_addresses list does not include the address Click2Call is signalling from. Ask [support](https://www.click2call.com.au/support/) for the current addresses.
+The **Allowed addresses** list does not include the address Click2Call is calling from. Add 52.63.154.234, or ask [support](https://www.click2call.com.au/support/) for the current address.
+
+#### Calls fail as soon as they connect
+Check that **Force calls to use Secure Encrypted RTP** is ticked under **Voice Quality & Codecs** for the number (step 5). xAI expects encrypted audio.
+
+#### Webhook signature verification fails
+The signing secret is only shown when the number is created. If it was not stored, add the number again in xAI to get a new one.
 
 #### Calls go to Click2Call voicemail instead
-The number is still on the Default profile rather than the provider profile, so the call never leaves for the provider at all. Check the Profile column in Line Manager.
+The number is still on the Default profile rather than the xAI profile, so the call never leaves Click2Call. Check the Profile column in Line Manager.
 
 ### Frequently Asked Questions
 
 #### Do I need to write code?
-Yes — a webhook and a WebSocket. Same shape as [OpenAI](https://www.click2call.com.au/help/how-to-connect-openai). For a dashboard-only agent, use [ElevenLabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs), [Retell](https://www.click2call.com.au/help/how-to-connect-retell-ai) or [Synthflow](https://www.click2call.com.au/help/how-to-connect-synthflow).
+Yes — a webhook and a WebSocket. The xAI console creates the agent and registers the number, but a call is only answered when your webhook picks up the incoming-call event. Same shape as [OpenAI](https://www.click2call.com.au/help/how-to-connect-openai). For a dashboard-only agent, use [ElevenLabs](https://www.click2call.com.au/help/how-to-connect-elevenlabs), [Retell](https://www.click2call.com.au/help/how-to-connect-retell-ai) or [Synthflow](https://www.click2call.com.au/help/how-to-connect-synthflow).
 
-#### What does byo_trunk mean?
-That the number is yours and arrives over your own SIP trunk rather than being provisioned by xAI. Provisioning xAI numbers through the API is not supported, so this is how an Australian number reaches a Grok voice agent.
+#### What does Direct SIP mean?
+That the number is yours and arrives over your own SIP connection from Click2Call, rather than being a number xAI supplied (in xAI’s API this is origin: byo_trunk). xAI does not provide Australian numbers, so this is how an Australian number reaches a Grok voice agent.
 
 #### Why port 5061 and TLS?
-xAI terminates SIP over TLS. The built-in profile already uses sip:sip.voice.x.ai:5061;transport=tls, so there is nothing to change.
+xAI takes SIP calls over TLS, with encrypted audio. The built-in profile already uses sip:sip.voice.x.ai:5061;transport=tls, so there is nothing to change on the profile — just turn on SRTP for the number (step 5).
 
 #### Are calls still recorded and transcribed?
 Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal on the Click2Call side, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).
