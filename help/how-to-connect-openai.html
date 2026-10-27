@@ -30,7 +30,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-10-27",
   "name": "How to connect OpenAI to an Australian phone number with Click2Call",
   "description": "Route calls from a Click2Call Australian number to an OpenAI Realtime API voice agent using the built-in OpenAI connection profile.",
   "totalTime": "PT30M",
@@ -53,32 +53,32 @@
     {
       "@type": "HowToStep",
       "name": "Find your OpenAI Project ID",
-      "text": "Sign in at platform.openai.com and open Settings, then Project, then General. The Project ID is shown there and begins with proj_. Copy it."
+      "text": "Sign in at platform.openai.com and open Settings, then Project, then General. The Project ID begins with proj_. Copy it. Do not enter your OpenAI API key or webhook signing secret into Click2Call."
     },
     {
       "@type": "HowToStep",
       "name": "Set up a webhook to accept calls",
-      "text": "In the OpenAI platform open Settings, then Project, then Webhooks, and register an endpoint you control. When a call arrives OpenAI sends a realtime.call.incoming event containing a call_id, and your endpoint must respond by calling the accept endpoint for that call_id. Without a webhook that accepts the call, inbound calls will not connect."
+      "text": "Register a public HTTPS endpoint in the OpenAI project, subscribed to realtime.call.incoming. When a call arrives your server accepts it with POST /v1/realtime/calls/{call_id}/accept, supplying the model and instructions. Verify webhook signatures and handle duplicate deliveries."
     },
     {
       "@type": "HowToStep",
       "name": "Create the profile in Click2Call",
-      "text": "In the Click2Call portal open Voice, then Profiles. Set Connection Type to OpenAI and paste the Project ID into the OpenAI Project ID field. This field is mandatory and the profile will not save without it. Click2Call builds the SIP URI automatically in the form sip:project_id@sip.api.openai.com:5061;transport=tls."
+      "text": "In Voice then Profiles set Connection Type to OpenAI and paste the Project ID into the mandatory OpenAI Project ID field. Click2Call routes calls to sip:PROJECT_ID@sip.api.openai.com:5061;transport=tls in +E.164 format. Edit the Default profile instead to send every number."
     },
     {
       "@type": "HowToStep",
       "name": "Assign your number to the profile",
-      "text": "Open Voice, then Line Manager, and set the Profile column for the number to the profile you just created. Numbers left on the Default profile will ignore the OpenAI settings."
+      "text": "Open Voice, then Line Manager, and set the Profile column for the number to the profile you just created."
     },
     {
       "@type": "HowToStep",
-      "name": "Check the time zone",
-      "text": "Set the Time Zone on the profile to the region the business operates in, since business hours, after-hours routing and queue schedules all read it."
+      "name": "Check the time zone, then test",
+      "text": "Set the Time Zone on the profile, then ring the number. Confirm the webhook receives the event, bad signatures are rejected, the accept succeeds and the agent answers."
     },
     {
       "@type": "HowToStep",
-      "name": "Test the call",
-      "text": "Ring the number from a mobile. Your webhook should receive a realtime.call.incoming event and the agent should answer once the call is accepted."
+      "name": "Transfer callers to a person",
+      "text": "Either transfer the active call with POST /v1/realtime/calls/{call_id}/refer and a target_uri such as tel:+61755551234, or start a new SIP call to sip:sip.click2call.com.au:5061;transport=tls with digest authentication as the line: username the number as Line Manager shows it (61355551234, no plus) and the line's password."
     }
   ]
 }
@@ -335,7 +335,7 @@
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting OpenAI to Your Phone Number</h1>
       <p class="text-gray-600 leading-relaxed">Click2Call has a built-in OpenAI connection profile: enter your Project ID and calls to your Australian number are routed to the OpenAI Realtime API. This guide covers both ends &mdash; what to set up in the OpenAI platform, and what to configure in Click2Call.</p>
-<p class="mt-3 text-sm text-gray-400">Last reviewed: September 2026</p>
+<p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
     </div>
   </div>
 
@@ -347,7 +347,7 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
     <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Find your OpenAI Project ID</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Sign in at <a class="text-[#3B9C49] hover:underline" href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a> and open <strong>Settings &rarr; Project &rarr; General</strong>. The Project ID is shown there and begins with <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">proj_</span>.</p><p class="text-gray-600 leading-relaxed mt-3">Copy it &mdash; this is the one value Click2Call needs.</p>
+        <p class="text-gray-600 leading-relaxed mt-3">Sign in at <a class="text-[#3B9C49] hover:underline" href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a> and open <strong>Settings &rarr; Project &rarr; General</strong>. The Project ID is shown there and begins with <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">proj_</span>.</p><p class="text-gray-600 leading-relaxed mt-3">Copy it &mdash; this is the one value Click2Call needs.</p><div class="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4"><p class="text-sm text-amber-900 leading-relaxed"><strong>Do not enter your OpenAI API key or webhook signing secret into Click2Call.</strong> Click2Call only needs the Project ID. Keep the API key and signing secret on your own server, in a secret store or environment variables &mdash; never in browser code, prompts, source code or the portal.</p></div>
     </div>
 </div>
 
@@ -355,7 +355,15 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set up a webhook that accepts calls</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the OpenAI platform, open <strong>Settings &rarr; Project &rarr; Webhooks</strong> and register an endpoint you control.</p><p class="text-gray-600 leading-relaxed mt-3">When someone rings your number, OpenAI sends that endpoint a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event containing a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span>. Your code accepts the call using that id, and that is also where you give the agent its instructions and context.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This is the step that catches people. Until your webhook accepts the call, the phone will ring and nothing will answer. OpenAI&rsquo;s own <a class="font-semibold underline" href="https://developers.openai.com/api/docs/guides/realtime-sip" target="_blank" rel="noopener">Realtime API with SIP guide</a> has the request format and sample code.</p></div>
+        <p class="text-gray-600 leading-relaxed mt-3">In the OpenAI platform, open <strong>Settings &rarr; Project &rarr; Webhooks</strong> and register a public HTTPS endpoint you control, subscribed to the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event.</p><p class="text-gray-600 leading-relaxed mt-3">When someone rings your number, OpenAI sends that endpoint a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event containing a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span>. Your code accepts the call using that id, and that is also where you give the agent its model, instructions, voice, tools and transcription settings:</p><pre class="mt-3 rounded-xl bg-gray-900 text-gray-100 text-xs p-4 overflow-x-auto"><code>POST https://api.openai.com/v1/realtime/calls/{call_id}/accept
+Authorization: Bearer &lt;OPENAI_API_KEY&gt;
+Content-Type: application/json
+
+{
+  "type": "realtime",
+  "model": "gpt-realtime-2.1",
+  "instructions": "You are the voice assistant for Example Company."
+}</code></pre><p class="text-gray-600 leading-relaxed mt-3">Verify OpenAI&rsquo;s webhook signature before trusting an event, and handle duplicate deliveries of the same event safely.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This is the step that catches people. Until your webhook accepts the call, the phone will ring and nothing will answer. OpenAI&rsquo;s own <a class="font-semibold underline" href="https://developers.openai.com/api/docs/guides/realtime-sip" target="_blank" rel="noopener">Realtime API with SIP guide</a> has the request format and sample code.</p></div>
     </div>
 </div>
 
@@ -363,7 +371,7 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the portal open <strong>Voice &rarr; Profiles</strong>, set <strong>Connection Type</strong> to <strong>OpenAI</strong>, and paste your Project ID into the <strong>OpenAI Project ID</strong> field.</p><p class="text-gray-600 leading-relaxed mt-3">That field is mandatory &mdash; the profile will not save without it. Click2Call then builds the SIP address for you and sets the number format to +E.164 automatically. There is no SIP URI to type.</p><img src="/assets/images/help/profile-openai.webp" alt="The Click2Call profile settings with Connection Type set to OpenAI, showing the mandatory OpenAI Project ID field and the SIP URI that Click2Call builds from it: sip:project_id@sip.api.openai.com:5061;transport=tls." width="1600" height="744" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
+        <p class="text-gray-600 leading-relaxed mt-3">In the portal open <strong>Voice &rarr; Profiles</strong>, set <strong>Connection Type</strong> to <strong>OpenAI</strong>, and paste your Project ID into the <strong>OpenAI Project ID</strong> field.</p><p class="text-gray-600 leading-relaxed mt-3">That field is mandatory &mdash; the profile will not save without it. Click2Call then routes calls to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:&lt;PROJECT_ID&gt;@sip.api.openai.com:5061;transport=tls</span> and sets the number format to +E.164 automatically. There is no SIP URI to type.</p><p class="text-gray-600 leading-relaxed mt-3">To send every number on the account to OpenAI, edit the <em>Default</em> profile instead of making a new one &mdash; it applies to every line without its own profile.</p><img src="/assets/images/help/profile-openai.webp" alt="The Click2Call profile settings with Connection Type set to OpenAI, showing the mandatory OpenAI Project ID field and the SIP URI that Click2Call builds from it: sip:project_id@sip.api.openai.com:5061;transport=tls." width="1600" height="744" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
 
@@ -379,16 +387,29 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Check the time zone, then test</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">While you are in the profile, confirm the <strong>Time Zone</strong> matches where the business operates &mdash; business hours, after-hours routing and queue schedules all read it.</p><p class="text-gray-600 leading-relaxed mt-3">Then ring the number from a mobile. Your webhook should receive the incoming-call event, and the agent answers once your code accepts it.</p>
+        <p class="text-gray-600 leading-relaxed mt-3">While you are in the profile, confirm the <strong>Time Zone</strong> matches where the business operates &mdash; business hours, after-hours routing and queue schedules all read it.</p><p class="text-gray-600 leading-relaxed mt-3">Then ring the number from a mobile. Check, in order: the call reaches OpenAI, your endpoint receives <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> and logs the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span>, an event with a bad signature is rejected, your server&rsquo;s accept request succeeds and the agent answers with the model, voice and instructions you set.</p>
+    </div>
+</div>
+
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
+    <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Transfer callers to a person</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">There are two ways to hand a caller to a human. Which one you use depends on how your call flow is built.</p><p class="font-semibold text-gray-900 mt-5">A. Transfer the call the agent is on</p><p class="text-gray-600 leading-relaxed mt-3">Your server asks OpenAI to transfer the active call, and OpenAI sends a SIP REFER back to Click2Call:</p><pre class="mt-3 rounded-xl bg-gray-900 text-gray-100 text-xs p-4 overflow-x-auto"><code>POST https://api.openai.com/v1/realtime/calls/{call_id}/refer
+Authorization: Bearer &lt;OPENAI_API_KEY&gt;
+Content-Type: application/json
+
+{ "target_uri": "tel:+61755551234" }</code></pre><p class="font-semibold text-gray-900 mt-5">B. Start a new call back into Click2Call</p><p class="text-gray-600 leading-relaxed mt-3">If your application, PBX or SBC places a new SIP call to Click2Call, that call has to sign in as one of your lines using SIP digest authentication:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>SIP server</strong> &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.click2call.com.au:5061;transport=tls</span></li><li><strong>Username / User ID</strong> &mdash; the number exactly as Line Manager shows it, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span></li><li><strong>Password</strong> &mdash; the password for that line, stored securely</li><li><strong>Caller ID and destination</strong> &mdash; can be +E.164, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span></li></ul><div class="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4"><p class="text-sm text-amber-900 leading-relaxed"><strong>The username stays in Line Manager format.</strong> It is not converted to +E.164: authenticate as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span> even when the caller ID is <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>. And do not use the OpenAI SIP address as your Click2Call server &mdash; the Project ID routes calls <em>to</em> OpenAI; the line&rsquo;s username and password are for calls back <em>to</em> Click2Call.</p></div>
     </div>
 </div>
 
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">The profile will not save</h3><p class="text-gray-600 leading-relaxed">The <strong>OpenAI Project ID</strong> field is empty or malformed. It is mandatory, and the value should begin with <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">proj_</span>. Copy it from Settings &rarr; Project &rarr; General rather than typing it.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">The phone rings but nothing answers</h3><p class="text-gray-600 leading-relaxed">Almost always the webhook. Either it is not registered in the OpenAI project, it is not reachable from the internet, or it is receiving the event but not accepting the call. Check your endpoint logs for a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The phone rings but nothing answers</h3><p class="text-gray-600 leading-relaxed">Almost always the webhook. Either it is not registered in the OpenAI project, it is not reachable from the internet, or it is receiving the event but not accepting the call. Check your endpoint logs for a <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> event. If none arrives, check the Project ID on the profile, that the number is on that profile, that the webhook belongs to the same OpenAI project, and that <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">realtime.call.incoming</span> is enabled. If the event arrives, check your handler reads the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">call_id</span> and its accept request uses a valid API key.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">OpenAI returns 401 on a transfer</h3><p class="text-gray-600 leading-relaxed">Check the <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">target_uri</span> in your refer request. For a new call you start back into Click2Call, check the line&rsquo;s username and password.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Click2Call rejects the sign-in on a call back to us</h3><p class="text-gray-600 leading-relaxed">Check the username format first: it must be the number as Line Manager shows it, <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span>, not <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>. Then check the line&rsquo;s current password.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than your OpenAI profile, so the call never leaves for OpenAI at all. Check the Profile column in Line Manager.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Calls connect but the agent has no context</h3><p class="text-gray-600 leading-relaxed">Context is supplied by your code at the moment it accepts the call, not by Click2Call. Review the accept request in OpenAI&rsquo;s SIP guide &mdash; that is where the session instructions belong.</p></div>
 </div>

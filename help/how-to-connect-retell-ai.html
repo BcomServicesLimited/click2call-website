@@ -30,7 +30,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-10-27",
   "name": "How to connect Retell AI to an Australian phone number with Click2Call",
   "description": "Route calls from a Click2Call Australian number to a Retell AI agent using the built-in Retell AI connection profile.",
   "totalTime": "PT30M",
@@ -48,33 +48,38 @@
   "step": [
     {
       "@type": "HowToStep",
+      "name": "Create the Click2Call profile",
+      "text": "In the Click2Call portal open Voice then Profiles. Edit the Default profile to send every number to Retell, or click New Profile to send only some numbers."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set Connection Type to Retell AI",
+      "text": "Set Connection Type to Retell AI. Click2Call routes to sip:sip.retellai.com;transport=tcp and sends the number in +E.164 format automatically. Save the profile."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Assign your numbers",
+      "text": "In Voice then Line Manager, set the Profile column for each number and click Save Changes. Note the number as Line Manager shows it, for example 61355551234, and the line's password."
+    },
+    {
+      "@type": "HowToStep",
       "name": "Build the agent in Retell",
-      "text": "In the Retell AI dashboard, create the agent that should answer the phone. The prompt, voice, functions and knowledge are all configured in the dashboard — no code is required."
+      "text": "In the Retell AI dashboard, create the agent that should answer the phone. No code is required."
     },
     {
       "@type": "HowToStep",
-      "name": "Import your Click2Call number into Retell",
-      "text": "Open Phone Numbers and import your existing number rather than buying one from Retell. Enter it in E.164 format, for example +61355551234, matching what Click2Call sends."
+      "name": "Connect your number via SIP trunking",
+      "text": "In Retell open Deploy then Phone Numbers, click + and choose Connect to your number via SIP trunking. Phone Number +61355551234; Termination URI sip.click2call.com.au; SIP Trunk User Name the number as Line Manager shows it with no plus (61355551234); SIP Trunk Password the line's password; Outbound Transport TLS. Save."
     },
     {
       "@type": "HowToStep",
-      "name": "Assign the agent to the number",
-      "text": "Attach the agent you built to the imported number, choosing it as the inbound agent. Until an agent is assigned, calls reach Retell and are not answered."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Create the profile in Click2Call",
-      "text": "In the Click2Call portal open Voice then Profiles and set Connection Type to Retell AI. There are no extra fields — Click2Call routes to sip:sip.retellai.com;transport=tcp automatically and sends the number in +E.164 format."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Assign your number and set the time zone",
-      "text": "Open Voice then Line Manager and set the Profile column for your number to the profile you just created. Set the Time Zone on the profile to where the business operates."
+      "name": "Assign the agent",
+      "text": "Choose your agent as the Inbound Call Agent on the number. Optionally set a Fallback Number and an Outbound Call Agent with Allowed Outbound Countries set to Australia."
     },
     {
       "@type": "HowToStep",
       "name": "Test the call",
-      "text": "Ring the number from a mobile. The Retell agent should answer, and the call appears in both the Retell call history and the Click2Call call records."
+      "text": "Ring the number from a mobile. The agent should answer, and the call shows in Retell's Live Monitoring and in the Click2Call call records."
     }
   ]
 }
@@ -115,7 +120,7 @@
       "name": "Do I need to write any code to connect Retell AI to a phone number?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Retell agents are built in the Retell dashboard and the Click2Call side is a single dropdown selection. This is one of the no-code providers, unlike OpenAI and xAI which both require a webhook endpoint you host."
+        "text": "No. Retell agents are built in the Retell dashboard and the Click2Call side is a single dropdown selection, plus the line's username and password in Retell. This is one of the no-code providers, unlike OpenAI and xAI which both require a webhook endpoint you host."
       }
     },
     {
@@ -123,7 +128,7 @@
       "name": "Which SIP address does Click2Call send calls to?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "sip:sip.retellai.com with TCP transport. This is pre-configured in the Retell AI connection profile, so there is nothing to type in Click2Call."
+        "text": "sip:sip.retellai.com with TCP transport. This is pre-configured in the Retell AI connection profile, so there is nothing to type in Click2Call. Calls the agent makes go the other way, to sip.click2call.com.au, signed in with the line's username and password."
       }
     },
     {
@@ -376,7 +381,7 @@
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting Retell AI to Your Phone Number</h1>
       <p class="text-gray-600 leading-relaxed">Retell does not sell Australian numbers, so bringing your own is the only way to put a Retell agent on a local landline or a 1300 number. Click2Call has a built-in Retell AI connection profile that makes it a one-dropdown job.</p>
-<p class="mt-3 text-sm text-gray-400">Last reviewed: September 2026</p>
+<p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
     </div>
   </div>
 
@@ -384,10 +389,11 @@
 <div class="mb-10 rounded-2xl border border-gray-200 bg-white p-6">
 <h2 class="text-base font-bold text-gray-900 mb-4">At a glance</h2>
 <dl class="space-y-3 text-sm">
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Mandatory Click2Call field</dt><dd class="text-gray-600 leading-relaxed">None &mdash; just pick the connection type</dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Where Click2Call sends calls</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.retellai.com;transport=tcp</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Authentication</dt><dd class="text-gray-600 leading-relaxed">IP allowlist on the Retell side &mdash; add <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format</dt><dd class="text-gray-600 leading-relaxed">+E.164, set automatically</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Click2Call side</dt><dd class="text-gray-600 leading-relaxed">Connection Type <strong>Retell AI</strong> on a profile &mdash; the route and number format fill in automatically</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Calls in to Retell</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.retellai.com;transport=tcp</span>, set by the profile</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Calls out from Retell</dt><dd class="text-gray-600 leading-relaxed">Termination URI <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span>, TLS, signed in with the line&rsquo;s username and password</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format in Retell</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span> &mdash; +61, then the number without its leading 0</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">SIP trunk user name</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span> &mdash; the number exactly as Line Manager shows it, no plus</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Code required</dt><dd class="text-gray-600 leading-relaxed">No &mdash; the agent is built in the Retell dashboard</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Provider documentation</dt><dd class="text-gray-600 leading-relaxed"><a class="text-[#3B9C49] hover:underline" href="https://docs.retellai.com/deploy/custom-telephony" target="_blank" rel="noopener">Retell AI custom telephony</a></dd></div>
 </dl></div>
@@ -396,57 +402,60 @@
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Build the agent in Retell</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the Retell AI dashboard, create the agent that should answer the phone &mdash; prompt, voice, functions and knowledge base. It is all dashboard configuration; there is nothing to deploy.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Choose which numbers go to Retell</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong>.</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Every number on the account</strong> &mdash; stay on the <em>Default</em> profile and edit that.</li><li><strong>Only some numbers</strong> &mdash; click <strong>New Profile</strong> and name it something like <em>Retell</em>.</li></ul>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Import your Click2Call number into Retell</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Phone Numbers</strong> and import your existing number rather than buying one from Retell. Enter it in E.164 format, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span> &mdash; it has to match what Click2Call sends.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">This is the whole reason to use bring-your-own-number: Retell does not sell Australian geographic numbers, so importing a Click2Call number is how you get an AI agent answering a local landline or a 1300 number.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Set the profile to Retell AI</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Set <strong>Connection Type</strong> to <strong>Retell AI</strong>. The <strong>Inbound SIP URI Route</strong> fills in as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.retellai.com;transport=tcp</span> and the number format is set to +E.164 automatically. Leave <strong>Access Control List</strong> blank. Tick anything else you want, such as <strong>Recording Enabled</strong>, set the <strong>Time Zone</strong> to where the business operates, then click <strong>Save</strong>.</p><img src="/assets/images/help/profile-retell.webp" alt="The Click2Call profile settings with Connection Type set to Retell AI, showing the pre-configured Inbound SIP URI Route sip:sip.retellai.com;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Assign the agent to the number</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Attach the agent you built as the <strong>inbound</strong> agent for that number. Until one is assigned, calls arrive at Retell and are not answered.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>52.63.154.234</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Put your numbers on the profile</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">If you made a new profile, open <strong>Voice &rarr; Line Manager</strong>, change the <strong>Profile</strong> column to it next to each number that should go to Retell, and click <strong>Save Changes</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">Note the number as it appears in Line Manager (for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span>) and the line&rsquo;s password. You need both in step 5.</p>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>Retell AI</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">There are no extra fields. The <strong>Inbound SIP URI Route</strong> line already shows <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.retellai.com;transport=tcp</span>, and the number format is set to +E.164 automatically.</p><img src="/assets/images/help/profile-retell.webp" alt="The Click2Call profile settings with Connection Type set to Retell AI, showing the pre-configured Inbound SIP URI Route sip:sip.retellai.com;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
+        <h3 class="font-bold text-gray-900 mb-2">Build the agent in Retell</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the Retell AI dashboard, create the agent that should answer the phone &mdash; prompt, voice, functions and knowledge base. It is all dashboard configuration; there is nothing to deploy.</p>
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Connect your number via SIP trunking</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In Retell open <strong>Deploy &rarr; Phone Numbers</strong>, click <strong>+</strong> and choose <strong>Connect to your number via SIP trunking</strong>. Fill in:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Phone Number</strong> &mdash; +61 followed by the number without its leading 0, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>.</li><li><strong>Termination URI</strong> &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span></li><li><strong>SIP Trunk User Name</strong> &mdash; your Click2Call number exactly as Line Manager shows it, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span></li><li><strong>SIP Trunk Password</strong> &mdash; the password for that line</li><li><strong>Nickname</strong> &mdash; optional</li><li><strong>Outbound Transport</strong> &mdash; TLS is recommended; TCP and UDP also work</li></ul><div class="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4"><p class="text-sm text-amber-900 leading-relaxed"><strong>The user name is not the same as the phone number.</strong> The phone number takes the plus (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>); the SIP Trunk User Name is the number as Line Manager shows it, with no plus (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span>).</p></div><p class="text-gray-600 leading-relaxed mt-3">Click <strong>Save</strong>.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Retell does not sell Australian geographic numbers, so connecting a Click2Call number is how you get an AI agent answering a local landline or a 1300 number.</p></div>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
     <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Assign the agent</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Open the number in Retell and, under <strong>Inbound Call Agent</strong>, choose your agent as the <strong>Call Agent</strong>. Until one is assigned, calls arrive at Retell and are not answered. While you are there:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Allowed Inbound Countries</strong> &mdash; usually <em>All countries allowed</em>.</li><li><strong>Fallback Number</strong> (optional) &mdash; where calls go if Retell has reached its call limit and cannot answer, e.g. another of your numbers in <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61…</span> format.</li><li><strong>Outbound Call Agent</strong> (optional) &mdash; if the agent will make calls, choose it here and set <strong>Allowed Outbound Countries</strong> to Australia. Retell may ask you to verify your identity first.</li></ul>
+    </div>
+</div>
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
+    <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. The agent should answer, and the call should appear in both the Retell call history and your Click2Call call records.</p>
+        <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. The agent should answer. In Retell, <strong>Monitor &rarr; Live Monitoring</strong> shows the call as <em>Phone Inbound</em> with the From and To numbers. Check you have two-way audio, the caller ID comes through, and the call ends normally. It also appears in your Click2Call call records.</p>
     </div>
 </div>
 
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">The call reaches Retell but no agent answers</h3><p class="text-gray-600 leading-relaxed">The number was not imported in the format Click2Call sends (+E.164, with the plus), or no inbound agent is assigned to it. Check both in the Retell Phone Numbers screen.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls are rejected before ringing</h3><p class="text-gray-600 leading-relaxed">Retell is not accepting traffic from the address Click2Call signals from. Ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current addresses and allowlist them.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than the provider profile, so the call never leaves for the provider at all. Check the Profile column in Line Manager.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The call reaches Retell but no agent answers</h3><p class="text-gray-600 leading-relaxed">The phone number in Retell is not +61 followed by the number without its leading 0, or no Inbound Call Agent is assigned to it. Check both on the number in Deploy &rarr; Phone Numbers.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The agent answers, but calls it makes fail</h3><p class="text-gray-600 leading-relaxed">Check the SIP trunking settings on the number: Termination URI <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span>, SIP Trunk User Name the number as Line Manager shows it with no plus, and the line&rsquo;s current password. If the password was changed in the portal, update it in Retell too. Also check Allowed Outbound Countries includes Australia.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls stopped after our move to the new platform</h3><p class="text-gray-600 leading-relaxed">Open the number in Retell and check the Termination URI is <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span> rather than an old IP address.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is on a profile other than your Retell one, so the call never leaves for Retell. Check the Profile column in Line Manager, and remember a number with no profile assigned uses <em>Default</em>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">The agent answers but cannot transfer calls</h3><p class="text-gray-600 leading-relaxed">Warm and cold transfers are configured in the Retell agent, not in Click2Call. If a transfer target is another extension on your account, dial it as a full number rather than an internal extension.</p></div>
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6 mt-4">Frequently Asked Questions</h2>

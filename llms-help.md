@@ -5942,7 +5942,7 @@ Source: https://www.click2call.com.au/help/how-to-connect-openai
 
 Click2Call has a built-in OpenAI connection profile: enter your Project ID and calls to your Australian number are routed to the OpenAI Realtime API. This guide covers both ends — what to set up in the OpenAI platform, and what to configure in Click2Call.
 
-Last reviewed: September 2026
+Last reviewed: October 2026
 
 ### Before you start: this one needs code
 OpenAI’s SIP integration is not a no-code setup. When a call arrives, OpenAI sends a realtime.call.incoming event to a webhook you host, and your code has to accept the call before any audio connects. If you want an agent you configure in a dashboard with no server of your own, [ElevenLabs, Retell or Synthflow](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent) are the simpler choices — Click2Call supports those too.
@@ -5955,13 +5955,27 @@ OpenAI’s SIP integration is not a no-code setup. When a call arrives, OpenAI s
 
 Sign in at platform.openai.com and open **Settings → Project → General**. The Project ID is shown there and begins with proj_.
 Copy it — this is the one value Click2Call needs.
+**Do not enter your OpenAI API key or webhook signing secret into Click2Call.** Click2Call only needs the Project ID. Keep the API key and signing secret on your own server, in a secret store or environment variables — never in browser code, prompts, source code or the portal.
 
 2
 
 #### Set up a webhook that accepts calls
 
-In the OpenAI platform, open **Settings → Project → Webhooks** and register an endpoint you control.
-When someone rings your number, OpenAI sends that endpoint a realtime.call.incoming event containing a call_id. Your code accepts the call using that id, and that is also where you give the agent its instructions and context.
+In the OpenAI platform, open **Settings → Project → Webhooks** and register a public HTTPS endpoint you control, subscribed to the realtime.call.incoming event.
+When someone rings your number, OpenAI sends that endpoint a realtime.call.incoming event containing a call_id. Your code accepts the call using that id, and that is also where you give the agent its model, instructions, voice, tools and transcription settings:
+
+```
+POST https://api.openai.com/v1/realtime/calls/{call_id}/accept
+Authorization: Bearer <OPENAI_API_KEY>
+Content-Type: application/json
+
+{
+"type": "realtime",
+"model": "gpt-realtime-2.1",
+"instructions": "You are the voice assistant for Example Company."
+}
+```
+Verify OpenAI’s webhook signature before trusting an event, and handle duplicate deliveries of the same event safely.
 This is the step that catches people. Until your webhook accepts the call, the phone will ring and nothing will answer. OpenAI’s own Realtime API with SIP guide has the request format and sample code.
 
 3
@@ -5969,7 +5983,8 @@ This is the step that catches people. Until your webhook accepts the call, the p
 #### Create the profile in Click2Call
 
 In the portal open **Voice → Profiles**, set **Connection Type** to **OpenAI**, and paste your Project ID into the **OpenAI Project ID** field.
-That field is mandatory — the profile will not save without it. Click2Call then builds the SIP address for you and sets the number format to +E.164 automatically. There is no SIP URI to type.
+That field is mandatory — the profile will not save without it. Click2Call then routes calls to sip:<PROJECT_ID>@sip.api.openai.com:5061;transport=tls and sets the number format to +E.164 automatically. There is no SIP URI to type.
+To send every number on the account to OpenAI, edit the Default profile instead of making a new one — it applies to every line without its own profile.
 
 4
 
@@ -5983,18 +5998,45 @@ The default profile applies to every line that has no profile assigned, and new 
 #### Check the time zone, then test
 
 While you are in the profile, confirm the **Time Zone** matches where the business operates — business hours, after-hours routing and queue schedules all read it.
-Then ring the number from a mobile. Your webhook should receive the incoming-call event, and the agent answers once your code accepts it.
+Then ring the number from a mobile. Check, in order: the call reaches OpenAI, your endpoint receives realtime.call.incoming and logs the call_id, an event with a bad signature is rejected, your server’s accept request succeeds and the agent answers with the model, voice and instructions you set.
+
+6
+
+#### Transfer callers to a person
+
+There are two ways to hand a caller to a human. Which one you use depends on how your call flow is built.
+A. Transfer the call the agent is on
+Your server asks OpenAI to transfer the active call, and OpenAI sends a SIP REFER back to Click2Call:
+
+```
+POST https://api.openai.com/v1/realtime/calls/{call_id}/refer
+Authorization: Bearer <OPENAI_API_KEY>
+Content-Type: application/json
+
+{ "target_uri": "tel:+61755551234" }
+```
+B. Start a new call back into Click2Call
+If your application, PBX or SBC places a new SIP call to Click2Call, that call has to sign in as one of your lines using SIP digest authentication:
+
+- **SIP server** — sip:sip.click2call.com.au:5061;transport=tls
+- **Username / User ID** — the number exactly as Line Manager shows it, e.g. 61355551234
+- **Password** — the password for that line, stored securely
+- **Caller ID and destination** — can be +E.164, e.g. +61355551234
+**The username stays in Line Manager format.** It is not converted to +E.164: authenticate as 61355551234 even when the caller ID is +61355551234. And do not use the OpenAI SIP address as your Click2Call server — the Project ID routes calls to OpenAI; the line’s username and password are for calls back to Click2Call.
 
 ### Troubleshooting
-
-#### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### The profile will not save
 The **OpenAI Project ID** field is empty or malformed. It is mandatory, and the value should begin with proj_. Copy it from Settings → Project → General rather than typing it.
 
 #### The phone rings but nothing answers
-Almost always the webhook. Either it is not registered in the OpenAI project, it is not reachable from the internet, or it is receiving the event but not accepting the call. Check your endpoint logs for a realtime.call.incoming event.
+Almost always the webhook. Either it is not registered in the OpenAI project, it is not reachable from the internet, or it is receiving the event but not accepting the call. Check your endpoint logs for a realtime.call.incoming event. If none arrives, check the Project ID on the profile, that the number is on that profile, that the webhook belongs to the same OpenAI project, and that realtime.call.incoming is enabled. If the event arrives, check your handler reads the call_id and its accept request uses a valid API key.
+
+#### OpenAI returns 401 on a transfer
+Check the target_uri in your refer request. For a new call you start back into Click2Call, check the line’s username and password.
+
+#### Click2Call rejects the sign-in on a call back to us
+Check the username format first: it must be the number as Line Manager shows it, 61355551234, not +61355551234. Then check the line’s current password.
 
 #### Calls go to Click2Call voicemail instead
 The number is still on the Default profile rather than your OpenAI profile, so the call never leaves for OpenAI at all. Check the Profile column in Line Manager.
@@ -6022,17 +6064,19 @@ Source: https://www.click2call.com.au/help/how-to-connect-retell-ai
 
 Retell does not sell Australian numbers, so bringing your own is the only way to put a Retell agent on a local landline or a 1300 number. Click2Call has a built-in Retell AI connection profile that makes it a one-dropdown job.
 
-Last reviewed: September 2026
+Last reviewed: October 2026
 
 ### At a glance
 
-Mandatory Click2Call fieldNone — just pick the connection type
+Click2Call sideConnection Type **Retell AI** on a profile — the route and number format fill in automatically
 
-Where Click2Call sends callssip:sip.retellai.com;transport=tcp
+Calls in to Retellsip:sip.retellai.com;transport=tcp, set by the profile
 
-AuthenticationIP allowlist on the Retell side — add 52.63.154.234
+Calls out from RetellTermination URI sip.click2call.com.au, TLS, signed in with the line’s username and password
 
-Number format+E.164, set automatically
+Number format in Retell+61355551234 — +61, then the number without its leading 0
+
+SIP trunk user name61355551234 — the number exactly as Line Manager shows it, no plus
 
 Code requiredNo — the agent is built in the Retell dashboard
 
@@ -6042,57 +6086,78 @@ Provider documentationRetell AI custom telephony
 
 1
 
+#### Choose which numbers go to Retell
+
+In the Click2Call portal open **Voice → Profiles**.
+
+- **Every number on the account** — stay on the Default profile and edit that.
+- **Only some numbers** — click **New Profile** and name it something like Retell.
+
+2
+
+#### Set the profile to Retell AI
+
+Set **Connection Type** to **Retell AI**. The **Inbound SIP URI Route** fills in as sip:sip.retellai.com;transport=tcp and the number format is set to +E.164 automatically. Leave **Access Control List** blank. Tick anything else you want, such as **Recording Enabled**, set the **Time Zone** to where the business operates, then click **Save**.
+
+3
+
+#### Put your numbers on the profile
+
+If you made a new profile, open **Voice → Line Manager**, change the **Profile** column to it next to each number that should go to Retell, and click **Save Changes**.
+Note the number as it appears in Line Manager (for example 61355551234) and the line’s password. You need both in step 5.
+
+4
+
 #### Build the agent in Retell
 
 In the Retell AI dashboard, create the agent that should answer the phone — prompt, voice, functions and knowledge base. It is all dashboard configuration; there is nothing to deploy.
 
-2
-
-#### Import your Click2Call number into Retell
-
-Open **Phone Numbers** and import your existing number rather than buying one from Retell. Enter it in E.164 format, e.g. +61355551234 — it has to match what Click2Call sends.
-This is the whole reason to use bring-your-own-number: Retell does not sell Australian geographic numbers, so importing a Click2Call number is how you get an AI agent answering a local landline or a 1300 number.
-
-3
-
-#### Assign the agent to the number
-
-Attach the agent you built as the **inbound** agent for that number. Until one is assigned, calls arrive at Retell and are not answered.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
-
-4
-
-#### Create the profile in Click2Call
-
-In the Click2Call portal open **Voice → Profiles** and set **Connection Type** to **Retell AI**.
-There are no extra fields. The **Inbound SIP URI Route** line already shows sip:sip.retellai.com;transport=tcp, and the number format is set to +E.164 automatically.
-
 5
 
-#### Assign your number, then check the time zone
+#### Connect your number via SIP trunking
 
-Open **Voice → Line Manager** and set the **Profile** column for your number to the profile you just created.
-The Default profile applies to every line with no profile assigned, and new numbers land on it automatically — a number left on Default will ignore everything you just configured. While you are in the profile, set the **Time Zone** to where the business operates: business hours, after-hours routing and queue schedules all read it.
+In Retell open **Deploy → Phone Numbers**, click **+** and choose **Connect to your number via SIP trunking**. Fill in:
+
+- **Phone Number** — +61 followed by the number without its leading 0, e.g. +61355551234.
+- **Termination URI** — sip.click2call.com.au
+- **SIP Trunk User Name** — your Click2Call number exactly as Line Manager shows it, e.g. 61355551234
+- **SIP Trunk Password** — the password for that line
+- **Nickname** — optional
+- **Outbound Transport** — TLS is recommended; TCP and UDP also work
+**The user name is not the same as the phone number.** The phone number takes the plus (+61355551234); the SIP Trunk User Name is the number as Line Manager shows it, with no plus (61355551234).
+
+Click **Save**.
+Retell does not sell Australian geographic numbers, so connecting a Click2Call number is how you get an AI agent answering a local landline or a 1300 number.
 
 6
 
+#### Assign the agent
+
+Open the number in Retell and, under **Inbound Call Agent**, choose your agent as the **Call Agent**. Until one is assigned, calls arrive at Retell and are not answered. While you are there:
+
+- **Allowed Inbound Countries** — usually All countries allowed.
+- **Fallback Number** (optional) — where calls go if Retell has reached its call limit and cannot answer, e.g. another of your numbers in +61… format.
+- **Outbound Call Agent** (optional) — if the agent will make calls, choose it here and set **Allowed Outbound Countries** to Australia. Retell may ask you to verify your identity first.
+
+7
+
 #### Test the call
 
-Ring the number from a mobile. The agent should answer, and the call should appear in both the Retell call history and your Click2Call call records.
+Ring the number from a mobile. The agent should answer. In Retell, **Monitor → Live Monitoring** shows the call as Phone Inbound with the From and To numbers. Check you have two-way audio, the caller ID comes through, and the call ends normally. It also appears in your Click2Call call records.
 
 ### Troubleshooting
 
-#### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
-
 #### The call reaches Retell but no agent answers
-The number was not imported in the format Click2Call sends (+E.164, with the plus), or no inbound agent is assigned to it. Check both in the Retell Phone Numbers screen.
+The phone number in Retell is not +61 followed by the number without its leading 0, or no Inbound Call Agent is assigned to it. Check both on the number in Deploy → Phone Numbers.
 
-#### Calls are rejected before ringing
-Retell is not accepting traffic from the address Click2Call signals from. Ask [support](https://www.click2call.com.au/support/) for the current addresses and allowlist them.
+#### The agent answers, but calls it makes fail
+Check the SIP trunking settings on the number: Termination URI sip.click2call.com.au, SIP Trunk User Name the number as Line Manager shows it with no plus, and the line’s current password. If the password was changed in the portal, update it in Retell too. Also check Allowed Outbound Countries includes Australia.
+
+#### Calls stopped after our move to the new platform
+Open the number in Retell and check the Termination URI is sip.click2call.com.au rather than an old IP address.
 
 #### Calls go to Click2Call voicemail instead
-The number is still on the Default profile rather than the provider profile, so the call never leaves for the provider at all. Check the Profile column in Line Manager.
+The number is on a profile other than your Retell one, so the call never leaves for Retell. Check the Profile column in Line Manager, and remember a number with no profile assigned uses Default.
 
 #### The agent answers but cannot transfer calls
 Warm and cold transfers are configured in the Retell agent, not in Click2Call. If a transfer target is another extension on your account, dial it as a full number rather than an internal extension.
