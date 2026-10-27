@@ -5807,19 +5807,21 @@ Set an overflow so a call the AI does not pick up still reaches someone. Send th
 
 Source: https://www.click2call.com.au/help/how-to-connect-elevenlabs
 
-Click2Call has a built-in Eleven Labs AI connection profile, so pointing an Australian number at an ElevenLabs agent takes one dropdown at our end and a number import at theirs. No code, no SIP settings to type.
+Click2Call has a built-in Eleven Labs AI connection profile, so pointing an Australian number at an ElevenLabs agent takes one dropdown at our end and a number import at theirs. No code — just your line’s username and password for the calls the agent makes.
 
 Last reviewed: October 2026
 
 ### At a glance
 
-Mandatory Click2Call fieldNone — just pick the connection type
+Click2Call sideConnection Type **Eleven Labs AI** on a profile — the route and number format fill in automatically
 
-Where Click2Call sends callssip:sip.rtc.elevenlabs.io:5060;transport=tcp
+Calls in to ElevenLabssip:sip.rtc.elevenlabs.io:5060;transport=tcp, no username or password
 
-AuthenticationIP allowlist (ACL) on the ElevenLabs side — add 52.63.154.234
+Calls out from ElevenLabsTermination URI sip.click2call.com.au, TCP, signed in with the line’s username and password
 
-Number format+E.164, set automatically
+Number format in ElevenLabs+61355551234 — +61, then the number without its leading 0
+
+SIP trunk username61355551234 — the number exactly as Line Manager shows it, no plus
 
 Code requiredNo — the agent is built in the ElevenLabs dashboard
 
@@ -5829,75 +5831,104 @@ Provider documentationElevenLabs SIP trunking
 
 1
 
-#### Build the agent in ElevenLabs
+#### Choose which numbers go to ElevenLabs
 
-In the ElevenLabs Agents dashboard, create the agent that should answer the phone — its prompt, voice, knowledge and tools. Everything is configured in their dashboard; there is nothing to deploy.
+In the Click2Call portal open **Voice → Profiles**.
+
+- **Every number on the account** — stay on the Default profile and edit that.
+- **Only some numbers** — click **New Profile** at the bottom of the page and name it something like ElevenLabs.
 
 2
 
-#### Import your Click2Call number into ElevenLabs
+#### Set the profile to Eleven Labs AI
 
-Open **Phone Numbers** and choose **Import a phone number from SIP trunk**. Fill in:
-
-- **Label** — anything that helps you find it later.
-- **Phone number** — in E.164 format, e.g. +61355551234. It has to match exactly.
-- **Transport** — TCP, to match what Click2Call sends.
-- **Authentication** — choose ACL and allowlist the Click2Call signalling addresses.
-Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by **IP allowlist**. Allowlist **52.63.154.234** — that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round — the provider registers to Click2Call as the number, which is the generic method in [connecting an AI voice agent](https://www.click2call.com.au/help/how-to-connect-ai-voice-agent).
+Set **Connection Type** to **Eleven Labs AI**. The **Inbound SIP URI Route** fills in as sip:sip.rtc.elevenlabs.io:5060;transport=tcp and the number format is set to +E.164 automatically, so there is nothing to type. Tick anything else you want, such as **Recording Enabled**, set the **Time Zone** to where the business operates, then click **Save**.
+For calls the agent makes, this profile behaves like a normal SIP registration: ElevenLabs has to sign in with the line’s username and password, which you enter in step 5.
 
 3
 
-#### Assign the agent to the number
+#### Put your numbers on the profile
 
-Still in ElevenLabs, attach the agent to the number you just imported. Until an agent is assigned, calls reach ElevenLabs and go nowhere.
+If you made a new profile, open **Voice → Line Manager**, change the **Profile** column to it next to each number that should go to ElevenLabs, and click **Save Changes** at the bottom of the page.
+While you are there, note the number as it appears in Line Manager (for example 61355551234) and the line’s password. You need both in step 5. If you stayed on Default, skip the profile change — every number without its own profile already uses it.
 
 4
 
-#### Create the profile in Click2Call
+#### Build the agent in ElevenLabs
 
-In the Click2Call portal open **Voice → Profiles** and set **Connection Type** to **Eleven Labs AI**.
-There are no extra fields to fill in. Click2Call already knows the route — you can see it on the **Inbound SIP URI Route** line as sip:sip.rtc.elevenlabs.io:5060;transport=tcp — and the number format is set to +E.164 automatically.
+In the ElevenLabs Agents dashboard, create the agent that should answer the phone — its prompt, voice, knowledge and tools. Everything is configured in their dashboard; there is nothing to deploy. When it is ready, open **Phone Numbers**.
 
 5
 
-#### Assign your number, then check the time zone
+#### Import your number from SIP trunk
 
-Open **Voice → Line Manager** and set the **Profile** column for your number to the profile you just created.
-The Default profile applies to every line with no profile assigned, and new numbers land on it automatically — a number left on Default will ignore everything you just configured. While you are in the profile, set the **Time Zone** to where the business operates: business hours, after-hours routing and queue schedules all read it.
+Click **+ Import Number**, choose **From SIP Trunk**, and fill in the form:
+
+- **Label** — anything that helps you find it later, e.g. Click2Call.
+- **Phone number** — +61 followed by the number without its leading 0. For 03 5555 1234 enter +61355551234.
+Inbound Configuration
+
+- **Media Encryption** — leave on Allowed, or set to Disabled.
+- **Allowed Numbers** — add other numbers only if you need to.
+- **Remote Domains** — leave empty.
+- **Authentication** — leave Username and Password blank.
+**Leave the inbound username and password blank.** If they are set, ElevenLabs expects Click2Call to sign in to its platform, which we do not support, and every incoming call fails.
+
+Outbound Configuration
+
+- **Termination URI** — sip.click2call.com.au
+- **Transport** — TCP
+- **Media Encryption** — Disabled
+- **SIP Trunk Username** — your Click2Call number exactly as Line Manager shows it, e.g. 61355551234
+- **SIP Trunk Password** — the password for that line
+**The username is not the same as the phone number above.** The phone number field takes the plus (+61355551234); the SIP Trunk Username takes the number as Line Manager shows it, with no plus (61355551234). A plus in the username makes outgoing calls fail.
+
+**Optional:** to use TLS, set Termination URI to sip:sip.click2call.com.au:5061;transport=tls and Transport to TLS. Encrypted media can also work, but only if you force encryption on the line in the Click2Call portal first (Line Settings → Other Settings / Codecs).
+
+Click **Import**.
 
 6
 
-#### Test the call
+#### Assign the agent and test
 
-Ring the number from a mobile. The agent should answer. If it does not, work through the checks below.
+Still in ElevenLabs, attach your agent to the number you just imported — until an agent is assigned, calls reach ElevenLabs and go nowhere. Then ring the number from a mobile. The agent should answer. If it does not, work through the checks below.
+
+7
+
+#### Set up call transfers (optional)
+
+To have the agent hand a caller straight to a person (a blind transfer using the REFER method), add a transfer in the agent’s tools, set **Destination Type** to **SIP URI**, and enter the number to transfer to as sip:NUMBER@sip.click2call.com.au — for example sip:0755551234@sip.click2call.com.au.
 
 ### Troubleshooting
 
-#### The provider replies 407 Proxy Authentication Required
-The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end — allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear “the number you have called is not available from this service”.
+#### Incoming calls fail and never reach the agent
+Check the **Inbound Configuration** on the imported number in ElevenLabs. If a username and password are set there, ElevenLabs is asking Click2Call to sign in, which we cannot do. Clear both fields and save. While this is happening, callers hear “the number you have called is not available from this service”.
 
 #### Calls stopped after our move to the new platform
-Delete the number from your ElevenLabs agent, then import it again as in the steps above, allowlisting 52.63.154.234. Don’t use the old IP address. This makes ElevenLabs connect to our new platform.
+Open the imported number in ElevenLabs and check it against step 5: inbound authentication blank, and outbound Termination URI sip.click2call.com.au rather than an old IP address. If it still fails, delete the number and import it again with the settings above.
 
 #### The call reaches ElevenLabs but no agent answers
-Either the number was not imported in exactly the format Click2Call sends (+E.164, with the plus), or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.
+Either the phone number was not imported as +61 followed by the number without its leading 0, or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.
 
-#### Calls are rejected before ringing
-The ACL on the ElevenLabs side does not include the address Click2Call is signalling from. Ask [support](https://www.click2call.com.au/support/) for the current addresses.
+#### The agent answers, but calls it makes fail
+The outbound sign-in is wrong. The SIP Trunk Username must be the number exactly as Line Manager shows it, with no plus (61355551234, not +61355551234), and the password must be the line’s current password. If the password was changed in the portal, update it in ElevenLabs too.
+
+#### Transfers from the agent fail
+The transfer destination must be a SIP URI in the form sip:NUMBER@sip.click2call.com.au, with Destination Type set to SIP URI.
 
 #### Calls go to Click2Call voicemail instead
-The number is still on the Default profile rather than your ElevenLabs profile, so it never leaves for ElevenLabs. Check the Profile column in Line Manager.
+The number is on a profile other than your ElevenLabs one, so it never leaves for ElevenLabs. Check the Profile column in Line Manager, and remember a number with no profile assigned uses Default.
 
-#### The agent answers but audio is one-way
-Almost always a media path problem on the ElevenLabs side. Confirm the media encryption setting on the imported number matches what your trunk sends — Click2Call sends unencrypted media on TCP by default.
+#### The agent answers but audio is one-way or silent
+Usually a media encryption mismatch. Set Media Encryption to Disabled on the imported number in ElevenLabs, or force encryption on the line in the Click2Call portal if you want it on.
 
 ### Frequently Asked Questions
 
 #### Do I need to write code?
-No. This is one of the no-code providers — the agent is built in the ElevenLabs dashboard, and Click2Call needs one dropdown. Compare that with [OpenAI](https://www.click2call.com.au/help/how-to-connect-openai) and [xAI](https://www.click2call.com.au/help/how-to-connect-xai), which both need a webhook you host.
+No. This is one of the no-code providers — the agent is built in the ElevenLabs dashboard, and Click2Call needs one dropdown plus your line’s username and password. Compare that with [OpenAI](https://www.click2call.com.au/help/how-to-connect-openai) and [xAI](https://www.click2call.com.au/help/how-to-connect-xai), which both need a webhook you host.
 
 #### What number format does ElevenLabs expect?
-E.164 — +61355551234, not 03 5555 1234. Click2Call sends +E.164 automatically, so import it that way.
+E.164 — +61355551234, not 03 5555 1234. Click2Call sends +E.164 automatically, so import it that way. The **SIP Trunk Username** is different: the number as Line Manager shows it, with no plus.
 
 #### Are calls still recorded and transcribed?
 Yes, provided **Recording Enabled** is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal, stored in Australia. See [AI voice tools](https://www.click2call.com.au/ai-voice-tools/).

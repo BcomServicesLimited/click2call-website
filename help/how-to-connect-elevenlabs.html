@@ -30,7 +30,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-10-22",
+  "dateModified": "2026-10-27",
   "name": "How to connect ElevenLabs to an Australian phone number with Click2Call",
   "description": "Route calls from a Click2Call Australian number to an ElevenLabs voice agent using the built-in Eleven Labs AI connection profile.",
   "totalTime": "PT30M",
@@ -48,33 +48,38 @@
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Create the agent in ElevenLabs",
-      "text": "In the ElevenLabs Agents dashboard, build the agent that should answer the phone. No code is required — the agent's prompt, voice and tools are all configured in the dashboard."
+      "name": "Create the Click2Call profile",
+      "text": "In the Click2Call portal open Voice then Profiles. Edit the Default profile to send every number to ElevenLabs, or click New Profile to send only some numbers."
     },
     {
       "@type": "HowToStep",
-      "name": "Import your Click2Call number into ElevenLabs",
-      "text": "Open Phone Numbers and choose Import a phone number from SIP trunk. Enter a label and your number in E.164 format, for example +61355551234. Set transport to TCP to match what Click2Call sends. Choose ACL authentication and allowlist 52.63.154.234, the address Click2Call sends INVITEs from."
+      "name": "Set Connection Type to Eleven Labs AI",
+      "text": "Set Connection Type to Eleven Labs AI. The Inbound SIP URI Route fills in as sip:sip.rtc.elevenlabs.io:5060;transport=tcp and the number format is set to +E.164 automatically. Save the profile."
     },
     {
       "@type": "HowToStep",
-      "name": "Assign the agent to the number",
-      "text": "Still in ElevenLabs, assign the agent you built to the imported phone number. Calls to that number will not be answered until an agent is attached."
+      "name": "Assign your numbers",
+      "text": "In Voice then Line Manager, set the Profile column to the new profile for each number and click Save Changes. Note the number as Line Manager shows it, for example 61355551234, and the line's password."
     },
     {
       "@type": "HowToStep",
-      "name": "Create the profile in Click2Call",
-      "text": "In the Click2Call portal open Voice then Profiles, and set Connection Type to Eleven Labs AI. There are no extra fields to complete — Click2Call routes calls to sip:sip.rtc.elevenlabs.io:5060;transport=tcp automatically and sends the number in +E.164 format."
+      "name": "Build the agent in ElevenLabs",
+      "text": "In the ElevenLabs Agents dashboard, build the agent that should answer the phone, then open Phone Numbers."
     },
     {
       "@type": "HowToStep",
-      "name": "Assign your number and set the time zone",
-      "text": "Open Voice then Line Manager and set the Profile column for your number to the profile you just created. Set the Time Zone on the profile to where the business operates, since business hours and after-hours routing read it."
+      "name": "Import the number from SIP trunk",
+      "text": "Click Import Number, choose From SIP Trunk, and enter the number as +61 without its leading 0, for example +61355551234. Inbound: leave username and password blank, Remote Domains empty, media encryption Allowed or Disabled. Outbound: Termination URI sip.click2call.com.au, Transport TCP, Media Encryption Disabled, SIP Trunk Username the number as Line Manager shows it with no plus (61355551234), SIP Trunk Password the line's password. Click Import."
     },
     {
       "@type": "HowToStep",
-      "name": "Test the call",
-      "text": "Ring the number from a mobile. The ElevenLabs agent should answer. Recording, transcription and sentiment analysis continue to work on the Click2Call side."
+      "name": "Assign the agent and test",
+      "text": "Attach the agent to the imported number in ElevenLabs, then ring the number from a mobile. The agent should answer."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set up call transfers (optional)",
+      "text": "For a blind transfer using REFER, set Destination Type to SIP URI and enter sip:NUMBER@sip.click2call.com.au."
     }
   ]
 }
@@ -115,7 +120,7 @@
       "name": "Do I need to write any code to connect ElevenLabs to a phone number?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. ElevenLabs agents are built entirely in the ElevenLabs dashboard, and the Click2Call side is a single dropdown selection. This makes ElevenLabs one of the quickest AI voice providers to get running on an Australian number — unlike OpenAI or xAI, which both require a webhook endpoint you host."
+        "text": "No. ElevenLabs agents are built entirely in the ElevenLabs dashboard, and the Click2Call side is a single dropdown selection plus the line's username and password for calls the agent makes. This makes ElevenLabs one of the quickest AI voice providers to get running on an Australian number — unlike OpenAI or xAI, which both require a webhook endpoint you host."
       }
     },
     {
@@ -123,7 +128,7 @@
       "name": "What number format does ElevenLabs expect?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "E.164, meaning the country code with a leading plus — +61355551234 rather than 03 5555 1234. Click2Call sends numbers in +E.164 automatically, and the number you import into ElevenLabs must match exactly or the call will not be matched to an agent."
+        "text": "E.164, meaning the country code with a leading plus — +61355551234 rather than 03 5555 1234. Click2Call sends numbers in +E.164 automatically, and the number you import into ElevenLabs must match exactly or the call will not be matched to an agent. The SIP Trunk Username for outbound calls is different: the number as Line Manager shows it, with no plus, for example 61355551234."
       }
     },
     {
@@ -131,7 +136,7 @@
       "name": "Which SIP address does Click2Call send calls to?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "sip:sip.rtc.elevenlabs.io:5060;transport=tcp. This is pre-configured in the Eleven Labs AI connection profile, so there is nothing to type. Give the same host to ElevenLabs when it asks about your trunk."
+        "text": "sip:sip.rtc.elevenlabs.io:5060;transport=tcp. This is pre-configured in the Eleven Labs AI connection profile, so there is nothing to type. For calls the agent makes, ElevenLabs sends them to sip.click2call.com.au over TCP, signed in with the line's username and password."
       }
     },
     {
@@ -375,7 +380,7 @@
         <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting ElevenLabs to Your Phone Number</h1>
-      <p class="text-gray-600 leading-relaxed">Click2Call has a built-in Eleven Labs AI connection profile, so pointing an Australian number at an ElevenLabs agent takes one dropdown at our end and a number import at theirs. No code, no SIP settings to type.</p>
+      <p class="text-gray-600 leading-relaxed">Click2Call has a built-in Eleven Labs AI connection profile, so pointing an Australian number at an ElevenLabs agent takes one dropdown at our end and a number import at theirs. No code &mdash; just your line&rsquo;s username and password for the calls the agent makes.</p>
 <p class="mt-3 text-sm text-gray-400">Last reviewed: October 2026</p>
     </div>
   </div>
@@ -384,10 +389,11 @@
 <div class="mb-10 rounded-2xl border border-gray-200 bg-white p-6">
 <h2 class="text-base font-bold text-gray-900 mb-4">At a glance</h2>
 <dl class="space-y-3 text-sm">
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Mandatory Click2Call field</dt><dd class="text-gray-600 leading-relaxed">None &mdash; just pick the connection type</dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Where Click2Call sends calls</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.rtc.elevenlabs.io:5060;transport=tcp</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Authentication</dt><dd class="text-gray-600 leading-relaxed">IP allowlist (ACL) on the ElevenLabs side &mdash; add <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">52.63.154.234</span></dd></div>
-<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format</dt><dd class="text-gray-600 leading-relaxed">+E.164, set automatically</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Click2Call side</dt><dd class="text-gray-600 leading-relaxed">Connection Type <strong>Eleven Labs AI</strong> on a profile &mdash; the route and number format fill in automatically</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Calls in to ElevenLabs</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.rtc.elevenlabs.io:5060;transport=tcp</span>, no username or password</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Calls out from ElevenLabs</dt><dd class="text-gray-600 leading-relaxed">Termination URI <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span>, TCP, signed in with the line&rsquo;s username and password</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Number format in ElevenLabs</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span> &mdash; +61, then the number without its leading 0</dd></div>
+<div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">SIP trunk username</dt><dd class="text-gray-600 leading-relaxed"><span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span> &mdash; the number exactly as Line Manager shows it, no plus</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Code required</dt><dd class="text-gray-600 leading-relaxed">No &mdash; the agent is built in the ElevenLabs dashboard</dd></div>
 <div class="sm:flex sm:gap-4"><dt class="sm:w-52 flex-shrink-0 font-semibold text-gray-900">Provider documentation</dt><dd class="text-gray-600 leading-relaxed"><a class="text-[#3B9C49] hover:underline" href="https://elevenlabs.io/docs/agents-platform/phone-numbers/sip-trunking" target="_blank" rel="noopener">ElevenLabs SIP trunking</a></dd></div>
 </dl></div>
@@ -396,64 +402,68 @@
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Build the agent in ElevenLabs</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the ElevenLabs Agents dashboard, create the agent that should answer the phone &mdash; its prompt, voice, knowledge and tools. Everything is configured in their dashboard; there is nothing to deploy.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Choose which numbers go to ElevenLabs</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong>.</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Every number on the account</strong> &mdash; stay on the <em>Default</em> profile and edit that.</li><li><strong>Only some numbers</strong> &mdash; click <strong>New Profile</strong> at the bottom of the page and name it something like <em>ElevenLabs</em>.</li></ul>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Import your Click2Call number into ElevenLabs</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Phone Numbers</strong> and choose <strong>Import a phone number from SIP trunk</strong>. Fill in:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Label</strong> &mdash; anything that helps you find it later.</li><li><strong>Phone number</strong> &mdash; in E.164 format, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>. It has to match exactly.</li><li><strong>Transport</strong> &mdash; TCP, to match what Click2Call sends.</li><li><strong>Authentication</strong> &mdash; choose ACL and allowlist the Click2Call signalling addresses.</li></ul><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Click2Call cannot present a username and password on an outbound INVITE, so the provider has to trust us by <strong>IP allowlist</strong>. Allowlist <strong>52.63.154.234</strong> &mdash; that is the address our switch sends INVITEs from. If a provider will only accept authenticated INVITEs, the connection has to run the other way round &mdash; the provider registers <em>to</em> Click2Call as the number, which is the generic method in <a class="font-semibold underline" href="/help/how-to-connect-ai-voice-agent">connecting an AI voice agent</a>.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Set the profile to Eleven Labs AI</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Set <strong>Connection Type</strong> to <strong>Eleven Labs AI</strong>. The <strong>Inbound SIP URI Route</strong> fills in as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.rtc.elevenlabs.io:5060;transport=tcp</span> and the number format is set to +E.164 automatically, so there is nothing to type. Tick anything else you want, such as <strong>Recording Enabled</strong>, set the <strong>Time Zone</strong> to where the business operates, then click <strong>Save</strong>.</p><img src="/assets/images/help/profile-elevenlabs.webp" alt="The Click2Call profile settings with Connection Type set to Eleven Labs AI, showing the pre-configured Inbound SIP URI Route sip:sip.rtc.elevenlabs.io:5060;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full"><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">For calls the agent makes, this profile behaves like a normal SIP registration: ElevenLabs has to sign in with the line&rsquo;s username and password, which you enter in step 5.</p></div>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Assign the agent to the number</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Still in ElevenLabs, attach the agent to the number you just imported. Until an agent is assigned, calls reach ElevenLabs and go nowhere.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Put your numbers on the profile</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">If you made a new profile, open <strong>Voice &rarr; Line Manager</strong>, change the <strong>Profile</strong> column to it next to each number that should go to ElevenLabs, and click <strong>Save Changes</strong> at the bottom of the page.</p><p class="text-gray-600 leading-relaxed mt-3">While you are there, note the number as it appears in Line Manager (for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span>) and the line&rsquo;s password. You need both in step 5. If you stayed on Default, skip the profile change &mdash; every number without its own profile already uses it.</p>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">4</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Create the profile in Click2Call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">In the Click2Call portal open <strong>Voice &rarr; Profiles</strong> and set <strong>Connection Type</strong> to <strong>Eleven Labs AI</strong>.</p><p class="text-gray-600 leading-relaxed mt-3">There are no extra fields to fill in. Click2Call already knows the route &mdash; you can see it on the <strong>Inbound SIP URI Route</strong> line as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.rtc.elevenlabs.io:5060;transport=tcp</span> &mdash; and the number format is set to +E.164 automatically.</p><img src="/assets/images/help/profile-elevenlabs.webp" alt="The Click2Call profile settings with Connection Type set to Eleven Labs AI, showing the pre-configured Inbound SIP URI Route sip:sip.rtc.elevenlabs.io:5060;transport=tcp." width="1600" height="700" loading="lazy" decoding="async" class="mt-4 rounded-xl border border-gray-200 shadow-sm w-full">
+        <h3 class="font-bold text-gray-900 mb-2">Build the agent in ElevenLabs</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">In the ElevenLabs Agents dashboard, create the agent that should answer the phone &mdash; its prompt, voice, knowledge and tools. Everything is configured in their dashboard; there is nothing to deploy. When it is ready, open <strong>Phone Numbers</strong>.</p>
     </div>
 </div>
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Assign your number, then check the time zone</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Open <strong>Voice &rarr; Line Manager</strong> and set the <strong>Profile</strong> column for your number to the profile you just created.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">The <em>Default</em> profile applies to every line with no profile assigned, and new numbers land on it automatically &mdash; a number left on Default will ignore everything you just configured. While you are in the profile, set the <strong>Time Zone</strong> to where the business operates: business hours, after-hours routing and queue schedules all read it.</p></div>
+        <h3 class="font-bold text-gray-900 mb-2">Import your number from SIP trunk</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Click <strong>+ Import Number</strong>, choose <strong>From SIP Trunk</strong>, and fill in the form:</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Label</strong> &mdash; anything that helps you find it later, e.g. <em>Click2Call</em>.</li><li><strong>Phone number</strong> &mdash; +61 followed by the number without its leading 0. For 03 5555 1234 enter <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>.</li></ul><p class="font-semibold text-gray-900 mt-5">Inbound Configuration</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Media Encryption</strong> &mdash; leave on <em>Allowed</em>, or set to <em>Disabled</em>.</li><li><strong>Allowed Numbers</strong> &mdash; add other numbers only if you need to.</li><li><strong>Remote Domains</strong> &mdash; leave empty.</li><li><strong>Authentication</strong> &mdash; leave Username and Password blank.</li></ul><div class="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4"><p class="text-sm text-amber-900 leading-relaxed"><strong>Leave the inbound username and password blank.</strong> If they are set, ElevenLabs expects Click2Call to sign in to its platform, which we do not support, and every incoming call fails.</p></div><p class="font-semibold text-gray-900 mt-5">Outbound Configuration</p><ul class="mt-3 space-y-2 text-gray-600 leading-relaxed list-disc pl-5"><li><strong>Termination URI</strong> &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span></li><li><strong>Transport</strong> &mdash; TCP</li><li><strong>Media Encryption</strong> &mdash; Disabled</li><li><strong>SIP Trunk Username</strong> &mdash; your Click2Call number exactly as Line Manager shows it, e.g. <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span></li><li><strong>SIP Trunk Password</strong> &mdash; the password for that line</li></ul><div class="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4"><p class="text-sm text-amber-900 leading-relaxed"><strong>The username is not the same as the phone number above.</strong> The phone number field takes the plus (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>); the SIP Trunk Username takes the number as Line Manager shows it, with no plus (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span>). A plus in the username makes outgoing calls fail.</p></div><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed"><strong>Optional:</strong> to use TLS, set Termination URI to <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:sip.click2call.com.au:5061;transport=tls</span> and Transport to TLS. Encrypted media can also work, but only if you force encryption on the line in the Click2Call portal first (Line Settings &rarr; Other Settings / Codecs).</p></div><p class="text-gray-600 leading-relaxed mt-3">Click <strong>Import</strong>.</p>
     </div>
 </div>
-
 <div class="flex gap-5 mb-8">
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">6</div>
     <div class="flex-1 min-w-0 pt-1">
-        <h3 class="font-bold text-gray-900 mb-2">Test the call</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">Ring the number from a mobile. The agent should answer. If it does not, work through the checks below.</p>
+        <h3 class="font-bold text-gray-900 mb-2">Assign the agent and test</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">Still in ElevenLabs, attach your agent to the number you just imported &mdash; until an agent is assigned, calls reach ElevenLabs and go nowhere. Then ring the number from a mobile. The agent should answer. If it does not, work through the checks below.</p>
+    </div>
+</div>
+<div class="flex gap-5 mb-8">
+    <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
+    <div class="flex-1 min-w-0 pt-1">
+        <h3 class="font-bold text-gray-900 mb-2">Set up call transfers (optional)</h3>
+        <p class="text-gray-600 leading-relaxed mt-3">To have the agent hand a caller straight to a person (a blind transfer using the REFER method), add a transfer in the agent&rsquo;s tools, set <strong>Destination Type</strong> to <strong>SIP URI</strong>, and enter the number to transfer to as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:NUMBER@sip.click2call.com.au</span> &mdash; for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:0755551234@sip.click2call.com.au</span>.</p>
     </div>
 </div>
 
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Troubleshooting</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">The provider replies 407 Proxy Authentication Required</h3><p class="text-gray-600 leading-relaxed">The provider is challenging our INVITE for a username and password, which means our signalling address is not on their allowlist. Click2Call cannot answer that challenge on an outbound call, so the fix is always at the provider end &mdash; allowlist 52.63.154.234 rather than issuing credentials. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls stopped after our move to the new platform</h3><p class="text-gray-600 leading-relaxed">Delete the number from your ElevenLabs agent, then import it again as in the steps above, allowlisting 52.63.154.234. Don&rsquo;t use the old IP address. This makes ElevenLabs connect to our new platform.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">The call reaches ElevenLabs but no agent answers</h3><p class="text-gray-600 leading-relaxed">Either the number was not imported in exactly the format Click2Call sends (+E.164, with the plus), or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls are rejected before ringing</h3><p class="text-gray-600 leading-relaxed">The ACL on the ElevenLabs side does not include the address Click2Call is signalling from. Ask <a class="text-[#3B9C49] hover:underline" href="/support/">support</a> for the current addresses.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is still on the <em>Default</em> profile rather than your ElevenLabs profile, so it never leaves for ElevenLabs. Check the Profile column in Line Manager.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">The agent answers but audio is one-way</h3><p class="text-gray-600 leading-relaxed">Almost always a media path problem on the ElevenLabs side. Confirm the media encryption setting on the imported number matches what your trunk sends &mdash; Click2Call sends unencrypted media on TCP by default.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Incoming calls fail and never reach the agent</h3><p class="text-gray-600 leading-relaxed">Check the <strong>Inbound Configuration</strong> on the imported number in ElevenLabs. If a username and password are set there, ElevenLabs is asking Click2Call to sign in, which we cannot do. Clear both fields and save. While this is happening, callers hear &ldquo;the number you have called is not available from this service&rdquo;.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls stopped after our move to the new platform</h3><p class="text-gray-600 leading-relaxed">Open the imported number in ElevenLabs and check it against step 5: inbound authentication blank, and outbound Termination URI <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip.click2call.com.au</span> rather than an old IP address. If it still fails, delete the number and import it again with the settings above.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The call reaches ElevenLabs but no agent answers</h3><p class="text-gray-600 leading-relaxed">Either the phone number was not imported as +61 followed by the number without its leading 0, or no agent is assigned to it. Check both in the ElevenLabs Phone Numbers screen.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The agent answers, but calls it makes fail</h3><p class="text-gray-600 leading-relaxed">The outbound sign-in is wrong. The SIP Trunk Username must be the number exactly as Line Manager shows it, with no plus (<span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">61355551234</span>, not <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>), and the password must be the line&rsquo;s current password. If the password was changed in the portal, update it in ElevenLabs too.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Transfers from the agent fail</h3><p class="text-gray-600 leading-relaxed">The transfer destination must be a SIP URI in the form <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:NUMBER@sip.click2call.com.au</span>, with Destination Type set to SIP URI.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Calls go to Click2Call voicemail instead</h3><p class="text-gray-600 leading-relaxed">The number is on a profile other than your ElevenLabs one, so it never leaves for ElevenLabs. Check the Profile column in Line Manager, and remember a number with no profile assigned uses <em>Default</em>.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">The agent answers but audio is one-way or silent</h3><p class="text-gray-600 leading-relaxed">Usually a media encryption mismatch. Set Media Encryption to <em>Disabled</em> on the imported number in ElevenLabs, or force encryption on the line in the Click2Call portal if you want it on.</p></div>
 </div>
 <h2 class="text-2xl font-bold text-gray-900 mb-6 mt-4">Frequently Asked Questions</h2>
 <div class="space-y-6 mb-12">
-<div><h3 class="font-bold text-gray-900 mb-1">Do I need to write code?</h3><p class="text-gray-600 leading-relaxed">No. This is one of the no-code providers &mdash; the agent is built in the ElevenLabs dashboard, and Click2Call needs one dropdown. Compare that with <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-openai">OpenAI</a> and <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-xai">xAI</a>, which both need a webhook you host.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">What number format does ElevenLabs expect?</h3><p class="text-gray-600 leading-relaxed">E.164 &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>, not <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">03 5555 1234</span>. Click2Call sends +E.164 automatically, so import it that way.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">Do I need to write code?</h3><p class="text-gray-600 leading-relaxed">No. This is one of the no-code providers &mdash; the agent is built in the ElevenLabs dashboard, and Click2Call needs one dropdown plus your line&rsquo;s username and password. Compare that with <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-openai">OpenAI</a> and <a class="text-[#3B9C49] hover:underline" href="/help/how-to-connect-xai">xAI</a>, which both need a webhook you host.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">What number format does ElevenLabs expect?</h3><p class="text-gray-600 leading-relaxed">E.164 &mdash; <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">+61355551234</span>, not <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">03 5555 1234</span>. Click2Call sends +E.164 automatically, so import it that way. The <strong>SIP Trunk Username</strong> is different: the number as Line Manager shows it, with no plus.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Are calls still recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes, provided <strong>Recording Enabled</strong> is ticked on the profile. Recording, transcription, summaries and sentiment all work as normal, stored in Australia. See <a class="text-[#3B9C49] hover:underline" href="/ai-voice-tools/">AI voice tools</a>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Can I use my existing business number?</h3><p class="text-gray-600 leading-relaxed">Yes &mdash; <a class="text-[#3B9C49] hover:underline" href="/number-porting/">port it across</a> first, then assign it to the profile.</p></div>
 </div>
