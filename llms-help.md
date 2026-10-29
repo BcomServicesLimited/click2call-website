@@ -601,6 +601,8 @@ Under **Notification Settings**, tick **Receive warning email when account credi
 
 Incoming calls keep working. Outgoing calls stop once your balance goes below −$5: anyone who tries to call out hears a message that they cannot make calls. Add credit and outgoing calls start working again automatically.
 
+If your account has been suspended, you can’t log in to the portal to add credit yourself. Email us and we’ll reopen the account so you can top up. Once you add credit, your account stays open.
+
 Your invoices and receipts are under **Account → History**.
 
 **Good to know:** All prices are in Australian dollars. Add credit before you add numbers or channels, because their monthly charges come out of your credit.
@@ -2796,6 +2798,8 @@ Yes — contact support with the number or extension and the time of a failed at
 - •Notifications are allowed for the app, and on iPhone Background App Refresh is on
 - •You have tried mobile data instead of Wi-Fi, to rule out the office router
 - •You have tried a second app (Linphone) with the same details, to rule out the app
+- •You have uninstalled the app, reinstalled it, and logged in to your number again
+- •To check that incoming calls reach your number, you have diverted it to your mobile for a moment (see [Forwarding Calls to Your Mobile](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile)) and called it from another phone
 Still stuck? Email support@click2call.com.au with your account number, the number or extension, the app and version, your device and operating system, the time of a failed attempt, and a screenshot of any error. Never send your password.
 
 ### “Offline” or “No registration recorded” in the portal
@@ -4337,7 +4341,9 @@ Source: https://www.click2call.com.au/help/how-to-create-ring-group
 
 A ring group allows a single incoming call to ring multiple extensions at the same time (simultaneous ring) or one after another (sequential ring). This is useful for teams like Sales or Support. If you would rather callers waited than moved on when nobody answers, use a [call queue](https://www.click2call.com.au/help/how-to-set-up-call-queue) instead.
 
-Last reviewed: August 2026
+**Several people answering one number?** Give each person their own extension (extensions are free) and log in one app per extension, using that extension’s details (see [Setting Up the Apps](https://www.click2call.com.au/help/how-to-set-up-softphone)). Then set the main number you advertise to Simultaneous Ring and add each extension, so they all ring at the same time.
+
+Last reviewed: October 2026
 
 ### Creating a Ring Group, Step by Step
 
@@ -5897,7 +5903,7 @@ Still in ElevenLabs, attach your agent to the number you just imported — until
 
 #### Set up call transfers (optional)
 
-To have the agent hand a caller straight to a person (a blind transfer using the REFER method), add a transfer in the agent’s tools, set **Destination Type** to **SIP URI**, and enter the number to transfer to as sip:NUMBER@sip.click2call.com.au — for example sip:0755551234@sip.click2call.com.au.
+To have the agent hand a caller straight to a person (a blind transfer using the REFER method), add a transfer in the agent’s tools, set **Destination Type** to **SIP URI**, and enter the number to transfer to as sip:NUMBER@sip.click2call.com.au — for example sip:61755551234@sip.click2call.com.au. Write the number as 61 followed by the number without its leading 0. For a mobile, that is 61 4xx xxx xxx.
 
 ### Troubleshooting
 

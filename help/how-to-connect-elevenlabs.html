@@ -30,7 +30,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-10-27",
+  "dateModified": "2026-10-30",
   "name": "How to connect ElevenLabs to an Australian phone number with Click2Call",
   "description": "Route calls from a Click2Call Australian number to an ElevenLabs voice agent using the built-in Eleven Labs AI connection profile.",
   "totalTime": "PT30M",
@@ -79,7 +79,7 @@
     {
       "@type": "HowToStep",
       "name": "Set up call transfers (optional)",
-      "text": "For a blind transfer using REFER, set Destination Type to SIP URI and enter sip:NUMBER@sip.click2call.com.au."
+      "text": "For a blind transfer using REFER, set Destination Type to SIP URI and enter sip:NUMBER@sip.click2call.com.au, writing the number as 61 followed by the number without its leading 0, for example sip:61755551234@sip.click2call.com.au."
     }
   ]
 }
@@ -445,7 +445,7 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">7</div>
     <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set up call transfers (optional)</h3>
-        <p class="text-gray-600 leading-relaxed mt-3">To have the agent hand a caller straight to a person (a blind transfer using the REFER method), add a transfer in the agent&rsquo;s tools, set <strong>Destination Type</strong> to <strong>SIP URI</strong>, and enter the number to transfer to as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:NUMBER@sip.click2call.com.au</span> &mdash; for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:0755551234@sip.click2call.com.au</span>.</p>
+        <p class="text-gray-600 leading-relaxed mt-3">To have the agent hand a caller straight to a person (a blind transfer using the REFER method), add a transfer in the agent&rsquo;s tools, set <strong>Destination Type</strong> to <strong>SIP URI</strong>, and enter the number to transfer to as <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:NUMBER@sip.click2call.com.au</span> &mdash; for example <span class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded">sip:61755551234@sip.click2call.com.au</span>. Write the number as 61 followed by the number without its leading 0. For a mobile, that is 61 4xx xxx xxx.</p>
     </div>
 </div>
 
