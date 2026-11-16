@@ -647,7 +647,7 @@ Source: https://www.click2call.com.au/help/account-and-line-passwords
 
 Click2Call uses two kinds of password: the one you log in to the portal with, and a separate password for each phone number and extension, which your apps and desk phones use. Changing one can change the other, so read this before you change your portal password.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### The two kinds of password
 
@@ -677,6 +677,10 @@ Then enter the new password in the app or phone that uses that number. The usern
 ### Forgot your portal password?
 
 Click **Forgot your password?** on the portal login page.
+
+#### Got a reset email you didn’t ask for?
+
+The “Click2Call Password Reset Requested” email is sent when someone clicks **Forgot your password?** on the portal login page and enters your login, or when Click2Call support sends one for you. Your password does not change unless someone opens the link in the email and sets a new one. If you didn’t ask for it, you can ignore the email.
 
 **Good to know:** If an app suddenly says “wrong username or password”, check whether the portal password was changed recently. The app needs the new phone password.
 
@@ -1726,9 +1730,14 @@ Some of the Windows app’s behaviour is set per number in the portal: **Voice �
 
 Source: https://www.click2call.com.au/help/secure-voip-android-background-mode
 
-Android phones save battery by putting apps to sleep. The Secure VoIP app is woken by a push notification when a call comes in, but some phones' battery savers block that, so calls are missed while the app is closed. A few settings fix it.
+Phones & Devices
+2 min read
 
-Last reviewed: October 2026
+## Basic Edition on Android: Fixing Missed Calls and Battery Saving
+
+Android phones save battery by putting apps to sleep. The Basic Edition app is woken by a push notification when a call comes in, but some phones' battery savers block that, so calls are missed while the app is closed. A few settings fix it.
+
+Last reviewed: November 2026
 
 ### Signs of the problem
 
@@ -1736,7 +1745,7 @@ Calls ring when the app is open, but are missed or go to voicemail when the phon
 
 ### Let the app run in the background
 
-- Open your phone's **Settings → Apps → Secure VoIP**.
+- Open your phone's **Settings → Apps** and choose the **Basic Edition** app.
 - Open **Battery** and choose **Unrestricted** (on some phones, **Don't optimise** or **Allow background activity**).
 - Check **Notifications** are allowed for the app.
 - On Samsung, Xiaomi, Oppo and Huawei phones, also remove the app from any "sleeping apps" or battery-saver list.
@@ -3013,13 +3022,15 @@ Phones & Devices
 
 ## Setting Up a Softphone App
 
-Click2Call recommends the **Secure VoIP App** for iPhone, Android, and Windows users, and the **Telephone App** for Mac users. Both apps are free to download and work with your Click2Call phone number and password. Select your platform below to get started.
+Click2Call recommends the **Basic Edition** app (by Voice Services) for iPhone and Android, **Secure VoIP Micro Edition** for Windows, and the **Telephone App** for Mac. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 To find your app download links, log in to the portal, click the **Account** tab, and select **Apps** from the left-hand menu. From here you can download the app for your device and access the installation instructions for each platform.
 
-Your Click2Call login details (all platforms)
+Your Click2Call login details
+
+On iPhone and Android you scan a QR code instead (see the steps below), so you only need these details on Windows or Mac, or if the QR code can’t be scanned.
 
 You will need the following details to log in to any of the apps below. Your phone number and password are in the Click2Call portal under **Voice → Line Manager**. Use the number exactly as displayed there. New numbers have no password by default: type any password into the **Password** box on the number’s row and click **Save Changes**, then use that password in the app.
 
@@ -3039,15 +3050,15 @@ Windows
 
 Mac
 
-### Setting Up Secure VoIP on iPhone or iPad
+### Setting Up Basic Edition on iPhone or iPad
 
-App: **Secure VoIP** — Download from the App Store
+App: **Basic Edition** by Voice Services — Download from the App Store
 
 1
 
-#### Download the Secure VoIP app
+#### Download the Basic Edition app
 
-On your iPhone or iPad, open the App Store and search for **Secure VoIP**, or tap the link above to go directly to the download page. Install the app and open it.
+On your iPhone or iPad, open the App Store and search for **Basic Edition** by Voice Services, or tap the link above. Install the app and open it.
 
 2
 
@@ -3057,9 +3068,9 @@ When the app opens for the first time, you will be prompted to allow access to n
 
 3
 
-#### Log in with your Click2Call details
+#### Scan the QR code from the portal
 
-Enter your Click2Call phone number and password (see the credentials table above). Tap **Log In** to continue.
+In the portal, go to **Voice → Line Manager** and open your number’s line page. Scan the QR code shown there with the app. The app sets itself up with your number, with no username or password to type. If you can’t scan it, log in with your number and password from the table above instead.
 
 4
 
@@ -3067,15 +3078,15 @@ Enter your Click2Call phone number and password (see the credentials table above
 
 On the main dialler screen, tap the button in the bottom right corner with the three dots. In the pop-up that follows, tap the button with the phone icon on the left. This will place a test call to your voicemail to simulate a phone call. When prompted, select **Allow** for microphone access. All permissions are now granted and the app is ready to use.
 
-### Setting Up Secure VoIP on Android
+### Setting Up Basic Edition on Android
 
-App: **Secure VoIP** — Download from the Play Store
+App: **Basic Edition** by Voice Services — Download from the Play Store
 
 1
 
-#### Download the Secure VoIP app
+#### Download the Basic Edition app
 
-On your Android device, open the Play Store and search for **Secure VoIP**, or tap the link above to go directly to the download page. Install the app and open it.
+On your Android device, open the Play Store and search for **Basic Edition** by Voice Services, or tap the link above. If the Play Store says the app was made for an older version of Android, install it anyway: it works with Click2Call. Open the app once it is installed.
 
 2
 
@@ -3085,9 +3096,9 @@ When the app opens for the first time, select **Allow** for notifications. This 
 
 3
 
-#### Log in with your Click2Call details
+#### Scan the QR code from the portal
 
-Enter your Click2Call phone number and password (see the credentials table above). Tap **Log In** to continue.
+In the portal, go to **Voice → Line Manager** and open your number’s line page. Scan the QR code shown there with the app. The app sets itself up with your number, with no username or password to type. If you can’t scan it, log in with your number and password from the table above instead.
 
 4
 
