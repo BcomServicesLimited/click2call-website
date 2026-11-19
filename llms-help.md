@@ -3047,9 +3047,9 @@ Go to phone.click2call.com.au in your browser.
 
 2
 
-#### Enter your SIP username and password
+#### Enter your SIP username and password, or scan the QR code
 
-Type them exactly as Line Manager shows them. Leave **Keep me signed in on this computer** ticked on your own computer, so next time it opens straight to the keypad. Untick it on a shared computer.
+Type them exactly as Line Manager shows them. Or tap **Scan QR code** and point your camera at the QR code on the line's page in Line Manager (the same one the SecureVOIP app uses). The Web Phone reads it and signs you in, with nothing to type. This is quickest on a mobile while Line Manager is open on your computer. The code is read on your device and the camera image isn't sent anywhere. Scan it from inside the Web Phone: your phone's own camera app opens a different app. The QR code contains your line's password, so don't share a screenshot of it. Leave **Keep me signed in on this computer** ticked on your own computer, so next time it opens straight to the keypad. Untick it on a shared computer.
 
 3
 
@@ -3184,7 +3184,7 @@ Firefox can't install web apps. If you use Firefox, keep the Web Phone in a pinn
 
 - Scroll down and tap **Add to Home Screen**. If you see **Open as Web App**, leave it on, then tap **Add**.
 
-- Open **C2C Phone** from your home screen and sign in once with Keep me signed in ticked. Allow the microphone.
+- Open **C2C Phone** from your home screen and sign in once with Keep me signed in ticked (tap **Scan QR code** to sign in from Line Manager's QR code). Allow the microphone.
 
 On Android, open the page in Chrome, tap the **⋮** menu and choose **Add to Home screen** or **Install app**.
 
