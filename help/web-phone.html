@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-11-19",
+  "dateModified": "2026-11-20",
   "headline": "Click2Call Web Phone: Calls from Your Browser",
   "description": "Make and take calls on your Click2Call number in a web browser with the Click2Call Web Phone: sign-in, features, installing it on your computer or iPhone, forwarding to your mobile, and limitations.",
   "url": "https://www.click2call.com.au/help/web-phone",
@@ -376,12 +376,22 @@
     <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6">
       <li><strong>Turn on <em>Keep me signed in</em> first,</strong> so the phone can open straight into the call.</li>
       <li><strong>Your browser must be running.</strong> On Windows and Mac, that means Chrome or Edge is open, even if the Web Phone isn't. On Android it works even when Chrome is closed. On iPhone it only works from the home-screen app, as a notification.</li>
+      <li><strong>The alert repeats every 5 seconds, like a phone ringing,</strong> until you answer, press Decline, or the caller hangs up. When you answer on one device, the alert clears on your others. Decline stops the alerts; the call then goes to your voicemail or forward rules.</li>
       <li>If no one answers within about 45 seconds, the call goes to your voicemail or forward rules. If the caller hangs up first, you get a <em>Missed call</em> notification.</li>
       <li>Use <strong>Send a test notification</strong> in Settings to check it works on each device.</li>
       <li><strong>How it works:</strong> while it's on, our gateway keeps your line signed in for you. It stores only an encrypted hash of your SIP password, never the password itself, and deletes it when you turn the feature off or sign out.</li>
       <li><strong>Forwarding when it's on:</strong> your line always shows as online, so <em>Forward when Offline</em> won't trigger. Use <em>Forward on No Answer</em> instead.</li>
     </ul>
     <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>On a Mac, check notifications are allowed:</strong> open <strong>System Settings &rarr; Notifications &rarr; Google Chrome</strong> (and <em>Google Chrome Helper (Alerts)</em> if listed), turn on <strong>Allow notifications</strong>, and set the style to <strong>Alerts</strong> so the call stays on screen until you answer. A <strong>Focus</strong> or Do Not Disturb mode also hides them. Without this, Chrome receives the call but macOS doesn't show it. On Windows, check <strong>Settings &rarr; System &rarr; Notifications</strong> is on for Chrome or Edge.</div>
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>On an iPhone, make sure the alert makes a sound:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Turn on <em>Ring me when the app is closed</em> from the <strong>home-screen app</strong>, not from Safari.</li>
+        <li>Open <strong>Settings &rarr; Notifications &rarr; C2C Phone</strong>. Turn on <strong>Allow Notifications</strong>, <strong>Lock Screen</strong> and <strong>Sounds</strong>, and set the banner style to <strong>Persistent</strong>. Make sure it isn't set to <em>Deliver Quietly</em> or <em>Scheduled Summary</em>.</li>
+        <li>Check the <strong>Ring/Silent switch</strong> (or Action button) isn't on silent. On silent, the alert shows but makes no sound. Set <strong>Settings &rarr; Sounds &amp; Haptics &rarr; Haptics</strong> to <strong>Always Play</strong> so it still vibrates.</li>
+        <li>A <strong>Focus</strong> mode (Do Not Disturb, Sleep, Work) hides alerts unless C2C Phone is an allowed app in that Focus.</li>
+        <li>A phone lying face down may stay quiet, because iPhone quietens alerts when the screen is covered.</li>
+      </ul>
+      <p class="mt-2">It's a notification rather than a full ringing screen. For calls on your mobile that ring like a normal phone, use the <a href="/help/how-to-set-up-softphone" class="text-[#3B9C49] font-medium hover:underline">Basic Edition app</a>.</p></div>
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Install it on your computer and open it at login</h2>
     <p class="text-gray-600 leading-relaxed mb-4">The Web Phone only rings while it's open, so the best desktop setup is to install it as an app and have it open automatically when you log in. It then runs in its own window with its own Dock or taskbar icon, like any other app.</p>
@@ -440,7 +450,7 @@
     <p class="text-gray-600 leading-relaxed mb-4">Please read these before relying on the Web Phone as your only phone.</p>
     <ul class="list-disc pl-6 space-y-3 text-gray-600 leading-relaxed mb-6">
       <li><strong>Calls ring it while it's open, or with <em>Ring me when the app is closed</em> on, as long as the browser is running.</strong> If the computer is asleep, shut down or offline, calls can't reach it. Use <em>Forward on No Answer</em> or the Basic Edition app as a backup.</li>
-      <li><strong>On iPhone and Android it only rings while open on screen.</strong> Phones pause web apps in the background and when locked. There's no lock-screen ringing, so use the Basic Edition app to receive calls on a mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.</li>
+      <li><strong>On iPhone and Android it only rings while open on screen,</strong> unless <em>Ring me when the app is closed</em> is on. Phones pause web apps in the background and when locked. With the setting on, you get a repeating notification instead of a full ringing screen. For calls that ring like a normal phone, use the Basic Edition app on your mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.</li>
       <li><strong>On iPhone and Android, call audio plays through the loudspeaker.</strong> Mobile browsers don't let web pages switch between the earpiece and the speaker. For private calls on a mobile, use wired or Bluetooth earphones (the phone switches to them automatically), or the Basic Edition app, which has a normal speaker button.</li>
       <li><strong>Not for emergency calls.</strong> Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.</li>
       <li><strong>Two calls at most, no conferencing.</strong> You can have one call active and one on hold or waiting. A third call goes to your voicemail or forward rules and shows as missed in Recents. There are no three-way conference calls.</li>
@@ -470,8 +480,10 @@
     <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What you see</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to do</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white">
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">"That username or password wasn't accepted"</td><td class="px-4 py-2.5 text-gray-600">Check both in Line Manager. The username is digits only, with no plus or spaces. The password is the line's SIP password, not your portal login. After 10 wrong attempts, sign-in is paused for 15 minutes.</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">"Allow microphone access"</td><td class="px-4 py-2.5 text-gray-600">Click the padlock or settings icon in the address bar and allow the microphone for phone.click2call.com.au. On a Mac, also check <strong>System Settings &rarr; Privacy &amp; Security &rarr; Microphone</strong> for your browser.</td></tr>
+      <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">The browser asks to allow the microphone on every call</td><td class="px-4 py-2.5 text-gray-600">Choose <strong>Allow on every visit</strong> (or <strong>Allow</strong>), not <em>Allow this time</em>. To fix it after the fact in Chrome, click the settings icon on the left of the address bar, open <strong>Site settings</strong> and set <strong>Microphone</strong> to <strong>Allow</strong>. In Edge it's the padlock &rarr; <strong>Permissions for this site</strong>. On a Mac, also check <strong>System Settings &rarr; Privacy &amp; Security &rarr; Microphone</strong> is on for your browser.</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">Red dot, "Reconnecting&hellip;"</td><td class="px-4 py-2.5 text-gray-600">Your internet dropped. The Web Phone reconnects by itself when it's back. Calls can't ring until the dot is green.</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">Calls aren't ringing the Web Phone</td><td class="px-4 py-2.5 text-gray-600">Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, add the site to your browser's "keep active" list (see install steps above).</td></tr>
+      <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">No call alert when the Web Phone is closed</td><td class="px-4 py-2.5 text-gray-600">Press <strong>Send a test notification</strong> in Settings. If nothing appears, notifications are blocked: on a Mac check <strong>System Settings &rarr; Notifications &rarr; Google Chrome</strong>; on an iPhone check <strong>Settings &rarr; Notifications &rarr; C2C Phone</strong>, the silent switch and any Focus mode (see <em>Ring me when the app is closed</em> above).</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">You can't hear the caller, or they can't hear you</td><td class="px-4 py-2.5 text-gray-600">Open Settings and pick the right microphone and speaker. Check you're not on mute, and that your headset is switched on and connected.</td></tr>
     </tbody></table></div>
 

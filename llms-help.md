@@ -3122,6 +3122,8 @@ Turn on **Settings → Ring me when the app is closed** and calls reach you even
 
 - **Your browser must be running.** On Windows and Mac, that means Chrome or Edge is open, even if the Web Phone isn't. On Android it works even when Chrome is closed. On iPhone it only works from the home-screen app, as a notification.
 
+- **The alert repeats every 5 seconds, like a phone ringing,** until you answer, press Decline, or the caller hangs up. When you answer on one device, the alert clears on your others. Decline stops the alerts; the call then goes to your voicemail or forward rules.
+
 - If no one answers within about 45 seconds, the call goes to your voicemail or forward rules. If the caller hangs up first, you get a Missed call notification.
 
 - Use **Send a test notification** in Settings to check it works on each device.
@@ -3131,6 +3133,20 @@ Turn on **Settings → Ring me when the app is closed** and calls reach you even
 - **Forwarding when it's on:** your line always shows as online, so Forward when Offline won't trigger. Use Forward on No Answer instead.
 
 **On a Mac, check notifications are allowed:** open **System Settings → Notifications → Google Chrome** (and Google Chrome Helper (Alerts) if listed), turn on **Allow notifications**, and set the style to **Alerts** so the call stays on screen until you answer. A **Focus** or Do Not Disturb mode also hides them. Without this, Chrome receives the call but macOS doesn't show it. On Windows, check **Settings → System → Notifications** is on for Chrome or Edge.
+
+**On an iPhone, make sure the alert makes a sound:**
+
+- Turn on Ring me when the app is closed from the **home-screen app**, not from Safari.
+
+- Open **Settings → Notifications → C2C Phone**. Turn on **Allow Notifications**, **Lock Screen** and **Sounds**, and set the banner style to **Persistent**. Make sure it isn't set to Deliver Quietly or Scheduled Summary.
+
+- Check the **Ring/Silent switch** (or Action button) isn't on silent. On silent, the alert shows but makes no sound. Set **Settings → Sounds & Haptics → Haptics** to **Always Play** so it still vibrates.
+
+- A **Focus** mode (Do Not Disturb, Sleep, Work) hides alerts unless C2C Phone is an allowed app in that Focus.
+
+- A phone lying face down may stay quiet, because iPhone quietens alerts when the screen is covered.
+
+It's a notification rather than a full ringing screen. For calls on your mobile that ring like a normal phone, use the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone).
 
 ### Install it on your computer and open it at login
 
@@ -3214,7 +3230,7 @@ Please read these before relying on the Web Phone as your only phone.
 
 - **Calls ring it while it's open, or with Ring me when the app is closed on, as long as the browser is running.** If the computer is asleep, shut down or offline, calls can't reach it. Use Forward on No Answer or the Basic Edition app as a backup.
 
-- **On iPhone and Android it only rings while open on screen.** Phones pause web apps in the background and when locked. There's no lock-screen ringing, so use the Basic Edition app to receive calls on a mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.
+- **On iPhone and Android it only rings while open on screen,** unless Ring me when the app is closed is on. Phones pause web apps in the background and when locked. With the setting on, you get a repeating notification instead of a full ringing screen. For calls that ring like a normal phone, use the Basic Edition app on your mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.
 
 - **On iPhone and Android, call audio plays through the loudspeaker.** Mobile browsers don't let web pages switch between the earpiece and the speaker. For private calls on a mobile, use wired or Bluetooth earphones (the phone switches to them automatically), or the Basic Edition app, which has a normal speaker button.
 
@@ -3264,9 +3280,13 @@ The Web Phone also looks after itself. It reconnects as soon as your internet co
 
 | "Allow microphone access" | Click the padlock or settings icon in the address bar and allow the microphone for phone.click2call.com.au. On a Mac, also check System Settings → Privacy & Security → Microphone for your browser. |
 
+| The browser asks to allow the microphone on every call | Choose Allow on every visit (or Allow), not Allow this time. To fix it after the fact in Chrome, click the settings icon on the left of the address bar, open Site settings and set Microphone to Allow. In Edge it's the padlock → Permissions for this site. On a Mac, also check System Settings → Privacy & Security → Microphone is on for your browser. |
+
 | Red dot, "Reconnecting…" | Your internet dropped. The Web Phone reconnects by itself when it's back. Calls can't ring until the dot is green. |
 
 | Calls aren't ringing the Web Phone | Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, add the site to your browser's "keep active" list (see install steps above). |
+
+| No call alert when the Web Phone is closed | Press Send a test notification in Settings. If nothing appears, notifications are blocked: on a Mac check System Settings → Notifications → Google Chrome; on an iPhone check Settings → Notifications → C2C Phone, the silent switch and any Focus mode (see Ring me when the app is closed above). |
 
 | You can't hear the caller, or they can't hear you | Open Settings and pick the right microphone and speaker. Check you're not on mute, and that your headset is switched on and connected. |
 
