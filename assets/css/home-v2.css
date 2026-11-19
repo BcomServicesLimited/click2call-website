@@ -80,6 +80,16 @@
 .hv2.sw .call-card{left:0;right:auto;bottom:0;width:min(380px,82%)}
 
 /* ---------- 2. key takeaways ---------- */
+/* Customer reviews strip under the hero */
+.hv2 .rv{background:#fff;border-top:1px solid var(--line);padding-block:26px}
+.hv2 .rv-grid{display:grid;grid-template-columns:1fr 1.6fr auto;gap:18px 36px;align-items:start}
+.hv2 .rv figure{margin:0;border-left:3px solid var(--g-tint);padding-left:14px}
+.hv2 .rv-stars{color:#F4B400;font-size:.95rem;letter-spacing:2px;line-height:1}
+.hv2 .rv blockquote{margin:8px 0 6px;font-size:.98rem;line-height:1.5;color:var(--ink)}
+.hv2 .rv figcaption{font-size:.84rem;color:var(--muted)}
+.hv2 .rv figcaption b{color:var(--ink-2);font-weight:600}
+.hv2 .rv .link{align-self:center;white-space:nowrap;font-size:.9rem}
+@media (max-width:860px){.hv2 .rv-grid{grid-template-columns:1fr}.hv2 .rv .link{align-self:start}}
 .hv2 .kt{border-block:1px solid var(--line);background:#fff;padding-block:30px}
 .hv2 .kt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 32px;align-items:start}
 .hv2 .kt h2{grid-column:1/-1;align-self:center;font-size:1.35rem;letter-spacing:-.01em;text-transform:none;color:var(--ink);font-weight:800;padding:0;border-left:3px solid var(--g);padding-left:12px} .hv2 .kt h2.x{font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--g-dark);font-weight:800;padding-top:4px}
