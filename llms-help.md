@@ -60,6 +60,8 @@ You can register a Click2Call number from a web browser, using SIP over a secure
 
 Last reviewed: October 2026
 
+**Just want to make calls in your browser?** You don't need to build anything: use the [Click2Call Web Phone](https://www.click2call.com.au/help/web-phone) at phone.click2call.com.au. This page is for developers building calling into their own app.
+
 ### Connection settings
 
 | Setting | What to enter |
@@ -3012,6 +3014,226 @@ If your phone sits behind a business firewall or router, allow the following tra
 | Allow all traffic from | TCP | 5061 | SIP signalling (TLS) |
 
 Apply these rules for traffic from subnet 52.63.154.234. No STUN server is required.
+
+## Click2Call Web Phone: Calls from Your Browser
+
+Source: https://www.click2call.com.au/help/web-phone
+
+The Click2Call Web Phone lets you make and take calls on your business number from a web browser, with nothing to download. Open phone.click2call.com.au, sign in with your line's SIP username and password, and you're ready to call. This guide covers every feature, the best setups, and what the Web Phone can't do.
+
+Last reviewed: November 2026
+
+Open the Web Phone
+
+### What you need
+
+- **Your line's SIP username and password.** Find them in the portal under **Voice → Line Manager**. The username is your number starting with 61 and no plus (for example 61712345678), or an extension line ID (for example 832800190000). See [account and line passwords](https://www.click2call.com.au/help/account-and-line-passwords) if you need to reset it.
+
+- **A current browser:** Chrome, Edge, Safari or Firefox on Mac or Windows. Chrome or Edge is best if you want to install it as an app.
+
+- **A microphone and speaker.** A USB or Bluetooth headset gives the clearest calls.
+
+- **A steady internet connection.** NBN, office broadband or a good 4G/5G signal all work.
+
+**Cost:** there's no extra charge for the Web Phone. Calls are billed exactly like calls from any other device on your line, and incoming calls are free.
+
+### Signing in
+
+1
+
+#### Open the Web Phone
+
+Go to phone.click2call.com.au in your browser.
+
+2
+
+#### Enter your SIP username and password
+
+Type them exactly as Line Manager shows them. Leave **Keep me signed in on this computer** ticked on your own computer, so next time it opens straight to the keypad. Untick it on a shared computer.
+
+3
+
+#### Allow the microphone and notifications
+
+Your browser asks for microphone access the first time. Choose **Allow**. If it also asks about notifications, allow those too so you see incoming calls when the window is behind others.
+
+4
+
+#### Check for the green dot
+
+The status line under the logo shows a green dot and **Ready** with your number. You can now make and receive calls.
+
+### Features
+
+#### Making a call
+
+Type the number on the keypad or your keyboard and press the green call button (or Enter). Dial Australian numbers as you would on any phone, for example 0412 345 678, 07 5555 1234 or 1300 numbers. A number starting with +61 is converted for you. Your Click2Call number shows as the caller ID.
+
+#### Answering a call
+
+When a call comes in, the Web Phone rings and shows the caller's number with **Answer** and **Decline** buttons. If the window is hidden, you also get a desktop notification. Click it to bring the phone forward. Declining sends the caller a busy signal, so they follow your line's busy settings (for example voicemail).
+
+#### During a call
+
+- **Mute:** the other person can't hear you until you tap it again.
+
+- **Keypad:** sends touch tones, for menus like "press 1 for accounts". You can also type the digits on your keyboard.
+
+- **Hold:** puts the caller on hold. Tap again to return.
+
+- **Transfer:** type a number in Transfer to… and press Transfer. This is a blind transfer: the call goes straight to the new number and your part of the call ends.
+
+- **Call timer and connection warning:** the timer shows how long you've been talking. A Poor connection warning appears if your internet is dropping audio.
+
+#### Recents
+
+The **Recents** tab lists your calls with the time and duration, like the call list on a mobile. Missed calls show in red, and a red badge counts any you haven't seen. Tap the phone icon to call back, or tap the number to put it on the keypad first. **Clear** empties the list. Recents only shows calls made or received in this browser on this computer. For your full account history, see call records in the portal.
+
+#### Settings
+
+Click the gear icon to:
+
+- **Choose your microphone and speaker,** for example a headset rather than the laptop speakers. Choosing a speaker works in Chrome and Edge. Safari and Firefox always use your computer's default output.
+
+- **Turn on Do not disturb.** Incoming calls get a busy signal and are logged as missed, so your busy settings take over. An orange tag shows while it's on.
+
+- **Install the app** and see the steps to open it at login (below).
+
+- **Sign out.** This disconnects the line and forgets your saved sign-in on this computer.
+
+#### Keep me signed in
+
+With this ticked, the Web Phone opens straight to the keypad each time. Your password is encrypted and saved only in this browser on this computer, and never on our servers. The encryption key can't be copied off the computer, so copying the browser's files elsewhere won't reveal your password. Like an unlocked desk phone, anyone using that computer can make calls, so untick it on shared computers. If your SIP password changes, the Web Phone asks you to sign in again.
+
+### Install it on your computer and open it at login
+
+The Web Phone only rings while it's open, so the best desktop setup is to install it as an app and have it open automatically when you log in. It then runs in its own window with its own Dock or taskbar icon, like any other app.
+
+#### Google Chrome (Mac or Windows)
+
+- Sign in to the Web Phone, then click **Install** in the green banner. You can also use the install icon at the right of the address bar, or **Settings → Install Click2Call Phone**.
+
+- To open it at login, open a new tab and go to `chrome://apps`, right-click **Click2Call Phone** and choose **Start app when you sign in**.
+
+- Keep it awake: in Chrome go to **Settings → Performance**, and under **Always keep these sites active** add `phone.click2call.com.au`. Otherwise Chrome's Memory Saver can put the phone to sleep after a while in the background.
+
+#### Microsoft Edge (Windows or Mac)
+
+- Click **Install** in the banner, or the app icon in the address bar.
+
+- Go to `edge://apps`, click **…** on Click2Call Phone and turn on **Auto-start on device login**.
+
+- Keep it awake: **Settings → System and performance → Never put these sites to sleep**, add `phone.click2call.com.au`.
+
+#### Safari (Mac)
+
+- With the Web Phone open, choose **File → Add to Dock**.
+
+- Right-click the Click2Call Phone icon in the Dock and choose **Options → Open at Login**.
+
+Firefox can't install web apps. If you use Firefox, keep the Web Phone in a pinned tab, or install it from Chrome, Edge or Safari instead.
+
+### Add it to your iPhone home screen
+
+- Open **Safari** and go to phone.click2call.com.au. It must be Safari.
+
+- Tap the **Share** button (the square with an arrow pointing up).
+
+- Scroll down and tap **Add to Home Screen**. If you see **Open as Web App**, leave it on, then tap **Add**.
+
+- Open **C2C Phone** from your home screen and sign in once with Keep me signed in ticked. Allow the microphone.
+
+On Android, open the page in Chrome, tap the **⋮** menu and choose **Add to Home screen** or **Install app**.
+
+**Important for mobiles:** phones pause web apps as soon as you switch away or lock the screen, so the Web Phone on a mobile only rings while it's open on screen. It's great for making calls on the go. To receive calls on your mobile, use the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone), which rings even when your phone is locked.
+
+### Recommended setups
+
+| If you… | Set it up like this |
+
+| Work at a desk most of the day | Install the Web Phone, set it to open at login, and use a headset. Add Forward on No Answer to your mobile as a backup. |
+
+| Split time between the desk and out of the office | Web Phone on your computer and the Basic Edition app on your mobile, both signed in to the same line. Both ring together, so you answer on whichever is handy. |
+
+| Only use the Web Phone | Turn on Forward when Offline to your mobile (steps below), so calls still reach you when your computer is closed or asleep. |
+
+| Have staff on extensions | Each person signs in with their own extension line username and password from Line Manager, on their own computer. |
+
+| Use a shared or reception computer | Untick Keep me signed in, and sign out at the end of the day. |
+
+| Want to make calls from your mobile without another app | Add the Web Phone to your home screen for outgoing calls that show your business number. |
+
+### Forward calls to your mobile when the Web Phone isn't open
+
+When the Web Phone is closed, your computer is asleep, or you've lost internet, it can't ring. Set a forward so those calls go to your mobile instead of being missed:
+
+- Log in to the portal and go to **Voice → Line Manager**. Click your number to open its Call Flow page.
+
+- Open the **Incoming Calls** dropdown and choose **Call Forwarding**.
+
+- Under **Forward when Offline**, tick **Enabled** and enter your mobile. Use the 04 format, for example 0412345678, not 61 or +61. Save.
+
+- Optional: also set **Forward on No Answer** to your mobile, so calls you don't answer in the Web Phone go on to your mobile.
+
+"Offline" means nothing is signed in to the line. If the Basic Edition app or a desk phone is also signed in, the line isn't offline. In that case, use **Forward on No Answer** instead.
+
+The Web Phone signs out automatically when you close it. If your computer goes to sleep or loses internet without closing it, the forward can take up to five minutes to start working.
+
+**What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outgoing call to a mobile from your number. It uses your included minutes first, then the standard mobile rate. See [Forwarding Calls to Your Mobile](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile) for more forwarding options, including work-hours schedules.
+
+### Limitations
+
+Please read these before relying on the Web Phone as your only phone.
+
+- **It only rings while it's open and connected.** If the window or tab is closed, the computer is asleep or shut down, or the internet is down, calls can't ring it. Use Forward when Offline or the Basic Edition app as a backup.
+
+- **On iPhone and Android it only rings while open on screen.** Phones pause web apps in the background and when locked. There's no lock-screen ringing, so use the Basic Edition app to receive calls on a mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.
+
+- **Not for emergency calls.** Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.
+
+- **One call at a time.** While you're on a call, a second incoming call gets a busy signal and shows as missed in Recents. There's no call waiting or conferencing in the Web Phone.
+
+- **Blind transfer only.** You can't speak to the other person before handing the call over (no attended or consult transfer).
+
+- **Recents is per device.** It only shows calls made or received in that browser on that computer, and clearing your browser data removes it. Your full call history is in the portal.
+
+- **Numbers only, no contact names.** Incoming calls show the caller's number, not a name from your address book.
+
+- **No voicemail, chat or video in the app.** Voicemail still works as normal on your line and is emailed to you if you've set up voicemail-to-email.
+
+- **Speaker choice needs Chrome or Edge.** Safari and Firefox always play through your computer's default speaker.
+
+- **Firefox can't install it as an app.** Use a pinned tab, or Chrome, Edge or Safari.
+
+- **Call quality depends on your internet.** Weak Wi-Fi or a congested connection can cause choppy audio. You'll see a Poor connection warning. A wired connection or headset helps, and [our call quality guide](https://www.click2call.com.au/help/call-quality-and-starlink) has more tips.
+
+- **Strict workplace networks.** The Web Phone uses secure web connections and switches to a relay automatically when a firewall blocks direct audio, so it works on most business networks. Very locked-down networks may need IT to allow `phone.click2call.com.au` and `gw1.webphone.click2call.com.au`.
+
+- **Saved sign-in is per browser.** Each browser, and the iPhone home-screen app, keeps its own sign-in, so you sign in once in each.
+
+### Troubleshooting
+
+| What you see | What to do |
+
+| "That username or password wasn't accepted" | Check both in Line Manager. The username is digits only, with no plus or spaces. The password is the line's SIP password, not your portal login. After 10 wrong attempts, sign-in is paused for 15 minutes. |
+
+| "Allow microphone access" | Click the padlock or settings icon in the address bar and allow the microphone for phone.click2call.com.au. On a Mac, also check System Settings → Privacy & Security → Microphone for your browser. |
+
+| Red dot, "Reconnecting…" | Your internet dropped. The Web Phone reconnects by itself when it's back. Calls can't ring until the dot is green. |
+
+| Calls aren't ringing the Web Phone | Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, add the site to your browser's "keep active" list (see install steps above). |
+
+| You can't hear the caller, or they can't hear you | Open Settings and pick the right microphone and speaker. Check you're not on mute, and that your headset is switched on and connected. |
+
+### Privacy and security
+
+- Calls are encrypted between your browser and Click2Call's gateway in Sydney, and connect to our Australian platform from there.
+
+- Your SIP password is never stored on our servers. If you choose Keep me signed in, it's encrypted and kept only in your browser on that computer.
+
+- Recents and your settings stay in your browser on that computer.
+
+- The Web Phone loads no advertising or tracking scripts.
 
 ## Setting Up a Softphone or Mobile App
 

@@ -704,6 +704,17 @@ var HELP_ARTICLES = [
     pinned:   true
   },
   {
+    url:      "/help/web-phone",
+    title:    "Click2Call Web Phone: Calls from Your Browser",
+    desc:     "Make and take calls on your Click2Call number in any browser: sign in, features, install it on your computer or iPhone, forward to your mobile when it's closed, and limitations.",
+    tags:     "web phone browser phone webrtc softphone install app chrome edge safari iphone home screen recents do not disturb keep me signed in forward offline",
+    category: "devices",
+    readTime: "8 min read",
+    featured: true,
+    pinned:   false
+  },
+
+  {
     url:      "/help/how-to-set-up-softphone",
     title:    "Setting Up a Softphone or Mobile App",
     desc:     "How to install and configure the softphone app on your PC or mobile device.",
