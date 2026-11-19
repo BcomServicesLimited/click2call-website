@@ -80,16 +80,21 @@
 .hv2.sw .call-card{left:0;right:auto;bottom:0;width:min(380px,82%)}
 
 /* ---------- 2. key takeaways ---------- */
-/* Customer reviews strip under the hero */
-.hv2 .rv{background:#fff;border-top:1px solid var(--line);padding-block:26px}
-.hv2 .rv-grid{display:grid;grid-template-columns:1fr 1.6fr auto;gap:18px 36px;align-items:start}
-.hv2 .rv figure{margin:0;border-left:3px solid var(--g-tint);padding-left:14px}
-.hv2 .rv-stars{color:#F4B400;font-size:.95rem;letter-spacing:2px;line-height:1}
-.hv2 .rv blockquote{margin:8px 0 6px;font-size:.98rem;line-height:1.5;color:var(--ink)}
-.hv2 .rv figcaption{font-size:.84rem;color:var(--muted)}
-.hv2 .rv figcaption b{color:var(--ink-2);font-weight:600}
-.hv2 .rv .link{align-self:center;white-space:nowrap;font-size:.9rem}
-@media (max-width:860px){.hv2 .rv-grid{grid-template-columns:1fr}.hv2 .rv .link{align-self:start}}
+/* Customer reviews: one line in the hero, one card in the Key Takeaways grid */
+.hv2 .stars{color:#F4B400;letter-spacing:2px;line-height:1;font-size:.9rem;white-space:nowrap}
+.hv2 .hero .hero-review{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:.92rem;line-height:1.5;color:var(--ink);max-width:36em}
+.hv2 .hero .hero-review cite{font-style:normal;color:var(--muted);font-size:.85rem}
+.hv2 .hero .hero-review cite a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.hv2 .kt.kt-cards{background:var(--soft);padding-block:44px 48px}
+.hv2 .kt.kt-cards .kt-grid{gap:16px;align-items:stretch}
+.hv2 .kt.kt-cards h2{border-left:0;padding-left:0;margin-bottom:8px}
+.hv2 .kt.kt-cards li,.hv2 .kt.kt-cards .kt-review{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:20px 22px;font-size:.92rem;line-height:1.6}
+.hv2 .kt.kt-cards li strong{display:block;margin-bottom:6px;font-size:.98rem;line-height:1.4}
+.hv2 .kt.kt-cards .kt-review{margin:0;background:var(--g-tint);border-color:#CFE6D3;display:flex;flex-direction:column;gap:10px}
+.hv2 .kt-review blockquote{margin:0;color:var(--ink);font-size:.95rem;line-height:1.55}
+.hv2 .kt-review figcaption{margin-top:auto;font-size:.85rem;color:var(--ink-2)}
+.hv2 .kt-review figcaption b{color:var(--ink);font-weight:600}
+.hv2 .kt-review a{color:var(--g-dark);font-weight:600;text-decoration:underline;text-underline-offset:2px}
 .hv2 .kt{border-block:1px solid var(--line);background:#fff;padding-block:30px}
 .hv2 .kt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 32px;align-items:start}
 .hv2 .kt h2{grid-column:1/-1;align-self:center;font-size:1.35rem;letter-spacing:-.01em;text-transform:none;color:var(--ink);font-weight:800;padding:0;border-left:3px solid var(--g);padding-left:12px} .hv2 .kt h2.x{font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--g-dark);font-weight:800;padding-top:4px}
