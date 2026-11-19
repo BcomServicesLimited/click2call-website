@@ -3081,13 +3081,22 @@ When a call comes in, the Web Phone rings and shows the caller's number with **A
 
 - **Hold:** puts the caller on hold. Tap again to return.
 
-- **Transfer:** type a number in Transfer to… and press Transfer. This is a blind transfer: the call goes straight to the new number and your part of the call ends.
+- **Transfer:** type a number in Transfer to…, then choose:
+
+- **Transfer** hands the call straight over (blind transfer).
+- **Talk first** puts your caller on hold and rings the other person so you can introduce the call. Press **Complete transfer** to connect them, or **Cancel** to go back to your caller.
+
+- **Call waiting:** if another call comes in while you're talking, you hear a soft beep and see it under your call. **Hold & answer** puts your first caller on hold, and **Swap** moves between the two calls. A third call gets a busy signal.
 
 - **Call timer and connection warning:** the timer shows how long you've been talking. A Poor connection warning appears if your internet is dropping audio.
 
 #### Recents
 
 The **Recents** tab lists your calls with the time and duration, like the call list on a mobile. Missed calls show in red, and a red badge counts any you haven't seen. Tap the phone icon to call back, or tap the number to put it on the keypad first. **Clear** empties the list. Recents only shows calls made or received in this browser on this computer. For your full account history, see call records in the portal.
+
+#### Click-to-call from other apps
+
+In Chrome or Edge, open **Settings** and press **Use Web Phone for phone number links**, then choose Allow. Phone numbers you click in your CRM, email or on websites then open in the Web Phone with the number on the keypad, ready to dial. It never dials by itself. If you've installed the app, links open in the app window.
 
 #### Settings
 
@@ -3193,9 +3202,9 @@ Please read these before relying on the Web Phone as your only phone.
 
 - **Not for emergency calls.** Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.
 
-- **One call at a time.** While you're on a call, a second incoming call gets a busy signal and shows as missed in Recents. There's no call waiting or conferencing in the Web Phone.
+- **Two calls at most, no conferencing.** You can have one call active and one on hold or waiting. A third call gets a busy signal and shows as missed in Recents. There are no three-way conference calls.
 
-- **Blind transfer only.** You can't speak to the other person before handing the call over (no attended or consult transfer).
+- **Click-to-call needs Chrome or Edge on a computer.** Safari and phones can't make the Web Phone the app for phone number links.
 
 - **Recents is per device.** It only shows calls made or received in that browser on that computer, and clearing your browser data removes it. Your full call history is in the portal.
 
