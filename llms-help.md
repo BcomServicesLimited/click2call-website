@@ -3104,7 +3104,7 @@ Click the gear icon to:
 
 - **Choose your microphone and speaker,** for example a headset rather than the laptop speakers. Choosing a speaker works in Chrome and Edge. Safari and Firefox always use your computer's default output.
 
-- **Turn on Do not disturb.** Incoming calls get a busy signal and are logged as missed, so your busy settings take over. An orange tag shows while it's on.
+- **Turn on Do not disturb.** Incoming calls go straight to your voicemail or forward rules instead of ringing, and are logged as missed. An orange tag shows while it's on.
 
 - **Install the app** and see the steps to open it at login (below).
 
@@ -3202,7 +3202,7 @@ Please read these before relying on the Web Phone as your only phone.
 
 - **Not for emergency calls.** Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.
 
-- **Two calls at most, no conferencing.** You can have one call active and one on hold or waiting. A third call gets a busy signal and shows as missed in Recents. There are no three-way conference calls.
+- **Two calls at most, no conferencing.** You can have one call active and one on hold or waiting. A third call goes to your voicemail or forward rules and shows as missed in Recents. There are no three-way conference calls.
 
 - **Click-to-call needs Chrome or Edge on a computer.** Safari and phones can't make the Web Phone the app for phone number links.
 
@@ -3221,6 +3221,22 @@ Please read these before relying on the Web Phone as your only phone.
 - **Strict workplace networks.** The Web Phone uses secure web connections and switches to a relay automatically when a firewall blocks direct audio, so it works on most business networks. Very locked-down networks may need IT to allow `phone.click2call.com.au` and `gw1.webphone.click2call.com.au`.
 
 - **Saved sign-in is per browser.** Each browser, and the iPhone home-screen app, keeps its own sign-in, so you sign in once in each.
+
+### Built-in diagnostics
+
+Open **Settings → Diagnostics & self-test** to see exactly what the Web Phone is doing:
+
+- **Status:** whether it's connected and signed in, plus microphone and notification permissions, Do not disturb, and your browser.
+
+- **Run self-test:** checks your microphone (with a sound level), the connection to our gateway, your sign-in, and both network paths: direct, and the relay used on strict firewalls.
+
+- **Last call:** round-trip time, jitter, packet loss, codec, and whether the audio went direct or through the relay.
+
+- **Recent events:** the last 100 sign-in and call events, such as `REGISTER → 200 OK` or `INVITE → 486 Busy`. Tick Include full SIP messages to see the full SIP text. They're kept in your browser for this session only, and passwords are never recorded.
+
+- **Copy report:** copies all of the above, ready to paste into an email to support@click2call.com.au.
+
+The Web Phone also looks after itself. It reconnects as soon as your internet comes back or your computer wakes. It keeps a call going when you switch networks, for example from Wi-Fi to your phone's hotspot. It switches microphones if you unplug a headset mid-call. And it retries a call once by itself if it fails on a network blip before ringing.
 
 ### Troubleshooting
 
