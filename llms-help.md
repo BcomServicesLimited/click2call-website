@@ -3114,6 +3114,24 @@ Click the gear icon to:
 
 With this ticked, the Web Phone opens straight to the keypad each time. Your password is encrypted and saved only in this browser on this computer, and never on our servers. The encryption key can't be copied off the computer, so copying the browser's files elsewhere won't reveal your password. Like an unlocked desk phone, anyone using that computer can make calls, so untick it on shared computers. If your SIP password changes, the Web Phone asks you to sign in again.
 
+### Ring me when the app is closed
+
+Turn on **Settings → Ring me when the app is closed** and calls reach you even when the Web Phone isn't open. You get an **Incoming call** notification with **Answer** and **Decline**. Press Answer and the Web Phone opens and connects the call by itself.
+
+- **Turn on Keep me signed in first,** so the phone can open straight into the call.
+
+- **Your browser must be running.** On Windows and Mac, that means Chrome or Edge is open, even if the Web Phone isn't. On Android it works even when Chrome is closed. On iPhone it only works from the home-screen app, as a notification.
+
+- If no one answers within about 45 seconds, the call goes to your voicemail or forward rules. If the caller hangs up first, you get a Missed call notification.
+
+- Use **Send a test notification** in Settings to check it works on each device.
+
+- **How it works:** while it's on, our gateway keeps your line signed in for you. It stores only an encrypted hash of your SIP password, never the password itself, and deletes it when you turn the feature off or sign out.
+
+- **Forwarding when it's on:** your line always shows as online, so Forward when Offline won't trigger. Use Forward on No Answer instead.
+
+**On a Mac, check notifications are allowed:** open **System Settings → Notifications → Google Chrome** (and Google Chrome Helper (Alerts) if listed), turn on **Allow notifications**, and set the style to **Alerts** so the call stays on screen until you answer. A **Focus** or Do Not Disturb mode also hides them. Without this, Chrome receives the call but macOS doesn't show it. On Windows, check **Settings → System → Notifications** is on for Chrome or Edge.
+
 ### Install it on your computer and open it at login
 
 The Web Phone only rings while it's open, so the best desktop setup is to install it as an app and have it open automatically when you log in. It then runs in its own window with its own Dock or taskbar icon, like any other app.
@@ -3194,7 +3212,7 @@ The Web Phone signs out automatically when you close it. If your computer goes t
 
 Please read these before relying on the Web Phone as your only phone.
 
-- **It only rings while it's open and connected.** If the window or tab is closed, the computer is asleep or shut down, or the internet is down, calls can't ring it. Use Forward when Offline or the Basic Edition app as a backup.
+- **Calls ring it while it's open, or with Ring me when the app is closed on, as long as the browser is running.** If the computer is asleep, shut down or offline, calls can't reach it. Use Forward on No Answer or the Basic Edition app as a backup.
 
 - **On iPhone and Android it only rings while open on screen.** Phones pause web apps in the background and when locked. There's no lock-screen ringing, so use the Basic Edition app to receive calls on a mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.
 

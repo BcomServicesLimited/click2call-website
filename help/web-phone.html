@@ -371,6 +371,18 @@
     <h3 class="text-lg font-bold text-gray-900 mt-6 mb-2">Keep me signed in</h3>
     <p class="text-gray-600 leading-relaxed mb-4">With this ticked, the Web Phone opens straight to the keypad each time. Your password is encrypted and saved only in this browser on this computer, and never on our servers. The encryption key can't be copied off the computer, so copying the browser's files elsewhere won't reveal your password. Like an unlocked desk phone, anyone using that computer can make calls, so untick it on shared computers. If your SIP password changes, the Web Phone asks you to sign in again.</p>
 
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Ring me when the app is closed</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Turn on <strong>Settings &rarr; Ring me when the app is closed</strong> and calls reach you even when the Web Phone isn't open. You get an <strong>Incoming call</strong> notification with <strong>Answer</strong> and <strong>Decline</strong>. Press Answer and the Web Phone opens and connects the call by itself.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6">
+      <li><strong>Turn on <em>Keep me signed in</em> first,</strong> so the phone can open straight into the call.</li>
+      <li><strong>Your browser must be running.</strong> On Windows and Mac, that means Chrome or Edge is open, even if the Web Phone isn't. On Android it works even when Chrome is closed. On iPhone it only works from the home-screen app, as a notification.</li>
+      <li>If no one answers within about 45 seconds, the call goes to your voicemail or forward rules. If the caller hangs up first, you get a <em>Missed call</em> notification.</li>
+      <li>Use <strong>Send a test notification</strong> in Settings to check it works on each device.</li>
+      <li><strong>How it works:</strong> while it's on, our gateway keeps your line signed in for you. It stores only an encrypted hash of your SIP password, never the password itself, and deletes it when you turn the feature off or sign out.</li>
+      <li><strong>Forwarding when it's on:</strong> your line always shows as online, so <em>Forward when Offline</em> won't trigger. Use <em>Forward on No Answer</em> instead.</li>
+    </ul>
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>On a Mac, check notifications are allowed:</strong> open <strong>System Settings &rarr; Notifications &rarr; Google Chrome</strong> (and <em>Google Chrome Helper (Alerts)</em> if listed), turn on <strong>Allow notifications</strong>, and set the style to <strong>Alerts</strong> so the call stays on screen until you answer. A <strong>Focus</strong> or Do Not Disturb mode also hides them. Without this, Chrome receives the call but macOS doesn't show it. On Windows, check <strong>Settings &rarr; System &rarr; Notifications</strong> is on for Chrome or Edge.</div>
+
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Install it on your computer and open it at login</h2>
     <p class="text-gray-600 leading-relaxed mb-4">The Web Phone only rings while it's open, so the best desktop setup is to install it as an app and have it open automatically when you log in. It then runs in its own window with its own Dock or taskbar icon, like any other app.</p>
     <h3 class="text-lg font-bold text-gray-900 mt-6 mb-2">Google Chrome (Mac or Windows)</h3>
@@ -427,7 +439,7 @@
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Limitations</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Please read these before relying on the Web Phone as your only phone.</p>
     <ul class="list-disc pl-6 space-y-3 text-gray-600 leading-relaxed mb-6">
-      <li><strong>It only rings while it's open and connected.</strong> If the window or tab is closed, the computer is asleep or shut down, or the internet is down, calls can't ring it. Use <em>Forward when Offline</em> or the Basic Edition app as a backup.</li>
+      <li><strong>Calls ring it while it's open, or with <em>Ring me when the app is closed</em> on, as long as the browser is running.</strong> If the computer is asleep, shut down or offline, calls can't reach it. Use <em>Forward on No Answer</em> or the Basic Edition app as a backup.</li>
       <li><strong>On iPhone and Android it only rings while open on screen.</strong> Phones pause web apps in the background and when locked. There's no lock-screen ringing, so use the Basic Edition app to receive calls on a mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.</li>
       <li><strong>On iPhone and Android, call audio plays through the loudspeaker.</strong> Mobile browsers don't let web pages switch between the earpiece and the speaker. For private calls on a mobile, use wired or Bluetooth earphones (the phone switches to them automatically), or the Basic Edition app, which has a normal speaker button.</li>
       <li><strong>Not for emergency calls.</strong> Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.</li>
