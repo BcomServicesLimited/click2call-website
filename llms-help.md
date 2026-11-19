@@ -3145,7 +3145,7 @@ Firefox can't install web apps. If you use Firefox, keep the Web Phone in a pinn
 
 On Android, open the page in Chrome, tap the **⋮** menu and choose **Add to Home screen** or **Install app**.
 
-**Important for mobiles:** phones pause web apps as soon as you switch away or lock the screen, so the Web Phone on a mobile only rings while it's open on screen. It's great for making calls on the go. To receive calls on your mobile, use the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone), which rings even when your phone is locked.
+**Important for mobiles:** phones pause web apps as soon as you switch away or lock the screen, so the Web Phone on a mobile only rings while it's open on screen. Call audio also plays through the loudspeaker on phones (browsers can't switch to the earpiece), so use earphones for private calls. It's handy for quick calls on the go. To receive calls on your mobile, use the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone), which rings even when your phone is locked.
 
 ### Recommended setups
 
@@ -3188,6 +3188,8 @@ Please read these before relying on the Web Phone as your only phone.
 - **It only rings while it's open and connected.** If the window or tab is closed, the computer is asleep or shut down, or the internet is down, calls can't ring it. Use Forward when Offline or the Basic Edition app as a backup.
 
 - **On iPhone and Android it only rings while open on screen.** Phones pause web apps in the background and when locked. There's no lock-screen ringing, so use the Basic Edition app to receive calls on a mobile. iPhone may also ask for microphone permission again after the app has been closed for a while.
+
+- **On iPhone and Android, call audio plays through the loudspeaker.** Mobile browsers don't let web pages switch between the earpiece and the speaker. For private calls on a mobile, use wired or Bluetooth earphones (the phone switches to them automatically), or the Basic Edition app, which has a normal speaker button.
 
 - **Not for emergency calls.** Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.
 
