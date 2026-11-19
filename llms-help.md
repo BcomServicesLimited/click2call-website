@@ -3096,7 +3096,7 @@ The **Recents** tab lists your calls with the time and duration, like the call l
 
 #### Click-to-call from other apps
 
-In Chrome or Edge, open **Settings** and press **Use Web Phone for phone number links**, then choose Allow. Phone numbers you click in your CRM, email or on websites then open in the Web Phone with the number on the keypad, ready to dial. It never dials by itself. If you've installed the app, links open in the app window.
+In Chrome or Edge, open **Settings** and press **Use Web Phone for phone number links**, then choose Allow. When you click a phone number in your CRM, email or on a website, a small Call …? screen opens. Press **Call** and the call happens in a small pop-up window that closes itself when you hang up, and the call is added to Recents. It never dials until you press Call. If you're not signed in on that computer, the full Web Phone opens instead with the number ready.
 
 #### Settings
 
