@@ -104,62 +104,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why does simPRO need port 5060 and not 5061 for Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "simPRO's softphone runs in the browser and reaches Click2Call through a WebRTC-to-SIP gateway, which converts the browser connection into ordinary SIP over UDP or TCP. Port 5061 is the encrypted TLS port and that gateway does not use it, so registration never completes and the softphone reports Register failed: Disconnected. Set the Server Address to sip.click2call.com.au:5060."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which password does the simPRO VoIP integration need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The line password, found in the Click2Call portal under Voice then Line Manager in the Password column, revealed with the View control. It is not the password used to log in to the Click2Call portal. Each phone number has its own separate SIP password, and using the portal login password instead is the most common setup mistake."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What username format does simPRO need for Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The phone number in full international format with no plus sign and no spaces, for example 61755501234 rather than 07 5550 1234. Leave the optional SIP Username field blank, because Click2Call uses the number as both the username and the authorisation name."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are calls made through simPRO still recorded and transcribed by Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided call recording is switched on for that number. Recording is disabled by default and must be enabled per number under Voice, the line, then Other Settings and Call Recording. Recordings, AI transcripts and sentiment analysis then appear under Account then Records alongside every other call. Australian law requires all parties to be aware the call is being recorded."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use a third-party softphone with the simPRO VoIP integration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. simPRO state that the VoIP integration only supports their included softphone and that third-party softphones are not supported. You can still run the Click2Call softphone app alongside simPRO on the same number, so calls ring in both places."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a SIP trunk to use simPRO, or ordinary phone numbers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ordinary phone numbers. simPRO registers as a device against each number, the same way a desk phone or softphone does, so a SIP trunk is not required. SIP trunks are for connecting a physical PBX, which simPRO is not."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>

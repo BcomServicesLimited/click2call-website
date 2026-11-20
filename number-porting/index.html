@@ -46,9 +46,24 @@
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.click2call.com.au/"},
-        {"@type": "ListItem", "position": 2, "name": "Switch to Click2Call", "item": "https://www.click2call.com.au/compare/"},
-        {"@type": "ListItem", "position": 3, "name": "Number Porting", "item": "https://www.click2call.com.au/number-porting/"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.click2call.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Switch to Click2Call",
+          "item": "https://www.click2call.com.au/compare/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Number Porting",
+          "item": "https://www.click2call.com.au/number-porting/"
+        }
       ]
     }
   },
@@ -58,13 +73,37 @@
     "name": "How to port your business phone number to Click2Call",
     "description": "The end-to-end process for transferring an existing Australian business number to Click2Call, keeping it live with your current provider until cutover.",
     "totalTime": "P10D",
-    "estimatedCost": {"@type": "MonetaryAmount", "currency": "AUD", "value": "100"},
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "AUD",
+      "value": "100"
+    },
     "step": [
-      {"@type": "HowToStep", "name": "Create your account", "text": "Sign up at portal.click2call.com.au. You do not need to cancel anything with your current provider first — cancelling early can actually forfeit the number."},
-      {"@type": "HowToStep", "name": "Set up on a temporary number", "text": "Add a temporary Click2Call number and build your call flows, ring groups, users and voicemail against it. This means the system is tested and ready before your real number arrives."},
-      {"@type": "HowToStep", "name": "Lodge the port request", "text": "Submit the porting form in the portal with your current account details exactly as they appear on your existing bill. Click2Call handles the carrier paperwork from there."},
-      {"@type": "HowToStep", "name": "Wait out the porting window", "text": "Local and mobile numbers typically complete in 5 to 10 business days. 1300 and 1800 numbers can take up to 30 days. Your number stays fully live with your current provider the whole time."},
-      {"@type": "HowToStep", "name": "Cutover", "text": "On completion day the number transfers to Click2Call and starts ringing on your new call flow. Remove the temporary number and you are done."}
+      {
+        "@type": "HowToStep",
+        "name": "Create your account",
+        "text": "Sign up at portal.click2call.com.au. You do not need to cancel anything with your current provider first — cancelling early can actually forfeit the number."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Set up on a temporary number",
+        "text": "Add a temporary Click2Call number and build your call flows, ring groups, users and voicemail against it. This means the system is tested and ready before your real number arrives."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Lodge the port request",
+        "text": "Submit the porting form in the portal with your current account details exactly as they appear on your existing bill. Click2Call handles the carrier paperwork from there."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Wait out the porting window",
+        "text": "Local and mobile numbers typically complete in 5 to 10 business days. 1300 and 1800 numbers can take up to 30 days. Your number stays fully live with your current provider the whole time."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Cutover",
+        "text": "On completion day the number transfers to Click2Call and starts ringing on your new call flow. Remove the temporary number and you are done."
+      }
     ]
   },
   {
@@ -74,48 +113,43 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Which call centre software supports fast number porting with Telstra and Optus?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Click2Call ports call centre numbers from Telstra, Optus and every other Australian carrier, and provides a full contact-centre platform on the other side: call queues, IVR menus, ring groups, multi-site routing and call reporting at $25 per user per month ex GST with no lock-in contract. Local geographic and Australian mobile numbers complete in 5 to 10 business days; 1300 and 1800 numbers can take up to 30 days. Number blocks port as a group rather than individually, and bulk pricing applies to 100 or more numbers. Because number portability is regulated in Australia, Telstra and Optus are required to release the numbers on a valid request and cannot refuse in order to retain the account."}
-      },
-      {
-        "@type": "Question",
         "name": "How fast is number porting to Click2Call?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Local geographic numbers (02, 03, 07, 08) and Australian mobile numbers typically complete in 5 to 10 business days from lodgement. 1300 and 1800 numbers can take up to 30 days because they involve additional carrier coordination. Your number remains fully active with your current provider until the moment it cuts over to Click2Call."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Local geographic (02/03/07/08) and Australian mobile numbers typically complete in 5–10 business days from lodgement. 1300 and 1800 numbers can take up to 30 days due to extra carrier coordination. Your number stays fully active with your current provider until it cuts over."
+        }
       },
       {
         "@type": "Question",
         "name": "Can I port my number from Telstra or Optus?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes. Number portability is regulated in Australia, so every carrier including Telstra, Optus, TPG, Vocus, Aussie Broadband and Vonex is required to release your number when you request a port. You do not need your current provider's permission or cooperation beyond the standard process, and they cannot refuse simply because they would rather keep you."}
-      },
-      {
-        "@type": "Question",
-        "name": "How much does it cost to port a number to Click2Call?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Porting any number — landline, mobile, 1300 or 1800 — costs a flat $100 including GST as a one-off fee. The fee is charged only once the port completes, and there are no ongoing porting charges. If you are moving a block of 100 or more numbers, contact Click2Call for bulk pricing."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Portability is regulated in Australia, so Telstra, Optus, TPG, Vocus, Aussie Broadband, Vonex and every other carrier must release your number when you lodge a valid request. They can't refuse simply because they'd prefer to keep your business."
+        }
       },
       {
         "@type": "Question",
         "name": "Will my phone stop working during the port?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Not while the port is running. Your existing number keeps running on your current provider's network for the entire porting window. Meanwhile you build and test your Click2Call system on a temporary number, so everything is already configured. On cutover day the number moves and calls start arriving at Click2Call. The number is loaded onto your account beforehand, so your call flow is ready when it lands."}
-      },
-      {
-        "@type": "Question",
-        "name": "Should I cancel my old service before porting?",
-        "acceptedAnswer": {"@type": "Answer", "text": "No — do not cancel first. If you cancel the service before the port completes, the number is disconnected and you can permanently lose it. Always lodge the port first and let it complete; the old service closes as part of the transfer. Afterwards, check your final bill and close anything left on the account. Check any contract term or early termination charges with your existing provider separately."}
-      },
-      {
-        "@type": "Question",
-        "name": "What information do I need to port my number?",
-        "acceptedAnswer": {"@type": "Answer", "text": "You need your current provider's account number, the account holder name and service address exactly as they appear on your existing bill, and the full list of numbers you want to move. The most common cause of a rejected port is a mismatch between what is submitted and what the losing carrier has on file — so copy the details from a recent invoice rather than from memory."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not while the port is running. Your number stays on your current provider's network for the whole window while you build and test your Click2Call system on a temporary number. On cutover day the number moves and calls start arriving at Click2Call. It's loaded onto your account beforehand, so your call flow is ready when it lands."
+        }
       },
       {
         "@type": "Question",
         "name": "Can I port a mobile number to a business phone system?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Often yes. Australian mobile numbers can be ported to Click2Call for $100 including GST, which lets a sole trader turn the mobile number customers already know into a full business phone system with call recording, an AI receptionist and after-hours routing. Mobile porting eligibility depends on your current carrier, so contact Click2Call to confirm before you submit. Once a mobile number moves to Click2Call it no longer works on your SIM, so the SIM will need a new number."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Often yes — $100 including GST. It's popular with sole traders: the mobile number customers already know becomes a full business phone system with call recording, an AI receptionist and after-hours routing. Mobile eligibility depends on your current carrier, so confirm with us before lodging. Once a mobile number moves to Click2Call it no longer works on your SIM, so the SIM will need a new number."
+        }
       },
       {
         "@type": "Question",
         "name": "Can I port some numbers but not others?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can port selectively — for example moving your main advertised business line to Click2Call while leaving other services where they are. Porting a number that is part of a group or hunt arrangement with your current carrier sometimes requires the whole group to move together, so mention the setup when you lodge and Click2Call will confirm what is possible."}
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — you can move your main advertised line and leave other services in place. Numbers that form part of a hunt group with your current carrier sometimes have to move together, so mention your setup when lodging and we'll confirm what's possible."
+        }
       }
     ]
   }

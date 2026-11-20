@@ -110,54 +110,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Do I need to write any code to connect Retell AI to a phone number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Retell agents are built in the Retell dashboard and the Click2Call side is a single dropdown selection, plus the line's username and password in Retell. This is one of the no-code providers, unlike OpenAI and xAI which both require a webhook endpoint you host."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which SIP address does Click2Call send calls to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "sip:sip.retellai.com with TCP transport. This is pre-configured in the Retell AI connection profile, so there is nothing to type in Click2Call. Calls the agent makes go the other way, to sip.click2call.com.au, signed in with the line's username and password."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to buy a phone number from Retell?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Retell supports bringing your own number, which is the point of this integration. Import your Click2Call Australian number into Retell instead of purchasing one of theirs, then assign your agent to it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is my Australian number better than a Retell-supplied one?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Retell does not sell Australian geographic numbers, so a bring-your-own-number setup is usually the only way to have an AI agent answer a local Australian landline or a 1300 number. Click2Call supplies the Australian number and the porting, and Retell supplies the agent."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are calls still recorded and transcribed by Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis all run on the Click2Call side in addition to whatever Retell logs, with the data stored in Australia."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>

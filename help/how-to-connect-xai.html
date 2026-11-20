@@ -129,46 +129,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Do I need to write code to connect xAI to a phone number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The xAI console creates the voice agent and registers the phone number, but xAI only answers a call when your own webhook receives the realtime.call.incoming event and opens a WebSocket to wss://api.x.ai/v1/realtime with the call_id. If you want an agent configured entirely in a dashboard, ElevenLabs, Retell or Synthflow are the no-code options and Click2Call supports all three."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does Direct SIP mean in xAI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It tells xAI that the phone number belongs to you and arrives over your own SIP connection from Click2Call, rather than being a number xAI provides. In the xAI API it is origin byo_trunk. xAI does not provide Australian numbers, so this is how an Australian number reaches a Grok voice agent."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does xAI use port 5061 and TLS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "xAI takes SIP calls over TLS on port 5061 with encrypted audio. The built-in xAI profile already sends calls to sip:sip.voice.x.ai:5061;transport=tls, so there is nothing to type; turn on Force calls to use Secure Encrypted RTP for the number."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are calls still recorded and transcribed by Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side in addition to anything xAI logs, with the data stored in Australia."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>

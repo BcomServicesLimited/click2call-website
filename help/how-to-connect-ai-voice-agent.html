@@ -107,62 +107,6 @@
         "@type": "Answer",
         "text": "With a built-in profile (Eleven Labs AI, OpenAI, Retell AI and the others), Click2Call sends the call straight to the platform. If the platform doesn't answer, the call is not failed over to voicemail or another number. If continuity matters, connect the platform with SIP Registration instead."
       }
-    },
-    {
-      "@type": "Question",
-      "name": "What IP address does my AI provider need to allowlist for Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "52.63.154.234. That is the address outbound INVITEs leave the Click2Call switch from when a call is delivered to an external SIP endpoint, whether through a built-in provider profile or an Inbound SIP URI Route. Put it on the provider's IP allowlist, ACL or access control list. Click2Call cannot present a username and password on an outbound INVITE, so allowlisting is the only way a provider can trust the call; if they challenge it for credentials with a 407, the call fails. Since the October 2026 platform upgrade this is the same address sip.click2call.com.au resolves to. If your provider was set up with an older address, replace it with this one."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which AI voice platforms can connect to a Click2Call number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Click2Call includes ready-made connection profiles for Eleven Labs AI, OpenAI, xAI, Retell AI, VAPI AI Integration, Synthflow, LiveKit Cloud, Cloudonix and Twilio Integration, so connecting those is a matter of selecting the provider from the Connection Type list and entering the SIP URI they supply. Any other platform that supports SIP registration can be connected using the generic SIP Registration connection type, with the phone number as the username and the line password from Line Manager."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What username and password does the AI platform use?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The username and authorisation name are both the Click2Call phone number in full international format, for example 61721402648. The password is the SIP password for that line, revealed in Line Manager under the Password column using the View control. Host and outbound proxy are both sip.click2call.com.au. Use TLS on port 5061, or UDP or TCP on port 5060, with DTMF set to RFC 2833."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do I keep getting 407 Proxy Authentication Required?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A repeated 407 almost always means the profile is set to SIP Peering (Direct IP) when it should be SIP Registration. Peering expects the two platforms to trust each other by IP address and involves no credentials, whereas a username and password against sip.click2call.com.au is a registration setup. Change the Connection Type to SIP Registration and configure the AI platform to register in as the number, the same way a softphone does."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Calls go to Click2Call voicemail instead of the AI agent. Why?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "There are three usual causes. The AI platform may not be registered, leaving Click2Call nowhere to deliver the call. The number may still be assigned to the Default profile rather than the one you configured, so your settings are not applied. Or an Inbound SIP URI Route may be set on the profile, which overrides delivery to registered endpoints and forces the call to that URI instead. Do not set a URI route on a profile that uses registration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does my after-hours routing trigger at the wrong time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Time Zone setting on the profile is wrong. Every time-based behaviour on the account reads it, including business hours, after-hours call routing and call queue time schedules. A profile left on a different region will open and close the phones at the wrong local time. Set it to the region the business actually operates in."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does the number keep call recording and transcription when an AI agent answers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Calls answered by an AI agent are recorded, transcribed, summarised and sentiment-scored in the same way as any other call on the account, provided Recording Enabled is ticked on the profile. Those transcripts are what most customers use to review and improve what their agent says to callers."
-      }
     }
   ]
 }

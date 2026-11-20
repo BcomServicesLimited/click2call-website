@@ -117,34 +117,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do I need to write any code to connect ElevenLabs to a phone number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. ElevenLabs agents are built entirely in the ElevenLabs dashboard, and the Click2Call side is a single dropdown selection plus the line's username and password for calls the agent makes. This makes ElevenLabs one of the quickest AI voice providers to get running on an Australian number — unlike OpenAI or xAI, which both require a webhook endpoint you host."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "What number format does ElevenLabs expect?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "E.164, meaning the country code with a leading plus — +61355551234 rather than 03 5555 1234. Click2Call sends numbers in +E.164 automatically, and the number you import into ElevenLabs must match exactly or the call will not be matched to an agent. The SIP Trunk Username for outbound calls is different: the number as Line Manager shows it, with no plus, for example 61355551234."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which SIP address does Click2Call send calls to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "sip:sip.rtc.elevenlabs.io:5060;transport=tcp. This is pre-configured in the Eleven Labs AI connection profile, so there is nothing to type. For calls the agent makes, ElevenLabs sends them to sip.click2call.com.au over TCP, signed in with the line's username and password."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I still record and transcribe calls the agent answers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the profile. Calls answered by the ElevenLabs agent are recorded, transcribed, summarised and sentiment-scored by Click2Call, with the data stored in Australia."
+        "text": "E.164 — +61355551234 , not 03 5555 1234 . Click2Call sends +E.164 automatically, so import it that way. The SIP Trunk Username is different: the number as Line Manager shows it, with no plus."
       }
     },
     {
@@ -152,7 +128,7 @@
       "name": "Can I use my existing business number?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Port the number to Click2Call first, then assign it to the ElevenLabs profile. Local and mobile numbers typically port in 5 to 10 business days. Most businesses test on a new number and move the main number across once the agent behaves the way they want."
+        "text": "Yes — port it across first, then assign it to the profile."
       }
     }
   ]

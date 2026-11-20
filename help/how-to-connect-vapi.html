@@ -105,54 +105,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Where do I find my Vapi Assistant ID?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open the assistant in the Vapi dashboard — the ID is shown with the assistant and is a UUID. You can also list assistants with the GET /assistant API endpoint. Paste that value into the VAPI Assistant ID field on the Click2Call profile; the field is mandatory and the profile will not save without it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to write any code to connect Vapi to a phone number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not for the call routing. The assistant is built in the Vapi dashboard and Click2Call needs only the Assistant ID. You would only write code if you want custom tools or a server URL webhook for your assistant, which is optional."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which SIP address does Click2Call send calls to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "sip:assistant_id@sip.vapi.ai:5060, built automatically from the Assistant ID you paste in. Vapi does not require SIP registration or authentication for its hosted SIP endpoint, so there is nothing else to configure."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to buy a phone number from Vapi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Vapi does not sell Australian geographic numbers, so bringing a Click2Call number is normally the only way to have a Vapi assistant answer a local Australian landline or a 1300 number."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use the Vapi EU region?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The built-in Click2Call profile routes to the US host, sip.vapi.ai. Vapi also runs an EU host, sip.eu.vapi.ai. If you need calls to terminate in the EU, contact Click2Call support and we will configure a custom SIP route instead of using the built-in profile."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>

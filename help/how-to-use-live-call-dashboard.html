@@ -95,18 +95,22 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Why does the Queued Calls panel say no queues enabled?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The queued calls table only populates once at least one call queue is switched on. If no line has a queue enabled there is nothing for it to display, and it shows a no queues enabled message instead. Enable a queue on a line and the panel begins showing waiting callers."}},
-    {"@type": "Question", "name": "Why is Team Status empty?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Team Status shows registered team members matching the current filter. If it reports no team activity, either no users are registered on the account yet, or the devices for those users are not currently registered to the platform. Check that softphones or desk phones are online."}},
-    {"@type": "Question", "name": "Does the dashboard update on its own?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Live updates run automatically while the dashboard is open and the last updated time is displayed. A Refresh control is available if you want to force an immediate update."}},
-    {"@type": "Question", "name": "Can I display the dashboard on a TV in the office?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Select Open TV View for a full-screen wallboard version intended for a monitor on the office floor, so the team can see calls in progress and callers waiting without opening the portal. Live updating continues in this view."}},
-    {"@type": "Question", "name": "What is the difference between the dashboard and Reports?",
-     "acceptedAnswer": {"@type": "Answer", "text": "The dashboard is real time — what is happening right now and totals for the selected period. Reports and Records are historical: they let you filter, generate and export past call and billing data. Use the dashboard to manage the day as it happens, and Reports to analyse it afterwards."}},
-    {"@type": "Question", "name": "Is there an extra charge for the dashboard?",
-     "acceptedAnswer": {"@type": "Answer", "text": "No. The Call Activity Dashboard and the TV wallboard view are included with a standard Cloud PBX user at $25 per user per month ex GST. There is no supervisor licence, analytics add-on or separate contact centre tier."}}
+    {
+      "@type": "Question",
+      "name": "Why does the Queued Calls panel say no queues enabled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because no line has a call queue switched on yet — there is nothing to display. Enable a queue and the panel starts showing waiting callers. See Setting Up a Call Queue ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Team Status empty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Either no users are registered on the account yet, or their devices are not currently registered to the platform. Check that softphones or desk phones are online — see Setting Up a Softphone ."
+      }
+    }
   ]
 }
 </script>

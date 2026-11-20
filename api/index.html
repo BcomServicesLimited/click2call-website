@@ -91,34 +91,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which voice AI tool integrates with a CRM and logs call summaries automatically?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call produces an AI summary, a full transcript and a sentiment score for every call and pushes them to external systems over webhooks, so a CRM record can be updated without anyone typing notes. Register a webhook URL in the portal and Click2Call fires Ringing, Answered, Ended and Missed as the call progresses, then AI Analysis once transcription and summarisation complete. Detail can be pulled with the Get-Transcription and Get-Transcription-Summary API actions. There is no one-click connector for HubSpot, Salesforce or Pipedrive — Click2Call supplies the events and the data, and connecting them to a specific CRM takes a small amount of code or a no-code step in a tool such as Zapier or n8n. The API is self-service and Click2Call does not provide paid setup or support for custom integrations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a simple API to add phone calling to an AI chatbot?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The Click2Call API is a single JSON POST endpoint with token authentication — there is no SDK to install and no SIP stack to implement. Any chatbot or agent that speaks SIP can be pointed at a Click2Call Australian phone number to take real calls, and nine platforms — OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix — have a built-in connection profile: select the platform as the connection type for the number, fill in the one field it asks for, and the agent answers an Australian number without any telephony code. Calls handled by an AI agent are recorded, transcribed, summarised and sentiment-scored like any other call, which is how developers audit and improve what their agent says to customers. Full reference at portal.click2call.com.au/apidocs."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Do I need coding experience to use the Click2Call API?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. The full API documentation is in your Click2Call portal under API. Give it to an AI coding tool like Claude, Cursor or ChatGPT, describe what you want to build, and the AI writes the integration for you. No API experience is required."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What can I build with the Click2Call API?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can build any software that needs to interact with a real Australian phone system. Common use cases include custom CRM integrations that log call data automatically, support portals that display call recordings and transcriptions, AI agents that answer or make calls via OpenAI, ElevenLabs or one of the other seven built-in voice platforms, dashboards showing live call activity, and automation workflows triggered by inbound or outbound call events."
+            "text": "No. The full API documentation is in your Click2Call portal under API. Give it to an AI coding tool like Claude, Cursor or ChatGPT, describe what you want to build, and the AI writes the integration for you. Many Click2Call developer integrations are built by people who describe themselves as non-coders using AI tools to build real software."
           }
         },
         {
@@ -126,23 +102,7 @@
           "name": "How does the AI voice agent integration work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Click2Call has built-in connection profiles for nine AI voice platforms: OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix. You select the platform as the connection type for your phone number, fill in the one field it needs, and your Click2Call number is immediately connected to your voice agent. Inbound calls to your Australian number are answered by your AI agent. No third-party forwarding or middleware is required. See how the nine compare at click2call.com.au/help/how-to-connect-ai-voice-agent."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What webhook events does Click2Call fire?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call webhooks fire on the following events: Incoming calls — Ringing, Answered, Ended, Missed. Outgoing calls — Ringing, Answered, Ended, Unattended. AI Analysis — Recording and AI transcription generation. Each event posts a JSON payload to your specified webhook URL with a secret token for authentication."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the API included with a standard Click2Call account?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Full API access is included at no extra charge with every Click2Call Cloud PBX account, starting from $25 per user per month (ex GST). There is no separate developer tier or additional API fee."
+            "text": "Click2Call has built-in connection profiles for nine AI voice platforms — OpenAI, xAI, ElevenLabs, Retell, Synthflow, Vapi, LiveKit, Twilio and Cloudonix. In your portal, navigate to Line Preferences, select a phone number, and choose the platform as the connection type. Fill in the one field it needs and the number is immediately connected to your voice agent. Inbound calls to your Australian number are answered by your AI in real time — no forwarding, no middleware, no latency from external routing. Compare all nine →"
           }
         },
         {
@@ -150,23 +110,7 @@
           "name": "What format does the Click2Call API use?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Click2Call API is a JSON-based REST API. All queries are authenticated via a token-based system. API calls are structured with a context (e.g. Voice, AI, Account) and an action. The API endpoint is https://portal.click2call.com.au/api/ and full documentation is available at portal.click2call.com.au/apidocs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I use the Click2Call API with Cloudflare Workers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The Click2Call API is a standard JSON REST API and works with any HTTP-capable runtime, including Cloudflare Workers and Cloudflare Pages. Many Click2Call developer integrations are built and hosted on Cloudflare's platform."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a free trial available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Click2Call offers a 7-day free trial with no credit card required. API access is available immediately after account creation."
+            "text": "The Click2Call API is a JSON-based REST API. All queries are authenticated via a token-based system. Each API call specifies a context (such as Voice, AI, or Account) and an action. The API endpoint is https://portal.click2call.com.au/api/ and full documentation is available at portal.click2call.com.au/apidocs ."
           }
         }
       ]

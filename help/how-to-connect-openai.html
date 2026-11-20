@@ -99,16 +99,14 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I need to write any code to connect OpenAI to a phone number?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Click2Call side is configuration only, but OpenAI's SIP integration requires a webhook endpoint that you host. When a call arrives OpenAI sends a realtime.call.incoming event to your endpoint, and your code must accept the call using the call_id from that event before audio connects. This is different from providers such as ElevenLabs or Retell, where the agent is built in the provider's own dashboard and no webhook is needed."}},
-    {"@type": "Question", "name": "Where do I find my OpenAI Project ID?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Sign in at platform.openai.com and go to Settings, then Project, then General. The Project ID is displayed there and starts with proj_. Paste that value into the OpenAI Project ID field on the Click2Call profile. The field is mandatory and the profile will not save without it."}},
-    {"@type": "Question", "name": "What SIP address does Click2Call send calls to?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Click2Call builds it automatically from your Project ID, in the form sip:project_id@sip.api.openai.com:5061;transport=tls. You do not need to enter a SIP URI yourself — entering the Project ID is enough. Number format is set to +E.164 automatically."}},
-    {"@type": "Question", "name": "Are calls answered by OpenAI still recorded and transcribed?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes, provided Recording Enabled is ticked on the profile. Calls answered by the OpenAI agent are recorded, transcribed, summarised and sentiment-scored on the Click2Call side in the same way as any other call, with the data stored in Australia. This is separate from anything OpenAI logs at their end."}},
-    {"@type": "Question", "name": "Can I use my existing business number?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Port the number to Click2Call first, then assign it to the OpenAI profile. Local geographic and mobile numbers typically port in 5 to 10 business days. Many businesses test on a new number first and move their main number across once the agent behaves the way they want."}}
+    {
+      "@type": "Question",
+      "name": "Can I use my existing business number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — port it across first, then assign it to the profile. Most businesses test on a new number and move the main one once the agent behaves."
+      }
+    }
   ]
 }
 </script>

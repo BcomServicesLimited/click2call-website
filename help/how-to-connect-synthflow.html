@@ -105,54 +105,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Do I need to write any code to connect Synthflow to a phone number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Synthflow assistants are built entirely in the Synthflow dashboard and the Click2Call side is a single dropdown selection. This is one of the no-code providers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which SIP address and port does Click2Call send calls to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "sip:sipin.synthflow.ai:35681 with TCP transport. That is a non-standard port, which is normal for Synthflow — it is pre-configured in the Synthflow connection profile so there is nothing to type."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What number format and codecs does Synthflow expect?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Numbers in +E.164 format, which Click2Call sends automatically. Synthflow recommends G.711 for maximum compatibility, with Opus as an alternative — both are standard on Click2Call trunks, so there is nothing to change."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to buy a phone number from Synthflow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Synthflow supports importing a number from your own SIP trunk using the Custom number type, which is what this integration does. Click2Call supplies the Australian number and Synthflow supplies the assistant."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are calls still recorded and transcribed by Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side in addition to Synthflow's own call log, with data stored in Australia."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>

@@ -95,16 +95,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "What is the difference between a call queue and a ring group?",
-     "acceptedAnswer": {"@type": "Answer", "text": "A ring group rings a set of extensions and, if nobody answers, moves the call on to the next step in the call flow. A call queue holds the caller — they wait, hearing your music and announcements, until an agent becomes free. Use a ring group when you want a call answered or passed along quickly. Use a queue when calls arrive faster than the team can answer them and you would rather callers waited than got voicemail."}},
-    {"@type": "Question", "name": "Why is the BLF option greyed out or ineffective?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Support for BLF monitoring and call pickup directly from the queue requires the Ring All strategy. If a different queue strategy is selected, the option will not take effect. Change the strategy to Ring All if you want staff to see waiting calls on their handset keys and pick them up."}},
-    {"@type": "Question", "name": "Can a queue run only during business hours?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each queue has a Time Schedule setting. Leave it as At all times for the queue to be permanently active, or select a schedule so the queue applies only during your opening hours. Outside those hours the call follows the rest of the call flow instead, which is normally an after-hours greeting or voicemail."}},
-    {"@type": "Question", "name": "What happens when the queue reaches its maximum length?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Callers beyond the maximum are not placed in the queue and follow the queue exit path instead. Setting Maximum Length to 0 makes the queue unlimited. It is usually better to set a realistic limit with a sensible exit, such as voicemail, than to let a queue grow to a length no caller will wait out."}},
-    {"@type": "Question", "name": "Do queued calls get recorded and transcribed?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Once a queued call is answered it is recorded, transcribed and summarised like any other call, and it appears in the live call dashboard while it is waiting and while it is connected. Time spent waiting in the queue is visible in the dashboard's queued calls table."}}
+    {
+      "@type": "Question",
+      "name": "What is the difference between a call queue and a ring group?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A ring group rings a set of extensions and, if nobody answers, moves the call to the next step. A queue holds the caller until someone is free. Use a ring group to pass a call along quickly; use a queue when calls arrive faster than the team can answer and you would rather callers waited than got voicemail. See Creating a Ring Group ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a queue run only during business hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — set the queue’s Time Schedule . Outside those hours the call follows the rest of your call flow instead, normally an after-hours greeting or voicemail. See Configuring Business Hours ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do queued calls get recorded and transcribed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Once answered, a queued call is recorded, transcribed and summarised like any other. While it is waiting it appears in the live call dashboard , with its wait time."
+      }
+    }
   ]
 }
 </script>

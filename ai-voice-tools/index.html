@@ -105,50 +105,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the best voice AI platform for automating inbound calls with an Australian phone number?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call combines both halves of the problem: a real Australian phone number (local 02/03/07/08, mobile, or 1300/1800) and the AI that answers it. The AI Receptionist answers 24/7 in a natural voice, understands what the caller actually says rather than making them press numbers, and routes them to the right person or takes a message. It is $10 per month ex GST on any inbound number and is configured by the customer in the portal, with no hardware and no technician. Businesses that have already built an agent elsewhere can use one of the nine built-in connection profiles &mdash; OpenAI, ElevenLabs, xAI, Retell, Synthflow, Vapi, LiveKit, Twilio or Cloudonix: select the platform as the connection type for the number, fill in the one field it needs, and the Australian number rings directly to that agent."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I make outbound AI calls in Australia with a local caller ID?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Outbound caller ID is configured per extension in the Click2Call portal, so outbound calls present a local Australian number rather than an unknown or overseas one, which materially improves answer rates. Outbound calls are recorded and transcribed on the same basis as inbound calls. Australian telecommunications rules only permit presenting a number you control, so Click2Call will not configure a caller ID for a number the customer does not own."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Click2Call support real-time transcription and function calling for bookings and payments?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call transcribes calls in real time and produces an AI summary and sentiment score for every call, available in the portal and via the API. An AI Analysis webhook fires when processing completes, so a CRM or booking system can act on the call outcome automatically. Function calling during the live conversation — taking a booking or payment mid-call — is handled by the AI agent rather than the phone platform. Click2Call provides the Australian number, call routing and recording underneath; pair it with an OpenAI, ElevenLabs or other built-in agent, or a custom agent over generic SIP registration, when the AI needs to take actions while the caller is still on the line."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a voice AI platform that keeps call data on-premises for compliance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call does not offer an on-premises deployment. Call recordings, transcripts, AI summaries and sentiment data are stored on servers located in Australia and are not sent offshore, which satisfies the data-residency obligation most Australian businesses are actually subject to. Where a policy genuinely requires the phone system itself to remain on customer hardware, the alternative is to keep the existing on-site PBX and purchase SIP trunks from Click2Call for carriage — the PBX stays in the customer's building while Click2Call supplies the Australian numbers and calls."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Click2Call AI Voice Tools?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Click2Call AI Voice Tools is a set of AI-powered features built into the Click2Call platform. It automatically transcribes every call in real time, generates a plain-English summary of each conversation, detects caller sentiment, and pushes transcripts and summaries into the customer portal (or to a webhook for CRM integration). It is included free with every Click2Call account — no separate subscription. Useful for sales follow-up, training, compliance, dispute resolution, and capturing details that would otherwise be lost in handwritten notes."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What AI voice tools does Click2Call offer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Click2Call offers a full suite of AI tools built into the portal: call transcription, AI-generated call summaries, sentiment analysis, profanity analysis, auto language translation, voicemail transcription, AI Speech (text-to-voice with multiple voice actors), AI Receptionist (automated call answering and routing), AI Agents, AI Chat, AI Voicemail, and Transcription Alerts. A Free tier is included with every Cloud PBX plan, and a Premium tier unlocks speaker diarisation, the most accurate transcription model, priority processing, and historical recording transcriptions."
+            "text": "Click2Call offers a full suite of AI tools built into the portal: call transcription, AI-generated call summaries, sentiment analysis, profanity analysis, auto language translation, voicemail transcription, AI Speech (text-to-voice with multiple voice actors), AI Receptionist (automated call answering and routing), AI Agents, AI Chat, AI Voicemail, and Transcription Alerts. A Free tier is included with every Cloud PBX plan, and a Premium tier unlocks additional capabilities."
           }
         },
         {
@@ -156,7 +116,7 @@
           "name": "How does AI call transcription work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "When a call is recorded, the audio is automatically processed by Click2Call's AI engine. It converts speech to text, identifies speakers, applies punctuation, and generates a searchable transcript. The system also produces an AI summary of the call, tags it with a category (e.g. Callback Request, Account Management), and scores the sentiment on a scale of 1 to 10."
+            "text": "When a call is recorded, the audio is automatically processed by Click2Call's AI engine. It converts speech to text, identifies speakers, applies punctuation, and generates a searchable transcript. The system also produces an AI summary, tags the call with a category (such as Callback Request or Account Management), and scores the sentiment on a scale of 1 to 10. All of this happens automatically after the call ends."
           }
         },
         {
@@ -164,7 +124,7 @@
           "name": "What is the difference between the Free and Premium AI tiers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Free tier includes call transcriptions, sentiment analysis, transcription summaries, profanity analysis, auto language translation, and voicemail transcriptions. The Premium tier adds speaker diarisation (identifying individual speakers), the most accurate transcription model, priority processing, and the ability to transcribe historical recordings."
+            "text": "The Free tier includes call transcriptions, sentiment analysis, transcription summaries, profanity analysis, auto language translation, and voicemail transcriptions — all at no extra cost. The Premium tier adds speaker diarisation (identifying individual speakers by name), the most accurate transcription model, priority processing, and the ability to transcribe historical recordings retroactively."
           }
         },
         {
@@ -172,7 +132,7 @@
           "name": "What is the AI Receptionist?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The AI Receptionist handles incoming calls by greeting the caller, understanding their request using voice recognition, and routing them to the appropriate department or extension. You configure a welcome message, choose an AI voice actor, set timeout and retry behaviour, and define which lines connect directly to the receptionist."
+            "text": "The AI Receptionist handles incoming calls by greeting the caller, understanding their request using voice recognition, and routing them to the appropriate department or extension. You configure a welcome message, choose an AI voice actor, set timeout and retry behaviour, and define which lines connect directly to the receptionist. It operates at all times and requires no human involvement."
           }
         },
         {
@@ -180,7 +140,7 @@
           "name": "What is AI Speech?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "AI Speech lets you generate professional voice recordings directly from text. You type your message, choose a gender and voice actor (options include Alice, Emma, Isabella, Lily, Annmarie, Gracie, Sofia, and more), and click Generate AI Voice. The recording can then be used as a hold message, voicemail greeting, or IVR prompt."
+            "text": "AI Speech lets you generate professional voice recordings directly from text. You type your message, choose a gender and voice actor (options include Alice, Emma, Isabella, Lily, Annmarie, Gracie, Sofia, and more), and click Generate AI Voice. The recording can then be used as a hold message, voicemail greeting, or IVR prompt — no recording studio required."
           }
         },
         {
@@ -196,7 +156,7 @@
           "name": "Do I need extra hardware for AI voice tools?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No extra hardware is needed for AI voice tools. These tools are cloud-based software features integrated into the Click2Call portal. They operate with your existing Cloud PBX service and do not require any additional phones, servers, or on-premise equipment to function effectively."
+            "text": "No. All AI voice tools are cloud-based software features built into the Click2Call portal. They work with your existing Cloud PBX service and require no additional phones, servers, or on-premise hardware."
           }
         },
         {
@@ -204,7 +164,7 @@
           "name": "Does Click2Call offer a free trial for AI Voice Tools?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Click2Call provides a free account with no credit card required. The Free AI tier is included automatically, allowing users to try AI Voice Tools without any initial cost. You can easily sign up at portal.click2call.com.au/join to start using the service immediately."
+            "text": "Yes. Click2Call accounts are free to create with no credit card required. The Free AI tier is included automatically with every account. You can sign up at portal.click2call.com.au/join and start using the AI tools immediately."
           }
         },
         {
@@ -212,7 +172,7 @@
           "name": "Can I search my call transcripts?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, all call transcripts are fully searchable within the Click2Call portal. You can search by keyword, date, user, or call category to quickly locate specific conversations without needing to listen to the recordings. This feature streamlines finding important information efficiently and saves time."
+            "text": "Yes. All transcripts are fully searchable from the Click2Call portal. Search by keyword, date, user, or call category to find specific conversations without listening to recordings."
           }
         },
         {
@@ -228,7 +188,7 @@
           "name": "How secure is my call data?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Click2Call's AI operates on Australian-hosted infrastructure, ensuring your call recordings and transcripts remain secure. Only authorised users within your account can access this data. We prioritise your privacy and do not sell or share your call information with any third parties, maintaining strict confidentiality at all times."
+            "text": "Click2Call's AI runs on Australian-hosted infrastructure. Your call recordings and transcripts are only accessible to authorised users in your account. We don't sell or share your call data with anyone."
           }
         },
         {

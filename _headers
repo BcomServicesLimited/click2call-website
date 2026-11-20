@@ -8,6 +8,27 @@ https://:project.pages.dev/*
   X-Robots-Tag: all
   Strict-Transport-Security: max-age=15552000
   X-Frame-Options: SAMEORIGIN
+# Build partials, tooling and working files are not pages: keep them out of search.
+/_header
+  X-Robots-Tag: noindex, nofollow
+/_header.html
+  X-Robots-Tag: noindex, nofollow
+/_footer
+  X-Robots-Tag: noindex, nofollow
+/_footer.html
+  X-Robots-Tag: noindex, nofollow
+/email-signature-support
+  X-Robots-Tag: noindex, nofollow
+/email-signature-support.html
+  X-Robots-Tag: noindex, nofollow
+/scripts/*
+  X-Robots-Tag: noindex, nofollow
+/docs/*
+  X-Robots-Tag: noindex, nofollow
+/package.json
+  X-Robots-Tag: noindex, nofollow
+/package-lock.json
+  X-Robots-Tag: noindex, nofollow
 /help/primary-knowledge-base.html
   X-Robots-Tag: noindex, nofollow, noarchive
 /pricing.html

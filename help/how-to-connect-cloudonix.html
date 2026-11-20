@@ -105,54 +105,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What does Cloudonix actually do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cloudonix is programmable SIP middleware. It sits between a carrier trunk and whatever should handle the call, and a voice application you write decides the routing — including handing the call to an AI agent platform such as Vapi or Retell with a Dial Service verb. If you only want one AI agent answering one number, connecting that provider directly is simpler."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When is Cloudonix worth the extra layer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "When the call needs logic before it reaches the agent, when you want to switch AI providers without touching the carrier configuration, or when several services need to share one number. For a single agent on a single number, use that provider's own Click2Call profile instead."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which SIP address does Click2Call send calls to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "sip:trunk.cloudonix.com:5060;transport=tcp. It is pre-configured in the Cloudonix connection profile, so there is nothing to type in Click2Call. The dialled number arrives in +E.164 format for your Cloudonix application to match on."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to write code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, in the sense that a Cloudonix voice application is a script you author. That is the whole point of the product — it is a programmable layer rather than a dashboard-configured agent."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are calls still recorded and transcribed by Click2Call?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side regardless of what your Cloudonix application does with the call, with the data stored in Australia."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>

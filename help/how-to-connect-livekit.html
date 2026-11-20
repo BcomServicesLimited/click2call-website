@@ -110,54 +110,7 @@
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Where do I find my LiveKit subdomain?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is your LiveKit project ID with the p_ prefix removed. Run lk project list --json and look at the ProjectId field — if it reads p_vjnxecm0tjk then your subdomain is vjnxecm0tjk. The same value appears in the LiveKit Cloud dashboard."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What do I put in the Region field?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The LiveKit region your project runs in. Region values look like us1 and eu1. Click2Call combines the two fields into subdomain.region.sip.livekit.cloud, and the finished route is shown under the fields once you type them."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to write code to use LiveKit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. LiveKit Cloud is a real-time media platform rather than a hosted AI agent, so something has to join the LiveKit room and speak to the caller — normally a LiveKit Agents worker that you write and deploy. If you want an agent you configure in a dashboard with no code, ElevenLabs, Retell or Synthflow are better choices and Click2Call supports all three."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is my call rejected before it rings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LiveKit needs two things before it will accept an inbound call: an inbound trunk that either lists your phone number or has authentication configured, and at least one dispatch rule to place the caller into a room. A trunk with an empty numbers list and no username, password or allowed addresses will reject every call."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I still record and transcribe calls?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, provided Recording Enabled is ticked on the Click2Call profile. Recording, transcription, summaries and sentiment analysis run on the Click2Call side regardless of what happens inside the LiveKit room, with the data stored in Australia."
-      }
-    }
-  ]
-}
-</script>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST0JCEZ54X"></script>
     <script>
