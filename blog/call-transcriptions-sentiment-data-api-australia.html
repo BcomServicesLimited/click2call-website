@@ -350,7 +350,7 @@
 {
   "status": "success",
   "data": {
-    "transcription": "Speaker 1: Hi, I'm calling about my recent invoice... Speaker 2: Certainly, let me pull that up for you...",
+    "transcription": "[00:00:00 → 00:00:04] Hi, I'm calling about my recent invoice... [00:00:05 → 00:00:09] Certainly, let me pull that up for you...",
     "summary": "Customer called to query a charge on their April invoice. Agent explained the pro-rata billing. Customer was satisfied and paid over the phone.",
     "sentiment": "positive",
     "sentiment_score": 0.85,
@@ -391,7 +391,7 @@
                                 <span>Does the transcription identify different speakers?</span>
                                 <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                             </button>
-                            <div class="px-6 pb-4 text-gray-600 hidden">Yes, the AI engine performs speaker diarization, separating the audio into "Speaker 1" (usually the caller) and "Speaker 2" (the agent).</div>
+                            <div class="px-6 pb-4 text-gray-600 hidden">No. The transcript is a list of time-stamped lines in the order they were spoken, for example [00:00:05 → 00:00:09], without a label for who is speaking. The call summary describes what the caller wanted and how the call ended.</div>
                         </div>
                         <div class="border border-gray-200 rounded-lg overflow-hidden">
                             <button class="w-full text-left px-6 py-4 font-semibold text-brand-charcoal flex justify-between items-center focus:outline-none faq-toggle" aria-expanded="false">
