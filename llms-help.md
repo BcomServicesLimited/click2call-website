@@ -129,7 +129,7 @@ Source: https://www.click2call.com.au/help/two-factor-login
 
 Two-factor login adds a one-time code to your portal sign-in. Even if someone learns your password, they can't get into your account without the code, which is emailed to you each time you log in.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Turn it on for everyone
 
@@ -572,7 +572,7 @@ Source: https://www.click2call.com.au/help/how-to-add-account-credit
 
 Click2Call is prepaid: your monthly charges and calls come out of your account credit. You can top up by hand, or store a card and let it pay automatically.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Add credit now
 
@@ -1029,7 +1029,7 @@ Source: https://www.click2call.com.au/help/extension-numbers-and-groups
 
 Every line on your account can have a short extension number and a name. Staff dial the extension instead of the full number, callers can enter it at your auto attendant, and the name shows on the other person's phone.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Setting extension numbers and names
 
@@ -1419,7 +1419,7 @@ Source: https://www.click2call.com.au/help/line-profiles-and-time-zone
 
 A profile is a set of settings shared by lines: how a phone connects, its time zone, caller ID and which calls are blocked. Every line uses the **Default** profile unless you give it another.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Check your time zone
 
@@ -3116,9 +3116,9 @@ With this ticked, the Web Phone opens straight to the keypad each time. Your pas
 
 ### Ring me when the app is closed
 
-Turn on **Settings → Ring me when the app is closed** and calls reach you even when the Web Phone isn't open. You get an **Incoming call** notification with **Answer** and **Decline**. Press Answer and the Web Phone opens and connects the call by itself.
+Turn on **Settings → Set up this computer → Rings when the app is closed** and calls reach you even when the Web Phone isn't open. You get an **Incoming call** notification with **Answer** and **Decline**. Press Answer and the Web Phone opens and connects the call by itself.
 
-- **Turn on Keep me signed in first,** so the phone can open straight into the call.
+- **It keeps you signed in on that device,** so a notification can open the phone straight into the call. On an installed app, the Web Phone also offers to turn this on once after you sign in.
 
 - **Your browser must be running.** On Windows and Mac, that means Chrome or Edge is open, even if the Web Phone isn't. On Android it works even when Chrome is closed. On iPhone it only works from the home-screen app, as a notification.
 
@@ -3152,7 +3152,7 @@ It's a notification rather than a full ringing screen. For calls on your mobile 
 
 ### Install it on your computer and open it at login
 
-The best desktop setup is to install the Web Phone as an app, have it open automatically when you log in, and turn on **Ring me when the app is closed** in Settings. It then runs in its own window with its own Dock or taskbar icon, like any other app.
+The best desktop setup is to install the Web Phone as an app, have it open automatically when you log in, and turn on **Rings when the app is closed** in Settings. It then runs in its own window with its own Dock or taskbar icon, like any other app.
 
 #### Google Chrome (Mac or Windows)
 
@@ -3160,7 +3160,7 @@ The best desktop setup is to install the Web Phone as an app, have it open autom
 
 - To open it at login, open a new tab and go to `chrome://apps`, right-click **Click2Call Phone** and choose **Start app when you sign in**.
 
-- Turn on **Settings → Ring me when the app is closed** in the Web Phone. If Chrome puts the phone to sleep in the background, calls still reach you as a notification.
+- Turn on **Settings → Set up this computer → Rings when the app is closed** in the Web Phone. If Chrome puts the phone to sleep in the background, calls still reach you as a notification.
 
 #### Microsoft Edge (Windows or Mac)
 
@@ -3168,7 +3168,7 @@ The best desktop setup is to install the Web Phone as an app, have it open autom
 
 - Go to `edge://apps`, click **…** on Click2Call Phone and turn on **Auto-start on device login**.
 
-- Turn on **Settings → Ring me when the app is closed** in the Web Phone, so calls still reach you if Edge puts the phone to sleep.
+- Turn on **Settings → Set up this computer → Rings when the app is closed** in the Web Phone, so calls still reach you if Edge puts the phone to sleep.
 
 #### Safari (Mac)
 
@@ -3268,7 +3268,7 @@ Open **Settings → Diagnostics & self-test** to see exactly what the Web Phone 
 
 - **Last call:** round-trip time, jitter, packet loss, codec, and whether the audio went direct or through the relay.
 
-- **Recent events:** the last 100 sign-in and call events, such as `REGISTER → 200 OK` or `INVITE → 486 Busy`. Tick Include full SIP messages to see the full SIP text. They're kept in your browser for this session only, and passwords are never recorded.
+- **Recent events:** the last 100 sign-in and call events, such as `REGISTER → 200 OK` or `INVITE → 486 Busy`. They're kept in your browser for this session only, and passwords are never recorded. **Report a problem** (in Settings) also adds the last 20 full SIP messages to the report it copies, for our engineers.
 
 - **Copy report:** copies all of the above, ready to paste into an email to support@click2call.com.au.
 
@@ -3286,7 +3286,7 @@ The Web Phone also looks after itself. It reconnects as soon as your internet co
 
 | Red dot, "Reconnecting…" | Your internet dropped. The Web Phone reconnects by itself when it's back. Calls can't ring until the dot is green. |
 
-| Calls aren't ringing the Web Phone | Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, turn on Ring me when the app is closed in Settings, so calls reach you even when the browser puts it to sleep. |
+| Calls aren't ringing the Web Phone | Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, turn on Rings when the app is closed in Settings, so calls reach you even when the browser puts it to sleep. |
 
 | No call alert when the Web Phone is closed | Press Send a test notification in Settings. If nothing appears, notifications are blocked: on a Mac check System Settings → Notifications → Google Chrome; on an iPhone check Settings → Notifications → C2C Phone, the silent switch and any Focus mode (see Ring me when the app is closed above). |
 
@@ -4299,7 +4299,7 @@ Source: https://www.click2call.com.au/help/star-codes
 
 You can change many settings by dialling a code from any phone on your account, without logging in to the portal. Where you see xxx, enter a phone number (or a number of seconds, where stated).
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Voicemail
 
@@ -5291,7 +5291,7 @@ Source: https://www.click2call.com.au/help/call-recording-settings
 
 Each number or extension has its own call recording settings. You can record every call or only calls with certain numbers, play an announcement, email each recording, and pause or start recording during a call.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Open the settings
 
@@ -5350,7 +5350,7 @@ Source: https://www.click2call.com.au/help/conference-rooms-and-meetings
 
 Every account has a conference room in the portal’s **Conferencing** menu. People join by phone with a PIN or from a browser with a link, and you can schedule meetings that send invitations for you.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Your conference room
 
@@ -7514,7 +7514,7 @@ AI Features
 
 The Answer Agent is a smart replacement for voicemail. Your phone rings first, and if you cannot get to it the AI answers in a natural voice, asks for the caller’s name, number and reason for calling — waiting for each answer — and emails you the details with a transcript. You can write its introduction and questions yourself and pick the voice.
 
-Last reviewed: September 2026
+Last reviewed: October 2026
 
 ### Setting Up the AI Answer Agent, Step by Step
 
