@@ -3130,7 +3130,7 @@ Turn on **Settings → Ring me when the app is closed** and calls reach you even
 
 - Use **Send a test notification** in Settings to check it works on each device.
 
-- **How it works:** while it's on, our gateway keeps your line signed in for you. It stores only an encrypted hash of your SIP password, never the password itself, and deletes it when you turn the feature off or sign out.
+- **How it works:** while it's on, our gateway keeps your line signed in for you. It stores only an encrypted hash of your SIP password, never the password itself (see Privacy and security below).
 
 - **Forwarding when it's on:** your line always shows as online, so Forward when Offline won't trigger. Use Forward on No Answer instead.
 
