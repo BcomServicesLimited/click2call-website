@@ -3268,7 +3268,7 @@ Open **Settings → Diagnostics & self-test** to see exactly what the Web Phone 
 
 - **Last call:** round-trip time, jitter, packet loss, codec, and whether the audio went direct or through the relay.
 
-- **Recent events:** the last 100 sign-in and call events, such as `REGISTER → 200 OK` or `INVITE → 486 Busy`. They're kept in your browser for this session only, and passwords are never recorded. **Report a problem** (in Settings) also adds the last 20 full SIP messages to the report it copies, for our engineers.
+- **Recent events:** the last 100 sign-in and call events, such as `REGISTER → 200 OK` or `INVITE → 486 Busy`. They're kept in your browser for this session only, and passwords are never recorded. **Report a problem** (in Settings) sends a short description, your email for our reply, and this report (plus the last 20 full SIP messages, for our engineers) straight to Click2Call support. No email app needed.
 
 - **Copy report:** copies all of the above, ready to paste into an email to support@click2call.com.au.
 
