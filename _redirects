@@ -91,3 +91,17 @@
 # --- AI receptionist guide folded into the service page (23 Oct 2026) ---
 /blog/ai-receptionist-australia       /ai-receptionist/  301
 /blog/ai-receptionist-australia.html  /ai-receptionist/  301
+
+# --- Six blog posts retired into stronger pages (20 Nov 2026) ---
+/blog/elevenlabs-voice-ai-sip-trunk       /blog/ai-voice-agent-australian-phone-number  301
+/blog/elevenlabs-voice-ai-sip-trunk.html  /blog/ai-voice-agent-australian-phone-number  301
+/blog/building-ai-call-agent-claude-click2call       /blog/ai-voice-agent-australian-phone-number  301
+/blog/building-ai-call-agent-claude-click2call.html  /blog/ai-voice-agent-australian-phone-number  301
+/blog/cloudflare-worker-phone-system-api       /blog/australian-voip-api-getting-started  301
+/blog/cloudflare-worker-phone-system-api.html  /blog/australian-voip-api-getting-started  301
+/blog/nbn-business-phone-system       /cloud-pbx/  301
+/blog/nbn-business-phone-system.html  /cloud-pbx/  301
+/blog/ai-in-business-phones       /ai-receptionist/  301
+/blog/ai-in-business-phones.html  /ai-receptionist/  301
+/blog/how-to-secure-business-communications       /help/toll-fraud-protection  301
+/blog/how-to-secure-business-communications.html  /help/toll-fraud-protection  301
