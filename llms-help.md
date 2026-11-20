@@ -3071,7 +3071,7 @@ Type the number on the keypad or your keyboard and press the green call button (
 
 #### Answering a call
 
-When a call comes in, the Web Phone rings and shows the caller's number with **Answer** and **Decline** buttons. If the window is hidden, you also get a desktop notification. Click it to bring the phone forward. Declining sends the caller a busy signal, so they follow your line's busy settings (for example voicemail).
+When a call comes in, the Web Phone rings and shows the caller's number with **Answer** and **Decline** buttons. If the window is hidden, you also get a desktop notification. Click it to bring the phone forward. Declining sends the caller straight to your line's busy settings (usually voicemail), and stops the call ringing on your other phones too.
 
 #### During a call
 
@@ -3104,7 +3104,7 @@ Click the gear icon to:
 
 - **Choose your microphone and speaker,** for example a headset rather than the laptop speakers. Choosing a speaker works in Chrome and Edge. Safari and Firefox always use your computer's default output.
 
-- **Turn on Do not disturb.** Incoming calls go straight to your voicemail or forward rules instead of ringing, and are logged as missed. An orange tag shows while it's on.
+- **Turn on Do not disturb.** The Web Phone stops ringing and logs incoming calls as missed. Your other phones on the line, such as a desk phone or the Basic Edition app, keep ringing as normal. If nothing answers, the call goes to your voicemail or forward rules after about a minute. An orange tag shows while it's on.
 
 - **Install the app** and see the steps to open it at login (below).
 
@@ -3122,7 +3122,7 @@ Turn on **Settings → Ring me when the app is closed** and calls reach you even
 
 - **Your browser must be running.** On Windows and Mac, that means Chrome or Edge is open, even if the Web Phone isn't. On Android it works even when Chrome is closed. On iPhone it only works from the home-screen app, as a notification.
 
-- **The alert repeats every 5 seconds, like a phone ringing,** until you answer, press Decline, or the caller hangs up. When you answer on one device, the alert clears on your others. Decline stops the alerts; the call then goes to your voicemail or forward rules.
+- **The alert repeats every 5 seconds, like a phone ringing,** until you answer, press Decline, or the caller hangs up. When you answer on one device, the alert clears on your others. Decline stops the alerts on every device and sends the caller straight to your voicemail or forward rules.
 
 - If no one answers within about 60 seconds, the call goes to your voicemail or forward rules, even if your line's ring time in Line Manager is longer. If the caller hangs up first, you get a Missed call notification.
 
