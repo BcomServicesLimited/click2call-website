@@ -3124,7 +3124,9 @@ Turn on **Settings → Ring me when the app is closed** and calls reach you even
 
 - **The alert repeats every 5 seconds, like a phone ringing,** until you answer, press Decline, or the caller hangs up. When you answer on one device, the alert clears on your others. Decline stops the alerts; the call then goes to your voicemail or forward rules.
 
-- If no one answers within about 45 seconds, the call goes to your voicemail or forward rules. If the caller hangs up first, you get a Missed call notification.
+- If no one answers within about 60 seconds, the call goes to your voicemail or forward rules, even if your line's ring time in Line Manager is longer. If the caller hangs up first, you get a Missed call notification.
+
+- **If you change your line's password,** each device gets a Sign in to the Web Phone again notification, and calls go to your normal voicemail or forward rules until you do. Sign in with the new password (with Keep me signed in ticked) and it turns back on by itself.
 
 - Use **Send a test notification** in Settings to check it works on each device.
 
