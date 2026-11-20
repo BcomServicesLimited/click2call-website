@@ -2716,7 +2716,7 @@ If your own phones are fine but certain callers can't use your menu, the problem
 
 Source: https://www.click2call.com.au/help/softphone-setup-and-troubleshooting
 
-If your softphone won't log in, or calls stop arriving when the app is closed, this guide covers the fix. It lists the apps that work with Click2Call, shows exactly which credentials to use, explains the iPhone background-calls problem, and how to check whether a line is registering.
+If your softphone won't log in, or calls stop arriving when the app is closed, this guide covers the fix. It lists the apps that work with Click2Call, shows exactly which credentials to use, explains the iPhone background-calls problem, and how to check whether a line is registering. For calls on a computer with nothing to install, see the [Web Phone](https://www.click2call.com.au/web-phone/).
 
 Last reviewed: October 2026
 
@@ -3019,7 +3019,7 @@ Apply these rules for traffic from subnet 52.63.154.234. No STUN server is requi
 
 Source: https://www.click2call.com.au/help/web-phone
 
-The Click2Call Web Phone lets you make and take calls on your business number from a web browser, with nothing to download. Open phone.click2call.com.au, sign in with your line's SIP username and password, and you're ready to call. This guide covers every feature, the best setups, and what the Web Phone can't do.
+The Click2Call Web Phone lets you make and take calls on your business number from a web browser, with nothing to download. Open phone.click2call.com.au, sign in with your line's SIP username and password, and you're ready to call. This guide covers every feature, the best setups, and what the Web Phone can't do. For an overview, see the [Web Phone page](https://www.click2call.com.au/web-phone/).
 
 Last reviewed: November 2026
 
@@ -3311,7 +3311,7 @@ Phones & Devices
 
 ## Setting Up a Softphone App
 
-Click2Call recommends the **Basic Edition** app (by Voice Services) for iPhone and Android, **Secure VoIP Micro Edition** for Windows, and the **Telephone App** for Mac. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started.
+Click2Call recommends the **Basic Edition** app (by Voice Services) for iPhone and Android, **Secure VoIP Micro Edition** for Windows, and the **Telephone App** for Mac. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started. On a computer you can also skip the download and use the [Web Phone](https://www.click2call.com.au/web-phone/) in your browser.
 
 Last reviewed: November 2026
 

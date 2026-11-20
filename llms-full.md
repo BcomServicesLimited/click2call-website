@@ -22,6 +22,9 @@ Click2Call sells four kinds of Australian business phone number, each $10 a mont
 
 A new 1300 or 1800 number costs $100 inc GST once, then $10 a month ex GST. Incoming calls cost the business 20c a minute on both; 1300 callers pay a local rate and 1800 callers pay nothing. Both receive calls only. Porting an existing 1300 or 1800 number is $100 inc GST and can take up to 30 days. Click2Call does not sell 13 numbers or smartnumbers. Page: https://www.click2call.com.au/1300-numbers/
 
+### Web Phone
+The Click2Call Web Phone (https://www.click2call.com.au/web-phone/) is a business phone that runs in a web browser: make and take calls on a Click2Call number from any Mac or Windows computer in Chrome, Edge, Safari or Firefox, with nothing to download, at no extra charge. Calls are billed the same as from other devices; incoming calls are free. Sign in at https://phone.click2call.com.au with the line's SIP username and password from Line Manager, or scan the line's QR code. It has a keypad, recents, caller names, mute, hold, call waiting for two calls, blind or warm transfer, do not disturb, headset choice and click-to-call from a CRM or email (Chrome and Edge). Installed as an app it opens at login and can ring when closed with a repeating notification. Calls are encrypted to a gateway in Sydney that runs on two servers in separate Sydney data centres. Not for 000 calls; two calls at a time; no conference calls; no voicemail inbox in the app (voicemail to email works). On mobiles use the Basic Edition app to take calls. Guide: https://www.click2call.com.au/help/web-phone
+
 ### Cloud PBX
 
 Click2Call's Cloud PBX is a complete, hosted business phone system that runs entirely over the internet, eliminating the need for on-premise PBX hardware. It is designed for small businesses that want the features of a large phone system without the complexity or cost of a traditional one.
