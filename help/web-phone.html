@@ -395,18 +395,18 @@
       <p class="mt-2">It's a notification rather than a full ringing screen. For calls on your mobile that ring like a normal phone, use the <a href="/help/how-to-set-up-softphone" class="text-[#3B9C49] font-medium hover:underline">Basic Edition app</a>.</p></div>
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Install it on your computer and open it at login</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">The Web Phone only rings while it's open, so the best desktop setup is to install it as an app and have it open automatically when you log in. It then runs in its own window with its own Dock or taskbar icon, like any other app.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The best desktop setup is to install the Web Phone as an app, have it open automatically when you log in, and turn on <strong>Ring me when the app is closed</strong> in Settings. It then runs in its own window with its own Dock or taskbar icon, like any other app.</p>
     <h3 class="text-lg font-bold text-gray-900 mt-6 mb-2">Google Chrome (Mac or Windows)</h3>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6">
       <li>Sign in to the Web Phone, then click <strong>Install</strong> in the green banner. You can also use the install icon at the right of the address bar, or <strong>Settings &rarr; Install Click2Call Phone</strong>.</li>
       <li>To open it at login, open a new tab and go to <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">chrome://apps</code>, right-click <strong>Click2Call Phone</strong> and choose <strong>Start app when you sign in</strong>.</li>
-      <li>Keep it awake: in Chrome go to <strong>Settings &rarr; Performance</strong>, and under <strong>Always keep these sites active</strong> add <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">phone.click2call.com.au</code>. Otherwise Chrome's Memory Saver can put the phone to sleep after a while in the background.</li>
+      <li>Turn on <strong>Settings &rarr; Ring me when the app is closed</strong> in the Web Phone. If Chrome puts the phone to sleep in the background, calls still reach you as a notification.</li>
     </ol>
     <h3 class="text-lg font-bold text-gray-900 mt-6 mb-2">Microsoft Edge (Windows or Mac)</h3>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6">
       <li>Click <strong>Install</strong> in the banner, or the app icon in the address bar.</li>
       <li>Go to <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">edge://apps</code>, click <strong>&hellip;</strong> on Click2Call Phone and turn on <strong>Auto-start on device login</strong>.</li>
-      <li>Keep it awake: <strong>Settings &rarr; System and performance &rarr; Never put these sites to sleep</strong>, add <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">phone.click2call.com.au</code>.</li>
+      <li>Turn on <strong>Settings &rarr; Ring me when the app is closed</strong> in the Web Phone, so calls still reach you if Edge puts the phone to sleep.</li>
     </ol>
     <h3 class="text-lg font-bold text-gray-900 mt-6 mb-2">Safari (Mac)</h3>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6">
@@ -444,7 +444,7 @@
       <li>Optional: also set <strong>Forward on No Answer</strong> to your mobile, so calls you don't answer in the Web Phone go on to your mobile.</li>
     </ol>
     <p class="text-gray-600 leading-relaxed mb-4">"Offline" means nothing is signed in to the line. If the Basic Edition app or a desk phone is also signed in, the line isn't offline. In that case, use <strong>Forward on No Answer</strong> instead.</p>
-    <p class="text-gray-600 leading-relaxed mb-4">The Web Phone signs out automatically when you close it. If your computer goes to sleep or loses internet without closing it, the forward can take up to five minutes to start working.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The Web Phone signs out about two minutes after you close it, so the forward starts working then. If your computer goes to sleep or loses internet without closing it, it can take up to about seven minutes. With <em>Ring me when the app is closed</em> on, your line stays online, so use <strong>Forward on No Answer</strong> instead.</p>
     <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>What forwarding costs:</strong> a forwarded call leaves our platform, so the leg out to your mobile is billed as an outgoing call to a mobile from your number. It uses your included minutes first, then the standard mobile rate. See <a href="/help/how-to-forward-calls-to-mobile" class="text-[#3B9C49] font-medium hover:underline">Forwarding Calls to Your Mobile</a> for more forwarding options, including work-hours schedules.</div>
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Limitations</h2>
@@ -483,7 +483,7 @@
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">"Allow microphone access"</td><td class="px-4 py-2.5 text-gray-600">Click the padlock or settings icon in the address bar and allow the microphone for phone.click2call.com.au. On a Mac, also check <strong>System Settings &rarr; Privacy &amp; Security &rarr; Microphone</strong> for your browser.</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">The browser asks to allow the microphone on every call</td><td class="px-4 py-2.5 text-gray-600">Choose <strong>Allow on every visit</strong> (or <strong>Allow</strong>), not <em>Allow this time</em>. To fix it after the fact in Chrome, click the settings icon on the left of the address bar, open <strong>Site settings</strong> and set <strong>Microphone</strong> to <strong>Allow</strong>. In Edge it's the padlock &rarr; <strong>Permissions for this site</strong>. On a Mac, also check <strong>System Settings &rarr; Privacy &amp; Security &rarr; Microphone</strong> is on for your browser.</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">Red dot, "Reconnecting&hellip;"</td><td class="px-4 py-2.5 text-gray-600">Your internet dropped. The Web Phone reconnects by itself when it's back. Calls can't ring until the dot is green.</td></tr>
-      <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">Calls aren't ringing the Web Phone</td><td class="px-4 py-2.5 text-gray-600">Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, add the site to your browser's "keep active" list (see install steps above).</td></tr>
+      <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">Calls aren't ringing the Web Phone</td><td class="px-4 py-2.5 text-gray-600">Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, turn on <strong>Ring me when the app is closed</strong> in Settings, so calls reach you even when the browser puts it to sleep.</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">No call alert when the Web Phone is closed</td><td class="px-4 py-2.5 text-gray-600">Press <strong>Send a test notification</strong> in Settings. If nothing appears, notifications are blocked: on a Mac check <strong>System Settings &rarr; Notifications &rarr; Google Chrome</strong>; on an iPhone check <strong>Settings &rarr; Notifications &rarr; C2C Phone</strong>, the silent switch and any Focus mode (see <em>Ring me when the app is closed</em> above).</td></tr>
       <tr><td class="px-4 py-2.5 font-medium text-gray-800 align-top">You can't hear the caller, or they can't hear you</td><td class="px-4 py-2.5 text-gray-600">Open Settings and pick the right microphone and speaker. Check you're not on mute, and that your headset is switched on and connected.</td></tr>
     </tbody></table></div>
@@ -491,7 +491,7 @@
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Privacy and security</h2>
     <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6">
       <li>Calls are encrypted between your browser and Click2Call's gateway in Sydney, and connect to our Australian platform from there.</li>
-      <li>Your SIP password is never stored on our servers. If you choose <em>Keep me signed in</em>, it's encrypted and kept only in your browser on that computer.</li>
+      <li>Your SIP password itself is never stored on our servers. To sign your line in for you, our gateway keeps an encrypted hash of it (a one-way fingerprint, not the password). It's deleted when you sign out of every device, or after 30 days without signing in. If you choose <em>Keep me signed in</em>, the password is encrypted and kept only in your browser on that computer.</li>
       <li>Recents and your settings stay in your browser on that computer.</li>
       <li>The Web Phone loads no advertising or tracking scripts.</li>
     </ul>

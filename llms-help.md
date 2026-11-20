@@ -3152,7 +3152,7 @@ It's a notification rather than a full ringing screen. For calls on your mobile 
 
 ### Install it on your computer and open it at login
 
-The Web Phone only rings while it's open, so the best desktop setup is to install it as an app and have it open automatically when you log in. It then runs in its own window with its own Dock or taskbar icon, like any other app.
+The best desktop setup is to install the Web Phone as an app, have it open automatically when you log in, and turn on **Ring me when the app is closed** in Settings. It then runs in its own window with its own Dock or taskbar icon, like any other app.
 
 #### Google Chrome (Mac or Windows)
 
@@ -3160,7 +3160,7 @@ The Web Phone only rings while it's open, so the best desktop setup is to instal
 
 - To open it at login, open a new tab and go to `chrome://apps`, right-click **Click2Call Phone** and choose **Start app when you sign in**.
 
-- Keep it awake: in Chrome go to **Settings → Performance**, and under **Always keep these sites active** add `phone.click2call.com.au`. Otherwise Chrome's Memory Saver can put the phone to sleep after a while in the background.
+- Turn on **Settings → Ring me when the app is closed** in the Web Phone. If Chrome puts the phone to sleep in the background, calls still reach you as a notification.
 
 #### Microsoft Edge (Windows or Mac)
 
@@ -3168,7 +3168,7 @@ The Web Phone only rings while it's open, so the best desktop setup is to instal
 
 - Go to `edge://apps`, click **…** on Click2Call Phone and turn on **Auto-start on device login**.
 
-- Keep it awake: **Settings → System and performance → Never put these sites to sleep**, add `phone.click2call.com.au`.
+- Turn on **Settings → Ring me when the app is closed** in the Web Phone, so calls still reach you if Edge puts the phone to sleep.
 
 #### Safari (Mac)
 
@@ -3222,7 +3222,7 @@ When the Web Phone is closed, your computer is asleep, or you've lost internet, 
 
 "Offline" means nothing is signed in to the line. If the Basic Edition app or a desk phone is also signed in, the line isn't offline. In that case, use **Forward on No Answer** instead.
 
-The Web Phone signs out automatically when you close it. If your computer goes to sleep or loses internet without closing it, the forward can take up to five minutes to start working.
+The Web Phone signs out about two minutes after you close it, so the forward starts working then. If your computer goes to sleep or loses internet without closing it, it can take up to about seven minutes. With Ring me when the app is closed on, your line stays online, so use **Forward on No Answer** instead.
 
 **What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outgoing call to a mobile from your number. It uses your included minutes first, then the standard mobile rate. See [Forwarding Calls to Your Mobile](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile) for more forwarding options, including work-hours schedules.
 
@@ -3286,7 +3286,7 @@ The Web Phone also looks after itself. It reconnects as soon as your internet co
 
 | Red dot, "Reconnecting…" | Your internet dropped. The Web Phone reconnects by itself when it's back. Calls can't ring until the dot is green. |
 
-| Calls aren't ringing the Web Phone | Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, add the site to your browser's "keep active" list (see install steps above). |
+| Calls aren't ringing the Web Phone | Check the dot is green and Do not disturb is off. Check no Forward Always rule is active on your line. If it stops ringing after a while in the background, turn on Ring me when the app is closed in Settings, so calls reach you even when the browser puts it to sleep. |
 
 | No call alert when the Web Phone is closed | Press Send a test notification in Settings. If nothing appears, notifications are blocked: on a Mac check System Settings → Notifications → Google Chrome; on an iPhone check Settings → Notifications → C2C Phone, the silent switch and any Focus mode (see Ring me when the app is closed above). |
 
@@ -3296,7 +3296,7 @@ The Web Phone also looks after itself. It reconnects as soon as your internet co
 
 - Calls are encrypted between your browser and Click2Call's gateway in Sydney, and connect to our Australian platform from there.
 
-- Your SIP password is never stored on our servers. If you choose Keep me signed in, it's encrypted and kept only in your browser on that computer.
+- Your SIP password itself is never stored on our servers. To sign your line in for you, our gateway keeps an encrypted hash of it (a one-way fingerprint, not the password). It's deleted when you sign out of every device, or after 30 days without signing in. If you choose Keep me signed in, the password is encrypted and kept only in your browser on that computer.
 
 - Recents and your settings stay in your browser on that computer.
 
