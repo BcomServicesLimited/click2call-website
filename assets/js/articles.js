@@ -103,7 +103,7 @@ var HELP_ARTICLES = [
   {
     url:      "/help/which-phones-can-i-use",
     title:    "Which Phones Can I Use? (And Alarm Systems)",
-    desc:     "Click2Call works with IP desk phones, the Secure VoIP app on your mobile or computer, and ordinary analogue phones through an adaptor. Back-to-base alarm.",
+    desc:     "Click2Call works with IP desk phones, the Web Phone in your computer's browser, the Basic Edition app on your mobile, and ordinary analogue phones through an adaptor. Back-to-base alarm.",
     tags:     "which phones compatible desk phone existing phone analogue ata alarm system",
     category: "devices",
     readTime: "2 min read",

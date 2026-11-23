@@ -1484,7 +1484,7 @@ To change this, open the number and choose **Other Settings → Voice Quality & 
 
 Click2Call works over Starlink like any other internet connection. Starlink has a little more delay than fibre, but calls are normally clear.
 
-- To plug in a desk phone or adaptor, you'll need Starlink's Ethernet adapter. A Wi-Fi phone or the Secure VoIP app needs nothing extra.
+- To plug in a desk phone or adaptor, you'll need Starlink's Ethernet adapter. A Wi-Fi phone, the Web Phone or the mobile app needs nothing extra.
 - Use TLS on your phones. It avoids problems caused by router features that interfere with calls.
 - Expect short dropouts during heavy weather or when the dish's view is blocked.
 
@@ -1576,7 +1576,7 @@ Change every line password, check **Reports** for calls you don't recognise, and
 
 Source: https://www.click2call.com.au/help/zoiper-setup
 
-Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own Secure VoIP app, but Zoiper is a good alternative if you already use it.
+Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends the Web Phone on a computer and the Basic Edition app on a mobile, but Zoiper is a good alternative if you already use it.
 
 Last reviewed: October 2026
 
@@ -2728,8 +2728,10 @@ Most registration problems are one of three things: the line has no password set
 
 | App | Platforms | Status |
 
-| Secure VoIP | iPhone, Android, Windows | Recommended — setup guide |
-| Telephone | Mac | Recommended — setup guide |
+| Web Phone | Windows, Mac (in the browser) | Recommended for computers — guide |
+| Basic Edition | iPhone, Android | Recommended for mobiles — setup guide |
+| Secure VoIP Micro Edition | Windows | Supported — setup guide |
+| Telephone | Mac | Supported — setup guide |
 | Linphone | iPhone, Android, Windows, Mac | Tested by Click2Call — setup guide |
 | Groundwire | iPhone, Android | Not tested — should work as a standard SIP app |
 | Other SIP softphones (e.g. Zoiper, MicroSIP) | Various | Not tested — standard SIP apps generally work |
@@ -2755,7 +2757,7 @@ One set of credentials per device is the safest setup. When two devices log in w
 ### Why do calls stop arriving when the app is closed on iPhone?
 
 iOS suspends apps that are not on screen. A phone app can only ring while it is closed or the iPhone is locked if it uses Apple's VoIP push notifications: a push server wakes the app when a call arrives. If push is not working for an app, it rings while open and goes quiet as soon as it is in the background — the exact symptom most people report.
-The Secure VoIP app supports background calls on a best-effort basis: it usually rings when it is closed or the iPhone is locked, but iOS does not guarantee it, so some calls may not ring. If you can't afford to miss calls, use one of the options below.
+The Basic Edition app supports background calls on a best-effort basis: it usually rings when it is closed or the iPhone is locked, but iOS does not guarantee it, so some calls may not ring. If you can't afford to miss calls, use one of the options below.
 
 #### What you can do now
 
@@ -3049,7 +3051,7 @@ Go to phone.click2call.com.au in your browser.
 
 #### Enter your SIP username and password, or scan the QR code
 
-Type them exactly as Line Manager shows them. Or tap **Scan QR code** and point your camera at the QR code on the line's page in Line Manager (the same one the SecureVOIP app uses). The Web Phone reads it and signs you in, with nothing to type. This is quickest on a mobile while Line Manager is open on your computer. The code is read on your device and the camera image isn't sent anywhere. Scan it from inside the Web Phone: your phone's own camera app opens a different app. The QR code contains your line's password, so don't share a screenshot of it. Leave **Keep me signed in on this computer** ticked on your own computer, so next time it opens straight to the keypad. Untick it on a shared computer.
+Type them exactly as Line Manager shows them. Or tap **Scan QR code** and point your camera at the QR code on the line's page in Line Manager (the same one the Basic Edition app uses). The Web Phone reads it and signs you in, with nothing to type. This is quickest on a mobile while Line Manager is open on your computer. The code is read on your device and the camera image isn't sent anywhere. Scan it from inside the Web Phone: your phone's own camera app opens a different app. The QR code contains your line's password, so don't share a screenshot of it. Leave **Keep me signed in on this computer** ticked on your own computer, so next time it opens straight to the keypad. Untick it on a shared computer.
 
 3
 
@@ -5137,7 +5139,7 @@ Dial ***58** from any phone on your account to record your unavailable greeting,
 
 **Good to know:** During work hours, a diverted call that rings out is answered by your mobile’s own voicemail, not Click2Call’s. If you would rather always use Click2Call voicemail, use [Simultaneous Ring](https://www.click2call.com.au/help/how-to-create-ring-group) instead of Forward Always.
 
-**What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outbound call from the number that forwards it. On a Cloud PBX User number it uses that number’s 300 included minutes first, then 20c a minute to mobiles; an Inbound Business Number has no included minutes, so it is charged per minute from the start. Calls you answer in the [Secure VoIP app](https://www.click2call.com.au/help/how-to-set-up-softphone) instead don’t use minutes at all. See [why your included minutes may not be used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
+**What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outbound call from the number that forwards it. On a Cloud PBX User number it uses that number’s 300 included minutes first, then 20c a minute to mobiles; an Inbound Business Number has no included minutes, so it is charged per minute from the start. Calls you answer in the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone) or the [Web Phone](https://www.click2call.com.au/help/web-phone) instead don’t use minutes at all. See [why your included minutes may not be used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
 
 ### Knowing a call was forwarded from your business number
 
