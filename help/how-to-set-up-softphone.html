@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-11-20",
+  "dateModified": "2026-11-23",
   "name": "Setting Up a Click2Call Softphone App",
   "description": "How to set up the Basic Edition app on iPhone or Android by scanning a QR code, Secure VoIP Micro Edition on Windows, or the Telephone App on Mac, to make and receive calls via Click2Call.",
   "url": "https://www.click2call.com.au/help/how-to-set-up-softphone",
@@ -397,7 +397,7 @@
         <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up a Softphone App</h1>
-      <p class="text-gray-600 leading-relaxed">Click2Call recommends the <strong>Basic Edition</strong> app (by Voice Services) for iPhone and Android, <strong>Secure VoIP Micro Edition</strong> for Windows, and the <strong>Telephone App</strong> for Mac. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started. On a computer you can also skip the download and use the <a href="/web-phone/" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> in your browser.</p>
+      <p class="text-gray-600 leading-relaxed">Click2Call recommends the <strong>Basic Edition</strong> app (by Voice Services) for iPhone and Android, and the <strong>Web Phone</strong> on a Windows PC or Mac: it runs in your browser with nothing to download. If you would rather install an app on your computer, <strong>Secure VoIP Micro Edition</strong> (Windows) and the <strong>Telephone App</strong> (Mac) still work. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started.</p>
 <p class="mt-3 text-sm text-gray-400">Last reviewed: November 2026</p>
     </div>
   </div>
@@ -450,6 +450,9 @@
         </button>
         <button role="tab" aria-selected="false" aria-controls="tab-android" id="btn-android" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150">
           Android
+        </button>
+        <button role="tab" aria-selected="false" aria-controls="tab-webphone" id="btn-webphone" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150">
+          Web Phone (PC &amp; Mac)
         </button>
         <button role="tab" aria-selected="false" aria-controls="tab-windows" id="btn-windows" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-[#3B9C49] hover:text-[#3B9C49] transition-colors duration-150">
           Windows
@@ -536,8 +539,37 @@
       </div>
 
       <!-- Windows Tab -->
+      <!-- Web Phone Tab -->
+      <div id="tab-webphone" role="tabpanel" aria-labelledby="btn-webphone" class="tab-panel hidden">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Using the Web Phone on a Windows PC or Mac (recommended)</h2>
+        <p class="text-sm text-gray-500 mb-6">App: <strong>Click2Call Web Phone</strong> &mdash; <a href="https://phone.click2call.com.au" target="_blank" rel="noopener" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">phone.click2call.com.au</a>. Nothing to download, no extra charge.</p>
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">1</div>
+          <div class="flex-1 min-w-0 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Open the Web Phone in your browser</h3>
+            <p class="text-gray-600 leading-relaxed">Go to <a href="https://phone.click2call.com.au" target="_blank" rel="noopener" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">phone.click2call.com.au</a> in Chrome, Edge, Safari or Firefox. There is nothing to download or install.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">2</div>
+          <div class="flex-1 min-w-0 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Sign in, or scan the QR code</h3>
+            <p class="text-gray-600 leading-relaxed">Sign in with your number and password exactly as shown under <strong>Voice &rarr; Line Manager</strong> (the same details as in the table above), or click <strong>Scan QR code</strong> and hold up the QR code from the number&rsquo;s line page. Staff on extensions sign in with their own extension&rsquo;s username and password.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 mb-8">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">3</div>
+          <div class="flex-1 min-w-0 pt-1">
+            <h3 class="font-bold text-gray-900 mb-2">Install it and turn on ringing</h3>
+            <p class="text-gray-600 leading-relaxed">In Chrome or Edge, install it as an app so it has its own window and opens when you log in. Then open <strong>Settings &rarr; Set up this computer</strong> and turn on <strong>Rings when the app is closed</strong>, so calls reach you even when the Web Phone isn&rsquo;t open.</p>
+          </div>
+        </div>
+        <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-8 text-sm text-gray-700 leading-relaxed">The Web Phone has call waiting, hold, transfer, do not disturb and click-to-call from your CRM or email. The <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone guide</a> covers every setting, and the <a href="/web-phone/" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone page</a> explains what it can and can&rsquo;t do. Prefer an installed app? Use the Windows or Mac tab.</div>
+      </div>
+
       <div id="tab-windows" role="tabpanel" aria-labelledby="btn-windows" class="tab-panel hidden">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">Setting Up Secure VoIP Micro Edition on Windows</h2>
+        <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-8 text-sm text-gray-700 leading-relaxed"><strong>Easier option:</strong> the <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> runs in your browser on Windows, with nothing to install. The installed app below still works if you prefer it.</div>
         <p class="text-sm text-gray-500 mb-6">App: <strong>Secure VoIP Micro Edition</strong> &mdash; <a href="https://www.securevoip.nz/SecureVOIP-3.22.1.0.exe" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Download the Windows installer (.exe)</a></p>
 
         <div class="flex gap-5 mb-8">
@@ -584,6 +616,7 @@
       <!-- Mac Tab -->
       <div id="tab-mac" role="tabpanel" aria-labelledby="btn-mac" class="tab-panel hidden">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">Setting Up the Telephone App on Mac</h2>
+        <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-8 text-sm text-gray-700 leading-relaxed"><strong>Easier option:</strong> the <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> runs in your browser on a Mac, with nothing to install. The installed app below still works if you prefer it.</div>
         <p class="text-sm text-gray-500 mb-6">App: <strong>Telephone</strong> &mdash; <a href="https://apps.apple.com/app/telephone/id406825478" target="_blank" rel="noopener noreferrer" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Download from the Mac App Store</a></p>
 
         <div class="mb-6 rounded-xl bg-amber-50 border border-amber-200 px-5 py-4">
@@ -707,7 +740,7 @@
 
 <div id="kb-added">
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Basic apps and the contacts list</h2>
-    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Basic apps.</strong> <strong>Account &rarr; Apps</strong> also lists an <em>Alternative iPhone Basic App</em> and an <em>Alternative Android Basic App</em>. Try one if the main app does not suit your phone; you log in with the same number and password.</li><li><strong>Mac.</strong> The Telephone app is recommended. A legacy Mac app is also listed, but may not work on some Macs.</li><li><strong>Show only logged-in users.</strong> Under <strong>App Settings</strong> on the same page, tick this to hide colleagues who are not logged in from the contacts list inside the apps.</li></ul>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Basic apps.</strong> <strong>Account &rarr; Apps</strong> also lists an <em>Alternative iPhone Basic App</em> and an <em>Alternative Android Basic App</em>. Try one if the main app does not suit your phone; you log in with the same number and password.</li><li><strong>Mac and Windows.</strong> The <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> is recommended on a computer, with nothing to install. Of the installed apps, Secure VoIP Micro Edition suits Windows and the Telephone app suits a Mac; a legacy Mac app is also listed, but may not work on some Macs.</li><li><strong>Show only logged-in users.</strong> Under <strong>App Settings</strong> on the same page, tick this to hide colleagues who are not logged in from the contacts list inside the apps.</li></ul>
     <p class="text-gray-600 leading-relaxed mb-4">To see whether there is a wider problem before troubleshooting an app, see <a href="/help/network-status" class="underline">Network Status</a>.</p>
 </div><!-- /kb-added -->
 

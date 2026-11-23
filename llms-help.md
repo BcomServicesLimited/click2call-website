@@ -291,7 +291,7 @@ Source: https://www.click2call.com.au/help/how-to-activate-account
 
 This guide walks you through what happens after you complete the Click2Call signup form and how to access your portal for the first time.
 
-Last reviewed: August 2026
+Last reviewed: November 2026
 
 ### Activating Your Account, Step by Step
 
@@ -341,7 +341,7 @@ The Account Plan page — view your services, channels, and line plans
 
 #### Start adding your phone services
 
-Click **Voice** in the top navigation bar to go to the Voice Numbers page. From here you can add phone numbers, create extensions for your team, and provision desk phones and softphones. Use the buttons at the top — **Add Phone Number**, **Add Extension**, and **Add Channels** — to get started.
+Click **Voice** in the top navigation bar to go to the Voice Numbers page. From here you can add phone numbers, create extensions for your team, and provision desk phones and softphones. Use the buttons at the top — **Add Phone Number**, **Add Extension**, and **Add Channels** — to get started. To start calling from a Windows PC or Mac straight away, open the [Web Phone](https://www.click2call.com.au/help/web-phone) in your browser and sign in with your number and password from **Voice → Line Manager**.
 
 The Voice Numbers page — your hub for managing extensions and phone numbers
 
@@ -383,7 +383,7 @@ To get the most out of your trial, we recommend following these steps:
 
 - **Add a number:** Go to Account → Numbers and add a local number.
 
-- **Set up a device:** Download our softphone app or register a SIP desk phone.
+- **Set up a device:** On a Windows PC or Mac, open the [Web Phone](https://www.click2call.com.au/help/web-phone) in your browser and sign in with your number and password from Line Manager; there is nothing to download. On a mobile, install the Basic Edition app, or register a SIP desk phone.
 
 - **Test inbound calls:** Call your new Click2Call number from your mobile to ensure it rings your device.
 
@@ -395,7 +395,7 @@ To get the most out of your trial, we recommend following these steps:
 
 The $11 + GST credit covers one local number and a few test calls. To try the system with several people, top up your credit and add a Cloud PBX User ($25 a month ex GST) for each person who needs to make calls. Each one gets their own extension and can use the app.
 
-Staff overseas can join the test the same way. They install the app, sign in to their extension and take calls as if they were in Australia, and their outbound calls show your Australian number. There's no extra charge for using the app from another country. See [Setting up the apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
+Staff overseas can join the test the same way. They open the Web Phone in a browser or install the app, sign in to their extension and take calls as if they were in Australia, and their outbound calls show your Australian number. There's no extra charge for using the app from another country. See [Setting up the apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
 
 ### What happens after the trial?
 
@@ -443,7 +443,7 @@ Getting Started
 
 Before you can make an outbound call with Click2Call, you need two things: a **phone number** on your account (so you have a caller ID to display) and a **registered device** to dial from. This guide walks you through both steps and covers all three ways to make calls — softphone app, SIP desk phone, or diverting to your mobile.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 Your 7-day trial includes $11 + GST credit and 10 test calls
 
@@ -481,7 +481,7 @@ Click2Call supports three ways to make and receive calls. Choose the option that
 
 Recommended
 
-A softphone app turns your smartphone or computer into a business phone. Calls go over your internet connection — no extra hardware needed. Click2Call recommends the **Secure VoIP App** for iPhone, Android, and Windows, and the **Telephone App** for Mac.
+A softphone app turns your smartphone or computer into a business phone. Calls go over your internet connection — no extra hardware needed. On a Windows PC or Mac, the quickest start is the [Web Phone](https://www.click2call.com.au/help/web-phone): open phone.click2call.com.au in your browser, sign in with the number and password from **Voice → Line Manager** (or scan the line’s QR code), and make your first call. Nothing to download, no extra charge. On iPhone and Android, Click2Call recommends the **Basic Edition** app.
 
 In the portal, go to **Apps** in the top navigation to find your download links and SIP credentials. For a full setup walkthrough, see the [Setting Up a Softphone App](https://www.click2call.com.au/help/how-to-set-up-softphone) guide.
 
@@ -543,7 +543,7 @@ I can make calls but there is no audio
 
 On mobile, check that the app has been granted **microphone permission**. On iOS, go to **Settings → Privacy → Microphone** and ensure the app is enabled. On Android, go to **Settings → Apps → [App name] → Permissions**.
 
-On desktop, check that the correct audio input and output devices are selected in the app settings. If you are behind a corporate firewall, your IT team may need to open UDP ports 10000–20000 for RTP audio traffic.
+On desktop, check that the correct audio input and output devices are selected in the app settings. In the Web Phone, choose them under **Settings**, and allow the browser to use your microphone. The Web Phone switches to a relay by itself when a firewall blocks audio; for an installed app behind a corporate firewall, your IT team may need to open UDP ports 10000–20000 for RTP audio traffic.
 
 My call failed with “Insufficient credit”
 
@@ -1058,7 +1058,7 @@ Source: https://www.click2call.com.au/help/how-to-add-extension
 
 Extensions are the internal numbers used within your phone system. Each user or device typically has its own extension. This guide walks you through adding a new extension in the Click2Call portal, using a real example with step-by-step screenshots.
 
-Last reviewed: August 2026
+Last reviewed: November 2026
 
 ### Adding an Extension, Step by Step
 
@@ -1138,7 +1138,7 @@ Once saved, the new extension will appear in the **User Extensions** list on the
 
 - Register a desk phone using the extension number and SIP password
 
-- Or install a softphone app (e.g. Zoiper, Bria) and log in with the SIP credentials
+- Or sign in to the [Web Phone](https://www.click2call.com.au/help/web-phone) in a computer browser with the extension’s username and password, or install a softphone app (e.g. Zoiper, Bria) and log in with the SIP credentials
 
 - Add the extension to a ring group or call flow to receive inbound calls
 
@@ -1186,7 +1186,7 @@ After the user is created, the system automatically sends a welcome email to the
 
 #### Assign an Extension (Optional)
 
-Once the user login is created, you can link it to an extension so the user can make and receive calls. Navigate to **Extensions & Users** in the portal, select the relevant extension, and assign the new user's login from the dropdown. This allows the user to log in to a softphone or desk phone using their credentials. See the [Adding a New Extension](https://www.click2call.com.au/help/how-to-add-extension) guide for full details.
+Once the user login is created, you can link it to an extension so the user can make and receive calls. Navigate to **Extensions & Users** in the portal, select the relevant extension, and assign the new user's login from the dropdown. This allows the user to log in to the Web Phone, a softphone or a desk phone using their credentials. See the [Adding a New Extension](https://www.click2call.com.au/help/how-to-add-extension) guide for full details.
 
 ### Frequently Asked Questions
 
@@ -1498,9 +1498,9 @@ See [Fixing one-way audio and dropped registrations](https://www.click2call.com.
 
 Source: https://www.click2call.com.au/help/which-phones-can-i-use
 
-Click2Call works with IP desk phones, the Secure VoIP app on your mobile or computer, and ordinary analogue phones through an adaptor. Back-to-base alarm systems are the one thing we don't recommend connecting.
+Click2Call works with IP desk phones, the Web Phone in your computer's browser, the Basic Edition app on your mobile, and ordinary analogue phones through an adaptor. Back-to-base alarm systems are the one thing we don't recommend connecting.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### IP desk phones
 
@@ -1518,7 +1518,7 @@ Any standard SIP phone works. The portal sets up these brands for you automatica
 
 ### Your mobile or computer
 
-The free Secure VoIP app turns your phone or PC into a business line. See [Setting up the Secure VoIP app](https://www.click2call.com.au/help/how-to-set-up-softphone).
+On a Windows PC or Mac, the [Web Phone](https://www.click2call.com.au/help/web-phone) turns your computer into a business line in the browser, with nothing to download and no extra charge. On iPhone and Android, the free Basic Edition app does the same. See [Setting up a softphone app](https://www.click2call.com.au/help/how-to-set-up-softphone).
 
 ### An existing analogue phone or fax
 
@@ -1679,9 +1679,9 @@ During an incoming call, open the keypad and dial `#0` then the number for an at
 
 Source: https://www.click2call.com.au/help/secure-voip-windows-tips
 
-This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number, and run it on Linux.
+This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number, and run it on Linux. If you would rather not install anything, the [Web Phone](https://www.click2call.com.au/help/web-phone) does the same job in Chrome or Edge, including click-to-call.
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 ### Clean reinstall
 
@@ -3311,7 +3311,7 @@ Phones & Devices
 
 ## Setting Up a Softphone App
 
-Click2Call recommends the **Basic Edition** app (by Voice Services) for iPhone and Android, **Secure VoIP Micro Edition** for Windows, and the **Telephone App** for Mac. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started. On a computer you can also skip the download and use the [Web Phone](https://www.click2call.com.au/web-phone/) in your browser.
+Click2Call recommends the **Basic Edition** app (by Voice Services) for iPhone and Android, and the **Web Phone** on a Windows PC or Mac: it runs in your browser with nothing to download. If you would rather install an app on your computer, **Secure VoIP Micro Edition** (Windows) and the **Telephone App** (Mac) still work. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started.
 
 Last reviewed: November 2026
 
@@ -3334,6 +3334,8 @@ You will need the following details to log in to any of the apps below. Your pho
 iPhone / iPad
 
 Android
+
+Web Phone (PC & Mac)
 
 Windows
 
@@ -3395,7 +3397,33 @@ In the portal, go to **Voice → Line Manager** and open your number’s line pa
 
 On the main screen, tap the button in the bottom right corner with the three dots. In the pop-up that follows, tap the button with the phone icon on the left to place a test call to your voicemail. Microphone access may be requested at this point depending on your device — select **Allow**. As you navigate to other parts of the app for the first time (such as the Contacts screen), you will be prompted for additional permissions. Always select **Allow** to ensure all features work correctly.
 
+### Using the Web Phone on a Windows PC or Mac (recommended)
+
+App: **Click2Call Web Phone** — phone.click2call.com.au. Nothing to download, no extra charge.
+
+1
+
+#### Open the Web Phone in your browser
+
+Go to phone.click2call.com.au in Chrome, Edge, Safari or Firefox. There is nothing to download or install.
+
+2
+
+#### Sign in, or scan the QR code
+
+Sign in with your number and password exactly as shown under **Voice → Line Manager** (the same details as in the table above), or click **Scan QR code** and hold up the QR code from the number’s line page. Staff on extensions sign in with their own extension’s username and password.
+
+3
+
+#### Install it and turn on ringing
+
+In Chrome or Edge, install it as an app so it has its own window and opens when you log in. Then open **Settings → Set up this computer** and turn on **Rings when the app is closed**, so calls reach you even when the Web Phone isn’t open.
+
+The Web Phone has call waiting, hold, transfer, do not disturb and click-to-call from your CRM or email. The [Web Phone guide](https://www.click2call.com.au/help/web-phone) covers every setting, and the [Web Phone page](https://www.click2call.com.au/web-phone/) explains what it can and can’t do. Prefer an installed app? Use the Windows or Mac tab.
+
 ### Setting Up Secure VoIP Micro Edition on Windows
+
+**Easier option:** the [Web Phone](https://www.click2call.com.au/help/web-phone) runs in your browser on Windows, with nothing to install. The installed app below still works if you prefer it.
 
 App: **Secure VoIP Micro Edition** — Download the Windows installer (.exe)
 
@@ -3430,6 +3458,8 @@ Switch to the Contacts screen to add contacts to your address book. Right-click 
 To handle attended and blind transfers or take multiple incoming calls simultaneously, go to **Settings** and untick **Single Call Mode**. The app will then be able to manage multiple calls at the same time.
 
 ### Setting Up the Telephone App on Mac
+
+**Easier option:** the [Web Phone](https://www.click2call.com.au/help/web-phone) runs in your browser on a Mac, with nothing to install. The installed app below still works if you prefer it.
 
 App: **Telephone** — Download from the Mac App Store
 
@@ -3495,7 +3525,7 @@ Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](h
 ### Basic apps and the contacts list
 
 - **Basic apps.** **Account → Apps** also lists an Alternative iPhone Basic App and an Alternative Android Basic App. Try one if the main app does not suit your phone; you log in with the same number and password.
-- **Mac.** The Telephone app is recommended. A legacy Mac app is also listed, but may not work on some Macs.
+- **Mac and Windows.** The [Web Phone](https://www.click2call.com.au/help/web-phone) is recommended on a computer, with nothing to install. Of the installed apps, Secure VoIP Micro Edition suits Windows and the Telephone app suits a Mac; a legacy Mac app is also listed, but may not work on some Macs.
 - **Show only logged-in users.** Under **App Settings** on the same page, tick this to hide colleagues who are not logged in from the contacts list inside the apps.
 
 To see whether there is a wider problem before troubleshooting an app, see [Network Status](https://www.click2call.com.au/help/network-status).
