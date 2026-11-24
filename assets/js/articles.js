@@ -707,7 +707,7 @@ var HELP_ARTICLES = [
     url:      "/help/web-phone",
     title:    "Click2Call Web Phone: Calls from Your Browser",
     desc:     "Make and take calls on your Click2Call number in any browser: sign in, features, install it on your computer or iPhone, forward to your mobile when it's closed, and limitations.",
-    tags:     "web phone browser phone webrtc softphone install app chrome edge safari iphone home screen recents do not disturb keep me signed in forward offline",
+    tags:     "web phone webphone browser phone online phone pc phone mac windows computer laptop webrtc softphone install app chrome edge safari firefox iphone home screen recents do not disturb keep me signed in forward offline click to call",
     category: "devices",
     readTime: "8 min read",
     featured: true,
