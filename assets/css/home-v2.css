@@ -601,3 +601,8 @@
 .hv2 .compare-plans td:not(:first-child){color:var(--g-dark);font-weight:700}
 .hv2 .sub-h{font-size:1.25rem;font-weight:800;text-align:center;margin:48px 0 18px;color:var(--ink)}
 @media (max-width:640px){.hv2 .compare-plans th,.hv2 .compare-plans td{padding:10px 8px;font-size:.85rem}}
+
+/* pricing: the "Pricing a team?" card sits under the three plans (rebrand, Nov 2026) */
+.hv2 .plan.team-strip{margin-top:20px}
+@media (min-width:861px){.hv2 .plan.team-strip{display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:24px}.hv2 .plan.team-strip .pill{grid-row:1/3;align-self:center}.hv2 .plan.team-strip h3{grid-column:2}.hv2 .plan.team-strip p{grid-column:2}.hv2 .plan.team-strip .more{grid-column:3;grid-row:1/3}}
+@media (min-width:641px) and (max-width:1024px){.hv2 .plans>.plan:nth-child(3){grid-column:1/-1}}

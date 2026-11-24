@@ -393,7 +393,7 @@ To get the most out of your trial, we recommend following these steps:
 
 ### Testing with your team, including staff overseas
 
-The $11 + GST credit covers one local number and a few test calls. To try the system with several people, top up your credit and add a Cloud PBX User ($25 a month ex GST) for each person who needs to make calls. Each one gets their own extension and can use the app.
+The $11 + GST credit covers one local number and a few test calls. To try the system with several people, top up your credit and add a Business Line ($25 a month ex GST) for each person who needs to make calls. Each one gets their own extension and can use the app.
 
 Staff overseas can join the test the same way. They open the Web Phone in a browser or install the app, sign in to their extension and take calls as if they were in Australia, and their outbound calls show your Australian number. There's no extra charge for using the app from another country. See [Setting up the apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
 
@@ -403,11 +403,11 @@ At the end of the 7 days, or when your $11 + GST credit runs out (whichever come
 
 #### Building your setup after the trial
 
-The $10 Inbound Business Number you activated during the trial is ideal for **receiving inbound calls**. Many businesses keep it exactly as it is — routing inbound calls to an auto-attendant, applying after-hours rules, or directing callers to the right team. There is no need to change it.
+The $10 Business Number you activated during the trial is ideal for **receiving inbound calls**. Many businesses keep it exactly as it is — routing inbound calls to an auto-attendant, applying after-hours rules, or directing callers to the right team. There is no need to change it.
 
-For staff who need to make outbound calls, simply add one or more **Cloud PBX User** plans ($25/month each) to your account. Each Cloud PBX User includes 300 outbound minutes per month to standard Australian numbers and can be assigned their own extension. Your $10 inbound number continues to sit alongside these users, handling all incoming calls.
+For staff who need to make outbound calls, simply add a **Business Line** ($25/month, shown as Cloud PBX User in the portal) for each of them. Each Business Line includes 300 outbound minutes per month to standard Australian numbers and can be assigned their own extension. Your $10 Business Number continues to sit alongside these lines, handling all incoming calls.
 
-For example, a small business might keep the $10 number for inbound calls and add two Cloud PBX Users for two staff members who make outbound calls — a total of $60/month for a fully functional phone system.
+For example, a small business might keep the $10 number for inbound calls and add two Business Lines for two staff members who make outbound calls — a total of $60/month for a fully functional phone system.
 
 To get started, simply log in to the portal, add a credit card, and add the plans you need under the Subscriptions tab.
 
@@ -423,14 +423,14 @@ Outbound calls stop at day 7, or sooner if the $11 + GST runs out](https://www.c
 Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
 [#### Add your team
 
-$25 a user a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
+A $25 Business Line for each person, with their own number and 300 minutes (ex GST)](https://www.click2call.com.au/help/how-to-add-user)
 [#### Have us set it up
 
-Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](https://www.click2call.com.au/contact/)
+Done for you: $300 ex GST for 1 to 3 lines, free on approval with 4 or more, done in 1–2 business days](https://www.click2call.com.au/contact/)
 
 ### What the trial credit covers
 
-The trial credit is enough to add a $10 Inbound Business Number and make a few outgoing calls, and to try the AI features and the API. To test more, such as extra users or numbers, add credit during the trial; see [Adding credit](https://www.click2call.com.au/help/how-to-add-account-credit).
+The trial credit is enough to add a $10 Business Number and make a few outgoing calls, and to try the AI features and the API. To test more, such as extra users or numbers, add credit during the trial; see [Adding credit](https://www.click2call.com.au/help/how-to-add-account-credit).
 
 ## Making Your First Call
 
@@ -846,7 +846,7 @@ Phone Numbers
 
 ## How to Add a Phone Number
 
-Add a new Australian phone number to your Click2Call account. Choose between a **Cloud PBX** line (full PBX features including Auto Attendant) or a **Inbound Business Number** line (basic inbound/outbound). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more. Not sure which type to pick? The [business phone numbers page](https://www.click2call.com.au/business-phone-numbers/) compares local, 04 mobile, 1300 and 1800 numbers and their fees.
+Add a new Australian phone number to your Click2Call account. Choose a **Business Line** ($25 a month: makes and receives calls, with 300 minutes; shown as Cloud PBX User in the portal) or a **Business Number** ($10 a month: receives calls; shown as Inbound Business Number in the portal). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more. Not sure which type to pick? The [business phone numbers page](https://www.click2call.com.au/business-phone-numbers/) compares local, 04 mobile, 1300 and 1800 numbers and their fees.
 
 Last reviewed: October 2026
 
@@ -856,7 +856,7 @@ Before you begin
 
 - Ensure your account has sufficient credit — a pro-rata charge applies for the current billing period.
 
-- A Inbound Business Number costs **$10/month ex GST**. An Inbound Business Number costs **$10/month ex GST**.
+- A Business Number costs **$10/month ex GST**. A Business Line costs **$25/month ex GST** with 300 minutes included.
 
 1
 
@@ -907,11 +907,11 @@ Choose the billing plan for your number. Two options are available:
 
 | Plan | Monthly Cost | Best for |
 
-| Inbound Business Number | $10+ / month | Unlimited inbound calls, no included minutes; extensions can call out on it at standard rates |
+| Business Number Inbound Business Number in the portal | $10 / month | Receives calls, with no included minutes; extensions can call out on it at 10c a minute to landlines and 20c to mobiles |
 
-| Inbound Business Number | $10+ / month | Full inbound & outbound PBX line. Required for Auto Attendant (IVR) features. |
+| Business Line Cloud PBX User in the portal | $25 / month | Makes and receives calls, with 300 minutes included each month |
 
-**Important:** If you plan to set up an **Auto Attendant (IVR menu)** where callers press 1 for Sales, 2 for Support, etc., you **must** select the **Inbound Business Number** plan. The Inbound Business Number plan does not support Auto Attendant features.
+**Both plans include every feature**, including an **Auto Attendant (IVR menu)** where callers press 1 for Sales, 2 for Support, and so on. The only difference is calls out: a Business Line includes 300 minutes, and a Business Number pays per minute. You can switch a number between the two plans later.
 
 7
 
@@ -1106,7 +1106,7 @@ Complete the form fields for the new extension. The key fields are:
 
 | Extension Number * | Internal extension number (auto-filled) | 102 |
 
-| Number Assignment | Choose Extension Only or assign an Inbound Business Number number | Extension Only |
+| Number Assignment | Choose Extension Only or assign a Business Number | Extension Only |
 
 | Display Name | Name shown on outbound caller ID | Sarah Mitchell |
 
@@ -2736,7 +2736,7 @@ Most registration problems are one of three things: the line has no password set
 | Groundwire | iPhone, Android | Not tested — should work as a standard SIP app |
 | Other SIP softphones (e.g. Zoiper, MicroSIP) | Various | Not tested — standard SIP apps generally work |
 
-Any standard SIP softphone can usually connect with the same credentials, but Click2Call can only help configure the apps above. If you want someone else to set up a third-party app for you, managed setup is available — see [Pricing](https://www.click2call.com.au/pricing/). Using simPRO? It has its own guide: [Connecting simPRO](https://www.click2call.com.au/help/how-to-connect-simpro).
+Any standard SIP softphone can usually connect with the same credentials, but Click2Call can only help configure the apps above. If you want someone else to set up a third-party app for you, done-for-you set-up is available — see [Pricing](https://www.click2call.com.au/pricing/). Using simPRO? It has its own guide: [Connecting simPRO](https://www.click2call.com.au/help/how-to-connect-simpro).
 
 ### Where are my SIP credentials?
 
@@ -3519,10 +3519,10 @@ Test a call in and out on your new number](https://www.click2call.com.au/help/ho
 Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
 [#### Add your team
 
-$25 a user a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
+A $25 Business Line for each person, with their own number and 300 minutes (ex GST)](https://www.click2call.com.au/help/how-to-add-user)
 [#### Have us set it up
 
-Managed setup from $300 ex GST for up to 3 users, done in 1–2 business days](https://www.click2call.com.au/contact/)
+Done for you: $300 ex GST for 1 to 3 lines, free on approval with 4 or more, done in 1–2 business days](https://www.click2call.com.au/contact/)
 
 ### Basic apps and the contacts list
 
@@ -4665,7 +4665,7 @@ Yes — **Open TV View** gives a full-screen wallboard for a wall monitor, still
 The dashboard is real time — what is happening now, plus totals for the period you select. [Reports & Records](https://www.click2call.com.au/help/how-to-use-reports-and-records) are historical, for filtering and exporting past call and billing data. Use the dashboard to manage the day, Reports to analyse it afterwards.
 
 #### Is there an extra charge?
-No. The dashboard and the TV view are included with a standard Cloud PBX user at $25/user/month ex GST — no supervisor licence, analytics add-on or separate tier. More on the [call centre features page](https://www.click2call.com.au/call-centre/).
+No. The dashboard and the TV view are included with a standard Business Line at $25/user/month ex GST — no supervisor licence, analytics add-on or separate tier. More on the [call centre features page](https://www.click2call.com.au/call-centre/).
 
 ## Creating a Ring Group
 
@@ -4901,7 +4901,7 @@ Difficulty: Advanced
 
 Before you begin
 
-You’ll need Global Admin access to your Microsoft 365 tenant, a Microsoft Teams Phone Standard licence (or an E5 licence) for every user that will make calls, and comfort with the Microsoft PowerShell command line for the final step. If you’d rather we handle the setup for you, our [managed setup service](https://www.click2call.com.au/pricing/#managed-setup) covers Teams Direct Routing from end to end.
+You’ll need Global Admin access to your Microsoft 365 tenant, a Microsoft Teams Phone Standard licence (or an E5 licence) for every user that will make calls, and comfort with the Microsoft PowerShell command line for the final step. If you’d rather we handle the setup for you, our [done-for-you set-up](https://www.click2call.com.au/pricing/#managed-setup) covers Teams Direct Routing from end to end.
 
 ### What this guide covers
 
@@ -5099,7 +5099,7 @@ The Skype for Business Online service was retired by Microsoft in July 2021. If 
 
 Our Australian team can complete the whole Teams Direct Routing configuration end-to-end — SBC, licences, PowerShell, testing.
 
-[Managed setup service](https://www.click2call.com.au/pricing/#managed-setup)
+[Done-for-you set-up](https://www.click2call.com.au/pricing/#managed-setup)
 
 ## Forwarding Calls to Your Mobile
 
@@ -5139,7 +5139,7 @@ Dial ***58** from any phone on your account to record your unavailable greeting,
 
 **Good to know:** During work hours, a diverted call that rings out is answered by your mobile’s own voicemail, not Click2Call’s. If you would rather always use Click2Call voicemail, use [Simultaneous Ring](https://www.click2call.com.au/help/how-to-create-ring-group) instead of Forward Always.
 
-**What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outbound call from the number that forwards it. On a Cloud PBX User number it uses that number’s 300 included minutes first, then 20c a minute to mobiles; an Inbound Business Number has no included minutes, so it is charged per minute from the start. Calls you answer in the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone) or the [Web Phone](https://www.click2call.com.au/help/web-phone) instead don’t use minutes at all. See [why your included minutes may not be used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
+**What forwarding costs:** a forwarded call leaves our platform, so the leg out to your mobile is billed as an outbound call from the number that forwards it. On a Business Line number it uses that number’s 300 included minutes first, then 20c a minute to mobiles; a Business Number has no included minutes, so it is charged per minute from the start. Calls you answer in the [Basic Edition app](https://www.click2call.com.au/help/how-to-set-up-softphone) or the [Web Phone](https://www.click2call.com.au/help/web-phone) instead don’t use minutes at all. See [why your included minutes may not be used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
 
 ### Knowing a call was forwarded from your business number
 
@@ -5476,7 +5476,7 @@ Increase your call capacity by adding more channels to your account, allowing mo
 
 Think of a channel as a single phone line. If you have **two channels**, your business can make or receive a maximum of **two calls at the same time**. If a third call comes in while both channels are busy, that caller will go to voicemail or hear a busy signal.
 
-Every Click2Call account comes with **2 free channels** by default. You also receive one extra free channel for every purchased phone number on your account (excluding Inbound Business Numbers).
+Every Click2Call account comes with **2 free channels** by default. You also receive one extra free channel for every purchased phone number on your account (excluding Business Numbers).
 
 #### How Many Channels Do I Need?
 
@@ -5484,7 +5484,7 @@ The number of channels you need depends on how many people will be on the phone 
 
 #### How Much Do They Cost?
 
-If you need more channels than are included with your plan, you can add them at any time. Channels are included with your Cloud PBX User plan. The cost is pro-rated for the first month.
+If you need more channels than are included with your plan, you can add them at any time. Channels are included with your Business Line. The cost is pro-rated for the first month.
 
 1
 
@@ -5823,23 +5823,23 @@ Last reviewed: October 2026
 ### What each number costs
 
 | Plan | Price | What it’s for |
-| Cloud PBX User | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
-| Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
-| Microsoft Teams User | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: an Inbound Business Number can’t be used with Teams. Teams setup is $50 + GST ($55.00) per user. |
+| Business Line Cloud PBX User in the portal | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
+| Business Number Inbound Business Number in the portal | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
+| Teams Line Microsoft Teams User in the portal | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: a Business Number can’t be used with Teams. Done-for-you set-up is $300 + GST for 1 to 3 lines, or free on approval with 4 or more lines once the first month is paid. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 
-New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Cloud PBX User with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within 24 hours, Monday to Friday, and we email you when the number is active.
+New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Business Line with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within 24 hours, Monday to Friday, and we email you when the number is active.
 
 When you add a number partway through a month, you first pay for the part of the month that is left. After that it is charged in full each month.
 
 ### Included minutes belong to one number
 
-The 300 minutes on a Cloud PBX User plan are used only by calls made from that number. Calls made from your other numbers or extensions are charged per minute, even though they are on the same account and the same bill. If your minutes seem unused, check which number the calls were made from.
+The 300 minutes on a Business Line are used only by calls made from that number. Calls made from your other numbers or extensions are charged per minute, even though they are on the same account and the same bill. If your minutes seem unused, check which number the calls were made from.
 
 ### See what you are paying for
 
 - **Account → Numbers** lists every number and extension with its line type, line plan, minutes used and monthly cost including GST.
-- **Account → Plan → Line Plans** shows the plan on each number.
+- **Account → Plan → Line Plans** shows the plan on each number. The portal still uses the older names: Cloud PBX User for a Business Line, Inbound Business Number for a Business Number, and Microsoft Teams User for a Teams Line.
 - **Current Account Details**, at the bottom of the Plan page, lists every monthly charge on the account.
 
 ### Change a number’s plan

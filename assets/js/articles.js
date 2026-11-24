@@ -1058,7 +1058,7 @@ var HELP_ARTICLES = [
     url:      "/help/plans-numbers-and-channels",
     title:    "Plans, Numbers and Channels",
     desc:     "What each number costs, why extensions are free, how included minutes work, and how to change a number's plan or add channels.",
-    tags:     "plan pricing cloud pbx user inbound business number line plan change plan edit number account plan bundles channels included minutes cost",
+    tags:     "plan pricing business line business number teams line cloud pbx user inbound business number line plan change plan edit number account plan bundles channels included minutes cost",
     category: "billing",
     readTime: "3 min read",
     featured: false,

@@ -1,0 +1,1550 @@
+[
+ {
+  "kind": "description",
+  "old": "A business number from $10 a month ex GST, paying only for the calls you make, or $25 per user with 300 outbound minutes. Every feature included. No lock-in.",
+  "new": "A Business Number is $10 a month ex GST to receive calls. A Business Line is $25 a month with 300 minutes to make and receive calls; a Teams Line is the same inside Microsoft Teams. No lock-in.",
+  "reason": "Meta description uses the new plan names. Title unchanged."
+ },
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "Structured data uses the new plan names (Teams Line offer added on pricing); FAQ schema text changed word for word with the visible FAQ."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h1: Your business number, $10 a month",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h2: Start with a $10 number. Add minutes only if you need them.",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h3: Cloud PBX User",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h3: Solo operator",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h3: Small office",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h3: Growing team",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h3: Step 2 — Your number’s plan",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h2: Same phone system on both plans. Only calls out are different.",
+  "new": "",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h2: Managed Phone System Setup & Number Porting",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h1: A number from $10 . A line for each person, $25 .",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h2: A number receives. A line makes and receives.",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Business Line",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Teams Line",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Just a number",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Team of 3",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Team of 5",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Step 2 — Your main number’s plan",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h2: Same phone system on every plan. Only calls out are different.",
+  "reason": "Three plans side by side with equal weight (Business Number, Business Line marked for teams, Teams Line), replacing the \"Start with a $10 number\" framing. Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h2: Done-for-you Phone System Setup & Number Porting",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$10 a month",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$10 for a new main number",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$10 for your existing number",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$10 per business number / month (ex GST) — unlimited incoming calls, every feature and free internal extensions for your whole team, who answer and call out showing the number.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$10/month per extra inbound line (ex GST)",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$100 inc GST once to move your number",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$25 a month",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$25 per user / month (ex GST) — a local number with 300 outbound minutes included.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$25/month per user (ex GST)",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$55",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$75 for 3 staff with their own number and 300 minutes each",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$85 /month + calls",
+  "new": "",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "2 staff on free extensions, calls at 10c/20c a minute",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "300 minutes included",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "300 minutes included $25/month Cheaper if you make more than about 75 minutes of mobile calls a month (or about 150 to landlines).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "4 staff + your existing number",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "4 staff on free extensions, all answering and calling from it",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "5 staff, 3 who make a lot of calls",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "A number you bring across runs on its own plan once it arrives: $10/month as an inbound number, or $25/month as a Cloud PBX User.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Add $10 ex GST a month for each extra inbound number (a shared reception line, a 1300 or an 1800).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Add minutes only if you need them.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Add up users, numbers, porting, phones and setup in the quote builder.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Additional user setup (per user)",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Also available: Microsoft Teams calling ($25 per Teams user, because a $10 number can’t be used in Teams), SIP trunks for an existing phone system, and a developer API included free on every account.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "An Inbound Business Number has no included minutes, so forwarded calls are charged per minute from the start.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Both paths end in the same place — a working phone system.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Calls out: 300 minutes included each month",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Calls to the number ring your team, everyone calls out showing the business number, and calls out cost 10c a minute to landlines and 20c to mobiles.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cheaper if you make more than about an hour of calls to mobiles a month.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cheaper than paying per call once you make more than about 75 minutes of calls to mobiles a month (or about 150 to landlines).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call starts at $10 a month (ex GST) for an Australian business number, with unlimited incoming calls and every Cloud PBX feature.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cloud PBX Setup (up to 3 users)",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Cloud PBX User",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each number you bring across needs its own plan: a $10 Business Number, or a $25 Cloud PBX User if you want 300 outbound minutes included.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each number you bring across then runs on its own plan ($10/month as an inbound number).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each number you bring across then runs on its own plan ($10/month as an inbound number, or $25/month as a Cloud PBX User).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Every number comes with the whole phone system and the AI features.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Extra inbound numbers are $10 a month each.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Five users sharing one practice number, with managed setup: five users at $25 plus $10 for the shared number is $135 a month ex GST, $148.50 inc GST .",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "For regular callers",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Growing team",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you get stuck or decide you'd rather have us handle it, you can switch to managed setup any time during your trial.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you keep it $10/month + calls",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you make a lot of calls, a $25 Cloud PBX User includes 300 outbound minutes.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you make more than about 75 minutes of calls to mobiles a month (or about 150 minutes to landlines), a $25 Cloud PBX User works out cheaper, because 300 minutes are included.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you only need to receive calls, an Inbound Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you’ll make more than about an hour of calls to mobiles a month, the $25 plan is cheaper (the exact break-even is about 75 minutes to mobiles, or 150 to landlines).",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Includes 1 local number, 300 outbound minutes, and unlimited inbound calls",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Just you, one business number",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Lots of calls?",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Making a lot of calls",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Managed Phone System Setup & Number Porting",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Managed setup is $300 for the first three users plus $50 each for the other two: $400 ex GST, $440 inc GST , once.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Many businesses keep the $10 Inbound Number permanently for reception routing, then add Cloud PBX User plans ($25/month each) for staff who need to make outbound calls.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Microsoft Teams Setup (per user)",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Microsoft Teams users are also $25",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most businesses take one $10 Business Number and give every staff member a free internal extension.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most people start here",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most people start here.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Mostly answering calls",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "No lock-in contracts, no hidden fees and no hardware required.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Of those, people who want their own number and 300 minutes",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "On a Cloud PBX User number it comes out of that number’s 300 minutes first, then costs 20c a minute.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Once it arrives, each ported number runs on its own plan: $10/month as an inbound number, or $25/month as a Cloud PBX User.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "One user with a Melbourne 03 number and a 1300 number: $25 for the user (the 03 number is included) plus $10 for the 1300 is $35 a month ex GST, $38.50 inc GST , plus 20c a minute for calls into the 1300, and a one-off $100 inc GST allocation fee if the 1300 number is new.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Optional, $25 a month each: a direct local number and 300 outbound minutes.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Our team can handle everything for you if you prefer — including end-to-end number porting from your existing carrier.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Our team configures everything to your requirements.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Pay as you call",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Pay as you call $10/month Incoming calls are free.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Pick whichever suits how you like to work.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Priced separately: building an ElevenLabs AI Agent ($500 ex GST), Microsoft Teams setup ($50 ex GST per user), and connecting a CRM, which you do yourself with the API.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Same phone system on both plans.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "See your monthly and one-off totals as you go, then start a trial or download a formal PDF quote.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Set it up for me (from $300 + GST)",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Setup is free if you follow the help guides; managed setup is $300 ex GST for up to 3 users plus $50 per additional user.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Setup: free if you do it yourself with the help guides; managed setup is $300 ex GST for up to 3 users, then $50 per extra user.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Small office",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Solo operator",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Start with a $10 number.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Step 2 — Your number’s plan",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Switch to $25 with 300 minutes",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Switch to Managed Setup",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Take the $10 plan and keep doing that; your customers will see your mobile number instead of your business number.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "The full phone system and AI features",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "The only thing you’re choosing is how you pay for the calls you make.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "There is no cut-down tier because every feature is already included in the $25 user.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "There is no stripped-down tier, because nothing is held back from the $25 user.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "This setup is getting more advanced — most customers choose Managed Setup for this.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "To call out, add a local number under Optional, or a person with their own number in step 3.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Two plans, no tiers",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Two things are cheaper because they do less: an Inbound Business Number at $10 a month receives calls and runs a call flow, with no included minutes (your extensions can still call out on it at standard rates), and if you already own a PBX, a SIP trunk at $50 a month supplies the lines without the phone system.",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Two ways to get set up",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Unlimited incoming calls and free extensions for your team",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Up to 3 users · additional $50 ex GST per user",
+  "new": "",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Web Phone included: calls from your browser",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "With Click2Call, a hosted (cloud) PBX costs $25 per user per month ex GST , and that is the whole monthly price for most businesses: the local number, 300 outbound minutes, unlimited inbound calls, IVR, ring groups, call queues, call recording and AI transcription are all in it.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Worth it for anyone making more than about 75 minutes of mobile calls a month.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "You can switch any number between the two plans yourself in the portal, so you don't have to get it right on day one.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "You don't need to pick a plan to start your trial: your $11 credit covers your first number.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Your business number and unlimited incoming calls",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Your business number, $10 a month",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Your own local number",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Your whole team can answer and call from it on free extensions, and you pay only for the calls you make: 10c a minute to landlines and 20c to mobiles.",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "per user (ex GST)",
+  "new": "",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$10 a month, pay as you call",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$10 for the main number your customers call",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$10/month per Business Number (ex GST)",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$125 for 5 Business Lines, each with a number and 300 minutes",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$135 /month",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$25 a month each: a direct local number and 300 minutes, more than most people use.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$25 a month, 300 minutes",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$25/month per Business Line or Teams Line (ex GST)",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$75 for 3 Business Lines, each with a number and 300 minutes",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$85 /month",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "1 to 3 lines · Free with 4 or more Business Lines or Teams Lines : we approve each request, and set-up starts once the first month is paid (not on trial credit alone)",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "3 Business Lines + a main Business Number",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "300 minutes on every line, more than most people use",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "5 Business Lines + a main Business Number",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A $10 Business Number receives calls.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A $25 Business Line makes and receives calls, with its own number and 300 minutes included.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Business Line inside Microsoft Teams",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Business Line is $25 a month for each person on your team: it makes and receives calls, with 300 minutes included.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Business Number has no included minutes, so forwarded calls are charged per minute from the start.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Business Number is $10 a month to receive calls on an Australian business number.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Teams Line is the same $25 line inside Microsoft Teams.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Teams Line is the same line inside Microsoft Teams.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A line for each person, $25 .",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A line for each person, with their own local number",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A line makes and receives.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A number from $10 .",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A number receives.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A number receives; a line makes and receives, with 300 minutes included.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A number receives; a line makes and receives.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A number you bring across runs on its own plan once it arrives: $10/month as a Business Number, or $25/month as a Business Line.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A phone system for your team: one line each",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A team of 3 is $85 a month: 3 Business Lines and a main Business Number.",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A team of 5 is $135.",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AI receptionist and Answer Agent included",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AI receptionist, call queues and live dashboard included",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AI receptionist, recording and AI summaries on every call",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add $10 ex GST a month for each extra Business Number (a shared reception line, a 1300 or an 1800).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add staff on free extensions any time",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Add up lines, numbers, porting, phones and set-up in the quote builder, then start a trial or download a formal PDF quote.",
+  "reason": "Free remote set-up for accounts with 4 or more Business Lines or Teams Lines (offer Royce accepted 24 Nov 2026); $300 managed set-up stays for smaller accounts."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Also available: Teams Lines for Microsoft Teams ($25 a line, because a $10 number can’t be used in Teams), SIP trunks for an existing phone system, and a developer API included free on every account.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An Australian number that rings in Teams",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Building a phone system for your team?",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Line",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Line or Teams Line",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Line, 300 minutes included $25/month Makes and receives calls.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Line: $25 a line a month (ex GST) — a line for each person on your team, to make and receive calls: a local number with 300 minutes included, more than most people use.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Number, pay as you call $10/month Receives calls; incoming calls are free.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Number: $10 a month (ex GST) — receive calls on a local, 04 mobile, 1300 or 1800 number, with every feature and free internal extensions so your team can answer.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Call queues and a live dashboard included",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Call queues and a live dashboard, no extra licence",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Calls recorded, transcribed and summarised",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Calls recorded, transcribed and summarised inside Teams, with no extra Microsoft recording licence",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Cheaper if you make more than about 75 minutes of mobile calls a month (or about 150 to landlines).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done for you ($300 + GST for 1 to 3 lines; free on approval with 4 or more lines)",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you Phone System Setup & Number Porting",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up free on approval with 4 or more lines",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up free on approval, because you have 4 or more lines",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up is free for accounts with 4 or more Business Lines or Teams Lines: we approve each request, and set-up starts once the first month is paid.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up, 1 to 3 lines (Business Lines or Teams Lines, Teams connection included)",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up, 4 or more Business Lines or Teams Lines (on approval, once the first month is paid)",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each line includes 1 local number, 300 outbound minutes, and incoming calls",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each number you bring across needs its own plan: a $10 Business Number, or a $25 Business Line if you want 300 outbound minutes included.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each number you bring across then runs on its own plan ($10/month as a Business Number).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each number you bring across then runs on its own plan ($10/month as a Business Number, or $25/month as a Business Line).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each person also needs a Teams Phone Standard licence from Microsoft.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Every call recorded, transcribed and summarised; recordings stored in Australia",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Every number and every line comes with the whole phone system and the AI features.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Every plan has the AI receptionist and call recording with AI summaries.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Extra Business Numbers are $10 a month each.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Five people sharing one practice number, with set-up done for you: five Business Lines at $25 plus $10 for the shared Business Number is $135 a month ex GST, $148.50 inc GST .",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "For 1 to 3 lines, done-for-you set-up is $300 ex GST.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "For Microsoft 365 offices",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Free extensions so your team can answer, in the app or the Web Phone",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Give each person a Business Line, or a Teams Line if you work in Microsoft Teams.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Give one to each person who is on the phone a lot: it works out cheaper once someone makes more than about 75 minutes of calls to mobiles a month (or about 150 minutes to landlines).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you get stuck or decide you'd rather have us handle it, you can switch to done-for-you set-up any time during your trial.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you keep it From $10/month",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you only need to receive calls, a Business Number is $10 a month ex GST and runs a full call flow (reception routing, IVR, voicemail to email).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you’ll make more than about an hour of calls to mobiles a month, a $25 Business Line is cheaper (the exact break-even is about 75 minutes to mobiles, or 150 to landlines).",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Just a number",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Just a number: mostly answering calls",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Just answering calls?",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Make and receive · 300 minutes included",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Many businesses keep the $10 Business Number as the main number customers call, then add a $25 Business Line for each person who makes calls.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No contract.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No lock-in contracts and no hardware required.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Of those, people with their own Business Line",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "On a Business Line number it comes out of that number’s 300 minutes first, then costs 20c a minute.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Once it arrives, each ported number runs on its own plan: $10/month as a Business Number, or $25/month as a Business Line.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "One person with a Melbourne 03 number and a 1300 number: $25 for their Business Line (the 03 number is included) plus $10 for the 1300 is $35 a month ex GST, $38.50 inc GST , plus 20c a minute for calls into the 1300, and a one-off $100 inc GST allocation fee if the 1300 number is new.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Or we do it for you: $300 ex GST for 1 to 3 lines, and free on approval for 4 or more Business Lines or Teams Lines, once the first month is paid.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Our team can handle everything for you with done-for-you (managed) set-up if you prefer — including end-to-end number porting from your existing carrier.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Our team configures everything remotely to your requirements.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line. Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Priced separately: building an ElevenLabs AI Agent ($500 ex GST) and connecting a CRM, which you do yourself with the API.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Receive calls · pay as you call out",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Recordings stored in Australia",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Same phone system on every plan.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "See how Teams Lines work",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Set it up yourself for free, online in about 30 minutes with our guides and email support.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line. Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Set-up is remote and covers technical configuration only, not training.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line. Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Setup is free if you follow the help guides, and our done-for-you set-up is free with 4 or more Business Lines or Teams Lines, on approval, once the first month is paid; for 1 to 3 lines, done-for-you set-up is $300 ex GST.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Setup: free if you do it yourself with the help guides, and our done-for-you set-up is free with 4 or more Business Lines or Teams Lines, on approval, once the first month is paid.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Shown as “Cloud PBX User” in the portal",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Shown as “Microsoft Teams User” in the portal",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Step 2 — Your main number’s plan",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Switch to done for you",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Take a $10 Business Number and keep doing that; your customers will see your mobile number instead of your business number.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Take a Business Number.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Team of 3",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Team of 5",
+  "reason": "Fixed team examples made from existing parts: team of 3 = 3 Business Lines + a main Business Number = $85; team of 5 = $135. The \"Small office\"/\"Growing team\" examples are replaced; the $10 number with free extensions is still explained under \"Choosing the right plan\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Teams Line",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Teams Lines are the same price, so count them here too.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The AI receptionist answers when you can’t",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The set-up prices below apply to accounts with 1 to 3 lines.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line. Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "There is no cut-down tier because every feature is already included in the $25 Business Line.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "There is no stripped-down tier, because nothing is held back from the $25 Business Line.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "This setup is getting more advanced — most customers choose done-for-you set-up for this.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Three plans, all ex GST.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Three plans, no tiers",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Three ways to get set up",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line. Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "To call out, add a local number under Optional, or Business Lines in step 3.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Two things are cheaper because they do less: a Business Number at $10 a month receives calls and runs a call flow, with no included minutes (your extensions can still call out on it at standard rates), and if you already own a PBX, a SIP trunk at $50 a month supplies the lines without the phone system.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Web Phone and apps for iPhone and Android",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With 4 or more lines, done-for-you set-up is free on approval once the first month is paid.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With 4 or more lines, our done-for-you set-up is free on approval, once the first month is paid.",
+  "reason": "Set-up terms Royce settled 24 Nov 2026: yourself free; done for you $300 ex GST flat for 1 to 3 lines (Teams included, no per-user fees); free on approval for 4 or more Business Lines or Teams Lines once the first month is paid. \"Done for you\" replaces \"Managed setup\"."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With Click2Call, a hosted (cloud) PBX costs $25 per user per month ex GST : one Business Line for each person, and that is the whole monthly price for most businesses: the local number, 300 outbound minutes, incoming calls, IVR, ring groups, call queues, call recording and AI transcription are all in it.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "You can give every staff member a free internal extension on it: calls to the number ring your team, everyone calls out showing the business number, and calls out cost 10c a minute to landlines and 20c to mobiles.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "You don't need to pick before your trial: your $11 credit covers your first number, and you can switch plans yourself in the portal.",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "You, one Business Number",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Your business number, with incoming calls included",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "per line (ex GST)",
+  "reason": "Plan names approved by Royce 24 Nov 2026: Inbound Business Number -> Business Number, Cloud PBX User -> Business Line, Microsoft Teams User -> Teams Line (\"a number receives; a line makes and receives\"). Prices unchanged."
+ },
+ {
+  "kind": "events-added",
+  "old": "",
+  "new": "teams_page_click|Teams Line - pricing-plans",
+  "reason": "Teams Line card links to the Teams page (new tracked click)."
+ }
+]
