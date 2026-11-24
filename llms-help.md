@@ -561,7 +561,7 @@ Business hours to your mobile, voicemail to email after hours](https://www.click
 Bring it across for $100 inc GST. It keeps working until it moves.](https://www.click2call.com.au/help/how-to-port-number)
 [#### Add your team
 
-$25 a user a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
+$25 a line a month ex GST, each with their own number and 300 outbound minutes](https://www.click2call.com.au/help/how-to-add-user)
 [#### Keep it after the trial
 
 Add a card and credit before day 7 so outbound calls keep working](https://www.click2call.com.au/help/how-to-add-account-credit)
@@ -4665,7 +4665,7 @@ Yes — **Open TV View** gives a full-screen wallboard for a wall monitor, still
 The dashboard is real time — what is happening now, plus totals for the period you select. [Reports & Records](https://www.click2call.com.au/help/how-to-use-reports-and-records) are historical, for filtering and exporting past call and billing data. Use the dashboard to manage the day, Reports to analyse it afterwards.
 
 #### Is there an extra charge?
-No. The dashboard and the TV view are included with a standard Business Line at $25/user/month ex GST — no supervisor licence, analytics add-on or separate tier. More on the [call centre features page](https://www.click2call.com.au/call-centre/).
+No. The dashboard and the TV view are included with a standard Business Line at $25 a line a month ex GST — no supervisor licence, analytics add-on or separate tier. More on the [call centre features page](https://www.click2call.com.au/call-centre/).
 
 ## Creating a Ring Group
 
