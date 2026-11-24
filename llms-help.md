@@ -405,7 +405,7 @@ At the end of the 7 days, or when your $11 + GST credit runs out (whichever come
 
 The $10 Business Number you activated during the trial is ideal for **receiving inbound calls**. Many businesses keep it exactly as it is — routing inbound calls to an auto-attendant, applying after-hours rules, or directing callers to the right team. There is no need to change it.
 
-For staff who need to make outbound calls, simply add a **Business Line** ($25/month, shown as Cloud PBX User in the portal) for each of them. Each Business Line includes 300 outbound minutes per month to standard Australian numbers and can be assigned their own extension. Your $10 Business Number continues to sit alongside these lines, handling all incoming calls.
+For staff who need to make outbound calls, simply add a **Business Line** ($25/month) for each of them. Each Business Line includes 300 outbound minutes per month to standard Australian numbers and can be assigned their own extension. Your $10 Business Number continues to sit alongside these lines, handling all incoming calls.
 
 For example, a small business might keep the $10 number for inbound calls and add two Business Lines for two staff members who make outbound calls — a total of $60/month for a fully functional phone system.
 
@@ -846,7 +846,7 @@ Phone Numbers
 
 ## How to Add a Phone Number
 
-Add a new Australian phone number to your Click2Call account. Choose a **Business Line** ($25 a month: makes and receives calls, with 300 minutes; shown as Cloud PBX User in the portal) or a **Business Number** ($10 a month: receives calls; shown as Inbound Business Number in the portal). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more. Not sure which type to pick? The [business phone numbers page](https://www.click2call.com.au/business-phone-numbers/) compares local, 04 mobile, 1300 and 1800 numbers and their fees.
+Add a new Australian phone number to your Click2Call account. Choose a **Business Line** ($25 a month: makes and receives calls, with 300 minutes) or a **Business Number** ($10 a month: receives calls). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more. Not sure which type to pick? The [business phone numbers page](https://www.click2call.com.au/business-phone-numbers/) compares local, 04 mobile, 1300 and 1800 numbers and their fees.
 
 Last reviewed: October 2026
 
@@ -907,9 +907,9 @@ Choose the billing plan for your number. Two options are available:
 
 | Plan | Monthly Cost | Best for |
 
-| Business Number Inbound Business Number in the portal | $10 / month | Receives calls, with no included minutes; extensions can call out on it at 10c a minute to landlines and 20c to mobiles |
+| Business Number Older accounts may show Inbound Business Number | $10 / month | Receives calls, with no included minutes; extensions can call out on it at 10c a minute to landlines and 20c to mobiles |
 
-| Business Line Cloud PBX User in the portal | $25 / month | Makes and receives calls, with 300 minutes included each month |
+| Business Line | $25 / month | Makes and receives calls, with 300 minutes included each month |
 
 **Both plans include every feature**, including an **Auto Attendant (IVR menu)** where callers press 1 for Sales, 2 for Support, and so on. The only difference is calls out: a Business Line includes 300 minutes, and a Business Number pays per minute. You can switch a number between the two plans later.
 
@@ -5823,9 +5823,9 @@ Last reviewed: October 2026
 ### What each number costs
 
 | Plan | Price | What it’s for |
-| Business Line Cloud PBX User in the portal | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
-| Business Number Inbound Business Number in the portal | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
-| Teams Line Microsoft Teams User in the portal | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: a Business Number can’t be used with Teams. Done-for-you set-up is $300 + GST for 1 to 3 lines, or free on approval with 4 or more lines once the first month is paid. |
+| Business Line | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
+| Business Number Older accounts may show Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
+| Teams Line | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: a Business Number can’t be used with Teams. Done-for-you set-up is $300 + GST for 1 to 3 lines, or free on approval with 4 or more lines once the first month is paid. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 
 New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Business Line with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within 24 hours, Monday to Friday, and we email you when the number is active.
@@ -5839,7 +5839,7 @@ The 300 minutes on a Business Line are used only by calls made from that number.
 ### See what you are paying for
 
 - **Account → Numbers** lists every number and extension with its line type, line plan, minutes used and monthly cost including GST.
-- **Account → Plan → Line Plans** shows the plan on each number. The portal still uses the older names: Cloud PBX User for a Business Line, Inbound Business Number for a Business Number, and Microsoft Teams User for a Teams Line.
+- **Account → Plan → Line Plans** shows the plan on each number. The portal uses the same names: Business Number, Business Line and Teams Line. Numbers added before November 2026 may still show Inbound Business Number, which is the same plan as a Business Number.
 - **Current Account Details**, at the bottom of the Plan page, lists every monthly charge on the account.
 
 ### Change a number’s plan

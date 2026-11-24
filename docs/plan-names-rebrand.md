@@ -41,3 +41,7 @@ Code notes: the calculator treats lines = Business Lines + a main number on the 
 - Customer portal, sign-up form, PSA templates and desk knowledge articles (other systems).
 
 Per-page change logs: `docs/pricing-plan-names-change-log.json`, `docs/homepage-plan-names-change-log.json`, `docs/cloud-pbx-plan-names-change-log.json`, `docs/teams-plan-names-change-log.json` (checked with `scripts/compare_pages.py`).
+
+## Portal renamed (24 Nov 2026, later)
+
+Royce renamed the plans in the customer portal: **Business Line**, **Business Number** and **Teams Line** are now the published plan names there (Cloud PBX User and Microsoft Teams User are gone; Inbound Business Number is kept but unpublished, so numbers added before the change may still show it). The "shown as … in the portal" notes were removed from pricing, Cloud PBX, Teams, three help guides and the llms files; the Business Number notes now say older accounts may show Inbound Business Number. Portal screenshots (and their alt text) still show the old names until they are retaken. The December test pages are still untouched.
