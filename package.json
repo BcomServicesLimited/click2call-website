@@ -6,9 +6,10 @@
     "build": "tailwindcss -i assets/css/tailwind.src.css -o assets/css/tailwind.css --minify",
     "watch": "tailwindcss -i assets/css/tailwind.src.css -o assets/css/tailwind.css --watch",
     "sync": "python3 scripts/sync_partials.py",
-    "prepush": "npm run build && npm run sync && npm run stamp",
+    "prepush": "npm run build && npm run sync && npm run stamp && npm run lastmod",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stamp": "python3 scripts/stamp_assets.py"
+    "stamp": "python3 scripts/stamp_assets.py",
+    "lastmod": "python3 scripts/sitemap_lastmod.py"
   },
   "keywords": [],
   "author": "",
