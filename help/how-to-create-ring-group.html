@@ -386,6 +386,31 @@
     </div>
 </div>
 
+<!-- Ring timing, uses and troubleshooting -->
+<h2 class="text-2xl font-bold text-gray-900 mb-4 mt-4">Ringing at Once or One After Another</h2>
+<p class="text-gray-600 leading-relaxed mb-4">With every <strong>Seconds delay before ringing</strong> left at 0, all the numbers ring together and whoever answers first takes the call. Raise the delay on some slots to stagger them. For example, put the front desk extensions at 0 and the owner's mobile at 10, so the mobile only joins if nobody has picked up within 10 seconds. If you need a strict order, one person at a time, use a <a class="text-[#3B9C49] hover:underline" href="/help/hunt-groups">hunt group</a> instead.</p>
+<p class="text-gray-600 leading-relaxed mb-4">You can also change slots from the handset. Dial *561 followed by a number to also ring it on slot 1 (*562 and *563 for slots 2 and 3), and *571, *572 or *573 to stop. See <a class="text-[#3B9C49] hover:underline" href="/help/star-codes">Star Codes</a>.</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">How Long It Rings, and Voicemail</h2>
+<p class="text-gray-600 leading-relaxed mb-4">Simultaneous Ring gives one total ring period, not a separate count for each phone. How long everything rings before voicemail answers is set by <strong>Call Ringing Time</strong> on the number's <strong>Voice Mail</strong> page. A two-partner trade business, for example, might ring both partners' apps for 25 seconds and then let voicemail take a message and email the transcript.</p>
+<p class="text-gray-600 leading-relaxed mb-4">Keep every slot's delay shorter than the Call Ringing Time, or that phone won't get a chance to ring. If a mobile is in the group, check its own voicemail delay too. If the carrier's voicemail answers first, it takes the message instead of Click2Call. See <a class="text-[#3B9C49] hover:underline" href="/help/call-flow-ring-mobile-then-voicemail">Ring your mobile and still get voicemail</a>.</p>
+
+<h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Common Ways to Use a Ring Group</h2>
+<ul class="list-disc list-inside text-gray-600 leading-relaxed mt-3 pl-2 space-y-2 mb-4">
+    <li><strong>One number, several people:</strong> add each person's extension so the whole team rings when a customer calls the number you advertise.</li>
+    <li><strong>App and mobile together:</strong> ring your app and your mobile at the same time. Unlike forwarding, the call stays on Click2Call, so your Click2Call voicemail still answers.</li>
+    <li><strong>Office hours only:</strong> set <strong>Ring this number</strong> to During Work Hours on each slot, so after-hours calls go straight to voicemail.</li>
+    <li><strong>Outages:</strong> ring a mobile alongside the desk phones so calls still reach someone if the office loses power or internet.</li>
+</ul>
+
+<h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">If a Phone in the Group Doesn't Ring</h2>
+<ul class="list-disc list-inside text-gray-600 leading-relaxed mt-3 pl-2 space-y-2 mb-4">
+    <li>Check the slot's <strong>Enable Number</strong> box is ticked and its schedule covers the time you tested.</li>
+    <li>Check the phone or app is online. In <strong>Voice → Line Manager</strong>, a phone that has lost power or internet shows as Offline.</li>
+    <li>On a mobile app, allow the app to run in the background and show notifications, or the group may ring one person and not another. See <a class="text-[#3B9C49] hover:underline" href="/help/softphone-setup-and-troubleshooting">Softphone set-up and troubleshooting</a>.</li>
+    <li>Another feature may take the call first. Call forwarding, do not disturb, a call queue and an auto attendant all act before Simultaneous Ring. A no-answer forward to a mobile also sends unanswered calls there instead of to voicemail. See <a class="text-[#3B9C49] hover:underline" href="/help/hold-music-and-feature-order">which setting wins</a>.</li>
+</ul>
+
 <!-- Related articles -->
     <div class="border-t border-gray-200 pt-8 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

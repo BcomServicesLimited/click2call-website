@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Setting Up Zoiper | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/zoiper-setup" />
-  <meta name="description" content="Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own.">
+  <meta name="description" content="Set up Zoiper on Windows, Mac, iPhone or Android with your Click2Call number: the exact SIP settings, TLS, and fixes when it won't register.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/zoiper-setup">
   <meta property="og:title" content="Setting Up Zoiper | Help Centre | Click2Call">
-  <meta property="og:description" content="Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own.">
+  <meta property="og:description" content="Set up Zoiper on Windows, Mac, iPhone or Android with your Click2Call number: the exact SIP settings, TLS, and fixes when it won't register.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
   "@type": "TechArticle",
   "dateModified": "2026-11-23",
   "headline": "Setting Up Zoiper",
-  "description": "Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own.",
+  "description": "Set up Zoiper on Windows, Mac, iPhone or Android with your Click2Call number: the exact SIP settings, TLS, and fixes when it won't register.",
   "url": "https://www.click2call.com.au/help/zoiper-setup",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Setting Up Zoiper | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends its own.">
+  <meta name="twitter:description" content="Set up Zoiper on Windows, Mac, iPhone or Android with your Click2Call number: the exact SIP settings, TLS, and fixes when it won't register.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,7 +294,7 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up Zoiper</h1>
       <p class="text-gray-600 leading-relaxed">Zoiper is a free SIP softphone for Windows, Mac, Linux, iPhone and Android. It works with Click2Call as a standard SIP app. Click2Call recommends the Web Phone on a computer and the Basic Edition app on a mobile, but Zoiper is a good alternative if you already use it.</p>
@@ -306,15 +306,33 @@
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">What you need</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">From <strong>Voice → Line Manager</strong>, note the number (or the extension's Login) and its line password. See <a href="/help/softphone-setup-and-troubleshooting" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting up a softphone and fixing registration problems</a> if you're not sure where these are.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">You need two things from the portal, both in <strong>Voice → Line Manager</strong>:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>The username.</strong> For a number, it's the number exactly as the Phone Numbers table shows it, for example 61370500989: no +, no leading 0, no spaces. For an extension, it's the extension's Login from the User Extensions table, for example 832800190001.</li><li><strong>The line password.</strong> This is the password in the Password box on that row, not the password you use to log in to the portal. New numbers have no password. If the box is empty, type a long, random password, click <strong>Save Changes</strong> and use that.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">See <a href="/help/softphone-setup-and-troubleshooting" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting up a softphone and fixing registration problems</a> if you're not sure where these are, or <a href="/help/account-and-line-passwords" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Account and line passwords</a> to reset one.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Give each person their own number or extension. When two devices log in with the same number, the one that registered last can take the calls. If you want Zoiper on your computer and your mobile at once, that works, but expect both to ring and either to answer.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Zoiper on a computer</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Open <strong>Preferences → Accounts</strong>, add a SIP account and enter:</p>
-    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Domain</td><td class="px-4 py-2.5 text-gray-600"><span class="font-mono">sip.click2call.com.au</span></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Username</td><td class="px-4 py-2.5 text-gray-600">Your number as shown in Line Manager, e.g. 61370500989</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Password</td><td class="px-4 py-2.5 text-gray-600">The line password</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Caller ID name</td><td class="px-4 py-2.5 text-gray-600">Your name or business name</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Auth. username</td><td class="px-4 py-2.5 text-gray-600">Leave blank, or the same as the username</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Outbound proxy</td><td class="px-4 py-2.5 text-gray-600">Leave blank</td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">Zoiper's desktop app runs on Windows, Mac and Linux. Open <strong>Preferences → Accounts</strong>, add a SIP account and enter:</p>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Domain</td><td class="px-4 py-2.5 text-gray-600"><code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Username</td><td class="px-4 py-2.5 text-gray-600">Your number as shown in Line Manager, e.g. 61370500989</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Password</td><td class="px-4 py-2.5 text-gray-600">The line password</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Caller ID name</td><td class="px-4 py-2.5 text-gray-600">Your name or business name</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Auth. username</td><td class="px-4 py-2.5 text-gray-600">Leave blank, or the same as the username</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Outbound proxy</td><td class="px-4 py-2.5 text-gray-600">Leave blank</td></tr></tbody></table></div>
     <p class="text-gray-600 leading-relaxed mb-4">Save. The account shows as registered within a few seconds.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The <strong>Caller ID name</strong> only labels the account inside Zoiper. The number your callers see is set in the portal, not in the app. See <a href="/help/how-to-set-outbound-caller-id" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting your outbound caller ID</a> to show a different number on your account.</p>
+    <h3 class="font-bold text-gray-900 mt-6 mb-2">Transport and port</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">Click2Call supports TLS, TCP and UDP. TLS is recommended: it encrypts the sign-in and stops your router from rewriting the call set-up, which is the most common cause of one-way audio. Use these pairs, and make sure the transport and port match:</p>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Transport</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Port</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">TLS (recommended)</td><td class="px-4 py-2.5 text-gray-600">5061</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">TCP or UDP</td><td class="px-4 py-2.5 text-gray-600">5060</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">UDP alternative</td><td class="px-4 py-2.5 text-gray-600">50600</td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">Most versions of Zoiper take the port on the end of the domain, for example <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au:5061</code>. If your version of Zoiper doesn't offer TLS, use TCP on 5060, or UDP on 50600 if calls lose audio.</p>
+    <h3 class="font-bold text-gray-900 mt-6 mb-2">Audio settings</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">Leave codecs on Zoiper's defaults. Click2Call supports G.722 (HD voice), G.711 A-law and µ-law, and G.729. If you change Zoiper's keypad tone setting, use <strong>RFC 2833</strong>. See <a href="/help/dtmf-keypad-presses-not-working" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Keypad presses not recognised</a> if menus don't respond when you press a number.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Zoiper on iPhone or Android</h2>
-    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Install Zoiper from the App Store or Google Play.</li><li>Open <strong>Settings → Accounts</strong> and tap <strong>Add account</strong>.</li><li>Answer <strong>Yes</strong> to "Do you already have an account?", then choose <strong>Manual configuration</strong> and <strong>SIP</strong>.</li><li>Set <strong>Account name</strong> to Click2Call, <strong>Host</strong> to <span class="font-mono">sip.click2call.com.au</span>, and enter your <strong>Username</strong> and <strong>Password</strong>.</li><li>Under <strong>Network settings → Transport type</strong>, choose <strong>TLS</strong>.</li><li>Go back. A green tick means the account is ready.</li></ol>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Install Zoiper from the App Store or Google Play.</li><li>Open <strong>Settings → Accounts</strong> and tap <strong>Add account</strong>.</li><li>Answer <strong>Yes</strong> to "Do you already have an account?", then choose <strong>Manual configuration</strong> and <strong>SIP</strong>.</li><li>Set <strong>Account name</strong> to Click2Call, <strong>Host</strong> to <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code>, and enter your <strong>Username</strong> and <strong>Password</strong>.</li><li>Under <strong>Network settings → Transport type</strong>, choose <strong>TLS</strong>.</li><li>Go back. A green tick means the account is ready.</li></ol>
+    <p class="text-gray-600 leading-relaxed mb-4">Allow the microphone and notifications when Zoiper asks. Without notifications, incoming calls can't reach the app while it's in the background.</p>
+    <h3 class="font-bold text-gray-900 mt-6 mb-2">Calls when the app is closed</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">iPhone suspends apps that aren't on screen. A softphone can only ring while closed or locked if push notifications are working for it. If Zoiper rings while open but goes quiet in the background, that's the cause. The <a href="/help/softphone-setup-and-troubleshooting" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">softphone troubleshooting guide</a> explains the options. Click2Call's own <a href="/help/how-to-set-up-softphone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Basic Edition app</a> is the recommended mobile app, and having your number ring your mobile at the same time is the most reliable backup.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Making your first calls</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Call your Click2Call number from another phone to check incoming calls. Then call out from Zoiper. Dial Australian numbers the normal way, for example 0412 345 678 or 07 5555 1234. Calls are billed exactly like calls from any other device on your line, and incoming calls are free.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Not registering?</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Check the username has no + or leading 0, and that you've used the line password, not your portal login. If TLS won't connect, try TCP. Then see <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Work through these in order:</p>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Check the username is the number or Login exactly as Line Manager shows it, with no + or leading 0.</li><li>Check you used the line password, not your portal login. If you changed the line password recently, update it in Zoiper too.</li><li>Check the transport matches the port: TLS on 5061, TCP or UDP on 5060.</li><li>If TLS won't connect, switch to TCP. If that works, contact support and we'll check TLS for you.</li><li>Try mobile data instead of Wi-Fi. If it works on mobile data, the office router is the problem.</li></ol>
+    <p class="text-gray-600 leading-relaxed mb-4">In the portal, the number's status dot in <strong>Voice → Line Manager</strong> turns from red to online once Zoiper registers, and the line's page shows the <strong>Last Registered</strong> time and IP address. If calls connect but you can't hear each other, see <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Zoiper is a third-party app that Click2Call hasn't tested, so we can't configure it for you. The settings above work for any standard SIP app. If you'd rather not touch settings at all, the <a href="/web-phone/" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> signs in with the same username and password and needs nothing installed.</p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

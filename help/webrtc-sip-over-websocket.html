@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Browser Calling with WebRTC (SIP over WebSocket) | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/webrtc-sip-over-websocket" />
-  <meta name="description" content="You can register a Click2Call number from a web browser, using SIP over a secure WebSocket (WSS). This lets you build calling into your own web app with a.">
+  <meta name="description" content="Register a Click2Call line from your own web app with SIP over WebSocket (WSS) and WebRTC: server, TURN relay, a JsSIP example and fixes.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/webrtc-sip-over-websocket">
   <meta property="og:title" content="Browser Calling with WebRTC (SIP over WebSocket) | Help Centre | Click2Call">
-  <meta property="og:description" content="You can register a Click2Call number from a web browser, using SIP over a secure WebSocket (WSS). This lets you build calling into your own web app with a.">
+  <meta property="og:description" content="Register a Click2Call line from your own web app with SIP over WebSocket (WSS) and WebRTC: server, TURN relay, a JsSIP example and fixes.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
   "@type": "TechArticle",
   "dateModified": "2026-10-08",
   "headline": "Browser Calling with WebRTC (SIP over WebSocket)",
-  "description": "You can register a Click2Call number from a web browser, using SIP over a secure WebSocket (WSS). This lets you build calling into your own web app with a.",
+  "description": "Register a Click2Call line from your own web app with SIP over WebSocket (WSS) and WebRTC: server, TURN relay, a JsSIP example and fixes.",
   "url": "https://www.click2call.com.au/help/webrtc-sip-over-websocket",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Browser Calling with WebRTC (SIP over WebSocket) | Help Centre | Click2Call">
-  <meta name="twitter:description" content="You can register a Click2Call number from a web browser, using SIP over a secure WebSocket (WSS). This lets you build calling into your own web app with a.">
+  <meta name="twitter:description" content="Register a Click2Call line from your own web app with SIP over WebSocket (WSS) and WebRTC: server, TURN relay, a JsSIP example and fixes.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,7 +294,7 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Getting Started</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Browser Calling with WebRTC (SIP over WebSocket)</h1>
       <p class="text-gray-600 leading-relaxed">You can register a Click2Call number from a web browser, using SIP over a secure WebSocket (WSS). This lets you build calling into your own web app with a WebRTC library such as SIP.js or JsSIP.</p>
@@ -305,15 +305,52 @@
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-    <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-6 text-sm text-gray-700 leading-relaxed"><strong>Just want to make calls in your browser?</strong> You don't need to build anything: use the <a href="/help/web-phone" class="text-[#3B9C49] font-medium hover:underline">Click2Call Web Phone</a> at phone.click2call.com.au. This page is for developers building calling into their own app.</div>
+    <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-6 text-sm text-gray-700 leading-relaxed"><strong>Just want to make calls in your browser?</strong> You don't need to build anything: use the <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Click2Call Web Phone</a> at phone.click2call.com.au. This page is for developers building calling into their own app.</div>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">How it works</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">A WebRTC library in the browser opens a secure WebSocket to Click2Call and registers a line, exactly as a desk phone or softphone does. The browser then sends and receives the call audio itself. Once registered, the line behaves like any other device on your account: incoming calls to that number or extension ring your app, outgoing calls show the line's caller ID, and calls are billed the same as calls from any other device.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Use one line per signed-in user. Each staff member should register with their own number or extension. When two devices log in with the same credentials, the one that registered last can take the calls.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">What you need</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>A Click2Call number or extension for each user, with a line password set in <strong>Voice → Line Manager</strong>. New numbers have no password: type one into the Password box on that row and click <strong>Save Changes</strong>. This is not your portal login.</li><li>A WebRTC SIP library such as SIP.js or JsSIP.</li><li>Your app served over HTTPS. Browsers only allow microphone access on secure pages, so calling won't work from a plain http:// address (localhost is the usual exception while you develop).</li></ul>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Connection settings</h2>
-    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">WebSocket server</td><td class="px-4 py-2.5 text-gray-600">wss://wss.securevoip.nz:7443</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">SIP domain</td><td class="px-4 py-2.5 text-gray-600"><span class="font-mono">sip.click2call.com.au</span></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Username</td><td class="px-4 py-2.5 text-gray-600">The number or extension Login from Line Manager</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Password</td><td class="px-4 py-2.5 text-gray-600">That line's password</td></tr></tbody></table></div>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">WebSocket server</td><td class="px-4 py-2.5 text-gray-600">wss://wss.securevoip.nz:7443</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">SIP domain</td><td class="px-4 py-2.5 text-gray-600"><code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Username</td><td class="px-4 py-2.5 text-gray-600">The number or extension Login from Line Manager</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Password</td><td class="px-4 py-2.5 text-gray-600">That line's password</td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">The username is the number exactly as Line Manager shows it, for example 61370500989 (no + and no leading 0), or an extension Login such as 832800190001. Your SIP URI is the username at the SIP domain, for example sip:61370500989@sip.click2call.com.au.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">TURN server</h2>
     <p class="text-gray-600 leading-relaxed mb-4">If your users are behind strict firewalls, a TURN server relays the audio. Click2Call's is optional, and you can use your own TURN or STUN servers instead.</p>
     <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>turns:wss.securevoip.nz:5349</code></pre>
     <p class="text-gray-600 leading-relaxed mb-4">Sign in to it with the same number and line password.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Without a relay, most home and office connections work fine. Add TURN when users report calls that connect but have no audio, which usually means a firewall is blocking the direct audio path.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Example: registering with JsSIP</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">This minimal example registers a line and places a call. <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">getCredentials()</code> stands for a request to your own server that returns the logged-in user's line details.</p>
+    <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>const { username, password } = await getCredentials();
+
+const socket = new JsSIP.WebSocketInterface('wss://wss.securevoip.nz:7443');
+const ua = new JsSIP.UA({
+  sockets: [socket],
+  uri: `sip:${username}@sip.click2call.com.au`,
+  password: password,
+  register: true
+});
+
+ua.on('registered', () =&gt; console.log('Ready'));
+ua.on('registrationFailed', (e) =&gt; console.log('Sign-in failed', e.cause));
+ua.start();
+
+// Place a call once registered
+ua.call('sip:0412345678@sip.click2call.com.au', {
+  mediaConstraints: { audio: true, video: false },
+  pcConfig: {
+    iceServers: [{ urls: 'turns:wss.securevoip.nz:5349', username, credential: password }]
+  }
+});</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">Listen for the library's new-session event to answer incoming calls, and attach the remote audio stream to an audio element so the user can hear the caller. SIP.js follows the same pattern with its own method names.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Dial Australian numbers in the normal national format, for example 0412345678 or 0755551234. For menus such as "press 1 for accounts", send keypad tones with the library's DTMF method. RFC 2833 tones are the standard and are recognised reliably. See <a href="/help/dtmf-keypad-presses-not-working" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Keypad presses not recognised</a>.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Keep credentials off the page</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Anyone who can see the line password can make calls on your account. Don't hard-code it in JavaScript that users can view. Fetch it from your own server after the user has logged in.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Give each user their own extension, so you can change one password without signing everyone out.</li><li>Bar overseas calls on lines that don't need them. See <a href="/help/toll-fraud-protection" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Protecting your account from toll fraud</a>.</li><li>If you change a line password in the portal, your app must use the new one, or that line stops registering.</li></ul>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Checking it works</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">In <strong>Voice → Line Manager</strong>, the line's status dot turns from red to online once your app registers. Click the line to see the <strong>Last Registered</strong> time and the IP address it registered from. Then call the number from a mobile, and call out from your app.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Registration fails:</strong> the username or line password is wrong, or no password has been set on the line.</li><li><strong>Calls connect with no audio:</strong> the browser hasn't been given microphone access, or a firewall is blocking direct audio. Add the TURN server above.</li><li><strong>Incoming calls don't ring your app:</strong> another device may be registered with the same line, or a forwarding rule such as Forward Always is on for that number.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">To react to calls in your own systems, for example to log them against a customer, use webhooks rather than parsing SIP in the browser. They report ringing, answered, ended and missed calls. See <a href="/help/webhooks-and-api-during-your-trial" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Using the API and webhooks</a> and the <a href="/api/" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Developer API</a>. Click2Call supports the platform and these settings, but not your application code.</p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

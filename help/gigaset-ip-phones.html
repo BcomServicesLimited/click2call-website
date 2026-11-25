@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Setting Up Gigaset Cordless IP Phones | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/gigaset-ip-phones" />
-  <meta name="description" content="Gigaset IP cordless phones aren&#x27;t in the portal&#x27;s auto-provisioning list, so you set them up by hand in the base station&#x27;s web page. It takes about five.">
+  <meta name="description" content="Set up a Gigaset IP cordless phone on Click2Call by hand: base station web page, SIP settings, handset numbers, testing and fixing registration.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/gigaset-ip-phones">
   <meta property="og:title" content="Setting Up Gigaset Cordless IP Phones | Help Centre | Click2Call">
-  <meta property="og:description" content="Gigaset IP cordless phones aren&#x27;t in the portal&#x27;s auto-provisioning list, so you set them up by hand in the base station&#x27;s web page. It takes about five.">
+  <meta property="og:description" content="Set up a Gigaset IP cordless phone on Click2Call by hand: base station web page, SIP settings, handset numbers, testing and fixing registration.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
   "@type": "TechArticle",
   "dateModified": "2026-10-08",
   "headline": "Setting Up Gigaset Cordless IP Phones",
-  "description": "Gigaset IP cordless phones aren't in the portal's auto-provisioning list, so you set them up by hand in the base station's web page. It takes about five.",
+  "description": "Set up a Gigaset IP cordless phone on Click2Call by hand: base station web page, SIP settings, handset numbers, testing and fixing registration.",
   "url": "https://www.click2call.com.au/help/gigaset-ip-phones",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Setting Up Gigaset Cordless IP Phones | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Gigaset IP cordless phones aren&#x27;t in the portal&#x27;s auto-provisioning list, so you set them up by hand in the base station&#x27;s web page. It takes about five.">
+  <meta name="twitter:description" content="Set up a Gigaset IP cordless phone on Click2Call by hand: base station web page, SIP settings, handset numbers, testing and fixing registration.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,7 +294,7 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up Gigaset Cordless IP Phones</h1>
       <p class="text-gray-600 leading-relaxed">Gigaset IP cordless phones aren't in the portal's auto-provisioning list, so you set them up by hand in the base station's web page. It takes about five minutes per handset.</p>
@@ -306,15 +306,26 @@
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Before you start</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">In <strong>Voice → Line Manager</strong>, note the number and set a line password for it. See <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for devices and PBX</a> if you need help.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Gigaset bases aren't in the portal's auto-provisioning list. That means nothing is pushed to the phone for you: no line keys, no phonebook and no firmware updates. You type the connection details into the base station once, and the base then logs in to Click2Call like any other SIP device. The settings below are the same ones listed in <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for desk phones, adapters and PBX systems</a>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">You need:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>The number you want on the handsets, exactly as shown in <strong>Voice → Line Manager</strong>, for example 61370500989 (no +, no leading 0). For a staff extension, use its Login from <strong>Voice → User Extensions</strong> instead.</li><li>A line password. New numbers have none until you type one in the <strong>Password</strong> box on the number's row and click <strong>Save Changes</strong>. This is not your portal login.</li><li>A computer on the same network as the Gigaset base.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">Each number or extension should be logged in on one device at a time. If the same details are already in a desk phone or app, the two can knock each other offline. Give the Gigaset its own number or extension if several people share the office.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 1: find the base station's address</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">On the handset, press the control button on the right, open <strong>Settings</strong> (the spanner icon) and choose <strong>Registration</strong>. Note the IP address shown. Enter it in a browser on the same network, for example http://192.168.2.2. Log in with the default PIN <strong>0000</strong>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">On the handset, press the control button on the right, open <strong>Settings</strong> (the spanner icon) and choose <strong>Registration</strong>. Note the IP address shown. Enter it in a browser on the same network, for example http://192.168.2.2. Log in with the default PIN <strong>0000</strong>. On most models the web page asks you to change the PIN the first time. Write the new one down.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">If the menu path is different on your handset, check the Gigaset manual for your model. Menus vary between the consumer range and the PRO range.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: add your number</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Go to <strong>Settings → Telephony → Connections</strong> and click <strong>Edit</strong> on the connection you want to use. Enter:</p>
-    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Authentication Name</td><td class="px-4 py-2.5 text-gray-600">Your number as shown in Line Manager, e.g. 61370500989</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Authentication Password</td><td class="px-4 py-2.5 text-gray-600">The line password from Line Manager</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">User Name</td><td class="px-4 py-2.5 text-gray-600">Same as the authentication name</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Domain</td><td class="px-4 py-2.5 text-gray-600"><span class="font-mono">sip.click2call.com.au</span></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Proxy Server Port</td><td class="px-4 py-2.5 text-gray-600">5060 (or 50600 if 5060 is blocked)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Registration Server</td><td class="px-4 py-2.5 text-gray-600"><span class="font-mono">sip.click2call.com.au</span></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Registration Refresh Time</td><td class="px-4 py-2.5 text-gray-600">180 seconds</td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">Go to <strong>Settings → Telephony → Connections</strong> and click <strong>Edit</strong> on the connection you want to use. Most bases can hold several connections, so you can put more than one Click2Call number on the same base. Enter:</p>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Authentication Name</td><td class="px-4 py-2.5 text-gray-600">Your number as shown in Line Manager, e.g. 61370500989</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Authentication Password</td><td class="px-4 py-2.5 text-gray-600">The line password from Line Manager</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">User Name</td><td class="px-4 py-2.5 text-gray-600">Same as the authentication name</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Domain</td><td class="px-4 py-2.5 text-gray-600">sip.click2call.com.au</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Proxy Server Port</td><td class="px-4 py-2.5 text-gray-600">5060 (or 50600 if 5060 is blocked)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Registration Server</td><td class="px-4 py-2.5 text-gray-600">sip.click2call.com.au</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Registration Refresh Time</td><td class="px-4 py-2.5 text-gray-600">180 seconds</td></tr></tbody></table></div>
     <p class="text-gray-600 leading-relaxed mb-4">Click <strong>Set</strong> to save. Gigaset bases are slow to show the status. Allow 30 seconds for it to change to Registered.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The short refresh time makes the base check in every three minutes. That keeps the path through your router open, so incoming calls can find the handsets.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: choose which handsets use the number</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">On most Gigaset bases, <strong>Settings → Telephony → Number Assignment</strong> controls which connection each handset uses to make calls, and which connections ring it. Pick the Click2Call connection as the sending connection for every handset that should call out on it, and tick it for receiving. A handset that isn't assigned to the connection won't ring when the number is called.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 4: test</h2>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>In the portal, open <strong>Voice → Line Manager</strong>. The number's status dot should no longer be red. Click the number to see the <strong>IP Address</strong> and <strong>Last Registered</strong> time.</li><li>Call the number from a mobile. Every assigned handset should ring.</li><li>Call out to a mobile and a landline. Dial the full number with the area code, for example 0731234567.</li><li>Dial <strong>*55</strong> to check you can reach your voicemail and that keypad presses work.</li></ol>
+    <p class="text-gray-600 leading-relaxed mb-4">Because the Gigaset isn't provisioned by the portal, features that live on phone keys, such as BLF lamps, aren't available. Cloud features still work: voicemail, call forwarding, ring groups and <a href="/help/star-codes" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">star codes</a> all run on Click2Call's side.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Still not registering?</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Check the line password and number first. Then see <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP ALG and one-way audio</a>.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Authentication failed:</strong> the number or line password is wrong, or no password has been saved yet. Retype the password in both places.</li><li><strong>Registers, then drops:</strong> this is usually the router. Try port 50600, which routers don't treat as a phone port, or turn off SIP ALG. See <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</li><li><strong>Calls connect but there's no sound:</strong> the same router feature is the most common cause. Follow the same guide.</li><li><strong>Keypad choices in menus aren't heard:</strong> see <a href="/help/dtmf-keypad-presses-not-working" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Keypad presses not recognised</a>. Click2Call expects RFC 2833 tones.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">Your handsets need power and internet. Turn on <strong>Forward when Offline</strong> so calls still reach a mobile during an outage: see <a href="/help/calls-during-power-or-internet-outage" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Keeping calls coming in during an outage</a>. For other phones and apps, see <a href="/help/which-phones-can-i-use" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Which phones can I use?</a></p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
