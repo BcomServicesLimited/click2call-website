@@ -7052,7 +7052,7 @@ The 300 minutes on a Business Line are used only by calls made from that number.
 
 A channel is one call in progress, in or out. Think of it as a single phone line. With 2 channels, your business can have at most 2 calls going at the same time. If a third call comes in while both are busy, that caller goes to voicemail or hears a busy tone.
 
-Your account includes 2 channels. Each Business Line you add brings one more, so an account with three Business Lines can have 5 calls at once. Business Numbers and free extensions don’t add channels.
+Your account includes 2 channels. Each Business Line or Teams Line you add brings one more, so an account with three lines can have 5 calls at once. Business Numbers and free extensions don’t add channels.
 
 #### How many channels you need
 
