@@ -91,11 +91,11 @@ var HELP_ARTICLES = [
 
   {
     url:      "/help/calls-during-power-or-internet-outage",
-    title:    "Keeping Calls Coming In During an Outage",
-    desc:     "Your phones need power and internet to work. If either goes down, Click2Call can still answer your calls and send them to a mobile or another number.",
-    tags:     "power cut outage internet down forward when offline failover pbx backup mobile",
+    title:    "Outages: Checking Network Status, Offline Alerts and Keeping Calls Coming In",
+    desc:     "Check Click2Call network status, get an alert when a phone goes offline, and forward calls to a mobile so callers still reach you during an outage.",
+    tags:     "power cut outage internet down forward when offline failover pbx backup mobile network status not working incident maintenance all calls failing service line monitoring alert phone disconnected registration desk phone trunk alert email",
     category: "call-flows",
-    readTime: "2 min read",
+    readTime: "5 min read",
     featured: true,
     pinned:   false
   },
@@ -117,17 +117,6 @@ var HELP_ARTICLES = [
     desc:     "Toll fraud is when someone breaks into a phone account and uses it to make expensive overseas calls. It's the biggest security risk for any internet phone.",
     tags:     "toll fraud hacking security passwords call barring overseas access control list",
     category: "devices",
-    readTime: "2 min read",
-    featured: true,
-    pinned:   false
-  },
-
-  {
-    url:      "/help/two-factor-login",
-    title:    "Turning On Two-Factor Login",
-    desc:     "Two-factor login adds a one-time code to your portal sign-in. Even if someone learns your password, they can't get into your account without the code.",
-    tags:     "two factor 2fa login security email verification portal trusted locations",
-    category: "getting-started",
     readTime: "2 min read",
     featured: true,
     pinned:   false
@@ -156,17 +145,6 @@ var HELP_ARTICLES = [
   },
 
   {
-    url:      "/help/secure-voip-app-transfers",
-    title:    "Transferring Calls in the Secure VoIP App",
-    desc:     "You can pass a call to a colleague from the Secure VoIP app in two ways. A blind transfer sends the call straight through. An attended transfer lets you.",
-    tags:     "secure voip app transfer attended blind micro edition iphone android windows",
-    category: "devices",
-    readTime: "2 min read",
-    featured: true,
-    pinned:   false
-  },
-
-  {
     url:      "/help/secure-voip-windows-tips",
     title:    "Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux",
     desc:     "This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number.",
@@ -178,23 +156,12 @@ var HELP_ARTICLES = [
   },
 
   {
-    url:      "/help/secure-voip-android-background-mode",
-    title:    "Secure VoIP on Android: Fixing Missed Calls and Battery Saving",
-    desc:     "Android phones save battery by putting apps to sleep. The Secure VoIP app is woken by a push notification when a call comes in, but some phones' battery.",
-    tags:     "secure voip android battery optimisation background missed calls push notification",
-    category: "devices",
-    readTime: "2 min read",
-    featured: true,
-    pinned:   false
-  },
-
-  {
     url:      "/help/call-parking-pickup-transfers",
     title:    "Parking, Picking Up and Transferring Calls",
-    desc:     "Click2Call lets your team park a call and pick it up on another phone, answer a colleague's ringing phone, and transfer callers with a few key presses.",
-    tags:     "call park parking *07 *17 pickup *88 *89 transfer attended blind #0 ## recall",
+    desc:     "Park a call and pick it up on another phone, answer a colleague's ringing phone, and transfer calls from desk phones, the Basic Edition app or Windows.",
+    tags:     "call park parking *07 *17 pickup *88 *89 transfer attended blind #0 ## recall secure voip app micro edition iphone android windows",
     category: "call-flows",
-    readTime: "3 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
@@ -223,11 +190,11 @@ var HELP_ARTICLES = [
 
   {
     url:      "/help/conference-calls",
-    title:    "Conference Calls and Dictation",
-    desc:     "Any Click2Call number can become a conference bridge. Callers dial the number, enter a PIN if you've set one, and join the call together. We recommend.",
-    tags:     "conference call bridge meeting pin supervisor recording dictation",
+    title:    "Conference Calls: Rooms, Meetings, Conference Numbers and Dictation",
+    desc:     "Host Click2Call conference calls: use your conference room, schedule meetings with invitations, turn a number into a conference bridge, or record dictation.",
+    tags:     "conference call bridge meeting pin supervisor recording dictation room schedule invite moderator guest audio dial in link lite upgrade group participants reminder",
     category: "call-flows",
-    readTime: "2 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
@@ -256,22 +223,22 @@ var HELP_ARTICLES = [
 
   {
     url:      "/help/extension-numbers-and-groups",
-    title:    "Extension Numbers, Calling Groups and Caller Names",
-    desc:     "Every line on your account can have a short extension number and a name. Staff dial the extension instead of the full number, callers can enter it at your.",
-    tags:     "extension number extension dialling calling group billing group caller name intercom *85",
+    title:    "Extension Numbers, Calling Groups and Remote Extension Options (*44)",
+    desc:     "Set extension numbers and caller names, use calling and billing groups, and let one extension change another's settings or call as it with *44.",
+    tags:     "extension number extension dialling calling group billing group caller name intercom *85 remote options *44 star code another main line night mode call as another id",
     category: "extensions",
-    readTime: "2 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
 
   {
     url:      "/help/outgoing-call-pin-and-call-assignment",
-    title:    "Controlling Outgoing Calls: PIN Codes and Call Assignment",
-    desc:     "You can ask for a PIN before certain calls go out, so only approved people can call overseas or mobiles. On a shared phone, call assignment mode asks for.",
-    tags:     "pin code authorisation outgoing call restriction overseas call assignment smart code",
+    title:    "Controlling Outgoing Calls: Call Barring, PIN Codes and Call Assignment",
+    desc:     "Block outgoing call types with call barring, ask for a PIN before overseas or mobile calls, and bill shared-phone calls to each person with call assignment.",
+    tags:     "pin code authorisation outgoing call restriction overseas call assignment smart code barring block calls international mobile toll free restrict calls lobby phone fraud",
     category: "call-flows",
-    readTime: "2 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
@@ -300,11 +267,11 @@ var HELP_ARTICLES = [
 
   {
     url:      "/help/hold-music-and-feature-order",
-    title:    "Hold Music, Caller Tunes and Which Setting Wins",
-    desc:     "You can replace the ringing callers hear with your own music or message, and upload your own music on hold. This guide also explains why one setting can.",
-    tags:     "hold music music on hold caller tunes mp3 call flow priority feature order",
+    title:    "Hold Music, Caller Tunes, Message Playback and Which Setting Wins",
+    desc:     "Set a caller tune instead of ringing, upload your own hold music, play a recorded message before calls connect, and see which call setting wins.",
+    tags:     "hold music music on hold caller tunes mp3 call flow priority feature order message playback announcement before connects notice recorded message *35 *36 privacy notice greeting before ringing",
     category: "call-flows",
-    readTime: "2 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
@@ -554,15 +521,13 @@ var HELP_ARTICLES = [
   {
     url:      "/help/softphone-setup-and-troubleshooting",
     title:    "Setting Up a Softphone and Fixing Registration Problems",
-    desc:     "Supported softphones, where your SIP credentials are, why iPhone apps miss calls in the background, and how to check a line is registering.",
-    tags:     "softphone registration registered not registering sip credentials line password line manager tls tcp udp iphone ios background push notifications app closed groundwire linphone zoiper microsip troubleshooting offline no registration recorded your services not registered dashboard",
+    desc:     "Softphones that work with Click2Call, where your SIP credentials are, why iPhone and Android apps miss calls when closed, and how to check registration.",
+    tags:     "softphone registration registered not registering sip credentials line password line manager tls tcp udp iphone ios background push notifications app closed groundwire linphone zoiper microsip troubleshooting offline no registration recorded your services not registered dashboard secure voip android battery optimisation missed calls notification",
     category: "devices",
-    readTime: "7 min read",
+    readTime: "8 min read",
     featured: true,
     pinned:   false
   },
-
-
 
   {
     url:      "/help/why-included-minutes-are-not-being-used",
@@ -769,9 +734,9 @@ var HELP_ARTICLES = [
   },
   {
     url:      "/help/how-to-use-live-call-dashboard",
-    title:    "Using the Live Call Dashboard",
-    desc:     "See live calls, callers waiting in queues and team availability, and put it on a screen in the office.",
-    tags:     "dashboard live real time wallboard tv view monitor missed calls talk time active calls queued calls team status supervisor",
+    title:    "Live Call Dashboard and Voice Console",
+    desc:     "Watch live calls in Click2Call: the Call Activity Dashboard for counters, queues and team status, the TV wallboard view, and the Voice Console.",
+    tags:     "dashboard live real time wallboard tv view monitor missed calls talk time active calls queued calls team status supervisor console who is on the phone current in progress",
     category: "call-flows",
     readTime: "4 min read",
     featured: true,
@@ -809,11 +774,11 @@ var HELP_ARTICLES = [
   },
   {
     url:      "/help/how-to-view-call-recordings",
-    title:    "Viewing Call Recordings",
-    desc:     "How to access and download call recordings from the portal.",
-    tags:     "call recordings download listen playback portal record calls recording playback download records",
+    title:    "Call Recording: Turning It On, Settings and Finding Recordings",
+    desc:     "Turn call recording on for a number, choose what gets recorded, pause with #3, and find, play or download recordings in the Click2Call portal.",
+    tags:     "call recordings download listen playback portal record calls recording playback download records settings announcement selected numbers direction email pause #3 #4 *1 *20 *21 law consent",
     category: "call-flows",
-    readTime: "2 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
@@ -829,16 +794,6 @@ var HELP_ARTICLES = [
   },
 
   /* ── Account & Billing ── */
-  {
-    url:      "/help/how-to-add-channels",
-    title:    "Adding Concurrent Call Channels",
-    desc:     "How to increase the number of simultaneous calls your system can handle.",
-    tags:     "channels concurrent calls capacity add channels upgrade",
-    category: "billing",
-    readTime: "2 min read",
-    featured: true,
-    pinned:   false
-  },
   {
     url:      "/help/how-to-view-account-history",
     title:    "Viewing Account History & Downloading Invoices",
@@ -1045,22 +1000,22 @@ var HELP_ARTICLES = [
   },
   {
     url:      "/help/how-to-add-portal-logins",
-    title:    "Adding Portal Logins for Your Team",
-    desc:     "Create additional Click2Call portal logins for staff, bookkeepers or receptionists with the right access level, optional two-factor authentication, and recording-deletion protection.",
-    tags:     "login user access staff portal password 2fa two factor administrator read only billing access bookkeeper accountant permissions",
+    title:    "How to Give Staff Their Own Portal Login (Access Levels and Two-Factor Login)",
+    desc:     "Give each staff member their own Click2Call portal login with the right access level, and turn on two-factor login for everyone, the main login or one person.",
+    tags:     "login user access staff portal password 2fa two factor administrator read only billing access bookkeeper accountant permissions security email verification trusted locations",
     category: "getting-started",
-    readTime: "3 min read",
+    readTime: "4 min read",
     featured: true,
     pinned:   false
   },
 
   {
     url:      "/help/plans-numbers-and-channels",
-    title:    "Plans, Numbers and Channels",
-    desc:     "What each number costs, why extensions are free, how included minutes work, and how to change a number's plan or add channels.",
-    tags:     "plan pricing business line business number teams line cloud pbx user inbound business number line plan change plan edit number account plan bundles channels included minutes cost",
+    title:    "Plans, Numbers and Channels: What You Pay For",
+    desc:     "Each phone number has its own plan. Extensions are free. Channels set how many calls can happen at once. Here is what each costs and how to change a plan.",
+    tags:     "plan pricing business line business number teams line cloud pbx user inbound business number line plan change plan edit number account plan bundles channels included minutes cost concurrent calls capacity add upgrade",
     category: "billing",
-    readTime: "3 min read",
+    readTime: "5 min read",
     featured: false,
     pinned:   false
   },
@@ -1085,16 +1040,6 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/phone-offline-alerts",
-    title:    "Get an Alert When a Phone Goes Offline",
-    desc:     "Line Monitoring emails you, or rings another number, when a desk phone, adaptor or PBX goes offline.",
-    tags:     "line monitoring offline alert phone offline disconnected registration desk phone pbx trunk alert email",
-    category: "call-flows",
-    readTime: "2 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
     url:      "/help/ai-settings-free-vs-premium",
     title:    "Recording, Transcription and AI Analysis: Free vs Premium",
     desc:     "Turn on call recording, transcription, summaries, sentiment and profanity detection, and see what AI Premium adds for $10 + GST per billing cycle.",
@@ -1105,32 +1050,12 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/ai-alerts",
-    title:    "Email Alerts from Your Calls (AI Alerts)",
-    desc:     "AI Alerts emails you when a call mentions words you choose, a follow-up is promised, profanity is used, or a caller sounds unhappy.",
-    tags:     "ai alerts email alert keywords phrases follow-up profanity negative sentiment threshold recipients notification",
-    category: "ai",
-    readTime: "2 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
-    url:      "/help/ai-custom-queries",
-    title:    "Custom Queries: Ask the AI About Every Call",
-    desc:     "Ask the AI the same question about every call, such as whether a booking was made, and record the answer.",
-    tags:     "custom queries question every call response type yes no score support ticket archive custom_responses webhook premium",
-    category: "ai",
-    readTime: "3 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
     url:      "/help/ai-call-reports",
-    title:    "AI Call Reports",
-    desc:     "Charts of sentiment by user, call categories, call length by user, and names spoken or mentioned on your calls.",
-    tags:     "ai reports call reports sentiment by user category volume call length speaking names mentioned names analytics",
+    title:    "AI Call Reports, Alerts and Custom Queries",
+    desc:     "Chart call sentiment and length with AI Reports, get emails when key words are said with AI Alerts, and ask the AI your own question about every call.",
+    tags:     "ai reports call reports sentiment by user category volume call length speaking names mentioned names analytics custom queries question every response type yes no score support ticket archive custom_responses webhook premium alerts email alert keywords phrases follow-up profanity negative threshold recipients notification",
     category: "ai",
-    readTime: "2 min read",
+    readTime: "5 min read",
     featured: false,
     pinned:   false
   },
@@ -1145,52 +1070,12 @@ var HELP_ARTICLES = [
     pinned:   false
   },
   {
-    url:      "/help/message-playback",
-    title:    "Play a Message Before a Call Connects (Message Playback)",
-    desc:     "Play a recorded message to every caller before the call connects, at the times you choose.",
-    tags:     "message playback announcement before call connects notice recorded message *35 *36 privacy notice greeting before ringing",
-    category: "call-flows",
-    readTime: "2 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
     url:      "/help/call-waiting-intercom-and-caller-id-options",
     title:    "Call Waiting, Intercom and Incoming Caller ID Options",
     desc:     "Turn call waiting off, use the intercom, show which of your numbers was called, and tag calls for a distinctive ring.",
     tags:     "call waiting disable second call intercom *85 incoming call identifier which number was called caller name lookup whitepages distinctive ring caller id privacy",
     category: "call-flows",
     readTime: "3 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
-    url:      "/help/call-barring",
-    title:    "Block Outgoing Call Types (Call Barring)",
-    desc:     "Stop a number calling mobiles, overseas, toll-free or any outgoing call.",
-    tags:     "call barring block outgoing calls overseas international mobile toll free restrict calls lobby phone fraud",
-    category: "call-flows",
-    readTime: "2 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
-    url:      "/help/call-recording-settings",
-    title:    "Call Recording Settings on a Number",
-    desc:     "Record all calls or selected numbers, one direction or both, with an announcement, email copies and in-call pause codes.",
-    tags:     "call recording settings record calls announcement selected numbers direction email recording pause #3 #4 *1 *20 *21 law consent",
-    category: "call-flows",
-    readTime: "3 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
-    url:      "/help/remote-extension-options",
-    title:    "Change Another Extension’s Settings or Call as It (*44)",
-    desc:     "Switch on features for another number, such as Do Not Disturb on the main line, or make a call showing that number.",
-    tags:     "remote extension options *44 star code another extension main line night mode call as another number caller id",
-    category: "call-flows",
-    readTime: "2 min read",
     featured: false,
     pinned:   false
   },
@@ -1204,36 +1089,6 @@ var HELP_ARTICLES = [
     featured: false,
     pinned:   false
   },
-  {
-    url:      "/help/conference-rooms-and-meetings",
-    title:    "Conference Rooms, Scheduled Meetings and Groups",
-    desc:     "Use your conference room PIN or link, schedule meetings with invitations and reminders, and keep groups of regular participants.",
-    tags:     "conference room meeting schedule invite pin moderator guest audio bridge dial in link lite conference upgrade group participants reminder",
-    category: "call-flows",
-    readTime: "3 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
-    url:      "/help/network-status",
-    title:    "Is There an Outage? Checking Network Status",
-    desc:     "Check current incidents and planned maintenance before troubleshooting your own phones or internet.",
-    tags:     "network status outage down not working incident maintenance all calls failing service status",
-    category: "getting-started",
-    readTime: "1 min read",
-    featured: false,
-    pinned:   false
-  },
-  {
-    url:      "/help/voice-console-live-calls",
-    title:    "Watching Live Calls (Voice Console)",
-    desc:     "The Voice Console is a live view of the calls on your account as they happen, like a dashboard.",
-    tags:     "console live calls dashboard who is on the phone current calls in progress monitor real time wallboard",
-    category: "call-flows",
-    readTime: "1 min read",
-    featured: false,
-    pinned:   false
-  }
 ];
 
 /**

@@ -257,44 +257,13 @@ When someone leaves, remove them from the extension's users in Zoho and from the
 
 There's no ready-made integration for HubSpot, Salesforce, Pipedrive or HighLevel. A developer can connect them with Click2Call's webhooks, which report each call as it rings, is answered and ends, and the [call setup API](https://www.click2call.com.au/help/call-setup-api), which adds click-to-call. See [Using the API and webhooks](https://www.click2call.com.au/help/webhooks-and-api-during-your-trial).
 
-## Turning On Two-Factor Login
-
-Source: https://www.click2call.com.au/help/two-factor-login
-
-Two-factor login adds a one-time code to your portal sign-in. Even if someone learns your password, they can't get into your account without the code, which is emailed to you each time you log in.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
-
-### Turn it on for everyone
-
-- Log in to the portal and go to **Account → Details**.
-- At the bottom, under **Two Factor Authentication (2FA)**, choose **Enabled for all users**. Codes are sent by email.
-- Optionally tick **Remember trusted locations**. You won't be asked again when you log in from the same internet connection. Leave it unticked for the highest security.
-- Click **Update Details** and log out.
-
-Next time anyone logs in, they're asked for a code sent to their email address.
-
-### Turn it on for the main login only
-
-Choose **Enabled for account login only** instead. Only logins with the 8-digit account number need a code.
-
-### Turn it on for one person
-
-- Go to **Account → Logins** and click the person's name.
-- Under two-factor authentication, choose **Email verification**.
-- Save.
-
-### Not getting the code?
-
-Check your spam folder, and check the email address on your login is correct. See [Adding portal logins](https://www.click2call.com.au/help/how-to-add-portal-logins).
-
 ## Using the API and Webhooks on a Trial Account
 
 Source: https://www.click2call.com.au/help/webhooks-and-api-during-your-trial
 
 Your Click2Call trial includes the full API and webhooks, with no trial limits, from the day you sign up. This guide covers setting up a webhook, the events and fields it sends, how to check one fired, the usual reasons one does not arrive, and what to send support if you are still stuck.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 Who this guide is for
 
@@ -335,7 +304,7 @@ Every webhook carries a `state` field that tells you what happened:
 | start_time | UTC, YYYY-MM-DD HH:MM:SS. Sent only on ended or missed/failed events. |
 | duration | Call length in seconds. Sent only on a successful ended event. |
 | voiceuri | Link to the recording. Sent only on a successful ended event, and only when call recording is enabled. |
-| aiuri, transcript, callsummary | Sent only on the aianalysis event, and only when AI transcription is enabled. callsummary includes a short and full summary, categories, names mentioned and scores such as sentiment. |
+| aiuri, transcript, callsummary | Sent only on the aianalysis event, and only when AI transcription is enabled. callsummary includes a short and full summary, categories, names mentioned and scores such as sentiment, the same analysis charted in AI call reports. |
 
 ### How do I check whether a webhook fired?
 
@@ -415,7 +384,7 @@ Support can check whether Click2Call sent the event. Debugging your integration 
 
 ### Connecting a CRM such as HighLevel
 
-There is no ready-made integration for HighLevel (GoHighLevel, including white-label versions such as TekMatix), HubSpot, Salesforce or Pipedrive. Your CRM consultant or developer connects it with our webhooks: they fire when a call rings, is answered, ends or is missed, and again with the AI summary and transcript once processing finishes. HighLevel workflows can receive webhooks, so summaries and transcripts can be saved against the right contact. Looking up contacts or booking into a CRM calendar during a call is custom work on the CRM side.
+Zoho CRM is the exception: it has a free ready-made integration. See [Connecting Zoho CRM](https://www.click2call.com.au/help/zoho-crm-integration). There is no ready-made integration for HighLevel (GoHighLevel, including white-label versions such as TekMatix), HubSpot, Salesforce or Pipedrive. Your CRM consultant or developer connects it with our webhooks: they fire when a call rings, is answered, ends or is missed, and again with the AI summary and transcript once processing finishes. HighLevel workflows can receive webhooks, so summaries and transcripts can be saved against the right contact. Looking up contacts or booking into a CRM calendar during a call is custom work on the CRM side.
 
 There is no direct Google Drive or Google Workspace connection. Recordings, transcripts and summaries can be emailed after each call, or sent on through the same webhooks with a tool such as Zapier or Make.
 
@@ -475,7 +444,7 @@ The Account Plan page — view your services, channels, and line plans
 
 #### Start adding your phone services
 
-Click **Voice** in the top navigation bar to go to the Voice Numbers page. From here you can add phone numbers, create extensions for your team, and provision desk phones and softphones. Use the buttons at the top — **Add Phone Number**, **Add Extension**, and **Add Channels** — to get started. To start calling from a Windows PC or Mac straight away, open the [Web Phone](https://www.click2call.com.au/help/web-phone) in your browser and sign in with your number and password from **Voice → Line Manager**.
+Click **Voice** in the top navigation bar to go to the Voice Numbers page. From here you can add phone numbers, create extensions for your team, and provision desk phones and softphones. Use the buttons at the top — **Add Phone Number**, **Add Extension**, and **Add Channels** — to get started. To start calling from a Windows PC or Mac straight away, open the [Web Phone](https://www.click2call.com.au/help/web-phone) in your browser and sign in with your number and password from **Voice → Line Manager**. Then follow [making your first call](https://www.click2call.com.au/help/how-to-make-your-first-call) to check everything works.
 
 The Voice Numbers page — your hub for managing extensions and phone numbers
 
@@ -541,7 +510,7 @@ At the end of the 7 days, or when your $11 + GST credit runs out (whichever come
 
 The $10 Business Number you activated during the trial is ideal for **receiving inbound calls**. Many businesses keep it exactly as it is — routing inbound calls to an auto-attendant, applying after-hours rules, or directing callers to the right team. There is no need to change it.
 
-For staff who need to make outbound calls, simply add a **Business Line** ($25/month) for each of them. Each Business Line includes 300 outbound minutes per month to standard Australian numbers and can be assigned their own extension. Your $10 Business Number continues to sit alongside these lines, handling all incoming calls.
+For staff who need to make outbound calls, simply add a **Business Line** ($25/month) for each of them. Each Business Line includes 300 outbound minutes per month to standard Australian numbers and can be assigned their own extension. The minutes belong to that line, so calls made from another number don’t use them (see [why included minutes are not being used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used)). Your $10 Business Number continues to sit alongside these lines, handling all incoming calls.
 
 For example, a small business might keep the $10 number for inbound calls and add two Business Lines for two staff members who make outbound calls — a total of $60/month for a fully functional phone system.
 
@@ -766,15 +735,19 @@ If your account has been suspended, you can’t log in to the portal to add cred
 
 Every top-up, card payment and charge is listed under **Account → History**, newest first. Negative amounts are deductions from your balance, such as a monthly line fee. Click the PDF icon next to a transaction to download a tax invoice with GST shown, or use **Export CSV** to send your full history to your bookkeeper. See [viewing account history](https://www.click2call.com.au/help/how-to-view-account-history) for each column.
 
-If your credit is going faster than expected, check which number the calls were made from. The 300 included minutes belong to one Business Line only. Calls made from your other numbers or extensions are charged per minute, even on the same account.
+If your credit is going faster than expected, check which number the calls were made from. The 300 included minutes belong to one Business Line only. Calls made from your other numbers or extensions are charged per minute, even on the same account. See [why your included minutes are not being used](https://www.click2call.com.au/help/why-included-minutes-are-not-being-used).
 
 **Good to know:** All prices are in Australian dollars. Add credit before you add numbers or channels, because their monthly charges come out of your credit.
 
-## Adding Portal Logins for Your Team
+## How to Give Staff Their Own Portal Login (Access Levels and Two-Factor Login)
 
 Source: https://www.click2call.com.au/help/how-to-add-portal-logins
 
-, Step by Step
+You do not need to share your password. Each person can have their own portal login with an access level that matches their role: full administrator, billing only, read only, console only for a receptionist, and more. Two-factor login then adds an emailed code to each sign-in, so a stolen password alone can’t open your account.
+
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
+
+### Adding Portal Logins for Your Team, Step by Step
 
 1
 
@@ -801,6 +774,56 @@ Pick the level that fits: **Administrator** or **Full Access** for owners; **Bil
 Enter a password of 8+ characters with upper and lower case letters and a number. Optionally enable **Two-factor authentication** (email verification), tick Remember trusted locations to only prompt once per office connection, and tick **Prevent recording deletion** if this person should never be able to delete call recordings. Click **Add Login**.
 
 To stop someone listening to call recordings at all, not just deleting them, contact support and we can restrict that login’s access to recordings.
+
+### Which access level to choose
+
+Give each person the lowest level that still lets them do their job. A bookkeeper who only pays invoices doesn’t need to change call flows, and a receptionist who only answers calls doesn’t need billing.
+
+| Access level | Suits |
+| Administrator / Full Access | The owner or the person who runs the phone system. |
+| Full Access with no Call Costs or Minutes Displayed | Someone who manages settings but shouldn’t see call costs. |
+| Billing Access Only | A bookkeeper who pays invoices. |
+| Console Access Only | A receptionist who answers and transfers calls. |
+| Console + SMS | A receptionist who also sends and answers texts. |
+| Records + Reports Access Only | A manager who reviews calls and reports. |
+| Read Only Access | Anyone who should look but not change anything. |
+
+Tick **Prevent recording deletion** for anyone who can open call recordings but shouldn’t remove them. See [viewing call recordings](https://www.click2call.com.au/help/how-to-view-call-recordings).
+
+### Changing or removing a login
+
+Go to **Account → Logins** and click the person’s name to change their access level, password or two-factor setting. When someone leaves, remove their login the same day. Removing a login only takes away portal access. Their extension and call recordings stay as they are. To let a new person make calls, set up an extension for them as well. See [adding an extension](https://www.click2call.com.au/help/how-to-add-extension).
+
+### Two-factor login (2FA): add a code to every sign-in
+
+Two-factor login adds a one-time code to your portal sign-in. The code is emailed each time someone logs in. Even if someone learns a password, they can’t get into your account without the code. It is one of the simplest ways to protect your account against [toll fraud](https://www.click2call.com.au/help/toll-fraud-protection).
+
+#### Turn it on for everyone
+
+- Log in to the portal and go to **Account → Details**.
+- At the bottom, under **Two Factor Authentication (2FA)**, choose **Enabled for all users**. Codes are sent by email.
+- Optionally tick **Remember trusted locations**. You won’t be asked again when you log in from the same internet connection. Leave it unticked for the highest security.
+- Click **Update Details** and log out.
+
+Next time anyone logs in, they’re asked for a code sent to the email address on their login.
+
+#### Turn it on for the main login only
+
+Choose **Enabled for account login only** instead. Only logins with the 8-digit account number need a code. Staff logins are left as they are unless you turn it on for them one by one.
+
+#### Turn it on for one person
+
+- Go to **Account → Logins** and click the person’s name.
+- Under two-factor authentication, choose **Email verification**.
+- Save.
+
+The **2FA** column in the list of logins shows who has it on.
+
+#### Not getting the code?
+
+- Check the spam or junk folder.
+- Check the email address on the login is correct in **Account → Logins**. The code goes to that address, so a typo means it never arrives.
+- If you still can’t log in, email support from the address on the account with your account number.
 
 **Good to know:** To change your own name, password or 2FA, use the account menu in the top-right corner of the portal and choose Manage my login.
 
@@ -844,7 +867,8 @@ Then enter the new password in the app or phone that uses that number. The usern
 Where to enter the new password depends on the device:
 
 - **Web Phone or Basic Edition app.** Sign in again with the number and the new password, or scan the QR code on the line’s page in Line Manager.
-- **A softphone such as Zoiper.** Edit the account in the app and replace the password. See [softphone set-up and troubleshooting](https://www.click2call.com.au/help/softphone-setup-and-troubleshooting).
+- **A softphone such as [Zoiper](https://www.click2call.com.au/help/zoiper-setup).** Edit the account in the app and replace the password. See [softphone set-up and troubleshooting](https://www.click2call.com.au/help/softphone-setup-and-troubleshooting).
+- **Secure VoIP Micro Edition on Windows.** Log in again with the new line password. If it won’t go Online, see [Secure VoIP on Windows: tips](https://www.click2call.com.au/help/secure-voip-windows-tips).
 - **A desk phone or analogue adaptor.** On most models, update the password on the SIP account page of the phone’s web settings. Check the manual if your model differs.
 - **A PBX on a SIP trunk.** Update the secret on the trunk that uses the pilot number. Calls stop on every extension behind the PBX until you do.
 
@@ -865,26 +889,6 @@ Click **Forgot your password?** on the portal login page.
 The “Click2Call Password Reset Requested” email is sent when someone clicks **Forgot your password?** on the portal login page and enters your login, or when Click2Call support sends one for you. Your password does not change unless someone opens the link in the email and sets a new one. If you didn’t ask for it, you can ignore the email.
 
 **Good to know:** If an app suddenly says “wrong username or password”, check whether the portal password was changed recently. The app needs the new phone password.
-
-## Is There an Outage? Checking Network Status
-
-Source: https://www.click2call.com.au/help/network-status
-
-If calls suddenly fail for everyone, check whether there is a known incident or planned maintenance before you restart phones or call your internet provider.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Check the status page
-
-- Log in to the portal and go to **Account → Network Status**.
-- Click **Open full status page** to see current incidents, planned maintenance and service availability.
-- Bookmark the full status page so you can check it even when you cannot log in.
-
-### If nothing is listed
-
-The problem is more likely at your end. Check that your phones are online in **Voice → Line Manager** (a registered phone shows its IP address and last registration), restart your router and phones, and see [Calls During a Power or Internet Outage](https://www.click2call.com.au/help/calls-during-power-or-internet-outage).
-
-**Good to know:** To be told when one of your own phones goes offline, turn on [Line Monitoring](https://www.click2call.com.au/help/phone-offline-alerts).
 
 # Phone Numbers
 
@@ -1028,7 +1032,7 @@ Phone Numbers
 
 Add a new Australian phone number to your Click2Call account. Choose a **Business Line** ($25 a month: makes and receives calls, with 300 minutes) or a **Business Number** ($10 a month: receives calls). Numbers are available in all major Australian cities including Sydney, Melbourne, Brisbane, Perth, Adelaide and more. Not sure which type to pick? The [business phone numbers page](https://www.click2call.com.au/business-phone-numbers/) compares local, 04 mobile, 1300 and 1800 numbers and their fees.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 Before you begin
 
@@ -1140,6 +1144,8 @@ Your new Sydney number **02 7238 0358** is now active. Next steps you might want
 - [Add an extension](https://www.click2call.com.au/help/how-to-add-extension) and assign this number to a user
 
 - [Set up voicemail-to-email](https://www.click2call.com.au/help/how-to-set-up-voicemail) for this number
+
+- [Make your first call](https://www.click2call.com.au/help/how-to-make-your-first-call) to check it works both ways
 
 ### 1300 numbers
 
@@ -1257,11 +1263,11 @@ The $100 including GST port fee is one-off. After that, a ported number runs on 
 
 # Extensions & Users
 
-## Extension Numbers, Calling Groups and Caller Names
+## Extension Numbers, Calling Groups and Remote Extension Options (*44)
 
 Source: https://www.click2call.com.au/help/extension-numbers-and-groups
 
-Every line on your account can have a short extension number and a name. Staff dial the extension instead of the full number, callers can enter it at your auto attendant, and the name shows on the other person's phone.
+Every line on your account can have a short extension number and a name. Staff dial the extension instead of the full number, callers can enter it at your auto attendant, and the name shows on the other person's phone. Calling groups decide which lines can reach each other, and Remote Extension Options (*44) let one extension change another number's settings or call as it.
 
 Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
@@ -1278,13 +1284,47 @@ If you use an auto attendant, plan your numbers so they're easy to say in the gr
 
 Each line has a **calling group**. Parking, call pickup, intercom and extension dialling only work between lines in the same calling group. Most small businesses keep everyone in one group. Use separate groups to keep teams or sites apart.
 
+For example, a business with a Brisbane office and a Gold Coast shop might put each site in its own group, so a call parked in the shop can only be picked up in the shop. If staff in different groups still need to dial each other’s extensions, turn on **Global Extension Dialing** in the line profile. See [line profiles](https://www.click2call.com.au/help/line-profiles-and-time-zone).
+
 ### Billing groups
 
-The **billing group** sorts call costs by team or site in your reports. It doesn't change how calls work.
+The **billing group** sorts call costs by team or site in your reports. It doesn't change how calls work. It is also a filter in the call reports, so you can see one team's calls and costs on their own.
 
 ### Intercom
 
 To let colleagues call a phone and have it answer on speaker, open that line's **Incoming Calls → Caller ID, Call Waiting & Intercom** and tick **Enable Intercom Feature on this line**. Others in the group then dial `*85` plus the extension.
+
+### Remote extension options (*44): change another extension’s settings or call as it
+
+Remote Extension Options let someone on one extension change another number’s settings with star codes, or make a call that shows the other number. A common use is switching the main office number’s settings from any desk, without logging in to the portal.
+
+#### Allow it on the number
+
+Turn this on for the line that will be changed or called from, not the phone doing the dialling.
+
+- Go to **Voice → Line Manager** and click the number or extension. From the **Other Settings** menu, choose **Remote Extension Options**.
+- Tick **Allow other extensions within the account and group to program settings against this line** to let them change its settings.
+- Tick **Allow other extensions within the account and group to make outgoing calls from this number** to let them call as it.
+- Tick **Global extension** if extensions in other groups of the account should reach it too.
+- Save.
+
+#### Use it
+
+| Dial | Does |
+| *44*XX*YY | Runs star code YY on number or extension XX. For example *44*23*78 turns on Do Not Disturb on extension 23, and *44*23*79 turns it off again. |
+| *44*XX | Makes a call from XX: you are asked for the number to dial, and the call shows XX’s caller ID. |
+| *44*XX*YY#… | Up to 5 star codes in one go, separated by #. Handy on a phone key. |
+
+Here is how a typical office might use it. The receptionist is on extension 11 and the main number is extension 10. At lunch she dials `*44*10*78` to put the main line on Do Not Disturb, and `*44*10*79` when she is back. A manager who is out of the office can dial `*44*10` from their own extension so a call to a customer shows the main business number rather than their own line.
+
+Any star code that works on a phone can be run this way. The full list is on [star codes](https://www.click2call.com.au/help/star-codes). To make it one press, put the code on a phone key. See [programming phone keys](https://www.click2call.com.au/help/programming-phone-keys).
+
+### If something isn’t working
+
+- **An extension won’t connect.** Both lines must be in the same calling group, or Global Extension Dialing must be on in the line profile.
+- **New names don’t show on desk phones.** Restart the phone so it picks up the change.
+- **`*44` is refused.** Check the right boxes are ticked under Remote Extension Options on the target line, and that both lines are in the same group or Global extension is ticked.
+- **A call made with `*44*`XX shows the wrong number.** The call uses XX’s own caller ID. See [setting outbound caller ID](https://www.click2call.com.au/help/how-to-set-outbound-caller-id) to change it.
 
 ## Adding a New Extension
 
@@ -1372,7 +1412,7 @@ Once saved, the new extension will appear in the **User Extensions** list on the
 
 - Register a desk phone using the extension number and SIP password
 
-- Or sign in to the [Web Phone](https://www.click2call.com.au/help/web-phone) in a computer browser with the extension’s username and password, or install a softphone app (e.g. Zoiper, Bria) and log in with the SIP credentials
+- Or sign in to the [Web Phone](https://www.click2call.com.au/help/web-phone) in a computer browser with the extension’s username and password, or install a softphone app (e.g. [Zoiper](https://www.click2call.com.au/help/zoiper-setup) or [Bria Teams](https://www.click2call.com.au/help/bria-teams-setup)) and log in with the SIP credentials
 
 - Add the extension to a ring group or call flow to receive inbound calls
 
@@ -1867,7 +1907,7 @@ Source: https://www.click2call.com.au/help/toll-fraud-protection
 
 Toll fraud is when someone breaks into a phone account and uses it to make expensive overseas calls. It's the biggest security risk for any internet phone service, and a few simple settings stop almost all of it.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### How it happens
 
@@ -1891,7 +1931,9 @@ These checks limit the damage, but they can't replace securing your own phones. 
 - **Don't forward ports to your phones.** Click2Call works behind your router without port forwarding. Opening ports exposes your phones to the internet.
 - **Use TLS.** It encrypts your phone's sign-in details. See [SIP settings for desk phones, adapters and PBX systems](https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx).
 - **Restrict overseas calls.** If you don't call overseas, open each number, choose **Outgoing Calls → Call Barring**, tick **Enable the call Barring feature for this line** and tick **Block all All Overseas Calls**. If only some staff do, require a PIN. See [PIN codes and call assignment](https://www.click2call.com.au/help/outgoing-call-pin-and-call-assignment).
-- **Lock your account to your office.** If your phones always connect from the same fixed IP address, add it to the **Access Control List** in your profile under **Voice → Profiles** (one address or subnet per line), so connections from anywhere else are refused.
+- **Lock your account to your office.** If your phones always connect from the same fixed IP address, add it to the **Access Control List** in your [profile](https://www.click2call.com.au/help/line-profiles-and-time-zone) under **Voice → Profiles** (one address or subnet per line), so connections from anywhere else are refused.
+
+If you use remote dial tone or remote call back, they place calls billed to your account too. Always set a PIN and list only your own numbers. See [calling through your business number while away](https://www.click2call.com.au/help/remote-call-back-and-dial-tone).
 
 ### Using your own PBX
 
@@ -1899,7 +1941,7 @@ Prefer a registered SIP trunk to IP peering. If you do use peering, only allow S
 
 ### Protect your portal login
 
-Turn on two-factor login so a stolen password isn't enough. See [Two-factor login](https://www.click2call.com.au/help/two-factor-login).
+Turn on two-factor login so a stolen password isn't enough. See [Two-factor login](https://www.click2call.com.au/help/how-to-add-portal-logins).
 
 ### If you think you've been hacked
 
@@ -2056,39 +2098,6 @@ If you change a line password in the portal, update it in Team Members too, or t
 
 Bria Teams is a third-party app, so Click2Call can help with the server settings above but not with Bria's own dashboard or licensing. If your team doesn't need Bria's central management, the free [Web Phone](https://www.click2call.com.au/web-phone/) on computers and the Basic Edition app on mobiles use the same usernames and passwords. See [Setting up a softphone and fixing registration problems](https://www.click2call.com.au/help/softphone-setup-and-troubleshooting) for every app that works with Click2Call.
 
-## Transferring Calls in the Secure VoIP App
-
-Source: https://www.click2call.com.au/help/secure-voip-app-transfers
-
-You can pass a call to a colleague from the Secure VoIP app in two ways. A blind transfer sends the call straight through. An attended transfer lets you speak to your colleague first, so you can check they're free before handing over.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### On iPhone or Android
-
-The Secure VoIP mobile app supports both blind and attended transfers from the in-call screen. During a call, open the in-call options and choose transfer. Then pick the number or the other call you want to hand over to.
-
-If you can't find the option, use the keypad codes in the next section. They work in any app or phone.
-
-### On Windows (Micro Edition)
-
-#### Blind transfer
-
-- During the call, click the **Call Transfer** icon.
-- Enter the number and click **OK**.
-
-#### Attended transfer
-
-First make sure **Single Call Mode** is turned off in **Settings**.
-
-- Click **Hold** to put the first call on hold.
-- Call your colleague.
-- When you're ready, click **Transfer → Attended Transfer** and choose the other call.
-
-### Transferring from any phone
-
-During an incoming call, open the keypad and dial `#0` then the number for an attended transfer, or `##` then the number for a blind transfer. These work in every app and desk phone because Click2Call handles them, not the app. See [Parking, picking up and transferring calls](https://www.click2call.com.au/help/call-parking-pickup-transfers).
-
 ## Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux
 
 Source: https://www.click2call.com.au/help/secure-voip-windows-tips
@@ -2162,36 +2171,6 @@ Some of the Windows app’s behaviour is set per number in the portal: **Voice �
 
 For other apps and general registration problems, see [softphone set-up and troubleshooting](https://www.click2call.com.au/help/softphone-setup-and-troubleshooting).
 
-## Secure VoIP on Android: Fixing Missed Calls and Battery Saving
-
-Source: https://www.click2call.com.au/help/secure-voip-android-background-mode
-
-Phones & Devices
-2 min read
-
-## Basic Edition on Android: Fixing Missed Calls and Battery Saving
-
-Android phones save battery by putting apps to sleep. The Basic Edition app is woken by a push notification when a call comes in, but some phones' battery savers block that, so calls are missed while the app is closed. A few settings fix it.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
-
-### Signs of the problem
-
-Calls ring when the app is open, but are missed or go to voicemail when the phone is locked or the app has been closed for a while.
-
-### Let the app run in the background
-
-- Open your phone's **Settings → Apps** and choose the **Basic Edition** app.
-- Open **Battery** and choose **Unrestricted** (on some phones, **Don't optimise** or **Allow background activity**).
-- Check **Notifications** are allowed for the app.
-- On Samsung, Xiaomi, Oppo and Huawei phones, also remove the app from any "sleeping apps" or battery-saver list.
-
-If the app has its own background or keep-alive setting in its settings, turn it on as well.
-
-### Test it
-
-Close the app, lock your phone, and call your number from another phone. If it rings, you're set. If it doesn't, check the settings above again, or set a [ring group](https://www.click2call.com.au/help/how-to-create-ring-group) so calls also ring your mobile number directly.
-
 ## Busy Lamp Field (BLF): Watching Lines, Queues and Voicemail
 
 Source: https://www.click2call.com.au/help/busy-lamp-field-blf
@@ -2207,7 +2186,7 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 
 ### Before you start
 
-- **A phone with spare programmable keys.** Most desk phones from the brands supported under **Voice → Phones** have them. The Windows app also shows whether colleagues are on a call.
+- **A phone with spare programmable keys.** Most desk phones from the brands supported under **Voice → Phones** have them. The [Windows app](https://www.click2call.com.au/help/secure-voip-windows-tips) also shows whether colleagues are on a call.
 - **BLF turned on for the profile.** The **BLF/Presence** setting in **Voice → Profiles** lets phone keys show whether a colleague is on a call. See [Line profiles and time zone](https://www.click2call.com.au/help/line-profiles-and-time-zone).
 - **Everyone in the same calling group.** Call pickup, parking, intercom and extension dialling only work between lines in the same calling group. Most businesses keep everyone in one group. See [Extension numbers and groups](https://www.click2call.com.au/help/extension-numbers-and-groups).
 
@@ -2288,7 +2267,7 @@ Hot desking suits any place where people share desks on different days. Think of
 
 Hot desking only works on phones set up through **Voice → Phones**. Each hot desk phone needs its own default number or extension, which it uses when nobody is logged in.
 
-A free extension named after the desk, such as Room 3 or Front Counter, makes a good default. The phone can still make and take internal calls when nobody is logged in, and colleagues can see which desk it is. See [Adding a new extension](https://www.click2call.com.au/help/how-to-add-extension). Each person who hot desks also needs their own extension.
+A free extension named after the desk, such as Room 3 or Front Counter, makes a good default. The phone can still make and take internal calls when nobody is logged in, and colleagues can see which desk it is. On Yealink and Grandstream phones, internal calls can also [ring differently](https://www.click2call.com.au/help/distinctive-ring-internal-calls). See [Adding a new extension](https://www.click2call.com.au/help/how-to-add-extension). Each person who hot desks also needs their own extension.
 
 ### Setting up a hot desk phone
 
@@ -2760,7 +2739,7 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 
 ### Before you start
 
-Gigaset bases aren't in the portal's auto-provisioning list. That means nothing is pushed to the phone for you: no line keys, no phonebook and no firmware updates. You type the connection details into the base station once, and the base then logs in to Click2Call like any other SIP device. The settings below are the same ones listed in [SIP settings for desk phones, adapters and PBX systems](https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx).
+Gigaset bases aren't in the portal's auto-provisioning list. That means nothing is pushed to the phone for you: no line keys, no phonebook and no firmware updates. If you're still choosing a cordless system and want it configured from the portal, a [Panasonic KX-TGP base with KX-TPA handsets](https://www.click2call.com.au/help/panasonic-sip-phones) is auto-provisioned. You type the connection details into the base station once, and the base then logs in to Click2Call like any other SIP device. The settings below are the same ones listed in [SIP settings for desk phones, adapters and PBX systems](https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx).
 
 You need:
 
@@ -2825,7 +2804,7 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 
 ### When this is a good fit
 
-A FRITZ!Box with a phone port (marked FON) does the job of an analogue adaptor. It suits a home office or a small shop that wants to keep using an ordinary phone or cordless base without buying extra hardware. Most FRITZ!Box models also have a built-in DECT base, so a compatible cordless handset can register to the router itself.
+A FRITZ!Box with a phone port (marked FON) does the job of an analogue adaptor. It suits a home office or a small shop that wants to keep using an ordinary phone or cordless base without buying extra hardware. Most FRITZ!Box models also have a built-in DECT base, so a compatible cordless handset can register to the router itself. If you'd rather use a cordless base that connects to Click2Call on its own, see [Gigaset cordless IP phones](https://www.click2call.com.au/help/gigaset-ip-phones).
 
 You won't get line keys, BLF lamps or a phonebook pushed from the portal, because the FRITZ!Box isn't provisioned by Click2Call. Cloud features still work: voicemail, call forwarding, ring groups and the auto attendant all run on Click2Call's side. This guide covers the phone settings only.
 
@@ -2890,11 +2869,11 @@ Source: https://www.click2call.com.au/help/programming-phone-keys
 
 When you add a desk phone under Voice → Phones, you can also decide what each programmable key on the phone does — a second line, a busy lamp for a colleague, a speed dial, call pickup and more. The settings are pushed to the phone automatically, so you never touch the phone's own menus.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Which phones does this work for?
 
-Any phone added under **Voice → Phones** — Alcatel-Lucent, Cisco, Fanvil, FlyingVoice, Grandstream, Panasonic, Polycom, Yealink and Yeastar models. The portal lists every supported model when you choose the manufacturer.
+Any phone added under **Voice → Phones** — Alcatel-Lucent, Cisco, Fanvil, [FlyingVoice](https://www.click2call.com.au/help/flyingvoice-phones), Grandstream, [Panasonic](https://www.click2call.com.au/help/panasonic-sip-phones), Polycom, Yealink and Yeastar models. The portal lists every supported model when you choose the manufacturer.
 
 ### Step 1: choose which numbers the phone uses (Accounts)
 
@@ -2917,7 +2896,7 @@ Below the accounts is the **DSS Keys** section, with one row per key (Key 01, Ke
 | Do not Disturb | Turns DND on and off |
 | Start Manual Recording / Pause Recording / Resume Recording | Controls recording on the current call |
 | Hot Desk Login / Hot Desk Logout | Signs a user in or out of a shared phone |
-| Multicast Paging | Broadcasts an announcement to a group of phones |
+| Multicast Paging | Broadcasts an announcement to a group of phones. To set up a page that starts when someone dials an extension, see group calls and paging |
 | DTMF | Sends a set of keypad digits during a call |
 
 ### Step 3: save and push it to the phone
@@ -2930,7 +2909,7 @@ Click **Add Phone** (or save the phone's settings if you're editing it). To appl
 - **Web Admin Password / Web User Password** — set your own; they default to admin and user if left blank.
 - **Call Waiting** and **Call Waiting Tones** — whether a second call can come in while you're on one.
 - **DSS Key Transfer Mode** — what the phone does when you press a BLF key during a call: blind transfer, attended transfer, or a new call.
-- **Remote Phonebook** — shows your internal extensions and external contacts in the phone's directory. Tip: a line or extension with "Virtual" in its name won't appear in the phonebook.
+- **Remote Phonebook** — shows your internal extensions and [external contacts](https://www.click2call.com.au/help/how-to-set-up-speed-dials) in the phone's directory. Tip: a line or extension with "Virtual" in its name won't appear in the phonebook.
 - **Hot Desk Facility** — lets different people log in to the same phone.
 
 ## Setting Up Grandstream Desk Phones
@@ -2939,7 +2918,7 @@ Source: https://www.click2call.com.au/help/grandstream-desk-phones
 
 Click2Call can set up most Grandstream desk, cordless and conference phones for you — GRP, GXP, GXV, GHP, DP and WP models. You add the phone in the portal, point the phone at Click2Call's provisioning server, and it configures itself.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Step 1: add the phone in the portal
 
@@ -2979,6 +2958,8 @@ The portal shows the same server address on the phone's settings page, so you ca
 
 Save, then click **Provision** at the top of the page. The phone downloads its settings and any firmware it needs. A firmware update can take several minutes and several restarts — don't unplug it.
 
+To change a setting later, edit the phone in **Voice → Phones** and restart it. Extra phone settings go in its **Custom Configuration** box, for example to [play a different ringtone for internal calls](https://www.click2call.com.au/help/distinctive-ring-internal-calls).
+
 ### Older GXP phones that won't provision
 
 Older GXP phones need up-to-date firmware before they can provision, and the update has to be done in stages. Check the current firmware on the phone's **Status** page, then go to **Maintenance → Upgrade and Provisioning**, set **Firmware Upgrade via** to **HTTP** (not HTTPS) and use the path for your version:
@@ -3000,7 +2981,7 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 
 ### Before you start
 
-The HT801 has one phone port and the HT802 has two. Each port takes one ordinary phone, cordless base or fax machine, and can have its own number. The adaptor also has a network port that plugs into your router. You need the adaptor powered on, a phone to plug in, and a computer on the same network.
+The HT801 has one phone port and the HT802 has two. For four or eight ports, use a [Yeastar TA400 or TA800](https://www.click2call.com.au/help/yeastar-ta-adaptors). Each port takes one ordinary phone, cordless base or fax machine, and can have its own number. The adaptor also has a network port that plugs into your router. You need the adaptor powered on, a phone to plug in, and a computer on the same network.
 
 Typical uses: a cordless phone at a front counter, a phone in a shed or workshop where a desk phone would get knocked about, or an existing fax machine. If you're buying new for an office, IP desk phones give you line keys and BLF lamps that an adaptor can't. See [Which phones can I use?](https://www.click2call.com.au/help/which-phones-can-i-use)
 
@@ -3017,7 +2998,7 @@ Go to **Voice → Phones → Add a new phone** and set:
 
 Click **Add Phone**.
 
-Turning call waiting off matters for fax and answering machines. The beep of a second call can break a fax part-way through. For people, call waiting is usually handy, so leave it on for a port used by staff.
+Turning call waiting off matters for fax and answering machines. The beep of a second call can break a fax part-way through. For people, call waiting is usually handy, so leave it on for a port used by staff. It can also be turned off for the number itself: see [call waiting, intercom and caller ID options](https://www.click2call.com.au/help/call-waiting-intercom-and-caller-id-options).
 
 ### Step 2: find the adaptor's IP address
 
@@ -3471,9 +3452,9 @@ Check the Authentication ID has no + and matches Line Manager exactly, and that 
 
 Source: https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx
 
-Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide for. The device must support SIP version 2.
+Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide for. Devices set up by hand that do have one include the [FRITZ!Box phone port](https://www.click2call.com.au/help/fritzbox-phone-port) and [Gigaset cordless IP phones](https://www.click2call.com.au/help/gigaset-ip-phones). The device must support SIP version 2.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### What settings do I enter?
 
@@ -3496,7 +3477,7 @@ TLS encrypts the call setup between your device and Click2Call. Routers can't re
 
 #### Where the port goes
 
-Most devices take the port on the end of the server address, e.g. sip.click2call.com.au:50600. Some have a separate Port field. Enter Click2Call's port there, not your device's own local SIP port.
+Most devices take the port on the end of the server address, e.g. sip.click2call.com.au:50600. Some have a separate Port field. Enter Click2Call's port there, not your device's own local SIP port. A browser app connects differently, over a secure WebSocket: see [browser calling with WebRTC](https://www.click2call.com.au/help/webrtc-sip-over-websocket).
 
 ### Do I need firewall rules?
 
@@ -3662,9 +3643,9 @@ If it affects your auto attendant generally, contact support with a few example 
 
 Source: https://www.click2call.com.au/help/softphone-setup-and-troubleshooting
 
-If your softphone won't log in, or calls stop arriving when the app is closed, this guide covers the fix. It lists the apps that work with Click2Call, shows exactly which credentials to use, explains the iPhone background-calls problem, and how to check whether a line is registering. For calls on a computer with nothing to install, see the [Web Phone](https://www.click2call.com.au/web-phone/).
+If your softphone won't log in, or calls stop arriving when the app is closed, this guide covers the fix. It lists the apps that work with Click2Call, shows exactly which credentials to use, explains why calls can stop arriving in the background on iPhone and Android, and how to check whether a line is registering. For calls on a computer with nothing to install, see the [Web Phone](https://www.click2call.com.au/web-phone/).
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 The short version
 
@@ -3711,6 +3692,21 @@ The Basic Edition app supports background calls on a best-effort basis: it usual
 - •**Don't swipe the app away** — force-quitting an app on iOS stops it receiving calls until you open it again.
 - •**Ring your mobile as well** — the most reliable option is to have the number ring your mobile at the same time as the app. See [Ring Your Mobile and Still Get Voicemail](https://www.click2call.com.au/help/call-flow-ring-mobile-then-voicemail).
 
+### Why does the Basic Edition app miss calls on Android? Battery and background settings
+
+Android phones save battery by putting apps to sleep. The Basic Edition app is woken by a push notification when a call comes in, but some phones’ battery savers block that. The sign is the same as on iPhone: calls ring when the app is open, but are missed or go to voicemail when the phone is locked or the app has been closed for a while. A few settings fix it.
+
+#### Let the app run in the background
+
+- Open your phone’s **Settings → Apps** and choose the **Basic Edition** app.
+- Open **Battery** and choose **Unrestricted** (on some phones, **Don’t optimise** or **Allow background activity**).
+- Check **Notifications** are allowed for the app.
+- On Samsung, Xiaomi, Oppo and Huawei phones, also remove the app from any “sleeping apps” or battery-saver list. Menu names vary by brand and Android version, so check your phone’s manual if you can’t find them.
+- If the app has its own background or keep-alive setting in its settings, turn it on as well.
+
+#### Test it
+Close the app, lock your phone, and call your number from another phone. If it rings, you’re set. If it doesn’t, check the settings above again. As on iPhone, the most reliable back-up is to have the number ring your mobile directly at the same time, with a [ring group](https://www.click2call.com.au/help/how-to-create-ring-group), or to get a [missed call alert](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) so you can call back.
+
 ### How do I check whether a line is registering?
 
 1
@@ -3754,7 +3750,7 @@ Yes — contact support with the number or extension and the time of a failed at
 - •The username is the number (or extension Login) exactly as Line Manager shows it
 - •The domain is sip.click2call.com.au and the transport matches the port
 - •No other device is using the same credentials
-- •Notifications are allowed for the app, and on iPhone Background App Refresh is on
+- •Notifications are allowed for the app. On iPhone, Background App Refresh is on; on Android, the app’s battery setting is Unrestricted
 - •You have tried mobile data instead of Wi-Fi, to rule out the office router
 - •You have tried a second app (Linphone) with the same details, to rule out the app
 - •You have uninstalled the app, reinstalled it, and logged in to your number again
@@ -3777,9 +3773,9 @@ Phones & Devices
 
 ## Adding & Provisioning a Desk Phone
 
-This guide covers two methods for connecting a physical desk phone to your Click2Call account. If you have a Yealink phone, follow the Auto Provisioning steps below for the fastest setup. For all other brands, skip to the Manual SIP Setup section.
+This guide covers two methods for connecting a physical desk phone to your Click2Call account. If you have a Yealink phone, follow the Auto Provisioning steps below for the fastest setup. Several other brands are also set up from the portal and have their own guides, including [Alcatel-Lucent](https://www.click2call.com.au/help/alcatel-lucent-phones), [Fanvil](https://www.click2call.com.au/help/fanvil-phones), [FlyingVoice](https://www.click2call.com.au/help/flyingvoice-phones) and [Polycom VVX](https://www.click2call.com.au/help/polycom-vvx-phones) phones. For any other phone, skip to the Manual SIP Setup section.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Option 1 — Yealink Auto Provisioning
 
@@ -3969,7 +3965,7 @@ Apply these rules for traffic from subnet 52.63.154.234. No STUN server is requi
 
 Source: https://www.click2call.com.au/help/web-phone
 
-The Click2Call Web Phone lets you make and take calls on your business number from a web browser, with nothing to download. Open phone.click2call.com.au, sign in with your line's SIP username and password, and you're ready to call. This guide covers every feature, the best setups, and what the Web Phone can't do. For an overview, see the [Web Phone page](https://www.click2call.com.au/web-phone/).
+The Click2Call Web Phone lets you make and take calls on your business number from a web browser, with nothing to download. Open phone.click2call.com.au, sign in with your line's SIP username and password, and you're ready to call. This guide covers every feature, the best setups, and what the Web Phone can't do. For an overview, see the [Web Phone page](https://www.click2call.com.au/web-phone/). Developers building calling into their own web app should see [browser calling with WebRTC](https://www.click2call.com.au/help/webrtc-sip-over-websocket) instead.
 
 Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
@@ -4188,7 +4184,7 @@ Please read these before relying on the Web Phone as your only phone.
 
 - **Not for emergency calls.** Don't use the Web Phone for 000. It can't share your location and depends on your computer and internet. Always call 000 from a mobile or landline.
 
-- **Two calls at most, no conferencing.** You can have one call active and one on hold or waiting. A third call goes to your voicemail or forward rules and shows as missed in Recents. There are no three-way conference calls.
+- **Two calls at most, no conferencing.** You can have one call active and one on hold or waiting. A third call goes to your voicemail or forward rules and shows as missed in Recents. There are no three-way conference calls. For a call several people dial into, use a [conference number](https://www.click2call.com.au/help/conference-calls).
 
 - **Click-to-call needs Chrome or Edge on a computer.** Safari and phones can't make the Web Phone the app for phone number links.
 
@@ -4407,6 +4403,8 @@ Switch to the Contacts screen to add contacts to your address book. Right-click 
 
 To handle attended and blind transfers or take multiple incoming calls simultaneously, go to **Settings** and untick **Single Call Mode**. The app will then be able to manage multiple calls at the same time.
 
+To reinstall the app cleanly, make phone number links open it, or fix a login that won't go Online, see [Secure VoIP on Windows: tips](https://www.click2call.com.au/help/secure-voip-windows-tips).
+
 ### Setting Up the Telephone App on Mac
 
 **Easier option:** the [Web Phone](https://www.click2call.com.au/help/web-phone) runs in your browser on a Mac, with nothing to install. The installed app below still works if you prefer it.
@@ -4453,7 +4451,7 @@ Go to the **Telephone** menu in the top left of your screen and select **Prefere
 
 #### Adjust audio and call settings (optional)
 
-In **Preferences**, use the **General** and **Sound** sections to select your preferred microphone and speaker or headset. If you do not want to receive a second call while already on a call, untick **Call waiting** in the General section.
+In **Preferences**, use the **General** and **Sound** sections to select your preferred microphone and speaker or headset. If you do not want to receive a second call while already on a call, untick **Call waiting** in the General section. To turn it off for the line itself, see [call waiting options](https://www.click2call.com.au/help/call-waiting-intercom-and-caller-id-options).
 
 ### What to do next
 
@@ -4475,10 +4473,10 @@ Done for you: $300 ex GST for 1 to 3 lines, free on approval with 4 or more, don
 ### Basic apps and the contacts list
 
 - **Basic apps.** **Account → Apps** also lists an Alternative iPhone Basic App and an Alternative Android Basic App. Try one if the main app does not suit your phone; you log in with the same number and password.
-- **Mac and Windows.** The [Web Phone](https://www.click2call.com.au/help/web-phone) is recommended on a computer, with nothing to install. Of the installed apps, Secure VoIP Micro Edition suits Windows and the Telephone app suits a Mac; a legacy Mac app is also listed, but may not work on some Macs.
+- **Mac and Windows.** The [Web Phone](https://www.click2call.com.au/help/web-phone) is recommended on a computer, with nothing to install. Of the installed apps, Secure VoIP Micro Edition suits Windows and the Telephone app suits a Mac; a legacy Mac app is also listed, but may not work on some Macs. Third-party apps work too, such as [Bria Teams](https://www.click2call.com.au/help/bria-teams-setup) for a team managed from one dashboard.
 - **Show only logged-in users.** Under **App Settings** on the same page, tick this to hide colleagues who are not logged in from the contacts list inside the apps.
 
-To see whether there is a wider problem before troubleshooting an app, see [Network Status](https://www.click2call.com.au/help/network-status).
+To see whether there is a wider problem before troubleshooting an app, see [Network Status](https://www.click2call.com.au/help/calls-during-power-or-internet-outage).
 
 ### Using the apps from overseas
 
@@ -4615,11 +4613,11 @@ Phones & Devices
 
 **Linphone** is a free, open-source SIP softphone available for iPhone, Android, Windows, and Mac. It is more configurable than the standard Click2Call app, which makes it a useful option for users who prefer a different interface, or for testing and troubleshooting SIP connectivity. This guide explains how to download Linphone and connect it to your Click2Call account using your SIP credentials.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated August 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 When to use Linphone
 
-Linphone is a good choice if you want a highly configurable SIP client, if you are troubleshooting a connection issue and want to rule out the standard app, or if you simply prefer Linphone's interface. It works on all four major platforms and connects to Click2Call using the same SIP credentials as any other softphone.
+Linphone is a good choice if you want a highly configurable SIP client, if you are troubleshooting a connection issue and want to rule out the standard app, or if you simply prefer Linphone's interface. It works on all four major platforms and connects to Click2Call using the same SIP credentials as any other softphone. Other third-party apps with their own guides are [Zoiper](https://www.click2call.com.au/help/zoiper-setup) and, for a team managed from one dashboard, [Bria Teams](https://www.click2call.com.au/help/bria-teams-setup).
 
 Before you begin: find your SIP credentials
 
@@ -4872,48 +4870,81 @@ Ensure notifications are enabled for Linphone in your device settings. Without n
 
 # Call Flows
 
-## Keeping Calls Coming In During an Outage
+## Outages: Checking Network Status, Offline Alerts and Keeping Calls Coming In
 
 Source: https://www.click2call.com.au/help/calls-during-power-or-internet-outage
 
-Your phones need power and internet to work. If either goes down, Click2Call can still answer your calls and send them to a mobile or another number, because your phone system runs in the cloud, not in your office.
+Your phones need power and internet to work. Your phone system itself runs in the cloud, not in your office, so if either goes down Click2Call can still answer your calls and send them to a mobile or another number. Here’s how to check for a wider outage, get an alert when a phone drops off, and keep calls coming in.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
+
+### Is there an outage? Check network status first
+
+If calls suddenly fail for everyone, check whether there is a known incident or planned maintenance before you restart phones or call your internet provider.
+
+- Log in to the portal and go to **Account → Network Status**.
+- Click **Open full status page** to see current incidents, planned maintenance and service availability.
+- Bookmark the full status page so you can check it even when you cannot log in.
+
+If nothing is listed, the problem is more likely at your end: the power, the internet connection, the router or the phones themselves. The rest of this guide covers keeping calls coming in while that is fixed.
 
 ### Forward calls when your phones are offline
 
-- Go to **Voice → Line Manager** and click your main number.
-- From **Incoming Calls**, choose **Call Forwarding**.
-- Turn on **Forward when Offline** and enter your mobile number.
+- Go to **Voice → Line Manager** and click your main number to open its Call Flow page.
+- Open the **Incoming Calls** dropdown and choose **Call Forwarding**.
+- Under **Forward when Offline**, tick **Enabled** and enter your mobile. Use the 04 format, for example 0412345678, not 61 or +61.
 - Save.
 
-Now, if your phones lose power or internet, callers are sent to your mobile instead of hearing nothing.
+Now, if your phones lose power or internet, callers are sent to your mobile instead of hearing nothing. For example, if a storm cuts power to your office, the desk phones drop off, the line shows as Offline and calls to your business number go to your mobile until the power is back. Set it up before you need it: it takes two minutes and costs nothing until a call is forwarded.
+
+**What “offline” means.** Offline means nothing is signed in to the line. If the Basic Edition app on a mobile, or a desk phone somewhere else, is also signed in, the line isn’t offline and this forward won’t trigger. In that case, also set **Forward on No Answer** to your mobile so calls nobody answers still reach you. The same applies if you use the [Web Phone](https://www.click2call.com.au/help/web-phone) with **Ring me when the app is closed** turned on, because that keeps your line online.
+
+**Knowing a call was forwarded.** A forwarded call shows the caller’s number on your mobile, so it can look like a personal call. On the Call Forwarding page, tick **Play a notification to the callee at the start of the call when the call has been forwarded** to hear an announcement before you are put through.
+
+**What it costs.** The leg out to your mobile is billed as an outgoing call to a mobile from your number. On a Business Line it uses the 300 included minutes first, then the standard mobile rate. A Business Number has no included minutes. See [Forwarding Calls to Your Mobile](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile) for the other forwarding options, including work-hours schedules.
 
 ### Ring a mobile at the same time
 
-Another option is a [ring group](https://www.click2call.com.au/help/how-to-create-ring-group) that rings your mobile along with your desk phones. Calls reach you wherever you are, whether or not the office is online.
+Another option is a [ring group](https://www.click2call.com.au/help/how-to-create-ring-group) that rings your mobile along with your desk phones. Calls reach you wherever you are, whether or not the office is online. Staff out of the office can also use the Basic Edition app on mobile data and still call out on the business number.
+
+### Phone offline alerts: get told when a phone goes offline
+
+Forwarding keeps calls moving, but you may not know the phones are down. Line Monitoring checks every 5 minutes that your desk phone, adaptor or PBX is still connected. If it goes offline, you get an email, and it can also ring a number of your choice to tell you.
+
+**What it can watch:** desk phones, adaptors and PBXs that log in (register) with the number’s SIP details, and registered SIP trunks. It does not work for the Click2Call smartphone apps, SIP peering (direct IP) trunks, IAX2 connections or Microsoft Teams.
+
+- Go to **Voice → Line Manager** and click the number.
+- Open the **Other Settings** menu and choose **Line Monitoring**.
+- Tick **Enable Monitoring for the Line**.
+- Alerts go to the account holder’s email. To send them elsewhere, list the addresses in **Alert Email Address recipients**, one per line.
+- Optionally, enter a number at **If the phone goes offline then dial out to this number**. It is called and a message says the line has been disconnected.
+- Save.
+
+If the number has its own **Message Playback** recording, that recording is played on the alert call instead of the standard message. See [hold music and feature order](https://www.click2call.com.au/help/hold-music-and-feature-order).
+
+**Good to know:** For an app on a mobile, use [missed call alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) instead, so you hear about calls you did not answer. For Microsoft Teams, set an **Unavailable Forwarding Number** in the Teams line settings: see [setting up Microsoft Teams](https://www.click2call.com.au/help/how-to-set-up-microsoft-teams).
 
 ### If your own phone system (PBX) fails
 
-If you connect your own PBX with a SIP trunk, set call forwarding on the trunk's main number the same way. If the PBX stops answering or goes offline, calls go to the numbers you've chosen. See [Connecting your own PBX with a SIP trunk](https://www.click2call.com.au/help/sip-trunk-pbx-setup).
+If you connect your own PBX with a SIP trunk, set call forwarding on the trunk’s main number the same way. If the PBX stops answering or goes offline, calls go to the numbers you’ve chosen. A registered trunk can also be watched by Line Monitoring, so you get an email when it drops. See [Connecting your own PBX with a SIP trunk](https://www.click2call.com.au/help/sip-trunk-pbx-setup).
 
 ### Voicemail still works
 
-Voicemail runs in the cloud too. If nobody answers, callers can leave a message and you'll get it by email.
+Voicemail runs in the cloud too. If nobody answers, callers can leave a message and you’ll get it by email.
 
-### If calls still aren't coming through
+### If calls still aren’t coming through
 
-With forwarding on, check the portal under Voice → Line Manager: a phone or app that has lost power or internet shows as Offline. Then ring your number from another phone and note what you hear: ringing, an engaged tone, a message or silence.
+In **Voice → Line Manager**, each line has a status dot. Red means the line is offline or not registered. Click the number: the status panel shows the **IP Address** and **Last Registered** time. If Last Registered is recent and the IP address is yours, the phone is connecting. If not, restart your router first, then the phones once the internet is back.
 
-If it still isn't right, email support@click2call.com.au with the number, the time of your test call and what you heard. Setting up forwarding first means your callers still reach you while we look into it.
+Then ring your number from another phone and note what you hear: ringing, an engaged tone, a message or silence. If it still isn’t right, email support@click2call.com.au with the number, the time of your test call and what you heard. Setting up forwarding first means your callers still reach you while we look into it.
 
 ## Parking, Picking Up and Transferring Calls
 
 Source: https://www.click2call.com.au/help/call-parking-pickup-transfers
 
-Click2Call lets your team park a call and pick it up on another phone, answer a colleague's ringing phone, and transfer callers with a few key presses. These features work between phones on the same account and in the same calling group.
+Park a call and pick it up on another phone, answer a colleague's ringing phone, and transfer calls from desk phones, the Basic Edition app or Windows. These features work between phones on the same account and in the same calling group.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Parking a call
 
@@ -4961,6 +4992,29 @@ Most people transfer with their phone's own transfer button. You can also transf
 These keypad transfers work on incoming calls. To allow them on outgoing calls too, go to **Other Settings → Inband Call Transfers**. You can also turn them off there.
 
 To send an unanswered blind transfer back to you, go to **Outgoing Calls → Transfer Options** and tick **Recall enabled for blind transfers**.
+
+### Transferring calls in the Basic Edition (Secure VoIP) app and Windows Micro Edition
+
+The apps can do both kinds of transfer from their own buttons. A blind transfer sends the call straight through. An attended transfer lets you speak to your colleague first, so you can check they’re free before handing over.
+
+#### On iPhone or Android
+
+The Basic Edition mobile app (by Voice Services, also known as Secure VoIP) supports both blind and attended transfers from the in-call screen. During a call, open the in-call options and choose transfer. Then pick the number or the other call you want to hand over to. If you can’t find the option, use the keypad codes in the table above: they work in any app or phone. To set the app up, see [Setting Up the Apps](https://www.click2call.com.au/help/how-to-set-up-softphone).
+
+#### On Windows (Secure VoIP Micro Edition)
+
+**Blind transfer:**
+
+- During the call, click the **Call Transfer** icon.
+- Enter the number and click **OK**.
+
+**Attended transfer:** first make sure **Single Call Mode** is turned off in **Settings**. With it on, the app can only handle one call at a time, so it can’t hold one caller while you ring another.
+
+- Click **Hold** to put the first call on hold.
+- Call your colleague.
+- When you’re ready, click **Transfer → Attended Transfer** and choose the other call.
+
+The [Web Phone](https://www.click2call.com.au/help/web-phone) in your browser also has hold and transfer. Whichever app you use, the `#0` and `##` keypad codes still work during incoming calls, because Click2Call handles them, not the app.
 
 ## Hunt Groups: Ringing Phones One After Another
 
@@ -5090,28 +5144,59 @@ A sensible starting point is to screen only anonymous callers, or overseas and a
 
 Screening asks; blocking refuses. Callers you have blocked, and anonymous callers if you've ticked **Reject all anonymous calls?**, are turned away before screening is reached, because call rejection is the first feature a number runs. If one number keeps calling, block it instead with `*60` followed by the number. See [Stopping ghost and spam calls](https://www.click2call.com.au/help/ghost-and-spam-calls).
 
-## Conference Calls and Dictation
+## Conference Calls: Rooms, Meetings, Conference Numbers and Dictation
 
 Source: https://www.click2call.com.au/help/conference-calls
 
-Any Click2Call number can become a conference bridge. Callers dial the number, enter a PIN if you've set one, and join the call together. We recommend using a spare extension or number for this, because every call to it goes into the conference.
+Click2Call gives you two ways to run a conference call: the conference room in the portal, with scheduled meetings and email invitations, or one of your own numbers turned into a conference bridge. Any number can also become a dictation recorder.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
-### Setting up a conference number
+### Two ways to hold a conference call
+
+- **A conference room** in the portal’s **Conferencing** menu. People join by phone with a PIN or from a browser with a link, and you can schedule meetings that email invitations for you. Best for planned meetings with people outside your business.
+- **A conference number**: one of your own numbers set up as a bridge in Line Manager. Callers just ring it. Best for a standing dial-in line, and it records each conference for you.
+
+### Conference rooms: join by phone or browser
+
+Every account has a conference room in the portal’s **Conferencing** menu. You don’t need a spare number for it. Go to **Conferencing → Rooms**. Your room shows:
+
+- **Moderator PIN** and **Guest PIN**, each with a link you can copy.
+- **Audio Bridge Number** to dial in: +64 9 242 0777. This is a New Zealand number, so from Australia it is an international call.
+- **Conference Access Link** to join from a browser, with no call charges.
+
+The included room is a **Lite Conference**: up to 5 people and no recordings. Click **Upgrade** for a larger room with recordings. Share the Guest PIN or link with your guests and keep the Moderator PIN for yourself. For guests in Australia, the browser link is usually the better choice, because it avoids the international call.
+
+### Schedule a meeting and send invitations
+
+- Go to **Conferencing → Meetings** and click **Schedule a new meeting**.
+- Choose the room, add a description, the date and the start and end time.
+- Choose the **Invitation Link Type**: a direct link (no PIN), or a link that asks for the PIN.
+- Choose **Meeting Access**: guests can join at any time, only between the start and end, or from 5 minutes to 1 hour before.
+- Choose whether to email participants and send a reminder (5 minutes to 1 hour before).
+- Optionally set PINs for this meeting only; otherwise the room PINs are used.
+- Add the email subject, the organiser (who gets moderator access and receives replies), and each participant with Guest or Moderator access. Save.
+
+### Groups for regular meetings
+
+For a meeting that repeats with the same people, such as a weekly team catch-up, go to **Conferencing → Groups** and click **Create a conference group**. Name it, choose its room, and add each participant with their default access level. Then choose the group when you schedule each meeting, instead of adding everyone again.
+
+### Conference numbers: turn a phone number into a conference bridge
+
+Any Click2Call number can become a conference bridge. Callers dial the number, enter a PIN if you’ve set one, and join the call together. Use a spare extension or number for this, because every call to it goes into the conference. Unlike the room’s bridge number, it can be a local Australian number, so callers here pay a normal call rate.
 
 - Go to **Voice → Line Manager** and click the number.
 - From **Incoming Calls**, choose **Conferencing & Dictation**.
 - Under **Select conference type**, choose **Audio conferencing enabled on this line**.
-- Set a **Guest PIN** and a **Supervisor PIN** if you want them.
+- Set a **Guest PIN** and a **Supervisor PIN** if you want them. Without a PIN, anyone who rings the number joins.
 - Choose whether all callers can join, or only the numbers you list (one per line, with area code).
 - Save.
 
-### Recordings
+### Conference number recordings
 
-Conferences are recorded by default and emailed to you as an MP3 when they end. Tick **Disable conference recordings** to stop this.
+Conferences are recorded by default and emailed to you as an MP3 when they end. Tick **Disable conference recordings** to stop this. Let participants know the call is recorded.
 
-### During the conference
+### Keypad controls during the conference
 
 | Press | To |
 | *1 | Mute or unmute yourself |
@@ -5122,19 +5207,51 @@ Conferences are recorded by default and emailed to you as an MP3 when they end. 
 
 ### How many people can join?
 
-Each person uses one of your account's channels, so the limit is your channel count. See [Adding channels](https://www.click2call.com.au/help/how-to-add-channels).
+On a conference number, each person uses one of your account’s channels, so the limit is your channel count. See [Plans, numbers and channels](https://www.click2call.com.au/help/plans-numbers-and-channels). The included Lite Conference room takes up to 5 people.
 
 ### Dictation
 
 Choose **Turn this number into a voice dictation recorder** instead, and callers' messages are recorded for you. You can also dial `*64` from your own phone to record a dictation and get the transcript by email.
 
-## Controlling Outgoing Calls: PIN Codes and Call Assignment
+## Controlling Outgoing Calls: Call Barring, PIN Codes and Call Assignment
 
 Source: https://www.click2call.com.au/help/outgoing-call-pin-and-call-assignment
 
-You can ask for a PIN before certain calls go out, so only approved people can call overseas or mobiles. On a shared phone, call assignment mode asks for the caller's extension, so each call is billed and reported against the right person.
+Three settings on each number control what calls it can make. Call barring blocks whole types of outgoing call, such as overseas or mobiles. A PIN code lets those calls through only for people who know the code. Call assignment on a shared phone asks for the caller's extension, so each call is billed and reported against the right person.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
+
+### Which control to use
+
+All three live on the same **Outgoing Calls** menu for a number in **Voice → Line Manager**. They do different jobs, and you can use them together.
+
+| Setting | What it does |
+| Call Barring | Stops a call type completely. Nobody on that line can make it. |
+| PIN Code | Lets the call through only after the caller enters the PIN. |
+| Call Assignment | On a shared phone, asks who is calling so the call goes out with their caller ID and is billed to them. |
+
+For example, a lobby phone might have every outgoing call barred except local ones. An office phone might need a PIN for overseas calls, so only the manager can make them. A warehouse phone shared by five staff might use call assignment, so the call reports show who called whom.
+
+### Call barring: block outgoing call types
+
+- Go to **Voice → Line Manager** and click the number or extension. From the **Outgoing Calls** menu, choose **Call Barring**.
+- Tick **Enable the call Barring feature for this line**.
+- Tick at least one of the options below. Barring does nothing until one is ticked.
+- Save.
+
+| Option | Blocks |
+| Block Non-Local Calls | Calls outside the local area. Emergency and toll-free calls still work unless blocked below. |
+| Block all Fixed Line Calls | Calls to landlines. |
+| Block all Mobile Calls | Calls to mobiles. |
+| Block all Toll Free Calls | Calls to 1800 and other free-call numbers. |
+| Block all Emergency Calls | Calls to emergency services. Not recommended. |
+| Block all Overseas Calls Except Australia | International calls, apart from Australian numbers. |
+| Block all All Overseas Calls | Every international call. |
+| Block ALL Outgoing Calls | Every outgoing call. Emergency calls still work unless blocked above. |
+
+Barring set on one number applies to that number only. To block call types for a whole group of lines at once, use a line profile instead. Profiles have **Overseas Calls Blocked**, **Block Expensive Calls** and their own **Call Barring** setting, which apply to every line on the profile. A number’s own barring then applies on top of its profile. See [line profiles](https://www.click2call.com.au/help/line-profiles-and-time-zone).
+
+Leave emergency calls open on any phone a person might pick up in a hurry. Blocking them is almost never the right choice for a business.
 
 ### Requiring a PIN for outgoing calls
 
@@ -5153,17 +5270,28 @@ You can require the PIN for:
 - overseas calls except Australia
 - expensive overseas destinations
 
+After dialling one of the chosen call types, the caller is asked for the PIN. Calls that don’t need it go straight out. Choose a PIN that isn’t the extension number, the phone number or an easy run like 1234, and change it when a staff member who knew it leaves.
+
 ### Call assignment on a shared phone
 
-- Open the shared phone's number. For a PBX on a SIP trunk, use the trunk's main number.
+- Open the shared phone’s number. For a PBX on a SIP trunk, use the trunk’s main number.
 - Choose **Outgoing Calls → PIN Code & Call Assignment**.
 - Tick **Call Assignment Mode** and save.
 
-Now, after dialling, the caller is asked for their extension. The call then goes out with that person's caller ID and is billed to them. Their extension must be on the same account and in the same calling group. If their extension has its own PIN, they're asked for it too.
+Now, after dialling, the caller is asked for their extension. The call then goes out with that person’s caller ID and is billed to them. Their extension must be on the same account and in the same calling group. If their extension has its own PIN, they’re asked for it too. See [extension numbers and calling groups](https://www.click2call.com.au/help/extension-numbers-and-groups) for how groups work.
 
 #### One code per person
 
-Tick **Treat the extension as the PIN code during call assignment** to ask for a PIN instead. Create a free extension for each person, and their extension number becomes their personal code.
+Tick **Treat the extension as the PIN code during call assignment** to ask for a PIN instead. Create a free extension for each person, and their extension number becomes their personal code. Use longer extension numbers if you do this, so the codes are harder to guess.
+
+### If something isn’t working
+
+- **Barring is on but calls still go out.** Check that at least one option is ticked under Call Barring, and that you changed the number the phone actually uses.
+- **A call type is blocked that you didn’t block.** Look at the line profile as well as the number. Profile settings such as Overseas Calls Blocked apply even when the number’s own barring is off.
+- **Call assignment rejects an extension.** The extension must be on the same account and in the same calling group as the shared phone.
+- **Calls show the wrong caller ID.** Without call assignment, calls use the number’s own caller ID. See [setting outbound caller ID](https://www.click2call.com.au/help/how-to-set-outbound-caller-id).
+
+**Good to know:** Blocking overseas calls you never make is one of the simplest ways to limit toll fraud. Click2Call also watches high-risk overseas calls for you. See [Toll Fraud Protection](https://www.click2call.com.au/help/toll-fraud-protection) for the other settings worth checking.
 
 ## Calling Through Your Business Number While Away
 
@@ -5284,13 +5412,13 @@ To control who can start a group call, add a whitelist to the number under **Inc
 
 Each member is connected by their own call, so a big group can use several of your account's channels at once. If staff can't make calls during a group call, see [Plans, numbers and channels](https://www.click2call.com.au/help/plans-numbers-and-channels). For a meeting people dial into, use a [conference number](https://www.click2call.com.au/help/conference-calls) instead.
 
-## Hold Music, Caller Tunes and Which Setting Wins
+## Hold Music, Caller Tunes, Message Playback and Which Setting Wins
 
 Source: https://www.click2call.com.au/help/hold-music-and-feature-order
 
-You can replace the ringing callers hear with your own music or message, and upload your own music on hold. This guide also explains why one setting can override another on the same number.
+You can replace the ringing callers hear with your own music or message, upload your own music on hold, and play a short recorded message before a call connects. This guide covers all three, and explains why one setting can override another on the same number.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Caller tunes and hold music
 
@@ -5301,6 +5429,32 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 - Save.
 
 Tick **Disable all caller tunes** to go back to normal ringing, or **Disable all Music on hold** to play simple ringing while callers are on hold. There's no extra charge for either.
+
+A caller tune plays while the call is ringing your phones, so callers hear your music or message instead of a plain ring tone. Music on hold plays when someone puts a caller on hold. Keep both short and simple: a caller may hear the same few seconds many times, and a message that names a sale or a date goes stale quickly.
+
+Call queues have their own **Music on Hold** and **Queue Announcement** uploads on the queue settings page, for callers waiting in a queue. See [Setting Up a Call Queue](https://www.click2call.com.au/help/how-to-set-up-call-queue).
+
+### Message playback: play a message before a call connects
+
+Message Playback plays a short recorded message to every caller before their call goes through, for example “Calls are recorded for training”, a privacy notice, or a notice about holiday hours. It plays before any menu or voicemail, so every caller hears it.
+
+- Go to **Voice → Line Manager** and click the number or extension. From the **Incoming Calls** menu, choose **Message Playback**.
+- Tick **Enable message playback feature on this line**.
+- Choose the **Time Schedule**: at all times, or during or outside one of your schedules (work hours, available hours and so on).
+- Optionally set **Seconds to wait after playing playback message** before the call continues.
+- Save.
+
+To record the message:
+
+- From your desk phone or app, dial `*35` and follow the prompts. Dial `*36` to hear it back.
+- Or click **Click here to upload a WAV or MP3 file** on the same page.
+- Or use the link on that page to record it by calling from another phone.
+
+To write the message and have it read in a natural voice, make the file with [AI Speech](https://www.click2call.com.au/help/how-to-use-ai-speech) and upload it. The **Time Schedule** lets one number do different jobs: a Brisbane clinic could play “We’re closed for the Christmas break until 5 January” only outside work hours, and play nothing during the day. Set the schedules first under [business hours](https://www.click2call.com.au/help/how-to-configure-business-hours).
+
+A recording notice is the most common use. To comply with Australian law, callers must know a call is recorded. Message Playback does that for every caller on the number; the call recording settings have their own announcement option too. See [Call Recording](https://www.click2call.com.au/help/how-to-view-call-recordings). Use one or the other, not both, or callers hear the notice twice.
+
+Keep the message under about 10 seconds. Every caller hears it on every call, including regular customers, and a long message before any ringing makes the line feel slow.
 
 ### Why one setting overrides another
 
@@ -5320,6 +5474,8 @@ Each number runs its features in a fixed order, and the first one that applies h
 | 11 | Hunt group |
 
 Do not disturb can be moved above the auto attendant, queues and conferencing with **Apply DND before all other features**. See [Do not disturb and call screening](https://www.click2call.com.au/help/do-not-disturb-and-call-screening).
+
+Two examples of the order in practice. If a number has an auto attendant and **Forward all calls** both switched on, callers get the menu, because the auto attendant comes first; the forward never happens. If a number has a call queue and a hunt group, the queue handles the call. When a setting seems to be ignored, look higher up the list for a feature that is also on.
 
 ## Stopping Ghost and Spam Calls
 
@@ -5441,6 +5597,7 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 | *88 / *89 | Pick up a call ringing in your group / a specific phone |
 | *64 | Record a dictation — the transcript is emailed to you |
 | *24 | Talk to the Click2Call AI assistant |
+| *74n | Program one-digit speed dial n (2 to 9) from the phone. See speed dials |
 
 ## Ring Your Mobile and Still Get Voicemail
 
@@ -5542,7 +5699,7 @@ If you choose to upload a file, you will be taken to the Media page. Ensure you 
 
 Pro Tip: Use AI Speech to Create Your Greeting
 
-For a professional-sounding message, you can use our built-in **AI Speech** tool (found under the AI menu) to generate a high-quality recording from text. Simply type your message, generate the voice, and download the audio file to upload here.
+For a professional-sounding message, you can use our built-in [AI Speech](https://www.click2call.com.au/help/how-to-use-ai-speech) tool (found under the AI menu) to generate a high-quality recording from text. Simply type your message, generate the voice, and download the audio file to upload here.
 
 7
 
@@ -5566,7 +5723,7 @@ From a phone on the account you can also turn the menu on and off without the po
 
 ### How the Menu Fits With Other Settings
 
-Each number runs its features in a fixed order, and the first one that applies handles the call. The auto attendant sits fifth, after call rejection, remote dial tone, remote call back and conferencing. Call queues, do not disturb, call forwarding, simultaneous ring and hunt groups on the same number come after it, so they don't run while the menu is on. Two settings can jump ahead of it:
+Each number runs its features in a fixed order, and the first one that applies handles the call. The auto attendant sits fifth, after call rejection, [remote dial tone, remote call back](https://www.click2call.com.au/help/remote-call-back-and-dial-tone) and [conferencing](https://www.click2call.com.au/help/conference-calls). Call queues, do not disturb, call forwarding, simultaneous ring and hunt groups on the same number come after it, so they don't run while the menu is on. Two settings can jump ahead of it:
 
 - **Apply DND before all other features** on the Do not Disturb page. With a time schedule or closure dates, callers skip the menu and reach voicemail or your divert number while you are closed. See [closing for holidays](https://www.click2call.com.au/help/how-to-close-for-holidays).
 
@@ -5668,13 +5825,13 @@ Callers beyond the **Maximum Length** are not queued and follow the exit path in
 #### Do queued calls get recorded and transcribed?
 Yes. Once answered, a queued call is recorded, transcribed and summarised like any other. While it is waiting it appears in the [live call dashboard](https://www.click2call.com.au/help/how-to-use-live-call-dashboard), with its wait time.
 
-## Using the Live Call Dashboard
+## Live Call Dashboard and Voice Console
 
 Source: https://www.click2call.com.au/help/how-to-use-live-call-dashboard
 
-The Call Activity Dashboard shows live calls, callers waiting in queues and team availability in one place, updating continuously. It answers the question every manager asks mid-morning: is the phone busy right now, and is anyone waiting? This guide covers opening it, reading each panel, and putting it on a screen the team can see.
+The Call Activity Dashboard shows live calls, callers waiting in queues and team availability in one place, updating continuously. It answers the question every manager asks mid-morning: is the phone busy right now, and is anyone waiting? This guide covers opening it, reading each panel, putting it on a screen the team can see, and the simpler Voice Console view of live calls.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated August 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Using the Live Call Dashboard, Step by Step
 
@@ -5722,6 +5879,24 @@ This panel reads No queues enabled until at least one line has a call queue swit
 Select **Open TV View** for a full-screen version designed for a monitor on the office wall. Live updating continues, so the team can see a queue building without anyone opening the portal.
 This works well on a spare monitor or a smart TV browser. Nothing to install.
 
+### Voice Console: watching live calls
+
+The Voice Console is a second, simpler view of the calls on your account while they are happening. It has no counters, queues or wallboard; it just shows who is on the phone right now.
+
+- Log in to the portal and go to **Voice → Console**.
+- Under **Callback Number**, choose your own number or extension.
+- Live calls appear on the page while they are in progress. When nobody is on a call, the page shows only the Callback Number, so an almost empty page usually just means the phones are quiet.
+
+Neither view keeps calls once they finish. For that, and for longer-term trends, use the pages below.
+
+| View | Where | Best for |
+| Call Activity Dashboard | Account → Dashboard | Live calls, queued callers and team status, plus totals for the period. Use it to manage the day. |
+| Voice Console | Voice → Console | Calls on the account while they are in progress. A quick check of who is on the phone. |
+| Records | Account → Records | Finished calls, with filters, recordings and billing detail. |
+| AI Reports | AI → Reports | Charts of sentiment, call categories and call length from transcripts. |
+
+See [Reports and Records](https://www.click2call.com.au/help/how-to-use-reports-and-records) for finished calls and [AI Call Reports, Alerts and Custom Queries](https://www.click2call.com.au/help/ai-call-reports) for the charts.
+
 ### Frequently Asked Questions
 
 #### Why does the queued calls panel say “No queues enabled”?
@@ -5764,7 +5939,7 @@ First, log in to the portal and navigate to the **Voice** tab. Select the extens
 
 #### Add Numbers and Configure Settings
 
-You can now configure up to 9 numbers to ring at the same time. For each number you want to add, follow these steps:
+Add each number you want to ring at the same time. How many can ring at once depends on the number of [channels on your account](https://www.click2call.com.au/help/plans-numbers-and-channels), because each call being rung uses a channel. For each number you want to add, follow these steps:
 
 - **Enable Number:** Tick this checkbox to activate the slot.
 
@@ -5810,6 +5985,10 @@ Keep every slot's delay shorter than the Call Ringing Time, or that phone won't 
 
 - **Outages:** ring a mobile alongside the desk phones so calls still reach someone if the office loses power or internet.
 
+- **Several branches:** give each branch its own ring group, then let [Geo Routing](https://www.click2call.com.au/help/ai-geo-routing) send callers on your one advertised number to the nearest branch.
+
+- **Everyone on one call:** a ring group connects the first person to answer. To join everyone who answers into one call, or to page phones on speaker, use a [group call](https://www.click2call.com.au/help/group-call-and-paging) instead.
+
 ### If a Phone in the Group Doesn't Ring
 
 - Check the slot's **Enable Number** box is ticked and its schedule covers the time you tested.
@@ -5826,7 +6005,7 @@ Source: https://www.click2call.com.au/help/how-to-configure-business-hours
 
 Business hours rules allow your phone system to behave differently depending on the time of day. During business hours, calls can ring your team; outside hours, they can go to voicemail or an after-hours message.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Configuring Business Hours, Step by Step
 
@@ -5869,7 +6048,7 @@ Public holidays come from the time zone in the line’s **Profile**. With a New 
 - **Include Public Holidays for Work Hours?** Tick this if you work on public holidays and want them counted as normal work days.
 - **Region for Anniversary Day** applies to New Zealand regional holidays only. Leave it as Not Set in Australia.
 
-**Good to know:** A time is entered in 24-hour format with a colon, such as 09:00 and 17:30. Schedules use the time zone in the line’s Profile, so check it is your own state’s zone.
+**Good to know:** A time is entered in 24-hour format with a colon, such as 09:00 and 17:30. Schedules use the time zone in the line’s Profile, so check it is your own state’s zone. See [line profiles and time zone](https://www.click2call.com.au/help/line-profiles-and-time-zone).
 
 ## Setting Up Voicemail
 
@@ -5879,7 +6058,7 @@ Source: https://www.click2call.com.au/help/how-to-set-up-voicemail
 
 Voicemail-to-email sends you an email notification with an audio attachment every time someone leaves a voicemail on your extension. This guide shows you how to set it up.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Setting Up Voicemail-to-Email, Step by Step
 
@@ -5915,7 +6094,7 @@ Scroll down to find the greeting options. You have two main choices:
 
 - **Upload a file:** Click the blue buttons to upload a pre-recorded WAV or MP3 file from your computer. This is ideal for professional studio recordings.
 
-**Pro Tip:** You can use our [AI Speech tool](https://www.click2call.com.au/help/how-to-set-up-ai-receptionist) to generate a high-quality, natural-sounding greeting file to upload here.
+**Pro Tip:** You can use our [AI Speech tool](https://www.click2call.com.au/help/how-to-use-ai-speech) to generate a high-quality, natural-sounding greeting file to upload here.
 
 4
 
@@ -5945,15 +6124,15 @@ Once you are happy with your settings, click the green **Save Settings** button 
 | Automatically remove old voicemail messages | Deletes messages after the number of days you set. |
 | After a voicemail is left, call this phone number | Rings a number and connects it to the mailbox so the message can be heard straight away. |
 
-## Viewing Call Recordings
+## Call Recording: Turning It On, Settings and Finding Recordings
 
 Source: https://www.click2call.com.au/help/how-to-view-call-recordings
 
-If call recording is enabled on your account, all calls are automatically recorded and stored in the portal. This guide shows you how to find and listen to them.
+Call recording is off until you turn it on. This guide covers turning it on for a number or extension, what each recording setting does, the codes for pausing or recording on demand during a call, and how to find, play and download recordings in the portal.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated August 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
-**Important:** Call recording is disabled by default and must be manually enabled for each phone number or extension you wish to record. All parties must be aware that the call is being recorded to comply with Australian law.
+**Important:** Call recording is off by default. Turn it on for each phone number or extension you want recorded, as below, or for every number at once under **AI → Settings** (**Enable account-wide call recording**). All parties must be aware that the call is being recorded to comply with Australian law.
 
 ### Part 1: How to Enable Call Recording
 
@@ -5961,13 +6140,13 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 
 #### Navigate to Call Recording Settings
 
-Log in to the portal, go to the **Voice** tab, and select the line you want to configure. Click the **Other Settings** dropdown and choose **Call Recording**.
+Log in to the portal, go to **Voice → Line Manager**, and click the number or extension you want to configure. Click the **Other Settings** dropdown and choose **Call Recording**.
 
 2
 
 #### Configure and Enable Recording
 
-In the Call Recording panel, untick the 'Disable ALL call recording' box. Choose your recording options, such as recording all calls or playing a message to the other party. You can also enter an email address to have a copy of all recordings sent to you automatically. Click **Save Settings** when done.
+In the Call Recording panel, untick the 'Disable ALL call recording features on this number' box. Choose your recording options, such as recording all calls or playing a message to the other party. You can also enter an email address to have a copy of all recordings sent to you automatically. Click **Save Settings** when done.
 
 ### Part 2: How to View and Download Recordings
 
@@ -5994,6 +6173,46 @@ Here is what each icon does, from left to right:
 - **Download:** Download the call recording as an MP3 audio file.
 
 - **Trash Can:** Permanently delete the recording.
+
+### Call recording settings: what each option does
+
+These are the options in the **Call Recording** panel from step 2 (**Voice → Line Manager**, click the number, **Other Settings → Call Recording**). They apply to that number or extension only.
+
+| Option | What it does |
+| Play a message before the call starts | Tells the other person the call may be monitored or recorded. |
+| Record ALL of my calls / Only record calls for the following numbers | Record everything, or only calls with the numbers you list (one per line, with the area code). |
+| Direction | Record both directions, only outgoing calls, or only incoming calls. |
+| Do NOT allow manual recording options during a call | Turns off the in-call codes below. |
+| Send a copy of all call recordings to my email address | Emails each recording. Add an alternative address, or it goes to the account email. |
+
+For example, a mortgage broker might record every call on the sales number with the announcement on, while the owner’s direct line records nothing. A support desk that only needs to check what was promised to customers could record incoming calls only.
+
+### Pause or record on demand: codes during a call
+
+Unless **Do NOT allow manual recording options during a call** is ticked, you can dial these from the phone or app during or before a call. See [star codes](https://www.click2call.com.au/help/star-codes) for the full list.
+
+| Dial | To |
+| #3 | Pause recording, for example while a card number is read out. |
+| #4 | Resume recording. |
+| *1 | Start or stop a separate recording of part of the call. |
+| *20 + number | Make one outgoing call without recording, when recording is normally on. |
+| *21 + number | Record one outgoing call, when recording is normally off. |
+
+### Recording and the law
+
+To comply with Australian law, the people on a call must know it is being recorded. The simplest way is the **Play a message before the call starts** option above, or a [Message Playback](https://www.click2call.com.au/help/hold-music-and-feature-order) notice that plays before the call connects. Tell staff too, before you switch recording on, and remind them that outgoing calls are recorded as well when the direction includes them.
+
+### Other places recordings appear
+
+- **AI → Recordings** lists recorded calls with play and download buttons, and the transcript and summary once transcription is on. You can search by number or by words said on the call. See [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+- **Email copies** arrive for each call if you ticked **Send a copy of all call recordings to my email address**.
+- **AI tools** such as reports, alerts and custom queries all work from recorded calls. See [AI Call Reports, Alerts and Custom Queries](https://www.click2call.com.au/help/ai-call-reports).
+
+### If a recording is missing
+
+- **The call isn’t recorded at all.** Check the line the call used has recording turned on, and that the direction (incoming, outgoing or both) covers that call.
+- **Only some calls are recorded.** Check whether **Only record calls for the following numbers** is selected, and whether someone dialled `*20` or paused with `#3`.
+- **Staff are deleting recordings.** Edit their login under **Account → Logins** and tick **Prevent recording deletion**. See [portal logins](https://www.click2call.com.au/help/how-to-add-portal-logins).
 
 ## Setting Up Microsoft Teams Calling
 
@@ -6355,7 +6574,7 @@ Dial ***58** from any phone on the account to record an unavailable greeting men
 
 There are two ways to close, and they suit different jobs:
 
-- **Do Not Disturb by date (this guide):** best for a one-off closure, such as the Christmas shutdown or a week away. It overrides everything on the number, and you choose exactly what callers get.
+- **Do Not Disturb by date (this guide):** best for a one-off closure, such as the Christmas shutdown or a week away. It overrides everything on the number, and you choose exactly what callers get. To switch do not disturb on and off day to day from the handset (*78 and *79), see [do not disturb and call screening](https://www.click2call.com.au/help/do-not-disturb-and-call-screening).
 
 - **Custom holiday dates on the Time Schedules page:** best for public holidays. Those days are treated as outside Work Hours, so whatever you already do after hours, such as voicemail or an after-hours divert, happens all day. Australian public holidays are not added automatically, so enter them yourself as DD-MM-YYYY. See [Configuring business hours](https://www.click2call.com.au/help/how-to-configure-business-hours).
 
@@ -6377,64 +6596,13 @@ A business with no on-call cover would leave the forwarding number empty, so cal
 
 ### Before You Lock Up
 
-- **Check your time zone.** Dates and times run on the time zone in the line’s profile under **Voice → Profiles**. New accounts start on Brisbane time, which is only right for Queensland, so change it to your own city if you’re elsewhere.
+- **Check your time zone.** Dates and times run on the time zone in the [line’s profile](https://www.click2call.com.au/help/line-profiles-and-time-zone) under **Voice → Profiles**. New accounts start on Brisbane time, which is only right for Queensland, so change it to your own city if you’re elsewhere.
 
 - **Test it.** Add a short closure for the next few minutes, call your number from your mobile to hear what callers get, then delete the test line.
 
 - **Cover every number customers call.** Closure dates are set per number, so repeat the steps for a second number, such as a 1300 number.
 
 - **When you’re back:** the dates end by themselves, but re-record your normal greeting and untick any “message only” setting.
-
-## Get an Alert When a Phone Goes Offline
-
-Source: https://www.click2call.com.au/help/phone-offline-alerts
-
-Line Monitoring checks every 5 minutes that your desk phone, adaptor or PBX is still connected. If it goes offline, you get an email, and it can also ring a number of your choice to tell you.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### What it can watch
-
-Desk phones, adaptors and PBXs that log in (register) with the number’s SIP details, and registered SIP trunks.
-
-It does not work for the Click2Call smartphone apps, SIP peering (direct IP) trunks, IAX2 connections or Microsoft Teams.
-
-### Turn it on
-
-- Go to **Voice → Line Manager** and click the number.
-- Open the **Other Settings** menu and choose **Line Monitoring**.
-- Tick **Enable Monitoring for the Line**.
-- Alerts go to the account holder’s email. To send them elsewhere, list the addresses in **Alert Email Address recipients**, one per line.
-- Optionally, enter a number at **If the phone goes offline then dial out to this number**. It is called and a message says the line has been disconnected.
-- Save.
-
-If the number has its own **Message Playback** recording, that recording is played on the call instead of the standard message.
-
-**Good to know:** For an app on a mobile, use [missed call alerts](https://www.click2call.com.au/help/how-to-set-up-missed-call-alerts) instead, so you hear about calls you did not answer.
-
-## Play a Message Before a Call Connects (Message Playback)
-
-Source: https://www.click2call.com.au/help/message-playback
-
-Message Playback plays a short recorded message to callers before their call goes through, for example “Calls are recorded for training” or a notice about holiday hours.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Set it up
-
-- Go to **Voice → Line Manager** and click the number or extension. From the **Incoming Calls** menu, choose **Message Playback**.
-- Tick **Enable message playback feature on this line**.
-- Choose the **Time Schedule**: at all times, or during or outside one of your schedules (work hours, available hours and so on).
-- Optionally set **Seconds to wait after playing playback message** before the call continues.
-- Save.
-
-### Record the message
-
-- From your desk phone or app, dial `*35` and follow the prompts. Dial `*36` to hear it back.
-- Or click **Click here to upload a WAV or MP3 file** on the same page.
-- Or use the link on that page to record it by calling from another phone.
-
-**Good to know:** To write the message and have it read in a natural voice, make the file with [AI Speech](https://www.click2call.com.au/help/how-to-use-ai-speech) and upload it. Message Playback plays before everything else in the call flow, so callers hear it before any menu or voicemail.
 
 ## Call Waiting, Intercom and Incoming Caller ID Options
 
@@ -6480,142 +6648,6 @@ For example, a business with a 1300 number on its website and a local 07 number 
 Leave **Enforce Caller ID Privacy** off unless you have a clear reason. With it on, your phones don't show who is calling, so staff can't call a missed caller back from the phone's call list.
 
 **Good to know:** For a different ringtone on internal calls, see [Distinctive Ring for Internal Calls](https://www.click2call.com.au/help/distinctive-ring-internal-calls).
-
-## Block Outgoing Call Types (Call Barring)
-
-Source: https://www.click2call.com.au/help/call-barring
-
-Call Barring stops a number or extension making some kinds of outgoing call: overseas, mobiles, or everything. It is useful for a lobby phone, a shared phone, or as protection against fraud.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Set it up
-
-- Go to **Voice → Line Manager** and click the number or extension. From the **Outgoing Calls** menu, choose **Call Barring**.
-- Tick **Enable the call Barring feature for this line**.
-- Tick at least one of the options below. Barring does nothing until one is ticked.
-- Save.
-
-| Option | Blocks |
-| Block Non-Local Calls | Calls outside the local area. Emergency and toll-free calls still work unless blocked below. |
-| Block all Fixed Line Calls | Calls to landlines. |
-| Block all Mobile Calls | Calls to mobiles. |
-| Block all Toll Free Calls | Calls to 1800 and other free-call numbers. |
-| Block all Emergency Calls | Calls to emergency services. Not recommended. |
-| Block all Overseas Calls Except Australia | International calls, apart from Australian numbers. |
-| Block all All Overseas Calls | Every international call. |
-| Block ALL Outgoing Calls | Every outgoing call. Emergency calls still work unless blocked above. |
-
-**Good to know:** For wider protection, see [Toll Fraud Protection](https://www.click2call.com.au/help/toll-fraud-protection). To ask for a PIN before certain calls instead of blocking them, use **PIN Code & Call Assignment** on the same Outgoing Calls menu.
-
-## Call Recording Settings on a Number
-
-Source: https://www.click2call.com.au/help/call-recording-settings
-
-Each number or extension has its own call recording settings. You can record every call or only calls with certain numbers, play an announcement, email each recording, and pause or start recording during a call.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
-
-### Open the settings
-
-Go to **Voice → Line Manager** and click the number or extension. From the **Other Settings** menu, choose **Call Recording**. Untick **Disable ALL call recording features on this number** to turn recording on, choose your options, then save.
-
-| Option | What it does |
-| Play a message before the call starts | Tells the other person the call may be monitored or recorded. |
-| Record ALL of my calls / Only record calls for the following numbers | Record everything, or only calls with the numbers you list (one per line, with the area code). |
-| Direction | Record both directions, only outgoing calls, or only incoming calls. |
-| Do NOT allow manual recording options during a call | Turns off the in-call codes below. |
-| Send a copy of all call recordings to my email address | Emails each recording. Add an alternative address, or it goes to the account email. |
-
-### Codes during a call
-
-| Dial | To |
-| #3 | Pause recording, for example while a card number is read out. |
-| #4 | Resume recording. |
-| *1 | Start or stop a separate recording of part of the call. |
-| *20 + number | Make one outgoing call without recording, when recording is normally on. |
-| *21 + number | Record one outgoing call, when recording is normally off. |
-
-### Recording and the law
-
-To comply with Australian law, the people on a call must know it is being recorded. The simplest way is the announcement option above, or a [Message Playback](https://www.click2call.com.au/help/message-playback) notice.
-
-**Good to know:** Recordings are in the portal under **AI → Recordings** and **Account → Records**. To have them transcribed and summarised, see [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
-
-## Change Another Extension’s Settings or Call as It (*44)
-
-Source: https://www.click2call.com.au/help/remote-extension-options
-
-Remote Extension Options let someone on one extension change another number’s settings with star codes, or make a call that shows the other number. A common use is switching the main office number to after-hours from any desk.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Allow it on the number
-
-- Go to **Voice → Line Manager** and click the number or extension. From the **Other Settings** menu, choose **Remote Extension Options**.
-- Tick **Allow other extensions within the account and group to program settings against this line** to let them change its settings.
-- Tick **Allow other extensions within the account and group to make outgoing calls from this number** to let them call as it.
-- Tick **Global extension** if extensions in other groups of the account should reach it too.
-- Save.
-
-### Use it
-
-| Dial | Does |
-| *44*XX*YY | Runs star code YY on number or extension XX. For example *44*23*78 turns on Do Not Disturb on extension 23. |
-| *44*XX | Makes a call from XX: you are asked for the number to dial, and the call shows XX’s caller ID. |
-| *44*XX*YY#… | Up to 5 star codes in one go, separated by #. Handy on a phone key. |
-
-**Good to know:** The full list of star codes is on [Star Codes](https://www.click2call.com.au/help/star-codes). To put one on a button, see [Programming Phone Keys](https://www.click2call.com.au/help/programming-phone-keys).
-
-## Conference Rooms, Scheduled Meetings and Groups
-
-Source: https://www.click2call.com.au/help/conference-rooms-and-meetings
-
-Every account has a conference room in the portal’s **Conferencing** menu. People join by phone with a PIN or from a browser with a link, and you can schedule meetings that send invitations for you.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
-
-### Your conference room
-
-Go to **Conferencing → Rooms**. Your room shows:
-
-- **Moderator PIN** and **Guest PIN**, each with a link you can copy.
-- **Audio Bridge Number** to dial in: +64 9 242 0777. This is a New Zealand number, so from Australia it is an international call.
-- **Conference Access Link** to join from a browser, with no call charges.
-
-The included room is a **Lite Conference**: up to 5 people and no recordings. Click **Upgrade** for a larger room with recordings.
-
-### Schedule a meeting
-
-- Go to **Conferencing → Meetings** and click **Schedule a new meeting**.
-- Choose the room, add a description, the date and the start and end time.
-- Choose the **Invitation Link Type**: a direct link (no PIN), or a link that asks for the PIN.
-- Choose **Meeting Access**: guests can join at any time, only between the start and end, or from 5 minutes to 1 hour before.
-- Choose whether to email participants and send a reminder (5 minutes to 1 hour before).
-- Optionally set PINs for this meeting only; otherwise the room PINs are used.
-- Add the email subject, the organiser (who gets moderator access and receives replies), and each participant with Guest or Moderator access. Save.
-
-### Groups for regular meetings
-
-For a meeting that repeats with the same people, go to **Conferencing → Groups** and click **Create a conference group**. Name it, choose its room, and add each participant with their default access level.
-
-**Good to know:** To turn one of your phone numbers into a conference line instead, see [Conference Calls](https://www.click2call.com.au/help/conference-calls).
-
-## Watching Live Calls (Voice Console)
-
-Source: https://www.click2call.com.au/help/voice-console-live-calls
-
-The Console in the portal shows the calls on your account while they are happening, like a dashboard. Use it to see who is on the phone right now.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Open the Console
-
-- Log in to the portal and go to **Voice → Console**.
-- Under **Callback Number**, choose your own number or extension.
-- Live calls appear on the page while they are in progress. When nobody is on a call, the page shows only the Callback Number.
-
-**Good to know:** For calls that have finished, use **Account → Records**, or see [Reports and Records](https://www.click2call.com.au/help/how-to-use-reports-and-records). For charts of call volume and length, see [AI Call Reports](https://www.click2call.com.au/help/ai-call-reports).
 
 # Billing & Account
 
@@ -6674,54 +6706,6 @@ Keep in mind that a forward always costs something. The call leaves our platform
 If the calls are coming from the right line and your allowance still is not being used, send us the account number and one or two example calls with their date and time. We can look at how each call was rated and tell you exactly what happened.
 
 If you have several lines and want the allowance to cover all of them, that is a different product to a per-number allowance. Email support@click2call.com.au and we will go through the options with you.
-
-## Adding Concurrent Call Channels
-
-Source: https://www.click2call.com.au/help/how-to-add-channels
-
-## How to Add More Phone Lines (Channels)
-
-Increase your call capacity by adding more channels to your account, allowing more staff to be on the phone at the same time.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated August 2026
-
-### What are Channels?
-
-Think of a channel as a single phone line. If you have **two channels**, your business can make or receive a maximum of **two calls at the same time**. If a third call comes in while both channels are busy, that caller will go to voicemail or hear a busy signal.
-
-Every Click2Call account comes with **2 free channels** by default. You also receive one extra free channel for every purchased phone number on your account (excluding Business Numbers).
-
-#### How Many Channels Do I Need?
-
-The number of channels you need depends on how many people will be on the phone simultaneously. A good rule of thumb for a typical office is to have **1 channel for every 3 to 4 users**. For example, a business with 10 staff members would likely need around 3 or 4 channels to avoid congestion.
-
-#### How Much Do They Cost?
-
-If you need more channels than are included with your plan, you can add them at any time. Channels are included with your Business Line. The cost is pro-rated for the first month.
-
-1
-
-#### Navigate to the Plan Page
-
-Log in to the portal, click the **Account** tab, and then select **Plan** from the left-hand navigation menu.
-
-2
-
-#### Select the Channels Tab
-
-On the Plan page, click the **Channels** tab to view your current channel count and make changes.
-
-3
-
-#### Choose the Total Number of Channels
-
-From the dropdown menu, select the **total number of channels** you require for your account. The system will automatically calculate how many new channels are being added and the associated cost.
-
-4
-
-#### Update and Confirm
-
-Review the ongoing and pro-rata costs for the new channels, then click the **Update Channels** button to confirm. The new channels will be active immediately.
 
 ## Viewing Account History & Downloading Invoices
 
@@ -6843,7 +6827,7 @@ If you believe a transaction is missing, first try refreshing the page and scrol
 [How to Manage Your Subscription
 Top up your pre-pay balance](https://www.click2call.com.au/help/how-to-add-account-credit)
 [Adding Additional Channels
-Increase simultaneous call capacity](https://www.click2call.com.au/help/how-to-add-channels)
+Increase simultaneous call capacity](https://www.click2call.com.au/help/plans-numbers-and-channels)
 [Activating Your Account
 First steps after signing up](https://www.click2call.com.au/help/how-to-activate-account)
 [Back to Help Centre
@@ -6858,9 +6842,9 @@ Billing & Account
 
 ## How to Use Reports & Records
 
-The Click2Call portal provides two separate tools for reviewing your call activity: **Reports** and **Records**. Reports give you a summarised view of call activity grouped by line, making them useful for reviewing usage across your team. Records give you a detailed, line-by-line view of every individual call, which is useful for investigating specific calls, verifying charges, or exporting raw data for analysis.
+The Click2Call portal provides two separate tools for reviewing your call activity: **Reports** and **Records**. Reports give you a summarised view of call activity grouped by line, making them useful for reviewing usage across your team. Records give you a detailed, line-by-line view of every individual call, which is useful for investigating specific calls, verifying charges, or exporting raw data for analysis. For charts of how calls felt and what they were about, built from call transcripts, see [AI call reports](https://www.click2call.com.au/help/ai-call-reports).
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated August 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 Reports vs Records — which one do you need?
 
@@ -7023,15 +7007,13 @@ Route inbound calls to the right destination](https://www.click2call.com.au/help
 [Back to Help Centre
 Browse all guides](https://www.click2call.com.au/help/)
 
-## Plans, Numbers and Channels
+## Plans, Numbers and Channels: What You Pay For
 
 Source: https://www.click2call.com.au/help/plans-numbers-and-channels
 
-: What You Pay For
-
 You pay for [each phone number](https://www.click2call.com.au/business-phone-numbers/) on its own plan, and extensions are free. Your account also has a number of channels: how many calls can be in progress at once. This guide explains each charge and how to change a number’s plan.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### What each number costs
 
@@ -7066,11 +7048,26 @@ The 300 minutes on a Business Line are used only by calls made from that number.
 
 **Account → Plan → Account Plan** shows the base plan for the whole account: its monthly charge and what it includes, such as channels. Account bundles are minute bundles that any number on the account can use. If bundles are available on your account, you will find them under **Account → Plan → Account Bundles**.
 
-### Channels
+### Channels: how many calls at once, and adding more
 
-A channel is one call in progress. Your account includes 2 channels, and some numbers you add bring an extra one. If every channel is busy, the next caller goes to voicemail or hears a busy tone.
+A channel is one call in progress, in or out. Think of it as a single phone line. With 2 channels, your business can have at most 2 calls going at the same time. If a third call comes in while both are busy, that caller goes to voicemail or hears a busy tone.
 
-Extra channels are $3 + GST each. To add them, go to **Account → Plan → Channels**, choose the total you need, and review the price before you confirm.
+Your account includes 2 channels. Each Business Line you add brings one more, so an account with three Business Lines can have 5 calls at once. Business Numbers and free extensions don’t add channels.
+
+#### How many channels you need
+
+Count how many people are likely to be on the phone at the same moment, not how many staff you have. A good rule of thumb for a typical office is 1 channel for every 3 to 4 people who share the phones. For example, 10 staff answering one Business Number from free extensions would usually need 3 or 4 channels. A busy reception desk, a sales team making calls, or a call queue that holds callers needs more. If callers often get a busy tone or go to voicemail when someone is free, you are probably short of channels.
+
+#### Add channels in the portal
+
+Extra channels are $3 + GST a month each. You can add them at any time.
+
+- Log in to the portal and go to **Account → Plan**.
+- Click the **Channels** tab to see how many channels you have now.
+- From the dropdown, choose the **total number of channels** you need, not the number to add. The portal works out how many are new and what they cost.
+- Review the monthly cost and the part-month (pro-rata) cost for the rest of this month, then click **Update Channels**. The new channels work straight away.
+
+If you connect your own phone system by SIP trunk, see [connecting a PBX by SIP trunk](https://www.click2call.com.au/help/sip-trunk-pbx-setup). To compare costs for your whole set-up, use the calculator on the [pricing page](https://www.click2call.com.au/pricing/).
 
 **Good to know:** Prices are in Australian dollars. Your call charges and monthly fees come out of your account credit, so keep enough credit on the account or turn on automatic top-ups.
 
@@ -8944,19 +8941,45 @@ Callers then hear a short recording notice before they are connected. Staff shou
 
 **Good to know:** To stop a staff login deleting recordings, edit the login under **Account → Logins** and tick **Prevent recording deletion**.
 
-## Email Alerts from Your Calls (AI Alerts)
+## AI Call Reports, Alerts and Custom Queries
 
-Source: https://www.click2call.com.au/help/ai-alerts
+Source: https://www.click2call.com.au/help/ai-call-reports
 
-AI Alerts reads your call transcripts and emails you when something needs attention: words you choose, a promised call back, swearing, or a caller who sounds unhappy.
+Three AI tools in the portal read your call transcripts. **Reports** turn them into charts: how calls felt, what they were about, how long each person spends on the phone, and who was named. **Alerts** email you when something needs attention. **Custom Queries** answer your own question about every call. This guide covers all three.
 
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
 ### Before you start
 
-Alerts work from transcripts, so call recording and transcription must be on. See [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+All three tools work from call transcripts, so call recording and transcription must be on. Turn them on under **AI → Settings**, or turn recording on for single lines only. See [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium) and [Call Recording](https://www.click2call.com.au/help/how-to-view-call-recordings).
 
-### Set it up
+- **Reports** also need **Analyse sentiment** and **Generate call summaries** ticked.
+- **Alerts** and **Custom Queries** can only run once a call’s transcript is done. On the free tier that takes several hours. AI Premium ($10 + GST per billing cycle) processes calls within minutes.
+- A call made while recording was off has nothing to analyse, so it won’t appear in reports, alerts or query answers.
+
+### AI call reports: charts of sentiment, categories and call length
+
+- Go to **AI → Reports**.
+- Choose the **Range**: the past month, the past week, a specific month, or a custom date range.
+- Choose the **Calls**: all, inbound, outbound or queue calls.
+- Click **Run report**, then pick a report, or **All reports**.
+
+| Report | Shows |
+| Sentiment by user | Each person’s average sentiment score, above or below the average for the calls you chose. |
+| Category volume | How many calls fell into each category the AI found. |
+| Call length by user | Each person’s average call length. |
+| Speaking names | The names of people who spoke on calls. |
+| Mentioned names | Names mentioned during calls. |
+
+Previous months include the whole month; the current month runs to today.
+
+A few ways an Australian business might use them. A trades office runs **Category volume** on last month’s inbound calls to see how much of the phone time goes on quotes versus existing jobs. A practice manager compares **Call length by user** on queue calls to spot who is carrying the load. A score below average in **Sentiment by user** isn’t proof of a problem on its own: play a few of that person’s calls in **AI → Recordings** before drawing conclusions.
+
+For call counts, missed calls and billing detail rather than AI analysis, use [Reports and Records](https://www.click2call.com.au/help/how-to-use-reports-and-records). For what is happening right now, use the [live call dashboard](https://www.click2call.com.au/help/how-to-use-live-call-dashboard).
+
+### AI alerts: email alerts from your calls
+
+AI Alerts reads each transcript and emails you when something needs attention: words you choose, a promised call back, swearing, or a caller who sounds unhappy.
 
 - Go to **AI → Alerts** and tick **Enable email alerts**.
 - Choose the recipients: **Use account email addresses** (this follows any later change to them), or **Use custom recipients** and add each address.
@@ -8969,21 +8992,13 @@ Alerts work from transcripts, so call recording and transcription must be on. Se
 | Profanity detected | Swearing is detected. |
 | Negative sentiment | Dissatisfaction or frustration is above the threshold you set, for example 30%. |
 
-**Good to know:** Turning alerts off keeps your recipients and triggers, so you can turn them back on later.
+For example, a keyword list of `cancel, refund, complaint` sends the office manager an email whenever a customer raises one of those words, so someone can ring back the same day. **Follow-up actions** catches the “I’ll call you back this afternoon” promises that are easy to forget. Start with a negative sentiment threshold around 30% and raise it if you get too many emails.
 
-## Custom Queries: Ask the AI About Every Call
+Turning alerts off keeps your recipients and triggers, so you can turn them back on later.
 
-Source: https://www.click2call.com.au/help/ai-custom-queries
+### Custom queries: ask the AI the same question about every call
 
-A custom query is a question the AI answers about every call from its transcript, such as “Did the caller book a job?” or “What product did they ask about?”. The answers are saved with each call.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Before you start
-
-Queries read transcripts, so call recording and transcription must be on. The free plan has 1 query; AI Premium has up to 5. See [Free vs Premium](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
-
-### Create a query
+A custom query is a question the AI answers about every call from its transcript, such as “Did the caller book a job?” or “What product did they ask about?”. The answers are saved with each call. The free tier has 1 query; AI Premium has up to 5.
 
 - Go to **AI → Custom Queries** and click **Create query**.
 - Give it a **Name** and, if you like, a **Description**.
@@ -9000,39 +9015,17 @@ Queries read transcripts, so call recording and transcription must be on. The fr
 | Number | A number. |
 | Support ticket | A support-ticket style summary of the call. |
 
-### Where the answers go
+Pick the narrowest response type that fits. “Did the caller book a job?” works best as **Yes / No**. “Which service did they ask about?” works best as **Single choice** with your list of services, so the answers can be counted. Use **Additional instructions** to settle edge cases, for example “Count a booking only if a date was agreed.”
 
-Each call’s answers are saved with its AI analysis. If you use webhooks, they are sent as `custom_responses` in the call summary.
+Each call’s answers are saved with its AI analysis. If you use webhooks, they are sent as `custom_responses` in the call summary. See [Using the API and Webhooks](https://www.click2call.com.au/help/webhooks-and-api-during-your-trial).
 
-### Free up a slot
+To free up a slot, archive a query instead of deleting it. A query that already has results can be archived: click **Archive query**, it stops running, its past answers stay, and the slot is free for a new query.
 
-A query that already has results can be archived instead of deleted. Click **Archive query**: it stops running, its past answers stay, and the slot is free for a new query.
+### If something is missing
 
-## AI Call Reports
-
-Source: https://www.click2call.com.au/help/ai-call-reports
-
-AI Call Reports turn your call transcripts into charts: how calls felt, what they were about, how long each person spends on the phone, and who was named.
-
-Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated October 2026
-
-### Run a report
-
-- Go to **AI → Reports**.
-- Choose the **Range**: the past month, the past week, a specific month, or a custom date range.
-- Choose the **Calls**: all, inbound, outbound or queue calls.
-- Click **Run report**, then pick a report, or **All reports**.
-
-| Report | Shows |
-| Sentiment by user | Each person’s average sentiment score, above or below the average for the calls you chose. |
-| Category volume | How many calls fell into each category the AI found. |
-| Call length by user | Each person’s average call length. |
-| Speaking names | The names of people who spoke on calls. |
-| Mentioned names | Names mentioned during calls. |
-
-Previous months include the whole month; the current month runs to today.
-
-**Good to know:** Reports need transcripts with sentiment and summaries turned on. See [Recording, Transcription and AI Analysis](https://www.click2call.com.au/help/ai-settings-free-vs-premium).
+- **Reports are empty.** Turn on **Analyse sentiment** and **Generate call summaries** under **AI → Settings**. Only calls after that point are analysed.
+- **No alert arrived.** Check that the line the call used is recorded, that transcription is on, and that the alert recipients are right. On the free tier, allow several hours.
+- **You can’t create another query.** All your slots are in use. Archive one, or upgrade to AI Premium for up to 5.
 
 ## Geo Routing: Send Callers to Their Nearest Location
 

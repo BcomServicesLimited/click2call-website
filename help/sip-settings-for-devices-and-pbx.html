@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx" />
   <meta name="description" content="Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don&#x27;t have a step-by-step guide.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
-<link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
+<link rel="stylesheet" href="/assets/css/tailwind.css?v=428c6070be">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-26",
+  "dateModified": "2026-11-25",
   "headline": "SIP Settings for Desk Phones, Adapters and PBX Systems",
   "description": "Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide.",
   "url": "https://www.click2call.com.au/help/sip-settings-for-devices-and-pbx",
@@ -297,8 +297,8 @@
         <span class="text-xs text-gray-400">3 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">SIP Settings for Desk Phones, Adapters and PBX Systems</h1>
-      <p class="text-gray-600 leading-relaxed">Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide for. The device must support SIP version 2.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+      <p class="text-gray-600 leading-relaxed">Any SIP-compatible desk phone, analogue adapter or PBX can connect to Click2Call. Use the settings below for any device we don't have a step-by-step guide for. Devices set up by hand that do have one include the <a href="/help/fritzbox-phone-port" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">FRITZ!Box phone port</a> and <a href="/help/gigaset-ip-phones" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Gigaset cordless IP phones</a>. The device must support SIP version 2.</p>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
@@ -310,7 +310,7 @@
     <h3 class="font-bold text-gray-900 mt-6 mb-2">Why TLS is recommended</h3>
     <p class="text-gray-600 leading-relaxed mb-4">TLS encrypts the call setup between your device and Click2Call. Routers can't read or rewrite encrypted traffic, so TLS avoids the most common cause of one-way audio and failed registrations (a router feature called SIP ALG — see <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing One-Way Audio and Dropped Registrations</a>). If your device can't use TLS, try port 50600 instead of 5060: routers don't recognise it as a SIP port, which has a similar effect.</p>
     <h3 class="font-bold text-gray-900 mt-6 mb-2">Where the port goes</h3>
-    <p class="text-gray-600 leading-relaxed mb-4">Most devices take the port on the end of the server address, e.g. <span class="font-mono">sip.click2call.com.au:50600</span>. Some have a separate Port field. Enter Click2Call's port there, not your device's own local SIP port.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Most devices take the port on the end of the server address, e.g. <span class="font-mono">sip.click2call.com.au:50600</span>. Some have a separate Port field. Enter Click2Call's port there, not your device's own local SIP port. A browser app connects differently, over a secure WebSocket: see <a href="/help/webrtc-sip-over-websocket" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">browser calling with WebRTC</a>.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Do I need firewall rules?</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Usually not. Click2Call handles devices behind NAT and most firewalls, and you should never need to forward ports 5060 or 5061 to your phone or PBX. If your firewall blocks outbound traffic by default, allow your devices to reach <span class="font-mono">sip.click2call.com.au</span> (52.63.154.234) on the ports above. Call audio uses UDP to the same address.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Can I encrypt the audio too? (Secure RTP)</h2>
@@ -377,6 +377,8 @@
 <ul class="space-y-2.5 text-sm">
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/about/">About</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/blog/">Blog</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/research/">Research</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/press/">Press</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/case-studies/">Example Setups</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/compare/#compare-providers">Compare Providers</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/number-porting/">Number Porting</a></li>

@@ -105,3 +105,19 @@
 /blog/ai-in-business-phones.html  /ai-receptionist/  301
 /blog/how-to-secure-business-communications       /help/toll-fraud-protection  301
 /blog/how-to-secure-business-communications.html  /help/toll-fraud-protection  301
+
+# Thin help guides merged 25 Nov 2026 (approved by Royce)
+/help/ai-alerts  /help/ai-call-reports  301
+/help/ai-custom-queries  /help/ai-call-reports  301
+/help/call-recording-settings  /help/how-to-view-call-recordings  301
+/help/message-playback  /help/hold-music-and-feature-order  301
+/help/conference-rooms-and-meetings  /help/conference-calls  301
+/help/voice-console-live-calls  /help/how-to-use-live-call-dashboard  301
+/help/network-status  /help/calls-during-power-or-internet-outage  301
+/help/phone-offline-alerts  /help/calls-during-power-or-internet-outage  301
+/help/secure-voip-android-background-mode  /help/softphone-setup-and-troubleshooting  301
+/help/secure-voip-app-transfers  /help/call-parking-pickup-transfers  301
+/help/call-barring  /help/outgoing-call-pin-and-call-assignment  301
+/help/remote-extension-options  /help/extension-numbers-and-groups  301
+/help/two-factor-login  /help/how-to-add-portal-logins  301
+/help/how-to-add-channels  /help/plans-numbers-and-channels  301

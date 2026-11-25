@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://www.click2call.com.au/help/webhooks-and-api-during-your-trial" />
   <meta name="description" content="The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn&#x27;t arrive.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
-<link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
+<link rel="stylesheet" href="/assets/css/tailwind.css?v=428c6070be">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "dateModified": "2026-10-22",
+  "dateModified": "2026-11-25",
   "name": "Using the API and Webhooks on a Trial Account",
   "description": "The Click2Call 7-day trial includes the full API and webhooks. How to set up a webhook, the call states and fields it sends, how to check it fired, and why one doesn't arrive.",
   "url": "https://www.click2call.com.au/help/webhooks-and-api-during-your-trial",
@@ -325,7 +325,7 @@
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Using the API and Webhooks on a Trial Account</h1>
       <p class="text-gray-600 leading-relaxed">Your Click2Call trial includes the full API and webhooks, with no trial limits, from the day you sign up. This guide covers setting up a webhook, the events and fields it sends, how to check one fired, the usual reasons one does not arrive, and what to send support if you are still stuck.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
@@ -351,7 +351,7 @@
     <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200">
       <table class="w-full text-sm min-w-[32rem]">
         <thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Field</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What it is</th></tr></thead>
-        <tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>id</code></td><td class="px-4 py-2.5 text-gray-600">Unique identifier for this call. Use it to match a webhook to a call and to ignore duplicates.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>originid</code></td><td class="px-4 py-2.5 text-gray-600">The call this one came from. Same as <code>id</code> for the first call in a sequence; different for a transferred or forwarded leg.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>type</code></td><td class="px-4 py-2.5 text-gray-600"><code>received</code> (incoming) or <code>dialed</code> (outgoing).</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>from</code>, <code>to</code></td><td class="px-4 py-2.5 text-gray-600">Calling and called numbers.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>start_time</code></td><td class="px-4 py-2.5 text-gray-600">UTC, <code>YYYY-MM-DD HH:MM:SS</code>. Sent only on ended or missed/failed events.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>duration</code></td><td class="px-4 py-2.5 text-gray-600">Call length in seconds. Sent only on a successful <code>ended</code> event.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>voiceuri</code></td><td class="px-4 py-2.5 text-gray-600">Link to the recording. Sent only on a successful <code>ended</code> event, and only when call recording is enabled.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>aiuri</code>, <code>transcript</code>, <code>callsummary</code></td><td class="px-4 py-2.5 text-gray-600">Sent only on the <code>aianalysis</code> event, and only when AI transcription is enabled. <code>callsummary</code> includes a short and full summary, categories, names mentioned and scores such as sentiment.</td></tr></tbody>
+        <tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>id</code></td><td class="px-4 py-2.5 text-gray-600">Unique identifier for this call. Use it to match a webhook to a call and to ignore duplicates.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>originid</code></td><td class="px-4 py-2.5 text-gray-600">The call this one came from. Same as <code>id</code> for the first call in a sequence; different for a transferred or forwarded leg.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>type</code></td><td class="px-4 py-2.5 text-gray-600"><code>received</code> (incoming) or <code>dialed</code> (outgoing).</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>from</code>, <code>to</code></td><td class="px-4 py-2.5 text-gray-600">Calling and called numbers.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>start_time</code></td><td class="px-4 py-2.5 text-gray-600">UTC, <code>YYYY-MM-DD HH:MM:SS</code>. Sent only on ended or missed/failed events.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>duration</code></td><td class="px-4 py-2.5 text-gray-600">Call length in seconds. Sent only on a successful <code>ended</code> event.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>voiceuri</code></td><td class="px-4 py-2.5 text-gray-600">Link to the recording. Sent only on a successful <code>ended</code> event, and only when call recording is enabled.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800"><code>aiuri</code>, <code>transcript</code>, <code>callsummary</code></td><td class="px-4 py-2.5 text-gray-600">Sent only on the <code>aianalysis</code> event, and only when <a href="/help/ai-settings-free-vs-premium" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">AI transcription</a> is enabled. <code>callsummary</code> includes a short and full summary, categories, names mentioned and scores such as sentiment, the same analysis charted in <a href="/help/ai-call-reports" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">AI call reports</a>.</td></tr></tbody>
       </table>
     </div>
     <h2 id="check-a-webhook" class="text-2xl font-bold text-gray-900 mt-12 mb-4">How do I check whether a webhook fired?</h2>
@@ -426,7 +426,7 @@
 
 <div id="kb-crm">
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Connecting a CRM such as HighLevel</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">There is no ready-made integration for HighLevel (GoHighLevel, including white-label versions such as TekMatix), HubSpot, Salesforce or Pipedrive. Your CRM consultant or developer connects it with our webhooks: they fire when a call rings, is answered, ends or is missed, and again with the AI summary and transcript once processing finishes. HighLevel workflows can receive webhooks, so summaries and transcripts can be saved against the right contact. Looking up contacts or booking into a CRM calendar during a call is custom work on the CRM side.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Zoho CRM is the exception: it has a free ready-made integration. See <a href="/help/zoho-crm-integration" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Connecting Zoho CRM</a>. There is no ready-made integration for HighLevel (GoHighLevel, including white-label versions such as TekMatix), HubSpot, Salesforce or Pipedrive. Your CRM consultant or developer connects it with our webhooks: they fire when a call rings, is answered, ends or is missed, and again with the AI summary and transcript once processing finishes. HighLevel workflows can receive webhooks, so summaries and transcripts can be saved against the right contact. Looking up contacts or booking into a CRM calendar during a call is custom work on the CRM side.</p>
     <p class="text-gray-600 leading-relaxed mb-4">There is no direct Google Drive or Google Workspace connection. Recordings, transcripts and summaries can be emailed after each call, or sent on through the same webhooks with a tool such as Zapier or Make.</p>
 </div><!-- /kb-crm -->
 
@@ -495,6 +495,8 @@
 <ul class="space-y-2.5 text-sm">
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/about/">About</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/blog/">Blog</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/research/">Research</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/press/">Press</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/case-studies/">Example Setups</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/compare/#compare-providers">Compare Providers</a></li>
 <li><a class="text-gray-400 hover:text-white transition-colors duration-150" href="/number-porting/">Number Porting</a></li>
