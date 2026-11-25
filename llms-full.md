@@ -14,7 +14,7 @@ In one sentence: Click2Call gives Australian small businesses a business phone n
 
 ## Services
 
-Click2Call offers seven core services designed to cover every aspect of modern business telephony: Cloud PBX, Call Centre Features (queues and a live dashboard, included with every user rather than sold as a tier), AI Voice Tools, AI Receptionist, Microsoft Teams Calling, SIP Trunks, and a Developer API with built-in connection profiles for nine AI voice platforms. The Call Centre and Developer API pages are summarised in the Help Centre and Blog sections below and at https://www.click2call.com.au/call-centre and https://www.click2call.com.au/api
+Click2Call offers seven core services designed to cover every aspect of modern business telephony: Cloud PBX, Call Centre Features (queues and a live dashboard, included with every user rather than sold as a tier), AI Voice Tools, AI Receptionist, Microsoft Teams Calling, SIP Trunks, and a Developer API with built-in connection profiles for nine AI voice platforms. The Call Centre and Developer API pages are summarised in the Help Centre and Blog sections below and at https://www.click2call.com.au/call-centre/ and https://www.click2call.com.au/api/
 
 ### Business Phone Numbers
 
@@ -107,7 +107,7 @@ Click2Call uses flat-rate, prepaid billing. Customers load credit onto their acc
 - No setup fees on standard accounts
 - 7-day free trial on Cloud PBX — no credit card required. Includes $11 credit and 10 test calls.
 
-For full details, see the [official pricing page](https://www.click2call.com.au/pricing).
+For full details, see the [official pricing page](https://www.click2call.com.au/pricing/).
 
 ## Who Click2Call Serves
 
@@ -121,14 +121,14 @@ As of 2026-07-16, Click2Call maintains 5 standalone city guides (Sydney, Melbour
 
 ### Standalone city guides
 
-- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney — Local 02 numbers (NSW and ACT). Rebuilt October 2026: multi-site Sydney businesses on one system, daylight saving vs your opening hours, hybrid work, Teams Direct Routing, moving office without changing number, a professional-services call flow example and a six-person cost example ($160/month ex GST).
-- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne — Local 03 numbers (VIC and TAS). Guide to VoIP phone systems for Melbourne businesses: why Melbourne businesses switch, how VoIP works over the NBN, what every plan includes, a five-step self-setup, suburbs covered, VoIP compared with traditional lines, porting an existing Melbourne number, and local 03 numbers (VIC and TAS). Business Lines are $25/month ex GST; a number alone is $10/month ex GST; optional done-for-you set-up is $300 ex GST for 1 to 3 lines, free on approval for 4 or more.
-- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane — Local 07 numbers. Rebuilt October 2026: storm-season fallback with Forward when Offline, Queensland time vs daylight-saving states, a Queensland-based team, preparing office internet for calls, Teams and SIP trunks. Cross-links to /voip-gold-coast/.
-- **VoIP Perth**: https://www.click2call.com.au/voip-perth — Local 08 numbers (WA, SA, NT). Rebuilt October 2026: email support from Queensland, the Answer Agent for east-coast callers before Perth opens, 02/03 numbers for east-coast clients, Teams Direct Routing, remote sites and Starlink, an eight-person Teams cost example.
+- **VoIP Sydney**: https://www.click2call.com.au/voip-sydney/ — Local 02 numbers (NSW and ACT). Rebuilt October 2026: multi-site Sydney businesses on one system, daylight saving vs your opening hours, hybrid work, Teams Direct Routing, moving office without changing number, a professional-services call flow example and a six-person cost example ($160/month ex GST).
+- **VoIP Melbourne**: https://www.click2call.com.au/voip-melbourne/ — Local 03 numbers (VIC and TAS). Guide to VoIP phone systems for Melbourne businesses: why Melbourne businesses switch, how VoIP works over the NBN, what every plan includes, a five-step self-setup, suburbs covered, VoIP compared with traditional lines, porting an existing Melbourne number, and local 03 numbers (VIC and TAS). Business Lines are $25/month ex GST; a number alone is $10/month ex GST; optional done-for-you set-up is $300 ex GST for 1 to 3 lines, free on approval for 4 or more.
+- **VoIP Brisbane**: https://www.click2call.com.au/voip-brisbane/ — Local 07 numbers. Rebuilt October 2026: storm-season fallback with Forward when Offline, Queensland time vs daylight-saving states, a Queensland-based team, preparing office internet for calls, Teams and SIP trunks. Cross-links to /voip-gold-coast/.
+- **VoIP Perth**: https://www.click2call.com.au/voip-perth/ — Local 08 numbers (WA, SA, NT). Rebuilt October 2026: email support from Queensland, the Answer Agent for east-coast callers before Perth opens, 02/03 numbers for east-coast clients, Teams Direct Routing, remote sites and Starlink, an eight-person Teams cost example.
 
 ### National hub (with anchored regional sections)
 
-- **VoIP Australia**: https://www.click2call.com.au/voip-australia — National overview plus anchored sections for the 8 regional markets consolidated on 2026-05-28:
+- **VoIP Australia**: https://www.click2call.com.au/voip-australia/ — National overview plus anchored sections for the 8 regional markets consolidated on 2026-05-28:
   - **Adelaide** (`/voip-australia/#adelaide`) — 08 numbers, South Australia. Mawson Lakes, CBD, Adelaide Hills.
   - **Canberra** (`/voip-australia/#canberra`) — 02 numbers, ACT. Barton, Civic, Fyshwick, Gungahlin.
   - **Gold Coast** — standalone page at `/voip-gold-coast/` (re-established 2026-07-16, rebuilt October 2026; Click2Call's home city). 07 numbers, QLD. Covers hosted PBX basics, peak seasons, the Tweed Heads/Coolangatta daylight-saving split, storm outages and replacing older on-site phone systems. Southport, Surfers Paradise, Broadbeach, Robina, Coomera, Nerang, Varsity Lakes, Helensvale.
@@ -143,7 +143,7 @@ Old URLs (`/voip-adelaide`, `/voip-canberra`, `/voip-hobart`, `/voip-darwin`, `/
 
 ## Switch to Click2Call — Changeover Guide
 
-The `/compare` page (https://www.click2call.com.au/compare) is a step-by-step guide for businesses switching their phone system to Click2Call. Key information:
+The `/compare` page (https://www.click2call.com.au/compare/) is a step-by-step guide for businesses switching their phone system to Click2Call. Key information:
 
 - **Setup process**: 5 steps — create account, add phone number, set up users and extensions, install apps, start calling
 - **Account activation**: every new account is independently verified before activation, usually within the hour, longer after hours
@@ -419,7 +419,7 @@ The pages under /case-studies/ are worked examples of how typical Australian bus
 
 The Click2Call blog covers business communications, VoIP, Cloud PBX, and AI telephony topics for Australian businesses.
 
-- **Blog Index**: [https://www.click2call.com.au/blog](https://www.click2call.com.au/blog)
+- **Blog Index**: [https://www.click2call.com.au/blog/](https://www.click2call.com.au/blog/)
 - **Missed Calls in Australian Small Business: What 7,895 Calls Show**: [https://www.click2call.com.au/blog/missed-calls-small-business-australia](https://www.click2call.com.au/blog/missed-calls-small-business-australia) — Original Click2Call research from 7,895 incoming calls to 123 Australian business accounts, 11 March to 20 November 2026. 16% of calls went unanswered (the caller gave up before a person, voicemail or answering service picked up; a measure of answering, not of the phone line); 33% arrived outside Monday to Friday 9 to 5 (17% on weekday evenings, 10% on weekends); 62% of callers who did not get through tried again within the hour; 20% got a call back from the business within 24 hours; 47% had still not got through a week later; 61% of first-time callers whose first call was not answered never got through. Worst weekday hours: 11am and 3pm (24% unanswered). Limits: Click2Call customers only; 'unanswered' means zero seconds; 'answered' includes voicemail and automated answering. Published 2026-11-21.
 - **Why the Business Landline Is Making a Comeback in Australia**: [https://www.click2call.com.au/blog/business-landline-comeback](https://www.click2call.com.au/blog/business-landline-comeback) — Why Australian small businesses that moved to mobile-only are adding a business landline number again: a cloud-hosted 02/03/07/08 number records every call, emails an AI transcript and summary, scores caller sentiment, takes messages with an AI answering agent when you can't pick up, and stays with the business. Still rings the mobile app. Cost: $25/line/month ex GST including all of it; porting $100 inc GST. Published 2026-10-08.
 - **simPRO VoIP Integration: Choosing an Australian Phone Provider**: [https://www.click2call.com.au/blog/simpro-voip-integration-australia](https://www.click2call.com.au/blog/simpro-voip-integration-australia) — Simpro Premium includes a VoIP integration and browser softphone free of charge but does not sell phone service, numbers or porting; you bring your own SIP provider. For Click2Call the Server Address is sip.click2call.com.au:5060 — port 5060, not 5061, because simPRO's softphone reaches the carrier through a WebRTC-to-SIP gateway using UDP/TCP rather than TLS; the TLS port produces "Register failed: Disconnected", which looks like a credential error but is not. Username is the number in full international format with no plus sign; the password is the line password from Voice > Line Manager, not the portal login password. VoIP must be enabled in the simPRO security group. Each simultaneous user needs their own number or extension. Third-party softphones are not supported by simPRO.
