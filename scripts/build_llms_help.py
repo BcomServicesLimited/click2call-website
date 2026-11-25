@@ -61,6 +61,7 @@ def page_markdown(path):
     s = re.split(r'<h2[^>]*>\s*Related Guides', s)[0]
     s = re.split(r'<h2[^>]*>\s*Still need help', s)[0]
     s = re.sub(r"<(script|style|svg|nav)[^>]*>.*?</\1>", "", s, flags=re.S)
+    s = re.sub(r'<span[^>]*aria-hidden="true"[^>]*>.*?</span>', "", s, flags=re.S)  # reviewer initials badge
     s = re.sub(r"<pre[^>]*>(.*?)</pre>", lambda m: "\n```\n" + re.sub(r"<[^>]+>", "", m.group(1)).strip() + "\n```\n", s, flags=re.S)
     for n in range(1, 5):
         s = re.sub(rf"<h{n}[^>]*>(.*?)</h{n}>", lambda m, n=n: "\n" + "#" * (n + 1) + " " + re.sub(r"<[^>]+>", "", m.group(1)).strip() + "\n", s, flags=re.S)
@@ -81,7 +82,7 @@ def help_section(arts, existing):
     lines = ["## Help Centre", "",
              f"The Click2Call Help Centre has {len(arts)} step-by-step guides for setting up and running a Click2Call phone system. "
              f"The full text of every guide is in one file: {BASE}/llms-help.md", "",
-             f"- **Help Centre Index**: [{BASE}/help]({BASE}/help) — Browse all how-to guides by category.",
+             f"- **Help Centre Index**: [{BASE}/help]({BASE}/help/) — Browse all how-to guides by category.",
              f"- **Full text of all help guides**: [{BASE}/llms-help.md]({BASE}/llms-help.md)", ""]
     for key, label in CATS:
         group = [a for a in arts if a["cat"] == key]

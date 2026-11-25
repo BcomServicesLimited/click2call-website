@@ -244,7 +244,7 @@ Click2Call provides two distinct access points depending on whether a customer i
 
 The Click2Call Help Centre has 104 step-by-step guides for setting up and running a Click2Call phone system. The full text of every guide is in one file: https://www.click2call.com.au/llms-help.md
 
-- **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help) — Browse all how-to guides by category.
+- **Help Centre Index**: [https://www.click2call.com.au/help](https://www.click2call.com.au/help/) — Browse all how-to guides by category.
 - **Full text of all help guides**: [https://www.click2call.com.au/llms-help.md](https://www.click2call.com.au/llms-help.md)
 
 ### Getting Started
