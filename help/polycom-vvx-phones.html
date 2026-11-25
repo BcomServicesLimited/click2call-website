@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Setting Up Polycom VVX Phones | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/polycom-vvx-phones" />
-  <meta name="description" content="Click2Call can set up Polycom VVX phones (VVX 101 to VVX 601) for you. Add the phone in the portal, point it at Click2Call&#x27;s provisioning server, and it.">
+  <meta name="description" content="Set up Polycom VVX 101 to VVX 601 phones on Click2Call: add the phone in the portal, set the provisioning server, update old firmware and test.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/polycom-vvx-phones">
   <meta property="og:title" content="Setting Up Polycom VVX Phones | Help Centre | Click2Call">
-  <meta property="og:description" content="Click2Call can set up Polycom VVX phones (VVX 101 to VVX 601) for you. Add the phone in the portal, point it at Click2Call&#x27;s provisioning server, and it.">
+  <meta property="og:description" content="Set up Polycom VVX 101 to VVX 601 phones on Click2Call: add the phone in the portal, set the provisioning server, update old firmware and test.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Setting Up Polycom VVX Phones",
-  "description": "Click2Call can set up Polycom VVX phones (VVX 101 to VVX 601) for you. Add the phone in the portal, point it at Click2Call's provisioning server, and it.",
+  "description": "Set up Polycom VVX 101 to VVX 601 phones on Click2Call: add the phone in the portal, set the provisioning server, update old firmware and test.",
   "url": "https://www.click2call.com.au/help/polycom-vvx-phones",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Setting Up Polycom VVX Phones | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Click2Call can set up Polycom VVX phones (VVX 101 to VVX 601) for you. Add the phone in the portal, point it at Click2Call&#x27;s provisioning server, and it.">
+  <meta name="twitter:description" content="Set up Polycom VVX 101 to VVX 601 phones on Click2Call: add the phone in the portal, set the provisioning server, update old firmware and test.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,36 +294,47 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up Polycom VVX Phones</h1>
       <p class="text-gray-600 leading-relaxed">Click2Call can set up Polycom VVX phones (VVX 101 to VVX 601) for you. Add the phone in the portal, point it at Click2Call's provisioning server, and it configures itself.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">What you need</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">You need the phone connected to your network and powered (by its power adaptor or a PoE switch), a computer on the same network, and about 15 minutes. If the phone is on very old firmware, allow extra time for updates.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Once provisioned, the phone gets everything from the portal: its numbers and line keys, including BLF lamps. You make later changes in <strong>Voice → Phones</strong>, not on the phone.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 1: add the phone in the portal</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Go to <strong>Voice → Phones → Add a new phone</strong>, set <strong>Phone Manufacturer</strong> to <strong>Polycom</strong>, pick your VVX model, and enter the <strong>MAC Address</strong> (on the back of the phone, on the box, or in the phone's menu under Network settings), a <strong>Description</strong> and the number for <strong>Account 1</strong>. Set up any extra keys (see <a href="/help/programming-phone-keys" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Programming Phone Keys</a>) and click <strong>Add Phone</strong>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Example: on a VVX 411 at reception, Account 1 is the main number, and the spare keys are BLF keys for each staff extension plus a <strong>Call Park</strong> key. Reception can see who is free, and park a call for someone to pick up from any phone. See <a href="/help/call-parking-pickup-transfers" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Call parking, pickup and transfers</a>.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: factory-reset the phone (recommended)</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Start from factory settings so old configuration can't interfere. In the phone's web interface (Step 3 explains how to log in), go to <strong>Utilities → Global Settings</strong> and click <strong>Restore</strong>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Start from factory settings so old configuration can't interfere. This matters most for second-hand phones or phones moved from another provider. In the phone's web interface (Step 3 explains how to log in), go to <strong>Utilities → Global Settings</strong> and click <strong>Restore</strong>.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: log in to the phone's web interface</h2>
     <h3 class="font-bold text-gray-900 mt-6 mb-2">Find the IP address</h3>
     <p class="text-gray-600 leading-relaxed mb-4">Press <strong>Home → Settings → Status → Network → TCP/IP Parameters</strong>. The address is next to <strong>IPv4 Addr</strong>.</p>
     <h3 class="font-bold text-gray-900 mt-6 mb-2">Change the admin password if asked</h3>
-    <p class="text-gray-600 leading-relaxed mb-4">After a reset the phone may not let you log in with the default password 456. On the phone, go to <strong>Settings → Advanced</strong>, enter 456, then <strong>Administration Settings → Change Admin Password</strong> and set a new one.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">After a reset the phone may not let you log in with the default password <strong>456</strong>. On the phone, go to <strong>Settings → Advanced</strong>, enter 456, then <strong>Administration Settings → Change Admin Password</strong> and set a new one.</p>
     <h3 class="font-bold text-gray-900 mt-6 mb-2">Log in</h3>
-    <p class="text-gray-600 leading-relaxed mb-4">On a computer on the same network, enter the IP address in a browser and log in as <strong>Admin</strong> with that password.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">On a computer on the same network, enter the IP address in a browser and log in as <strong>Admin</strong> with that password. On newer firmware the browser may warn about the phone's security certificate. That's expected for a phone on your own network, so continue to the page.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 4: set the provisioning server</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Go to <strong>Settings → Provisioning Server</strong> and set:</p>
     <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Server Type:</strong> HTTPS</li><li><strong>Server Address:</strong> polycom.securevoip.nz</li></ul>
-    <p class="text-gray-600 leading-relaxed mb-4">Click <strong>Save</strong>. The phone downloads its settings from Click2Call and restarts.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Click <strong>Save</strong>. The phone downloads its settings from Click2Call and restarts. It may restart more than once if it also downloads firmware. Don't unplug it while it does.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 5: check it worked</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Your number or label shows next to the first line key.</li><li>In <strong>Voice → Line Manager</strong>, the number's status dot is no longer red.</li><li>Call the phone from a mobile, then call a mobile from the phone. Check the audio both ways.</li><li>Dial <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*55</code> to reach your voicemail and check the keypad works in the menu.</li></ul>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Old firmware</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Phones on firmware 3.3 or older can't use web provisioning. Update the firmware first under <strong>Utilities → Software Upgrade → Check for Update</strong>; some older models need two updates to reach version 4.1.1 or later.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Phones on firmware 3.3 or older can't use web provisioning. Update the firmware first under <strong>Utilities → Software Upgrade → Check for Update</strong>; some older models need two updates to reach version 4.1.1 or later. The current version is usually shown on the home page of the phone's web interface.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Making changes later</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Edit the phone in <strong>Voice → Phones</strong> and save. Tick <strong>Send a reboot request to the handset to force a provisioning update</strong> to apply it now. Otherwise the phone picks up changes at its next scheduled check. Changes made in the phone's own web page can be overwritten by the next update, so make them in the portal.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Handset volume</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Polycom phones normally reset the handset volume after every call. Phones set up through Click2Call keep the volume you choose.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Troubleshooting</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>The phone never picks up its settings:</strong> check the MAC address in the portal matches the phone, and that <strong>Server Type</strong> is HTTPS.</li><li><strong>It registers but audio is one-way, or calls drop:</strong> see <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</li><li><strong>Your model isn't listed:</strong> use the <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for desk phones and PBX systems</a>, or contact support with the model.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">For other brands and apps, see <a href="/help/which-phones-can-i-use" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Which phones can I use?</a></p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

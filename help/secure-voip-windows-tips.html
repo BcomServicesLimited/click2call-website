@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/secure-voip-windows-tips" />
-  <meta name="description" content="This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number.">
+  <meta name="description" content="Reinstall the Secure VoIP Micro Edition app on Windows cleanly, make it open when you click a phone number, run it on Linux and fix a login that fails.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/secure-voip-windows-tips">
   <meta property="og:title" content="Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux | Help Centre | Click2Call">
-  <meta property="og:description" content="This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number.">
+  <meta property="og:description" content="Reinstall the Secure VoIP Micro Edition app on Windows cleanly, make it open when you click a phone number, run it on Linux and fix a login that fails.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-25",
   "headline": "Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux",
-  "description": "This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number.",
+  "description": "Reinstall the Secure VoIP Micro Edition app on Windows cleanly, make it open when you click a phone number, run it on Linux and fix a login that fails.",
   "url": "https://www.click2call.com.au/help/secure-voip-windows-tips",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux | Help Centre | Click2Call">
-  <meta name="twitter:description" content="This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number.">
+  <meta name="twitter:description" content="Reinstall the Secure VoIP Micro Edition app on Windows cleanly, make it open when you click a phone number, run it on Linux and fix a login that fails.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,7 +294,7 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Secure VoIP on Windows: Clean Reinstall, Default Calling App and Linux</h1>
       <p class="text-gray-600 leading-relaxed">This guide covers three things for the Secure VoIP Micro Edition app on Windows. You can reinstall it cleanly, make it open when you click a phone number, and run it on Linux. If you would rather not install anything, the <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> does the same job in Chrome or Edge, including click-to-call.</p>
@@ -306,15 +306,20 @@
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Clean reinstall</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Uninstalling the app keeps your settings, so a fresh install picks up where you left off. If the app misbehaves after an update, remove its saved data as well:</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Uninstalling the app keeps your settings, so a fresh install picks up where you left off. If the app misbehaves after an update, remove its saved data as well.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Before you start, have your login details ready, because a clean reinstall forgets them. You need the phone number exactly as <strong>Voice &rarr; Line Manager</strong> shows it (for example 61370500989, no plus sign and no leading 0) and that number&rsquo;s line password. The line password is not your portal password. If you don&rsquo;t know it, set a new one in Line Manager first; see <a class="text-[#3B9C49] underline hover:text-[#2E7A3A]" href="/help/account-and-line-passwords">portal and phone passwords</a>. Deleting the saved data may also remove contacts you added by hand in the app, so note any you need.</p>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Quit the app. Check Task Manager to make sure it isn't still running.</li><li>Open <strong>Settings → Apps</strong>, find Secure VoIP and click <strong>Uninstall</strong>.</li><li>In File Explorer, open <strong>View</strong> and turn on <strong>Hidden items</strong>.</li><li>Go to C:\Users\your name\AppData. Look in the Local and Roaming folders for the app's folder, usually named after the app (for example SecureVOIP), and delete it.</li><li>Reinstall from the link in <a href="/help/how-to-set-up-softphone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting up the Secure VoIP app</a> and log in again.</li></ol>
+    <p class="text-gray-600 leading-relaxed mb-4">When you run the installer, Windows may warn that it is an unrecognised app. Click <strong>More info</strong> and then <strong>Run anyway</strong>. After you log in, check the <strong>Online</strong> indicator in the bottom left corner of the app. Then put back the settings a fresh install resets:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Untick <strong>Single Call Mode</strong> in <strong>Settings</strong> if you transfer calls or take a second call while on one. Attended transfers need it off. See <a class="text-[#3B9C49] underline hover:text-[#2E7A3A]" href="/help/call-parking-pickup-transfers">parking, picking up and transferring calls</a>.</li><li>Tick <strong>Directory of Users</strong> in <strong>Settings</strong> so your colleagues and their busy status appear in Contacts.</li><li>Check the app is using your headset. A USB or Bluetooth headset gives the clearest calls. If callers can&rsquo;t hear you, check the microphone chosen in the app and in Windows sound settings.</li></ul>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Make phone links open Secure VoIP</h2>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Open <strong>Settings → Apps → Default apps</strong>.</li><li>Search for <strong>TEL</strong>, click it and choose Secure VoIP.</li><li>Do the same for <strong>CALLTO</strong>.</li></ol>
     <p class="text-gray-600 leading-relaxed mb-4">Phone numbers on web pages and in email now open in Secure VoIP when clicked.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The first time you click a number in a browser, the browser usually asks whether to open Secure VoIP. Tick the box to always allow it, so you aren&rsquo;t asked every time. If a link still opens another app, such as Teams or Skype, that app has claimed TEL or CALLTO again. Repeat the steps above to set Secure VoIP back as the default. Click-to-call works with links written as <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">tel:</code> or <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">callto:</code>. A number typed as plain text in a document isn&rsquo;t a link, so copy it into the app&rsquo;s dialler instead.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Running it on Linux (not tested by Click2Call)</h2>
     <p class="text-gray-600 leading-relaxed mb-4">The Windows app can run on Linux using Wine.</p>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Install Wine. On Debian or Ubuntu, run the command below. For other systems, see winehq.org.</li><li>Download the Micro Edition installer from the softphone guide.</li><li>Open the installer with Wine, then log in with your number and line password.</li></ol>
     <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>sudo apt install wine64</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">Sound and notifications under Wine depend on your Linux set-up, so make a test call both ways before you rely on it.</p>
     <p class="text-gray-600 leading-relaxed mb-4">If you'd rather use a native Linux app, Linphone works too. See <a href="/help/how-to-set-up-linphone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting up Linphone</a>.</p>
 
 <div id="kb-added">
@@ -323,6 +328,9 @@
     <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What it does</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Call Mode</td><td class="px-4 py-2.5 text-gray-600"><em>Locally selected</em> (the app decides), <em>Single (Basic) Call Mode</em>, or <em>Advanced Call Mode</em>.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Disable Video Calling in App</td><td class="px-4 py-2.5 text-gray-600">Hides video calls.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Disable Local Recording Button in App</td><td class="px-4 py-2.5 text-gray-600">Removes the record button from the app.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Disable Call Waiting in App</td><td class="px-4 py-2.5 text-gray-600">Stops a second call ringing while you are on one.</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">App Shortcuts 1&ndash;12</td><td class="px-4 py-2.5 text-gray-600">Buttons in the app. Each has a type (Call, Video Call, Attended Transfer, Directed Pickup, Group Pickup, Check Voicemail, URL Popup, Conference, Send DTMF or Assistant), a number or extension, and a label.</td></tr></tbody></table></div>
     <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-10 text-sm text-gray-700 leading-relaxed"><strong>Good to know:</strong> The Windows app also shows whether colleagues are on a call (BLF). Its contacts list comes from the <strong>Directory of Users URL</strong> on <strong>Account &rarr; Apps</strong>.</div>
 </div><!-- /kb-added -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">If the app won&rsquo;t go Online</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Check the username.</strong> It must be a phone number, not your account number, in full international format with no plus sign, no leading 0 and no spaces.</li><li><strong>Check the password.</strong> Use the line password from Line Manager, not your portal login. Type it rather than paste it, because a pasted password can carry a hidden space. If the portal password was changed recently, the line passwords may have changed with it.</li><li><strong>Check the network.</strong> If the app goes Online but calls have one-way audio or drop after a few minutes, the router&rsquo;s SIP ALG is the usual cause. See <a class="text-[#3B9C49] underline hover:text-[#2E7A3A]" href="/help/sip-alg-one-way-audio">fixing one-way audio and dropped registrations</a>.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">For other apps and general registration problems, see <a class="text-[#3B9C49] underline hover:text-[#2E7A3A]" href="/help/softphone-setup-and-troubleshooting">softphone set-up and troubleshooting</a>.</p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

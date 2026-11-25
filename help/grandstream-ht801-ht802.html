@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Connecting an Analogue Phone or Fax with a Grandstream HT801 / HT802",
   "description": "A Grandstream HT801 or HT802 (an analogue telephone adaptor, or ATA) lets you plug an ordinary home or office phone — or a fax machine — into Click2Call.",
   "url": "https://www.click2call.com.au/help/grandstream-ht801-ht802",
@@ -294,29 +294,43 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting an Analogue Phone or Fax with a Grandstream HT801 / HT802</h1>
       <p class="text-gray-600 leading-relaxed">A Grandstream HT801 or HT802 (an analogue telephone adaptor, or ATA) lets you plug an ordinary home or office phone — or a fax machine — into Click2Call. Click2Call configures the adaptor for you.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Before you start</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">The HT801 has one phone port and the HT802 has two. Each port takes one ordinary phone, cordless base or fax machine, and can have its own number. The adaptor also has a network port that plugs into your router. You need the adaptor powered on, a phone to plug in, and a computer on the same network.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Typical uses: a cordless phone at a front counter, a phone in a shed or workshop where a desk phone would get knocked about, or an existing fax machine. If you're buying new for an office, IP desk phones give you line keys and BLF lamps that an adaptor can't. See <a href="/help/which-phones-can-i-use" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Which phones can I use?</a></p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 1: add the adaptor in the portal</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Go to <strong>Voice → Phones → Add a new phone</strong> and set:</p>
     <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Phone Manufacturer:</strong> Grandstream</li><li><strong>Phone Type:</strong> Grandstream HT801 (one phone port) or HT802 (two ports) — or your HT81x model</li><li><strong>MAC Address:</strong> from the sticker on the bottom of the adaptor</li><li><strong>Description:</strong> a name you'll recognise, e.g. Reception fax</li><li><strong>Account 1</strong> (and <strong>Account 2</strong> on an HT802): the number for each phone port</li><li><strong>Call Waiting:</strong> Disabled if a fax machine is connected</li></ul>
     <p class="text-gray-600 leading-relaxed mb-4">Click <strong>Add Phone</strong>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Turning call waiting off matters for fax and answering machines. The beep of a second call can break a fax part-way through. For people, call waiting is usually handy, so leave it on for a port used by staff.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: find the adaptor's IP address</h2>
     <p class="text-gray-600 leading-relaxed mb-4">If the adaptor has been used before, factory-reset it first: hold the <strong>Reset</strong> button on the back for about 10 seconds with a paperclip. Plug a phone into the <strong>Phone</strong> port and the adaptor into your router. Lift the handset and dial <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">***02</code> — a voice reads out the adaptor's IP address.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: log in and set the provisioning server</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">On a computer on the same network, enter the IP address in a browser and log in as <strong>admin</strong> (default password admin, or the password printed on the bottom of the adaptor). Go to the <strong>Upgrade</strong> section:</p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Firmware</strong> tab: Firmware Upgrade via <strong>HTTPS</strong>, Firmware Server Path <strong>gs.securevoip.nz</strong></li><li><strong>Config File</strong> tab: Config Upgrade via <strong>HTTPS</strong>, Config Server Path <strong>gs.securevoip.nz</strong></li><li><strong>Provision</strong> tab: untick <strong>Allow DHCP Option 43 or 66 or 160 to Override Server</strong></li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">On a computer on the same network, enter the IP address in a browser and log in as <strong>admin</strong> (default password <strong>admin</strong>, or the password printed on the bottom of the adaptor). Go to the <strong>Upgrade</strong> section:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Firmware</strong> tab: Firmware Upgrade via HTTPS, Firmware Server Path <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">gs.securevoip.nz</code></li><li><strong>Config File</strong> tab: Config Upgrade via HTTPS, Config Server Path <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">gs.securevoip.nz</code></li><li><strong>Provision</strong> tab: untick <strong>Allow DHCP Option 43 or 66 or 160 to Override Server</strong></li></ul>
     <p class="text-gray-600 leading-relaxed mb-4">On older HT801/HT802 firmware the same settings are under <strong>Advanced Settings</strong> instead of separate tabs.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Unticking the DHCP option stops your router sending the adaptor to a different provisioning server, which can happen with routers supplied by other providers.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 4: save and restart</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Click <strong>Save and Apply</strong>, then <strong>Reboot</strong> if the adaptor doesn't restart by itself. It downloads its settings from Click2Call and the phone port is ready to use. Lift the handset and check for dial tone, then make a test call.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 5: test both ways</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Call the port's number from a mobile and check the phone rings.</li><li>Call out to a mobile and a landline, dialling the full number with the area code.</li><li>Dial <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*55</code> to reach voicemail and check keypad presses work.</li><li>In <strong>Voice → Line Manager</strong>, the number's status dot should no longer be red. Click it to see the adaptor's <strong>IP Address</strong> and <strong>Last Registered</strong> time.</li></ul>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Using a fax machine</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Fax over the internet uses T.38, which resends lost data. Most faxes go through, but it isn't as reliable as a copper line, and fax-machine-to-fax-machine skips the retries of the email gateway. If you can, use <a href="/help/faxmail" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Faxmail</a> to send and receive faxes by email instead. If you keep the machine, send in black and white, and set it to a standard speed if it lets you.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Making changes later</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Edit the adaptor in <strong>Voice → Phones</strong> and save. Tick <strong>Send a reboot request to the handset to force a provisioning update</strong> to apply the change straight away.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Troubleshooting</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>No dial tone:</strong> check the phone is in the <strong>Phone</strong> port, not the network port, and that the adaptor has finished restarting.</li><li><strong>Can't log in:</strong> newer adaptors use the password printed on the bottom, not admin.</li><li><strong>Calls go silent or audio is one-way:</strong> usually the router. See <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</li><li><strong>Still not provisioning:</strong> check the MAC address in the portal matches the sticker exactly.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">Don't connect a back-to-base alarm to the adaptor: alarm diallers send tones that internet calls can't always carry reliably. For devices without a guide, see <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for desk phones and PBX systems</a>.</p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

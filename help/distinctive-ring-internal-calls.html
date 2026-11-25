@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Different Ringtones for Internal Calls (Yealink and Grandstream) | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/distinctive-ring-internal-calls" />
-  <meta name="description" content="You can make your desk phones ring differently when a colleague calls, so you know it&#x27;s an internal call before you answer. Click2Call tags internal calls.">
+  <meta name="description" content="Make Yealink and Grandstream desk phones ring differently for internal calls: set a Distinctive Ring Identifier, then match it on the phone.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/distinctive-ring-internal-calls">
   <meta property="og:title" content="Different Ringtones for Internal Calls (Yealink and Grandstream) | Help Centre | Click2Call">
-  <meta property="og:description" content="You can make your desk phones ring differently when a colleague calls, so you know it&#x27;s an internal call before you answer. Click2Call tags internal calls.">
+  <meta property="og:description" content="Make Yealink and Grandstream desk phones ring differently for internal calls: set a Distinctive Ring Identifier, then match it on the phone.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Different Ringtones for Internal Calls (Yealink and Grandstream)",
-  "description": "You can make your desk phones ring differently when a colleague calls, so you know it's an internal call before you answer. Click2Call tags internal calls.",
+  "description": "Make Yealink and Grandstream desk phones ring differently for internal calls: set a Distinctive Ring Identifier, then match it on the phone.",
   "url": "https://www.click2call.com.au/help/distinctive-ring-internal-calls",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Different Ringtones for Internal Calls (Yealink and Grandstream) | Help Centre | Click2Call">
-  <meta name="twitter:description" content="You can make your desk phones ring differently when a colleague calls, so you know it&#x27;s an internal call before you answer. Click2Call tags internal calls.">
+  <meta name="twitter:description" content="Make Yealink and Grandstream desk phones ring differently for internal calls: set a Distinctive Ring Identifier, then match it on the phone.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,32 +294,42 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Different Ringtones for Internal Calls (Yealink and Grandstream)</h1>
       <p class="text-gray-600 leading-relaxed">You can make your desk phones ring differently when a colleague calls, so you know it's an internal call before you answer. Click2Call tags internal calls with a word you choose, and the phone plays a different ringtone when it sees that word.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">How it works</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">When a call reaches a number or extension, Click2Call can add a short tag to it, such as <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">Internal</code>. The tag travels with the call in a part of the call set-up called Alert-Info. Your desk phone looks for that word and, when it finds it, plays the ringtone you've picked instead of the normal one.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">So there are two halves: the tag, set in the portal on the number or extension that receives the call, and the ringtone match, set on the phone. Both must use exactly the same word. Type it the same way in both places, including capital letters.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Example: at a physio clinic, reception hears its normal ring for patients calling in, and a softer ring when a practitioner calls from a treatment room. Reception knows straight away whether to answer with the clinic greeting or just "Hi".</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 1: tag internal calls in the portal</h2>
     <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Go to <strong>Voice → Line Manager</strong> and click the number or extension.</li><li>From the <strong>Incoming Calls</strong> menu, choose <strong>Caller ID, Call Waiting &amp; Intercom</strong>.</li><li>In <strong>Distinctive Ring Identifier</strong>, enter a word such as <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">Internal</code>.</li><li>Save. Repeat for each number or extension that should hear the different ring.</li></ol>
-    <p class="text-gray-600 leading-relaxed mb-4">By default the tag is only added to internal calls. Tick <strong>Apply Distinctive Ring to ALL calls</strong> only if you want every call to use it.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">By default the tag is only added to internal calls, meaning calls from another number or extension on your own account. Tick <strong>Apply Distinctive Ring to ALL calls</strong> only if you want every call to use it. That's useful for a second number that rings the same phone, so it always sounds different.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The same settings page has <strong>Incoming Call Identifier</strong>, which shows text such as Sales or Support on the phone's screen. Use it with distinctive ring if several numbers ring the same phones. See <a href="/help/call-waiting-intercom-and-caller-id-options" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Call waiting, intercom and caller ID options</a>.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: choose the ringtone on a Yealink phone</h2>
     <p class="text-gray-600 leading-relaxed mb-4">The easiest way is through the portal, so the setting survives a factory reset. Edit the phone in <strong>Voice → Phones</strong> and add these lines to <strong>Custom Configuration</strong>:</p>
     <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>distinctive_ring_tones.alert_info.1.text = Internal
 distinctive_ring_tones.alert_info.1.ringer = Resource:Ring5.wav</code></pre>
-    <p class="text-gray-600 leading-relaxed mb-4">Change Ring5.wav to the ringtone you want, save, and restart the phone. You can also set it by hand in the phone's web page under <strong>Settings → Ring</strong>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Change <strong>Ring5.wav</strong> to the ringtone you want, save, and restart the phone. On most models the built-in choices are Ring1.wav to Ring8.wav. You can also set it by hand in the phone's web page under <strong>Settings → Ring</strong>. A setting made by hand on the phone is lost if the phone is reset, so the portal is the better place. See <a href="/help/how-to-add-desk-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Adding a desk phone</a> for how Yealink phones are provisioned.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: choose the ringtone on a Grandstream phone</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Edit the phone in <strong>Voice → Phones</strong> and add these lines to <strong>Custom Configuration</strong> for account 1:</p>
     <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>&lt;P1488&gt;Internal&lt;/P1488&gt;
 &lt;P1489&gt;7&lt;/P1489&gt;</code></pre>
     <p class="text-gray-600 leading-relaxed mb-4">P1488 is the word to match and P1489 is the ringtone number from the phone's list (7 means the seventh ringtone). Save and restart the phone. By hand, it's under <strong>Accounts → Call Settings → Matching Rule</strong> in the phone's web page.</p>
     <p class="text-gray-600 leading-relaxed mb-4">For other accounts on the same phone, use these setting numbers:</p>
-    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Account</td><td class="px-4 py-2.5 text-gray-600">Word to match</td><td class="px-4 py-2.5 text-gray-600">Ringtone</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">1</td><td class="px-4 py-2.5 text-gray-600">P1488</td><td class="px-4 py-2.5 text-gray-600">P1489</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">2</td><td class="px-4 py-2.5 text-gray-600">P1494</td><td class="px-4 py-2.5 text-gray-600">P1495</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">3</td><td class="px-4 py-2.5 text-gray-600">P1500</td><td class="px-4 py-2.5 text-gray-600">P1501</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">4</td><td class="px-4 py-2.5 text-gray-600">P1506</td><td class="px-4 py-2.5 text-gray-600">P1507</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">5</td><td class="px-4 py-2.5 text-gray-600">P1512</td><td class="px-4 py-2.5 text-gray-600">P1513</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">6</td><td class="px-4 py-2.5 text-gray-600">P1518</td><td class="px-4 py-2.5 text-gray-600">P1519</td></tr></tbody></table></div>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Account</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Word to match</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Ringtone</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">1</td><td class="px-4 py-2.5 text-gray-600">P1488</td><td class="px-4 py-2.5 text-gray-600">P1489</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">2</td><td class="px-4 py-2.5 text-gray-600">P1494</td><td class="px-4 py-2.5 text-gray-600">P1495</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">3</td><td class="px-4 py-2.5 text-gray-600">P1500</td><td class="px-4 py-2.5 text-gray-600">P1501</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">4</td><td class="px-4 py-2.5 text-gray-600">P1506</td><td class="px-4 py-2.5 text-gray-600">P1507</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">5</td><td class="px-4 py-2.5 text-gray-600">P1512</td><td class="px-4 py-2.5 text-gray-600">P1513</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">6</td><td class="px-4 py-2.5 text-gray-600">P1518</td><td class="px-4 py-2.5 text-gray-600">P1519</td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">The account number is the account on the phone, as set under <strong>Accounts</strong> when you added the phone, not the extension number. See <a href="/help/grandstream-desk-phones" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting up Grandstream desk phones</a>.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: test it</h2>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Restart the phone after saving, so it downloads the new settings.</li><li>From another phone or extension on your account, call the tagged number or extension. You should hear the new ringtone.</li><li>Call the same number from a mobile. You should hear the normal ringtone, unless you ticked <strong>Apply Distinctive Ring to ALL calls</strong>.</li></ol>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">If it still rings normally</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>The words don't match.</strong> Check spelling and capitals in the portal and in the phone setting.</li><li><strong>The tag is on the wrong line.</strong> It goes on the number or extension that receives the call, not the one making it.</li><li><strong>The phone hasn't picked up the change.</strong> Tick <strong>Send a reboot request to the handset to force a provisioning update</strong> when you save the phone, or restart it.</li><li><strong>The phone was set up by hand.</strong> Custom Configuration only reaches phones provisioned through <strong>Voice → Phones</strong>. Set the ringtone in the phone's web page instead.</li></ul>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Other phones</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Most SIP phones can pick a ringtone from the Alert-Info header. If you're not sure where the setting is on yours, contact support and we'll check for you.</p>
 

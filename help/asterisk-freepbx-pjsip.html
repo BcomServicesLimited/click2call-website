@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Connecting Asterisk or FreePBX (PJSIP) | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/asterisk-freepbx-pjsip" />
-  <meta name="description" content="Asterisk and systems built on it (FreePBX, Issabel and similar) connect to Click2Call as a Registered SIP Trunk using the PJSIP channel driver. Set up the.">
+  <meta name="description" content="Connect Asterisk, FreePBX or Issabel to Click2Call as a registered SIP trunk with PJSIP: pjsip.conf for UDP and TLS, FreePBX trunk fields, routing and checks.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/asterisk-freepbx-pjsip">
   <meta property="og:title" content="Connecting Asterisk or FreePBX (PJSIP) | Help Centre | Click2Call">
-  <meta property="og:description" content="Asterisk and systems built on it (FreePBX, Issabel and similar) connect to Click2Call as a Registered SIP Trunk using the PJSIP channel driver. Set up the.">
+  <meta property="og:description" content="Connect Asterisk, FreePBX or Issabel to Click2Call as a registered SIP trunk with PJSIP: pjsip.conf for UDP and TLS, FreePBX trunk fields, routing and checks.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Connecting Asterisk or FreePBX (PJSIP)",
-  "description": "Asterisk and systems built on it (FreePBX, Issabel and similar) connect to Click2Call as a Registered SIP Trunk using the PJSIP channel driver. Set up the.",
+  "description": "Connect Asterisk, FreePBX or Issabel to Click2Call as a registered SIP trunk with PJSIP: pjsip.conf for UDP and TLS, FreePBX trunk fields, routing and checks.",
   "url": "https://www.click2call.com.au/help/asterisk-freepbx-pjsip",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Connecting Asterisk or FreePBX (PJSIP) | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Asterisk and systems built on it (FreePBX, Issabel and similar) connect to Click2Call as a Registered SIP Trunk using the PJSIP channel driver. Set up the.">
+  <meta name="twitter:description" content="Connect Asterisk, FreePBX or Issabel to Click2Call as a registered SIP trunk with PJSIP: pjsip.conf for UDP and TLS, FreePBX trunk fields, routing and checks.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,11 +294,11 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Connecting Asterisk or FreePBX (PJSIP)</h1>
       <p class="text-gray-600 leading-relaxed">Asterisk and systems built on it (FreePBX, Issabel and similar) connect to Click2Call as a Registered SIP Trunk using the PJSIP channel driver. Set up the trunk in the portal first — see <a href="/help/sip-trunk-pbx-setup" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Connecting Your Own PBX with a SIP Trunk</a> — then add the configuration below.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
@@ -307,6 +307,8 @@
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Before you start</h2>
     <p class="text-gray-600 leading-relaxed mb-4">You need your pilot number exactly as shown in <strong>Voice → Line Manager</strong> (e.g. 61370500989) and the line password set on that row. In the examples, replace PILOTNUMBER and LINEPASSWORD with yours.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">On the Click2Call side, the profile's <strong>Connection Type</strong> in <strong>Voice → Profiles</strong> must be <strong>Registered SIP Trunk</strong>, with your pilot number chosen. Every number on that profile is then delivered over the one registration. If some numbers should stay on Click2Call's apps and desk phones, put the trunk on a new profile instead of the Default one. The <a href="/help/sip-trunk-pbx-setup" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP trunk guide</a> covers this, and the SIP Trunk line plan.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Use a long, random line password. A PBX with a weak password is the most common target for toll fraud. See <a href="/help/toll-fraud-protection" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Protecting your account from toll fraud</a>.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Example: pjsip.conf over UDP</h2>
     <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>[transport-udp]
 type=transport
@@ -343,21 +345,57 @@ from_user=PILOTNUMBER
 type=identify
 endpoint=click2call
 match=sip.click2call.com.au</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">What each section does:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>transport</strong> opens the port Asterisk uses to talk to Click2Call.</li><li><strong>registration</strong> logs your PBX in with the pilot number, so calls to your numbers are sent to it. <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">retry_interval</code> makes it try again every 60 seconds if a registration fails.</li><li><strong>auth</strong> holds the pilot number and line password. Both the registration and outgoing calls use it.</li><li><strong>aor</strong> tells Asterisk where to send outgoing calls.</li><li><strong>endpoint</strong> sets the codecs and the dialplan context that incoming calls land in (<code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">from-external</code> here).</li><li><strong>identify</strong> matches incoming calls from Click2Call to this endpoint, so they aren't rejected as unknown.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">If the PBX can't use TLS and calls lose audio, use port 50600 instead of 5060 in the aor contact and the registration's server_uri (for example <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip:sip.click2call.com.au:50600</code>). Routers don't treat 50600 as a SIP port, so they leave it alone.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Example: pjsip.conf over TLS (recommended)</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Use a TLS transport and port 5061. Everything else is the same as the UDP example.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Use a TLS transport and port 5061, and point the registration and endpoint at it. Everything else is the same as the UDP example.</p>
     <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>[transport-tls]
 type=transport
 protocol=tls
 bind=0.0.0.0:5061
 method=tlsv1_2
 
+[click2call-reg]
+type=registration
+transport=transport-tls
+server_uri=sip:sip.click2call.com.au:5061;transport=tls
+client_uri=sip:PILOTNUMBER@sip.click2call.com.au
+outbound_auth=click2call-auth
+retry_interval=60
+
 [click2call]
 type=aor
-contact=sip:sip.click2call.com.au:5061;transport=tls</code></pre>
+contact=sip:sip.click2call.com.au:5061;transport=tls
+
+; and in the [click2call] endpoint section add:
+; transport=transport-tls</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">TLS encrypts the call set-up, so office routers can't rewrite it. That avoids the most common cause of one-way audio and dropped registrations.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Incoming calls: routing your numbers</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Every number on the trunk's profile arrives as a direct-dial (DDI) number, with the dialled number in the SIP request. Asterisk sees it as <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">${EXTEN}</code> in the <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">from-external</code> context. Log one test call first to see the exact format that arrives, then match on it:</p>
+    <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>[from-external]
+exten =&gt; _X.,1,NoOp(Call to ${EXTEN} from ${CALLERID(num)})
+ same =&gt; n,Dial(PJSIP/100,30)
+ same =&gt; n,Hangup()</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">Replace the catch-all with one pattern per number when you want each number to reach a different extension, queue or menu. Numbers you add to the Click2Call account later are routed to the trunk automatically.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Outgoing calls</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Send calls out through the endpoint, dialling Australian numbers in the normal national format:</p>
+    <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>exten =&gt; _0X.,1,Set(CALLERID(num)=YOUR_CLICK2CALL_NUMBER)
+ same =&gt; n,Dial(PJSIP/${EXTEN}@click2call,60)</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">Over a registered trunk, the PBX can present any number on your Click2Call account as caller ID, per extension or per route. You don't need to register each number separately.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">FreePBX</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">In FreePBX, go to <strong>Connectivity → Trunks → Add Trunk → Add SIP (chan_pjsip) Trunk</strong> and enter the same values: username and authentication username = pilot number, secret = line password, SIP server = <span class="font-mono">sip.click2call.com.au</span>, port 5060 (or 5061 with TLS), registration = Send. Codecs: G.722, then G.711 A-law, then G.711 µ-law. Set your inbound routes against the DDI numbers.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">In FreePBX, go to <strong>Connectivity → Trunks → Add Trunk → Add SIP (chan_pjsip) Trunk</strong> and enter the same values: username and authentication username = pilot number, secret = line password, SIP server = <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code>, port 5060 (or 5061 with TLS), registration = Send. Codecs: G.722, then G.711 A-law, then G.711 µ-law. Set your inbound routes against the DDI numbers.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>pjsip Settings tab:</strong> set <strong>Authentication</strong> to Outbound and <strong>Registration</strong> to Send. Choose the TLS transport if you've set one up in the SIP settings.</li><li><strong>Inbound routes:</strong> in <strong>Connectivity → Inbound Routes</strong>, add one route per number with its DID, and choose the extension, ring group or IVR it should reach. A route with no DID catches anything else.</li><li><strong>Outbound routes:</strong> in <strong>Connectivity → Outbound Routes</strong>, add the Click2Call trunk and set the route's caller ID to one of your Click2Call numbers.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">Issabel and other Asterisk-based systems use the same values in their own trunk screens.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Checking the trunk</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">From the Asterisk console:</p>
+    <pre class="mb-6 overflow-x-auto rounded-lg bg-gray-900 text-gray-100 text-xs leading-relaxed p-4"><code>asterisk -rx "pjsip show registrations"
+asterisk -rx "pjsip show endpoints"</code></pre>
+    <p class="text-gray-600 leading-relaxed mb-4">The registration should show as Registered. In the portal, the pilot number's status in <strong>Voice → Line Manager</strong> turns online, and the line's page shows <strong>Last Registered</strong> with your PBX's public IP address. Then make a test call in and out.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Rejected (401 or 403):</strong> the username or line password is wrong, or no password is set on the pilot number.</li><li><strong>Registers, but incoming calls fail:</strong> check the identify section matches, and that the context exists in your dialplan.</li><li><strong>Calls connect with no audio:</strong> usually the router. See <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">You don't need to forward ports 5060 or 5061 to the PBX. If your firewall blocks outbound traffic, allow the PBX to reach <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code> (52.63.154.234) on the ports above. Call audio uses UDP to the same address.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Notes</h2>
-    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Use a packet time (ptime) of 20 ms; 10 ms isn't supported.</li><li>Keypad tones: use RFC 2833 (the PJSIP default, <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">dtmf_mode=rfc4733</code>).</li><li>To present a different number on your account as caller ID, set it in the outbound route or with <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">CALLERID(num)</code> in the dialplan.</li><li>Click2Call also supports IAX2 Registration for Asterisk; choose it under <strong>Voice → Profiles</strong> if you prefer IAX2 to SIP.</li></ul>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Use a packet time (ptime) of 20 ms; 10 ms isn't supported.</li><li>Keypad tones: use RFC 2833 (the PJSIP default, <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-<a href="/help/dtmf-keypad-presses-not-working" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">0.9em]">dtmf_mode=rfc4733</code>). See [Keypad presses not recognised</a>.</li><li>To present a different number on your account as caller ID, set it in the outbound route or with <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">CALLERID(num)</code> in the dialplan.</li><li>Click2Call also supports IAX2 Registration for Asterisk; choose it under <strong>Voice → Profiles</strong> if you prefer IAX2 to SIP. IAX2 uses one port for signalling and audio, which can make firewalls simpler.</li><li>The profile's <strong>Limit Channels</strong> setting caps how many calls the trunk carries at once. Leave it on No limit unless you want a cap.</li></ul>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

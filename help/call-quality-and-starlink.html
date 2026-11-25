@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Call Quality: Codecs, Your Connection and Starlink | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/call-quality-and-starlink" />
-  <meta name="description" content="Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.">
+  <meta name="description" content="Fix choppy or robotic calls: what your internet needs, codec settings, Wi-Fi and QoS tips, and how Click2Call works over Starlink in regional Australia.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/call-quality-and-starlink">
   <meta property="og:title" content="Call Quality: Codecs, Your Connection and Starlink | Help Centre | Click2Call">
-  <meta property="og:description" content="Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.">
+  <meta property="og:description" content="Fix choppy or robotic calls: what your internet needs, codec settings, Wi-Fi and QoS tips, and how Click2Call works over Starlink in regional Australia.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-25",
   "headline": "Call Quality: Codecs, Your Connection and Starlink",
-  "description": "Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.",
+  "description": "Fix choppy or robotic calls: what your internet needs, codec settings, Wi-Fi and QoS tips, and how Click2Call works over Starlink in regional Australia.",
   "url": "https://www.click2call.com.au/help/call-quality-and-starlink",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Call Quality: Codecs, Your Connection and Starlink | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your.">
+  <meta name="twitter:description" content="Fix choppy or robotic calls: what your internet needs, codec settings, Wi-Fi and QoS tips, and how Click2Call works over Starlink in regional Australia.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,11 +294,11 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Call Quality: Codecs, Your Connection and Starlink</h1>
       <p class="text-gray-600 leading-relaxed">Most call quality problems come from the internet connection, not the phone service. This guide covers the settings that affect quality, what your connection needs, and using Click2Call over Starlink.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
@@ -307,17 +307,28 @@
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">What your connection needs</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Each call uses about 100 kbps each way. More important than speed is a steady connection: low delay, no dropouts and no other traffic swamping the line. If calls break up when someone uploads large files or joins a video meeting, your router may need quality-of-service (QoS) settings that put voice first.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Worked example: an office with 8 staff, where up to 5 people are on the phone at once, needs about 500 kbps each way for calls. Almost any NBN plan has that to spare. The problems start when the same connection is full, for example a cloud backup running during the day, or several video meetings at once. Upload is usually the tight side, because NBN plans have far less upload than download.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Three things cause most poor calls:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Lost audio (packet loss).</strong> Bits of the call never arrive, so words drop out or sound robotic.</li><li><strong>Uneven delivery (jitter).</strong> Audio arrives in bursts, which sounds choppy.</li><li><strong>Delay (latency).</strong> You talk over each other. Below about a quarter of a second, most people don't notice.</li></ul>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Getting the most from your network</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>Plug desk phones in with a cable.</strong> Wired is steadier than Wi-Fi. If you use Wi-Fi, stay close to the access point and avoid crowded 2.4 GHz networks.</li><li><strong>Turn on QoS if your router has it.</strong> Give priority to your phones, or to traffic to <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code>. Where the router offers it, set the limit a little below your real upload speed so the router, not the NBN, decides what waits.</li><li><strong>Schedule big uploads after hours.</strong> Cloud backups and large file syncs are the usual cause of daytime breakup.</li><li><strong>Use a headset on computers.</strong> Laptop microphones pick up fans and keyboard noise, which the other person hears as poor quality.</li><li><strong>On a mobile,</strong> if Wi-Fi is weak, switch it off and use 4G or 5G instead.</li></ul>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Codecs</h2>
     <p class="text-gray-600 leading-relaxed mb-4">A codec is how your phone compresses the voice. Click2Call supports:</p>
-    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Codec</td><td class="px-4 py-2.5 text-gray-600">Quality</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">G.722</td><td class="px-4 py-2.5 text-gray-600">Best (HD voice)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">G.711 A-law and µ-law</td><td class="px-4 py-2.5 text-gray-600">Excellent</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">G.729</td><td class="px-4 py-2.5 text-gray-600">Good, uses less bandwidth</td></tr></tbody></table></div>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Codec</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Quality</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">G.722</td><td class="px-4 py-2.5 text-gray-600">Best (HD voice)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">G.711 A-law and µ-law</td><td class="px-4 py-2.5 text-gray-600">Excellent</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">G.729</td><td class="px-4 py-2.5 text-gray-600">Good, uses less bandwidth</td></tr></tbody></table></div>
     <p class="text-gray-600 leading-relaxed mb-4">Use a packet time (ptime) of 20 ms. 10 ms isn't supported. Phones set up through the portal already use the right settings.</p>
     <p class="text-gray-600 leading-relaxed mb-4">To change this, open the number and choose <strong>Other Settings → Voice Quality &amp; Codecs</strong>. Under <strong>Select your voice quality preferences</strong>, you can prefer excellent quality (more bandwidth) or good quality (less bandwidth). On a slow or busy connection, choose <strong>Prefer good quality calls with low bandwidth requirements</strong>. The codec tick boxes below are for advanced users, and most people should leave them alone. Restart your phone after changing anything here.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">A lower-bandwidth codec helps when the connection is slow. It won't fix a connection that drops audio. Fix the connection first.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Using Click2Call over Starlink</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Click2Call works over Starlink like any other internet connection. Starlink has a little more delay than fibre, but calls are normally clear.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Click2Call works over Starlink like any other internet connection. Starlink has a little more delay than fibre, but calls are normally clear. It's a common choice for farms, remote sites and regional businesses beyond the reach of fixed NBN.</p>
     <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>To plug in a desk phone or adaptor, you'll need Starlink's Ethernet adapter. A Wi-Fi phone, the Web Phone or the mobile app needs nothing extra.</li><li>Use TLS on your phones. It avoids problems caused by router features that interfere with calls.</li><li>Expect short dropouts during heavy weather or when the dish's view is blocked.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">Place the dish with a clear view of the sky. Trees, sheds and roof lines that block part of the view cause the short, regular dropouts people notice most on calls.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Plan for the times the connection goes down. Turn on <strong>Forward when Offline</strong> so calls go to a mobile when your phones lose internet, during a storm for example. See <a href="/help/calls-during-power-or-internet-outage" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Keeping calls coming in during an outage</a>. Staff out of the office can use the app on mobile data and still call out on the business number.</p>
     <p class="text-gray-600 leading-relaxed mb-4">You can keep your existing number. See <a href="/help/how-to-port-number" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Porting your number</a>.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Measuring a call</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">The <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> shows you what's happening. Open <strong>Settings → Diagnostics &amp; self-test</strong>. <strong>Last call</strong> shows the round-trip time, jitter, packet loss and codec of your most recent call, and <strong>Run self-test</strong> checks your microphone and connection. If packet loss shows on a call that sounded poor, the problem is the connection between you and Click2Call.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Choppy or one-way audio?</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">See <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Choppy or robotic audio, where both people can still hear, is the connection. One-way audio, silence on answered calls or phones that drop off are usually the router. See <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">If quality is still poor, contact support with the number, the time of a bad call, and whether it was on Wi-Fi, cable or mobile data. We can check that call from our side.</p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

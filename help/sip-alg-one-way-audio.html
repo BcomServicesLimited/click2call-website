@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Fixing One-Way Audio and Dropped Registrations (SIP ALG and NAT) | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/sip-alg-one-way-audio" />
-  <meta name="description" content="If calls connect but you can&#x27;t hear the other person (or they can&#x27;t hear you), if incoming calls ring but go silent when answered, or if your phone keeps.">
+  <meta name="description" content="One-way audio, silent answered calls or phones dropping registration? Usually SIP ALG on your router. Switch to TLS or port 50600, or turn SIP ALG off.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/sip-alg-one-way-audio">
   <meta property="og:title" content="Fixing One-Way Audio and Dropped Registrations (SIP ALG and NAT) | Help Centre | Click2Call">
-  <meta property="og:description" content="If calls connect but you can&#x27;t hear the other person (or they can&#x27;t hear you), if incoming calls ring but go silent when answered, or if your phone keeps.">
+  <meta property="og:description" content="One-way audio, silent answered calls or phones dropping registration? Usually SIP ALG on your router. Switch to TLS or port 50600, or turn SIP ALG off.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,7 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Fixing One-Way Audio and Dropped Registrations (SIP ALG and NAT)",
   "description": "If calls connect but you can't hear the other person (or they can't hear you), if incoming calls ring but go silent when answered, or if your phone keeps.",
   "url": "https://www.click2call.com.au/help/sip-alg-one-way-audio",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fixing One-Way Audio and Dropped Registrations (SIP ALG and NAT) | Help Centre | Click2Call">
-  <meta name="twitter:description" content="If calls connect but you can&#x27;t hear the other person (or they can&#x27;t hear you), if incoming calls ring but go silent when answered, or if your phone keeps.">
+  <meta name="twitter:description" content="One-way audio, silent answered calls or phones dropping registration? Usually SIP ALG on your router. Switch to TLS or port 50600, or turn SIP ALG off.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,11 +294,11 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">5 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Fixing One-Way Audio and Dropped Registrations (SIP ALG and NAT)</h1>
       <p class="text-gray-600 leading-relaxed">If calls connect but you can't hear the other person (or they can't hear you), if incoming calls ring but go silent when answered, or if your phone keeps dropping its registration, the cause is almost always your router — specifically a feature called SIP ALG. This guide explains the fix.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
@@ -307,16 +307,30 @@
 
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">What is SIP ALG and why does it cause problems?</h2>
     <p class="text-gray-600 leading-relaxed mb-4">SIP ALG (Application Layer Gateway) is a router feature meant to help phone calls get through NAT. There is no standard for it, so many routers rewrite the call setup messages incorrectly. The result is one-way audio, silence on answered calls, or phones that stop registering. It is often intermittent and clears for a while after a router restart, which makes it hard to pin down. Every VoIP provider recommends turning it off.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">NAT is how your router shares one public internet address between every device in the office. A phone call needs the audio to find its way back to the right phone. When SIP ALG rewrites the addresses in the call set-up wrongly, the audio is sent to the wrong place, so one or both of you hear nothing.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Is it my router? A quick test</h2>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What you see</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Likely cause</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Calls connect, but one person hears nothing</td><td class="px-4 py-2.5 text-gray-600">SIP ALG or a firewall blocking audio</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Incoming calls ring, then go silent when answered</td><td class="px-4 py-2.5 text-gray-600">SIP ALG</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Calls drop after exactly 30 seconds or so</td><td class="px-4 py-2.5 text-gray-600">SIP ALG or a firewall</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Phone shows registered, but incoming calls stop after a while</td><td class="px-4 py-2.5 text-gray-600">NAT timeout (Fix 3)</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Works for a while after a router restart, then fails again</td><td class="px-4 py-2.5 text-gray-600">SIP ALG</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Choppy or robotic audio, but both people can hear</td><td class="px-4 py-2.5 text-gray-600">Your connection, not SIP ALG. See <a href="/help/call-quality-and-starlink" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">call quality</a></td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">To confirm it, take the router out of the picture:</p>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Put the Click2Call app on a mobile on mobile data (Wi-Fi off) and make the same call. If it works there, the office router is the cause.</li><li>Or sign in to the <a href="/help/web-phone" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Web Phone</a> on a computer in the office. It uses secure web connections and a relay, so SIP ALG can't touch it. If the Web Phone works and the desk phone doesn't, it's the router.</li></ol>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Fix 1: switch your phone to TLS (no router access needed)</h2>
     <p class="text-gray-600 leading-relaxed mb-4">TLS encrypts the call setup, so the router can't interfere with it. On your phone or PBX set:</p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Server / proxy: <span class="font-mono">sip.click2call.com.au</span></li><li>Transport: TLS</li><li>Port: 5061</li></ul>
-    <p class="text-gray-600 leading-relaxed mb-4">If your device doesn't support TLS, use port 50600 instead of 5060 (<span class="font-mono">sip.click2call.com.au:50600</span>). Routers don't treat 50600 as a SIP port, so they leave it alone.</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Server / proxy: <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code></li><li>Transport: TLS</li><li>Port: 5061</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">If your device doesn't support TLS, use port 50600 instead of 5060 (<code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au:50600</code>). Routers don't treat 50600 as a SIP port, so they leave it alone.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Desk phones added in the portal under <strong>Voice → Phones</strong> use TLS by default. For phones you set up by hand, see <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for desk phones, adapters and PBX systems</a>. Make sure the transport and port match: TLS on 5061, TCP or UDP on 5060 or 50600. A mismatch shows as a registration error, not one-way audio.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">This is the fix we recommend first, because it works even when the router is supplied by your internet provider and you can't change its settings.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Fix 2: turn off SIP ALG on your router</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Look in your router's settings under Advanced, WAN, NAT, Firewall or VoIP for "SIP ALG", "SIP Helper", "SIP Transformations" or "SIP passthrough", and turn it off. Restart the router and your phones afterwards. The exact steps depend on your router — your router's manual or manufacturer can tell you where the setting is. If you can't change the router, use Fix 1.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Look in your router's settings under Advanced, WAN, NAT, Firewall or VoIP for "SIP ALG", "SIP Helper", "SIP Transformations" or "SIP passthrough", and turn it off. Restart the router and your phones afterwards. The exact steps depend on your router. Your router's manual or manufacturer can tell you where the setting is. If you can't change the router, use Fix 1.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Where it usually lives on some common brands (menus vary by model and firmware):</p>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Router</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Where to look</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">TP-Link</td><td class="px-4 py-2.5 text-gray-600">Advanced → NAT Forwarding → ALG → untick SIP ALG</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Netgear</td><td class="px-4 py-2.5 text-gray-600">Advanced → Setup → WAN Setup → tick Disable SIP ALG</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">MikroTik</td><td class="px-4 py-2.5 text-gray-600">IP → Firewall → Service Ports → disable sip</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">DrayTek</td><td class="px-4 py-2.5 text-gray-600">Often only from the command line: <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sys sip_alg 0</code>, then restart</td></tr></tbody></table></div>
+    <p class="text-gray-600 leading-relaxed mb-4">If you have two routers, for example an internet provider's modem plus your own router or firewall, check both. Some routers have no switch for SIP ALG at all. Use Fix 1 for those.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Fix 3: phones that keep dropping registration (NAT timeout)</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Some routers forget a phone's connection after a short idle time, so incoming calls can't find it. If your router lets you set a UDP NAT timeout, set it to 60 seconds or more. Otherwise, set the phone's registration expiry (often "Registration Timeout" or "Expires") to 60 seconds so it checks in every minute and keeps the connection open. TLS and TCP also avoid this, because they hold the connection open.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">You can see this in the portal. In <strong>Voice → Line Manager</strong>, click the number. The status panel shows the <strong>IP Address</strong> and <strong>Last Registered</strong> time. If Last Registered is minutes old when it should be recent, or the line flicks between online and Not Registered, the phone is losing its connection.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Don't forward ports to your phone</h2>
     <p class="text-gray-600 leading-relaxed mb-4">You don't need port forwarding for Click2Call, and forwarding 5060 or 5061 to a phone or PBX exposes it to internet scanners (see <a href="/help/ghost-and-spam-calls" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Stopping Ghost and Spam Calls</a>). Remove any such rules.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">If your firewall blocks outbound traffic by default, allow your phones to reach <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">sip.click2call.com.au</code> (52.63.154.234) on ports 5060, 50600 and 5061. Call audio uses UDP to the same address. That's all the firewall needs.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Still not fixed?</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Contact support with the number, the time of an affected call, which person couldn't hear, and whether it happens on mobile data too. That lets us check the call from our side. While we look into it, setting <a href="/help/calls-during-power-or-internet-outage" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Forward when Offline</a> to a mobile means calls still reach you if the phones drop off.</p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

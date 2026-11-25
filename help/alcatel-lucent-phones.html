@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Setting Up Alcatel-Lucent Enterprise H and M Series Phones | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/alcatel-lucent-phones" />
-  <meta name="description" content="Click2Call auto-provisions Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones. Provisioning keeps the firmware up to date and sets up your lines.">
+  <meta name="description" content="Auto-provision Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones on Click2Call: portal set-up, DM URL, secure provisioning and fixes.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/alcatel-lucent-phones">
   <meta property="og:title" content="Setting Up Alcatel-Lucent Enterprise H and M Series Phones | Help Centre | Click2Call">
-  <meta property="og:description" content="Click2Call auto-provisions Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones. Provisioning keeps the firmware up to date and sets up your lines.">
+  <meta property="og:description" content="Auto-provision Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones on Click2Call: portal set-up, DM URL, secure provisioning and fixes.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Setting Up Alcatel-Lucent Enterprise H and M Series Phones",
-  "description": "Click2Call auto-provisions Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones. Provisioning keeps the firmware up to date and sets up your lines.",
+  "description": "Auto-provision Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones on Click2Call: portal set-up, DM URL, secure provisioning and fixes.",
   "url": "https://www.click2call.com.au/help/alcatel-lucent-phones",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Setting Up Alcatel-Lucent Enterprise H and M Series Phones | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Click2Call auto-provisions Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones. Provisioning keeps the firmware up to date and sets up your lines.">
+  <meta name="twitter:description" content="Auto-provision Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones on Click2Call: portal set-up, DM URL, secure provisioning and fixes.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,27 +294,39 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up Alcatel-Lucent Enterprise H and M Series Phones</h1>
       <p class="text-gray-600 leading-relaxed">Click2Call auto-provisions Alcatel-Lucent Enterprise H3, H6, M3, M5, M7 and M8 phones. Provisioning keeps the firmware up to date and sets up your lines, line keys and phonebook. The phone must be on the latest firmware, which provisioning installs for you on the first run.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">What provisioning sets up</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">When the phone provisions from Click2Call, it downloads everything you chose in the portal: the number on each line, line keys such as BLF and speed dials, the phonebook of your extensions, and the admin password. It also keeps the phone's firmware up to date. Later changes are made in the portal, not on the phone.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">You need the phone plugged into your network, a computer on the same network, and about 15 minutes. Allow longer if the phone needs a firmware update, because it restarts during the upgrade.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 1: find the phone's address and MAC</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">On the phone's keypad menu, open <strong>Network Status</strong> to find its IP address. Enter it in a browser and log in as <strong>admin</strong> (default password 123456). Copy the <strong>MAC address</strong> from <strong>Status → Network</strong>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">On the phone's keypad menu, open <strong>Network Status</strong> to find its IP address. Enter it in a browser and log in as <strong>admin</strong> (default password <strong>123456</strong>). Copy the MAC address from <strong>Status → Network</strong>. Copying it avoids typing errors: one wrong character and the phone asks for a file that doesn't exist.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: add the phone in the portal</h2>
-    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Go to <strong>Voice → Phones</strong> and click <strong>Add a new phone</strong>.</li><li>Choose <strong>Alcatel-Lucent</strong> and your model (for example H3G) as the <strong>Phone Type</strong>.</li><li>Paste the MAC address, choose the numbers for each line and set up any line keys. See <a href="/help/programming-phone-keys" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Programming phone keys</a>.</li><li>Save the phone.</li></ol>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Go to <strong>Voice → Phones</strong> and click <strong>Add a new phone</strong>.</li><li>Choose <strong>Alcatel-Lucent</strong> and your model (for example <strong>H3G</strong>) as the <strong>Phone Type</strong>.</li><li>Paste the MAC address, choose the numbers for each line and set up any line keys. See <a href="/help/programming-phone-keys" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Programming phone keys</a>.</li><li>Set your own <strong>Web Admin Password</strong>. If you leave it blank, it defaults to admin.</li><li>Save the phone.</li></ol>
+    <p class="text-gray-600 leading-relaxed mb-4">Example: a reception phone on an M7 might have Account 1 as the main office number, then BLF keys for each staff extension so reception can see who is free before transferring a call. See <a href="/help/busy-lamp-field-blf" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Busy Lamp Field (BLF)</a> for what the lights mean.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: point the phone at the provisioning server</h2>
     <p class="text-gray-600 leading-relaxed mb-4">In the phone's web interface, open <strong>Provision → Auto Provision</strong>. Enter <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">http://al.securevoip.nz</code> in the <strong>DM URL</strong> field and click <strong>Submit</strong>. Then click <strong>Auto Provision Now</strong>.</p>
-    <p class="text-gray-600 leading-relaxed mb-4">If the phone needs new firmware, it upgrades and restarts. Wait for it to finish.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">If the phone needs new firmware, it upgrades and restarts. Wait for it to finish. Don't unplug the phone while it updates.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The first run uses http so a phone on older firmware can still connect. After that first run, the phone switches itself to the secure address.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 4: provision securely</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Log back in and open <strong>Auto Provision</strong> again. The address should now read https://al.securevoip.nz. Click <strong>Auto Provision Now</strong> once more. After a couple of minutes the phone is set up and ready.</p>
-    <p class="text-gray-600 leading-relaxed mb-4">The phone's admin password changes to the one set in the portal after provisioning.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Log back in and open <strong>Auto Provision</strong> again. The address should now read <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">https://al.securevoip.nz</code>. Click <strong>Auto Provision Now</strong> once more. After a couple of minutes the phone is set up and ready.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The phone's admin password changes to the one set in the portal after provisioning. Use that password the next time you log in to the phone's web page.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 5: test</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li>Check your number or label shows on the phone's screen.</li><li>In <strong>Voice → Line Manager</strong>, the line's status dot should no longer be red.</li><li>Call the phone from a mobile, then call out to a mobile. Check you can hear each other both ways.</li><li>Press a BLF key while a colleague is on a call to check the light follows their line.</li></ul>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Making changes later</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Edit the phone in <strong>Voice → Phones</strong> and save. Tick <strong>Send a reboot request to the handset to force a provisioning update</strong> to apply it straight away. Otherwise the phone picks up changes at its next scheduled check, which you set with <strong>Reboot request to phone</strong>.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">If something goes wrong</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>The address still shows http after Step 3.</strong> The firmware update may not have finished. Wait a few minutes, log back in and click <strong>Auto Provision Now</strong> again.</li><li><strong>You can't log in with 123456 any more.</strong> The phone has provisioned and taken the portal's <strong>Web Admin Password</strong>.</li><li><strong>The phone registers but calls have no sound one way.</strong> Your router is the likely cause. See <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>.</li><li><strong>Your model isn't in the Phone Type list.</strong> Use the <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for desk phones and PBX systems</a> to set it up by hand, or contact support.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">Looking at other brands? See <a href="/help/which-phones-can-i-use" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Which phones can I use?</a></p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>

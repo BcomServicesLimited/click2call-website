@@ -7,7 +7,7 @@
   <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <title>Setting Up the Phone Port on a FRITZ!Box | Help Centre | Click2Call</title>
   <link rel="canonical" href="https://www.click2call.com.au/help/fritzbox-phone-port" />
-  <meta name="description" content="Many FRITZ!Box routers have a built-in phone port. You can register a Click2Call number on it and plug an ordinary analogue phone straight in. This guide.">
+  <meta name="description" content="Register a Click2Call number on a FRITZ!Box phone port: settings, assigning the number to a phone, testing, star codes and fixing common problems.">
   <link rel="preload" as="image" href="/assets/images/click2call_header_logo_clear.webp">
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=bc20c68f2e">
   <link rel="stylesheet" href="/assets/css/brand.css?v=3912708188">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.click2call.com.au/help/fritzbox-phone-port">
   <meta property="og:title" content="Setting Up the Phone Port on a FRITZ!Box | Help Centre | Click2Call">
-  <meta property="og:description" content="Many FRITZ!Box routers have a built-in phone port. You can register a Click2Call number on it and plug an ordinary analogue phone straight in. This guide.">
+  <meta property="og:description" content="Register a Click2Call number on a FRITZ!Box phone port: settings, assigning the number to a phone, testing, star codes and fixing common problems.">
   <meta property="og:image" content="https://www.click2call.com.au/assets/images/click2call_og_image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,9 +26,9 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-11-25",
   "headline": "Setting Up the Phone Port on a FRITZ!Box",
-  "description": "Many FRITZ!Box routers have a built-in phone port. You can register a Click2Call number on it and plug an ordinary analogue phone straight in. This guide.",
+  "description": "Register a Click2Call number on a FRITZ!Box phone port: settings, assigning the number to a phone, testing, star codes and fixing common problems.",
   "url": "https://www.click2call.com.au/help/fritzbox-phone-port",
   "author": {
     "@type": "Person",
@@ -45,7 +45,7 @@
 </script>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Setting Up the Phone Port on a FRITZ!Box | Help Centre | Click2Call">
-  <meta name="twitter:description" content="Many FRITZ!Box routers have a built-in phone port. You can register a Click2Call number on it and plug an ordinary analogue phone straight in. This guide.">
+  <meta name="twitter:description" content="Register a Click2Call number on a FRITZ!Box phone port: settings, assigning the number to a phone, testing, star codes and fixing common problems.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -294,29 +294,40 @@
       </nav>
       <div class="flex items-center gap-3 mb-3">
         <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-[#3B9C49]">Phones &amp; Devices</span>
-        <span class="text-xs text-gray-400">2 min read</span>
+        <span class="text-xs text-gray-400">4 min read</span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Setting Up the Phone Port on a FRITZ!Box</h1>
       <p class="text-gray-600 leading-relaxed">Many FRITZ!Box routers have a built-in phone port. You can register a Click2Call number on it and plug an ordinary analogue phone straight in. This guide covers the phone settings only.</p>
-<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-10">October 2026</time></p></div>
+<div class="help-reviewed mt-4 flex items-center gap-3"><span class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background-color:#3B9C49;" aria-hidden="true">RC</span><p class="text-sm text-gray-600">Reviewed by <a href="/about/" class="font-semibold text-gray-900 hover:text-[#3B9C49]">Royce Clark</a>, Director &middot; Updated <time datetime="2026-11">November 2026</time></p></div>
     </div>
   </div>
 
   <!-- Article body -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">When this is a good fit</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">A FRITZ!Box with a phone port (marked FON) does the job of an analogue adaptor. It suits a home office or a small shop that wants to keep using an ordinary phone or cordless base without buying extra hardware. Most FRITZ!Box models also have a built-in DECT base, so a compatible cordless handset can register to the router itself.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">You won't get line keys, BLF lamps or a phonebook pushed from the portal, because the FRITZ!Box isn't provisioned by Click2Call. Cloud features still work: voicemail, call forwarding, ring groups and the auto attendant all run on Click2Call's side. This guide covers the phone settings only.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Before you start</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">In <strong>Voice → Line Manager</strong>, note the number and set a line password for it. If the FRITZ!Box screens misbehave in Chrome, try another browser.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">In <strong>Voice → Line Manager</strong>, note the number and set a line password for it. New numbers have no password until you type one in the <strong>Password</strong> box and click <strong>Save Changes</strong>. This is the line password, not your portal login. If the FRITZ!Box screens misbehave in Chrome, try another browser.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 1: log in</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Connect to the FRITZ!Box network and open http://192.168.178.1 (or http://fritz.box). Log in with the FRITZ!Box password.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Connect to the FRITZ!Box network and open http://192.168.178.1 (or http://fritz.box). Log in with the FRITZ!Box password. It's usually printed on the label under the router unless someone has changed it.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 2: add a telephone number</h2>
     <p class="text-gray-600 leading-relaxed mb-4">Go to <strong>Telephony → Telephone Numbers</strong>. Delete any number you aren't using. Click <strong>New Telephone Number</strong>, choose <strong>IP-based Line</strong>, and click <strong>Next</strong>. Enter:</p>
-    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Telephony Provider</td><td class="px-4 py-2.5 text-gray-600">Other Provider</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Telephone number for registration</td><td class="px-4 py-2.5 text-gray-600">Your number as shown in Line Manager, e.g. 61370500989</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Internal telephone number</td><td class="px-4 py-2.5 text-gray-600">The same number</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">User name</td><td class="px-4 py-2.5 text-gray-600">The same number</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Authentication name</td><td class="px-4 py-2.5 text-gray-600">The same number</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Password</td><td class="px-4 py-2.5 text-gray-600">The line password from Line Manager</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Registrar</td><td class="px-4 py-2.5 text-gray-600"><span class="font-mono">sip.click2call.com.au</span></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Proxy server</td><td class="px-4 py-2.5 text-gray-600"><span class="font-mono">sip.click2call.com.au</span></td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">DTMF transmission</td><td class="px-4 py-2.5 text-gray-600">RTP/AVP</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Use telephone number for registration</td><td class="px-4 py-2.5 text-gray-600">Ticked</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Connect via</td><td class="px-4 py-2.5 text-gray-600">IPv4 only</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Country code and area code prefixing</td><td class="px-4 py-2.5 text-gray-600">None for both</td></tr></tbody></table></div>
+    <div class="mb-8 overflow-x-auto rounded-lg border border-gray-200"><table class="w-full text-sm"><thead class="bg-gray-100 border-b border-gray-200"><tr><th class="text-left px-4 py-2.5 font-semibold text-gray-700">Setting</th><th class="text-left px-4 py-2.5 font-semibold text-gray-700">What to enter</th></tr></thead><tbody class="divide-y divide-gray-100 bg-white"><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Telephony Provider</td><td class="px-4 py-2.5 text-gray-600">Other Provider</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Telephone number for registration</td><td class="px-4 py-2.5 text-gray-600">Your number as shown in Line Manager, e.g. 61370500989</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Internal telephone number</td><td class="px-4 py-2.5 text-gray-600">The same number</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">User name</td><td class="px-4 py-2.5 text-gray-600">The same number</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Authentication name</td><td class="px-4 py-2.5 text-gray-600">The same number</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Password</td><td class="px-4 py-2.5 text-gray-600">The line password from Line Manager</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Registrar</td><td class="px-4 py-2.5 text-gray-600">sip.click2call.com.au</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Proxy server</td><td class="px-4 py-2.5 text-gray-600">sip.click2call.com.au</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">DTMF transmission</td><td class="px-4 py-2.5 text-gray-600">RTP/AVP</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Use telephone number for registration</td><td class="px-4 py-2.5 text-gray-600">Ticked</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Connect via</td><td class="px-4 py-2.5 text-gray-600">IPv4 only</td></tr><tr><td class="px-4 py-2.5 font-medium text-gray-800 whitespace-nowrap">Country code and area code prefixing</td><td class="px-4 py-2.5 text-gray-600">None for both</td></tr></tbody></table></div>
     <p class="text-gray-600 leading-relaxed mb-4">Click <strong>Next</strong> twice. The FRITZ!Box tests the connection, and a green light appears next to the number when it registers.</p>
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: test</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Plug your phone into phone port 1 (FON 1). Call a landline and a mobile, then call your number to check incoming calls.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">Two settings matter most. <strong>RTP/AVP</strong> sends keypad tones the way Click2Call expects, so menu choices like "press 1 for accounts" work. <strong>None</strong> for prefixing stops the FRITZ!Box adding its own country or area code to the numbers you dial, which makes calls fail. Always dial the full number with the area code, for example 0731234567.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 3: assign the number to your phone</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">A new number doesn't always ring a phone straight away. Under <strong>Telephony → Telephony Devices</strong>, edit the device on FON 1 (or your DECT handset). Choose the Click2Call number for outgoing calls, and tick it under the numbers the phone should ring for. Save.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Step 4: test</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">Plug your phone into phone port 1 (FON 1). Call a landline and a mobile, then call your number to check incoming calls. In the portal, the number's status dot in <strong>Voice → Line Manager</strong> should no longer be red.</p>
     <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Star codes on a FRITZ!Box</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">The FRITZ!Box uses star codes of its own. To use a Click2Call code, put <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*#</code> in front. For example, dial <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*#*55</code> for voicemail. See <a href="/help/star-codes" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Star codes</a>.</p>
+    <p class="text-gray-600 leading-relaxed mb-4">The FRITZ!Box uses star codes of its own. To use a Click2Call code, put <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*#</code> in front. For example, dial <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*#*55</code> for voicemail, or <code class="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 text-[0.9em]">*#*78</code> to turn on do not disturb. See <a href="/help/star-codes" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Star codes</a> for the full list.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Avoid two answering machines</h2>
+    <p class="text-gray-600 leading-relaxed mb-4">If the FRITZ!Box answering machine is turned on, it can answer before Click2Call voicemail does. Callers then leave messages in two places. Use one or the other: Click2Call voicemail emails messages to you and keeps working when your internet is down. See <a href="/help/how-to-set-up-voicemail" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Setting up voicemail</a>.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Troubleshooting</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed mb-6"><li><strong>No green light:</strong> check the number is in the 61 format and the line password matches Line Manager exactly. Then check no other phone or app is using the same number and password.</li><li><strong>Calls drop or audio is one-way:</strong> see <a href="/help/sip-alg-one-way-audio" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Fixing one-way audio and dropped registrations</a>. Don't forward ports to the FRITZ!Box for phone calls; Click2Call doesn't need it.</li><li><strong>Outgoing calls fail with a strange tone:</strong> check prefixing is set to None and dial the full number.</li><li><strong>Internet drops take the phone with it:</strong> turn on <strong>Forward when Offline</strong> so calls reach your mobile. See <a href="/help/calls-during-power-or-internet-outage" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Keeping calls coming in during an outage</a>.</li></ul>
+    <p class="text-gray-600 leading-relaxed mb-4">For a device with no step-by-step guide, use the <a href="/help/sip-settings-for-devices-and-pbx" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">SIP settings for desk phones and PBX systems</a>. For other phones, see <a href="/help/which-phones-can-i-use" class="text-[#3B9C49] underline hover:text-[#2E7A3A]">Which phones can I use?</a></p>
 
     <div class="border-t border-gray-200 pt-8 mt-12 mb-10">
       <h2 class="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
