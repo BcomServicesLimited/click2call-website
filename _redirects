@@ -121,3 +121,24 @@
 /help/remote-extension-options  /help/extension-numbers-and-groups  301
 /help/two-factor-login  /help/how-to-add-portal-logins  301
 /help/how-to-add-channels  /help/plans-numbers-and-channels  301
+
+# --- .html forms of the 14 merged help guides (Search Console 404s, 27 Nov 2026) ---
+/help/ai-alerts.html  /help/ai-call-reports  301
+/help/ai-custom-queries.html  /help/ai-call-reports  301
+/help/call-recording-settings.html  /help/how-to-view-call-recordings  301
+/help/message-playback.html  /help/hold-music-and-feature-order  301
+/help/conference-rooms-and-meetings.html  /help/conference-calls  301
+/help/voice-console-live-calls.html  /help/how-to-use-live-call-dashboard  301
+/help/network-status.html  /help/calls-during-power-or-internet-outage  301
+/help/phone-offline-alerts.html  /help/calls-during-power-or-internet-outage  301
+/help/secure-voip-android-background-mode.html  /help/softphone-setup-and-troubleshooting  301
+/help/secure-voip-app-transfers.html  /help/call-parking-pickup-transfers  301
+/help/call-barring.html  /help/outgoing-call-pin-and-call-assignment  301
+/help/remote-extension-options.html  /help/extension-numbers-and-groups  301
+/help/two-factor-login.html  /help/how-to-add-portal-logins  301
+/help/how-to-add-channels.html  /help/plans-numbers-and-channels  301
+
+# --- Old AI Agents page (removed earlier in 2026) ---
+/ai-agents  /ai-receptionist/  301
+/ai-agents/  /ai-receptionist/  301
+/ai-agents.html  /ai-receptionist/  301
