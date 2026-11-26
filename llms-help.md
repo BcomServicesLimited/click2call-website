@@ -4932,6 +4932,10 @@ If you connect your own PBX with a SIP trunk, set call forwarding on the trunk�
 
 Voicemail runs in the cloud too. If nobody answers, callers can leave a message and you’ll get it by email.
 
+### Calling 000 during an outage
+
+Desk phones in the office canDesk phones and apps on your lines can’t call 000 while the power or internet is down. Keep a charged mobile phone handy and use it for emergency calls.rsquo;t call 000 while the office power or internet is down. Keep a charged mobile phone handy and call 000 from its own phone app. See [calling 000 from a VoIP phone](https://www.click2call.com.au/blog/voip-000-emergency-calls).
+
 ### If calls still aren’t coming through
 
 In **Voice → Line Manager**, each line has a status dot. Red means the line is offline or not registered. Click the number: the status panel shows the **IP Address** and **Last Registered** time. If Last Registered is recent and the IP address is yours, the phone is connecting. If not, restart your router first, then the phones once the internet is back.
