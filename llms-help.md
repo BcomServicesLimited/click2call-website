@@ -531,7 +531,7 @@ Bring it across for $100 inc GST. It keeps working until it moves.](https://www.
 A $25 Business Line for each person, with their own number and 300 minutes (ex GST)](https://www.click2call.com.au/help/how-to-add-user)
 [#### Have us set it up
 
-Done for you: $300 ex GST for 1 to 3 lines, free on approval with 4 or more, done in 1–2 business days](https://www.click2call.com.au/contact/)
+Done for you: $300 ex GST one-off, any team size, done in 1–2 business days](https://www.click2call.com.au/contact/)
 
 ### What the trial credit covers
 
@@ -1891,7 +1891,7 @@ If you already have a PBX, keep it and connect it with a SIP trunk. There are st
 - Second-hand phones should be factory-reset before you start, so another provider's settings can't get in the way.
 - Don't buy Cisco SPA devices new. Cisco no longer releases security updates for them.
 
-Rather not do it yourself? Done-for-you set-up is $300 ex GST for 1 to 3 lines, and free on approval for 4 or more.
+Rather not do it yourself? Done-for-you set-up is a one-off $300 ex GST, whatever the size of your team.
 
 ### When the power or internet goes out
 
@@ -4468,7 +4468,7 @@ Bring it across for $100 inc GST. It keeps working until it moves.](https://www.
 A $25 Business Line for each person, with their own number and 300 minutes (ex GST)](https://www.click2call.com.au/help/how-to-add-user)
 [#### Have us set it up
 
-Done for you: $300 ex GST for 1 to 3 lines, free on approval with 4 or more, done in 1–2 business days](https://www.click2call.com.au/contact/)
+Done for you: $300 ex GST one-off, any team size, done in 1–2 business days](https://www.click2call.com.au/contact/)
 
 ### Basic apps and the contacts list
 
@@ -7024,7 +7024,7 @@ Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Upd
 | Plan | Price | What it’s for |
 | Business Line | $25 + GST a month ($27.50) | A full business line for making and receiving calls, with 300 outbound minutes a month included. |
 | Business Number Older accounts may show Inbound Business Number | $10 + GST a month ($11.00) | A number for receiving calls, with no included minutes. Your extensions can call out showing it at standard rates. |
-| Teams Line | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: a Business Number can’t be used with Teams. Done-for-you set-up is $300 + GST for 1 to 3 lines, or free on approval with 4 or more lines once the first month is paid. |
+| Teams Line | $25 + GST a month ($27.50) | A number used for calling inside Microsoft Teams. Each Teams user needs this line: a Business Number can’t be used with Teams. Done-for-you set-up is a one-off $300 + GST, whatever the size of your team. |
 | Internal extension | Free | A short extension on your phone system, for a person, a voicemail box or a feature. |
 
 New 04 mobile numbers have a one-off $50 allocation fee including GST, which new local numbers don’t. After that they cost the same as a local number: $10 + GST a month to receive calls, or $25 + GST a month as a Business Line with 300 outbound minutes included. We add a new mobile number to your account by hand, usually within 24 hours, Monday to Friday, and we email you when the number is active.

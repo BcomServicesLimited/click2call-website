@@ -10,15 +10,24 @@ Royce approved new customer-facing plan names on 24 Nov 2026. Prices, fees and t
 
 The sentence to reuse: **a number receives; a line makes and receives.** "Business phone system" is the umbrella: a team's phone system is built from Business Lines.
 
-Set-up terms (Royce settled 24 Nov 2026), shown wherever set-up is described:
+Set-up terms (changed 27 Nov 2026, see below; the 24 Nov three-tier version is retired), shown wherever set-up is described:
 
 1. **Set it up yourself**: free. Online, about 30 minutes, with guides and email support.
-2. **Done for you, 1 to 3 lines**: $300 ex GST, configured remotely.
-3. **Done for you, 4 or more Business Lines or Teams Lines**: free **on approval** (Click2Call reviews each request), once the first month is paid for those lines (not on trial credit alone).
+2. **Done for you (professional set-up)**: a one-off $300 ex GST, whatever the size of the team. Remote, technical configuration only, no training, 1–2 business days.
 
-"Done for you" replaces "Managed setup" as the customer-facing name ("done-for-you (managed) set-up" kept in a few places for search). Scope unchanged: remote, technical configuration only, no training, 1–2 business days. Royce, 24 Nov 2026: Teams set-up follows the same rule ($300 flat for 1 to 3 lines, free on approval for 4+); the separate $50 a user Teams fee and the $50 a user "additional user set-up" fee are gone. No clawback wording.
+"Done for you" replaces "Managed setup" as the customer-facing name ("done-for-you (managed) set-up" kept in a few places for search). Teams set-up follows the same rule; the separate $50 a user Teams fee and the $50 a user "additional user set-up" fee are gone. No clawback wording.
 
-Code notes: the calculator treats lines = Business Lines + a main number on the 300-minute plan; at 4+ lines done-for-you set-up shows "$0, free on approval" on screen, in the smart recommendation and in the PDF. Under 4 lines it is a flat $300, however many people are on extensions (also in the PDF, which before skipped set-up when there were no lines). The Formspree "Setup Type" value is still "Managed Setup" (read by the PSA).
+Code notes: the calculator, receipt, smart recommendation and PDF quote charge done-for-you set-up at a flat $300 at every line count (the PDF shows it even when there are no lines). The Formspree "Setup Type" value is still "Managed Setup" and the "Cloud PBX Users" field is unchanged (both read by the PSA).
+
+## Set-up terms: one flat fee (27 Nov 2026)
+
+Royce changed his mind on the 24 Nov set-up terms and said to do it now: **one flat, one-off $300 ex GST professional set-up fee for everybody**, whether the customer has 1, 3, 10 or 50 users. Reason: the fee is a filter so time is not spent on small set-ups, and a large set-up brings more monthly revenue anyway. So there is no size cap, no "free on approval" tier, no "once the first month is paid" condition and no per-line or per-user set-up fee. Self set-up stays free. Prices, plan names, the port fee and the trial did not change.
+
+Sentence to reuse: "Our professional set-up is a one-off $300 plus GST, whatever the size of your team."
+
+What changed: every page that stated the old tiers (pricing, home, /cloud-pbx/, Teams, /compare/ and its Microsoft Calling Plan page, about, FAQ, city and industry pages, case studies, four help guides, five blog posts, llms.txt, llms-full.md, regenerated llms-help.md). Case-study and city-page cost tables now show done-for-you set-up as $300 once, any team size, instead of "Free on approval". Pricing calculator: `setupFree` removed; $300 at every size on screen, in the note, and in the PDF; the smart recommendation no longer promises $0 at 4+ lines; the pricing set-up section says "Two ways to get set up". Two of the December test pages (`/voip-melbourne/`, `blog/voip-for-small-business.html`) had their set-up price sentences corrected too; `/voip-australia/` had no set-up tiers (a price fact, not the plan-name test). Titles, headings, URLs, links and tracked buttons unchanged. Change logs: `docs/*-setup-flat-fee-change-log.json` (pricing, homepage, cloud-pbx, teams, compare; checked with `scripts/compare_pages.py`).
+
+Not changed: the internal, untracked `help/primary-knowledge-base.html` (still lists the old per-user set-up fees) and the older per-page plan-names change logs, which are a record of 24 Nov.
 
 ## What changed
 

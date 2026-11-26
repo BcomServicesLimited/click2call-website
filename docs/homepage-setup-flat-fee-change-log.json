@@ -1,0 +1,26 @@
+[
+ {
+  "kind": "sentences-removed",
+  "old": "Done-for-you set-up free on approval with 4 or more lines",
+  "new": "",
+  "reason": "Set-up terms changed to one flat fee (Royce, 27 Nov 2026): done-for-you set-up is a one-off $300 ex GST whatever the size of the team; the free-on-approval tier for 4 or more lines and the 1-to-3-lines limit are gone. Self set-up stays free."
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "If you would rather we built it for you, done-for-you set-up is $300 ex GST for 1 to 3 lines, and free on approval for 4 or more Business Lines or Teams Lines once the first month is paid.",
+  "new": "",
+  "reason": "Set-up terms changed to one flat fee (Royce, 27 Nov 2026): done-for-you set-up is a one-off $300 ex GST whatever the size of the team; the free-on-approval tier for 4 or more lines and the 1-to-3-lines limit are gone. Self set-up stays free."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up: a one-off $300 ex GST, any team size",
+  "reason": "Set-up terms changed to one flat fee (Royce, 27 Nov 2026): done-for-you set-up is a one-off $300 ex GST whatever the size of the team; the free-on-approval tier for 4 or more lines and the 1-to-3-lines limit are gone. Self set-up stays free."
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "If you would rather we built it for you, done-for-you set-up is a one-off $300 ex GST, whatever the size of your team.",
+  "reason": "Set-up terms changed to one flat fee (Royce, 27 Nov 2026): done-for-you set-up is a one-off $300 ex GST whatever the size of the team; the free-on-approval tier for 4 or more lines and the 1-to-3-lines limit are gone. Self set-up stays free."
+ }
+]
