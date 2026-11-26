@@ -433,14 +433,14 @@
     </div>
 </div>
 <script>
-document.addEventListener(\'DOMContentLoaded\', function() {
+document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll(".faq-toggle").forEach(function(btn) {
-        btn.addEventListener(\'click\', function() {
-            var expanded = this.getAttribute(\'aria-expanded\') === \'true\';
-            this.setAttribute(\'aria-expanded\', !expanded);
+        btn.addEventListener('click', function() {
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
             var answer = this.nextElementSibling;
-            answer.classList.toggle(\'hidden\');
-            this.querySelector(".faq-icon").style.transform = expanded ? \'\' : \'rotate(180deg)\';
+            answer.classList.toggle('hidden');
+            this.querySelector(".faq-icon").style.transform = expanded ? '' : 'rotate(180deg)';
         });
     });
 });
