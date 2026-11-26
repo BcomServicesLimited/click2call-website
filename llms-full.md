@@ -207,7 +207,7 @@ The `/compare` page (https://www.click2call.com.au/compare/) is a step-by-step g
 **Microsoft Teams & SIP**
 
 22. **Does Click2Call work with Microsoft Teams?** Yes. Click2Call provides Microsoft Teams Calling via Direct Routing at $25/line/month ex GST — real inbound and outbound calls on Australian numbers directly inside Teams. It is a full Cloud PBX behind the Teams interface, not just a SIP trunk. Customers supply their own Microsoft 365 licences. See the setup guide at https://www.click2call.com.au/help/how-to-set-up-microsoft-teams
-23. **Do you offer SIP trunks?** Yes. SIP Trunks connect an existing on-premise IP PBX to the Click2Call network and are available on request. Each trunk provides 2 concurrent channels.
+23. **Do you offer SIP trunks?** Yes. SIP Trunks connect an existing on-premise IP PBX to the Click2Call network and are available on request. Each trunk includes 2 concurrent channels; extra channels are $3 + GST a month each, with no upper limit.
 
 **Company, support & data**
 
@@ -383,7 +383,7 @@ Rebuilt October 2026. Phone systems for Australian medical, dental and allied he
 
 ### VoIP and Microsoft Teams Calling for IT Companies
 URL: https://www.click2call.com.au/voip-it-companies-australia/
-Rebuilt October 2026. For Australian IT companies and MSPs. Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026; clients still using it need another Teams calling provider. Click2Call Teams Direct Routing: Teams Line $25 per line per month ex GST (Australian number, 300 outbound minutes, unlimited inbound) plus a Microsoft Teams Phone Standard licence from Microsoft at about $15; self-setup takes 30–45 minutes and is free, done-for-you set-up is $300 ex GST for 1 to 3 lines, free on approval with 4 or more; recording without a Microsoft recording licence. SIP trunks for 3CX, FreePBX, Asterisk and Yeastar are $50 per month with 500 outbound minutes, unlimited inbound and 2 concurrent channels. Webhooks report ringing, answered, ended and missed calls and AI analysis; the call setup API enables click-to-dial; integrations are self-service. Click2Call is run by Royce Clark, who also runs bcom ICT, a business IT services company.
+Rebuilt October 2026. For Australian IT companies and MSPs. Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026; clients still using it need another Teams calling provider. Click2Call Teams Direct Routing: Teams Line $25 per line per month ex GST (Australian number, 300 outbound minutes, unlimited inbound) plus a Microsoft Teams Phone Standard licence from Microsoft at about $15; self-setup takes 30–45 minutes and is free, done-for-you set-up is $300 ex GST for 1 to 3 lines, free on approval with 4 or more; recording without a Microsoft recording licence. SIP trunks for 3CX, FreePBX, Asterisk and Yeastar are $50 per month with 500 outbound minutes, unlimited inbound and 2 concurrent channels included (extra channels $3 + GST a month each). Webhooks report ringing, answered, ended and missed calls and AI analysis; the call setup API enables click-to-dial; integrations are self-service. Click2Call is run by Royce Clark, who also runs bcom ICT, a business IT services company.
 
 ## Example Setups
 

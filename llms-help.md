@@ -3223,11 +3223,11 @@ Over a Registered SIP Trunk, your PBX can present any number on your Click2Call 
 
 ### Limiting simultaneous calls
 
-The **Limit Channels** setting on the profile caps how many calls the trunk can carry at once (No limit, 1 or 2 channels). Leave it on **No limit** unless you want a cap.
+The **Limit Channels** setting on the profile caps how many calls the trunk can carry at once (No limit, 1 or 2 channels). It can only lower the cap: the most calls the trunk can carry at once is the number of channels on your account (2 included with a SIP Trunk, plus any you add at $3 + GST a month each). Leave it on **No limit** unless you want a lower cap.
 
 ### What does a SIP trunk cost?
 
-Changing the connection type does **not** change your billing. To get SIP trunk pricing, change the pilot number's line plan to **SIP Trunk** yourself in **Account → Plan → Line Plans**. The SIP Trunk plan is $50 per month ex GST and includes 500 outbound minutes, unlimited inbound calls and unlimited simultaneous calls. If you're unsure which plan your other numbers should be on, contact support and we'll check for you.
+Changing the connection type does **not** change your billing. To get SIP trunk pricing, change the pilot number's line plan to **SIP Trunk** yourself in **Account → Plan → Line Plans**. The SIP Trunk plan is $50 per month ex GST and includes 500 outbound minutes, unlimited inbound calls and 2 channels (2 calls at once). Add more channels in the portal for $3 + GST a month each; there is no upper limit, so one trunk can carry 20 or more calls at once. If you're unsure which plan your other numbers should be on, contact support and we'll check for you.
 
 ### Troubleshooting
 
@@ -4257,7 +4257,7 @@ Phones & Devices
 
 ## Setting Up a Softphone App
 
-Click2Call recommends the **Basic Edition** app (by Voice Services) for iPhone and Android, and the **Web Phone** on a Windows PC or Mac: it runs in your browser with nothing to download. If you would rather install an app on your computer, **Secure VoIP Micro Edition** (Windows) and the **Telephone App** (Mac) still work. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started.
+Click2Call recommends the **Web Phone** on a Windows PC or Mac: it runs in your browser with nothing to download. For iPhone and Android, we recommend the **Basic Edition** app (by Voice Services). If you would rather install an app on your computer, **Secure VoIP Micro Edition** (Windows) and the **Telephone App** (Mac) still work. All are free. On iPhone and Android, setup is a QR code scan from the portal, with no username or password to type. Select your platform below to get started.
 
 Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
 
