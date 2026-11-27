@@ -678,6 +678,16 @@ var HELP_ARTICLES = [
     featured: true,
     pinned:   false
   },
+  {
+    url:      "/help/iphone-app",
+    title:    "Click2Call iPhone App: Your Business Number on Your iPhone",
+    desc:     "Set up the Click2Call iPhone app: sign in with a QR code, calls that ring when the app is closed, several lines, transfers, Do not disturb, limitations and troubleshooting.",
+    tags:     "iphone app ios app mobile app app store download install click2call app business number on mobile second number softphone callkit ring when closed locked push notifications qr code sign in several lines extension transfer call waiting do not disturb test ringing bluetooth carplay airpods missed call android app",
+    category: "devices",
+    readTime: "7 min read",
+    featured: true,
+    pinned:   false
+  },
 
   {
     url:      "/help/how-to-set-up-softphone",

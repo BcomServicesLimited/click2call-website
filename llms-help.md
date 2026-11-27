@@ -4248,6 +4248,163 @@ The Web Phone also looks after itself. It reconnects as soon as your internet co
 
 - The Web Phone loads no advertising or tracking scripts.
 
+## Click2Call iPhone App: Your Business Number on Your iPhone
+
+Source: https://www.click2call.com.au/help/iphone-app
+
+The Click2Call iPhone app puts your Click2Call business number on your iPhone. Calls ring like normal phone calls, even when the app is closed or the phone is locked, and they show in your iPhone's Recents. Your personal mobile number stays private. The app is free with any Click2Call number. This guide covers signing in, every feature, several lines on one iPhone, and what to check if calls don't ring. On a computer, use the [Click2Call Web Phone](https://www.click2call.com.au/help/web-phone) instead.
+
+Reviewed by [Royce Clark](https://www.click2call.com.au/about/), Director · Updated November 2026
+
+iPhone app: coming soon to the App Store
+Android app also coming soon.
+
+### What you need
+
+- **An iPhone with iOS 16 or later.** The app is for iPhone only for now. On an iPad or a computer, use the [Web Phone](https://www.click2call.com.au/help/web-phone).
+
+- **Your line's QR code, or its SIP username and password.** Both are on the line's page in the portal under **Voice → Line Manager**. The username is your number starting with 61 and no plus (for example 61712345678), or an extension line ID (for example 832800190000). See [account and line passwords](https://www.click2call.com.au/help/account-and-line-passwords) if you need to reset it.
+
+- **Wi-Fi or mobile data.** NBN, office Wi-Fi or a good 4G/5G signal all work.
+
+**Cost:** the app is free. Calls are billed exactly like calls from any other device on your line, and incoming calls are free. The app uses a small amount of mobile data on calls when you're not on Wi-Fi.
+
+### Signing in
+
+1
+
+#### Install Click2Call from the App Store
+
+Search the App Store for **Click2Call**. The app is published by Bcom Services Pty Ltd, the company behind Click2Call.
+
+2
+
+#### Tap Scan QR code
+
+On your computer, open the portal, go to **Voice → Line Manager** and open the line's page. In the app, tap **Scan QR code** and point the iPhone at the QR code. The app reads your login and signs in, with nothing to type. Scan it from inside the app: the iPhone's own Camera app won't sign you in. Or tap **or sign in with your SIP login** and type the username and password exactly as Line Manager shows them. The QR code contains your line's password, so don't share a screenshot of it.
+
+3
+
+#### Allow the microphone and notifications
+
+The app asks to use the microphone (for calls) and to send notifications (so it can tell you about calls you missed). Choose **Allow** for both.
+
+4
+
+#### Check it rings with the app closed
+
+Open **Settings** in the app and check **Ring when the app is closed** is on. Then tap **Test ringing**, lock the iPhone or swipe the app away, and wait: a test call rings within about 10 seconds. If it rings, you're set up.
+
+### Taking calls
+
+- **Calls ring like normal iPhone calls,** with the iPhone's own call screen and a full-screen ringing display on a locked phone. This works when the app is open, in the background, or closed.
+
+- **The Click2Call ringtone** tells you it's a business call, not your personal mobile.
+
+- **The ringing screen shows which line was called** if you have more than one line in the app.
+
+- **Decline sends the caller straight to voicemail** (or to your forward rules). On a locked iPhone, press the side button twice to decline.
+
+- **Answering on another phone stops your iPhone ringing.** If someone answers on a desk phone or the Web Phone first, the iPhone stops ringing.
+
+- **Caller names** come from your account's contacts, with the number always shown.
+
+### Making calls
+
+- **Keypad:** type the number and press the green call button. Your business number shows as the caller ID, not your mobile.
+
+- **Pick a contact:** opens your iPhone's own contact list. Only the number you choose is passed to the app. Your contacts are never copied or uploaded.
+
+- **Call from your iPhone's Recents:** Click2Call calls appear in the iPhone's Recents list, and calling back from there uses your business number.
+
+- **Choose the line:** with several lines, tap **Call from** to pick which number the call comes from.
+
+- **The app's own Recents tab** lists the calls made and received in the app on this iPhone.
+
+### During a call
+
+- **Mute, hold and keypad tones** for phone menus (press 1 for…).
+
+- **Earpiece, speaker, AirPods, Bluetooth and CarPlay,** switched the same way as any iPhone call.
+
+- **Call waiting:** answer a second call and tap **Swap** to move between them.
+
+- **Transfer:** tap **Transfer now** to send the caller straight to another number, or **Talk first** to speak to the other person before you hand the caller over.
+
+- **Calls stay connected when you change networks,** for example when you walk out of the office and the iPhone moves from Wi-Fi to mobile data.
+
+### Several lines on one iPhone
+
+You can add each of your Click2Call lines or extensions to the same app, for example your main number and your 1300 line. Open **Settings**, tap **Add a line** and scan that line's QR code. All your lines ring the same iPhone. Tap a line in Settings to:
+
+- **Ring on this phone:** turn a line off on this iPhone without removing it.
+
+- **Update password:** after you change the line's password in Line Manager, enter the new one here (or scan the new QR code).
+
+- **Remove line:** signs the line out of this iPhone and removes its saved login.
+
+### Do not disturb
+
+Turn on **Do not disturb** in Settings and this iPhone stops ringing. Your other phones on the line, such as a desk phone or the Web Phone, keep ringing. If nobody answers, the caller goes to your voicemail or forward rules as usual. To stop calls on every device after hours, set up [business hours](https://www.click2call.com.au/help/how-to-configure-business-hours) on your number instead.
+
+### Recommended setups
+
+- **On the road:** the iPhone app on your phone, and the [Web Phone](https://www.click2call.com.au/help/web-phone) on your computer at your desk. Both ring together, and answering on one stops the other.
+
+- **Solo operator:** the iPhone app on your phone, with [voicemail to email](https://www.click2call.com.au/help/how-to-set-up-voicemail) for calls you can't take.
+
+- **Team:** give each person their own [extension](https://www.click2call.com.au/help/how-to-add-extension), and add it to their iPhone with its QR code.
+
+### Limitations
+
+- **Not for emergency calls.** Don't use the app for 000. Always call 000 from your iPhone's normal phone.
+
+- **iPhone only for now.** An Android app is coming. Until then, Android users can use the Basic Edition app (see [setting up a softphone](https://www.click2call.com.au/help/how-to-set-up-softphone)), and iPad users the [Web Phone](https://www.click2call.com.au/help/web-phone).
+
+- **It needs an internet connection.** With no Wi-Fi or mobile data, calls can't reach the iPhone. Set up [Forward on No Answer](https://www.click2call.com.au/help/how-to-forward-calls-to-mobile) as a backup if you're often out of coverage.
+
+- **Call quality depends on your connection.** On a very weak mobile signal, audio can break up. Good Wi-Fi or 4G/5G gives the clearest calls, and [our call quality guide](https://www.click2call.com.au/help/call-quality-and-starlink) has more tips.
+
+- **No voicemail, SMS or video in the app.** Voicemail still works as normal on your line and is emailed to you if you've set up voicemail to email.
+
+- **Recents is per device.** The app's Recents tab shows calls on this iPhone only. Your full call history is in the portal.
+
+### Help and diagnostics
+
+- **Check microphone** in Settings tests your microphone before a call.
+
+- **Test ringing** rings the iPhone with a test call, so you can check it rings when locked or closed.
+
+- **Report a problem** sends your message and this iPhone's recent call and connection events straight to Click2Call support. We reply by email.
+
+- **Send diagnostics to support** (on by default) sends the app's call and connection events to our support team as they happen, so we can fix a problem without asking you to repeat it. Other people's numbers are cut to their last three digits. It never includes call audio or passwords, and it's deleted after 30 days. You can turn it off in Settings at any time. See our [privacy policy](https://www.click2call.com.au/privacy/#phone-apps).
+
+### Troubleshooting
+
+| What you see | What to do |
+
+| The login isn't accepted | Scan the QR code again from Line Manager, or check the username is digits only with no plus or spaces. The password is the line's SIP password, not your portal login. If you changed it recently, tap the line in Settings and choose Update password. |
+
+| Calls don't ring when the app is closed | Check Ring when the app is closed is on, the line's Ring on this phone is on, and Do not disturb is off. Then tap Test ringing. Also check no Forward Always rule is active on your line. |
+
+| It rings with no sound | Check the iPhone's silent switch (or Action button) and volume. If a Focus mode such as Sleep or Work is on, allow calls from Click2Call in Settings → Focus on your iPhone. |
+
+| "Missed call: couldn't connect" | The call rang but the iPhone couldn't reach our servers in time, usually because of a weak signal or Wi-Fi that needs a sign-in page. Move to a better connection. If it keeps happening, use Report a problem. |
+
+| "Missed call from … They hung up before the call came through" | Nothing is wrong. The caller hung up just as the call reached your iPhone, so there was nothing left to answer. |
+
+| You can't hear the caller, or they can't hear you | Check you're not on mute and the audio is going where you expect (earpiece, speaker or Bluetooth). Tap Check microphone in Settings, and make sure Click2Call is allowed in your iPhone's Settings → Privacy & Security → Microphone. |
+
+### Privacy and security
+
+- Your line's password is kept in the iPhone Keychain on this iPhone. Our servers never store the password itself, only an encrypted one-way fingerprint of it, used to keep your line signed in.
+
+- Call audio is encrypted between your iPhone and our call servers in Sydney.
+
+- The app doesn't record calls, has no advertising, and contains no third-party analytics or tracking.
+
+- The camera is used only to scan your line's QR code, and the picture isn't kept.
+
 ## Setting Up a Softphone or Mobile App
 
 Source: https://www.click2call.com.au/help/how-to-set-up-softphone

@@ -326,13 +326,13 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/support/</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.click2call.com.au/help/</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -751,6 +751,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.click2call.com.au/help/iphone-app</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.click2call.com.au/help/webrtc-sip-over-websocket</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -818,7 +824,7 @@
   </url>
   <url>
     <loc>https://www.click2call.com.au/privacy/</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
