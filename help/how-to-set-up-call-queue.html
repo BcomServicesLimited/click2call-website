@@ -69,7 +69,7 @@
     {
       "@type": "HowToStep",
       "name": "Set limits and the exit path",
-      "text": "Set Maximum Length for how many callers may wait, where 0 means unlimited, and Queue Timeout for the longest a caller may wait, where 0 means no limit. Use queue exit options to choose where a caller goes when the timeout is reached, such as voicemail or another number."
+      "text": "Set Maximum Length for how many callers may wait, where 0 means no limit, and Queue Timeout for the longest a caller may wait, where 0 means no limit. Use queue exit options to choose where a caller goes when the timeout is reached, such as voicemail or another number."
     },
     {
       "@type": "HowToStep",
@@ -410,7 +410,7 @@
     <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#3B9C49] text-white flex items-center justify-center font-bold text-sm">5</div>
     <div class="flex-1 min-w-0 pt-1">
         <h3 class="font-bold text-gray-900 mb-2">Set limits and the exit path</h3>
-        <p class="text-gray-600 leading-relaxed"><strong>Maximum Length</strong> caps how many callers may wait; 0 means unlimited. <strong>Queue Timeout</strong> caps how long any one caller waits; 0 means no limit.</p><p class="text-gray-600 leading-relaxed">Use <strong>queue exit options</strong> to decide where a caller goes when the timeout is reached — voicemail, another number, or another part of your call flow.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">Unlimited length with no timeout is rarely the right choice. A caller who waits eight minutes and then hangs up is a worse outcome than one sent to voicemail after ninety seconds.</p></div>
+        <p class="text-gray-600 leading-relaxed"><strong>Maximum Length</strong> caps how many callers may wait; 0 means no limit. <strong>Queue Timeout</strong> caps how long any one caller waits; 0 means no limit.</p><p class="text-gray-600 leading-relaxed">Use <strong>queue exit options</strong> to decide where a caller goes when the timeout is reached — voicemail, another number, or another part of your call flow.</p><div class="mt-4 rounded-xl bg-blue-50 border border-blue-100 p-4"><p class="text-sm text-blue-900 leading-relaxed">No length limit and no timeout is rarely the right choice. A caller who waits eight minutes and then hangs up is a worse outcome than one sent to voicemail after ninety seconds.</p></div>
     </div>
 </div>
 
@@ -428,7 +428,7 @@
 <div><h3 class="font-bold text-gray-900 mb-1">What is the difference between a call queue and a ring group?</h3><p class="text-gray-600 leading-relaxed">A ring group rings a set of extensions and, if nobody answers, moves the call to the next step. A queue <em>holds</em> the caller until someone is free. Use a ring group to pass a call along quickly; use a queue when calls arrive faster than the team can answer and you would rather callers waited than got voicemail. See <a class="text-[#3B9C49] hover:underline" href="/help/how-to-create-ring-group">Creating a Ring Group</a>.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Why is the BLF option not working?</h3><p class="text-gray-600 leading-relaxed">BLF monitoring and call pickup directly from the queue require the <strong>Ring All</strong> strategy. With any other strategy selected the option has no effect.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Can a queue run only during business hours?</h3><p class="text-gray-600 leading-relaxed">Yes — set the queue&rsquo;s <strong>Time Schedule</strong>. Outside those hours the call follows the rest of your call flow instead, normally an after-hours greeting or voicemail. See <a class="text-[#3B9C49] hover:underline" href="/help/how-to-configure-business-hours">Configuring Business Hours</a>.</p></div>
-<div><h3 class="font-bold text-gray-900 mb-1">What happens when the queue is full?</h3><p class="text-gray-600 leading-relaxed">Callers beyond the <strong>Maximum Length</strong> are not queued and follow the exit path instead. Setting it to 0 makes the queue unlimited.</p></div>
+<div><h3 class="font-bold text-gray-900 mb-1">What happens when the queue is full?</h3><p class="text-gray-600 leading-relaxed">Callers beyond the <strong>Maximum Length</strong> are not queued and follow the exit path instead. Setting it to 0 removes the limit.</p></div>
 <div><h3 class="font-bold text-gray-900 mb-1">Do queued calls get recorded and transcribed?</h3><p class="text-gray-600 leading-relaxed">Yes. Once answered, a queued call is recorded, transcribed and summarised like any other. While it is waiting it appears in the <a class="text-[#3B9C49] hover:underline" href="/help/how-to-use-live-call-dashboard">live call dashboard</a>, with its wait time.</p></div>
 </div>
     <!-- Related articles -->

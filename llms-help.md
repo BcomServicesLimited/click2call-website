@@ -3227,7 +3227,7 @@ The **Limit Channels** setting on the profile caps how many calls the trunk can 
 
 ### What does a SIP trunk cost?
 
-Changing the connection type does **not** change your billing. To get SIP trunk pricing, change the pilot number's line plan to **SIP Trunk** yourself in **Account → Plan → Line Plans**. The SIP Trunk plan is $50 per month ex GST and includes 500 outbound minutes, unlimited inbound calls and 2 channels (2 calls at once). Add more channels in the portal for $3 + GST a month each; there is no upper limit, so one trunk can carry 20 or more calls at once. If you're unsure which plan your other numbers should be on, contact support and we'll check for you.
+Changing the connection type does **not** change your billing. To get SIP trunk pricing, change the pilot number's line plan to **SIP Trunk** yourself in **Account → Plan → Line Plans**. The SIP Trunk plan is $50 per month ex GST and includes 500 outbound minutes, free incoming calls to local numbers and 2 channels (2 calls at once). Add more channels in the portal for $3 + GST a month each; there is no upper limit, so one trunk can carry 20 or more calls at once. If you're unsure which plan your other numbers should be on, contact support and we'll check for you.
 
 ### Troubleshooting
 
@@ -5958,9 +5958,9 @@ Use the upload buttons at the bottom of the page to add your own **Music on Hold
 
 #### Set limits and the exit path
 
-**Maximum Length** caps how many callers may wait; 0 means unlimited. **Queue Timeout** caps how long any one caller waits; 0 means no limit.
+**Maximum Length** caps how many callers may wait; 0 means no limit. **Queue Timeout** caps how long any one caller waits; 0 means no limit.
 Use **queue exit options** to decide where a caller goes when the timeout is reached — voicemail, another number, or another part of your call flow.
-Unlimited length with no timeout is rarely the right choice. A caller who waits eight minutes and then hangs up is a worse outcome than one sent to voicemail after ninety seconds.
+No length limit and no timeout is rarely the right choice. A caller who waits eight minutes and then hangs up is a worse outcome than one sent to voicemail after ninety seconds.
 
 6
 
@@ -5981,7 +5981,7 @@ BLF monitoring and call pickup directly from the queue require the **Ring All** 
 Yes — set the queue’s **Time Schedule**. Outside those hours the call follows the rest of your call flow instead, normally an after-hours greeting or voicemail. See [Configuring Business Hours](https://www.click2call.com.au/help/how-to-configure-business-hours).
 
 #### What happens when the queue is full?
-Callers beyond the **Maximum Length** are not queued and follow the exit path instead. Setting it to 0 makes the queue unlimited.
+Callers beyond the **Maximum Length** are not queued and follow the exit path instead. Setting it to 0 removes the limit.
 
 #### Do queued calls get recorded and transcribed?
 Yes. Once answered, a queued call is recorded, transcribed and summarised like any other. While it is waiting it appears in the [live call dashboard](https://www.click2call.com.au/help/how-to-use-live-call-dashboard), with its wait time.
@@ -6826,7 +6826,7 @@ An included-minutes allowance is attached to **one specific phone number** on yo
 
 So if you have more than one number, or a number plus an internal extension, only the line carrying the allowance gets the included minutes. Calls made from any other line are charged per minute, even though it is the same account and the same bill.
 
-On current plans the allowance comes with a **Business Line**: $25 + GST a month with 300 outbound minutes, used only by calls made from that number. A **Business Number** ($10 + GST a month) has no included minutes, and internal extensions have none either. Calls past the allowance, or from a line without one, are 10c a minute to landlines and 20c to mobiles (ex GST). There is no unlimited plan. See [plans, numbers and channels](https://www.click2call.com.au/help/plans-numbers-and-channels) for how the charges fit together.
+On current plans the allowance comes with a **Business Line**: $25 + GST a month with 300 outbound minutes, used only by calls made from that number. A **Business Number** ($10 + GST a month) has no included minutes, and internal extensions have none either. Calls past the allowance, or from a line without one, are 10c a minute to landlines and 20c to mobiles (ex GST). Every plan charges for calls past its included minutes. See [plans, numbers and channels](https://www.click2call.com.au/help/plans-numbers-and-channels) for how the charges fit together.
 
 ### A worked example
 

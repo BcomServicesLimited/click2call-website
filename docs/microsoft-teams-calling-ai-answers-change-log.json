@@ -1,0 +1,812 @@
+[
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-removed",
+  "old": "h2: In short",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h2: Adding calling to Microsoft Teams in Australia: the short answers",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: What are the three ways to add calling to Teams?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: Which Microsoft licence do I need?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: What is a Click2Call Teams Line?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: What does it cost for an office of five?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: What is included that Teams users otherwise pay extra for?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "heading-added",
+  "old": "",
+  "new": "h3: What are the steps?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "An Australian phone number connected to Teams through Direct Routing, with 300 minutes of outbound calls and unlimited incoming calls.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call adds the missing piece: calling any phone number in Australia and taking calls on your business number, all from inside Teams.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call charges $25 a month for each Teams Line, which includes an Australian number, 300 outbound minutes and unlimited incoming calls.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call connects Microsoft Teams to the Australian phone network through Direct Routing, with a full business phone system underneath.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call does not sell Microsoft licences.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call runs on prepaid credit.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each person gets a Teams Line : every call recorded, transcribed and summarised inside Teams, with no extra Microsoft recording licence.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each person gets a Teams Line: an Australian number, 300 outbound minutes, incoming calls, call recording, AI transcription, call summaries and sentiment , voicemail to email, auto-attendant and call queues, all in the $25 a month Teams Line (ex GST), paid to Click2Call.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each person gets a Teams Line: an Australian number, 300 outbound minutes, unlimited inbound calls, call recording, AI transcription and summaries, voicemail to email, IVR and call queues for $25 a line a month ex GST, using the Teams dial pad they already have.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Each user also needs a Microsoft Teams Phone Standard licence (previously called Phone System), about $15.00 a user a month ex GST on Microsoft’s Australian price list, bought directly from Microsoft.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Existing Australian landline, 1300 and 1800 numbers can be ported to Click2Call and used in Teams.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "From about $40 ex GST",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "In short",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "It replaces a Microsoft Calling Plan (in Australia only ever sold through Telstra, and now closed to new customers) with a local provider like Click2Call.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Microsoft Teams Phone Standard is Microsoft’s Australian list price, ex GST on an annual commitment, checked September 2026; monthly billing costs more and Microsoft sets the price, so confirm at microsoft.com.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Microsoft offers its own Calling Plans only in specific markets; in Australia they have come through Telstra Calling for Office 365, which closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Microsoft’s own Calling Plans are offered only in some markets; in Australia they were delivered through Telstra Calling for Office 365, which closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "No new apps, no new hardware, no Microsoft Calling Plan.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Note: Teams calling needs a Microsoft 365 business plan with the Teams Phone Standard licence (about $15.00 a user a month ex GST, bought from Microsoft).",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Recordings are stored in Australia, and there is no contract. $25 a line a month ex GST , with 300 minutes on every line.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Teams Line (Australian number, 300 outbound minutes, unlimited incoming)",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026; check microsoft.com for current availability",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "The licence is bought from Microsoft; Click2Call does not charge for it.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "There is no minimum contract, no minimum monthly spend and no cancellation fee.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "This approach, called Direct Routing, is approved by Microsoft.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Varies by plan",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Your team already uses Microsoft Teams for chat and meetings.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "about $15.00 a user a month ex GST",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "about $15.00 ex GST",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "✓ Keep your numbers.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "✓ No lock-in.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "✓ What Microsoft charges separately.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "✓ What it is.",
+  "new": "",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$100 inc GST",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$125.00",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$200.00",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$252.50",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$300 ex GST",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$40 ex GST",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$52.50",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$75.00",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "5 Microsoft 365 Business Basic licences, if you don’t have Microsoft 365 yet (Microsoft)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "5 Teams Lines (Click2Call)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "5 Teams Phone Standard licences (Microsoft)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Teams Line gives each person an Australian number in Teams and 300 minutes of calls to Australian landlines and mobiles , with incoming calls included.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Teams Line is $25 a line a month ex GST ($27.50 inc GST) for each person.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Teams Line is a Business Line inside Teams.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A Teams Line is delivered by Direct Routing, with a full business phone system underneath: auto-attendant, call queues, ring groups, voicemail to email, call recording, and AI transcripts and summaries .",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A business that already uses Teams for chat and meetings already has the first one.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AU$15.00 a user a month ex GST",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AU$15.00 ex GST",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Adding calling to Microsoft Teams in Australia: the short answers",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An Australian phone number connected to Teams through Direct Routing, with 300 minutes of calls to Australian landlines and mobiles, and incoming calls included.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An office of five pays $125 a month for five Teams Lines, plus Microsoft’s licences: see the worked total .",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Auto-attendant, call queues, ring groups and voicemail to email on every line.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Both prices are Microsoft’s Australian list prices, ex GST on an annual subscription, checked on microsoft.com on 28 November 2026.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Calls beyond each line’s 300 minutes are 10c a minute to landlines and 20c to mobiles, ex GST.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Check that each person has Microsoft 365 with Teams and a Teams Phone Standard licence, in the Microsoft 365 admin centre.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Checked on Microsoft’s own pages on 28 November 2026: PSTN connectivity options and Availability in Australia .",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call bills the Teams Lines and any one-off you choose, from prepaid credit.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call charges $25 a month for each Teams Line, which includes an Australian number, 300 minutes of calls to Australian landlines and mobiles, and incoming calls.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call connects by Direct Routing: each person gets a Teams Line , an Australian number with 300 minutes of calls to Australian landlines and mobiles, for $25 a line a month ex GST , with a full phone system underneath.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call runs on prepaid credit, with no minimum monthly spend and no cancellation fee.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Compare the three side by side .",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you professional set-up (optional, any team size)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Done-for-you set-up is a one-off $300 ex GST, whatever the size of your team.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each month, ex GST",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each person also needs a Microsoft Teams Phone Standard licence (AU$15.00 a month ex GST), bought from Microsoft.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each person gets a Teams Line: an Australian number, 300 minutes of calls to Australian landlines and mobiles, incoming calls, call recording, AI transcription and summaries, voicemail to email, IVR and call queues for $25 a line a month ex GST, using the Teams dial pad they already have.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Every call is recorded, transcribed and summarised, with no Microsoft compliance-recording licence.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Free",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "From AU$10.50 ex GST (Business Basic)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "In Teams itself, automatic (compliance) recording needs a certified third-party recording product as well as a qualifying Microsoft licence, according to Microsoft’s recording documentation (checked 28 November 2026).",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "In Voice → Teams, enter each person’s Microsoft 365 email address.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Keep your numbers: move existing numbers across for $100 inc GST each.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft Teams can chat and hold meetings out of the box, but it cannot call ordinary phone numbers until two things are added: a Microsoft Teams Phone licence for each person, and a phone service connected to Teams.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft also lists Teams Phone Mobile, which links a mobile SIM plan to Teams.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft bills its own licences.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft does not sell its own Calling Plans in Australia, so a local provider like Click2Call carries the calls instead.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft does not sell its own Calling Plans in Australia.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft does not sell its own Calling Plans in Australia; Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft lists Calling Plans as not available to purchase in Australia (checked 28 November 2026).",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft prices are Microsoft’s Australian list prices, ex GST on an annual subscription, checked on microsoft.com on 28 November 2026.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft sets them, so confirm before you buy.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft’s Australia availability page lists Calling Plans as not available to purchase in Australia.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Microsoft’s licensing page says both Direct Routing and Operator Connect require a Teams Phone licence.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Moving an existing number across (per number)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Note: Teams calling needs a Microsoft 365 business plan with the Teams Phone Standard licence (AU$15.00 a user a month ex GST, bought from Microsoft).",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "One-off",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Rather hand it over?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Recordings are stored in Australia, and there is no contract.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Start a Click2Call free trial , add credit , and add a Teams Line for each person (Account → Numbers, line type “Microsoft Teams”).",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Step-by-step Teams set-up guide .",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Teams Line (Australian number, 300 minutes of calls, incoming calls included)",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Telstra Calling for Office 365 closed to new customers on 1 November 2024 and is withdrawn from 30 November 2026",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The first is a Microsoft 365 business plan that includes Teams, such as Microsoft 365 Business Basic (AU$10.50 a user a month).",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The licences are bought from Microsoft; Click2Call does not charge for them.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The portal writes the PowerShell commands; run them in Teams admin.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The second is the Microsoft Teams Phone Standard licence (AU$15.00 a user a month), which turns on the Teams dial pad.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "These licences are bought from Microsoft; Click2Call does not sell Microsoft licences.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "This approach, called Direct Routing, is one of the ways Microsoft supports for connecting Teams to the phone network.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "This section explains how that works in Australia, what it costs and how to do it.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "To add phone calling to Microsoft Teams in Australia, you connect a phone service to Teams by Operator Connect or Direct Routing.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Total if you already have Microsoft 365 with Teams",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Total including Business Basic",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "What are the steps?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "What are the three ways to add calling to Teams?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "What does it cost for an office of five?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "What is a Click2Call Teams Line?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "What is included that Teams users otherwise pay extra for?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Which Microsoft licence do I need?",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Whichever way you connect, each person who makes and takes phone calls in Teams needs two things from Microsoft.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With Direct Routing, any phone provider can connect to Teams through a certified session border controller (the equipment that passes calls between a phone network and Teams).",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With Operator Connect, a phone carrier certified by Microsoft, which has already connected its network to Teams, carries the calls.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With a Calling Plan, Microsoft itself is the phone company.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With a Click2Call Teams Line, recording happens in the Click2Call phone system, with nothing extra to buy.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "✓ A full phone system.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "✓ Direct Routing: available in Australia, and how Click2Call connects.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "✓ Every call recorded, transcribed and summarised.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "✓ Microsoft Calling Plans: not sold in Australia.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "✓ No contract.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "✓ Operator Connect: available in Australia.",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "links-added",
+  "old": "",
+  "new": "/help/how-to-add-account-credit",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "links-added",
+  "old": "",
+  "new": "/help/how-to-port-number",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "links-added",
+  "old": "",
+  "new": "/help/understanding-your-free-trial",
+  "reason": "AI-answers gap 1 (28 Nov 2026): first screen answers 'how do I add calling to Teams in Australia' — three ways checked on Microsoft Learn 28 Nov (Calling Plans not available to purchase in Australia), Teams Line facts, Microsoft licence prices checked on microsoft.com/en-au 28 Nov (Teams Phone Standard AU$15.00, Business Basic AU$10.50, ex GST, annual), office-of-five table, included extras, steps. 'Unlimited' removed. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ }
+]

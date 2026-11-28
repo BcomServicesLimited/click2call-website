@@ -1,0 +1,236 @@
+[
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$125 for 5 Business Lines, each with a number and 300 minutes",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$135 /month",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$25 a month each: a direct local number and 300 minutes, more than most people use.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "300 minutes on every line, more than most people use",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "A team of 5 is $135.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Business Line: $25 a line a month (ex GST) — a line for each person on your team, to make and receive calls: a local number with 300 minutes included, more than most people use.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Call queues and a live dashboard included",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Done-for-you set-up if you want it: a one-off $300 ex GST",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Five people sharing one practice number, with set-up done for you: five Business Lines at $25 plus $10 for the shared Business Number is $135 a month ex GST, $148.50 inc GST .",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Five users cost $125 a month ex GST; ten users $250.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Inbound calls to your local numbers are included and unlimited.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most $10 customers spend under $5 a month on calls",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most of our $10 customers spend under $5 a month on calls",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most of our $10 customers spend under $5 a month on calls.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Most people choose this, and most spend under $5 a month on calls.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "That includes a local Australian number, 300 outbound minutes, unlimited inbound calls and every feature — IVR, ring groups, call queues, call recording, AI transcription and voicemail to email.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "There is no unlimited plan.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$10 for the main number your customers call; it rings everyone",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$125 for 5 Business Lines: each person’s own number and 300 minutes of calls to Australian landlines and mobiles",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$135 /month ($148.50 inc GST)",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$25 a month each: a direct local number and 300 minutes.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "300 minutes on every line",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A team of 5 is $135 ($148.50 inc GST).",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "AI receptionist, call queues, recording and transcripts included; no contract",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "After a line’s 300 minutes, calls are 10c a minute to landlines and 20c to mobiles, ex GST.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An office of five: A phone system for an office of five has three parts: a line for each person (their own number to make and receive calls), a main number that customers call and that rings everyone, and the call handling around them (a greeting or menu, queues and voicemail).",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Business Line: $25 a line a month (ex GST) — a line for each person on your team, to make and receive calls: a local number with 300 minutes included.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each person has their own number and 300 minutes of calls to Australian landlines and mobiles.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Every plan charges for calls past its included minutes.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Five people sharing one practice number, with set-up done for you: five Business Lines at $25 plus $10 for the shared Business Number is $135 a month ex GST, $148.50 inc GST , plus the one-off $300 ex GST done-for-you set-up.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Five users cost $125 a month ex GST, or $135 ($148.50 inc GST) with a main Business Number that rings everyone; ten users $250.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Inbound calls to your local numbers are included and free.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "One-off costs: done-for-you professional set-up is $300 ex GST if you want it (setting it up yourself is free), and each number you move across is $100 inc GST.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "One-off if you want it: done-for-you set-up $300 ex GST (self set-up is free); $100 inc GST for each number moved across",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "That includes a local Australian number, 300 outbound minutes, incoming calls and every feature — IVR, ring groups, call queues, call recording, AI transcription and voicemail to email.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The AI receptionist, call queues, recording and transcripts are included, and there is no contract.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "The main number rings everyone.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With Click2Call that is 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST) .",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example made complete and identical everywhere: 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST), one-offs ($300 ex GST done-for-you set-up optional, $100 inc GST per number moved), calls past 300 minutes 10c/20c ex GST. FAQ structured data changed word for word with the visible FAQ. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ }
+]

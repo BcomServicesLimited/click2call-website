@@ -1,0 +1,122 @@
+[
+ {
+  "kind": "jsonld",
+  "old": "structured data differs (ignoring dateModified)",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "$25 a line a month ex GST includes a local Australian number, 300 outbound minutes and unlimited inbound calls.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "A ten-person business pays $250 a month ex GST plus any calls beyond the included minutes.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call Cloud PBX is a hosted business phone system for Australian businesses, operated by Bcom Services Pty Ltd. $25 a line a month ex GST includes a local number, 300 outbound minutes, unlimited inbound calls, IVR, ring groups, call queues, call recording, AI transcription, voicemail to email and the AI Receptionist.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Click2Call’s cloud PBX costs $25 a line a month ex GST , and that is the whole price: local number, 300 outbound minutes, unlimited inbound calls and every feature.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Unlimited free extensions",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-removed",
+  "old": "Unlimited free extensions — You pay for users, not for internal lines.",
+  "new": "",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "$25 a line a month ex GST includes a local Australian number, 300 outbound minutes and free incoming calls to local numbers.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "A ten-person business pays $250 a month ex GST for ten lines.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An office of five pays $135 a month ex GST ($148.50 inc GST) : five Business Lines at $25 plus a $10 main Business Number that rings everyone.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "An office of five: A phone system for an office of five has three parts: a line for each person (their own number to make and receive calls), a main number that customers call and that rings everyone, and the call handling around them (a greeting or menu, queues and voicemail).",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Calls beyond a line’s 300 minutes are 10c a minute to landlines and 20c to mobiles, ex GST.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call Cloud PBX is a hosted business phone system for Australian businesses, operated by Bcom Services Pty Ltd. $25 a line a month ex GST includes a local number, 300 outbound minutes, free incoming calls to local numbers, IVR, ring groups, call queues, call recording, AI transcription, voicemail to email and the AI Receptionist.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Click2Call’s cloud PBX costs $25 a line a month ex GST , and that is the whole price: local number, 300 outbound minutes, incoming calls and every feature.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Each person has their own number and 300 minutes of calls to Australian landlines and mobiles, the main number rings everyone, and the AI receptionist, call queues, recording and transcripts are included.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Free extensions for the whole team",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "Free extensions for the whole team — You pay for users, not for internal lines.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "No contract.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "One-off: done-for-you set-up $300 ex GST if you want it (self set-up is free), and $100 inc GST for each number moved across.",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ },
+ {
+  "kind": "sentences-added",
+  "old": "",
+  "new": "With Click2Call that is 5 Business Lines + 1 main Business Number = $135 a month ex GST ($148.50 inc GST) .",
+  "reason": "AI-answers gap 2 (28 Nov 2026): office-of-five worked example in the hero and the cost section, identical to /pricing/: $135 a month ex GST ($148.50 inc GST), one-offs stated. Also (Royce, 28 Nov: OK plus 1, 2, 3): usage hints removed (more than most people use / under $5 a month), and every \"unlimited\" replaced (\"free incoming calls to local numbers\")"
+ }
+]
